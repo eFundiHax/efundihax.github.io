@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>eFundiHax // AI COMMAND CENTER</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#353534",
+                        "on-tertiary": "#4c2700",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-dim": "#131313",
+                        "on-secondary-container": "#c9a8e8",
+                        "secondary-fixed": "#f0dbff",
+                        "background": "#131313",
+                        "on-primary-fixed": "#2c0051",
+                        "outline-variant": "#4c4453",
+                        "on-secondary-fixed-variant": "#563a72",
+                        "primary": "#6b3d8f",
+                        "surface-bright": "#3a3939",
+                        "on-tertiary-container": "#e8a163",
+                        "tertiary-fixed-dim": "#ffb77a",
+                        "tertiary-fixed": "#ffdcc2",
+                        "surface-container": "#201f1f",
+                        "on-tertiary-fixed": "#2e1500",
+                        "inverse-primary": "#7f38c3",
+                        "surface": "#131313",
+                        "primary-container": "#6b3d8f",
+                        "on-background": "#e5e2e1",
+                        "outline": "#988d9e",
+                        "error": "#ffb4ab",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-container": "#683700",
+                        "on-primary-container": "#ffffff",
+                        "surface-container-lowest": "#0e0e0e",
+                        "secondary-fixed-dim": "#dbb9fa",
+                        "surface-container-highest": "#353534",
+                        "primary-fixed": "#f0dbff",
+                        "primary-fixed-dim": "#ddb8ff",
+                        "on-primary-fixed-variant": "#6516a9",
+                        "on-error": "#690005",
+                        "secondary": "#dbb9fa",
+                        "on-surface": "#e5e2e1",
+                        "surface-container-high": "#2a2a2a",
+                        "inverse-on-surface": "#313030",
+                        "secondary-container": "#563a72",
+                        "on-secondary": "#3e235a",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#6c3a03",
+                        "on-surface-variant": "#cfc2d5",
+                        "on-secondary-fixed": "#280c43",
+                        "surface-tint": "#ddb8ff",
+                        "surface-container-low": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#ffb77a"
+                    },
+                    "borderRadius": {
+                        "none": "0px",
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Exact Bevel Effects from SCREEN_11 */
+        .bevel-out {
+            border-top: 1px solid #4c4453;
+            border-left: 1px solid #4c4453;
+            border-bottom: 2px solid #0e0e0e;
+            border-right: 2px solid #0e0e0e;
+        }
+        .bevel-in {
+            border-top: 2px solid #0e0e0e;
+            border-left: 2px solid #0e0e0e;
+            border-bottom: 1px solid #4c4453;
+            border-right: 1px solid #4c4453;
+        }
+        .panel-header-tab {
+            background: #6b3d8f;
+            box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.2), inset -1px -1px 0px rgba(0, 0, 0, 0.4);
+        }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #131313; }
+        ::-webkit-scrollbar-thumb { background: #353534; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
+<!-- TopAppBar (Minimalist style from SCREEN_11) -->
+<header class="bg-[#1C1B1B] text-on-surface font-headline tracking-tighter uppercase top-0 w-full px-6 h-12 z-50 fixed border-b border-[#353534] flex items-center">
+<div class="text-xl font-black tracking-tighter uppercase">
+            eFundi<span class="text-[#ff0000]">Hax</span>
+</div>
+</header>
+<!-- Main content preserves vertical look with side whitespace -->
+<main class="pt-20 pb-12 px-6 max-w-5xl mx-auto w-full flex-grow">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Column 1: Dominant Column -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<!-- Panel: Schedule AI -->
+<section class="bg-surface-container-low bevel-out overflow-hidden flex flex-col">
+<div class="panel-header-tab px-4 py-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-primary text-sm">psychology</span>
+<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">SCHEDULE AI TERMINAL</h2>
+</div>
+<span class="text-[9px] font-bold text-on-primary/70">V.4.0.2_STABLE</span>
+</div>
+<div class="p-6">
+<div class="h-[400px] overflow-y-auto mb-6 space-y-4 pr-2 bg-surface-container-lowest p-4 bevel-in">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-label text-outline uppercase tracking-tighter">System // 08:00</span>
+<div class="text-xs border-l-2 border-primary pl-3 py-1">
+                                    Terminal initialized. Load your weekly NWU schedule or ask about upcoming deadlines.
+                                </div>
+</div>
+<div class="flex flex-col gap-1 items-end">
+<span class="text-[10px] font-label text-outline uppercase tracking-tighter">User // 08:02</span>
+<div class="bg-primary text-on-primary p-3 text-xs bevel-out max-w-[85%] font-headline font-bold">
+                                    Summarize my test schedule for CMPG311 and clarify the venue for tomorrow.
+                                </div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-label text-outline uppercase tracking-tighter">System // 08:02</span>
+<div class="text-xs border-l-2 border-primary pl-3 py-1">
+                                    Analyzing CMPG311 metadata... <br/><br/>
+                                    • TEST 2: Tomorrow, 14:00.<br/>
+                                    • VENUE: Building G1, Hall A.<br/>
+                                    • TOPICS: Parallel Computing, Semaphore logic.
+                                </div>
+</div>
+</div>
+<div class="relative">
+<textarea class="w-full bg-surface-container-lowest border-0 p-4 font-body text-sm resize-none h-24 placeholder:text-outline/50 bevel-in focus:ring-0" placeholder="ENTER COMMAND OR QUERY..."></textarea>
+<button class="absolute bottom-3 right-3 bg-primary text-on-primary px-6 py-2 font-headline font-black uppercase text-[10px] bevel-out hover:brightness-110 active:scale-95 transition-all">
+                                EXECUTE
+                            </button>
+</div>
+</div>
+</section>
+<!-- Panel: NWU Map -->
+<section class="bg-surface-container-low bevel-out overflow-hidden flex flex-col">
+<div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-on-primary text-sm">map</span>
+<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">NWU GEO-SPATIAL MAPPING</h2>
+</div>
+<div class="p-6 flex-grow">
+<div class="h-[400px] bg-surface-container-lowest relative group overflow-hidden bevel-in">
+<img class="w-full h-full object-cover grayscale opacity-40 group-hover:opacity-60 transition-opacity duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoOWZ76fo-czLu4XYP44wAG_aZcRGbbB6pqp6KHdJuXaC-_vei0Ku9hNYlhOHn43w7Eo3ddBpppP0Bb0zC-LYoKMa-y5swffSpH4OCDBnXb2N1C45wC3Q3pROOVeT1ToAe1kWq8vYWnX5rU52NQk_pXGHrNjmgos_HTmA5zghl8JAwRW8KX6bViGOeopA3CODslIblFihHN3nPrgS9cutcSoHVrfwyTKtINZ-cULMaVN4Bshk3AcUw97kyS1IVJh7B7sTHEgQI2Y8Q"/>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="w-16 h-16 border border-primary/40 animate-pulse flex items-center justify-center">
+<div class="w-1 h-1 bg-primary shadow-[0_0_8px_#6b3d8f]"></div>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 bg-surface-dim/90 p-2 border border-outline-variant/30">
+<p class="font-label text-[9px] text-primary tracking-widest uppercase font-bold">LAT: -26.6974 | LONG: 27.0945</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Socials & Submit Resource Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Panel: Socials -->
+<section class="bg-surface-container-low bevel-out overflow-hidden">
+<div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-on-primary text-sm">public</span>
+<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">CONNECT_NODES</h2>
+</div>
+<div class="p-6 flex flex-col gap-3">
+<a class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in group hover:bg-surface-bright transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-sm">hub</span>
+<span class="font-headline font-bold text-[10px] uppercase tracking-wider">Discord_Mainframe</span>
+</div>
+<span class="material-symbols-outlined text-primary text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in group hover:bg-surface-bright transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-sm">chat</span>
+<span class="font-headline font-bold text-[10px] uppercase tracking-wider">WhatsApp_Comm</span>
+</div>
+<span class="material-symbols-outlined text-primary text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in group hover:bg-surface-bright transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-sm">photo_camera</span>
+<span class="font-headline font-bold text-[10px] uppercase tracking-wider">IG_Visuals</span>
+</div>
+<span class="material-symbols-outlined text-primary text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Panel: Submit Artifact (Google Form CTA) -->
+<section class="bg-surface-container-low bevel-out overflow-hidden flex flex-col">
+<div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-on-primary text-sm">description</span>
+<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">CONTRIBUTE_RESOURCES</h2>
+</div>
+<div class="p-6 flex flex-col justify-between h-full">
+<p class="text-[11px] text-outline uppercase tracking-tight leading-relaxed mb-4">Support the community by sharing your study materials via our central portal.</p>
+<a class="w-full py-3 bg-tertiary text-on-tertiary font-headline font-black uppercase text-[11px] bevel-out hover:brightness-105 transition-all text-center flex items-center justify-center gap-2" href="https://docs.google.com/forms" target="_blank">
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+                                ACCESS GOOGLE FORM
+                            </a>
+</div>
+</section>
+</div>
+</div>
+<!-- Column 2: Sidebar -->
+<div class="lg:col-span-4 flex flex-col gap-8">
+<!-- Panel: Resource Drive (Moved above Userscript Hub) -->
+<section class="bg-surface-container-low bevel-out overflow-hidden">
+<div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-on-primary text-sm">folder_open</span>
+<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">RESOURCE_DRIVE</h2>
+</div>
+<div class="p-6 space-y-2">
+<div class="flex items-center gap-3 p-3 bg-surface-container-lowest bevel-in hover:bg-surface-bright transition-all cursor-pointer group">
+<span class="material-symbols-outlined text-tertiary text-sm">cloud_download</span>
+<span class="font-headline text-[9px] font-black uppercase tracking-widest group-hover:text-primary">Past_Paper_Archive</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-container-lowest bevel-in hover:bg-surface-bright transition-all cursor-pointer group">
+<span class="material-symbols-outlined text-tertiary text-sm">terminal</span>
+<span class="font-headline text-[9px] font-black uppercase tracking-widest group-hover:text-primary">Coding_Standards_V1</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-container-lowest bevel-in hover:bg-surface-bright transition-all cursor-pointer group">
+<span class="material-symbols-outlined text-tertiary text-sm">key</span>
+<span class="font-headline text-[9px] font-black uppercase tracking-widest group-hover:text-primary">Library_Access_Keys</span>
+</div>
+</div>
+</section>
+<!-- Panel: Userscript Hub (Moved below Resource Drive) -->
+<section class="bg-surface-container-low bevel-out overflow-hidden">
+<div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-on-primary text-sm">javascript</span>
+<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">USERSCRIPT_HUB</h2>
+</div>
+<div class="p-6 space-y-4">
+<div class="p-3 bg-surface-container-lowest bevel-in border-l-4 border-primary">
+<h3 class="font-headline text-[11px] font-black uppercase text-on-surface mb-1">Auto-Login_v2</h3>
+<p class="text-[9px] text-outline uppercase tracking-widest">Bypasses secondary auth nodes.</p>
+</div>
+<div class="p-3 bg-surface-container-lowest bevel-in border-l-4 border-primary">
+<h3 class="font-headline text-[11px] font-black uppercase text-on-surface mb-1">eFundi_Dark_UI</h3>
+<p class="text-[9px] text-outline uppercase tracking-widest">Force dark mode on portals.</p>
+</div>
+<div class="p-3 bg-surface-container-lowest bevel-in border-l-4 border-primary">
+<h3 class="font-headline text-[11px] font-black uppercase text-on-surface mb-1">GPA_Predictor</h3>
+<p class="text-[9px] text-outline uppercase tracking-widest">Real-time grade extrapolation.</p>
+</div>
+</div>
+</section>
+<!-- Panel: WhatsApp Directory (Vertical List) -->
+<section class="bg-surface-container-low bevel-out overflow-hidden">
+<div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-on-primary text-sm">group</span>
+<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">WHATSAPP_DIR</h2>
+</div>
+<div class="p-6 flex flex-col gap-2">
+<!-- Repeated 9 times for different modules -->
+<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in">
+<span class="material-symbols-outlined text-tertiary text-sm">chat</span>
+</div>
+<span class="font-headline text-[10px] font-black tracking-tighter uppercase">CMPG 311</span>
+</div>
+<button class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</button>
+</div>
+<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in">
+<span class="material-symbols-outlined text-tertiary text-sm">chat</span>
+</div>
+<span class="font-headline text-[10px] font-black tracking-tighter uppercase">MTHS 121</span>
+</div>
+<button class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</button>
+</div>
+<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in">
+<span class="material-symbols-outlined text-tertiary text-sm">chat</span>
+</div>
+<span class="font-headline text-[10px] font-black tracking-tighter uppercase">STTN 111</span>
+</div>
+<button class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</button>
+</div>
+<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in">
+<span class="material-symbols-outlined text-tertiary text-sm">chat</span>
+</div>
+<span class="font-headline text-[10px] font-black tracking-tighter uppercase">PHYS 111</span>
+</div>
+<button class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</button>
+</div>
+<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in">
+<span class="material-symbols-outlined text-tertiary text-sm">chat</span>
+</div>
+<span class="font-headline text-[10px] font-black tracking-tighter uppercase">ECON 111</span>
+</div>
+<button class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</button>
+</div>
+<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in">
+<span class="material-symbols-outlined text-tertiary text-sm">chat</span>
+</div>
+<span class="font-headline text-[10px] font-black tracking-tighter uppercase">PSYC 121</span>
+</div>
+<button class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</button>
+</div>
+<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in">
+<span class="material-symbols-outlined text-tertiary text-sm">chat</span>
+</div>
+<span class="font-headline text-[10px] font-black tracking-tighter uppercase">LAW 111</span>
+</div>
+<button class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</button>
+</div>
+<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in">
+<span class="material-symbols-outlined text-tertiary text-sm">chat</span>
+</div>
+<span class="font-headline text-[10px] font-black tracking-tighter uppercase">ENG 111</span>
+</div>
+<button class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</button>
+</div>
+<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in">
+<span class="material-symbols-outlined text-tertiary text-sm">chat</span>
+</div>
+<span class="font-headline text-[10px] font-black tracking-tighter uppercase">SOCL 111</span>
+</div>
+<button class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</button>
+</div>
+</div>
+</section>
+<!-- Panel: Module Schedules (Updated with dual action links) -->
+<section class="bg-surface-container-low bevel-out overflow-hidden">
+<div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-on-primary text-sm">calendar_month</span>
+<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">MODULE_SCHEDULE</h2>
+</div>
+<div class="p-6 flex flex-col gap-4">
+<!-- Repeated for 8 modules with required actions -->
+<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">CMPG311</span>
+<span class="text-[9px] text-outline uppercase font-bold">LAB: 14:00</span>
+</div>
+<div class="flex flex-col gap-1">
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
+                                </a>
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
+                                </a>
+</div>
+</div>
+<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">CMPG321</span>
+<span class="text-[9px] text-outline uppercase font-bold">LEC: 08:00</span>
+</div>
+<div class="flex flex-col gap-1">
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
+                                </a>
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
+                                </a>
+</div>
+</div>
+<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">MTHS121</span>
+<span class="text-[9px] text-outline uppercase font-bold">TUT: 11:30</span>
+</div>
+<div class="flex flex-col gap-1">
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
+                                </a>
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
+                                </a>
+</div>
+</div>
+<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">STTN111</span>
+<span class="text-[9px] text-outline uppercase font-bold">LAB: 09:00</span>
+</div>
+<div class="flex flex-col gap-1">
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
+                                </a>
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
+                                </a>
+</div>
+</div>
+<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">PHYS111</span>
+<span class="text-[9px] text-outline uppercase font-bold">LEC: 12:00</span>
+</div>
+<div class="flex flex-col gap-1">
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
+                                </a>
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
+                                </a>
+</div>
+</div>
+<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">CMPG211</span>
+<span class="text-[9px] text-outline uppercase font-bold">PRAC: 16:00</span>
+</div>
+<div class="flex flex-col gap-1">
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
+                                </a>
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
+                                </a>
+</div>
+</div>
+<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">MATH211</span>
+<span class="text-[9px] text-outline uppercase font-bold">EXAM: 10:00</span>
+</div>
+<div class="flex flex-col gap-1">
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
+                                </a>
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
+                                </a>
+</div>
+</div>
+<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">ECON111</span>
+<span class="text-[9px] text-outline uppercase font-bold">LEC: 15:00</span>
+</div>
+<div class="flex flex-col gap-1">
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
+                                </a>
+<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
+                                </a>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer (At bottom of page content) -->
+<footer class="bg-[#1C1B1B] text-[#FFB77A] font-headline text-[10px] uppercase tracking-widest w-full px-6 py-8 border-t border-[#353534] flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<span class="text-on-surface/50 opacity-80 font-bold">SYS.ROOT@EFUNDIHAX // STATUS: OPTIMAL</span>
+<div class="flex gap-6">
+<span class="opacity-60">TERMINAL_V1.0.4</span>
+<span class="opacity-60">LATENCY: 14MS</span>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-on-surface/40 hover:text-primary transition-colors cursor-pointer" href="#">PRIVACY_PROTOCOL</a>
+<a class="text-on-surface/40 hover:text-primary transition-colors cursor-pointer" href="#">ENCRYPTION_LOGS</a>
+<button class="bg-[#353534] px-4 py-1 text-on-surface font-black hover:bg-primary hover:text-on-primary transition-all bevel-out">LOG_OUT</button>
+</div>
+</footer>
+</body></html>
