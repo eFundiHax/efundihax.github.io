@@ -1,490 +1,765 @@
 <!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>eFundiHax — NWU Student Hub</title>
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>eFundiHax // AI COMMAND CENTER</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-variant": "#353534",
-                        "on-tertiary": "#4c2700",
-                        "inverse-surface": "#e5e2e1",
-                        "surface-dim": "#131313",
-                        "on-secondary-container": "#c9a8e8",
-                        "secondary-fixed": "#f0dbff",
-                        "background": "#131313",
-                        "on-primary-fixed": "#2c0051",
-                        "outline-variant": "#4c4453",
-                        "on-secondary-fixed-variant": "#563a72",
-                        "primary": "#6b3d8f",
-                        "surface-bright": "#3a3939",
-                        "on-tertiary-container": "#e8a163",
-                        "tertiary-fixed-dim": "#ffb77a",
-                        "tertiary-fixed": "#ffdcc2",
-                        "surface-container": "#201f1f",
-                        "on-tertiary-fixed": "#2e1500",
-                        "inverse-primary": "#7f38c3",
-                        "surface": "#131313",
-                        "primary-container": "#6b3d8f",
-                        "on-background": "#e5e2e1",
-                        "outline": "#988d9e",
-                        "error": "#ffb4ab",
-                        "on-error-container": "#ffdad6",
-                        "tertiary-container": "#683700",
-                        "on-primary-container": "#ffffff",
-                        "surface-container-lowest": "#0e0e0e",
-                        "secondary-fixed-dim": "#dbb9fa",
-                        "surface-container-highest": "#353534",
-                        "primary-fixed": "#f0dbff",
-                        "primary-fixed-dim": "#ddb8ff",
-                        "on-primary-fixed-variant": "#6516a9",
-                        "on-error": "#690005",
-                        "secondary": "#dbb9fa",
-                        "on-surface": "#e5e2e1",
-                        "surface-container-high": "#2a2a2a",
-                        "inverse-on-surface": "#313030",
-                        "secondary-container": "#563a72",
-                        "on-secondary": "#3e235a",
-                        "error-container": "#93000a",
-                        "on-tertiary-fixed-variant": "#6c3a03",
-                        "on-surface-variant": "#cfc2d5",
-                        "on-secondary-fixed": "#280c43",
-                        "surface-tint": "#ddb8ff",
-                        "surface-container-low": "#1c1b1b",
-                        "on-primary": "#ffffff",
-                        "tertiary": "#ffb77a"
-                    },
-                    "borderRadius": {
-                        "none": "0px",
-                        "DEFAULT": "0px",
-                        "lg": "0px",
-                        "xl": "0px",
-                        "full": "0px"
-                    },
-                    "fontFamily": {
-                        "headline": ["Space Grotesk"],
-                        "body": ["Inter"],
-                        "label": ["Space Grotesk"]
-                    }
-                },
-            },
+  <!-- Tailwind CSS via CDN — handles all utility classes -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Fonts: Space Grotesk for headings, Inter for body text -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Material Symbols for icons throughout the page -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- ============================================================
+       TAILWIND CONFIG — defines the design token system.
+       Colors follow the "Organic Brutalism" dark terminal aesthetic.
+       Border radius is 0px everywhere — no rounded corners.
+       ============================================================ -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-variant":              "#353534",
+            "on-tertiary":                  "#4c2700",
+            "inverse-surface":              "#e5e2e1",
+            "surface-dim":                  "#131313",
+            "on-secondary-container":       "#c9a8e8",
+            "secondary-fixed":              "#f0dbff",
+            "background":                   "#131313",
+            "on-primary-fixed":             "#2c0051",
+            "outline-variant":              "#4c4453",
+            "on-secondary-fixed-variant":   "#563a72",
+            "primary":                      "#6b3d8f",
+            "surface-bright":               "#3a3939",
+            "on-tertiary-container":        "#e8a163",
+            "tertiary-fixed-dim":           "#ffb77a",
+            "tertiary-fixed":               "#ffdcc2",
+            "surface-container":            "#201f1f",
+            "on-tertiary-fixed":            "#2e1500",
+            "inverse-primary":              "#7f38c3",
+            "surface":                      "#131313",
+            "primary-container":            "#6b3d8f",
+            "on-background":                "#e5e2e1",
+            "outline":                      "#988d9e",
+            "error":                        "#ffb4ab",
+            "on-error-container":           "#ffdad6",
+            "tertiary-container":           "#683700",
+            "on-primary-container":         "#ffffff",
+            "surface-container-lowest":     "#0e0e0e",
+            "secondary-fixed-dim":          "#dbb9fa",
+            "surface-container-highest":    "#353534",
+            "primary-fixed":                "#f0dbff",
+            "primary-fixed-dim":            "#ddb8ff",
+            "on-primary-fixed-variant":     "#6516a9",
+            "on-error":                     "#690005",
+            "secondary":                    "#dbb9fa",
+            "on-surface":                   "#e5e2e1",
+            "surface-container-high":       "#2a2a2a",
+            "inverse-on-surface":           "#313030",
+            "secondary-container":          "#563a72",
+            "on-secondary":                 "#3e235a",
+            "error-container":              "#93000a",
+            "on-tertiary-fixed-variant":    "#6c3a03",
+            "on-surface-variant":           "#cfc2d5",
+            "on-secondary-fixed":           "#280c43",
+            "surface-tint":                 "#ddb8ff",
+            "surface-container-low":        "#1c1b1b",
+            "on-primary":                   "#ffffff",
+            "tertiary":                     "#ffb77a"
+          },
+          borderRadius: {
+            "none":    "0px",
+            "DEFAULT": "0px",
+            "lg":      "0px",
+            "xl":      "0px",
+            "full":    "0px"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body":     ["Inter"],
+            "label":    ["Space Grotesk"]
+          }
         }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        /* Exact Bevel Effects from SCREEN_11 */
-        .bevel-out {
-            border-top: 1px solid #4c4453;
-            border-left: 1px solid #4c4453;
-            border-bottom: 2px solid #0e0e0e;
-            border-right: 2px solid #0e0e0e;
-        }
-        .bevel-in {
-            border-top: 2px solid #0e0e0e;
-            border-left: 2px solid #0e0e0e;
-            border-bottom: 1px solid #4c4453;
-            border-right: 1px solid #4c4453;
-        }
-        .panel-header-tab {
-            background: #6b3d8f;
-            box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.2), inset -1px -1px 0px rgba(0, 0, 0, 0.4);
-        }
-        ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-track { background: #131313; }
-        ::-webkit-scrollbar-thumb { background: #353534; }
-    </style>
+      }
+    }
+  </script>
+
+  <!-- ============================================================
+       CUSTOM CSS — bevel effects, panel headers, scrollbar styling.
+       Bevel-out = raised look, bevel-in = recessed/inset look.
+       ============================================================ -->
+  <style>
+    /* Material icon style settings */
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    /* Raised surface — used for buttons, panels, cards */
+    .bevel-out {
+      border-top:    1px solid #4c4453;
+      border-left:   1px solid #4c4453;
+      border-bottom: 2px solid #0e0e0e;
+      border-right:  2px solid #0e0e0e;
+    }
+
+    /* Recessed surface — used for inputs, inner containers */
+    .bevel-in {
+      border-top:    2px solid #0e0e0e;
+      border-left:   2px solid #0e0e0e;
+      border-bottom: 1px solid #4c4453;
+      border-right:  1px solid #4c4453;
+    }
+
+    /* Purple panel header bar used at the top of every panel */
+    .panel-header-tab {
+      background:  #6b3d8f;
+      box-shadow:  inset 1px 1px 0px rgba(255,255,255,0.2),
+                   inset -1px -1px 0px rgba(0,0,0,0.4);
+    }
+
+    /* Thin custom scrollbar */
+    ::-webkit-scrollbar       { width: 4px; }
+    ::-webkit-scrollbar-track { background: #131313; }
+    ::-webkit-scrollbar-thumb { background: #353534; }
+
+    /* "Coming soon" badge style */
+    .badge-soon {
+      background: #201f1f;
+      color: #988d9e;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 2px 6px;
+      text-transform: uppercase;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    /* Click counter badge — shown next to links */
+    .click-count {
+      font-size: 9px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      color: #988d9e;
+      letter-spacing: 0.05em;
+    }
+
+    /* Truncate long text with ellipsis */
+    .truncate-label {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 140px;
+    }
+  </style>
 </head>
+
+<!-- ============================================================
+     PAGE BODY
+     Background: #131313 (darkest surface)
+     Font: Inter for body, Space Grotesk for all headings/labels
+     ============================================================ -->
 <body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
-<!-- TopAppBar (Minimalist style from SCREEN_11) -->
-<header class="bg-[#1C1B1B] text-on-surface font-headline tracking-tighter uppercase top-0 w-full px-6 h-12 z-50 fixed border-b border-[#353534] flex items-center">
-<div class="text-xl font-black tracking-tighter uppercase">
-            eFundi<span class="text-[#ff0000]">Hax</span>
-</div>
-</header>
-<!-- Main content preserves vertical look with side whitespace -->
-<main class="pt-20 pb-12 px-6 max-w-5xl mx-auto w-full flex-grow">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-<!-- Column 1: Dominant Column -->
-<div class="lg:col-span-8 flex flex-col gap-8">
-<!-- Panel: Schedule AI -->
-<section class="bg-surface-container-low bevel-out overflow-hidden flex flex-col">
-<div class="panel-header-tab px-4 py-2 flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-on-primary text-sm">psychology</span>
-<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">SCHEDULE AI TERMINAL</h2>
-</div>
-<span class="text-[9px] font-bold text-on-primary/70">V.4.0.2_STABLE</span>
-</div>
-<div class="p-6">
-<div class="h-[400px] overflow-y-auto mb-6 space-y-4 pr-2 bg-surface-container-lowest p-4 bevel-in">
-<div class="flex flex-col gap-1">
-<span class="text-[10px] font-label text-outline uppercase tracking-tighter">System // 08:00</span>
-<div class="text-xs border-l-2 border-primary pl-3 py-1">
-                                    Terminal initialized. Load your weekly NWU schedule or ask about upcoming deadlines.
-                                </div>
-</div>
-<div class="flex flex-col gap-1 items-end">
-<span class="text-[10px] font-label text-outline uppercase tracking-tighter">User // 08:02</span>
-<div class="bg-primary text-on-primary p-3 text-xs bevel-out max-w-[85%] font-headline font-bold">
-                                    Summarize my test schedule for CMPG311 and clarify the venue for tomorrow.
-                                </div>
-</div>
-<div class="flex flex-col gap-1">
-<span class="text-[10px] font-label text-outline uppercase tracking-tighter">System // 08:02</span>
-<div class="text-xs border-l-2 border-primary pl-3 py-1">
-                                    Analyzing CMPG311 metadata... <br/><br/>
-                                    • TEST 2: Tomorrow, 14:00.<br/>
-                                    • VENUE: Building G1, Hall A.<br/>
-                                    • TOPICS: Parallel Computing, Semaphore logic.
-                                </div>
-</div>
-</div>
-<div class="relative">
-<textarea class="w-full bg-surface-container-lowest border-0 p-4 font-body text-sm resize-none h-24 placeholder:text-outline/50 bevel-in focus:ring-0" placeholder="ENTER COMMAND OR QUERY..."></textarea>
-<button class="absolute bottom-3 right-3 bg-primary text-on-primary px-6 py-2 font-headline font-black uppercase text-[10px] bevel-out hover:brightness-110 active:scale-95 transition-all">
-                                EXECUTE
-                            </button>
-</div>
-</div>
-</section>
-<!-- Panel: NWU Map -->
-<section class="bg-surface-container-low bevel-out overflow-hidden flex flex-col">
-<div class="panel-header-tab px-4 py-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-on-primary text-sm">map</span>
-<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">NWU GEO-SPATIAL MAPPING</h2>
-</div>
-<div class="p-6 flex-grow">
-<div class="h-[400px] bg-surface-container-lowest relative group overflow-hidden bevel-in">
-<img class="w-full h-full object-cover grayscale opacity-40 group-hover:opacity-60 transition-opacity duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoOWZ76fo-czLu4XYP44wAG_aZcRGbbB6pqp6KHdJuXaC-_vei0Ku9hNYlhOHn43w7Eo3ddBpppP0Bb0zC-LYoKMa-y5swffSpH4OCDBnXb2N1C45wC3Q3pROOVeT1ToAe1kWq8vYWnX5rU52NQk_pXGHrNjmgos_HTmA5zghl8JAwRW8KX6bViGOeopA3CODslIblFihHN3nPrgS9cutcSoHVrfwyTKtINZ-cULMaVN4Bshk3AcUw97kyS1IVJh7B7sTHEgQI2Y8Q"/>
-<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-<div class="w-16 h-16 border border-primary/40 animate-pulse flex items-center justify-center">
-<div class="w-1 h-1 bg-primary shadow-[0_0_8px_#6b3d8f]"></div>
-</div>
-</div>
-<div class="absolute bottom-3 left-3 bg-surface-dim/90 p-2 border border-outline-variant/30">
-<p class="font-label text-[9px] text-primary tracking-widest uppercase font-bold">LAT: -26.6974 | LONG: 27.0945</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Socials & Submit Resource Row -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Panel: Socials -->
-<section class="bg-surface-container-low bevel-out overflow-hidden">
-<div class="panel-header-tab px-4 py-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-on-primary text-sm">public</span>
-<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">CONNECT_NODES</h2>
-</div>
-<div class="p-6 flex flex-col gap-3">
-<a class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in group hover:bg-surface-bright transition-colors" href="#">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-tertiary text-sm">hub</span>
-<span class="font-headline font-bold text-[10px] uppercase tracking-wider">Discord_Mainframe</span>
-</div>
-<span class="material-symbols-outlined text-primary text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-<a class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in group hover:bg-surface-bright transition-colors" href="#">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-tertiary text-sm">chat</span>
-<span class="font-headline font-bold text-[10px] uppercase tracking-wider">WhatsApp_Comm</span>
-</div>
-<span class="material-symbols-outlined text-primary text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-<a class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in group hover:bg-surface-bright transition-colors" href="#">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-tertiary text-sm">photo_camera</span>
-<span class="font-headline font-bold text-[10px] uppercase tracking-wider">IG_Visuals</span>
-</div>
-<span class="material-symbols-outlined text-primary text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-</div>
-</section>
-<!-- Panel: Submit Artifact (Google Form CTA) -->
-<section class="bg-surface-container-low bevel-out overflow-hidden flex flex-col">
-<div class="panel-header-tab px-4 py-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-on-primary text-sm">description</span>
-<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">CONTRIBUTE_RESOURCES</h2>
-</div>
-<div class="p-6 flex flex-col justify-between h-full">
-<p class="text-[11px] text-outline uppercase tracking-tight leading-relaxed mb-4">Support the community by sharing your study materials via our central portal.</p>
-<a class="w-full py-3 bg-tertiary text-on-tertiary font-headline font-black uppercase text-[11px] bevel-out hover:brightness-105 transition-all text-center flex items-center justify-center gap-2" href="https://forms.gle/gvr9cqJyr5rL8FHm8" target="_blank">
-<span class="material-symbols-outlined text-sm">open_in_new</span>
-                                ACCESS GOOGLE FORM
-                            </a>
-</div>
-</section>
-</div>
-</div>
-<!-- Column 2: Sidebar -->
-<div class="lg:col-span-4 flex flex-col gap-8">
-<!-- Panel: Resource Drive (Moved above Userscript Hub) -->
-<section class="bg-surface-container-low bevel-out overflow-hidden">
-<div class="panel-header-tab px-4 py-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-on-primary text-sm">folder_open</span>
-<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">RESOURCE_DRIVE</h2>
-</div>
-<div class="p-6 space-y-2">
-<a href="https://drive.google.com/drive/folders/1-A9deFaCVsm_v3sFZc4cgFtiJ9FraBwZ?usp=drive_link" target="_blank" class="flex items-center gap-3 p-3 bg-surface-container-lowest bevel-in hover:bg-surface-bright transition-all cursor-pointer group">
-<span class="material-symbols-outlined text-tertiary text-sm">folder_open</span>
-<div class="flex flex-col">
-<span class="font-headline text-[9px] font-black uppercase tracking-widest group-hover:text-primary">Engineering_Drive</span>
-<span class="text-[8px] text-outline uppercase">by christiaanwilken2005</span>
-</div>
-</a>
-<a href="https://drive.google.com/drive/folders/1E_z9sA-i1taRXZpwbs-rYGiZaC08sIBC?usp=drive_link" target="_blank" class="flex items-center gap-3 p-3 bg-surface-container-lowest bevel-in hover:bg-surface-bright transition-all cursor-pointer group">
-<span class="material-symbols-outlined text-tertiary text-sm">history_edu</span>
-<div class="flex flex-col">
-<span class="font-headline text-[9px] font-black uppercase tracking-widest group-hover:text-primary">Past_Papers_Archive</span>
-<span class="text-[8px] text-outline uppercase">by pastpapernwu & tebellomoloi69 & tazzmantaylor06</span>
-</div>
-</a>
-<a href="https://drive.google.com/drive/folders/1ZU9XpkbCM4lxtQNJnXo1wdb2qbJcJsxB?usp=drive_link" target="_blank" class="flex items-center gap-3 p-3 bg-surface-container-lowest bevel-in hover:bg-surface-bright transition-all cursor-pointer group">
-<span class="material-symbols-outlined text-tertiary text-sm">cloud_download</span>
-<div class="flex flex-col">
-<span class="font-headline text-[9px] font-black uppercase tracking-widest group-hover:text-primary">2de_Jaar_Drive</span>
-<span class="text-[8px] text-outline uppercase">by janenel2003</span>
-</div>
-</a>
-</div>
-</section>
-<!-- Panel: Userscript Hub (Moved below Resource Drive) -->
-<section class="bg-surface-container-low bevel-out overflow-hidden">
-<div class="panel-header-tab px-4 py-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-on-primary text-sm">javascript</span>
-<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">USERSCRIPT_HUB</h2>
-</div>
-<div class="p-6 space-y-4">
-<div class="p-3 bg-surface-container-lowest bevel-in border-l-4 border-primary">
-<h3 class="font-headline text-[11px] font-black uppercase text-on-surface mb-1">eFundi_Gradebook_Stats_v3.7.1</h3>
-<p class="text-[9px] text-outline uppercase tracking-widest mb-2">Fixes grade distribution display on NWU eFundi gradebook.</p>
-<a href="https://update.greasyfork.org/scripts/569148/NWU%20eFundi%20Gradebook%20Better%20Grade%20Statistics%20v371.user.js" target="_blank" class="inline-flex items-center gap-1 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">
-<span class="material-symbols-outlined text-[10px]">download</span> INSTALL
-</a>
-</div>
-<div class="p-3 bg-surface-container-lowest bevel-in border-l-4 border-outline-variant opacity-50">
-<h3 class="font-headline text-[11px] font-black uppercase text-on-surface mb-1">eFundi_Announcement_Scraper</h3>
-<p class="text-[9px] text-outline uppercase tracking-widest">Scrapes announcements to Google Sheets. Coming soon.</p>
-</div>
-</div>
-</section>
-<!-- Panel: WhatsApp Directory (Vertical List) -->
-<section class="bg-surface-container-low bevel-out overflow-hidden">
-<div class="panel-header-tab px-4 py-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-on-primary text-sm">group</span>
-<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">WHATSAPP_DIR</h2>
-</div>
-<div class="p-6 flex flex-col gap-2">
-<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
-<div class="flex items-center gap-3">
-<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in overflow-hidden">
-<span class="material-symbols-outlined text-tertiary text-sm">group</span>
-</div>
-<span class="font-headline text-[10px] font-black tracking-tighter uppercase">First Year Engineering 2026</span>
-</div>
-<a href="https://chat.whatsapp.com/IMMVWzXQee1D45KcMJKHxi" target="_blank" class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</a>
-</div>
-<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
-<div class="flex items-center gap-3">
-<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in overflow-hidden">
-<span class="material-symbols-outlined text-tertiary text-sm">school</span>
-</div>
-<span class="font-headline text-[10px] font-black tracking-tighter uppercase">NWU Engineering 2026</span>
-</div>
-<a href="https://chat.whatsapp.com/JKbdeeG7AO2I8UteSJ9ZEw" target="_blank" class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</a>
-</div>
-<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
-<div class="flex items-center gap-3">
-<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in overflow-hidden">
-<span class="material-symbols-outlined text-tertiary text-sm">celebration</span>
-</div>
-<span class="font-headline text-[10px] font-black tracking-tighter uppercase">Rubbish / Memes 🦝</span>
-</div>
-<a href="https://chat.whatsapp.com/LFmBnNTOi1W8jrnyi6OvDj" target="_blank" class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</a>
-</div>
-<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
-<div class="flex items-center gap-3">
-<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in overflow-hidden">
-<span class="material-symbols-outlined text-tertiary text-sm">calculate</span>
-</div>
-<span class="font-headline text-[10px] font-black tracking-tighter uppercase">MTHS 111 / Tenkams</span>
-</div>
-<a href="https://chat.whatsapp.com/J7GVfimGHxtLp6CCTZqqWA" target="_blank" class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</a>
-</div>
-<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
-<div class="flex items-center gap-3">
-<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in overflow-hidden">
-<span class="material-symbols-outlined text-tertiary text-sm">terminal</span>
-</div>
-<span class="font-headline text-[10px] font-black tracking-tighter uppercase">CMPG115_TRN002</span>
-</div>
-<a href="https://chat.whatsapp.com/EkTK6Fqa9mWGPXilQ8VwUF" target="_blank" class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</a>
-</div>
-<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
-<div class="flex items-center gap-3">
-<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in overflow-hidden">
-<span class="material-symbols-outlined text-tertiary text-sm">history_edu</span>
-</div>
-<span class="font-headline text-[10px] font-black tracking-tighter uppercase">PUK Past Papers 1</span>
-</div>
-<a href="https://chat.whatsapp.com/BR6gJMwWHvnDikxVlQYve4" target="_blank" class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</a>
-</div>
-<div class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors group">
-<div class="flex items-center gap-3">
-<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center bevel-in overflow-hidden">
-<span class="material-symbols-outlined text-tertiary text-sm">history_edu</span>
-</div>
-<span class="font-headline text-[10px] font-black tracking-tighter uppercase">PUK Past Papers 2</span>
-</div>
-<a href="https://chat.whatsapp.com/E20YDA5EKuUBm1PE9oclYM" target="_blank" class="bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">JOIN</a>
-</div>
-</div>
-</section>
-<!-- Panel: Module Schedules (Updated with dual action links) -->
-<section class="bg-surface-container-low bevel-out overflow-hidden">
-<div class="panel-header-tab px-4 py-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-on-primary text-sm">calendar_month</span>
-<h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">MODULE_SCHEDULE</h2>
-</div>
-<div class="p-6 flex flex-col gap-4">
-<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
-<div class="flex justify-between items-center">
-<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">CMPG115</span>
-<span class="text-[9px] text-outline uppercase font-bold">COMING SOON</span>
-</div>
-<div class="flex flex-col gap-1">
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
-</a>
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
-</a>
-</div>
-</div>
-<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
-<div class="flex justify-between items-center">
-<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">MTHS111</span>
-<span class="text-[9px] text-outline uppercase font-bold">COMING SOON</span>
-</div>
-<div class="flex flex-col gap-1">
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
-</a>
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
-</a>
-</div>
-</div>
-<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
-<div class="flex justify-between items-center">
-<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">NPHY111</span>
-<span class="text-[9px] text-outline uppercase font-bold">COMING SOON</span>
-</div>
-<div class="flex flex-col gap-1">
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
-</a>
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
-</a>
-</div>
-</div>
-<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
-<div class="flex justify-between items-center">
-<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">NCHE111</span>
-<span class="text-[9px] text-outline uppercase font-bold">COMING SOON</span>
-</div>
-<div class="flex flex-col gap-1">
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
-</a>
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
-</a>
-</div>
-</div>
-<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
-<div class="flex justify-between items-center">
-<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">INGM111</span>
-<span class="text-[9px] text-outline uppercase font-bold">COMING SOON</span>
-</div>
-<div class="flex flex-col gap-1">
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
-</a>
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
-</a>
-</div>
-</div>
-<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
-<div class="flex justify-between items-center">
-<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">PPEP171</span>
-<span class="text-[9px] text-outline uppercase font-bold">COMING SOON</span>
-</div>
-<div class="flex flex-col gap-1">
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
-</a>
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
-</a>
-</div>
-</div>
-<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
-<div class="flex justify-between items-center">
-<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">ALDE112</span>
-<span class="text-[9px] text-outline uppercase font-bold">COMING SOON</span>
-</div>
-<div class="flex flex-col gap-1">
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
-</a>
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
-</a>
-</div>
-</div>
-<div class="p-4 bg-surface-container-lowest bevel-in flex flex-col gap-3">
-<div class="flex justify-between items-center">
-<span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">WSKD111</span>
-<span class="text-[9px] text-outline uppercase font-bold">COMING SOON</span>
-</div>
-<div class="flex flex-col gap-1">
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">event</span> GOOGLE CALENDAR
-</a>
-<a class="text-[8px] font-black uppercase tracking-widest text-on-surface/80 hover:text-primary transition-colors flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-[10px]">download</span> .ICS FILE
-</a>
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-</main>
-<!-- Footer (At bottom of page content) -->
-<footer class="bg-[#1C1B1B] text-[#FFB77A] font-headline text-[10px] uppercase tracking-widest w-full px-6 py-8 border-t border-[#353534] flex flex-col md:flex-row justify-between items-center gap-4">
-<div class="flex flex-col md:flex-row items-center gap-8">
-<span class="text-on-surface/50 opacity-80 font-bold">SYS.ROOT@EFUNDIHAX // STATUS: OPTIMAL</span>
-<div class="flex gap-6">
-<span class="opacity-60">TERMINAL_V1.0.4</span>
-<span class="opacity-60">LATENCY: 14MS</span>
-</div>
-</div>
-<div class="flex items-center gap-6">
-<a class="text-on-surface/40 hover:text-primary transition-colors cursor-pointer" href="#">PRIVACY_PROTOCOL</a>
-<a class="text-on-surface/40 hover:text-primary transition-colors cursor-pointer" href="#">ENCRYPTION_LOGS</a>
-<button class="bg-[#353534] px-4 py-1 text-on-surface font-black hover:bg-primary hover:text-on-primary transition-all bevel-out">LOG_OUT</button>
-</div>
-</footer>
-</body></html>
+
+  <!-- ============================================================
+       HEADER — fixed top bar with site name and page view counter
+       ============================================================ -->
+  <header class="bg-[#1C1B1B] text-on-surface font-headline tracking-tighter uppercase top-0 w-full px-6 h-12 z-50 fixed border-b border-[#353534] flex items-center justify-between">
+    <!-- Site logo/name -->
+    <div class="text-xl font-black tracking-tighter uppercase">
+      eFundi<span class="text-[#9b59b6]">Hax</span>
+    </div>
+
+    <!-- Page view counter (placeholder — wire up later) -->
+    <div class="flex items-center gap-2 text-outline">
+      <span class="material-symbols-outlined text-sm">visibility</span>
+      <span class="font-headline text-[10px] font-bold uppercase tracking-widest">
+        <!-- JS will populate this once analytics are connected -->
+        <span id="view-counter">— views</span>
+      </span>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MAIN CONTENT — two-column layout on large screens.
+       Column 1 (left, wider): AI, Map, Socials, Submit
+       Column 2 (right, sidebar): WhatsApp, Drive, Calendars, Userscripts
+       ============================================================ -->
+  <main class="pt-20 pb-12 px-6 max-w-5xl mx-auto w-full flex-grow">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+      <!-- ========================================================
+           COLUMN 1 — Main content (8/12 width on desktop)
+           Priority order: AI → Map → Socials → Submit
+           ======================================================== -->
+      <div class="lg:col-span-8 flex flex-col gap-8">
+
+        <!-- ======================================================
+             PANEL: SCHEDULE AI
+             Placeholder chat UI — wire Gemini API in later.
+             Input and button are non-functional placeholders.
+             ====================================================== -->
+        <section class="bg-surface-container-low bevel-out overflow-hidden flex flex-col">
+          <div class="panel-header-tab px-4 py-2 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-on-primary text-sm">psychology</span>
+              <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">Schedule AI</h2>
+            </div>
+            <!-- Coming soon badge -->
+            <span class="badge-soon">Coming Soon</span>
+          </div>
+
+          <div class="p-6">
+            <!-- Chat message history area -->
+            <div class="h-[300px] overflow-y-auto mb-4 space-y-4 pr-2 bg-surface-container-lowest p-4 bevel-in">
+              <!-- System welcome message -->
+              <div class="flex flex-col gap-1">
+                <span class="text-[10px] font-label text-outline uppercase tracking-tighter">System</span>
+                <div class="text-xs border-l-2 border-primary pl-3 py-1 text-on-surface/80">
+                  NWU Schedule AI is not yet connected. Check back soon — this will let you ask questions about your timetable, exam venues, and announcements.
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat input row — disabled until AI is wired up -->
+            <div class="relative">
+              <textarea
+                disabled
+                class="w-full bg-surface-container-lowest border-0 p-4 font-body text-sm resize-none h-20 placeholder:text-outline/50 bevel-in focus:ring-0 opacity-50 cursor-not-allowed"
+                placeholder="Ask about your schedule, venues, deadlines...">
+              </textarea>
+              <button
+                disabled
+                class="absolute bottom-3 right-3 bg-primary text-on-primary px-6 py-2 font-headline font-black uppercase text-[10px] bevel-out opacity-50 cursor-not-allowed">
+                Ask
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ======================================================
+             PANEL: NWU CAMPUS MAP
+             Placeholder map image — wire Google Maps embed later.
+             ====================================================== -->
+        <section class="bg-surface-container-low bevel-out overflow-hidden flex flex-col">
+          <div class="panel-header-tab px-4 py-2 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-on-primary text-sm">map</span>
+              <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">NWU Campus Map</h2>
+            </div>
+            <span class="badge-soon">Coming Soon</span>
+          </div>
+
+          <div class="p-6">
+            <!-- Map placeholder — replace with Google Maps iframe later -->
+            <div class="h-[350px] bg-surface-container-lowest relative group overflow-hidden bevel-in flex items-center justify-center">
+              <div class="text-center">
+                <span class="material-symbols-outlined text-primary text-4xl mb-3 block">location_on</span>
+                <p class="font-headline text-[11px] uppercase tracking-widest text-outline">Interactive map coming soon</p>
+                <p class="font-body text-[10px] text-outline/60 mt-1">NWU Potchefstroom Campus</p>
+                <p class="font-label text-[9px] text-outline/40 mt-2 uppercase tracking-widest">LAT: -26.6974 | LONG: 27.0945</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ======================================================
+             SOCIALS AND SUBMIT ROW — two panels side by side
+             ====================================================== -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+          <!-- ====================================================
+               PANEL: SOCIALS / CONNECT
+               Links to Discord, WhatsApp community, Instagram.
+               Replace # hrefs with real links when ready.
+               ==================================================== -->
+          <section class="bg-surface-container-low bevel-out overflow-hidden">
+            <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-on-primary text-sm">public</span>
+              <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">Find Us</h2>
+            </div>
+
+            <div class="p-6 flex flex-col gap-3">
+              <!-- Discord -->
+              <a class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in group hover:bg-surface-bright transition-colors"
+                 href="https://discord.gg/YCWVbUpM" target="_blank">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-tertiary text-sm">hub</span>
+                  <span class="font-headline font-bold text-[11px] uppercase tracking-wider">Discord Server</span>
+                </div>
+                <span class="material-symbols-outlined text-primary text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </a>
+
+              <!-- eFundiHax WhatsApp community group -->
+              <a class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in group hover:bg-surface-bright transition-colors"
+                 href="https://chat.whatsapp.com/LFmBnNTOi1W8jrnyi6OvDj" target="_blank">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-tertiary text-sm">chat</span>
+                  <span class="font-headline font-bold text-[11px] uppercase tracking-wider">WhatsApp Community</span>
+                </div>
+                <span class="material-symbols-outlined text-primary text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </a>
+
+              <!-- Instagram -->
+              <a class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in group hover:bg-surface-bright transition-colors"
+                 href="https://www.instagram.com/kinglouisthe165th/" target="_blank">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-tertiary text-sm">photo_camera</span>
+                  <span class="font-headline font-bold text-[11px] uppercase tracking-wider">Instagram</span>
+                </div>
+                <span class="material-symbols-outlined text-primary text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </a>
+            </div>
+          </section>
+
+          <!-- ====================================================
+               PANEL: SUBMIT A RESOURCE
+               Links to Google Form for community submissions.
+               ==================================================== -->
+          <section class="bg-surface-container-low bevel-out overflow-hidden flex flex-col">
+            <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-on-primary text-sm">upload_file</span>
+              <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">Submit a Resource</h2>
+            </div>
+
+            <div class="p-6 flex flex-col justify-between h-full gap-4">
+              <p class="text-[12px] text-on-surface/70 leading-relaxed">
+                Have a past paper, useful document, or important email to share? Submit it here and help your fellow students.
+              </p>
+              <a class="w-full py-3 bg-tertiary text-on-tertiary font-headline font-black uppercase text-[11px] bevel-out hover:brightness-105 transition-all text-center flex items-center justify-center gap-2"
+                 href="https://forms.gle/gvr9cqJyr5rL8FHm8" target="_blank">
+                <span class="material-symbols-outlined text-sm">open_in_new</span>
+                Open Submission Form
+              </a>
+            </div>
+          </section>
+
+        </div><!-- end socials/submit row -->
+      </div><!-- end column 1 -->
+
+      <!-- ========================================================
+           COLUMN 2 — Sidebar (4/12 width on desktop)
+           Priority order: WhatsApp → Drive → Calendars → Userscripts
+           ======================================================== -->
+      <div class="lg:col-span-4 flex flex-col gap-8">
+
+        <!-- ======================================================
+             PANEL: WHATSAPP DIRECTORY
+             7 groups — real links. Click counts are placeholders.
+             Names displayed in full, truncated with ellipsis if needed.
+             ====================================================== -->
+        <section class="bg-surface-container-low bevel-out overflow-hidden">
+          <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+            <span class="material-symbols-outlined text-on-primary text-sm">groups</span>
+            <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">WhatsApp Groups</h2>
+          </div>
+
+          <div class="p-4 flex flex-col gap-2">
+
+            <!-- Each row: icon | group name (truncated) | click count | JOIN button -->
+            <!-- Click count increments on click via JS below — resets on page reload until backend is connected -->
+
+            <!-- Group 1: First Year Engineering Students 2026 -->
+            <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
+              <div class="flex items-center gap-2 min-w-0">
+                <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in overflow-hidden">
+                  <span class="material-symbols-outlined text-tertiary text-sm">group</span>
+                </div>
+                <div class="min-w-0">
+                  <span class="font-headline text-[10px] font-black tracking-tighter uppercase truncate-label block">First Year Engineering Students 2026</span>
+                  <span class="click-count" id="count-wa-1">0 clicks</span>
+                </div>
+              </div>
+              <a href="https://chat.whatsapp.com/IMMVWzXQee1D45KcMJKHxi"
+                 target="_blank"
+                 onclick="incrementCount('wa-1')"
+                 class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
+            </div>
+
+            <!-- Group 2: NWU Engineering 2026 -->
+            <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
+              <div class="flex items-center gap-2 min-w-0">
+                <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in overflow-hidden">
+                  <span class="material-symbols-outlined text-tertiary text-sm">school</span>
+                </div>
+                <div class="min-w-0">
+                  <span class="font-headline text-[10px] font-black tracking-tighter uppercase truncate-label block">NWU Engineering 2026</span>
+                  <span class="click-count" id="count-wa-2">0 clicks</span>
+                </div>
+              </div>
+              <a href="https://chat.whatsapp.com/JKbdeeG7AO2I8UteSJ9ZEw"
+                 target="_blank"
+                 onclick="incrementCount('wa-2')"
+                 class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
+            </div>
+
+            <!-- Group 3: Rubbish / Memes -->
+            <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
+              <div class="flex items-center gap-2 min-w-0">
+                <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in overflow-hidden">
+                  <span class="material-symbols-outlined text-tertiary text-sm">celebration</span>
+                </div>
+                <div class="min-w-0">
+                  <span class="font-headline text-[10px] font-black tracking-tighter uppercase truncate-label block">Rubbish speaking, meme spamming, repeat exam taking, people 🦝</span>
+                  <span class="click-count" id="count-wa-3">0 clicks</span>
+                </div>
+              </div>
+              <a href="https://chat.whatsapp.com/LFmBnNTOi1W8jrnyi6OvDj"
+                 target="_blank"
+                 onclick="incrementCount('wa-3')"
+                 class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
+            </div>
+
+            <!-- Group 4: MTHS 111 / Tenkams -->
+            <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
+              <div class="flex items-center gap-2 min-w-0">
+                <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in overflow-hidden">
+                  <span class="material-symbols-outlined text-tertiary text-sm">calculate</span>
+                </div>
+                <div class="min-w-0">
+                  <span class="font-headline text-[10px] font-black tracking-tighter uppercase truncate-label block">MTHS 111 / Tenkams class</span>
+                  <span class="click-count" id="count-wa-4">0 clicks</span>
+                </div>
+              </div>
+              <a href="https://chat.whatsapp.com/J7GVfimGHxtLp6CCTZqqWA"
+                 target="_blank"
+                 onclick="incrementCount('wa-4')"
+                 class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
+            </div>
+
+            <!-- Group 5: CMPG115_TRN002 -->
+            <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
+              <div class="flex items-center gap-2 min-w-0">
+                <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in overflow-hidden">
+                  <span class="material-symbols-outlined text-tertiary text-sm">terminal</span>
+                </div>
+                <div class="min-w-0">
+                  <span class="font-headline text-[10px] font-black tracking-tighter uppercase truncate-label block">CMPG115_TRN002</span>
+                  <span class="click-count" id="count-wa-5">0 clicks</span>
+                </div>
+              </div>
+              <a href="https://chat.whatsapp.com/EkTK6Fqa9mWGPXilQ8VwUF"
+                 target="_blank"
+                 onclick="incrementCount('wa-5')"
+                 class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
+            </div>
+
+            <!-- Group 6: PUK Engineering Past Papers 1 -->
+            <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
+              <div class="flex items-center gap-2 min-w-0">
+                <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in overflow-hidden">
+                  <span class="material-symbols-outlined text-tertiary text-sm">history_edu</span>
+                </div>
+                <div class="min-w-0">
+                  <span class="font-headline text-[10px] font-black tracking-tighter uppercase truncate-label block">PUK Engineering Past Papers 1</span>
+                  <span class="click-count" id="count-wa-6">0 clicks</span>
+                </div>
+              </div>
+              <a href="https://chat.whatsapp.com/BR6gJMwWHvnDikxVlQYve4"
+                 target="_blank"
+                 onclick="incrementCount('wa-6')"
+                 class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
+            </div>
+
+            <!-- Group 7: PUK Engineering Past Papers 2 -->
+            <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
+              <div class="flex items-center gap-2 min-w-0">
+                <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in overflow-hidden">
+                  <span class="material-symbols-outlined text-tertiary text-sm">history_edu</span>
+                </div>
+                <div class="min-w-0">
+                  <span class="font-headline text-[10px] font-black tracking-tighter uppercase truncate-label block">PUK Engineering Past Papers 2</span>
+                  <span class="click-count" id="count-wa-7">0 clicks</span>
+                </div>
+              </div>
+              <a href="https://chat.whatsapp.com/E20YDA5EKuUBm1PE9oclYM"
+                 target="_blank"
+                 onclick="incrementCount('wa-7')"
+                 class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ======================================================
+             PANEL: PAST PAPERS AND OTHER RESOURCES
+             3 community Drive folders with real links.
+             Click counts are session-only placeholders.
+             ====================================================== -->
+        <section class="bg-surface-container-low bevel-out overflow-hidden">
+          <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+            <span class="material-symbols-outlined text-on-primary text-sm">folder_open</span>
+            <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">Past Papers and Other Resources</h2>
+          </div>
+
+          <div class="p-4 space-y-2">
+
+            <!-- Drive link 1: Engineering folder -->
+            <a href="https://drive.google.com/drive/folders/1-A9deFaCVsm_v3sFZc4cgFtiJ9FraBwZ?usp=drive_link"
+               target="_blank"
+               onclick="incrementCount('drive-1')"
+               class="flex items-center gap-3 p-3 bg-surface-container-lowest bevel-in hover:bg-surface-bright transition-all cursor-pointer group">
+              <span class="material-symbols-outlined text-tertiary text-sm flex-shrink-0">folder_open</span>
+              <div class="flex flex-col min-w-0 flex-1">
+                <span class="font-headline text-[10px] font-black uppercase tracking-widest group-hover:text-primary truncate">Engineering Drive</span>
+                <span class="text-[9px] text-outline truncate">by christiaanwilken2005</span>
+              </div>
+              <span class="click-count flex-shrink-0" id="count-drive-1">0</span>
+            </a>
+
+            <!-- Drive link 2: Past Papers archive -->
+            <a href="https://drive.google.com/drive/folders/1E_z9sA-i1taRXZpwbs-rYGiZaC08sIBC?usp=drive_link"
+               target="_blank"
+               onclick="incrementCount('drive-2')"
+               class="flex items-center gap-3 p-3 bg-surface-container-lowest bevel-in hover:bg-surface-bright transition-all cursor-pointer group">
+              <span class="material-symbols-outlined text-tertiary text-sm flex-shrink-0">history_edu</span>
+              <div class="flex flex-col min-w-0 flex-1">
+                <span class="font-headline text-[10px] font-black uppercase tracking-widest group-hover:text-primary truncate">Past Papers Archive</span>
+                <span class="text-[9px] text-outline truncate">by pastpapernwu & tebellomoloi69 & tazzmantaylor06</span>
+              </div>
+              <span class="click-count flex-shrink-0" id="count-drive-2">0</span>
+            </a>
+
+            <!-- Drive link 3: 2de Jaar -->
+            <a href="https://drive.google.com/drive/folders/1ZU9XpkbCM4lxtQNJnXo1wdb2qbJcJsxB?usp=drive_link"
+               target="_blank"
+               onclick="incrementCount('drive-3')"
+               class="flex items-center gap-3 p-3 bg-surface-container-lowest bevel-in hover:bg-surface-bright transition-all cursor-pointer group">
+              <span class="material-symbols-outlined text-tertiary text-sm flex-shrink-0">cloud_download</span>
+              <div class="flex flex-col min-w-0 flex-1">
+                <span class="font-headline text-[10px] font-black uppercase tracking-widest group-hover:text-primary truncate">2de Jaar Drive</span>
+                <span class="text-[9px] text-outline truncate">by janenel2003</span>
+              </div>
+              <span class="click-count flex-shrink-0" id="count-drive-3">0</span>
+            </a>
+
+          </div>
+        </section>
+
+        <!-- ======================================================
+             PANEL: MODULE CALENDARS
+             7 modules — calendar links are placeholders (#) for now.
+             Google Calendar and ICS links will be filled in once
+             per-module calendars are created via the Apps Script.
+             ====================================================== -->
+        <section class="bg-surface-container-low bevel-out overflow-hidden">
+          <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+            <span class="material-symbols-outlined text-on-primary text-sm">calendar_month</span>
+            <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">Module Calendars</h2>
+          </div>
+
+          <div class="p-4 flex flex-col gap-3">
+
+            <!-- Calendar entry template.
+                 Replace href="#" with real Google Calendar and ICS links per module.
+                 7 modules: CMPG115, MTHS111, NPHY111, NCHE111, INGM111, PPEP171, ALDE112 -->
+
+            <!-- CMPG115 -->
+            <div class="p-3 bg-surface-container-lowest bevel-in flex flex-col gap-2">
+              <span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">CMPG115</span>
+              <div class="flex gap-3">
+                <a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[11px]">event</span> Google Calendar
+                </a>
+                <a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[11px]">download</span> .ICS
+                </a>
+              </div>
+            </div>
+
+            <!-- MTHS111 -->
+            <div class="p-3 bg-surface-container-lowest bevel-in flex flex-col gap-2">
+              <span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">MTHS111</span>
+              <div class="flex gap-3">
+                <a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[11px]">event</span> Google Calendar
+                </a>
+                <a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[11px]">download</span> .ICS
+                </a>
+              </div>
+            </div>
+
+            <!-- NPHY111 (covers both theory and practical) -->
+            <div class="p-3 bg-surface-container-lowest bevel-in flex flex-col gap-2">
+              <span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">NPHY111</span>
+              <div class="flex gap-3">
+                <a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[11px]">event</span> Google Calendar
+                </a>
+                <a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[11px]">download</span> .ICS
+                </a>
+              </div>
+            </div>
+
+            <!-- NCHE111 -->
+            <div class="p-3 bg-surface-container-lowest bevel-in flex flex-col gap-2">
+              <span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">NCHE111</span>
+              <div class="flex gap-3">
+                <a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[11px]">event</span> Google Calendar
+                </a>
+                <a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[11px]">download</span> .ICS
+                </a>
+              </div>
+            </div>
+
+            <!-- INGM111 -->
+            <div class="p-3 bg-surface-container-lowest bevel-in flex flex-col gap-2">
+              <span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">INGM111</span>
+              <div class="flex gap-3">
+                <a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[11px]">event</span> Google Calendar
+                </a>
+                <a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[11px]">download</span> .ICS
+                </a>
+              </div>
+            </div>
+
+            <!-- PPEP171 -->
+            <div class="p-3 bg-surface-container-lowest bevel-in flex flex-col gap-2">
+              <span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">PPEP171</span>
+              <div class="flex gap-3">
+                <a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[11px]">event</span> Google Calendar
+                </a>
+                <a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[11px]">download</span> .ICS
+                </a>
+              </div>
+            </div>
+
+            <!-- ALDE112 -->
+            <div class="p-3 bg-surface-container-lowest bevel-in flex flex-col gap-2">
+              <span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">ALDE112</span>
+              <div class="flex gap-3">
+                <a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[11px]">event</span> Google Calendar
+                </a>
+                <a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[11px]">download</span> .ICS
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ======================================================
+             PANEL: USERSCRIPT HUB
+             Moved lower — less urgent than WhatsApp, Drive, Calendars.
+             Tampermonkey install prompt shown first.
+             ====================================================== -->
+        <section class="bg-surface-container-low bevel-out overflow-hidden">
+          <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+            <span class="material-symbols-outlined text-on-primary text-sm">code</span>
+            <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">Userscripts</h2>
+          </div>
+
+          <div class="p-4 space-y-4">
+
+            <!-- Step 0: Install Tampermonkey first -->
+            <div class="p-3 bg-surface-container-lowest bevel-in border-l-4 border-tertiary">
+              <p class="text-[11px] font-bold text-tertiary uppercase tracking-wide mb-1">Step 1 — Install Tampermonkey</p>
+              <p class="text-[11px] text-on-surface/70 leading-relaxed mb-2">
+                Before installing any script below, you need the Tampermonkey browser extension. It is free and available for Chrome, Firefox, and Edge.
+              </p>
+              <a href="https://www.tampermonkey.net/" target="_blank"
+                 class="inline-flex items-center gap-1 bg-tertiary text-on-tertiary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">
+                <span class="material-symbols-outlined text-[11px]">download</span>
+                Get Tampermonkey
+              </a>
+            </div>
+
+            <!-- Script 1: Gradebook Stats (real, working) -->
+            <div class="p-3 bg-surface-container-lowest bevel-in border-l-4 border-primary">
+              <h3 class="font-headline text-[11px] font-black uppercase text-on-surface mb-1">
+                eFundi Gradebook Better Grade Statistics v3.7.1
+              </h3>
+              <p class="text-[10px] text-on-surface/60 leading-relaxed mb-2">
+                Fixes the grade distribution display on the NWU eFundi gradebook page. Shows accurate statistics instead of the default broken view.
+              </p>
+              <a href="https://update.greasyfork.org/scripts/569148/NWU%20eFundi%20Gradebook%20Better%20Grade%20Statistics%20v371.user.js"
+                 target="_blank"
+                 class="inline-flex items-center gap-1 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110">
+                <span class="material-symbols-outlined text-[11px]">download</span>
+                Install Script
+              </a>
+            </div>
+
+            <!-- Script 2: Announcement Scraper (coming soon) -->
+            <div class="p-3 bg-surface-container-lowest bevel-in border-l-4 border-outline-variant opacity-60">
+              <h3 class="font-headline text-[11px] font-black uppercase text-on-surface mb-1">
+                eFundi Announcement Scraper
+              </h3>
+              <p class="text-[10px] text-on-surface/60 leading-relaxed mb-2">
+                Automatically collects eFundi announcements and pushes them to a shared Google Sheet powering the Schedule AI.
+              </p>
+              <span class="badge-soon">Coming Soon</span>
+            </div>
+
+          </div>
+        </section>
+
+      </div><!-- end column 2 / sidebar -->
+    </div><!-- end grid -->
+  </main>
+
+  <!-- ============================================================
+       FOOTER — version info and links
+       ============================================================ -->
+  <footer class="bg-[#1C1B1B] text-on-surface/50 font-headline text-[10px] uppercase tracking-widest w-full px-6 py-6 border-t border-[#353534] flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <span class="font-bold text-on-surface/40">eFundiHax — NWU Student Hub</span>
+      <span class="opacity-60">v2.0</span>
+    </div>
+    <div class="flex items-center gap-6">
+      <!-- Placeholder footer links — add real pages later -->
+      <a class="hover:text-primary transition-colors cursor-pointer" href="#">About</a>
+      <a class="hover:text-primary transition-colors cursor-pointer" href="#">Privacy</a>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT — session-only click counters.
+       These reset on page reload. Wire up to a real backend
+       (Vercel API endpoint + Google Sheet) in a future update
+       to persist counts across sessions and enable sorting by popularity.
+       ============================================================ -->
+  <script>
+    // In-memory click count storage — resets on page reload
+    // Keys: 'wa-1' through 'wa-7' for WhatsApp, 'drive-1' through 'drive-3' for Drive
+    const clickCounts = {};
+
+    /**
+     * Increments the click count for a given link ID and updates the display.
+     * Called via onclick on each link element.
+     * @param {string} id - The link identifier (e.g. 'wa-1', 'drive-2')
+     */
+    function incrementCount(id) {
+      clickCounts[id] = (clickCounts[id] || 0) + 1;
+      const el = document.getElementById('count-' + id);
+      if (el) {
+        // WhatsApp counters show "N clicks", Drive counters show just the number
+        el.textContent = id.startsWith('wa-')
+          ? clickCounts[id] + ' click' + (clickCounts[id] === 1 ? '' : 's')
+          : clickCounts[id];
+      }
+    }
+
+    // Placeholder: page view counter
+    // Replace this with a real analytics call (e.g. to your Vercel API)
+    // when the backend is connected
+    document.getElementById('view-counter').textContent = '— views';
+  </script>
+
+</body>
+</html>
