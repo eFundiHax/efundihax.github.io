@@ -1,0 +1,1 @@
+This is where (approved) user submited content will be put. Inside of this folder will be a folder for each worksite as well as a miscealaneous folder for documents to be sorted into. no loose files should be present here.
