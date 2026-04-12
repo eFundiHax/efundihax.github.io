@@ -1,0 +1,23 @@
+# Calendar — Overview
+_Last updated: 2026-04-12T10:18:19.578Z_
+
+## Class Test 1
+**Date:** 2026-02-24 | **Type:** Formative Assessment
+
+NPHY 111 Class Test 1 Time: 18h00 - 19h00 Venue: J6 - Weet en Sweet
+
+---
+
+## Class Test 2
+**Date:** 2026-03-17 | **Type:** Formative Assessment
+
+NPHY 111 Class Test 2 Time: 18h00 - 19h00 Venue: J6 Weet en Sweet
+
+---
+
+## Class Test 3
+**Date:** 2026-05-12 | **Type:** Formative Assessment
+
+NPHY 111 Class Test 3 Time: 18h00 - 19h00 Venue: J6 Weet en Sweet
+
+---
