@@ -1,5 +1,5 @@
 # Resources — NPHY111-2026
-_Last updated: 2026-04-12T17:07:06.729Z_
+_Last updated: 2026-04-12T17:20:22.506Z_
 
 - [notebook-links.html](https://efundi.nwu.ac.za/access/content/group/108fb8cf-68ef-4b0c-bba8-feba7454f3be/notebook-links.html)
 - [NPHY111-2026-appendix.pdf](https://efundi.nwu.ac.za/access/content/group/108fb8cf-68ef-4b0c-bba8-feba7454f3be/NPHY111-2026-appendix.pdf)
