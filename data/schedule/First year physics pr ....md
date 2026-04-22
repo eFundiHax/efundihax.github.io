@@ -1,5 +1,5 @@
 # Calendar — First year physics pr ...
-_Last updated: 2026-04-22T10:06:45.397Z_
+_Last updated: 2026-04-22T10:06:55.897Z_
 
 ## Due: MEE 1*
 **Date:** 2026-04-17 | **Type:** Deadline
