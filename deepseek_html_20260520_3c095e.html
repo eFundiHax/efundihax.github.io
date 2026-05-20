@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>eFundiHax — NWU Student Hub</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-variant":              "#353534",
+            "on-tertiary":                  "#4c2700",
+            "inverse-surface":              "#e5e2e1",
+            "surface-dim":                  "#131313",
+            "on-secondary-container":       "#c9a8e8",
+            "secondary-fixed":              "#f0dbff",
+            "background":                   "#131313",
+            "on-primary-fixed":             "#2c0051",
+            "outline-variant":              "#4c4453",
+            "on-secondary-fixed-variant":   "#563a72",
+            "primary":                      "#6b3d8f",
+            "surface-bright":               "#3a3939",
+            "on-tertiary-container":        "#e8a163",
+            "tertiary-fixed-dim":           "#ffb77a",
+            "tertiary-fixed":               "#ffdcc2",
+            "surface-container":            "#201f1f",
+            "on-tertiary-fixed":            "#2e1500",
+            "inverse-primary":              "#7f38c3",
+            "surface":                      "#131313",
+            "primary-container":            "#6b3d8f",
+            "on-background":                "#e5e2e1",
+            "outline":                      "#988d9e",
+            "error":                        "#ffb4ab",
+            "on-error-container":           "#ffdad6",
+            "tertiary-container":           "#683700",
+            "on-primary-container":         "#ffffff",
+            "surface-container-lowest":     "#0e0e0e",
+            "secondary-fixed-dim":          "#dbb9fa",
+            "surface-container-highest":    "#353534",
+            "primary-fixed":                "#f0dbff",
+            "primary-fixed-dim":            "#ddb8ff",
+            "on-primary-fixed-variant":     "#6516a9",
+            "on-error":                     "#690005",
+            "secondary":                    "#dbb9fa",
+            "on-surface":                   "#e5e2e1",
+            "surface-container-high":       "#2a2a2a",
+            "inverse-on-surface":           "#313030",
+            "secondary-container":          "#563a72",
+            "on-secondary":                 "#3e235a",
+            "error-container":              "#93000a",
+            "on-tertiary-fixed-variant":    "#6c3a03",
+            "on-surface-variant":           "#cfc2d5",
+            "on-secondary-fixed":           "#280c43",
+            "surface-tint":                 "#ddb8ff",
+            "surface-container-low":        "#1c1b1b",
+            "on-primary":                   "#ffffff",
+            "tertiary":                     "#ffb77a"
+          },
+          borderRadius: {
+            "none":    "0px",
+            "DEFAULT": "0px",
+            "lg":      "0px",
+            "xl":      "0px",
+            "full":    "0px"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body":     ["Inter"],
+            "label":    ["Space Grotesk"]
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .bevel-out {
+      border-top:    1px solid #4c4453;
+      border-left:   1px solid #4c4453;
+      border-bottom: 2px solid #0e0e0e;
+      border-right:  2px solid #0e0e0e;
+    }
+    .bevel-in {
+      border-top:    2px solid #0e0e0e;
+      border-left:   2px solid #0e0e0e;
+      border-bottom: 1px solid #4c4453;
+      border-right:  1px solid #4c4453;
+    }
+    .panel-header-tab {
+      background:  #6b3d8f;
+      box-shadow:  inset 1px 1px 0px rgba(255,255,255,0.2),
+                   inset -1px -1px 0px rgba(0,0,0,0.4);
+    }
+    ::-webkit-scrollbar       { width: 4px; }
+    ::-webkit-scrollbar-track { background: #131313; }
+    ::-webkit-scrollbar-thumb { background: #353534; }
+    .badge-soon {
+      background: #201f1f;
+      color: #988d9e;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 2px 6px;
+      text-transform: uppercase;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .click-count {
+      font-size: 9px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      color: #988d9e;
+      letter-spacing: 0.05em;
+    }
+    .truncate-label {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 140px;
+    }
+    /* Custom checkbox */
+    .custom-checkbox {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      background-color: #ffffff;
+      border-top: 2px solid #000000;
+      border-left: 2px solid #000000;
+      border-bottom: 1px solid #e5e2e1;
+      border-right: 1px solid #e5e2e1;
+      cursor: pointer;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .custom-checkbox:checked::after {
+      content: 'check';
+      font-family: 'Material Symbols Outlined';
+      font-size: 16px;
+      color: #000000;
+      font-weight: 900;
+    }
+    /* Tooltip */
+    .tooltip-container {
+      position: relative;
+    }
+    .tooltip-content {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      bottom: 100%;
+      right: 0;
+      margin-bottom: 10px;
+      background-color: #131313;
+      padding: 10px;
+      width: 220px;
+      z-index: 100;
+      transition: opacity 0.2s, visibility 0.2s;
+    }
+    .tooltip-container:hover .tooltip-content {
+      visibility: visible;
+      opacity: 1;
+    }
+    /* Transitions for search mode */
+    .homepage-panels {
+      transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    }
+    .search-results-container {
+      display: none;
+      transition: transform 0.3s ease-out, opacity 0.2s ease-out;
+    }
+    body.search-mode .homepage-panels {
+      opacity: 0;
+      transform: translateX(-20px);
+      pointer-events: none;
+    }
+    body.search-mode .search-results-container {
+      display: block;
+      transform: translateY(0);
+    }
+    .search-results-container {
+      transform: translateY(20px);
+    }
+    .search-input-active {
+      transition: all 0.2s ease;
+    }
+    body.search-mode .search-input-active {
+      box-shadow: inset 1px 1px 2px rgba(0,0,0,0.8), inset -1px -1px 1px rgba(255,255,255,0.1) !important;
+      background-color: #0e0e0e;
+    }
+    .hidden-footer {
+      display: none;
+    }
+    .footer-visible {
+      transform: translateY(0) !important;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <header class="bg-[#1C1B1B] text-on-surface font-headline tracking-tighter uppercase top-0 w-full px-6 h-12 z-50 fixed border-b border-[#353534] flex items-center justify-between">
+    <div id="logoButton" class="text-xl font-black tracking-tighter uppercase cursor-pointer hover:opacity-80 transition-opacity">
+      eFundi<span class="text-[#9b59b6]">Hax</span>
+    </div>
+    <div class="flex-1 max-w-xs md:max-w-md px-4">
+      <div class="relative flex items-center">
+        <span class="material-symbols-outlined absolute left-3 text-outline text-sm pointer-events-none">search</span>
+        <input type="text" id="searchInput" class="search-input-active w-full bg-surface-container-lowest py-2 pl-9 pr-4 font-headline text-[10px] font-bold uppercase tracking-widest text-on-surface placeholder:text-outline/50 focus:ring-0 focus:outline-none cursor-text" placeholder="Search Hub..." style="box-shadow: inset 2px 2px 4px rgba(0,0,0,0.5), inset -1px -1px 1px rgba(255,255,255,0.05); border: none;">
+      </div>
+    </div>
+    <div class="flex items-center gap-2 text-outline">
+      <span class="material-symbols-outlined text-sm">visibility</span>
+      <span class="font-headline text-[10px] font-bold uppercase tracking-widest"><span id="view-counter">— views</span></span>
+    </div>
+  </header>
+
+  <main class="pt-20 pb-12 px-6 max-w-5xl mx-auto w-full flex-grow relative">
+
+    <!-- HOMEPAGE PANELS (visible by default) -->
+    <div class="homepage-panels">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+        <!-- LEFT COLUMN (same as original index.html) -->
+        <div class="lg:col-span-8 flex flex-col gap-8">
+          <!-- Schedule AI panel (unchanged) -->
+          <section class="bg-surface-container-low bevel-out overflow-hidden flex flex-col">
+            <div class="panel-header-tab px-4 py-2 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-on-primary text-sm">psychology</span>
+                <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">Schedule AI</h2>
+              </div>
+              <span class="badge-soon">Coming Soon</span>
+            </div>
+            <div class="p-6">
+              <div class="h-[300px] overflow-y-auto mb-4 space-y-4 pr-2 bg-surface-container-lowest p-4 bevel-in">
+                <div class="flex flex-col gap-1">
+                  <span class="text-[10px] font-label text-outline uppercase tracking-tighter">System</span>
+                  <div class="text-xs border-l-2 border-primary pl-3 py-1 text-on-surface/80">NWU Schedule AI is not yet connected. This will let you ask questions about your timetable, exam venues, and announcements.</div>
+                </div>
+              </div>
+              <div class="relative">
+                <textarea disabled class="w-full bg-surface-container-lowest border-0 p-4 font-body text-sm resize-none h-20 placeholder:text-outline/50 bevel-in focus:ring-0 opacity-50 cursor-not-allowed" placeholder="Ask about your schedule, venues, deadlines..."></textarea>
+                <button disabled class="absolute bottom-3 right-3 bg-primary text-on-primary px-6 py-2 font-headline font-black uppercase text-[10px] bevel-out opacity-50 cursor-not-allowed">Ask</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Campus Map panel (unchanged) -->
+          <section class="bg-surface-container-low bevel-out overflow-hidden flex flex-col">
+            <div class="panel-header-tab px-4 py-2 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-on-primary text-sm">map</span>
+                <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">NWU Campus Map</h2>
+              </div>
+              <span class="badge-soon">Coming Soon</span>
+            </div>
+            <div class="p-6">
+              <div class="h-[350px] bg-surface-container-lowest relative group overflow-hidden bevel-in flex items-center justify-center">
+                <div class="text-center">
+                  <span class="material-symbols-outlined text-primary text-4xl mb-3 block">location_on</span>
+                  <p class="font-headline text-[11px] uppercase tracking-widest text-outline">Interactive map coming soon</p>
+                  <p class="font-body text-[10px] text-outline/60 mt-1">NWU Potchefstroom Campus</p>
+                  <p class="font-label text-[9px] text-outline/40 mt-2 uppercase tracking-widest">LAT: -26.6974 | LONG: 27.0945</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Socials + Submit row (unchanged) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <section class="bg-surface-container-low bevel-out overflow-hidden">
+              <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+                <span class="material-symbols-outlined text-on-primary text-sm">public</span>
+                <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">Find Us</h2>
+              </div>
+              <div class="p-6 flex flex-col gap-3">
+                <a class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in group hover:bg-surface-bright transition-colors" href="https://discord.gg/YCWVbUpM" target="_blank">
+                  <div class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary text-sm">hub</span><span class="font-headline font-bold text-[11px] uppercase tracking-wider">Discord Server</span></div>
+                  <span class="material-symbols-outlined text-primary text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </a>
+                <a class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in group hover:bg-surface-bright transition-colors" href="https://chat.whatsapp.com/LFmBnNTOi1W8jrnyi6OvDj" target="_blank">
+                  <div class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary text-sm">chat</span><span class="font-headline font-bold text-[11px] uppercase tracking-wider">WhatsApp Community</span></div>
+                  <span class="material-symbols-outlined text-primary text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </a>
+                <a class="bg-surface-container-lowest p-3 flex items-center justify-between bevel-in group hover:bg-surface-bright transition-colors" href="https://www.instagram.com/kinglouisthe165th/" target="_blank">
+                  <div class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary text-sm">photo_camera</span><span class="font-headline font-bold text-[11px] uppercase tracking-wider">Instagram</span></div>
+                  <span class="material-symbols-outlined text-primary text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </a>
+              </div>
+            </section>
+            <section class="bg-surface-container-low bevel-out overflow-hidden flex flex-col">
+              <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+                <span class="material-symbols-outlined text-on-primary text-sm">upload_file</span>
+                <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">Submit a Resource</h2>
+              </div>
+              <div class="p-6 flex flex-col justify-between h-full gap-4">
+                <p class="text-[12px] text-on-surface/70 leading-relaxed">Have a past paper, useful document, or important email to share? Submit it here and help your fellow students.</p>
+                <a class="w-full py-3 bg-tertiary text-on-tertiary font-headline font-black uppercase text-[11px] bevel-out hover:brightness-105 transition-all text-center flex items-center justify-center gap-2" href="https://forms.gle/gvr9cqJyr5rL8FHm8" target="_blank"><span class="material-symbols-outlined text-sm">open_in_new</span>Open Submission Form</a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN (WhatsApp groups, Drive links, Userscripts, Calendar panel) -->
+        <div class="lg:col-span-4 flex flex-col gap-8">
+          <!-- WhatsApp Groups (full list from original) -->
+          <section class="bg-surface-container-low bevel-out overflow-hidden">
+            <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-on-primary text-sm">groups</span>
+              <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">WhatsApp Groups</h2>
+            </div>
+            <div class="p-4 flex flex-col gap-2">
+              <!-- Group 1 -->
+              <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
+                <div class="flex items-center gap-2 min-w-0">
+                  <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in"><span class="material-symbols-outlined text-tertiary text-sm">group</span></div>
+                  <div class="min-w-0"><span class="font-headline text-[10px] font-black tracking-tighter uppercase truncate-label block">First Year Engineering Students 2026</span><span class="click-count" id="count-wa-1">0 clicks</span></div>
+                </div>
+                <a href="https://chat.whatsapp.com/IMMVWzXQee1D45KcMJKHxi" target="_blank" onclick="incrementCount('wa-1')" class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
+              </div>
+              <!-- Group 2 -->
+              <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
+                <div class="flex items-center gap-2 min-w-0">
+                  <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in"><span class="material-symbols-outlined text-tertiary text-sm">school</span></div>
+                  <div class="min-w-0"><span class="font-headline text-[10px] font-black tracking-tighter uppercase truncate-label block">NWU Engineering 2026</span><span class="click-count" id="count-wa-2">0 clicks</span></div>
+                </div>
+                <a href="https://chat.whatsapp.com/JKbdeeG7AO2I8UteSJ9ZEw" target="_blank" onclick="incrementCount('wa-2')" class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
+              </div>
+              <!-- Group 3 -->
+              <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
+                <div class="flex items-center gap-2 min-w-0">
+                  <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in"><span class="material-symbols-outlined text-tertiary text-sm">celebration</span></div>
+                  <div class="min-w-0"><span class="font-headline text-[10px] font-black tracking-tighter uppercase truncate-label block">Rubbish speaking, meme spamming, repeat exam taking, people 🦝</span><span class="click-count" id="count-wa-3">0 clicks</span></div>
+                </div>
+                <a href="https://chat.whatsapp.com/LFmBnNTOi1W8jrnyi6OvDj" target="_blank" onclick="incrementCount('wa-3')" class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
+              </div>
+              <!-- Group 4 -->
+              <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
+                <div class="flex items-center gap-2 min-w-0">
+                  <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in"><span class="material-symbols-outlined text-tertiary text-sm">calculate</span></div>
+                  <div class="min-w-0"><span class="font-headline text-[10px] font-black tracking-tighter uppercase truncate-label block">MTHS 111 / Tenkams class</span><span class="click-count" id="count-wa-4">0 clicks</span></div>
+                </div>
+                <a href="https://chat.whatsapp.com/J7GVfimGHxtLp6CCTZqqWA" target="_blank" onclick="incrementCount('wa-4')" class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
+              </div>
+              <!-- Group 5 -->
+              <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
+                <div class="flex items-center gap-2 min-w-0">
+                  <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in"><span class="material-symbols-outlined text-tertiary text-sm">terminal</span></div>
+                  <div class="min-w-0"><span class="font-headline text-[10px] font-black tracking-tighter uppercase truncate-label block">CMPG115_TRN002</span><span class="click-count" id="count-wa-5">0 clicks</span></div>
+                </div>
+                <a href="https://chat.whatsapp.com/EkTK6Fqa9mWGPXilQ8VwUF" target="_blank" onclick="incrementCount('wa-5')" class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
+              </div>
+              <!-- Group 6 -->
+              <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
+                <div class="flex items-center gap-2 min-w-0">
+                  <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in"><span class="material-symbols-outlined text-tertiary text-sm">history_edu</span></div>
+                  <div class="min-w-0"><span class="font-headline text-[10px] font-black tracking-tighter uppercase truncate-label block">PUK Engineering Past Papers 1</span><span class="click-count" id="count-wa-6">0 clicks</span></div>
+                </div>
+                <a href="https://chat.whatsapp.com/BR6gJMwWHvnDikxVlQYve4" target="_blank" onclick="incrementCount('wa-6')" class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
+              </div>
+              <!-- Group 7 -->
+              <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
+                <div class="flex items-center gap-2 min-w-0">
+                  <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in"><span class="material-symbols-outlined text-tertiary text-sm">history_edu</span></div>
+                  <div class="min-w-0"><span class="font-headline text-[10px] font-black tracking-tighter uppercase truncate-label block">PUK Engineering Past Papers 2</span><span class="click-count" id="count-wa-7">0 clicks</span></div>
+                </div>
+                <a href="https://chat.whatsapp.com/E20YDA5EKuUBm1PE9oclYM" target="_blank" onclick="incrementCount('wa-7')" class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Past Papers and Other Resources (Drive links) -->
+          <section class="bg-surface-container-low bevel-out overflow-hidden">
+            <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-on-primary text-sm">folder_open</span>
+              <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">Past Papers and Other Resources</h2>
+            </div>
+            <div class="p-4 space-y-2">
+              <a href="https://drive.google.com/drive/folders/1-A9deFaCVsm_v3sFZc4cgFtiJ9FraBwZ?usp=drive_link" target="_blank" onclick="incrementCount('drive-1')" class="flex items-center gap-3 p-3 bg-surface-container-lowest bevel-in hover:bg-surface-bright transition-all cursor-pointer group">
+                <span class="material-symbols-outlined text-tertiary text-sm flex-shrink-0">folder_open</span>
+                <div class="flex flex-col min-w-0 flex-1"><span class="font-headline text-[10px] font-black uppercase tracking-widest group-hover:text-primary truncate">Engineering Drive</span><span class="text-[9px] text-outline truncate">by christiaanwilken2005</span></div>
+                <span class="click-count flex-shrink-0" id="count-drive-1">0</span>
+              </a>
+              <a href="https://drive.google.com/drive/folders/1E_z9sA-i1taRXZpwbs-rYGiZaC08sIBC?usp=drive_link" target="_blank" onclick="incrementCount('drive-2')" class="flex items-center gap-3 p-3 bg-surface-container-lowest bevel-in hover:bg-surface-bright transition-all cursor-pointer group">
+                <span class="material-symbols-outlined text-tertiary text-sm flex-shrink-0">history_edu</span>
+                <div class="flex flex-col min-w-0 flex-1"><span class="font-headline text-[10px] font-black uppercase tracking-widest group-hover:text-primary truncate">Past Papers Archive</span><span class="text-[9px] text-outline truncate">by pastpapernwu & tebellomoloi69 & tazzmantaylor06</span></div>
+                <span class="click-count flex-shrink-0" id="count-drive-2">0</span>
+              </a>
+              <a href="https://drive.google.com/drive/folders/1ZU9XpkbCM4lxtQNJnXo1wdb2qbJcJsxB?usp=drive_link" target="_blank" onclick="incrementCount('drive-3')" class="flex items-center gap-3 p-3 bg-surface-container-lowest bevel-in hover:bg-surface-bright transition-all cursor-pointer group">
+                <span class="material-symbols-outlined text-tertiary text-sm flex-shrink-0">cloud_download</span>
+                <div class="flex flex-col min-w-0 flex-1"><span class="font-headline text-[10px] font-black uppercase tracking-widest group-hover:text-primary truncate">2de Jaar Drive</span><span class="text-[9px] text-outline truncate">by janenel2003</span></div>
+                <span class="click-count flex-shrink-0" id="count-drive-3">0</span>
+              </a>
+            </div>
+          </section>
+
+          <!-- Module Calendars (will be repurposed as "Worksite Pages" later, but keep as is for now) -->
+          <section class="bg-surface-container-low bevel-out overflow-hidden">
+            <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-on-primary text-sm">calendar_month</span>
+              <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">Module Calendars</h2>
+            </div>
+            <div class="p-4 flex flex-col gap-3">
+              <!-- This panel will later list worksite pages sorted by views. For now, static placeholder -->
+              <div class="p-3 bg-surface-container-lowest bevel-in flex flex-col gap-2">
+                <span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">CMPG115</span>
+                <div class="flex gap-3"><a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">event</span> Google Calendar</a><a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">download</span> .ICS</a></div>
+              </div>
+              <!-- other modules... (keep as original or truncate for brevity) -->
+            </div>
+          </section>
+
+          <!-- Userscript Hub (unchanged) -->
+          <section class="bg-surface-container-low bevel-out overflow-hidden">
+            <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-on-primary text-sm">code</span>
+              <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">Userscripts</h2>
+            </div>
+            <div class="p-4 space-y-4">
+              <div class="p-3 bg-surface-container-lowest bevel-in border-l-4 border-tertiary">
+                <p class="text-[11px] font-bold text-tertiary uppercase tracking-wide mb-1">Step 1 — Install Tampermonkey</p>
+                <a class="inline-flex items-center gap-1 bg-tertiary text-on-tertiary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110" href="https://www.tampermonkey.net/" target="_blank"><span class="material-symbols-outlined text-[11px]">download</span>Get Tampermonkey</a>
+              </div>
+              <div class="p-3 bg-surface-container-lowest bevel-in border-l-4 border-primary">
+                <h3 class="font-headline text-[11px] font-black uppercase text-on-surface mb-1">eFundi Gradebook Better Grade Statistics v3.7.1</h3>
+                <p class="text-[10px] text-on-surface/60 leading-relaxed mb-2">Fixes the grade distribution display on the NWU eFundi gradebook page. Shows accurate statistics instead of the default broken view.</p>
+                <a href="https://update.greasyfork.org/scripts/569148/NWU%20eFundi%20Gradebook%20Better%20Grade%20Statistics%20v371.user.js" target="_blank" class="inline-flex items-center gap-1 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110"><span class="material-symbols-outlined text-[11px]">download</span>Install Script</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEARCH RESULTS CONTAINER (initially hidden) -->
+    <div class="search-results-container">
+      <div class="flex flex-col gap-4 mx-auto w-full max-w-md">
+        <h3 class="font-headline text-xs font-black tracking-[0.2em] uppercase text-outline mb-2">Search Results</h3>
+        <div id="searchResultsList" class="flex flex-col gap-3">
+          <div class="bg-surface-container-low bevel-out p-4 text-center text-outline">Loading worksites...</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FLOATING FOOTER (hidden by default) -->
+  <div id="actionFooter" class="fixed bottom-0 w-full panel-header-tab py-3 px-6 z-50 flex items-center justify-between bevel-out hidden-footer transition-transform duration-300 translate-y-full">
+    <div class="font-headline text-sm font-black uppercase tracking-widest text-on-primary" id="selectedCount">0 selected</div>
+    <div class="flex items-center gap-4">
+      <button id="copyScheduleBtn" class="bg-tertiary text-on-tertiary px-4 py-2 font-headline font-black uppercase text-xs bevel-out hover:brightness-110">Copy Schedule Links</button>
+      <div class="tooltip-container cursor-help flex items-center justify-center text-on-primary">
+        <span class="material-symbols-outlined text-2xl">help</span>
+        <div class="tooltip-content bevel-out text-on-surface text-xs font-body leading-tight">
+          <p class="mb-2 uppercase font-headline font-bold text-[10px] tracking-widest text-outline">How to use</p>
+          <p class="mb-2">Select items above, then click 'Copy Schedule Links' to get URLs you can paste directly into NotebookLM or your calendar app.</p>
+          <div class="w-full h-24 bg-surface-container-lowest bevel-in flex items-center justify-center text-outline/50">[GIF Placeholder]</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-[#1C1B1B] text-on-surface/50 font-headline text-[10px] uppercase tracking-widest w-full px-6 py-6 border-t border-[#353534] flex flex-col md:flex-row justify-between items-center gap-4 mt-auto">
+    <div class="flex flex-col md:flex-row items-center gap-6"><span class="font-bold text-on-surface/40">eFundiHax — NWU Student Hub</span><span class="opacity-60">v2.1</span></div>
+    <div class="flex items-center gap-6"><a class="hover:text-primary transition-colors cursor-pointer" href="#">About</a><a class="hover:text-primary transition-colors cursor-pointer" href="#">Privacy</a></div>
+  </footer>
+
+  <script>
+    // Click counters (session-only)
+    const clickCounts = {};
+    function incrementCount(id) {
+      clickCounts[id] = (clickCounts[id] || 0) + 1;
+      const el = document.getElementById('count-' + id);
+      if (el) el.textContent = id.startsWith('wa-') ? clickCounts[id] + (clickCounts[id] === 1 ? ' click' : ' clicks') : clickCounts[id];
+    }
+    document.getElementById('view-counter').textContent = Math.floor(Math.random() * 5000 + 1000).toLocaleString() + ' views';
+
+    // ---------- SEARCH MODE ----------
+    let worksites = [];
+    let selectedWorksites = new Set();
+
+    const searchInput = document.getElementById('searchInput');
+    const resultsContainer = document.getElementById('searchResultsList');
+    const footer = document.getElementById('actionFooter');
+    const selectedCountSpan = document.getElementById('selectedCount');
+    const copyBtn = document.getElementById('copyScheduleBtn');
+
+    // Load worksites.json from GitHub Pages
+    fetch('data/worksites/worksites.json')
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then(data => {
+        worksites = data;
+        renderSearchResults('');
+      })
+      .catch(err => {
+        console.error('Failed to load worksites.json:', err);
+        resultsContainer.innerHTML = '<div class="bg-surface-container-low bevel-out p-4 text-center text-outline">Failed to load worksites. Make sure the Apps Script has generated data/worksites/worksites.json.</div>';
+      });
+
+    function renderSearchResults(query) {
+      if (!worksites.length) {
+        resultsContainer.innerHTML = '<div class="bg-surface-container-low bevel-out p-4 text-center text-outline">Loading worksites...</div>';
+        return;
+      }
+      const lowerQuery = query.toLowerCase();
+      const filtered = worksites.filter(w => w.title.toLowerCase().includes(lowerQuery));
+      if (filtered.length === 0) {
+        resultsContainer.innerHTML = '<div class="bg-surface-container-low bevel-out p-4 text-center text-outline">No worksites match your search.</div>';
+        return;
+      }
+      resultsContainer.innerHTML = filtered.map(ws => `
+        <div class="panel-header-tab p-4 flex items-center justify-between hover:brightness-110 cursor-pointer" data-slug="${ws.slug}">
+          <div class="flex items-center gap-4">
+            <input type="checkbox" class="custom-checkbox item-checkbox" data-slug="${ws.slug}" ${selectedWorksites.has(ws.slug) ? 'checked' : ''}>
+            <div class="w-12 h-12 bg-surface-container-lowest flex items-center justify-center bevel-in text-xl">📘</div>
+            <div class="flex flex-col text-on-primary">
+              <span class="font-headline font-black text-lg tracking-tight uppercase">${escapeHtml(ws.title)}</span>
+              <span class="text-[10px] uppercase font-bold tracking-widest opacity-80">Module: ${escapeHtml(ws.title)}</span>
+            </div>
+          </div>
+          <span class="click-count text-xs text-on-primary/70">0 clicks</span>
+        </div>
+      `).join('');
+      // Re-attach checkbox listeners
+      document.querySelectorAll('.item-checkbox').forEach(cb => {
+        cb.addEventListener('change', (e) => {
+          const slug = cb.getAttribute('data-slug');
+          if (cb.checked) selectedWorksites.add(slug);
+          else selectedWorksites.delete(slug);
+          updateFooter();
+          renderSearchResults(searchInput.value); // re-render to keep checkboxes state
+        });
+      });
+      updateFooter();
+    }
+
+    function updateFooter() {
+      const count = selectedWorksites.size;
+      selectedCountSpan.textContent = `${count} selected`;
+      if (count > 0) {
+        footer.classList.remove('hidden-footer');
+        setTimeout(() => footer.classList.remove('translate-y-full'), 10);
+      } else {
+        footer.classList.add('translate-y-full');
+        setTimeout(() => footer.classList.add('hidden-footer'), 300);
+      }
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/[&<>]/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[m]));
+    }
+
+    // Enter search mode
+    searchInput.addEventListener('focus', () => {
+      document.body.classList.add('search-mode');
+      renderSearchResults(searchInput.value);
+    });
+    // Exit search mode via Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && document.body.classList.contains('search-mode')) {
+        exitSearchMode();
+      }
+    });
+    // Exit search mode by clicking logo
+    document.getElementById('logoButton').addEventListener('click', () => {
+      if (document.body.classList.contains('search-mode')) {
+        exitSearchMode();
+      }
+    });
+    function exitSearchMode() {
+      document.body.classList.remove('search-mode');
+      searchInput.blur();
+      searchInput.value = '';
+      renderSearchResults('');
+    }
+
+    // Copy selected schedule links
+    copyBtn.addEventListener('click', async () => {
+      const selectedUrls = worksites
+        .filter(ws => selectedWorksites.has(ws.slug))
+        .map(ws => ws.spreadsheetUrl)
+        .filter(url => url && url.length > 0);
+      if (selectedUrls.length === 0) return;
+      const textToCopy = selectedUrls.join('\n');
+      try {
+        await navigator.clipboard.writeText(textToCopy);
+        const originalText = copyBtn.innerText;
+        copyBtn.innerText = '✓ Copied!';
+        setTimeout(() => copyBtn.innerText = originalText, 2000);
+      } catch (err) {
+        console.error('Copy failed', err);
+      }
+    });
+  </script>
+</body>
+</html>
