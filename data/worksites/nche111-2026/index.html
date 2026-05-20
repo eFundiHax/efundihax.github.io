@@ -7,30 +7,39 @@
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: { "primary":"#6b3d8f", "on-primary":"#ffffff", "primary-container":"#6b3d8f", "secondary":"#ffb77a", "on-secondary":"#4c2700", "surface":"#131313", "surface-dim":"#131313", "surface-container-lowest":"#0e0e0e", "surface-container-low":"#1c1b1b", "surface-container":"#201f1f", "surface-container-high":"#2a2a2a", "surface-container-highest":"#353534", "surface-bright":"#3a3939", "surface-variant":"#353534", "on-surface":"#e5e2e1", "on-surface-variant":"#cec3d1", "background":"#131313", "on-background":"#e5e2e1", "outline":"#988d9e", "outline-variant":"#4c4450", "error":"#ffb4ab", "error-container":"#93000a", "tertiary":"#dbb9fa", "border-divider":"#353534" },
-          borderRadius: { "DEFAULT":"0px", "lg":"0px", "xl":"0px", "full":"0px" },
-          spacing: { "gap-xl":"32px", "gap-lg":"24px", "gap-md":"16px", "gap-sm":"8px", "gap-xs":"4px", "container-max":"1024px" },
-          fontFamily: { "headline":["Space Grotesk"], "body":["Inter"], "label":["Space Grotesk"] }
-        }
-      }
-    }
-  </script>
   <style>
+    body { background-color: #131313; }
     .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-    .bevel-out { border-top:1px solid #4c4450; border-left:1px solid #4c4450; border-bottom:2px solid #0e0e0e; border-right:2px solid #0e0e0e; }
-    .bevel-in { border-top:2px solid #0e0e0e; border-left:2px solid #0e0e0e; border-bottom:1px solid #4c4450; border-right:1px solid #4c4450; }
-    .panel-header-tab { background:#6b3d8f; box-shadow: inset 1px 1px 0px rgba(255,255,255,0.2), inset -1px -1px 0px rgba(0,0,0,0.4); }
-    ::-webkit-scrollbar { width:4px; } ::-webkit-scrollbar-track { background:#131313; } ::-webkit-scrollbar-thumb { background:#353534; }
-    .bg-dither { background-image: linear-gradient(45deg, rgba(225,182,255,0.04) 25%, transparent 25%, transparent 75%, rgba(225,182,255,0.04) 75%), linear-gradient(45deg, rgba(225,182,255,0.04) 25%, transparent 25%, transparent 75%, rgba(225,182,255,0.04) 75%); background-size:4px 4px; background-position:0 0,2px 2px; }
-    .slide-track { display: flex; transition: transform 0.5s ease-in-out; will-change: transform; }
+    .bevel-out { border-top: 1px solid #4c4450; border-left: 1px solid #4c4450; border-bottom: 2px solid #0e0e0e; border-right: 2px solid #0e0e0e; }
+    .bevel-in { border-top: 2px solid #0e0e0e; border-left: 2px solid #0e0e0e; border-bottom: 1px solid #4c4450; border-right: 1px solid #4c4450; }
+    .panel-header-tab { background: #6b3d8f; box-shadow: inset 1px 1px 0px rgba(255,255,255,0.2), inset -1px -1px 0px rgba(0,0,0,0.4); }
+    ::-webkit-scrollbar { width: 4px; } ::-webkit-scrollbar-track { background: #131313; } ::-webkit-scrollbar-thumb { background: #353534; }
+    .slide-track { display: flex; transition: transform 0.5s ease-in-out; }
     .slide { flex: 0 0 100%; }
-    .indicator-dot { width: 8px; height: 8px; background: #988d9e; border: 1px solid #0e0e0e; cursor: pointer; }
+    .indicator-dot { width: 8px; height: 8px; background: #988d9e; border: 1px solid #0e0e0e; cursor: pointer; display: inline-block; margin: 0 3px; }
     .indicator-dot.active { background: #ffb77a; border: 1px solid #ffb77a; }
+    .tooltip-container { position: relative; display: inline-flex; align-items: center; }
+    .tooltip-content {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      bottom: 100%;
+      right: 0;
+      margin-bottom: 8px;
+      background: #1c1b1b;
+      color: #e5e2e1;
+      padding: 8px 12px;
+      border: 1px solid #4c4450;
+      font-size: 11px;
+      font-family: 'Inter', monospace;
+      width: 260px;
+      white-space: normal;
+      z-index: 20;
+      transition: opacity 0.2s;
+      pointer-events: none;
+    }
+    .tooltip-container:hover .tooltip-content { visibility: visible; opacity: 1; }
+    .bg-dither { background-image: linear-gradient(45deg, rgba(225,182,255,0.04) 25%, transparent 25%, transparent 75%, rgba(225,182,255,0.04) 75%), linear-gradient(45deg, rgba(225,182,255,0.04) 25%, transparent 25%, transparent 75%, rgba(225,182,255,0.04) 75%); background-size: 4px 4px; background-position: 0 0, 2px 2px; }
   </style>
 </head>
 <body class="bg-background text-on-surface font-body antialiased min-h-screen pt-12 flex flex-col">
@@ -43,114 +52,142 @@
     <span class="text-outline font-label text-[10px] font-bold tracking-widest uppercase ml-1">/ NCHE111-2026</span>
   </header>
 
-  <main class="flex-grow w-full max-w-[1024px] mx-auto px-gap-lg py-gap-xl flex flex-col gap-gap-xl">
+  <main class="flex-grow w-full max-w-[1024px] mx-auto px-6 py-8 flex flex-col gap-8">
 
-    <section class="grid grid-cols-1 md:grid-cols-12 gap-gap-xl">
-      <div class="md:col-span-8 bevel-out bg-surface-container-low flex flex-col overflow-hidden h-[380px]">
-        <div class="panel-header-tab p-gap-sm flex items-center gap-gap-sm">
+    <!-- Slideshow Panel -->
+    <div class="bevel-out bg-surface-container-low flex flex-col overflow-hidden">
+      <div class="panel-header-tab px-4 py-2 flex items-center justify-between">
+        <div class="flex items-center gap-2">
           <span class="material-symbols-outlined text-on-primary text-sm">slideshow</span>
           <span class="font-headline font-black text-sm text-on-primary uppercase tracking-widest">NCHE111-2026</span>
-          <div class="flex gap-gap-xs ml-auto">
-            <div class="w-2 h-2 bg-on-primary bevel-out opacity-80"></div>
-            <div class="w-2 h-2 bg-surface-variant bevel-in"></div>
-            <div class="w-2 h-2 bg-surface-variant bevel-in"></div>
-          </div>
         </div>
-        <div class="relative overflow-hidden bevel-in bg-surface-container-lowest m-gap-sm flex-grow">
-          <div class="slide-track h-full" id="slideTrack" style="transform: translateX(0%);">
-            <div class="slide h-full relative">
-              <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-surface-container-lowest flex items-center justify-center">
-                <span class="material-symbols-outlined text-primary" style="font-size:80px;opacity:0.15;">school</span>
-              </div>
-              <div class="absolute bottom-gap-lg left-gap-lg right-gap-lg bg-surface/90 p-gap-md bevel-out border-l-4 border-l-primary backdrop-blur-sm">
-                <h3 class="font-headline font-black text-sm text-primary mb-gap-xs uppercase">Resources</h3>
-                <p class="font-body text-xs text-on-surface-variant">Course materials and lecture notes will appear here as they are scraped from eFundi.</p>
-              </div>
-            </div>
-            <div class="slide h-full relative">
-              <div class="absolute inset-0 bg-gradient-to-br from-secondary/10 to-surface-container-lowest flex items-center justify-center">
-                <span class="material-symbols-outlined text-secondary" style="font-size:80px;opacity:0.15;">calendar_month</span>
-              </div>
-              <div class="absolute bottom-gap-lg left-gap-lg right-gap-lg bg-surface/90 p-gap-md bevel-out border-l-4 border-l-secondary backdrop-blur-sm">
-                <h3 class="font-headline font-black text-sm text-secondary mb-gap-xs uppercase">Schedule</h3>
-                <p class="font-body text-xs text-on-surface-variant">Calendar events and deadlines for this module are tracked in the schedule spreadsheet.</p>
-              </div>
-            </div>
-            <div class="slide h-full relative">
-              <div class="absolute inset-0 bg-gradient-to-br from-tertiary/10 to-surface-container-lowest flex items-center justify-center">
-                <span class="material-symbols-outlined text-tertiary" style="font-size:80px;opacity:0.15;">campaign</span>
-              </div>
-              <div class="absolute bottom-gap-lg left-gap-lg right-gap-lg bg-surface/90 p-gap-md bevel-out border-l-4 border-l-tertiary backdrop-blur-sm">
-                <h3 class="font-headline font-black text-sm text-tertiary mb-gap-xs uppercase">Announcements</h3>
-                <p class="font-body text-xs text-on-surface-variant">Important announcements from lecturers are scraped automatically from eFundi.</p>
-              </div>
-            </div>
-          </div>
-          <button id="prevSlide" class="absolute left-2 top-1/2 -translate-y-1/2 bg-surface/80 bevel-out w-8 h-8 flex items-center justify-center hover:bg-primary transition-colors z-10"><span class="material-symbols-outlined text-sm">chevron_left</span></button>
-          <button id="nextSlide" class="absolute right-2 top-1/2 -translate-y-1/2 bg-surface/80 bevel-out w-8 h-8 flex items-center justify-center hover:bg-primary transition-colors z-10"><span class="material-symbols-outlined text-sm">chevron_right</span></button>
-          <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-            <div class="indicator-dot active" data-index="0"></div>
-            <div class="indicator-dot" data-index="1"></div>
-            <div class="indicator-dot" data-index="2"></div>
-          </div>
+        <div class="flex gap-1">
+          <div class="indicator-dot active" data-index="0"></div>
+          <div class="indicator-dot" data-index="1"></div>
+          <div class="indicator-dot" data-index="2"></div>
         </div>
       </div>
+      <div class="relative overflow-hidden bevel-in bg-surface-container-lowest m-2 flex-grow h-64">
+        <div class="slide-track h-full w-full flex" id="slideTrack">
+          <div class="slide h-full w-full flex-shrink-0 relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-surface-container-lowest flex items-center justify-center">
+              <span class="material-symbols-outlined text-primary" style="font-size:80px;opacity:0.15;">school</span>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 bg-surface/90 p-4 bevel-out border-l-4 border-l-primary">
+              <h3 class="font-headline font-black text-sm text-primary mb-1 uppercase">Resources</h3>
+              <p class="font-body text-xs text-on-surface-variant">Lecture slides, practical notes, and study guides will appear here once synced.</p>
+            </div>
+          </div>
+          <div class="slide h-full w-full flex-shrink-0 relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-secondary/10 to-surface-container-lowest flex items-center justify-center">
+              <span class="material-symbols-outlined text-secondary" style="font-size:80px;opacity:0.15;">calendar_month</span>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 bg-surface/90 p-4 bevel-out border-l-4 border-l-secondary">
+              <h3 class="font-headline font-black text-sm text-secondary mb-1 uppercase">Schedule</h3>
+              <p class="font-body text-xs text-on-surface-variant">All deadlines, test dates, and lecture times from the eFundi calendar.</p>
+            </div>
+          </div>
+          <div class="slide h-full w-full flex-shrink-0 relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-tertiary/10 to-surface-container-lowest flex items-center justify-center">
+              <span class="material-symbols-outlined text-tertiary" style="font-size:80px;opacity:0.15;">campaign</span>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 bg-surface/90 p-4 bevel-out border-l-4 border-l-tertiary">
+              <h3 class="font-headline font-black text-sm text-tertiary mb-1 uppercase">Announcements</h3>
+              <p class="font-body text-xs text-on-surface-variant">Latest news and reminders scraped automatically from eFundi.</p>
+            </div>
+          </div>
+        </div>
+        <button id="prevSlide" class="absolute left-2 top-1/2 -translate-y-1/2 bg-surface/80 bevel-out w-8 h-8 flex items-center justify-center hover:bg-primary transition-colors z-10"><span class="material-symbols-outlined text-sm">chevron_left</span></button>
+        <button id="nextSlide" class="absolute right-2 top-1/2 -translate-y-1/2 bg-surface/80 bevel-out w-8 h-8 flex items-center justify-center hover:bg-primary transition-colors z-10"><span class="material-symbols-outlined text-sm">chevron_right</span></button>
+      </div>
+    </div>
 
-      <div class="md:col-span-4 flex flex-col gap-gap-xl h-[380px]">
-        <div class="bevel-out bg-surface-container-low flex flex-col flex-1 overflow-hidden">
-          <div class="panel-header-tab p-gap-sm px-gap-md flex justify-between items-center">
-            <span class="font-label font-black text-[11px] uppercase tracking-widest text-on-primary">Announcements</span>
-            <span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings:'FILL' 1;">campaign</span>
-          </div>
-          <div class="p-gap-sm flex flex-col gap-gap-xs overflow-y-auto flex-grow bevel-in bg-surface-container-lowest">
-            <div class="bg-surface-container-low p-gap-sm hover:bg-surface-bright transition-colors cursor-pointer">
-              <div class="flex justify-between items-start mb-gap-xs"><span class="font-label font-black text-[9px] uppercase text-secondary bg-secondary/10 px-1 py-0.5">Pending</span><span class="font-label text-[9px] text-outline">Sync eFundi</span></div>
-              <h3 class="font-body text-xs font-semibold text-on-surface">No announcements yet</h3>
-              <p class="font-label text-[9px] text-outline-variant mt-1">Visit this module on eFundi to trigger a sync.</p>
-            </div>
-          </div>
+    <!-- Announcements & Deadlines row -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bevel-out bg-surface-container-low flex flex-col h-64">
+        <div class="panel-header-tab px-4 py-2 flex justify-between items-center">
+          <span class="font-label font-black text-xs uppercase tracking-widest text-on-primary">Announcements</span>
+          <span class="material-symbols-outlined text-on-primary text-sm">campaign</span>
         </div>
-        <div class="bevel-out bg-surface-container-low flex flex-col flex-1 overflow-hidden">
-          <div class="panel-header-tab p-gap-sm px-gap-md flex justify-between items-center">
-            <span class="font-label font-black text-[11px] uppercase tracking-widest text-on-primary">Dates</span>
-            <span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings:'FILL' 1;">timer</span>
-          </div>
-          <div class="p-gap-sm flex flex-col gap-gap-xs overflow-y-auto flex-grow bevel-in bg-surface-container-lowest bg-dither">
-            <div class="flex items-center gap-gap-sm p-gap-sm bg-surface-container-low border-l-2 border-outline">
-              <div class="font-label font-black text-[11px] text-outline flex flex-col items-center justify-center bg-surface-container px-2 py-1 bevel-in min-w-[36px]"><span class="text-[9px]">—</span><span class="font-headline font-black text-lg leading-none">?</span></div>
-              <div><h4 class="font-body text-xs font-semibold text-on-surface">No events synced</h4><span class="font-label text-[9px] text-outline">Visit eFundi to populate</span></div>
-            </div>
+        <div class="p-3 flex flex-col gap-2 overflow-y-auto flex-grow bevel-in bg-surface-container-lowest">
+          <div class="bg-surface-container-low p-3 hover:bg-surface-bright transition-colors cursor-pointer">
+            <div class="flex justify-between items-start mb-1"><span class="font-label font-black text-[9px] uppercase text-secondary">Pending</span><span class="font-label text-[9px] text-outline">Sync eFundi</span></div>
+            <h3 class="font-body text-xs font-semibold text-on-surface">No announcements yet</h3>
+            <p class="font-label text-[9px] text-outline-variant mt-1">Visit this module on eFundi with the userscript installed to sync announcements.</p>
           </div>
         </div>
       </div>
-    </section>
+      <div class="bevel-out bg-surface-container-low flex flex-col h-64">
+        <div class="panel-header-tab px-4 py-2 flex justify-between items-center">
+          <span class="font-label font-black text-xs uppercase tracking-widest text-on-primary">Dates</span>
+          <span class="material-symbols-outlined text-on-primary text-sm">timer</span>
+        </div>
+        <div class="p-3 flex flex-col gap-2 overflow-y-auto flex-grow bevel-in bg-surface-container-lowest bg-dither">
+          <div class="flex items-center gap-3 p-3 bg-surface-container-low border-l-2 border-outline">
+            <div class="font-label font-black text-xs text-outline flex flex-col items-center justify-center bg-surface-container px-2 py-1 bevel-in min-w-[40px]"><span class="text-[9px]">—</span><span class="font-headline font-black text-xl leading-none">?</span></div>
+            <div><h4 class="font-body text-xs font-semibold text-on-surface">No events synced</h4><span class="font-label text-[9px] text-outline">Calendar will populate after you visit eFundi.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <section class="w-full bevel-out bg-surface-container-low flex flex-col">
-      <div class="panel-header-tab p-gap-sm flex items-center justify-between">
-        <div class="flex items-center gap-gap-sm"><span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings:'FILL' 1;">folder_open</span><span class="font-headline font-black text-sm text-on-primary uppercase tracking-widest">Resource Directory</span></div>
-        <span class="font-label font-black text-[9px] text-on-primary/60 uppercase tracking-widest">Drive Linked</span>
+    <!-- Resource Directory Panel -->
+    <div class="bevel-out bg-surface-container-low flex flex-col">
+      <div class="panel-header-tab px-4 py-2 flex items-center justify-between">
+        <div class="flex items-center gap-2"><span class="material-symbols-outlined text-on-primary text-sm">folder_open</span><span class="font-headline font-black text-sm text-on-primary uppercase tracking-widest">Resource Directory</span></div>
+        <span class="font-label font-black text-[9px] text-on-primary/60 uppercase">Drive Linked</span>
       </div>
-      <div class="p-gap-md grid grid-cols-1 md:grid-cols-12 gap-gap-md items-start">
-        <div class="md:col-span-8 bevel-in bg-surface-container-lowest flex flex-col p-gap-sm h-56 overflow-y-auto">
-          <div class="grid grid-cols-12 gap-gap-sm pb-2 border-b border-outline-variant mb-2"><div class="col-span-6 font-label font-black text-[9px] uppercase tracking-widest text-outline">Filename</div><div class="col-span-3 font-label font-black text-[9px] uppercase tracking-widest text-outline">Type</div><div class="col-span-3 font-label font-black text-[9px] uppercase tracking-widest text-outline">Status</div></div>
-          <div class="flex items-center justify-center h-full"><div class="text-center"><span class="material-symbols-outlined text-outline text-2xl mb-2 block">cloud_sync</span><p class="font-label font-black text-[10px] uppercase tracking-widest text-outline">No files synced yet</p><p class="font-body text-[9px] text-outline/60 mt-1">Files will appear here after visiting this module on eFundi.</p></div></div>
+      <div class="p-5 grid grid-cols-1 md:grid-cols-12 gap-6">
+        <!-- Left column: userscript prompt -->
+        <div class="md:col-span-8">
+          <div class="bevel-in bg-surface-container-lowest flex flex-col p-4 items-center justify-center text-center" style="min-height: 180px;">
+            <span class="material-symbols-outlined text-outline text-3xl mb-2">cloud_off</span>
+            <p class="font-headline font-black text-sm uppercase tracking-widest text-outline mb-1">No data yet</p>
+            <p class="font-body text-xs text-on-surface/70 max-w-md mb-3">You need the eFundi Scraper userscript to automatically sync announcements, calendar events, and resources from eFundi to this page.</p>
+            <div class="flex flex-wrap gap-3 justify-center items-center">
+              <a href="https://greasyfork.org/en/scripts/579058-efundi-scraper" target="_blank" class="inline-flex items-center gap-1 bg-tertiary text-on-tertiary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110"><span class="material-symbols-outlined text-[11px]">download</span> Install Userscript</a>
+              <div class="tooltip-container">
+                <div class="w-8 h-8 bevel-in bg-surface-container-lowest flex items-center justify-center cursor-help">
+                  <span class="material-symbols-outlined text-outline text-sm">help</span>
+                </div>
+                <div class="tooltip-content">
+                  <div class="mb-1 text-[10px] font-bold uppercase">How to activate</div>
+                  <img src="https://media.tenor.com/K9_q0nhLQyEAAAAM/plink-cat.gif" class="w-full h-auto mb-1 bevel-in" alt="Demo GIF" onerror="this.style.display='none'; this.nextSibling.style.display='block';">
+                  <div style="display:none;" class="w-full h-24 bevel-in bg-surface-container-lowest flex items-center justify-center mb-1"><span class="material-symbols-outlined text-outline text-2xl">image</span></div>
+                  <p class="text-[9px]">Install the script, then visit any eFundi module page. Data will automatically appear within minutes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="md:col-span-4 flex flex-col gap-gap-md h-full justify-center">
-          <a href="https://docs.google.com/spreadsheets/d/1JacwF4Yx4I0hI_7Ro3oDKMhSevdfnH6aqBtXWxSs3yw/edit?usp=drivesdk" target="_blank" class="bevel-out bg-secondary text-on-secondary font-label font-black text-[11px] p-gap-sm flex items-center justify-center gap-gap-sm hover:brightness-110 active:translate-y-px transition-all uppercase tracking-widest">
-        <span class="material-symbols-outlined text-sm">table_chart</span>OPEN SCHEDULE SHEET
-       </a>
-          <a href="https://drive.google.com/drive/folders/1MLGOOrBLh5IHh_z4lRcqYF8pF1kHzRF-" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] p-gap-sm flex items-center justify-center gap-gap-sm hover:brightness-110 active:translate-y-px transition-all uppercase tracking-widest"><span class="material-symbols-outlined text-sm">open_in_new</span>Open Drive Folder</a>
-          <button onclick="copyAllLinks()" class="bevel-out bg-primary text-on-primary font-label font-black text-[11px] p-gap-sm flex items-center justify-center gap-gap-sm hover:brightness-110 active:translate-y-px transition-all uppercase tracking-widest"><span class="material-symbols-outlined text-sm">content_copy</span>Copy all links</button>
-          <div class="tooltip-container relative inline-block ml-2">
-            <span class="material-symbols-outlined text-outline text-sm cursor-help">help</span>
-            <div class="tooltip-content absolute bottom-full right-0 mb-2 w-48 bg-surface-container-high bevel-out p-2 text-xs text-on-surface z-20 hidden group-hover:block"><span>Copy all schedule and resource links from this worksite to paste into NotebookLM.</span></div>
+        <!-- Right column: Copy all links + two grey buttons -->
+        <div class="md:col-span-4 flex flex-col gap-4">
+          <div class="flex gap-2 w-full">
+            <button id="copyAllBtn" class="bevel-out bg-primary text-on-primary font-label font-black text-[11px] py-2 px-4 uppercase tracking-widest hover:brightness-110 transition-all flex-1">Copy all links</button>
+            <div class="tooltip-container">
+              <div class="h-full aspect-square bevel-in bg-surface-container-lowest flex items-center justify-center cursor-help" style="min-width: 32px;">
+                <span class="material-symbols-outlined text-on-surface text-lg">help</span>
+              </div>
+              <div class="tooltip-content">
+                <img src="https://media.tenor.com/K9_q0nhLQyEAAAAM/plink-cat.gif" class="w-full h-auto mb-1 bevel-in" alt="Demo GIF" onerror="this.style.display='none'; this.nextSibling.style.display='block';">
+                <div style="display:none;" class="w-full h-24 bevel-in bg-surface-container-lowest flex items-center justify-center mb-1"><span class="material-symbols-outlined text-outline text-2xl">image</span></div>
+                <p class="text-[10px]">Copies all schedule and resource links for this worksite to paste into NotebookLM.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <a href="https://drive.google.com/drive/folders/1MLGOOrBLh5IHh_z4lRcqYF8pF1kHzRF-" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] py-2 px-4 uppercase tracking-widest hover:brightness-110 transition-all text-center">Open Drive Folder</a>
+            <a href="https://docs.google.com/spreadsheets/d/1JacwF4Yx4I0hI_7Ro3oDKMhSevdfnH6aqBtXWxSs3yw/edit?usp=drivesdk" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] py-2 px-4 uppercase tracking-widest hover:brightness-110 transition-all text-center">Schedule Sheet</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </main>
 
-  <footer class="bg-[#1C1B1B] border-t border-[#353534] w-full px-gap-lg py-gap-md flex justify-between items-center"><span class="font-label font-black text-[10px] uppercase tracking-widest text-outline">eFundiHax — NCHE111-2026</span><span class="font-label text-[9px] text-outline/40 uppercase">v6.0</span></footer>
+  <footer class="bg-[#1C1B1B] border-t border-[#353534] w-full px-6 py-4 flex justify-between items-center">
+    <span class="font-label font-black text-[10px] uppercase tracking-widest text-outline">eFundiHax — NCHE111-2026</span>
+    <span class="font-label text-[9px] text-outline/40 uppercase">v6.0</span>
+  </footer>
 
   <script>
     var currentSlide = 0;
@@ -178,18 +215,15 @@
       }
       autoInterval = setInterval(function() { nextSlide(); }, 5000);
     }
-    function copyAllLinks() {
-      var url = "https://docs.google.com/spreadsheets/d/1JacwF4Yx4I0hI_7Ro3oDKMhSevdfnH6aqBtXWxSs3yw/edit?usp=drivesdk";
-      if (!url) return;
-      navigator.clipboard.writeText(url).then(function() {
-        var btn = document.querySelector('[onclick="copyAllLinks()"]');
-        if (btn) {
-          var orig = btn.innerHTML;
-          btn.innerHTML = '<span class="material-symbols-outlined text-sm">check</span>Copied!';
-          setTimeout(function() { btn.innerHTML = orig; }, 2000);
-        }
+    document.getElementById('copyAllBtn')?.addEventListener('click', function() {
+      var links = ["https://docs.google.com/spreadsheets/d/1JacwF4Yx4I0hI_7Ro3oDKMhSevdfnH6aqBtXWxSs3yw/edit?usp=drivesdk"];
+      navigator.clipboard.writeText(links.join('\n')).then(function() {
+        var btn = document.getElementById('copyAllBtn');
+        var orig = btn.innerHTML;
+        btn.innerHTML = '✓ Copied!';
+        setTimeout(function() { btn.innerHTML = orig; }, 2000);
       }).catch(console.error);
-    }
+    });
   </script>
 </body>
 </html>
