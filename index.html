@@ -4,11 +4,9 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>eFundiHax — NWU Student Hub</title>
-
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-
   <script>
     tailwind.config = {
       darkMode: "class",
@@ -79,7 +77,6 @@
       }
     }
   </script>
-
   <style>
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -133,24 +130,20 @@
       appearance: none;
       width: 20px;
       height: 20px;
-      background-color: #ffffff;
-      border-top: 2px solid #000000;
-      border-left: 2px solid #000000;
-      border-bottom: 1px solid #e5e2e1;
-      border-right: 1px solid #e5e2e1;
+      background: #ffffff;
+      border: 1px solid #4c4450;
       cursor: pointer;
       position: relative;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      flex-shrink: 0;
     }
     .custom-checkbox:checked::after {
-      content: 'check';
-      font-family: 'Material Symbols Outlined';
+      content: '✓';
+      font-family: 'Space Grotesk', monospace;
       font-size: 16px;
+      font-weight: bold;
       color: #000000;
-      font-weight: 900;
     }
     /* Tooltip */
     .tooltip-container {
@@ -173,42 +166,36 @@
       visibility: visible;
       opacity: 1;
     }
-    /* Transitions for search mode */
+    /* Search mode transitions */
     .homepage-panels {
       transition: opacity 0.3s ease-out, transform 0.3s ease-out;
     }
     .search-results-container {
       display: none;
-      transition: transform 0.3s ease-out, opacity 0.2s ease-out;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
     }
     body.search-mode .homepage-panels {
       opacity: 0;
-      transform: translateX(-20px);
+      transform: scale(0.98);
       pointer-events: none;
+      height: 0;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
     }
     body.search-mode .search-results-container {
       display: block;
-      transform: translateY(0);
     }
-    .search-results-container {
-      transform: translateY(20px);
-    }
-    .search-input-active {
-      transition: all 0.2s ease;
-    }
-    body.search-mode .search-input-active {
-      box-shadow: inset 1px 1px 2px rgba(0,0,0,0.8), inset -1px -1px 1px rgba(255,255,255,0.1) !important;
+    body.search-mode #searchInput {
+      box-shadow: inset 1px 1px 2px rgba(0,0,0,0.8), inset -1px -1px 1px rgba(255,255,255,0.1);
       background-color: #0e0e0e;
     }
-    .hidden-footer {
-      display: none;
-    }
-    .footer-visible {
-      transform: translateY(0) !important;
-    }
+    .hidden-footer { display: none; }
   </style>
 </head>
-<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
+<body class="bg-background text-on-surface font-body min-h-screen flex flex-col">
 
   <!-- HEADER -->
   <header class="bg-[#1C1B1B] text-on-surface font-headline tracking-tighter uppercase top-0 w-full px-6 h-12 z-50 fixed border-b border-[#353534] flex items-center justify-between">
@@ -218,7 +205,7 @@
     <div class="flex-1 max-w-xs md:max-w-md px-4">
       <div class="relative flex items-center">
         <span class="material-symbols-outlined absolute left-3 text-outline text-sm pointer-events-none">search</span>
-        <input type="text" id="searchInput" class="search-input-active w-full bg-surface-container-lowest py-2 pl-9 pr-4 font-headline text-[10px] font-bold uppercase tracking-widest text-on-surface placeholder:text-outline/50 focus:ring-0 focus:outline-none cursor-text" placeholder="Search Hub..." style="box-shadow: inset 2px 2px 4px rgba(0,0,0,0.5), inset -1px -1px 1px rgba(255,255,255,0.05); border: none;">
+        <input type="text" id="searchInput" class="w-full bg-surface-container-lowest py-2 pl-9 pr-4 font-headline text-[10px] font-bold uppercase tracking-widest text-on-surface placeholder:text-outline/50 focus:ring-0 focus:outline-none" placeholder="Search Hub..." style="box-shadow: inset 2px 2px 4px rgba(0,0,0,0.5), inset -1px -1px 1px rgba(255,255,255,0.05); border: none;">
       </div>
     </div>
     <div class="flex items-center gap-2 text-outline">
@@ -229,13 +216,13 @@
 
   <main class="pt-20 pb-12 px-6 max-w-5xl mx-auto w-full flex-grow relative">
 
-    <!-- HOMEPAGE PANELS (visible by default) -->
+    <!-- HOMEPAGE PANELS (original full content) -->
     <div class="homepage-panels">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
-        <!-- LEFT COLUMN (same as original index.html) -->
+        <!-- LEFT COLUMN (Schedule AI, Map, Socials, Submit) -->
         <div class="lg:col-span-8 flex flex-col gap-8">
-          <!-- Schedule AI panel (unchanged) -->
+          <!-- Schedule AI -->
           <section class="bg-surface-container-low bevel-out overflow-hidden flex flex-col">
             <div class="panel-header-tab px-4 py-2 flex items-center justify-between">
               <div class="flex items-center gap-2">
@@ -258,7 +245,7 @@
             </div>
           </section>
 
-          <!-- Campus Map panel (unchanged) -->
+          <!-- Campus Map -->
           <section class="bg-surface-container-low bevel-out overflow-hidden flex flex-col">
             <div class="panel-header-tab px-4 py-2 flex items-center justify-between">
               <div class="flex items-center gap-2">
@@ -279,7 +266,7 @@
             </div>
           </section>
 
-          <!-- Socials + Submit row (unchanged) -->
+          <!-- Socials + Submit row -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <section class="bg-surface-container-low bevel-out overflow-hidden">
               <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
@@ -314,16 +301,15 @@
           </div>
         </div>
 
-        <!-- RIGHT COLUMN (WhatsApp groups, Drive links, Userscripts, Calendar panel) -->
+        <!-- RIGHT COLUMN (WhatsApp groups, Drive links, Userscripts, Module Calendars) -->
         <div class="lg:col-span-4 flex flex-col gap-8">
-          <!-- WhatsApp Groups (full list from original) -->
+          <!-- WhatsApp Groups (full list) -->
           <section class="bg-surface-container-low bevel-out overflow-hidden">
             <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
               <span class="material-symbols-outlined text-on-primary text-sm">groups</span>
               <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">WhatsApp Groups</h2>
             </div>
             <div class="p-4 flex flex-col gap-2">
-              <!-- Group 1 -->
               <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
                 <div class="flex items-center gap-2 min-w-0">
                   <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in"><span class="material-symbols-outlined text-tertiary text-sm">group</span></div>
@@ -331,7 +317,6 @@
                 </div>
                 <a href="https://chat.whatsapp.com/IMMVWzXQee1D45KcMJKHxi" target="_blank" onclick="incrementCount('wa-1')" class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
               </div>
-              <!-- Group 2 -->
               <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
                 <div class="flex items-center gap-2 min-w-0">
                   <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in"><span class="material-symbols-outlined text-tertiary text-sm">school</span></div>
@@ -339,7 +324,6 @@
                 </div>
                 <a href="https://chat.whatsapp.com/JKbdeeG7AO2I8UteSJ9ZEw" target="_blank" onclick="incrementCount('wa-2')" class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
               </div>
-              <!-- Group 3 -->
               <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
                 <div class="flex items-center gap-2 min-w-0">
                   <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in"><span class="material-symbols-outlined text-tertiary text-sm">celebration</span></div>
@@ -347,7 +331,6 @@
                 </div>
                 <a href="https://chat.whatsapp.com/LFmBnNTOi1W8jrnyi6OvDj" target="_blank" onclick="incrementCount('wa-3')" class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
               </div>
-              <!-- Group 4 -->
               <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
                 <div class="flex items-center gap-2 min-w-0">
                   <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in"><span class="material-symbols-outlined text-tertiary text-sm">calculate</span></div>
@@ -355,7 +338,6 @@
                 </div>
                 <a href="https://chat.whatsapp.com/J7GVfimGHxtLp6CCTZqqWA" target="_blank" onclick="incrementCount('wa-4')" class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
               </div>
-              <!-- Group 5 -->
               <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
                 <div class="flex items-center gap-2 min-w-0">
                   <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in"><span class="material-symbols-outlined text-tertiary text-sm">terminal</span></div>
@@ -363,7 +345,6 @@
                 </div>
                 <a href="https://chat.whatsapp.com/EkTK6Fqa9mWGPXilQ8VwUF" target="_blank" onclick="incrementCount('wa-5')" class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
               </div>
-              <!-- Group 6 -->
               <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
                 <div class="flex items-center gap-2 min-w-0">
                   <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in"><span class="material-symbols-outlined text-tertiary text-sm">history_edu</span></div>
@@ -371,7 +352,6 @@
                 </div>
                 <a href="https://chat.whatsapp.com/BR6gJMwWHvnDikxVlQYve4" target="_blank" onclick="incrementCount('wa-6')" class="flex-shrink-0 bg-primary text-on-primary px-3 py-1 text-[9px] font-black uppercase bevel-out hover:brightness-110 ml-2">JOIN</a>
               </div>
-              <!-- Group 7 -->
               <div class="bg-surface-container-lowest p-2 flex items-center justify-between bevel-in hover:bg-primary/5 transition-colors">
                 <div class="flex items-center gap-2 min-w-0">
                   <div class="w-8 h-8 bg-surface-container-highest flex-shrink-0 flex items-center justify-center bevel-in"><span class="material-symbols-outlined text-tertiary text-sm">history_edu</span></div>
@@ -407,23 +387,22 @@
             </div>
           </section>
 
-          <!-- Module Calendars (will be repurposed as "Worksite Pages" later, but keep as is for now) -->
+          <!-- Module Calendars (will be repurposed later as worksite list, but keep as is for now) -->
           <section class="bg-surface-container-low bevel-out overflow-hidden">
             <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
               <span class="material-symbols-outlined text-on-primary text-sm">calendar_month</span>
               <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">Module Calendars</h2>
             </div>
             <div class="p-4 flex flex-col gap-3">
-              <!-- This panel will later list worksite pages sorted by views. For now, static placeholder -->
               <div class="p-3 bg-surface-container-lowest bevel-in flex flex-col gap-2">
                 <span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">CMPG115</span>
                 <div class="flex gap-3"><a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">event</span> Google Calendar</a><a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">download</span> .ICS</a></div>
               </div>
-              <!-- other modules... (keep as original or truncate for brevity) -->
+              <!-- Additional modules could be added here -->
             </div>
           </section>
 
-          <!-- Userscript Hub (unchanged) -->
+          <!-- Userscript Hub -->
           <section class="bg-surface-container-low bevel-out overflow-hidden">
             <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
               <span class="material-symbols-outlined text-on-primary text-sm">code</span>
@@ -447,8 +426,8 @@
 
     <!-- SEARCH RESULTS CONTAINER (initially hidden) -->
     <div class="search-results-container">
-      <div class="flex flex-col gap-4 mx-auto w-full max-w-md">
-        <h3 class="font-headline text-xs font-black tracking-[0.2em] uppercase text-outline mb-2">Search Results</h3>
+      <div class="w-full max-w-2xl mx-auto">
+        <h3 class="font-headline text-xs font-black tracking-[0.2em] uppercase text-outline mb-4">Search Results</h3>
         <div id="searchResultsList" class="flex flex-col gap-3">
           <div class="bg-surface-container-low bevel-out p-4 text-center text-outline">Loading worksites...</div>
         </div>
@@ -466,7 +445,7 @@
         <span class="material-symbols-outlined text-2xl">help</span>
         <div class="tooltip-content bevel-out text-on-surface text-xs font-body leading-tight">
           <p class="mb-2 uppercase font-headline font-bold text-[10px] tracking-widest text-outline">How to use</p>
-          <p class="mb-2">Select items above, then click 'Copy Schedule Links' to get URLs you can paste directly into NotebookLM or your calendar app.</p>
+          <p class="mb-2">Select worksites above, then click 'Copy Schedule Links' to get spreadsheet URLs you can paste directly into NotebookLM.</p>
           <div class="w-full h-24 bg-surface-container-lowest bevel-in flex items-center justify-center text-outline/50">[GIF Placeholder]</div>
         </div>
       </div>
@@ -475,18 +454,18 @@
 
   <footer class="bg-[#1C1B1B] text-on-surface/50 font-headline text-[10px] uppercase tracking-widest w-full px-6 py-6 border-t border-[#353534] flex flex-col md:flex-row justify-between items-center gap-4 mt-auto">
     <div class="flex flex-col md:flex-row items-center gap-6"><span class="font-bold text-on-surface/40">eFundiHax — NWU Student Hub</span><span class="opacity-60">v2.1</span></div>
-    <div class="flex items-center gap-6"><a class="hover:text-primary transition-colors cursor-pointer" href="#">About</a><a class="hover:text-primary transition-colors cursor-pointer" href="#">Privacy</a></div>
+    <div class="flex items-center gap-6"><a class="hover:text-primary transition-colors" href="#">About</a><a class="hover:text-primary transition-colors" href="#">Privacy</a></div>
   </footer>
 
   <script>
-    // Click counters (session-only)
+    // Click counters (session)
     const clickCounts = {};
     function incrementCount(id) {
       clickCounts[id] = (clickCounts[id] || 0) + 1;
       const el = document.getElementById('count-' + id);
       if (el) el.textContent = id.startsWith('wa-') ? clickCounts[id] + (clickCounts[id] === 1 ? ' click' : ' clicks') : clickCounts[id];
     }
-    document.getElementById('view-counter').textContent = Math.floor(Math.random() * 5000 + 1000).toLocaleString() + ' views';
+    document.getElementById('view-counter').innerText = Math.floor(Math.random() * 5000 + 1000).toLocaleString() + ' views';
 
     // ---------- SEARCH MODE ----------
     let worksites = [];
@@ -498,53 +477,75 @@
     const selectedCountSpan = document.getElementById('selectedCount');
     const copyBtn = document.getElementById('copyScheduleBtn');
 
-    // Load worksites.json from GitHub Pages
     fetch('data/worksites/worksites.json')
-      .then(res => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.json();
-      })
+      .then(res => res.ok ? res.json() : Promise.reject(`HTTP ${res.status}`))
       .then(data => {
         worksites = data;
         renderSearchResults('');
       })
       .catch(err => {
-        console.error('Failed to load worksites.json:', err);
-        resultsContainer.innerHTML = '<div class="bg-surface-container-low bevel-out p-4 text-center text-outline">Failed to load worksites. Make sure the Apps Script has generated data/worksites/worksites.json.</div>';
+        console.error(err);
+        resultsContainer.innerHTML = '<div class="bg-surface-container-low bevel-out p-4 text-center text-outline">Failed to load worksites. Ensure Apps Script has generated the file.</div>';
       });
+
+    function relevanceScore(title, query) {
+      const lowerTitle = title.toLowerCase();
+      const lowerQuery = query.toLowerCase();
+      if (lowerTitle === lowerQuery) return 100;
+      if (lowerTitle.startsWith(lowerQuery)) return 90;
+      if (lowerTitle.includes(lowerQuery)) return 80;
+      const queryWords = lowerQuery.split(/\s+/);
+      let wordMatches = 0;
+      for (let w of queryWords) if (lowerTitle.includes(w)) wordMatches++;
+      return wordMatches * 20;
+    }
 
     function renderSearchResults(query) {
       if (!worksites.length) {
         resultsContainer.innerHTML = '<div class="bg-surface-container-low bevel-out p-4 text-center text-outline">Loading worksites...</div>';
         return;
       }
-      const lowerQuery = query.toLowerCase();
-      const filtered = worksites.filter(w => w.title.toLowerCase().includes(lowerQuery));
+      const lowerQuery = query.trim().toLowerCase();
+      let filtered = worksites;
+      if (lowerQuery !== '') {
+        filtered = worksites.filter(w => w.title.toLowerCase().includes(lowerQuery));
+        filtered.sort((a,b) => relevanceScore(b.title, lowerQuery) - relevanceScore(a.title, lowerQuery));
+      } else {
+        filtered.sort((a,b) => a.title.localeCompare(b.title));
+      }
       if (filtered.length === 0) {
         resultsContainer.innerHTML = '<div class="bg-surface-container-low bevel-out p-4 text-center text-outline">No worksites match your search.</div>';
         return;
       }
       resultsContainer.innerHTML = filtered.map(ws => `
-        <div class="panel-header-tab p-4 flex items-center justify-between hover:brightness-110 cursor-pointer" data-slug="${ws.slug}">
+        <div class="panel-header-tab p-4 flex items-center justify-between hover:brightness-110 cursor-pointer worksite-result" data-slug="${ws.slug}">
           <div class="flex items-center gap-4">
             <input type="checkbox" class="custom-checkbox item-checkbox" data-slug="${ws.slug}" ${selectedWorksites.has(ws.slug) ? 'checked' : ''}>
             <div class="w-12 h-12 bg-surface-container-lowest flex items-center justify-center bevel-in text-xl">📘</div>
             <div class="flex flex-col text-on-primary">
               <span class="font-headline font-black text-lg tracking-tight uppercase">${escapeHtml(ws.title)}</span>
-              <span class="text-[10px] uppercase font-bold tracking-widest opacity-80">Module: ${escapeHtml(ws.title)}</span>
+              <span class="text-[10px] uppercase font-bold tracking-widest opacity-80">Module</span>
             </div>
           </div>
           <span class="click-count text-xs text-on-primary/70">0 clicks</span>
         </div>
       `).join('');
-      // Re-attach checkbox listeners
+      // Attach checkbox listeners
       document.querySelectorAll('.item-checkbox').forEach(cb => {
         cb.addEventListener('change', (e) => {
           const slug = cb.getAttribute('data-slug');
           if (cb.checked) selectedWorksites.add(slug);
           else selectedWorksites.delete(slug);
           updateFooter();
-          renderSearchResults(searchInput.value); // re-render to keep checkboxes state
+          renderSearchResults(searchInput.value);
+        });
+      });
+      // Attach click on result row to navigate
+      document.querySelectorAll('.worksite-result').forEach(row => {
+        row.addEventListener('click', (e) => {
+          if (e.target.classList && e.target.classList.contains('item-checkbox')) return;
+          const slug = row.getAttribute('data-slug');
+          if (slug) window.location.href = `data/worksites/${slug}/index.html`;
         });
       });
       updateFooter();
@@ -566,22 +567,18 @@
       return str.replace(/[&<>]/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[m]));
     }
 
-    // Enter search mode
     searchInput.addEventListener('focus', () => {
       document.body.classList.add('search-mode');
       renderSearchResults(searchInput.value);
     });
-    // Exit search mode via Escape key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && document.body.classList.contains('search-mode')) {
-        exitSearchMode();
-      }
+    searchInput.addEventListener('input', (e) => {
+      if (document.body.classList.contains('search-mode')) renderSearchResults(e.target.value);
     });
-    // Exit search mode by clicking logo
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && document.body.classList.contains('search-mode')) exitSearchMode();
+    });
     document.getElementById('logoButton').addEventListener('click', () => {
-      if (document.body.classList.contains('search-mode')) {
-        exitSearchMode();
-      }
+      if (document.body.classList.contains('search-mode')) exitSearchMode();
     });
     function exitSearchMode() {
       document.body.classList.remove('search-mode');
@@ -590,7 +587,6 @@
       renderSearchResults('');
     }
 
-    // Copy selected schedule links
     copyBtn.addEventListener('click', async () => {
       const selectedUrls = worksites
         .filter(ws => selectedWorksites.has(ws.slug))
@@ -603,9 +599,7 @@
         const originalText = copyBtn.innerText;
         copyBtn.innerText = '✓ Copied!';
         setTimeout(() => copyBtn.innerText = originalText, 2000);
-      } catch (err) {
-        console.error('Copy failed', err);
-      }
+      } catch (err) { console.error(err); }
     });
   </script>
 </body>
