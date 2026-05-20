@@ -7,11 +7,80 @@
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-variant":              "#353534",
+            "on-tertiary":                  "#4c2700",
+            "inverse-surface":              "#e5e2e1",
+            "surface-dim":                  "#131313",
+            "on-secondary-container":       "#c9a8e8",
+            "secondary-fixed":              "#f0dbff",
+            "background":                   "#131313",
+            "on-primary-fixed":             "#2c0051",
+            "outline-variant":              "#4c4453",
+            "on-secondary-fixed-variant":   "#563a72",
+            "primary":                      "#6b3d8f",
+            "surface-bright":               "#3a3939",
+            "on-tertiary-container":        "#e8a163",
+            "tertiary-fixed-dim":           "#ffb77a",
+            "tertiary-fixed":               "#ffdcc2",
+            "surface-container":            "#201f1f",
+            "on-tertiary-fixed":            "#2e1500",
+            "inverse-primary":              "#7f38c3",
+            "surface":                      "#131313",
+            "primary-container":            "#6b3d8f",
+            "on-background":                "#e5e2e1",
+            "outline":                      "#988d9e",
+            "error":                        "#ffb4ab",
+            "on-error-container":           "#ffdad6",
+            "tertiary-container":           "#683700",
+            "on-primary-container":         "#ffffff",
+            "surface-container-lowest":     "#0e0e0e",
+            "secondary-fixed-dim":          "#dbb9fa",
+            "surface-container-highest":    "#353534",
+            "primary-fixed":                "#f0dbff",
+            "primary-fixed-dim":            "#ddb8ff",
+            "on-primary-fixed-variant":     "#6516a9",
+            "on-error":                     "#690005",
+            "secondary":                    "#dbb9fa",
+            "on-surface":                   "#e5e2e1",
+            "surface-container-high":       "#2a2a2a",
+            "inverse-on-surface":           "#313030",
+            "secondary-container":          "#563a72",
+            "on-secondary":                 "#3e235a",
+            "error-container":              "#93000a",
+            "on-tertiary-fixed-variant":    "#6c3a03",
+            "on-surface-variant":           "#cfc2d5",
+            "on-secondary-fixed":           "#280c43",
+            "surface-tint":                 "#ddb8ff",
+            "surface-container-low":        "#1c1b1b",
+            "on-primary":                   "#ffffff",
+            "tertiary":                     "#ffb77a"
+          },
+          borderRadius: {
+            "none":    "0px",
+            "DEFAULT": "0px",
+            "lg":      "0px",
+            "xl":      "0px",
+            "full":    "0px"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body":     ["Inter"],
+            "label":    ["Space Grotesk"]
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    body { background-color: #131313; }
     .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-    .bevel-out { border-top: 1px solid #4c4450; border-left: 1px solid #4c4450; border-bottom: 2px solid #0e0e0e; border-right: 2px solid #0e0e0e; }
-    .bevel-in { border-top: 2px solid #0e0e0e; border-left: 2px solid #0e0e0e; border-bottom: 1px solid #4c4450; border-right: 1px solid #4c4450; }
+    .bevel-out { border-top: 1px solid #4c4453; border-left: 1px solid #4c4453; border-bottom: 2px solid #0e0e0e; border-right: 2px solid #0e0e0e; }
+    .bevel-in { border-top: 2px solid #0e0e0e; border-left: 2px solid #0e0e0e; border-bottom: 1px solid #4c4453; border-right: 1px solid #4c4453; }
     .panel-header-tab { background: #6b3d8f; box-shadow: inset 1px 1px 0px rgba(255,255,255,0.2), inset -1px -1px 0px rgba(0,0,0,0.4); }
     ::-webkit-scrollbar { width: 4px; } ::-webkit-scrollbar-track { background: #131313; } ::-webkit-scrollbar-thumb { background: #353534; }
     .slide-track { display: flex; transition: transform 0.5s ease-in-out; }
@@ -39,7 +108,11 @@
       pointer-events: none;
     }
     .tooltip-container:hover .tooltip-content { visibility: visible; opacity: 1; }
-    .bg-dither { background-image: linear-gradient(45deg, rgba(225,182,255,0.04) 25%, transparent 25%, transparent 75%, rgba(225,182,255,0.04) 75%), linear-gradient(45deg, rgba(225,182,255,0.04) 25%, transparent 25%, transparent 75%, rgba(225,182,255,0.04) 75%); background-size: 4px 4px; background-position: 0 0, 2px 2px; }
+    .bg-dither {
+      background-image: linear-gradient(45deg, rgba(225,182,255,0.04) 25%, transparent 25%, transparent 75%, rgba(225,182,255,0.04) 75%), linear-gradient(45deg, rgba(225,182,255,0.04) 25%, transparent 25%, transparent 75%, rgba(225,182,255,0.04) 75%);
+      background-size: 4px 4px;
+      background-position: 0 0, 2px 2px;
+    }
   </style>
 </head>
 <body class="bg-background text-on-surface font-body antialiased min-h-screen pt-12 flex flex-col">
