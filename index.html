@@ -124,27 +124,44 @@
       text-overflow: ellipsis;
       max-width: 140px;
     }
-    /* Custom checkbox */
+    /* Custom checkbox — bevel style, themed */
     .custom-checkbox {
       -webkit-appearance: none;
       appearance: none;
-      width: 20px;
-      height: 20px;
-      background: #ffffff;
-      border: 1px solid #4c4450;
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      background: #1c1b1b;
+      /* bevel-in: pressed/inset look when unchecked */
+      border-top:    2px solid #0e0e0e;
+      border-left:   2px solid #0e0e0e;
+      border-bottom: 1px solid #4c4453;
+      border-right:  1px solid #4c4453;
       cursor: pointer;
       position: relative;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
+      outline: none;
+    }
+    .custom-checkbox:checked {
+      background: #6b3d8f;
+      /* bevel-out: raised look when checked */
+      border-top:    1px solid #9b59b6;
+      border-left:   1px solid #9b59b6;
+      border-bottom: 2px solid #0e0e0e;
+      border-right:  2px solid #0e0e0e;
     }
     .custom-checkbox:checked::after {
       content: '✓';
-      font-family: 'Space Grotesk', monospace;
-      font-size: 16px;
-      font-weight: bold;
-      color: #000000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1;
     }
+    .custom-checkbox:focus { outline: none; }
     /* Tooltip */
     .tooltip-container {
       position: relative;
@@ -465,7 +482,7 @@
       const el = document.getElementById('count-' + id);
       if (el) el.textContent = id.startsWith('wa-') ? clickCounts[id] + (clickCounts[id] === 1 ? ' click' : ' clicks') : clickCounts[id];
     }
-    document.getElementById('view-counter').innerText = Math.floor(Math.random() * 5000 + 1000).toLocaleString() + ' views';
+    document.getElementById('view-counter').innerText = '— views';
 
     // ---------- SEARCH MODE ----------
     let worksites = [];
@@ -545,7 +562,7 @@
         row.addEventListener('click', (e) => {
           if (e.target.classList && e.target.classList.contains('item-checkbox')) return;
           const slug = row.getAttribute('data-slug');
-          if (slug) window.location.href = `data/worksites/${slug}/index.html`;
+          if (slug) window.location.href = `worksite.html?site=${slug}`;
         });
       });
       updateFooter();
@@ -584,6 +601,8 @@
       document.body.classList.remove('search-mode');
       searchInput.blur();
       searchInput.value = '';
+      selectedWorksites.clear();
+      updateFooter();
       renderSearchResults('');
     }
 
