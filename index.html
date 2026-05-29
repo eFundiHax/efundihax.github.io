@@ -4,6 +4,14 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>eFundiHax — NWU Student Hub</title>
+  <!-- Prevent white flash - immediate dark background -->
+  <style>
+    html, body {
+      background-color: #131313 !important;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -124,28 +132,32 @@
       text-overflow: ellipsis;
       max-width: 140px;
     }
-    /* Custom checkbox — bevel style, themed */
+    /* Windows XP style checkbox - white background, 3D grey bevel, black checkmark */
     .custom-checkbox {
       -webkit-appearance: none;
       appearance: none;
       width: 18px;
       height: 18px;
       flex-shrink: 0;
-      background: #1c1b1b;
-      border-top:    2px solid #0e0e0e;
-      border-left:   2px solid #0e0e0e;
-      border-bottom: 1px solid #4c4453;
-      border-right:  1px solid #4c4453;
+      background: #ffffff;
+      /* bevel-in: pressed/inset look when unchecked */
+      border-top:    2px solid #6b6b6b;
+      border-left:   2px solid #6b6b6b;
+      border-bottom: 1px solid #d4d4d4;
+      border-right:  1px solid #d4d4d4;
       cursor: pointer;
       position: relative;
       outline: none;
+      image-rendering: crisp-edges;
+      image-rendering: pixelated;
     }
     .custom-checkbox:checked {
-      background: #6b3d8f;
-      border-top:    1px solid #9b59b6;
-      border-left:   1px solid #9b59b6;
-      border-bottom: 2px solid #0e0e0e;
-      border-right:  2px solid #0e0e0e;
+      background: #ffffff;
+      /* bevel-out: raised look when checked */
+      border-top:    1px solid #d4d4d4;
+      border-left:   1px solid #d4d4d4;
+      border-bottom: 2px solid #6b6b6b;
+      border-right:  2px solid #6b6b6b;
     }
     .custom-checkbox:checked::after {
       content: '✓';
@@ -153,11 +165,12 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 11px;
-      font-weight: 900;
-      color: #ffffff;
+      font-family: 'Space Grotesk', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: #000000;
       line-height: 1;
+      text-shadow: none;
     }
     .custom-checkbox:focus { outline: none; }
     /* Tooltip */
@@ -220,7 +233,7 @@
     <div class="flex-1 max-w-xs md:max-w-md px-4">
       <div class="relative flex items-center">
         <span class="material-symbols-outlined absolute left-3 text-outline text-sm pointer-events-none">search</span>
-        <input type="text" id="searchInput" class="w-full bg-surface-container-lowest py-2 pl-9 pr-4 font-headline text-[10px] font-bold uppercase tracking-widest text-on-surface placeholder:text-outline/50 focus:ring-0 focus:outline-none" placeholder="Search Hub..." style="box-shadow: inset 2px 2px 4px rgba(0,0,0,0.5), inset -1px -1px 1px rgba(255,255,255,0.05); border: none;">
+        <input type="text" id="searchInput" class="w-full bg-surface-container-lowest py-2 pl-9 pr-4 font-headline text-[10px] font-bold uppercase tracking-widest text-on-surface placeholder:text-outline/50 focus:ring-0 focus:outline-none" placeholder="Search Hub..." style="box-shadow: inset 2px 2px 4px rgba(0,0,0,0.5), inset -1px -1px 1px rgba(255,255,255,0.05); border: none;" autocomplete="off">
       </div>
     </div>
     <div class="flex items-center gap-2 text-outline">
@@ -454,15 +467,17 @@
 
   <!-- FLOATING FOOTER (hidden by default) -->
   <div id="actionFooter" class="fixed bottom-0 w-full panel-header-tab py-3 px-6 z-50 flex items-center justify-between bevel-out hidden-footer transition-transform duration-300 translate-y-full">
-    <div class="font-headline text-sm font-black uppercase tracking-widest text-on-primary" id="selectedCount">0 selected</div>
     <div class="flex items-center gap-4">
-      <button id="copyScheduleBtn" class="bg-tertiary text-on-tertiary px-4 py-2 font-headline font-black uppercase text-xs bevel-out hover:brightness-110">Copy Schedule Links</button>
       <button id="clearSelectionBtn" class="bevel-out bg-surface-variant w-8 h-8 flex items-center justify-center hover:bg-error transition-colors tooltip-container">
         <span class="material-symbols-outlined text-sm text-on-surface">close</span>
         <div class="tooltip-content bevel-out">
           <p class="text-[10px] font-body">Clear selection</p>
         </div>
       </button>
+      <div class="font-headline text-sm font-black uppercase tracking-widest text-on-primary" id="selectedCount">0 selected</div>
+    </div>
+    <div class="flex items-center gap-4">
+      <button id="copyScheduleBtn" class="bg-tertiary text-on-tertiary px-4 py-2 font-headline font-black uppercase text-xs bevel-out hover:brightness-110">Copy Schedule Links</button>
       <div class="tooltip-container cursor-help flex items-center justify-center text-on-primary">
         <span class="material-symbols-outlined text-2xl">help</span>
         <div class="tooltip-content bevel-out text-on-surface text-xs font-body leading-tight">
@@ -477,7 +492,7 @@
   </div>
 
   <footer class="bg-[#1C1B1B] text-on-surface/50 font-headline text-[10px] uppercase tracking-widest w-full px-6 py-6 border-t border-[#353534] flex flex-col md:flex-row justify-between items-center gap-4 mt-auto">
-    <div class="flex flex-col md:flex-row items-center gap-6"><span class="font-bold text-on-surface/40">eFundiHax — NWU Student Hub</span><span class="opacity-60">v2.2</span></div>
+    <div class="flex flex-col md:flex-row items-center gap-6"><span class="font-bold text-on-surface/40">eFundiHax — NWU Student Hub</span><span class="opacity-60">v2.3</span></div>
     <div class="flex items-center gap-6"><a class="hover:text-primary transition-colors" href="#">About</a><a class="hover:text-primary transition-colors" href="#">Privacy</a></div>
   </footer>
 
@@ -552,6 +567,7 @@
       if (searchTerm && searchTerm.trim() !== '') {
         // Has search term - show "Search Results"
         resultsHeading.textContent = 'Search Results';
+        resultsHeading.className = 'font-headline text-xs font-black tracking-[0.2em] uppercase text-outline';
         updateSortToggleVisibility(false);
       } else {
         // Empty search - show sort toggle
@@ -567,14 +583,12 @@
       if (show && !sortToggleElement) {
         sortToggleElement = document.createElement('div');
         sortToggleElement.id = 'sortToggle';
-        sortToggleElement.className = 'text-center cursor-pointer';
-        sortToggleElement.innerHTML = `<span id="sortAz" class="${currentSort === 'az' ? 'text-sm' : 'text-xs opacity-50'} font-bold uppercase tracking-wider">A-Z</span><span class="text-sm mx-1"> | </span><span id="sortPopular" class="${currentSort === 'popular' ? 'text-sm' : 'text-xs opacity-50'} font-bold uppercase tracking-wider">Popular</span>`;
+        sortToggleElement.className = 'text-center cursor-pointer font-headline text-xs font-black tracking-[0.2em] uppercase';
+        sortToggleElement.innerHTML = `<span id="sortAz" class="${currentSort === 'az' ? 'text-outline' : 'text-[10px] opacity-50'}">A-Z</span><span class="text-outline mx-1">|</span><span id="sortPopular" class="${currentSort === 'popular' ? 'text-outline' : 'text-[10px] opacity-50'}">Popular</span>`;
         
-        // Add click handler to the whole container
         sortToggleElement.addEventListener('click', () => {
           currentSort = currentSort === 'popular' ? 'az' : 'popular';
           updateSortToggleUI();
-          // Re-render with current search term (empty string = all worksites)
           const currentSearchTerm = document.body.classList.contains('search-mode') ? searchInput.value : '';
           renderSearchResults(currentSearchTerm);
         });
@@ -592,11 +606,11 @@
         const popularSpan = document.getElementById('sortPopular');
         if (azSpan && popularSpan) {
           if (currentSort === 'az') {
-            azSpan.className = 'text-sm font-bold uppercase tracking-wider';
-            popularSpan.className = 'text-xs opacity-50 font-bold uppercase tracking-wider';
+            azSpan.className = 'text-outline';
+            popularSpan.className = 'text-[10px] opacity-50';
           } else {
-            azSpan.className = 'text-xs opacity-50 font-bold uppercase tracking-wider';
-            popularSpan.className = 'text-sm font-bold uppercase tracking-wider';
+            azSpan.className = 'text-[10px] opacity-50';
+            popularSpan.className = 'text-outline';
           }
         }
       }
