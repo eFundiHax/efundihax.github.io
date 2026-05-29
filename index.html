@@ -533,8 +533,26 @@
         worksites = await worksitesRes.json();
         
         if (viewsRes && viewsRes.ok) {
-          viewsData = await viewsRes.json();
-        }
+		  viewsData = await viewsRes.json();
+		  const totalViews = Object.values(viewsData).reduce((sum, count) => sum + count, 0);
+		  document.getElementById('view-counter').innerText = `${totalViews.toLocaleString()} views`;
+		  
+		  // Increment homepage view once per session
+		  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwoRxkhdGq_84g9HqhYRJqMXTWyvAZfBYD_S63XXXirTYrKgwjFJV18yqo9pjfH8T8q/exec';
+		  const sessionKey = 'efh_homepage_viewed';
+		  if (!sessionStorage.getItem(sessionKey)) {
+			sessionStorage.setItem(sessionKey, 'true');
+			fetch(APPS_SCRIPT_URL, {
+			  method: 'POST',
+			  body: JSON.stringify({
+				action: 'increment_view',
+				secret: 'trackmania_is_peak',
+				slug: '_homepage',
+				siteTitle: 'Homepage'
+			  })
+			}).catch(e => console.warn(e));
+		  }
+		}
         
         // Apply URL param if present, otherwise render empty
         handleUrlSearchParam();
