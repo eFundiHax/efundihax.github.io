@@ -1,5 +1,5 @@
 # Resources — Maths Club
-_Last updated: 2026-05-29T16:08:14.625Z_
+_Last updated: 2026-05-29T16:08:37.621Z_
 
 - [Eureka newsletter January 2025.pdf](https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Eureka%20Newsletter/Eureka%20newsletter%20January%202025.pdf)
 - [Eureka newsletter March 2025.pdf](https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Eureka%20Newsletter/Eureka%20newsletter%20March%202025.pdf)
