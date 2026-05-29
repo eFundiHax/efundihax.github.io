@@ -112,7 +112,7 @@
       </div>
     </div>
 
-    <!-- Right: view counter -->
+    <!-- Right: view counter (shows this worksite's views) -->
     <div id="viewCounter" class="flex items-center gap-2 text-outline flex-shrink-0 hidden sm:flex">
       <span class="material-symbols-outlined text-sm">visibility</span>
       <span class="font-headline text-[10px] font-bold uppercase tracking-widest">— views</span>
@@ -301,7 +301,7 @@
 
   <footer class="bg-[#1C1B1B] border-t border-[#353534] w-full px-6 py-4 flex justify-between items-center mt-auto">
     <span class="font-label font-black text-[10px] uppercase tracking-widest text-outline" id="footerLabel">eFundiHax</span>
-    <span class="font-label text-[9px] text-outline/40 uppercase">v9.0</span>
+    <span class="font-label text-[9px] text-outline/40 uppercase">v9.1</span>
   </footer>
 
 <script>
@@ -460,7 +460,8 @@ function renderDates(rows) {
     return;
   }
 
-  const sorted = [...rows].sort((a, b) => new Date(a.start_iso) - new Date(b.start_iso));
+  // Sort: furthest future at top, furthest past at bottom (descending)
+  const sorted = [...rows].sort((a, b) => new Date(b.start_iso) - new Date(a.start_iso));
 
   el.innerHTML = sorted.map(ev => {
     const d = new Date(ev.start_iso);
@@ -579,7 +580,7 @@ function initCopyAll(files) {
 }
 
 // ============================================================
-// INCREMENT VIEW
+// INCREMENT VIEW (for this worksite only)
 // ============================================================
 async function incrementView(slug, siteTitle) {
   const sessionKey = `efh_view_${slug}`;
@@ -598,6 +599,12 @@ async function incrementView(slug, siteTitle) {
     });
     const data = await res.json();
     console.log(`[eFundiHax] View increment: ${slug} → ${data.views}`);
+    
+    // Update header with new count
+    const viewCounterSpan = document.querySelector('#viewCounter span:last-child');
+    if (viewCounterSpan && data.views) {
+      viewCounterSpan.textContent = `${data.views.toLocaleString()} views`;
+    }
   } catch (e) {
     console.warn('Failed to increment view:', e);
   }
@@ -717,18 +724,21 @@ async function init() {
     } catch(e) {}
   }
 
-  // Update view counter in header
+  // Get this worksite's view count for header
   try {
     const viewsRes = await fetch(VIEWS_JSON);
     if (viewsRes.ok) {
       const views = await viewsRes.json();
-      const totalViews = Object.values(views).reduce((sum, count) => sum + count, 0);
-      document.getElementById('viewCounter').querySelector('span:last-child').textContent = `${totalViews.toLocaleString()} views`;
+      const siteViews = views[slug] || 0;
+      const viewCounterSpan = document.querySelector('#viewCounter span:last-child');
+      if (viewCounterSpan) {
+        viewCounterSpan.textContent = `${siteViews.toLocaleString()} views`;
+      }
     }
   } catch(e) {}
   
   // Increment view for this worksite
-  incrementView(slug, title);
+  await incrementView(slug, title);
 }
 
 function showError(title, msg) {

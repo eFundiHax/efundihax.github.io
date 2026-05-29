@@ -139,7 +139,7 @@
       width: 18px;
       height: 18px;
       flex-shrink: 0;
-      background: #ffffff;
+      background: #ffffff !important;
       border-top: 2px solid #6b6b6b;
       border-left: 2px solid #6b6b6b;
       border-bottom: 1px solid #d4d4d4;
@@ -147,10 +147,10 @@
       cursor: pointer;
       position: relative;
       outline: none;
-      accent-color: transparent;
+      accent-color: transparent !important;
     }
     .custom-checkbox:checked {
-      background: #ffffff;
+      background: #ffffff !important;
       border-top: 1px solid #d4d4d4;
       border-left: 1px solid #d4d4d4;
       border-bottom: 2px solid #6b6b6b;
@@ -492,7 +492,7 @@
   </div>
 
   <footer class="bg-[#1C1B1B] text-on-surface/50 font-headline text-[10px] uppercase tracking-widest w-full px-6 py-6 border-t border-[#353534] flex flex-col md:flex-row justify-between items-center gap-4 mt-auto">
-    <div class="flex flex-col md:flex-row items-center gap-6"><span class="font-bold text-on-surface/40">eFundiHax — NWU Student Hub</span><span class="opacity-60">v2.4</span></div>
+    <div class="flex flex-col md:flex-row items-center gap-6"><span class="font-bold text-on-surface/40">eFundiHax — NWU Student Hub</span><span class="opacity-60">v2.5</span></div>
     <div class="flex items-center gap-6"><a class="hover:text-primary transition-colors" href="#">About</a><a class="hover:text-primary transition-colors" href="#">Privacy</a></div>
   </footer>
 
@@ -537,9 +537,10 @@
         
         if (viewsRes && viewsRes.ok) {
           viewsData = await viewsRes.json();
-          const totalViews = Object.values(viewsData).reduce((sum, count) => sum + count, 0);
+          // Show homepage views in header
+          const homepageViews = viewsData._homepage || 0;
           const viewCounterSpan = document.getElementById('view-counter');
-          if (viewCounterSpan) viewCounterSpan.innerText = `${totalViews.toLocaleString()} views`;
+          if (viewCounterSpan) viewCounterSpan.innerText = `${homepageViews.toLocaleString()} views`;
           
           // Increment homepage view once per session
           const sessionKey = 'efh_homepage_viewed';
@@ -682,7 +683,7 @@
               <span class="text-[10px] uppercase font-bold tracking-widest opacity-80">Module</span>
             </div>
           </div>
-          <span class="click-count text-xs text-on-primary/70">${getWorksiteViews(ws.slug).toLocaleString()} views</span>
+          <span class="click-count text-xs text-on-primary/70">${getWorksiteViews(ws.slug).toLocaleString()} clicks</span>
         </div>
       `).join('');
       
