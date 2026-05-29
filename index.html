@@ -132,7 +132,6 @@
       height: 18px;
       flex-shrink: 0;
       background: #1c1b1b;
-      /* bevel-in: pressed/inset look when unchecked */
       border-top:    2px solid #0e0e0e;
       border-left:   2px solid #0e0e0e;
       border-bottom: 1px solid #4c4453;
@@ -143,7 +142,6 @@
     }
     .custom-checkbox:checked {
       background: #6b3d8f;
-      /* bevel-out: raised look when checked */
       border-top:    1px solid #9b59b6;
       border-left:   1px solid #9b59b6;
       border-bottom: 2px solid #0e0e0e;
@@ -415,7 +413,6 @@
                 <span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">CMPG115</span>
                 <div class="flex gap-3"><a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">event</span> Google Calendar</a><a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">download</span> .ICS</a></div>
               </div>
-              <!-- Additional modules could be added here -->
             </div>
           </section>
 
@@ -444,7 +441,9 @@
     <!-- SEARCH RESULTS CONTAINER (initially hidden) -->
     <div class="search-results-container">
       <div class="w-full max-w-2xl mx-auto">
-        <h3 class="font-headline text-xs font-black tracking-[0.2em] uppercase text-outline mb-4">Search Results</h3>
+        <div id="searchResultsHeader" class="text-center mb-4">
+          <h3 id="resultsHeading" class="font-headline text-xs font-black tracking-[0.2em] uppercase text-outline">Search Results</h3>
+        </div>
         <div id="searchResultsList" class="flex flex-col gap-3">
           <div class="bg-surface-container-low bevel-out p-4 text-center text-outline">Loading worksites...</div>
         </div>
@@ -458,19 +457,27 @@
     <div class="font-headline text-sm font-black uppercase tracking-widest text-on-primary" id="selectedCount">0 selected</div>
     <div class="flex items-center gap-4">
       <button id="copyScheduleBtn" class="bg-tertiary text-on-tertiary px-4 py-2 font-headline font-black uppercase text-xs bevel-out hover:brightness-110">Copy Schedule Links</button>
+      <button id="clearSelectionBtn" class="bevel-out bg-surface-variant w-8 h-8 flex items-center justify-center hover:bg-error transition-colors tooltip-container">
+        <span class="material-symbols-outlined text-sm text-on-surface">close</span>
+        <div class="tooltip-content bevel-out">
+          <p class="text-[10px] font-body">Clear selection</p>
+        </div>
+      </button>
       <div class="tooltip-container cursor-help flex items-center justify-center text-on-primary">
         <span class="material-symbols-outlined text-2xl">help</span>
         <div class="tooltip-content bevel-out text-on-surface text-xs font-body leading-tight">
           <p class="mb-2 uppercase font-headline font-bold text-[10px] tracking-widest text-outline">How to use</p>
           <p class="mb-2">Select worksites above, then click 'Copy Schedule Links' to get spreadsheet URLs you can paste directly into NotebookLM.</p>
-          <div class="w-full h-24 bg-surface-container-lowest bevel-in flex items-center justify-center text-outline/50">[GIF Placeholder]</div>
+          <div class="w-full h-24 bg-surface-container-lowest bevel-in flex items-center justify-center text-outline/50">
+            <span class="material-symbols-outlined text-3xl">broken_image</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <footer class="bg-[#1C1B1B] text-on-surface/50 font-headline text-[10px] uppercase tracking-widest w-full px-6 py-6 border-t border-[#353534] flex flex-col md:flex-row justify-between items-center gap-4 mt-auto">
-    <div class="flex flex-col md:flex-row items-center gap-6"><span class="font-bold text-on-surface/40">eFundiHax — NWU Student Hub</span><span class="opacity-60">v2.1</span></div>
+    <div class="flex flex-col md:flex-row items-center gap-6"><span class="font-bold text-on-surface/40">eFundiHax — NWU Student Hub</span><span class="opacity-60">v2.2</span></div>
     <div class="flex items-center gap-6"><a class="hover:text-primary transition-colors" href="#">About</a><a class="hover:text-primary transition-colors" href="#">Privacy</a></div>
   </footer>
 
@@ -487,34 +494,124 @@
     // ---------- SEARCH MODE ----------
     let worksites = [];
     let selectedWorksites = new Set();
+    let currentSort = 'popular'; // 'popular' or 'az'
+    let viewsData = {}; // Cache for view counts
 
     const searchInput = document.getElementById('searchInput');
     const resultsContainer = document.getElementById('searchResultsList');
     const footer = document.getElementById('actionFooter');
     const selectedCountSpan = document.getElementById('selectedCount');
     const copyBtn = document.getElementById('copyScheduleBtn');
+    const clearSelectionBtn = document.getElementById('clearSelectionBtn');
+    const resultsHeading = document.getElementById('resultsHeading');
+    const searchResultsHeader = document.getElementById('searchResultsHeader');
 
-    fetch('data/worksites/worksites.json')
-      .then(res => res.ok ? res.json() : Promise.reject(`HTTP ${res.status}`))
-      .then(data => {
-        worksites = data;
-        renderSearchResults('');
-      })
-      .catch(err => {
+    // Fetch worksites and views
+    async function loadData() {
+      try {
+        const [worksitesRes, viewsRes] = await Promise.all([
+          fetch('data/worksites/worksites.json'),
+          fetch('data/views.json').catch(() => ({ ok: false }))
+        ]);
+        
+        if (!worksitesRes.ok) throw new Error(`HTTP ${worksitesRes.status}`);
+        worksites = await worksitesRes.json();
+        
+        if (viewsRes && viewsRes.ok) {
+          viewsData = await viewsRes.json();
+        }
+        
+        // Apply URL param if present, otherwise render empty
+        handleUrlSearchParam();
+        
+        if (!document.body.classList.contains('search-mode')) {
+          // Not in search mode, render nothing (homepage visible)
+          updateSortToggleVisibility(false);
+        }
+      } catch (err) {
         console.error(err);
         resultsContainer.innerHTML = '<div class="bg-surface-container-low bevel-out p-4 text-center text-outline">Failed to load worksites. Ensure Apps Script has generated the file.</div>';
-      });
+      }
+    }
 
-    function relevanceScore(title, query) {
-      const lowerTitle = title.toLowerCase();
-      const lowerQuery = query.toLowerCase();
-      if (lowerTitle === lowerQuery) return 100;
-      if (lowerTitle.startsWith(lowerQuery)) return 90;
-      if (lowerTitle.includes(lowerQuery)) return 80;
-      const queryWords = lowerQuery.split(/\s+/);
-      let wordMatches = 0;
-      for (let w of queryWords) if (lowerTitle.includes(w)) wordMatches++;
-      return wordMatches * 20;
+    // Handle ?q= parameter on load
+    function handleUrlSearchParam() {
+      const params = new URLSearchParams(window.location.search);
+      const q = params.get('q');
+      if (q && q.trim()) {
+        document.getElementById('searchInput').value = q;
+        document.body.classList.add('search-mode');
+        renderSearchResults(q);
+      } else {
+        updateSortToggleVisibility(false);
+      }
+    }
+
+    // Update the heading based on search term and sort visibility
+    function updateResultsHeading(searchTerm) {
+      if (searchTerm && searchTerm.trim() !== '') {
+        // Has search term - show "Search Results"
+        resultsHeading.textContent = 'Search Results';
+        updateSortToggleVisibility(false);
+      } else {
+        // Empty search - show sort toggle
+        resultsHeading.textContent = '';
+        updateSortToggleVisibility(true);
+      }
+    }
+
+    // Create or remove sort toggle element
+    let sortToggleElement = null;
+    
+    function updateSortToggleVisibility(show) {
+      if (show && !sortToggleElement) {
+        sortToggleElement = document.createElement('div');
+        sortToggleElement.id = 'sortToggle';
+        sortToggleElement.className = 'text-center cursor-pointer';
+        sortToggleElement.innerHTML = `<span id="sortAz" class="${currentSort === 'az' ? 'text-sm' : 'text-xs opacity-50'} font-bold uppercase tracking-wider">A-Z</span><span class="text-sm mx-1"> | </span><span id="sortPopular" class="${currentSort === 'popular' ? 'text-sm' : 'text-xs opacity-50'} font-bold uppercase tracking-wider">Popular</span>`;
+        
+        // Add click handler to the whole container
+        sortToggleElement.addEventListener('click', () => {
+          currentSort = currentSort === 'popular' ? 'az' : 'popular';
+          updateSortToggleUI();
+          // Re-render with current search term (empty string = all worksites)
+          const currentSearchTerm = document.body.classList.contains('search-mode') ? searchInput.value : '';
+          renderSearchResults(currentSearchTerm);
+        });
+        
+        searchResultsHeader.appendChild(sortToggleElement);
+      } else if (!show && sortToggleElement) {
+        sortToggleElement.remove();
+        sortToggleElement = null;
+      }
+    }
+    
+    function updateSortToggleUI() {
+      if (sortToggleElement) {
+        const azSpan = document.getElementById('sortAz');
+        const popularSpan = document.getElementById('sortPopular');
+        if (azSpan && popularSpan) {
+          if (currentSort === 'az') {
+            azSpan.className = 'text-sm font-bold uppercase tracking-wider';
+            popularSpan.className = 'text-xs opacity-50 font-bold uppercase tracking-wider';
+          } else {
+            azSpan.className = 'text-xs opacity-50 font-bold uppercase tracking-wider';
+            popularSpan.className = 'text-sm font-bold uppercase tracking-wider';
+          }
+        }
+      }
+    }
+
+    function getWorksiteViews(slug) {
+      return viewsData[slug] || 0;
+    }
+
+    function sortWorksitesByCurrentMethod(worksitesList) {
+      if (currentSort === 'popular') {
+        return [...worksitesList].sort((a, b) => getWorksiteViews(b.slug) - getWorksiteViews(a.slug));
+      } else {
+        return [...worksitesList].sort((a, b) => a.title.localeCompare(b.title));
+      }
     }
 
     function renderSearchResults(query) {
@@ -522,18 +619,24 @@
         resultsContainer.innerHTML = '<div class="bg-surface-container-low bevel-out p-4 text-center text-outline">Loading worksites...</div>';
         return;
       }
+      
       const lowerQuery = query.trim().toLowerCase();
       let filtered = worksites;
+      
       if (lowerQuery !== '') {
         filtered = worksites.filter(w => w.title.toLowerCase().includes(lowerQuery));
-        filtered.sort((a,b) => relevanceScore(b.title, lowerQuery) - relevanceScore(a.title, lowerQuery));
-      } else {
-        filtered.sort((a,b) => a.title.localeCompare(b.title));
       }
+      
+      // Apply current sort method
+      filtered = sortWorksitesByCurrentMethod(filtered);
+      
+      updateResultsHeading(query);
+      
       if (filtered.length === 0) {
         resultsContainer.innerHTML = '<div class="bg-surface-container-low bevel-out p-4 text-center text-outline">No worksites match your search.</div>';
         return;
       }
+      
       resultsContainer.innerHTML = filtered.map(ws => `
         <div class="panel-header-tab p-4 flex items-center justify-between hover:brightness-110 cursor-pointer worksite-result" data-slug="${ws.slug}">
           <div class="flex items-center gap-4">
@@ -544,12 +647,14 @@
               <span class="text-[10px] uppercase font-bold tracking-widest opacity-80">Module</span>
             </div>
           </div>
-          <span class="click-count text-xs text-on-primary/70">0 clicks</span>
+          <span class="click-count text-xs text-on-primary/70">${getWorksiteViews(ws.slug).toLocaleString()} views</span>
         </div>
       `).join('');
+      
       // Attach checkbox listeners
       document.querySelectorAll('.item-checkbox').forEach(cb => {
         cb.addEventListener('change', (e) => {
+          e.stopPropagation();
           const slug = cb.getAttribute('data-slug');
           if (cb.checked) selectedWorksites.add(slug);
           else selectedWorksites.delete(slug);
@@ -557,14 +662,16 @@
           renderSearchResults(searchInput.value);
         });
       });
+      
       // Attach click on result row to navigate
       document.querySelectorAll('.worksite-result').forEach(row => {
         row.addEventListener('click', (e) => {
-          if (e.target.classList && e.target.classList.contains('item-checkbox')) return;
+          if (e.target.classList && (e.target.classList.contains('item-checkbox') || e.target.tagName === 'INPUT')) return;
           const slug = row.getAttribute('data-slug');
           if (slug) window.location.href = `worksite.html?site=${slug}`;
         });
       });
+      
       updateFooter();
     }
 
@@ -584,28 +691,14 @@
       return str.replace(/[&<>]/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[m]));
     }
 
-    searchInput.addEventListener('focus', () => {
-      document.body.classList.add('search-mode');
-      renderSearchResults(searchInput.value);
-    });
-    searchInput.addEventListener('input', (e) => {
-      if (document.body.classList.contains('search-mode')) renderSearchResults(e.target.value);
-    });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && document.body.classList.contains('search-mode')) exitSearchMode();
-    });
-    document.getElementById('logoButton').addEventListener('click', () => {
-      if (document.body.classList.contains('search-mode')) exitSearchMode();
-    });
-    function exitSearchMode() {
-      document.body.classList.remove('search-mode');
-      searchInput.blur();
-      searchInput.value = '';
+    // Clear selection button handler
+    clearSelectionBtn.addEventListener('click', () => {
       selectedWorksites.clear();
       updateFooter();
-      renderSearchResults('');
-    }
+      renderSearchResults(searchInput.value);
+    });
 
+    // Copy button handler
     copyBtn.addEventListener('click', async () => {
       const selectedUrls = worksites
         .filter(ws => selectedWorksites.has(ws.slug))
@@ -620,6 +713,41 @@
         setTimeout(() => copyBtn.innerText = originalText, 2000);
       } catch (err) { console.error(err); }
     });
+
+    // Search mode handlers
+    searchInput.addEventListener('focus', () => {
+      document.body.classList.add('search-mode');
+      renderSearchResults(searchInput.value);
+    });
+    
+    searchInput.addEventListener('input', (e) => {
+      if (document.body.classList.contains('search-mode')) renderSearchResults(e.target.value);
+    });
+    
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && document.body.classList.contains('search-mode')) exitSearchMode();
+    });
+    
+    document.getElementById('logoButton').addEventListener('click', () => {
+      if (document.body.classList.contains('search-mode')) exitSearchMode();
+    });
+    
+    function exitSearchMode() {
+      document.body.classList.remove('search-mode');
+      searchInput.blur();
+      searchInput.value = '';
+      selectedWorksites.clear();
+      updateFooter();
+      // Clear URL parameter without reload
+      const url = new URL(window.location);
+      url.searchParams.delete('q');
+      window.history.replaceState({}, '', url);
+      renderSearchResults('');
+      updateSortToggleVisibility(false);
+    }
+    
+    // Initial load
+    loadData();
   </script>
 </body>
 </html>
