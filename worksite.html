@@ -46,13 +46,15 @@
     .skeleton { background: linear-gradient(90deg, #201f1f 25%, #2a2a2a 50%, #201f1f 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; }
     @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
     .grade-bar-fill { height: 100%; background: #6b3d8f; transition: width 0.8s ease; }
+    /* Tooltip - centered */
     .tooltip-container { position: relative; display: inline-flex; align-items: center; }
     .tooltip-content {
       visibility: hidden;
       opacity: 0;
       position: absolute;
       bottom: 100%;
-      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
       margin-bottom: 8px;
       background: #1c1b1b;
       color: #e5e2e1;
@@ -67,13 +69,32 @@
       pointer-events: none;
     }
     .tooltip-container:hover .tooltip-content { visibility: visible; opacity: 1; }
+    /* Search input with arrow */
+    .search-with-arrow {
+      position: relative;
+    }
+    .search-arrow {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.2s;
+      color: #988d9e;
+    }
+    .search-arrow.visible {
+      opacity: 1;
+    }
+    .search-arrow:hover {
+      color: #ffb77a;
+    }
   </style>
 </head>
 <body class="bg-background text-on-surface font-body antialiased min-h-screen pt-12 flex flex-col">
 
-  <!-- HEADER: [← eFundiHax] [/worksite_name] [Search] [Views] -->
+  <!-- HEADER -->
   <header class="bg-[#1C1B1B] text-on-surface font-headline tracking-tighter uppercase top-0 w-full px-6 h-12 z-50 fixed border-b border-[#353534] flex items-center justify-between gap-4">
-    <!-- Left group: back button + site name -->
     <div class="flex items-center gap-2 flex-shrink-0">
       <a href="index.html" class="flex items-center gap-1 hover:opacity-80 transition-opacity">
         <span class="material-symbols-outlined text-on-surface text-sm">arrow_back</span>
@@ -82,11 +103,12 @@
       <span id="siteCrumb" class="text-outline font-label text-[10px] font-bold tracking-widest uppercase hidden sm:inline">/ loading...</span>
     </div>
 
-    <!-- Center: search bar (flex-grow, centered) -->
+    <!-- Center: search bar with arrow redirect -->
     <div class="flex-1 flex justify-center">
-      <div class="relative w-full max-w-xs md:max-w-md">
+      <div class="relative w-full max-w-xs md:max-w-md search-with-arrow">
         <span class="material-symbols-outlined absolute left-3 text-outline text-sm pointer-events-none top-1/2 -translate-y-1/2">search</span>
-        <input type="text" id="searchInput" class="w-full bg-surface-container-lowest py-2 pl-9 pr-4 font-headline text-[10px] font-bold uppercase tracking-widest text-on-surface placeholder:text-outline/50 focus:ring-0 focus:outline-none" placeholder="Search Hub..." style="box-shadow: inset 2px 2px 4px rgba(0,0,0,0.5), inset -1px -1px 1px rgba(255,255,255,0.05); border: none;">
+        <input type="text" id="searchInput" class="w-full bg-surface-container-lowest py-2 pl-9 pr-8 font-headline text-[10px] font-bold uppercase tracking-widest text-on-surface placeholder:text-outline/50 focus:ring-0 focus:outline-none" placeholder="Search Hub..." style="box-shadow: inset 2px 2px 4px rgba(0,0,0,0.5), inset -1px -1px 1px rgba(255,255,255,0.05); border: none;" autocomplete="off">
+        <span id="searchArrow" class="material-symbols-outlined search-arrow text-sm">arrow_forward</span>
       </div>
     </div>
 
@@ -178,9 +200,9 @@
               <span class="font-label font-black text-[11px] uppercase tracking-widest text-on-primary">Dates</span>
             </div>
             <div class="flex items-center gap-2">
-              <button id="openGoogleCalendarBtn" class="bevel-out bg-surface-variant w-7 h-7 flex items-center justify-center hover:bg-primary transition-colors" title="Open in Google Calendar">
+              <a id="openGoogleCalendarBtn" href="#" target="_blank" class="bevel-out bg-surface-variant w-7 h-7 flex items-center justify-center hover:bg-primary transition-colors" title="Open in Google Calendar">
                 <span class="material-symbols-outlined text-sm text-on-surface">calendar_month</span>
-              </button>
+              </a>
               <button id="downloadIcsBtn" class="bevel-out bg-surface-variant px-2 py-1 text-[9px] font-black uppercase tracking-widest hover:bg-primary transition-colors flex items-center gap-1" title="Download iCal">
                 <span class="material-symbols-outlined text-sm">event_repeat</span>
                 <span class="hidden sm:inline">.ics</span>
@@ -286,6 +308,8 @@
 // ============================================================
 // CONFIGURATION
 // ============================================================
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz49mtRkKKOaLdMryWrHAaTX7yR5cZ71_xOnUPgWQywi6lRWkszOhCsf_U4_NcONz9q/exec';
+const SECRET = 'trackmania_is_peak';
 const WORKSITES_JSON = 'data/worksites/worksites.json';
 const VIEWS_JSON = 'data/views.json';
 
@@ -436,10 +460,8 @@ function renderDates(rows) {
     return;
   }
 
-  // Sort chronologically (oldest first)
   const sorted = [...rows].sort((a, b) => new Date(a.start_iso) - new Date(b.start_iso));
 
-  // Render each event with data-start-iso for scrolling
   el.innerHTML = sorted.map(ev => {
     const d = new Date(ev.start_iso);
     return `
@@ -456,7 +478,6 @@ function renderDates(rows) {
     `;
   }).join('');
 
-  // Scroll to the closest future event (or closest past if none)
   const now = Date.now();
   const eventItems = document.querySelectorAll('.date-item');
   let targetIndex = -1;
@@ -477,7 +498,6 @@ function renderDates(rows) {
   });
 
   if (targetIndex === -1 && eventItems.length > 0) {
-    // No future events, find closest past
     let closestPastDiff = Infinity;
     eventItems.forEach((item, idx) => {
       const startIso = item.dataset.startIso;
@@ -559,10 +579,68 @@ function initCopyAll(files) {
 }
 
 // ============================================================
+// INCREMENT VIEW
+// ============================================================
+async function incrementView(slug, siteTitle) {
+  const sessionKey = `efh_view_${slug}`;
+  if (sessionStorage.getItem(sessionKey)) return;
+  sessionStorage.setItem(sessionKey, 'true');
+  
+  try {
+    const res = await fetch(APPS_SCRIPT_URL, {
+      method: 'POST',
+      body: JSON.stringify({
+        action: 'increment_view',
+        secret: SECRET,
+        slug: slug,
+        siteTitle: siteTitle
+      })
+    });
+    const data = await res.json();
+    console.log(`[eFundiHax] View increment: ${slug} → ${data.views}`);
+  } catch (e) {
+    console.warn('Failed to increment view:', e);
+  }
+}
+
+// ============================================================
+// SEARCH REDIRECT
+// ============================================================
+function initSearchRedirect() {
+  const searchInput = document.getElementById('searchInput');
+  const searchArrow = document.getElementById('searchArrow');
+  
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = `index.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+  
+  searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      doSearch();
+    }
+  });
+  
+  // Show arrow after first character
+  searchInput.addEventListener('input', () => {
+    if (searchInput.value.trim().length > 0) {
+      searchArrow.classList.add('visible');
+    } else {
+      searchArrow.classList.remove('visible');
+    }
+  });
+  
+  searchArrow.addEventListener('click', doSearch);
+}
+
+// ============================================================
 // MAIN BOOT
 // ============================================================
 async function init() {
   initSlideshow();
+  initSearchRedirect();
 
   const params = new URLSearchParams(window.location.search);
   const slug = params.get('site');
@@ -590,10 +668,22 @@ async function init() {
   if (!ssMatch) { showError('No spreadsheet found', 'Schedule sheet not created yet.'); return; }
   const ssId = ssMatch[1];
 
-  // Google Calendar button - opens Google Calendar with this spreadsheet's events
-  document.getElementById('openGoogleCalendarBtn').addEventListener('click', () => {
-    window.open(`https://calendar.google.com/calendar/u/0/r?cid=${worksite.spreadsheetUrl}`, '_blank');
-  });
+  // Fetch calendar_id from manifest and set Google Calendar button
+  if (worksite.manifestId) {
+    try {
+      const manifestText = await fetch(`https://drive.google.com/uc?export=download&id=${worksite.manifestId}`).then(r => r.text());
+      const calendarIdMatch = manifestText.match(/calendar_id: (.+)/);
+      if (calendarIdMatch && calendarIdMatch[1]) {
+        const calendarId = calendarIdMatch[1].trim();
+        const googleCalendarBtn = document.getElementById('openGoogleCalendarBtn');
+        if (googleCalendarBtn) {
+          googleCalendarBtn.href = `https://calendar.google.com/calendar/embed?src=${encodeURIComponent(calendarId)}`;
+        }
+      }
+    } catch (e) {
+      console.warn('Failed to fetch calendar_id from manifest:', e);
+    }
+  }
 
   let annRows = [], calRows = [], manifestFiles = [];
   try {
@@ -627,14 +717,18 @@ async function init() {
     } catch(e) {}
   }
 
+  // Update view counter in header
   try {
     const viewsRes = await fetch(VIEWS_JSON);
     if (viewsRes.ok) {
       const views = await viewsRes.json();
-      const count = views[slug] || 0;
-      document.getElementById('viewCounter').querySelector('span:last-child').textContent = `${count.toLocaleString()} views`;
+      const totalViews = Object.values(views).reduce((sum, count) => sum + count, 0);
+      document.getElementById('viewCounter').querySelector('span:last-child').textContent = `${totalViews.toLocaleString()} views`;
     }
   } catch(e) {}
+  
+  // Increment view for this worksite
+  incrementView(slug, title);
 }
 
 function showError(title, msg) {
