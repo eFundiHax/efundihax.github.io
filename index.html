@@ -140,24 +140,21 @@
       height: 18px;
       flex-shrink: 0;
       background: #ffffff;
-      /* bevel-in: pressed/inset look when unchecked */
-      border-top:    2px solid #6b6b6b;
-      border-left:   2px solid #6b6b6b;
+      border-top: 2px solid #6b6b6b;
+      border-left: 2px solid #6b6b6b;
       border-bottom: 1px solid #d4d4d4;
-      border-right:  1px solid #d4d4d4;
+      border-right: 1px solid #d4d4d4;
       cursor: pointer;
       position: relative;
       outline: none;
-      image-rendering: crisp-edges;
-      image-rendering: pixelated;
+      accent-color: transparent;
     }
     .custom-checkbox:checked {
       background: #ffffff;
-      /* bevel-out: raised look when checked */
-      border-top:    1px solid #d4d4d4;
-      border-left:   1px solid #d4d4d4;
+      border-top: 1px solid #d4d4d4;
+      border-left: 1px solid #d4d4d4;
       border-bottom: 2px solid #6b6b6b;
-      border-right:  2px solid #6b6b6b;
+      border-right: 2px solid #6b6b6b;
     }
     .custom-checkbox:checked::after {
       content: '✓';
@@ -170,10 +167,12 @@
       font-weight: 700;
       color: #000000;
       line-height: 1;
-      text-shadow: none;
     }
-    .custom-checkbox:focus { outline: none; }
-    /* Tooltip */
+    .custom-checkbox:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    /* Tooltip - centered */
     .tooltip-container {
       position: relative;
     }
@@ -182,7 +181,8 @@
       opacity: 0;
       position: absolute;
       bottom: 100%;
-      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
       margin-bottom: 10px;
       background-color: #131313;
       padding: 10px;
@@ -492,11 +492,15 @@
   </div>
 
   <footer class="bg-[#1C1B1B] text-on-surface/50 font-headline text-[10px] uppercase tracking-widest w-full px-6 py-6 border-t border-[#353534] flex flex-col md:flex-row justify-between items-center gap-4 mt-auto">
-    <div class="flex flex-col md:flex-row items-center gap-6"><span class="font-bold text-on-surface/40">eFundiHax — NWU Student Hub</span><span class="opacity-60">v2.3</span></div>
+    <div class="flex flex-col md:flex-row items-center gap-6"><span class="font-bold text-on-surface/40">eFundiHax — NWU Student Hub</span><span class="opacity-60">v2.4</span></div>
     <div class="flex items-center gap-6"><a class="hover:text-primary transition-colors" href="#">About</a><a class="hover:text-primary transition-colors" href="#">Privacy</a></div>
   </footer>
 
   <script>
+    // APPS SCRIPT URL
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz49mtRkKKOaLdMryWrHAaTX7yR5cZ71_xOnUPgWQywi6lRWkszOhCsf_U4_NcONz9q/exec';
+    const SECRET = 'trackmania_is_peak';
+    
     // Click counters (session)
     const clickCounts = {};
     function incrementCount(id) {
@@ -504,7 +508,6 @@
       const el = document.getElementById('count-' + id);
       if (el) el.textContent = id.startsWith('wa-') ? clickCounts[id] + (clickCounts[id] === 1 ? ' click' : ' clicks') : clickCounts[id];
     }
-    document.getElementById('view-counter').innerText = '— views';
 
     // ---------- SEARCH MODE ----------
     let worksites = [];
@@ -533,26 +536,26 @@
         worksites = await worksitesRes.json();
         
         if (viewsRes && viewsRes.ok) {
-		  viewsData = await viewsRes.json();
-		  const totalViews = Object.values(viewsData).reduce((sum, count) => sum + count, 0);
-		  document.getElementById('view-counter').innerText = `${totalViews.toLocaleString()} views`;
-		  
-		  // Increment homepage view once per session
-		  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwoRxkhdGq_84g9HqhYRJqMXTWyvAZfBYD_S63XXXirTYrKgwjFJV18yqo9pjfH8T8q/exec';
-		  const sessionKey = 'efh_homepage_viewed';
-		  if (!sessionStorage.getItem(sessionKey)) {
-			sessionStorage.setItem(sessionKey, 'true');
-			fetch(APPS_SCRIPT_URL, {
-			  method: 'POST',
-			  body: JSON.stringify({
-				action: 'increment_view',
-				secret: 'trackmania_is_peak',
-				slug: '_homepage',
-				siteTitle: 'Homepage'
-			  })
-			}).catch(e => console.warn(e));
-		  }
-		}
+          viewsData = await viewsRes.json();
+          const totalViews = Object.values(viewsData).reduce((sum, count) => sum + count, 0);
+          const viewCounterSpan = document.getElementById('view-counter');
+          if (viewCounterSpan) viewCounterSpan.innerText = `${totalViews.toLocaleString()} views`;
+          
+          // Increment homepage view once per session
+          const sessionKey = 'efh_homepage_viewed';
+          if (!sessionStorage.getItem(sessionKey)) {
+            sessionStorage.setItem(sessionKey, 'true');
+            fetch(APPS_SCRIPT_URL, {
+              method: 'POST',
+              body: JSON.stringify({
+                action: 'increment_view',
+                secret: SECRET,
+                slug: '_homepage',
+                siteTitle: 'Homepage'
+              })
+            }).catch(e => console.warn('Failed to increment homepage view:', e));
+          }
+        }
         
         // Apply URL param if present, otherwise render empty
         handleUrlSearchParam();
