@@ -35,37 +35,63 @@
     .panel-header-tab { background: #6b3d8f; box-shadow: inset 1px 1px 0px rgba(255,255,255,0.2), inset -1px -1px 0px rgba(0,0,0,0.4); }
     ::-webkit-scrollbar { width: 4px; } ::-webkit-scrollbar-track { background: #131313; } ::-webkit-scrollbar-thumb { background: #353534; }
     .bg-dither { background-image: linear-gradient(45deg, rgba(225,182,255,0.04) 25%, transparent 25%, transparent 75%, rgba(225,182,255,0.04) 75%), linear-gradient(45deg, rgba(225,182,255,0.04) 25%, transparent 25%, transparent 75%, rgba(225,182,255,0.04) 75%); background-size: 4px 4px; background-position: 0 0, 2px 2px; }
-    /* Slideshow */
     .slide-track { display: flex; transition: transform 0.5s ease-in-out; will-change: transform; }
     .slide { flex: 0 0 100%; }
     .slide-dot { width: 10px; height: 10px; cursor: pointer; transition: background 0.2s; }
     .slide-dot.inactive { background: #353534; border-top: 2px solid #0e0e0e; border-left: 2px solid #0e0e0e; border-bottom: 1px solid #4c4450; border-right: 1px solid #4c4450; }
     .slide-dot.active { background: #ffb77a; border-top: 1px solid #4c4450; border-left: 1px solid #4c4450; border-bottom: 2px solid #0e0e0e; border-right: 2px solid #0e0e0e; }
-    /* Status badges */
-    .badge-synced { background: #1a3320; color: #6fcf6f; border: 1px solid #6fcf6f33; }
-    .badge-pending { background: #2e2010; color: #ffb77a; border: 1px solid #ffb77a33; }
-    .badge-not-synced { background: #2e1010; color: #f47c7c; border: 1px solid #f47c7c33; }
-    /* Skeleton loader */
+    .badge-synced { background: #1a3320; color: #6fcf6f; border: 1px solid #6fcf6f33; padding: 2px 6px; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+    .badge-pending { background: #2e2010; color: #ffb77a; border: 1px solid #ffb77a33; padding: 2px 6px; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+    .badge-not-synced { background: #2e1010; color: #f47c7c; border: 1px solid #f47c7c33; padding: 2px 6px; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
     .skeleton { background: linear-gradient(90deg, #201f1f 25%, #2a2a2a 50%, #201f1f 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; }
     @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
     .grade-bar-fill { height: 100%; background: #6b3d8f; transition: width 0.8s ease; }
+    .tooltip-container { position: relative; display: inline-flex; align-items: center; }
+    .tooltip-content {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      bottom: 100%;
+      right: 0;
+      margin-bottom: 8px;
+      background: #1c1b1b;
+      color: #e5e2e1;
+      padding: 8px 12px;
+      border: 1px solid #4c4450;
+      font-size: 11px;
+      font-family: 'Inter', monospace;
+      width: 220px;
+      white-space: normal;
+      z-index: 20;
+      transition: opacity 0.2s;
+      pointer-events: none;
+    }
+    .tooltip-container:hover .tooltip-content { visibility: visible; opacity: 1; }
   </style>
 </head>
 <body class="bg-background text-on-surface font-body antialiased min-h-screen pt-12 flex flex-col">
 
-  <!-- HEADER -->
-  <header class="bg-[#1C1B1B] text-on-surface font-headline tracking-tighter uppercase top-0 w-full px-6 h-12 z-50 fixed border-b border-[#353534] flex items-center gap-4">
-    <a href="index.html" id="backButton" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
-      <span class="material-symbols-outlined text-on-surface text-sm">arrow_back</span>
-      <span class="font-headline font-black text-xl uppercase tracking-tighter hidden sm:inline">eFundi<span class="text-[#9b59b6]">Hax</span></span>
-    </a>
-    <div class="flex-1 max-w-xs md:max-w-md px-4">
-      <div class="relative flex items-center">
-        <span class="material-symbols-outlined absolute left-3 text-outline text-sm pointer-events-none">search</span>
+  <!-- HEADER: [← eFundiHax] [/worksite_name] [Search] [Views] -->
+  <header class="bg-[#1C1B1B] text-on-surface font-headline tracking-tighter uppercase top-0 w-full px-6 h-12 z-50 fixed border-b border-[#353534] flex items-center justify-between gap-4">
+    <!-- Left group: back button + site name -->
+    <div class="flex items-center gap-2 flex-shrink-0">
+      <a href="index.html" class="flex items-center gap-1 hover:opacity-80 transition-opacity">
+        <span class="material-symbols-outlined text-on-surface text-sm">arrow_back</span>
+        <span class="font-headline font-black text-xl uppercase tracking-tighter hidden sm:inline">eFundi<span class="text-[#9b59b6]">Hax</span></span>
+      </a>
+      <span id="siteCrumb" class="text-outline font-label text-[10px] font-bold tracking-widest uppercase hidden sm:inline">/ loading...</span>
+    </div>
+
+    <!-- Center: search bar (flex-grow, centered) -->
+    <div class="flex-1 flex justify-center">
+      <div class="relative w-full max-w-xs md:max-w-md">
+        <span class="material-symbols-outlined absolute left-3 text-outline text-sm pointer-events-none top-1/2 -translate-y-1/2">search</span>
         <input type="text" id="searchInput" class="w-full bg-surface-container-lowest py-2 pl-9 pr-4 font-headline text-[10px] font-bold uppercase tracking-widest text-on-surface placeholder:text-outline/50 focus:ring-0 focus:outline-none" placeholder="Search Hub..." style="box-shadow: inset 2px 2px 4px rgba(0,0,0,0.5), inset -1px -1px 1px rgba(255,255,255,0.05); border: none;">
       </div>
     </div>
-    <div id="viewCounter" class="flex items-center gap-2 text-outline hidden sm:flex">
+
+    <!-- Right: view counter -->
+    <div id="viewCounter" class="flex items-center gap-2 text-outline flex-shrink-0 hidden sm:flex">
       <span class="material-symbols-outlined text-sm">visibility</span>
       <span class="font-headline text-[10px] font-bold uppercase tracking-widest">— views</span>
     </div>
@@ -73,7 +99,6 @@
 
   <main class="flex-grow w-full max-w-[1200px] mx-auto px-6 py-8 flex flex-col gap-8">
 
-    <!-- ERROR STATE -->
     <div id="errorState" class="hidden bevel-out bg-surface-container-low p-8 text-center">
       <span class="material-symbols-outlined text-error text-4xl mb-3 block">error_outline</span>
       <p class="font-headline font-black text-sm uppercase tracking-widest text-error mb-2" id="errorTitle">Worksite not found</p>
@@ -98,17 +123,15 @@
         </div>
         <div class="relative overflow-hidden bevel-in bg-surface-container-lowest m-2 flex-grow">
           <div class="slide-track h-full" id="slideTrack" style="width:300%;">
-            <!-- Slide 1 -->
             <div class="slide h-full relative" style="width:33.333%">
               <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-surface-container-lowest flex items-center justify-center">
                 <span class="material-symbols-outlined text-primary" style="font-size:80px;opacity:0.12;">school</span>
               </div>
               <div class="absolute bottom-4 left-4 right-4 bg-surface/90 p-4 bevel-out border-l-4 border-l-primary">
                 <h3 class="font-headline font-black text-sm text-primary mb-1 uppercase">Resources</h3>
-                <p class="font-body text-xs text-on-surface-variant">Course files are synced from eFundi and listed in the directory below.</p>
+                <p class="font-body text-xs text-on-surface-variant">Course files are synced from eFundi and listed below.</p>
               </div>
             </div>
-            <!-- Slide 2 -->
             <div class="slide h-full relative" style="width:33.333%">
               <div class="absolute inset-0 bg-gradient-to-br from-secondary/10 to-surface-container-lowest flex items-center justify-center">
                 <span class="material-symbols-outlined text-secondary" style="font-size:80px;opacity:0.12;">calendar_month</span>
@@ -118,7 +141,6 @@
                 <p class="font-body text-xs text-on-surface-variant">Deadlines and test dates are pulled from the eFundi calendar.</p>
               </div>
             </div>
-            <!-- Slide 3 -->
             <div class="slide h-full relative" style="width:33.333%">
               <div class="absolute inset-0 bg-gradient-to-br from-tertiary/10 to-surface-container-lowest flex items-center justify-center">
                 <span class="material-symbols-outlined text-tertiary" style="font-size:80px;opacity:0.12;">campaign</span>
@@ -144,27 +166,29 @@
             <span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings:'FILL' 1">campaign</span>
           </div>
           <div class="flex flex-col gap-1 overflow-y-auto flex-grow bevel-in bg-surface-container-lowest p-2" id="announcementsList">
-            <div class="skeleton h-10 mb-1"></div>
-            <div class="skeleton h-10 mb-1"></div>
-            <div class="skeleton h-10"></div>
+            <div class="skeleton h-10 mb-1"></div><div class="skeleton h-10 mb-1"></div><div class="skeleton h-10"></div>
           </div>
         </div>
 
-        <!-- DATES + ICS BUTTON -->
+        <!-- DATES + ICS + Google Calendar buttons -->
         <div class="bevel-out bg-surface-container-low flex flex-col overflow-hidden flex-1">
           <div class="panel-header-tab px-4 py-2 flex items-center justify-between">
             <div class="flex items-center gap-2">
               <span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings:'FILL' 1">timer</span>
               <span class="font-label font-black text-[11px] uppercase tracking-widest text-on-primary">Dates</span>
             </div>
-            <button id="downloadIcsBtn" class="bevel-out bg-surface-variant px-2 py-1 text-[9px] font-black uppercase tracking-widest hover:bg-primary transition-colors flex items-center gap-1" title="Download iCal">
-              <span class="material-symbols-outlined text-sm">event_repeat</span>
-              <span class="hidden sm:inline">.ics</span>
-            </button>
+            <div class="flex items-center gap-2">
+              <button id="openGoogleCalendarBtn" class="bevel-out bg-surface-variant w-7 h-7 flex items-center justify-center hover:bg-primary transition-colors" title="Open in Google Calendar">
+                <span class="material-symbols-outlined text-sm text-on-surface">calendar_month</span>
+              </button>
+              <button id="downloadIcsBtn" class="bevel-out bg-surface-variant px-2 py-1 text-[9px] font-black uppercase tracking-widest hover:bg-primary transition-colors flex items-center gap-1" title="Download iCal">
+                <span class="material-symbols-outlined text-sm">event_repeat</span>
+                <span class="hidden sm:inline">.ics</span>
+              </button>
+            </div>
           </div>
           <div class="flex flex-col gap-1 overflow-y-auto flex-grow bevel-in bg-surface-container-lowest bg-dither p-2" id="datesList">
-            <div class="skeleton h-10 mb-1"></div>
-            <div class="skeleton h-10"></div>
+            <div class="skeleton h-10 mb-1"></div><div class="skeleton h-10"></div>
           </div>
         </div>
 
@@ -225,9 +249,19 @@
 
         <!-- Action panel -->
         <div class="md:col-span-4 flex flex-col gap-3">
-          <button id="copyAllLinksBtn" class="bevel-out bg-primary text-on-primary font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
-            <span class="material-symbols-outlined text-sm">content_copy</span>Copy All Links
-          </button>
+          <div class="flex items-center gap-2">
+            <button id="copyAllLinksBtn" class="flex-1 bevel-out bg-primary text-on-primary font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
+              <span class="material-symbols-outlined text-sm">content_copy</span>Copy All Links
+            </button>
+            <div class="tooltip-container">
+              <div class="bevel-in bg-surface-container-lowest w-7 h-7 flex items-center justify-center cursor-help">
+                <span class="material-symbols-outlined text-outline text-sm">help</span>
+              </div>
+              <div class="tooltip-content">
+                <p class="text-[10px]">Copies all resource URLs for this worksite to paste into NotebookLM.</p>
+              </div>
+            </div>
+          </div>
           <a id="openFolderBtn" href="#" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
             <span class="material-symbols-outlined text-sm">open_in_new</span>Drive Folder
           </a>
@@ -270,7 +304,6 @@ async function fetchGviz(spreadsheetId, sheetName) {
   const cols = data.table.cols.map(c => c.label || '');
   const rows = data.table.rows;
 
-  // If first row contains string values (headers) and columns are empty, use first row as headers
   if (rows.length > 0 && cols.every(c => c === '')) {
     const firstRow = rows[0].c.map(cell => cell?.v || '');
     const isHeaderRow = firstRow.some(v => typeof v === 'string' && v.length > 0);
@@ -286,7 +319,6 @@ async function fetchGviz(spreadsheetId, sheetName) {
     }
   }
 
-  // Normal case: columns have labels
   return rows.map(row => {
     const obj = {};
     row.c.forEach((cell, i) => {
@@ -399,24 +431,19 @@ function renderAnnouncements(rows) {
 
 function renderDates(rows) {
   const el = document.getElementById('datesList');
-  const now = Date.now();
-  const cutoff = now + 30 * 24 * 60 * 60 * 1000;
   if (!rows || rows.length === 0) {
-    el.innerHTML = `<div class="p-3 text-center"><span class="material-symbols-outlined text-outline text-xl block mb-1">event_busy</span><p class="font-label text-[9px] uppercase tracking-widest text-outline">No upcoming events</p></div>`;
+    el.innerHTML = `<div class="p-3 text-center"><span class="material-symbols-outlined text-outline text-xl block mb-1">event_busy</span><p class="font-label text-[9px] uppercase tracking-widest text-outline">No events found</p></div>`;
     return;
   }
-  const upcoming = rows.filter(ev => {
-    const t = ev.start_iso ? new Date(ev.start_iso).getTime() : 0;
-    return t >= now && t <= cutoff;
-  }).sort((a, b) => new Date(a.start_iso) - new Date(b.start_iso)).slice(0, 10);
-  if (upcoming.length === 0) {
-    el.innerHTML = `<div class="p-3 text-center"><p class="font-label text-[9px] uppercase tracking-widest text-outline">No events in next 30 days</p></div>`;
-    return;
-  }
-  el.innerHTML = upcoming.map(ev => {
+
+  // Sort chronologically (oldest first)
+  const sorted = [...rows].sort((a, b) => new Date(a.start_iso) - new Date(b.start_iso));
+
+  // Render each event with data-start-iso for scrolling
+  el.innerHTML = sorted.map(ev => {
     const d = new Date(ev.start_iso);
     return `
-      <div class="flex items-center gap-2 p-2 bg-surface-container-low mb-1 border-l-2 border-primary hover:bg-surface-bright transition-colors">
+      <div class="date-item flex items-center gap-2 p-2 bg-surface-container-low mb-1 border-l-2 border-primary hover:bg-surface-bright transition-colors" data-start-iso="${ev.start_iso}">
         <div class="flex flex-col items-center justify-center bg-surface-container bevel-in px-2 py-1 min-w-[36px]">
           <span class="font-label font-black text-[9px] text-outline uppercase">${d.toLocaleDateString('en-ZA', { month: 'short' })}</span>
           <span class="font-headline font-black text-base text-on-surface leading-none">${d.toLocaleDateString('en-ZA', { day: '2-digit' })}</span>
@@ -428,6 +455,47 @@ function renderDates(rows) {
       </div>
     `;
   }).join('');
+
+  // Scroll to the closest future event (or closest past if none)
+  const now = Date.now();
+  const eventItems = document.querySelectorAll('.date-item');
+  let targetIndex = -1;
+  let closestFutureDiff = Infinity;
+
+  eventItems.forEach((item, idx) => {
+    const startIso = item.dataset.startIso;
+    if (startIso) {
+      const eventTime = new Date(startIso).getTime();
+      if (eventTime >= now) {
+        const diff = eventTime - now;
+        if (diff < closestFutureDiff) {
+          closestFutureDiff = diff;
+          targetIndex = idx;
+        }
+      }
+    }
+  });
+
+  if (targetIndex === -1 && eventItems.length > 0) {
+    // No future events, find closest past
+    let closestPastDiff = Infinity;
+    eventItems.forEach((item, idx) => {
+      const startIso = item.dataset.startIso;
+      if (startIso) {
+        const diff = now - new Date(startIso).getTime();
+        if (diff < closestPastDiff) {
+          closestPastDiff = diff;
+          targetIndex = idx;
+        }
+      }
+    });
+  }
+
+  if (targetIndex !== -1) {
+    setTimeout(() => {
+      eventItems[targetIndex].scrollIntoView({ behavior: 'instant', block: 'center' });
+    }, 100);
+  }
 }
 
 function renderResources(files) {
@@ -445,7 +513,7 @@ function renderResources(files) {
       <div class="grid grid-cols-12 gap-2 px-3 py-2 border-b border-outline-variant/30 hover:bg-surface-container-low transition-colors items-center">
         <div class="col-span-6 flex items-center gap-2 min-w-0"><span class="font-body text-[10px] text-on-surface truncate" title="${escapeHtml(f.name)}">${escapeHtml(f.name)}</span></div>
         <div class="col-span-2"><span class="font-label font-black text-[9px] text-outline">${escapeHtml(f.ext || '?')}</span></div>
-        <div class="col-span-2"><span class="${badgeCls} text-[9px] font-black uppercase tracking-widest px-1 py-0.5">${f.status.replace('_', ' ')}</span></div>
+        <div class="col-span-2"><span class="${badgeCls}">${f.status.replace('_', ' ')}</span></div>
         <div class="col-span-2"><a href="${escapeHtml(f.url)}" target="_blank" class="material-symbols-outlined text-outline hover:text-primary transition-colors text-sm">open_in_new</a></div>
       </div>
     `;
@@ -500,7 +568,6 @@ async function init() {
   const slug = params.get('site');
   if (!slug) { showError('No worksite specified', 'Add ?site=your-worksite-slug to the URL.'); return; }
 
-  // Fetch worksites.json
   let worksite = null;
   try {
     const res = await fetch(WORKSITES_JSON);
@@ -512,11 +579,7 @@ async function init() {
 
   const title = worksite.title || slug;
   document.title = `${title} — eFundiHax`;
-  document.getElementById('headerCrumb')?.remove();
-  const headerSpan = document.createElement('span');
-  headerSpan.className = 'text-outline font-label text-[10px] font-bold tracking-widest uppercase ml-1';
-  headerSpan.textContent = `/ ${title}`;
-  document.querySelector('header .flex-1')?.after(headerSpan);
+  document.getElementById('siteCrumb').textContent = `/ ${title}`;
   document.getElementById('slideshowTitle').textContent = title;
   document.getElementById('footerLabel').textContent = `eFundiHax — ${title}`;
 
@@ -527,7 +590,11 @@ async function init() {
   if (!ssMatch) { showError('No spreadsheet found', 'Schedule sheet not created yet.'); return; }
   const ssId = ssMatch[1];
 
-  // Fetch all data in parallel
+  // Google Calendar button - opens Google Calendar with this spreadsheet's events
+  document.getElementById('openGoogleCalendarBtn').addEventListener('click', () => {
+    window.open(`https://calendar.google.com/calendar/u/0/r?cid=${worksite.spreadsheetUrl}`, '_blank');
+  });
+
   let annRows = [], calRows = [], manifestFiles = [];
   try {
     [annRows, calRows] = await Promise.all([
@@ -545,7 +612,6 @@ async function init() {
   renderResources(manifestFiles);
   initCopyAll(manifestFiles);
 
-  // ICS download
   if (calRows.length) {
     document.getElementById('downloadIcsBtn').addEventListener('click', () => {
       const icsContent = generateIcs(calRows);
@@ -553,7 +619,6 @@ async function init() {
     });
   }
 
-  // Last sync from manifest
   if (worksite.manifestId) {
     try {
       const manifestText = await fetch(`https://drive.google.com/uc?export=download&id=${worksite.manifestId}`).then(r => r.text());
@@ -562,7 +627,6 @@ async function init() {
     } catch(e) {}
   }
 
-  // View counter
   try {
     const viewsRes = await fetch(VIEWS_JSON);
     if (viewsRes.ok) {
