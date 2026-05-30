@@ -1,5 +1,5 @@
 # Resources — SEECE Work & Safety - ...
-_Last updated: 2026-05-29T16:33:27.559Z_
+_Last updated: 2026-05-30T11:06:06.570Z_
 
 - [Safety.pdf](https://efundi.nwu.ac.za/access/content/group/d95f45b4-b37b-4ca5-bd71-4d2c4f1ec0d5/Emergency%20documentation/Veiligheid%20_%20Safety/Safety.pdf)
 - [Emergency Numbers.JPG](https://efundi.nwu.ac.za/access/content/group/d95f45b4-b37b-4ca5-bd71-4d2c4f1ec0d5/Emergency%20documentation/Emergency%20Numbers.JPG)
