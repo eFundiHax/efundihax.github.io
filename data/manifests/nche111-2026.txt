@@ -1,0 +1,187 @@
+emoji: 📘
+color: #6b3d8f
+calendar_id: 
+---
+
+These sources come from North-West University's eFundi website.
+Files were synced via the eFundiHax userscript tool.
+
+HOW TO REFRESH OUTDATED SOURCES:
+If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
+"[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
+
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-06-01T22:52:18.779Z
+"This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
+
+REQUIRED USERSCRIPT:
+To keep all files up to date, the student needs the eFundiHax userscript installed:
+https://greasyfork.org/en/scripts/579058-efundi-scraper
+
+title: NCHE111-2026
+last_sync: 2026-05-29T15:06:28.790Z
+last_announcement: 2026-05-31T20:43:10.348Z
+total_files: 155
+generated: 2026-05-31T21:35:46.477Z
+
+--- FILE REGISTRY ---
+(status | filename | extension | last_seen)
+PENDING | Chemistry of thunderstorms.jpg | jpg | 2026-05-31T21:34:48.715Z
+PENDING | Fertilizers.jpg | jpg | 2026-05-31T21:34:48.715Z
+PENDING | Inorganic-Paint-Pigments-.png | png | 2026-05-31T21:34:48.715Z
+PENDING | R6bc6ecb65e3c25295fedb2b0eacb930c.jpg | jpg | 2026-05-31T21:34:48.715Z
+PENDING | Resources.jpg | jpg | 2026-05-31T21:34:48.715Z
+PENDING | Study Sections 4.1 to 4.3.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 4.4Project.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 4.5.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 4.6.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 4.7.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeeltes 4.1 tot 4.3.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 4.5.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 4.6.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 4.7.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Try Yourself 4.4B.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 5.1_Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 5.2_Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 5.3 Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 5.4 tot 5.6 Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 5.7 Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 5.7 Hess se wet_Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 5.1_English.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 5.2_English.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 5.3.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 5.4 to 5.6.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 5.7.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 5.7 Hess's law.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 7.3_h.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 7.4_h.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 7.5 En 7.6_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeeltes 7.1 En 7.2_h.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 7.1 And 7.2_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 7.3_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 7.4_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Sections 7.5 And 7.6_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 8.3_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 8.4_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeeltes 8.1 En 8.2_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeeltes 8.5 En 8.6 En 8.7_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeeltes 8.8A_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeeltes 8.8B_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 8.3_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 8.4_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 8.8 A_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 8.8 B_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Sections 8.1 And 8.2_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Sections 8.5 And 8.6 And 8.7_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 9.1_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 9.2_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 9.3 En 9.4_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Leergedeelte 9.5_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 9.1_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 9.2_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 9.3 And 9.4_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 9.5_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Locker numbers_Friday_Student numbers only_2026.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Locker numbers_Tuesday_Student numbers only_2026.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | NCHE111 Lockere numbers_Wednesday_Student numbers only_2026.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | NCHE111 Locker numbers_MondayStudent numbers only_2026.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | NCHE111_practical_timetable_2026.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | NCHE111_pratiese_rooster_2026.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Participation marks_Numbers only.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | General info for Semester test.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Memorandum_Semester test.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Memorandum_Semestertoets_2023.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Memorandum_Semestertoets_2025.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Semester test_NCHE111_2023.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Semester test_NCHE111_2025.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Semester test.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Periodic table.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Solubility table.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | NCHE111_9de uitgawe_Afrikaans.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | NCHE111_9th edition_English.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | NCHE111_10de uitgawe_Afrikaans.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | NCHE111_10th edition_English.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | NCHE111 PAC 2024.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | NCHE111 PEC 2024.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answers to Try yourself questions for Study Sections 4.1 to 4.3.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answers for try yourself questions for Study Section 4.4.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answers for try yourself questions for Study Section 4.5.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answers for try yourself questions for Study Section 4.6.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answers for try yourself question for Study Section 4.7.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Sections 4.1 to 4.3.pptx | pptx | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Section 4.4.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Section 4.5.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Section 4.6.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Section 4.7.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Try yourself questions for Study Sections 4.1 to 4.3.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Try yourself questions for Study section 4.4.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Try yourself questions for Study section 4.5.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Try yourself questions for Study section 4.6.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Try yourself questions for Study section 4.7.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Answers to Try Yourself Questions for 5.1 and 5.2.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Answer to Try yourself question for Study Section 5.3.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Answer to Try yourself question for Study Section 5.4 to 5.6.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Extra worked out problems SU5.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answer to Example 5.7_Hess Law.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answer to Try yourself question for Study Section 5.7.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Student questions.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Sections 5.1 and 5.2.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Section 5.3.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Sections 5.4 to 5.6.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Section 5.7.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Try yourself questions for Study Section 5.1 and 5.2.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Try yourself questions for Study Section 5.3.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Try yourself questions for Study Section 5.4 to 5.6.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Try yourself questions for Study Section 5.7.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answers to extra problems from Study Unit 7.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Answer to Try yourself questions for Study Section 7.2.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Answer to Try yourself questions for Study Section 7.3.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Answer to Try yourself questions for Study Section 7.4.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Answer to Try yourself questions for Study Section 7.5.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 7.1 and 7.2.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Section 7.3.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Section 7.4.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Section 7.5 and 7.6.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Extra problems from Study Unit 7.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Try yourself questions for Study Section 7.2.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Try yourself questions for Study Section 7.3.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Try yourself questions for Study Section 7.4.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Try yourself questions for Study Section 7.5.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Answers to Extra problems for SU8_Acids and Bases.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answers to Try yourself questions for Study Section 8.2.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answers to Try yourself questions for Study Section 8.3.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answers to Try yourself questions for Study Section 8.4.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answers to Try yourself questions for Study Sections 8.5 8.6 and 8.7.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answers to Try yourself questions for Study Sections 8.8.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 8.3.ppt | ppt | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 8.4.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Sections 8.1 and 8.2.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Sections 8.5 8.6 and 8.7.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Sections 8.8 8.9 8.10 and 8.11.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Extra problems for SU8_Acids and Bases.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Try yourself question for Study Sections 8.8.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Try yourself questions for Study Section 8.2.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Try yourself questions for Study Section 8.3.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Try yourself questions for Study Section 8.4.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Try yourself questions for Study Sections 8.5 8.6 and 8.7.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Answers to extra questions for Study Unit 9.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Answers to Try yourself questions for Study Section 9.1.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answers to Try yourself questions for Study Section 9.2.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answers to Try yourself questions for Study Section 9.4.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Answers to Try yourself questions for Study Section 9.5.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Section 9.1.ppt | ppt | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | Study Section 9.2.ppt | ppt | 2026-05-31T21:34:48.715Z
+PENDING | Study Section 9.3 and 9.4.ppt | ppt | 2026-05-31T21:34:48.715Z
+PENDING | Study Sections 9.5 9.6 and 9.7.ppt | ppt | 2026-05-31T21:34:48.715Z
+PENDING | Extra questions for Study Unit 9.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Try yourself question for Study Section 9.1.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Try yourself questions for Study Section 9.2.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Try yourself questions for Study Section 9.4.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Try yourself questions for Study Section 9.5.pdf | pdf | 2026-05-31T21:34:48.715Z
+PENDING | Textbook Information.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | NCHE 111_updated work schedule_version 2.pdf | pdf | 2026-05-31T21:34:48.715Z
+NOT_SYNCED | NCHE 111_work schedule_version 1.pdf | pdf | 2026-05-31T21:34:48.715Z
+
+--- AUTOGENERATED DRIVE DOCUMENTS ---
+(These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
+(MASTER) NCHE111-2026 — full extracted text from all synced files and lessons
+(SCHEDULE) NCHE111-2026 — calendar events and announcements spreadsheet
