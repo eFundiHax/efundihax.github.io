@@ -1,0 +1,79 @@
+emoji: 📘
+color: #6b3d8f
+calendar_id: 
+---
+
+These sources come from North-West University's eFundi website.
+Files were synced via the eFundiHax userscript tool.
+
+HOW TO REFRESH OUTDATED SOURCES:
+If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
+"[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
+
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-06-01T22:52:06.557Z
+"This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
+
+REQUIRED USERSCRIPT:
+To keep all files up to date, the student needs the eFundiHax userscript installed:
+https://greasyfork.org/en/scripts/579058-efundi-scraper
+
+title: Library
+last_sync: 2026-05-29T15:06:43.288Z
+last_announcement: —
+total_files: 47
+generated: 2026-06-01T18:34:32.705Z
+
+--- FILE REGISTRY ---
+(status | filename | extension | last_seen)
+PENDING | EndNote20SiteInstaller-mac.dmg | dmg | 2026-06-01T17:42:25.014Z
+PENDING | EndNote-20-windows.zip | zip | 2026-06-01T17:42:25.014Z
+PENDING | EndNote21SiteInstaller.dmg | dmg | 2026-06-01T17:42:25.014Z
+PENDING | EndNote-21.zip | zip | 2026-06-01T17:42:25.014Z
+PENDING | EndNote2025SiteInstaller.dmg | dmg | 2026-06-01T17:42:25.014Z
+PENDING | NWUEndNote2025.exe | exe | 2026-06-01T17:42:25.014Z
+PENDING | EndNote LibGuide | endnote libguide | 2026-06-01T17:42:25.014Z
+PENDING | 1. Finding more accessible information: textbooks |  finding more accessible information: textbooks | 2026-06-01T17:42:25.014Z
+PENDING | 2. Common errors: Harvard Referencing Style |  common errors: harvard referencing style | 2026-06-01T17:42:25.014Z
+PENDING | 3. The fundamentals of paraphrasing |  the fundamentals of paraphrasing | 2026-06-01T17:42:25.014Z
+PENDING | 1. What is Referencing |  what is referencing | 2026-06-01T17:42:25.014Z
+PENDING | 2. Text references |  text references | 2026-06-01T17:42:25.014Z
+PENDING | 3. Referencing lists |  referencing lists | 2026-06-01T17:42:25.014Z
+PENDING | 4. Introduction to source types |  introduction to source types | 2026-06-01T17:42:25.014Z
+PENDING | 5. Referencing books |  referencing books | 2026-06-01T17:42:25.014Z
+PENDING | 6. Referencing collected works |  referencing collected works | 2026-06-01T17:42:25.014Z
+PENDING | 7. Referencing journal articles |  referencing journal articles | 2026-06-01T17:42:25.014Z
+PENDING | 8. Dictionaries and encyclopedias |  dictionaries and encyclopedias | 2026-06-01T17:42:25.014Z
+PENDING | 9. Referencing online sources |  referencing online sources | 2026-06-01T17:42:25.014Z
+PENDING | 10. Reference managers |  reference managers | 2026-06-01T17:42:25.014Z
+PENDING | Academic Literacy Series 2 - Common Errors: Harvard Referencing Style | academic literacy series 2 - common errors: harvard referencing style | 2026-06-01T17:42:25.014Z
+PENDING | 1. What is Referencing? |  what is referencing? | 2026-06-01T17:42:25.014Z
+PENDING | 2. Text-References |  text-references | 2026-06-01T17:42:25.014Z
+PENDING | 3. Story of Referencing Lists |  story of referencing lists | 2026-06-01T17:42:25.014Z
+PENDING | 4. Introduction to source types |  introduction to source types | 2026-06-01T17:42:25.014Z
+PENDING | 5. Referencing books |  referencing books | 2026-06-01T17:42:25.014Z
+PENDING | 6. Collected Works |  collected works | 2026-06-01T17:42:25.014Z
+PENDING | 7. Journal Articles |  journal articles | 2026-06-01T17:42:25.014Z
+PENDING | 8. Dictionaries and encyclopaedias |  dictionaries and encyclopaedias | 2026-06-01T17:42:25.014Z
+PENDING | 9. Referencing Online Sources |  referencing online sources | 2026-06-01T17:42:25.014Z
+PENDING | 10. Reference Managers |  reference managers | 2026-06-01T17:42:25.014Z
+PENDING | 1. General guidelines |  general guidelines | 2026-06-01T17:42:25.014Z
+PENDING | 2. Principles of footnotes |  principles of footnotes | 2026-06-01T17:42:25.014Z
+PENDING | 3. Layout of the bibliography |  layout of the bibliography | 2026-06-01T17:42:25.014Z
+PENDING | 4. Referencing books |  referencing books | 2026-06-01T17:42:25.014Z
+PENDING | 5. Journal articles |  journal articles | 2026-06-01T17:42:25.014Z
+PENDING | 6. Referenceing Case Law |  referenceing case law | 2026-06-01T17:42:25.014Z
+PENDING | 7. Referencing Legislation |  referencing legislation | 2026-06-01T17:42:25.014Z
+PENDING | 8. Referencing international law instruments |  referencing international law instruments | 2026-06-01T17:42:25.014Z
+PENDING | 9. Referencing government publications |  referencing government publications | 2026-06-01T17:42:25.014Z
+PENDING | 10. Referencing internet sources |  referencing internet sources | 2026-06-01T17:42:25.014Z
+PENDING | 11. Reference managers |  reference managers | 2026-06-01T17:42:25.014Z
+PENDING | Referencing Guides | referencing guides | 2026-06-01T17:42:25.014Z
+PENDING | student-assistants-for-2026.png | png | 2026-06-01T18:34:29.225Z
+PENDING | Course 1.png | png | 2026-06-01T18:34:29.225Z
+PENDING | Course 2.png | png | 2026-06-01T18:34:29.225Z
+PENDING | Course 3.png | png | 2026-06-01T18:34:29.225Z
+
+--- AUTOGENERATED DRIVE DOCUMENTS ---
+(These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
+(MASTER) Library — full extracted text from all synced files and lessons
+(SCHEDULE) Library — calendar events and announcements spreadsheet
