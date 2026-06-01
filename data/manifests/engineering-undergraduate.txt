@@ -3,7 +3,7 @@ color: #6b3d8f
 calendar_id: 
 ---
 title: Engineering Undergraduate
-last_sync: 2026-06-01T20:17:35.246Z
+last_sync: 2026-06-01T20:17:51.785Z
 last_announcement: —
 total_files: 0
 generated: 2026-06-01T10:51:40.646Z
