@@ -1,0 +1,298 @@
+emoji: 📘
+color: #6b3d8f
+calendar_id: 
+---
+
+These sources come from North-West University's eFundi website.
+Files were synced via the eFundiHax userscript tool.
+
+HOW TO REFRESH OUTDATED SOURCES:
+If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
+"[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
+
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-06-01T22:52:12.538Z
+"This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
+
+REQUIRED USERSCRIPT:
+To keep all files up to date, the student needs the eFundiHax userscript installed:
+https://greasyfork.org/en/scripts/579058-efundi-scraper
+
+title: MTHS111-2026
+last_sync: 2026-05-29T15:06:37.595Z
+last_announcement: 2026-06-01T17:12:28.598Z
+total_files: 266
+generated: 2026-06-01T18:34:18.458Z
+
+--- FILE REGISTRY ---
+(status | filename | extension | last_seen)
+PENDING | Poster 1.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Poster 2.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Poster 3.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Poster 4.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Poster 5.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | 2026_setup_your_NWU_email_account1.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | General Academic Rules.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Senate-Rules-on-Academic-Integrity_Latest_.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Teaching Learning and Assessment Policy_2023_.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111_Algemene Inligting _General Information_2026_F.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 Semesterbeplanning_Semester planning 2026_F.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Die 6 Epsilon-delta _formele limiet_ bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 1 se bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 3 Bewys_Limiet Identiteit van cos funksie.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 5 Kontinuteitsstelling bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 6 Differensiasiesstelling LE4_1 en LE4_2 bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 7 Differensiasiesstelling LE4_3 en LE4_6 bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 8 Differensiasie bewyse vervolg.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 9 Integrasie bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 11 en Week 12 Bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111_Algemene Inligting _General Information_2026_F.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 Semesterbeplanning_Semester planning 2026_F.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.4a.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.4b.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.5.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.5a.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.3.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.4a.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.4b.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.5.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.6.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.7.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | wisn111 huiswerk LE 1 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | wisn111 huiswerk LE 2 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | wisn111 huiswerk LE 3 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | wisn111 huiswerk LE 4 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | wisn111 huiswerk LE 5 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 huiswerk LE 1 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 huiswerk LE 2 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 huiswerk LE 3 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 huiswerk LE 4 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 huiswerk LE 5 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 1 answ.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 3 answ.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 4 answ.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 klasaantekeninge LE 3 klaswerk.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 1 answ.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 1 class work.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 2 answ.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 2 class work.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 3 answ.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 3 class work.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 4 answ.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 4 class work.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 5 answ.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 5 class work.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 6 answ.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 6 class work.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Absolute waarde funksie.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Funksie opdrag.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Inverse funkse.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Stuksgewyse funksie.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Versamelleer.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Een-eenduidige en Inverse Funksies1.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Ekstra Opsommings Week 2.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Huiswerk vir Woensdag_Donderdag.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Ken verskil in sketse.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Opdrag_Eksponensiale_funksies Week2.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Opdrag_Inverse Trig funksies Week2.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Opdrag_Radiale Week 2.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 2 teorie vir studente.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | HW Week 3 vir Woensdag_Donderdag.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 3_Limet Opdrag 3.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 3_Limiet  Opdrag 2.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 3_Opdrag 1 Limiete.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Die 6 Epsilon-delta _formele limiet_ bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Limiete Formele Def W4.ppt | ppt | 2026-06-01T18:33:15.618Z
+PENDING | Limiete linker en regter Week 4.ppt | ppt | 2026-06-01T18:33:15.618Z
+PENDING | Week 4 Huiswerk vir Woensdag.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 4 Opdrag 1 Limiete Informeel.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 4 Opdrag 2 Epsilon_delta.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Continuity.pptx | pptx | 2026-06-01T18:33:15.618Z
+PENDING | HW vir Wo_Do Week 5.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 5 Opdrag Kontinuteit in _n punt.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 5 Opdrag Kontinuteit vervolg.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 5 Opdrag Onbepaalde Magte.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 5 Opdrag Tussenwaardest.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Hersiening Week 6.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | KT 3 Memo Afrikaanse groepe.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 klasaantekeninge LE 4 klaswerk.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Teorie Differensiasie.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 6_Opdrag1_Differensiasie met eerste beginsels.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 6_ Opdrag2_Differensiasiereels.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 7 Somme wat moet doen in klas Vr.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 7 HW vir WO_Do.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 7 Somme Di_Wo_Do.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | L_H Se Reel Week 8.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lineere benadering_Toepassing van diff.pptx | pptx | 2026-06-01T18:33:15.618Z
+PENDING | Week 8 Deel 1 en Deel 2 van somme in klas.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 8 Deel 3 van somme in klas.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 8 Differensiasie bewyse vervolg.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 8 HW vir Wo_Do.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Woordsom vir HW Week 8.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Calculus_Cheat_Sheet_Integrals.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Common Algebraic Errors.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Deel 3 Somme Week 9.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 klasaantekeninge LE 5 antw.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 klasaantekeninge LE 5 klaswerk.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 9 Deel 1 Integrasie somme in klas.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 9 Deel 2 Integrasie somme in klas.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 9 Integrasie bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 10 Deel 1.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 10 HW vir Wo_Do.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | LE 5 mixed questions.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 klasaantekeninge LE 6 klaswerk.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Teenvoorbeeld en Kontrapositiewe bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 10 Bewys bewering geld vir alle Natuurlike getalle.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 10 Deel 2 en Deel 3.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 10 ekstra teorie.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 10 HW vir Vr.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | HW Week 11 Deel 2.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 klasaantekeninge LE 6 antw.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 klasaantekeninge LE 6 antw Vraag 1 tot Vraag 17.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 klasaantekeninge LE 6 klaswerk.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Tut 2 F.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 11 Deel 1 Komplekse getalle.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 11 Gedeelte van Teorie.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Week 11 Tut 1 Deel 2 Komplekse getalle.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | HW oef 3.4.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | HW vir Wo_Do.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Tut 2 F.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Tut 3 F.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Tut 4.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Common Algebraic Errors.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Konsultasie tye_ Prof. Schoeman.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | KT 3 Memo Afrikaanse groepe.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | KT8  Memo Afrikaanse groepe.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Toets 9.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Class Works week 10-11.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | LN week 1.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | LN week 2.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | LN week 3-4.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | LN week 4-5.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | LN Week 6.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | LN week 7.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | LN Week 9 - Part 1.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | LN Weeks 10-11.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecturer Time Table.xlsx | xlsx | 2026-06-01T18:33:15.618Z
+PENDING | Dr Nogwebela Consultation.xlsx | xlsx | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 1.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 2.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 3.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 4.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 5.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 6.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 7.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 8.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 9.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 10.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 11.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 12 Gugu.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 12 Naeem.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 14.PDF | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 15.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 16.PDF | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 17.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 18.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 19.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 20.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 21.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 22.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 23.PDF | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 24.PDF | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 25.PDF | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 26.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 27.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 28.PDF | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 29.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 30.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 31.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Lecture 32.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Additional ALEKS Help.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | ALEKS Access MTHS111 _2026_.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 1 answ.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 2 answ.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 3 answ.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 4 answ.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 5 answ.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 6 answ.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.4a.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.4b.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.5.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.5a.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.3.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.4a.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.4b.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.5.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.6.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.7.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | wisn111 huiswerk LE 1 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | wisn111 huiswerk LE 2 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | wisn111 huiswerk LE 3 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | wisn111 huiswerk LE 4 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | wisn111 huiswerk LE 5 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 huiswerk LE 1 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 huiswerk LE 2 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 huiswerk LE 3 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 huiswerk LE 4 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 huiswerk LE 5 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 voorbereiding LE 1.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 voorbereiding LE 2.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 voorbereiding LE 3.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 voorbereiding LE 4.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 voorbereiding LE 5.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 voorbereiding LE 6.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | CONSULTATION  Dr. Sias.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Front MTHS111 Afr.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Front MTHS111 Eng.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 studiegids Afrikaans_2026.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 studyguide English_2026.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | absolutevalues.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Calculus_Made_Easy_Thompson.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | curvesketching.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Differensiasie.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | differentialcalculus.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Logaritmes bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | logs_loglaws.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MathReviewManual.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Radiale Radians.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Trig_Functions.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | trigidentities.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | vertical-horizontal.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Voorbeelde L R afgeleides.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Memo TUT 4.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111_tutorial 6_solution.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 tutorial 1.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 tutorial 2 2026.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 tutorial 2 2026 memo.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 Tutorial 3.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 tutorial 4.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 Tutorial5 2026 - SOLUTIONS.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 Tutorial 5.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 Tutorial 6.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 tutorial 7.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 tutorial 7 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 Tutorial 8 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 Tutorial 9.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 Tutorial 9 memo.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Tutorial 1 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Tutorial 3 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Tutorial 8.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | CT2 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | CT4 MEMO.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | CT5 2026 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | CT6 2026 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MEMO CT8.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111_ST_2026_MemoF.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 CT3 2026 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | MTHS111 CT7 2026 -Memo.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | Test 1 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 1 class work.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 2 class work.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 3 class work.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 4 class work.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 5 class work.pdf | pdf | 2026-06-01T18:33:15.618Z
+PENDING | mths111 SU 6 class work.pdf | pdf | 2026-06-01T18:33:15.618Z
+
+--- AUTOGENERATED DRIVE DOCUMENTS ---
+(These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
+(MASTER) MTHS111-2026 — full extracted text from all synced files and lessons
+(SCHEDULE) MTHS111-2026 — calendar events and announcements spreadsheet
