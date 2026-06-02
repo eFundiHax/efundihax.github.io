@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-06-02T10:53:01.611Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -24,7 +24,7 @@ title: Maths Club
 last_sync: 2026-05-29T15:05:50.875Z
 last_announcement: —
 total_files: 9
-generated: 2026-06-01T20:56:13.521Z
+generated: 2026-06-02T13:16:09.656Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen)
@@ -33,7 +33,7 @@ NOT_SYNCED | Eureka newsletter March 2025.pdf | pdf | 2026-06-01T20:56:09.283Z
 PENDING | Arxiv paper | arxiv paper | 2026-06-01T17:06:44.369Z
 PENDING | Youtube Video (Matt Parker) | youtube video (matt parker) | 2026-06-01T17:06:44.369Z
 NOT_SYNCED | Maths club pi 2026.xlsx | xlsx | 2026-06-01T20:56:09.283Z
-NOT_SYNCED | Categories.pdf | pdf | 2026-06-01T20:56:09.283Z
+NOT_SYNCED | Categories.pdf | pdf | 2026-06-02T13:16:07.875Z
 NOT_SYNCED | Groups.pdf | pdf | 2026-06-01T20:56:09.283Z
 PENDING | Partially ordered sets.pdf | pdf | 2026-06-01T20:56:09.283Z
 PENDING | Topological spaces.pdf | pdf | 2026-06-01T20:56:09.283Z
