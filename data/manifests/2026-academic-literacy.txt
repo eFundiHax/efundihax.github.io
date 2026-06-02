@@ -18,7 +18,7 @@ To keep all files up to date, the student needs the eFundiHax userscript install
 https://greasyfork.org/en/scripts/579058-efundi-scraper
 
 title: 2026 | Academic Literacy
-last_sync: 2026-06-01T20:17:13.963Z
+last_sync: 2026-06-02T13:24:25.025Z
 last_announcement: 2026-05-30T22:03:21.401Z
 total_files: 0
 generated: 2026-05-30T22:02:44.079Z
