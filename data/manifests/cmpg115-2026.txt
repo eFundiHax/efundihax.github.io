@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 
 title: CMPG115-2026
 last_sync: 2026-06-01T20:17:06.804Z
-last_announcement: 2026-06-01T20:15:46.071Z
+last_announcement: 2026-06-02T13:08:09.350Z
 total_files: 0
 generated: 2026-06-01T19:54:46.463Z
 
