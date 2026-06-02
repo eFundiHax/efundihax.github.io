@@ -6,7 +6,7 @@ title: Engineering Undergraduate
 last_sync: 2026-06-01T20:18:33.484Z
 last_announcement: —
 total_files: 0
-generated: 2026-06-01T22:52:40.493Z
+generated: 2026-06-02T10:52:45.160Z
 
 --- FILES ---
 
