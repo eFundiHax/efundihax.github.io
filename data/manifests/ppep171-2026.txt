@@ -24,12 +24,12 @@ title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
 last_announcement: —
 total_files: 195
-generated: 2026-06-02T13:16:55.507Z
+generated: 2026-06-02T13:17:28.192Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen)
 PENDING | 2023_PPEP171_W2_W7_Combined.pdf | pdf | 2026-06-02T13:16:53.699Z
-PENDING | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf | pdf | 2026-06-01T20:57:04.769Z
+PENDING | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf | pdf | 2026-06-02T13:17:22.725Z
 PENDING | PPEP171 Component Collection Registrar _Alpha_.pdf | pdf | 2026-06-01T20:57:04.769Z
 PENDING | W2_Wireing_Session2023.pdf | pdf | 2026-06-01T20:57:04.769Z
 PENDING | SANS10142-1_2017_Ed2-3.pdf | pdf | 2026-06-01T18:31:18.945Z
