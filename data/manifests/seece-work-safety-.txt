@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-06-02T10:53:08.627Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -24,13 +24,13 @@ title: SEECE Work & Safety - ...
 last_sync: 2026-05-29T15:05:41.991Z
 last_announcement: —
 total_files: 12
-generated: 2026-06-01T20:55:51.492Z
+generated: 2026-06-02T13:15:49.276Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen)
 PENDING | Emergency Numbers.JPG | jpg | 2026-06-01T20:55:45.490Z
 PENDING | N-Buidings.JPG | jpg | 2026-06-01T20:55:45.490Z
-PENDING | Payment Image.png | png | 2026-06-01T20:55:45.490Z
+PENDING | Payment Image.png | png | 2026-06-02T13:15:41.734Z
 NOT_SYNCED | Safety.pdf | pdf | 2026-06-01T20:55:45.490Z
 NOT_SYNCED | Signs and Color coding.pdf | pdf | 2026-06-01T20:55:45.490Z
 NOT_SYNCED | Safety.pdf | pdf | 2026-06-01T20:55:45.490Z
