@@ -19,7 +19,7 @@ https://greasyfork.org/en/scripts/579058-efundi-scraper
 
 title: NCHE111-2026
 last_sync: 2026-05-29T15:06:28.790Z
-last_announcement: 2026-05-31T20:43:10.348Z
+last_announcement: 2026-06-04T19:19:20.057Z
 total_files: 155
 generated: 2026-05-31T21:35:46.477Z
 
