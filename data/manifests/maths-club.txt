@@ -24,7 +24,7 @@ title: Maths Club
 last_sync: 2026-05-29T15:05:50.875Z
 last_announcement: 2026-06-04T19:14:18.565Z
 total_files: 9
-generated: 2026-06-04T20:12:14.309Z
+generated: 2026-06-04T20:12:28.671Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -33,7 +33,7 @@ NOT_SYNCED | Eureka newsletter March 2025.pdf | pdf | 2026-06-01T20:56:09.283Z |
 PENDING | Arxiv paper | arxiv paper | 2026-06-01T17:06:44.369Z | resource
 PENDING | Youtube Video (Matt Parker) | youtube video (matt parker) | 2026-06-01T17:06:44.369Z | resource
 NOT_SYNCED | Maths club pi 2026.xlsx | xlsx | 2026-06-01T20:56:09.283Z | resource
-NOT_SYNCED | Categories.pdf | pdf | 2026-06-04T20:12:11.428Z | resource
+SYNCED | Categories.pdf | pdf | 2026-06-04T20:12:27.209Z | resource
 NOT_SYNCED | Groups.pdf | pdf | 2026-06-04T20:12:11.428Z | resource
 PENDING | Partially ordered sets.pdf | pdf | 2026-06-04T20:12:11.428Z | resource
 PENDING | Topological spaces.pdf | pdf | 2026-06-04T20:12:11.428Z | resource
