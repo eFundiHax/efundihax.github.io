@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 
 title: First year physics pr ...
 last_sync: 2026-06-03T16:06:00.153Z
-last_announcement: —
+last_announcement: 2026-06-04T19:15:51.025Z
 total_files: 35
 generated: 2026-06-01T20:56:41.676Z
 
