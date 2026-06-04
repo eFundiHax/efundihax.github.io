@@ -3,7 +3,7 @@ color: #6b3d8f
 calendar_id: 
 ---
 title: INGM111-2026
-last_sync: 2026-06-04T20:10:50.408Z
+last_sync: 2026-06-04T20:53:29.371Z
 last_announcement: 2026-06-04T19:17:51.590Z
 total_files: 0
 generated: 2026-06-04T10:52:21.217Z
