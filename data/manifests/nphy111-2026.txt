@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 
 title: NPHY111-2026
 last_sync: 2026-06-01T20:17:21.375Z
-last_announcement: 2026-06-01T20:15:40.084Z
+last_announcement: 2026-06-04T19:19:58.081Z
 total_files: 8
 generated: 2026-06-04T17:50:33.627Z
 
