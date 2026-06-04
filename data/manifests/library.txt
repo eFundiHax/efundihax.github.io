@@ -19,7 +19,7 @@ https://greasyfork.org/en/scripts/579058-efundi-scraper
 
 title: Library
 last_sync: 2026-05-29T15:06:43.288Z
-last_announcement: —
+last_announcement: 2026-06-04T19:21:42.845Z
 total_files: 47
 generated: 2026-06-01T18:34:32.705Z
 
