@@ -514,3 +514,6 @@ Attachment processing failed: Electrical Engineer Advert.docx - Drive is not def
 
 --- ERROR LOG (2026-06-05T16:32:49.734Z) ---
 Attachment processing failed: EA 2023 - Talents from Africa  - Brochure.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:32:57.192Z) ---
+Attachment processing failed: EA2023 - Talents from Africa - Flyer.pdf - Drive is not defined
