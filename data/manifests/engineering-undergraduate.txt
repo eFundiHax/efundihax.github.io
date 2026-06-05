@@ -439,3 +439,6 @@ Attachment processing failed: Grad invite II (4).pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T16:16:32.971Z) ---
 Attachment processing failed: SARAO NWU Visit July 2023.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:17:44.754Z) ---
+Attachment processing failed: CC Overview poster.pdf - Drive is not defined
