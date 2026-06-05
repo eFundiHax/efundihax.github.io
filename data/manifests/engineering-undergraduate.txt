@@ -424,3 +424,6 @@ Attachment processing failed: Student_Subscription_forms_2024.pdf - Drive is not
 
 --- ERROR LOG (2026-06-05T16:14:07.818Z) ---
 Attachment processing failed: StudyWell eFundi Poster_2023.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:15:36.163Z) ---
+Attachment processing failed: Frequently Asked Questions_Postgraduate Funding_FINAL.pdf - Drive is not defined
