@@ -1152,3 +1152,6 @@ Attachment processing failed: PPEP171_SEECE_GroupList_2026_Ver-2 24 March 2026.p
 
 --- ERROR LOG (2026-06-05T14:49:15.683Z) ---
 Attachment processing failed: Workshop Rotation.docx - Drive is not defined
+
+--- ERROR LOG (2026-06-05T14:49:25.908Z) ---
+Attachment processing failed: Group Mech 3 Mechanical Eng - First years.pdf - Drive is not defined
