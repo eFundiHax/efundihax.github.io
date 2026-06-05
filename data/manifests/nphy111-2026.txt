@@ -48,3 +48,6 @@ NOT_SYNCED | NPHY111-2026 - Schedule.pdf | pdf | 2026-06-05T14:50:47.464Z | anno
 
 --- ERROR LOG (2026-06-05T14:51:18.138Z) ---
 Attachment processing failed: Exam Guideline 2026 NPHY 111.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T14:51:26.172Z) ---
+Attachment processing failed: NPHY111-2026 - marks.pdf - Drive is not defined
