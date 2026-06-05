@@ -73,3 +73,6 @@ NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-06-05T14:43:41.369Z | announcement_
 
 --- ERROR LOG (2026-06-05T14:44:09.831Z) ---
 Attachment processing failed: 2026 scheduleUpdated.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T14:44:20.633Z) ---
+Attachment processing failed: 2026EXEMPTIONS.pdf - Drive is not defined
