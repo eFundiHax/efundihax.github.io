@@ -237,3 +237,6 @@ Attachment processing failed: Sign-up Details_Semester test 1.pdf - Drive is not
 
 --- ERROR LOG (2026-06-05T15:54:02.333Z) ---
 Attachment processing failed: Final_Pre_Assessment_Checklist.docx - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:55:10.941Z) ---
+Attachment processing failed: The Invigilator Web Student User Guide - NWU - short version PDF-2.pdf - Drive is not defined
