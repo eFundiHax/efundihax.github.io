@@ -246,3 +246,6 @@ Attachment processing failed: Group Divisions_23 March.pdf - Drive is not define
 
 --- ERROR LOG (2026-06-05T15:55:37.493Z) ---
 Attachment processing failed: Group Divisions.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:55:48.811Z) ---
+Attachment processing failed: Groups_Group Assignment.pdf - Drive is not defined
