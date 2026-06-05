@@ -216,3 +216,6 @@ Attachment processing failed: 2026_ALDE112_03June.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T14:45:12.950Z) ---
 Attachment processing failed: 2026_ALDE122_Seniors_03June.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T14:45:22.187Z) ---
+Attachment processing failed: ALDE112_2026_Individual Written Assessment.pdf - Drive is not defined
