@@ -481,3 +481,6 @@ Attachment processing failed: SITE-LAYOUT.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T16:28:29.091Z) ---
 Attachment processing failed: 2025 Rhodes Invite, GLMN Info Session, 26 May (1).pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:28:50.850Z) ---
+Attachment processing failed: Potch Career fair A1 poster.pdf - Drive is not defined
