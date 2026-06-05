@@ -523,3 +523,6 @@ Attachment processing failed: CV Poster.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T16:33:13.661Z) ---
 Attachment processing failed: Patent candidate attorney advert - Chemical Engineering - 11 August 2022.docx - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:34:35.742Z) ---
+Attachment processing failed: NRF Postgraduate Scholarships_2023 Presentation.pdf - Drive is not defined
