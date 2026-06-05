@@ -412,3 +412,6 @@ Attachment processing failed: DSTI-NRF Postgraduate Scholarship Framework for 20
 
 --- ERROR LOG (2026-06-05T16:13:33.315Z) ---
 Attachment processing failed: 2024 Information for Candidates (IfC) Southern Africa_Final Updated.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:13:41.589Z) ---
+Attachment processing failed: 2024- Letter to high achievers at SA Universities - NWU.pdf - Drive is not defined
