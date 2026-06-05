@@ -445,3 +445,6 @@ Attachment processing failed: CC Overview poster.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T16:17:53.243Z) ---
 Attachment processing failed: Field Engineer - Senior technician Job Description.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:18:01.781Z) ---
+Attachment processing failed: Industrial Engineer Advert.pdf - Drive is not defined
