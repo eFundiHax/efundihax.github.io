@@ -258,3 +258,9 @@ Lesson sync failed: Lecturer Information - The document is inaccessible. Please 
 
 --- ERROR LOG (2026-06-05T16:10:15.104Z) ---
 Attachment processing failed: 2026_ALDE112_Assessment 2.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:10:29.849Z) ---
+Attachment processing failed: 2026_ALDE112_Assessment 2_Answer Template.docx - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:10:43.554Z) ---
+Attachment processing failed: Finding and integrating sources.pdf - Drive is not defined
