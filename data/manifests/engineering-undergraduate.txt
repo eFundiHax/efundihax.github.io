@@ -457,3 +457,6 @@ Attachment processing failed: Post-graduate bursaries (Students).pdf - Drive is 
 
 --- ERROR LOG (2026-06-05T16:19:55.569Z) ---
 Attachment processing failed: IBS Advert for 2023-call for applications.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:20:06.104Z) ---
+Attachment processing failed: Student Subscription forms 2022[83][34].pdf - Drive is not defined
