@@ -357,3 +357,6 @@ Lesson sync failed: 4. Source Integration - The document is inaccessible. Please
 
 --- ERROR LOG (2026-06-05T17:37:33.825Z) ---
 Lesson sync failed: 5. Academic Text Structure & Writing as a Process (Part 1) - The document is inaccessible. Please try again later.
+
+--- ERROR LOG (2026-06-05T17:43:39.082Z) ---
+Lesson sync failed: 1. Orientation - The document is inaccessible. Please try again later.
