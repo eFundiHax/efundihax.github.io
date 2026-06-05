@@ -559,3 +559,6 @@ Attachment processing failed: INGM111_26_MIXED_GROUPS_FINAL.xlsx - Drive is not 
 
 --- ERROR LOG (2026-06-05T14:46:57.482Z) ---
 Attachment processing failed: INGM111_'26_Langauge_groups_Students.xlsx - Drive is not defined
+
+--- ERROR LOG (2026-06-05T14:47:06.375Z) ---
+Attachment processing failed: Zoom instructions -Infographic for Smartphone.pdf - Drive is not defined
