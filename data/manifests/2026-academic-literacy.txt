@@ -408,3 +408,6 @@ Lesson sync failed: ALDE Lessons - The document is inaccessible. Please try agai
 
 --- ERROR LOG (2026-06-05T18:24:57.546Z) ---
 Lesson sync failed: 9.  Visual Information - Service Documents failed while accessing document with id 1EE2MvHd7JvVNdWJGhFVbxfP1IvJZ-IaQpgZL46K_emg.
+
+--- ERROR LOG (2026-06-05T18:25:50.380Z) ---
+Lesson sync failed: Lecturer Information - The document is inaccessible. Please try again later.
