@@ -328,3 +328,9 @@ Attachment processing failed: FENG Exam Timetable 1st Sem_25 May 2026.xlsx - Dri
 
 --- ERROR LOG (2026-06-05T15:55:56.479Z) ---
 Attachment processing failed: FENG Exam Timetable 1st Sem_22 May 2026.xlsx - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:56:04.555Z) ---
+Attachment processing failed: FENG Mid Semester Assessment Timetable_27 Mrt.xlsx - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:56:16.668Z) ---
+Attachment processing failed: Student_Subscription_forms_2025.pdf - Drive is not defined
