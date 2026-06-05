@@ -394,3 +394,6 @@ Attachment processing failed: DSI CSIR InterBursary Support Programme - Eligibil
 
 --- ERROR LOG (2026-06-05T16:05:29.122Z) ---
 Attachment processing failed: CSIR IBS FAQ's.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:11:52.752Z) ---
+Attachment processing failed: MUST_Scholarships_2026_flyer.pdf - Drive is not defined
