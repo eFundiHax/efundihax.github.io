@@ -427,3 +427,6 @@ Attachment processing failed: StudyWell eFundi Poster_2023.pdf - Drive is not de
 
 --- ERROR LOG (2026-06-05T16:15:36.163Z) ---
 Attachment processing failed: Frequently Asked Questions_Postgraduate Funding_FINAL.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:15:46.523Z) ---
+Attachment processing failed: ISFAP - Application Consent Form FINAL.pdf - Drive is not defined
