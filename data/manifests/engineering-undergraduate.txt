@@ -529,3 +529,6 @@ Attachment processing failed: NRF Postgraduate Scholarships_2023 Presentation.pd
 
 --- ERROR LOG (2026-06-05T16:34:45.189Z) ---
 Attachment processing failed: ResearchSupport_poster(I)June.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:34:58.061Z) ---
+Attachment processing failed: Hackathon_2022_Afrikaans.pdf - Drive is not defined
