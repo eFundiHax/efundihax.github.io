@@ -553,3 +553,6 @@ Attachment processing failed: SAGWRI PG Information Session Engineering.pdf - Dr
 
 --- ERROR LOG (2026-06-05T17:14:53.363Z) ---
 Attachment processing failed: Jurumani Grad Poster  -NWU.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T17:15:04.419Z) ---
+Attachment processing failed: Curriculum control and Timetable 2022 (M426 & EM425).xlsx - Drive is not defined
