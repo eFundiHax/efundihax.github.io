@@ -54,3 +54,6 @@ Attachment processing failed: Physics for Scientists & Engineers with Modern Phy
 
 --- ERROR LOG (2026-06-05T16:13:16.714Z) ---
 Attachment processing failed: NPHY111-2026-formula1.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:13:24.682Z) ---
+Attachment processing failed: NPHY111-2026 - Schedule.pdf - Drive is not defined
