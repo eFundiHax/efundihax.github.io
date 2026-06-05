@@ -202,3 +202,6 @@ Attachment processing failed: NCHE 111 2026 final_Numbers only.pdf - Drive is no
 
 --- ERROR LOG (2026-06-05T14:47:41.334Z) ---
 Attachment processing failed: Memo_Semester test.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T14:47:50.354Z) ---
+Attachment processing failed: Calculating your own participation mark.xlsx - Drive is not defined
