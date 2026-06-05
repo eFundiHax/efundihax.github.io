@@ -466,3 +466,6 @@ Attachment processing failed: FENG 2nd Sem Timetable 2022_CTF_Efundi.xlsx - Driv
 
 --- ERROR LOG (2026-06-05T16:20:23.693Z) ---
 Attachment processing failed: Extension of Closing date M&Ds.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:20:36.316Z) ---
+Attachment processing failed: DSI-NRF-Postgraduate-Scholarship-Framework-for-2023-Funding-26-April-2022-FINAL-1.pdf - Drive is not defined
