@@ -391,3 +391,6 @@ Attachment processing failed: 2022 090 - Assistant Control and Instrumentation E
 
 --- ERROR LOG (2026-06-05T16:05:20.902Z) ---
 Attachment processing failed: DSI CSIR InterBursary Support Programme - Eligibility Guidelines_ Final.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:05:29.122Z) ---
+Attachment processing failed: CSIR IBS FAQ's.pdf - Drive is not defined
