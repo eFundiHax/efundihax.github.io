@@ -56,3 +56,6 @@ NOT_SYNCED | Physics for Scientists _ Engineers with Modern Physics, Global Edit
 
 --- ERROR LOG (2026-06-05T17:18:36.815Z) ---
 Resource processing failed: NPHY111-2026-appendix.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T17:18:45.149Z) ---
+Resource processing failed: NPHY111-2026 - marks.pdf - Drive is not defined
