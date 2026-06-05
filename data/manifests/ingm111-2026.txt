@@ -550,3 +550,6 @@ https://efundi.nwu.ac.za/portal/site/c54f04ab-bf0b-4953-aaee-75bfd14322a5/tool/d
 
 --- ERROR LOG (2026-06-05T14:46:32.871Z) ---
 Attachment processing failed: INGM111_Exam_venues.xlsx - Drive is not defined
+
+--- ERROR LOG (2026-06-05T14:46:40.628Z) ---
+Attachment processing failed: INGM1111_Exam_venues.xlsx - Drive is not defined
