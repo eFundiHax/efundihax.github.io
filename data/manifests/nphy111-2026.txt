@@ -51,3 +51,6 @@ Attachment processing failed: Pearson -Physics- NWU.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T16:13:08.462Z) ---
 Attachment processing failed: Physics for Scientists & Engineers with Modern Physics, Global Edition Flyer.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:13:16.714Z) ---
+Attachment processing failed: NPHY111-2026-formula1.pdf - Drive is not defined
