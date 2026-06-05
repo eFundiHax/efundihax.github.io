@@ -343,3 +343,6 @@ Attachment processing failed: MUST_scholarships_2025.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T15:58:23.557Z) ---
 Attachment processing failed: STUDENT CALL _SATNAC INUSTRY SOLUTIONS CHALLENGE 2024.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:58:31.344Z) ---
+Attachment processing failed: 2024 CV Template.pdf - Drive is not defined
