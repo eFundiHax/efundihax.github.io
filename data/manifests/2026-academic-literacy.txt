@@ -240,3 +240,6 @@ Attachment processing failed: Final_Pre_Assessment_Checklist.docx - Drive is not
 
 --- ERROR LOG (2026-06-05T15:55:10.941Z) ---
 Attachment processing failed: The Invigilator Web Student User Guide - NWU - short version PDF-2.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:55:23.498Z) ---
+Attachment processing failed: Group Divisions_23 March.pdf - Drive is not defined
