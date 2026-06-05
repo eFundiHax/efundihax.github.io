@@ -24,7 +24,7 @@ title: NPHY111-2026
 last_sync: 2026-06-05T16:12:30.816Z
 last_announcement: 2026-06-05T15:58:22.931Z
 total_files: 20
-generated: 2026-06-05T16:24:25.608Z
+generated: 2026-06-05T16:24:47.007Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -40,7 +40,7 @@ SYNCED | Physics for Scientists & Engineers with Modern Physics, Global Edition 
 SYNCED | NPHY111-2026-formula1.pdf | pdf | 2026-06-05T16:13:23.547Z | announcement_attachment
 INCOMPATIBLE | NPHY 111 Tutors 2026.jpg | jpg | 2026-06-05T16:12:39.615Z | announcement_attachment
 SYNCED | NPHY111-2026 - Schedule.pdf | pdf | 2026-06-05T16:13:32.578Z | announcement_attachment
-NOT_SYNCED | notebook-links.html | html | 2026-06-05T16:24:22.059Z | resource
+SYNCED | notebook-links.html | html | 2026-06-05T16:24:45.210Z | resource
 NOT_SYNCED | NPHY111-2026-appendix.pdf | pdf | 2026-06-05T16:24:22.059Z | resource
 NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-06-05T16:24:22.059Z | resource
 NOT_SYNCED | NPHY111-2026 - Schedule.pdf | pdf | 2026-06-05T16:24:22.059Z | resource
@@ -53,6 +53,3 @@ NOT_SYNCED | Physics for Scientists _ Engineers with Modern Physics, Global Edit
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) NPHY111-2026 — full extracted text from all synced files and lessons
 (SCHEDULE) NPHY111-2026 — calendar events and announcements spreadsheet
-
---- ERROR LOG (2026-06-05T16:24:39.052Z) ---
-Resource processing failed: notebook-links.html - Drive is not defined
