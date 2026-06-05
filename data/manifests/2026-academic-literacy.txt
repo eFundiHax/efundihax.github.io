@@ -270,3 +270,6 @@ Attachment processing failed: Engineering Students’ Perceptions of Academic Li
 
 --- ERROR LOG (2026-06-05T16:22:50.015Z) ---
 Lesson sync failed: ALDE Lessons - The document is inaccessible. Please try again later.
+
+--- ERROR LOG (2026-06-05T16:23:23.660Z) ---
+Lesson sync failed: Lecturer Information - The document is inaccessible. Please try again later.
