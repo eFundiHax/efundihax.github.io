@@ -24,14 +24,14 @@ title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
 last_announcement: 2026-06-04T19:17:09.559Z
 total_files: 226
-generated: 2026-06-05T16:26:55.121Z
+generated: 2026-06-05T16:37:12.934Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
-SYNCED | 2023_PPEP171_W2_W7_Combined.pdf | pdf | 2026-06-05T16:22:29.187Z | resource
-SYNCED | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf | pdf | 2026-06-05T16:23:20.905Z | resource
-SYNCED | PPEP171 Component Collection Registrar _Alpha_.pdf | pdf | 2026-06-05T16:23:46.033Z | resource
-SYNCED | W2_Wireing_Session2023.pdf | pdf | 2026-06-05T16:23:57.671Z | resource
+SYNCED | 2023_PPEP171_W2_W7_Combined.pdf | pdf | 2026-06-05T16:37:09.759Z | resource
+SYNCED | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf | pdf | 2026-06-05T16:37:09.759Z | resource
+SYNCED | PPEP171 Component Collection Registrar _Alpha_.pdf | pdf | 2026-06-05T16:37:09.759Z | resource
+SYNCED | W2_Wireing_Session2023.pdf | pdf | 2026-06-05T16:37:09.759Z | resource
 NOT_SYNCED | SANS10142-1_2017_Ed2-3.pdf | pdf | 2026-06-01T18:31:18.945Z | resource
 INCOMPATIBLE | Search_SANS10142-1.mp4 | mp4 | 2026-06-01T18:31:18.945Z | resource
 INCOMPATIBLE | Search_SANS10142.mp4 | mp4 | 2026-06-01T18:31:18.945Z | resource
