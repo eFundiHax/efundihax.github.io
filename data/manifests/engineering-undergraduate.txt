@@ -382,3 +382,6 @@ Attachment processing failed: CV training Session Potch Campus Poster.pdf - Driv
 
 --- ERROR LOG (2026-06-05T16:04:47.988Z) ---
 Attachment processing failed: DSI-NRF-Honours-Application-and-Funding-Guide-for-2023-FINAL.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:04:57.059Z) ---
+Attachment processing failed: NRF Honours session.pdf - Drive is not defined
