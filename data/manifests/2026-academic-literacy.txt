@@ -264,3 +264,6 @@ Attachment processing failed: 2026_ALDE112_Assessment 2_Answer Template.docx - D
 
 --- ERROR LOG (2026-06-05T16:10:43.554Z) ---
 Attachment processing failed: Finding and integrating sources.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:10:54.090Z) ---
+Attachment processing failed: Engineering Students’ Perceptions of Academic Literacy- A Synthesis of Empirical Evidence.pdf - Drive is not defined
