@@ -24,7 +24,7 @@ title: NPHY111-2026
 last_sync: 2026-06-05T19:51:02.146Z
 last_announcement: 2026-06-05T19:50:47.910Z
 total_files: 20
-generated: 2026-06-05T19:54:21.652Z
+generated: 2026-06-05T19:54:40.257Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -40,7 +40,7 @@ NOT_SYNCED | Physics for Scientists & Engineers with Modern Physics, Global Edit
 NOT_SYNCED | NPHY111-2026-formula1.pdf | pdf | 2026-06-05T19:51:32.493Z | announcement_attachment
 INCOMPATIBLE | NPHY 111 Tutors 2026.jpg | jpg | 2026-06-05T19:51:13.623Z | announcement_attachment
 NOT_SYNCED | NPHY111-2026 - Schedule.pdf | pdf | 2026-06-05T19:51:32.493Z | announcement_attachment
-NOT_SYNCED | notebook-links.html | html | 2026-06-05T19:54:18.650Z | resource
+SYNCED | notebook-links.html | html | 2026-06-05T19:54:38.231Z | resource
 NOT_SYNCED | NPHY111-2026-appendix.pdf | pdf | 2026-06-05T19:54:18.650Z | resource
 NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-06-05T19:54:18.650Z | resource
 NOT_SYNCED | NPHY111-2026 - Schedule.pdf | pdf | 2026-06-05T19:54:18.650Z | resource
