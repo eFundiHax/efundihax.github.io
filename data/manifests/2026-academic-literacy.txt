@@ -291,3 +291,6 @@ Lesson sync failed: 2. Reading, Writing & Listening - The document is inaccessib
 
 --- ERROR LOG (2026-06-05T16:41:43.062Z) ---
 Lesson sync failed: 6. Text Production - The document is inaccessible. Please try again later.
+
+--- ERROR LOG (2026-06-05T16:44:23.292Z) ---
+Lesson sync failed: 3. Academic Integrity - The document is inaccessible. Please try again later.
