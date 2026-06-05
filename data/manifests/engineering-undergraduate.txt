@@ -550,3 +550,6 @@ Attachment processing failed: Patent Candidate Attorney Advert - Electronic Engi
 
 --- ERROR LOG (2026-06-05T17:14:42.379Z) ---
 Attachment processing failed: SAGWRI PG Information Session Engineering.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T17:14:53.363Z) ---
+Attachment processing failed: Jurumani Grad Poster  -NWU.pdf - Drive is not defined
