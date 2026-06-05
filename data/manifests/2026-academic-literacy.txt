@@ -267,3 +267,6 @@ Attachment processing failed: Finding and integrating sources.pdf - Drive is not
 
 --- ERROR LOG (2026-06-05T16:10:54.090Z) ---
 Attachment processing failed: Engineering Students’ Perceptions of Academic Literacy- A Synthesis of Empirical Evidence.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:22:50.015Z) ---
+Lesson sync failed: ALDE Lessons - The document is inaccessible. Please try again later.
