@@ -24,78 +24,78 @@ title: NCHE111-2026
 last_sync: 2026-05-29T15:06:28.790Z
 last_announcement: 2026-06-04T19:19:20.057Z
 total_files: 160
-generated: 2026-06-05T14:50:15.685Z
+generated: 2026-06-05T15:41:54.192Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
-PENDING | Chemistry of thunderstorms.jpg | jpg | 2026-05-31T21:34:48.715Z | resource
-PENDING | Fertilizers.jpg | jpg | 2026-05-31T21:34:48.715Z | resource
-PENDING | Inorganic-Paint-Pigments-.png | png | 2026-05-31T21:34:48.715Z | resource
-PENDING | R6bc6ecb65e3c25295fedb2b0eacb930c.jpg | jpg | 2026-05-31T21:34:48.715Z | resource
-PENDING | Resources.jpg | jpg | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Sections 4.1 to 4.3.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 4.4Project.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 4.5.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 4.6.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 4.7.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeeltes 4.1 tot 4.3.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 4.5.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 4.6.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 4.7.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Try Yourself 4.4B.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 5.1_Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 5.2_Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 5.3 Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 5.4 tot 5.6 Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 5.7 Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 5.7 Hess se wet_Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 5.1_English.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 5.2_English.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 5.3.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 5.4 to 5.6.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 5.7.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 5.7 Hess's law.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 7.3_h.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 7.4_h.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 7.5 En 7.6_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeeltes 7.1 En 7.2_h.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 7.1 And 7.2_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 7.3_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 7.4_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Sections 7.5 And 7.6_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 8.3_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 8.4_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeeltes 8.1 En 8.2_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeeltes 8.5 En 8.6 En 8.7_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeeltes 8.8A_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeeltes 8.8B_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 8.3_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 8.4_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 8.8 A_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 8.8 B_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Sections 8.1 And 8.2_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Sections 8.5 And 8.6 And 8.7_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 9.1_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 9.2_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 9.3 En 9.4_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Leergedeelte 9.5_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 9.1_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 9.2_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 9.3 And 9.4_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 9.5_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Chemistry of thunderstorms.jpg | jpg | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Fertilizers.jpg | jpg | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Inorganic-Paint-Pigments-.png | png | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | R6bc6ecb65e3c25295fedb2b0eacb930c.jpg | jpg | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Resources.jpg | jpg | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Sections 4.1 to 4.3.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 4.4Project.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 4.5.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 4.6.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 4.7.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeeltes 4.1 tot 4.3.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 4.5.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 4.6.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 4.7.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Try Yourself 4.4B.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 5.1_Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 5.2_Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 5.3 Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 5.4 tot 5.6 Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 5.7 Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 5.7 Hess se wet_Afrikaans.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 5.1_English.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 5.2_English.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 5.3.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 5.4 to 5.6.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 5.7.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 5.7 Hess's law.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 7.3_h.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 7.4_h.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 7.5 En 7.6_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeeltes 7.1 En 7.2_h.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 7.1 And 7.2_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 7.3_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 7.4_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Sections 7.5 And 7.6_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 8.3_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 8.4_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeeltes 8.1 En 8.2_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeeltes 8.5 En 8.6 En 8.7_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeeltes 8.8A_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeeltes 8.8B_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 8.3_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 8.4_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 8.8 A_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 8.8 B_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Sections 8.1 And 8.2_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Sections 8.5 And 8.6 And 8.7_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 9.1_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 9.2_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 9.3 En 9.4_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Leergedeelte 9.5_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 9.1_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 9.2_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 9.3 And 9.4_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 9.5_H.mp4 | mp4 | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Locker numbers_Friday_Student numbers only_2026.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Locker numbers_Tuesday_Student numbers only_2026.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | NCHE111 Lockere numbers_Wednesday_Student numbers only_2026.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | NCHE111 Locker numbers_MondayStudent numbers only_2026.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | NCHE111_practical_timetable_2026.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | NCHE111_pratiese_rooster_2026.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Participation marks_Numbers only.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Participation marks_Numbers only.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | General info for Semester test.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Memorandum_Semester test.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Memorandum_Semestertoets_2023.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Memorandum_Semestertoets_2025.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Semester test_NCHE111_2023.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Semester test_NCHE111_2025.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Semester test_NCHE111_2025.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Semester test.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Periodic table.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Solubility table.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
@@ -120,10 +120,10 @@ NOT_SYNCED | Try yourself questions for Study section 4.4.pdf | pdf | 2026-05-31
 NOT_SYNCED | Try yourself questions for Study section 4.5.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Try yourself questions for Study section 4.6.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Try yourself questions for Study section 4.7.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Answers to Try Yourself Questions for 5.1 and 5.2.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Answer to Try yourself question for Study Section 5.3.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Answer to Try yourself question for Study Section 5.4 to 5.6.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Extra worked out problems SU5.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Answers to Try Yourself Questions for 5.1 and 5.2.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Answer to Try yourself question for Study Section 5.3.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Answer to Try yourself question for Study Section 5.4 to 5.6.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Extra worked out problems SU5.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Answer to Example 5.7_Hess Law.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Answer to Try yourself question for Study Section 5.7.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Student questions.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
@@ -136,51 +136,51 @@ NOT_SYNCED | Try yourself questions for Study Section 5.3.pdf | pdf | 2026-05-31
 NOT_SYNCED | Try yourself questions for Study Section 5.4 to 5.6.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Try yourself questions for Study Section 5.7.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Answers to extra problems from Study Unit 7.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Answer to Try yourself questions for Study Section 7.2.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Answer to Try yourself questions for Study Section 7.3.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Answer to Try yourself questions for Study Section 7.4.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Answer to Try yourself questions for Study Section 7.5.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 7.1 and 7.2.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Answer to Try yourself questions for Study Section 7.2.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Answer to Try yourself questions for Study Section 7.3.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Answer to Try yourself questions for Study Section 7.4.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Answer to Try yourself questions for Study Section 7.5.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 7.1 and 7.2.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Study Section 7.3.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Study Section 7.4.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Study Section 7.5 and 7.6.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Extra problems from Study Unit 7.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Try yourself questions for Study Section 7.2.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Try yourself questions for Study Section 7.3.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Try yourself questions for Study Section 7.4.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Try yourself questions for Study Section 7.5.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Answers to Extra problems for SU8_Acids and Bases.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Try yourself questions for Study Section 7.3.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Try yourself questions for Study Section 7.4.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Try yourself questions for Study Section 7.5.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Answers to Extra problems for SU8_Acids and Bases.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Answers to Try yourself questions for Study Section 8.2.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Answers to Try yourself questions for Study Section 8.3.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Answers to Try yourself questions for Study Section 8.4.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Answers to Try yourself questions for Study Sections 8.5 8.6 and 8.7.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Answers to Try yourself questions for Study Sections 8.8.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 8.3.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 8.4.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 8.3.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 8.4.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Study Sections 8.1 and 8.2.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Study Sections 8.5 8.6 and 8.7.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Study Sections 8.8 8.9 8.10 and 8.11.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Extra problems for SU8_Acids and Bases.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Try yourself question for Study Sections 8.8.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Try yourself questions for Study Section 8.2.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Try yourself questions for Study Section 8.3.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Try yourself questions for Study Section 8.4.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Try yourself questions for Study Sections 8.5 8.6 and 8.7.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Answers to extra questions for Study Unit 9.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Answers to Try yourself questions for Study Section 9.1.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Try yourself questions for Study Section 8.3.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Try yourself questions for Study Section 8.4.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Try yourself questions for Study Sections 8.5 8.6 and 8.7.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Answers to extra questions for Study Unit 9.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Answers to Try yourself questions for Study Section 9.1.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Answers to Try yourself questions for Study Section 9.2.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Answers to Try yourself questions for Study Section 9.4.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Answers to Try yourself questions for Study Section 9.5.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Study Section 9.1.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | Study Section 9.2.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Section 9.3 and 9.4.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
-PENDING | Study Sections 9.5 9.6 and 9.7.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
-PENDING | Extra questions for Study Unit 9.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Try yourself question for Study Section 9.1.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Try yourself questions for Study Section 9.2.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Try yourself questions for Study Section 9.4.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Try yourself questions for Study Section 9.5.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
-PENDING | Textbook Information.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Section 9.3 and 9.4.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Study Sections 9.5 9.6 and 9.7.ppt | ppt | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Extra questions for Study Unit 9.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Try yourself question for Study Section 9.1.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Try yourself questions for Study Section 9.2.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Try yourself questions for Study Section 9.4.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Try yourself questions for Study Section 9.5.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
+NOT_SYNCED | Textbook Information.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | NCHE 111_updated work schedule_version 2.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 NOT_SYNCED | NCHE 111_work schedule_version 1.pdf | pdf | 2026-05-31T21:34:48.715Z | resource
 SYNCED | Participation marks_Numbers only.pdf | pdf | 2026-06-05T14:50:12.122Z | announcement_attachment
