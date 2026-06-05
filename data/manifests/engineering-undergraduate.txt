@@ -418,3 +418,6 @@ Attachment processing failed: 2024- Letter to high achievers at SA Universities 
 
 --- ERROR LOG (2026-06-05T16:13:50.326Z) ---
 Attachment processing failed: 2024 Rhodes Scholarship flyer  - Orange (1).pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:14:00.470Z) ---
+Attachment processing failed: Student_Subscription_forms_2024.pdf - Drive is not defined
