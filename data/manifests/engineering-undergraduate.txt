@@ -24,29 +24,29 @@ title: Engineering Undergraduate
 last_sync: 2026-06-05T15:53:52.407Z
 last_announcement: 2026-06-04T19:16:04.586Z
 total_files: 100
-generated: 2026-06-05T15:54:21.887Z
+generated: 2026-06-05T15:56:24.652Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
-NOT_SYNCED | Student_Subscription_forms_2026.pdf | pdf | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | FENG Exam Timetable 1st Sem_25 May 2026.xlsx | xlsx | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | FENG Exam Timetable 1st Sem_22 May 2026.xlsx | xlsx | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | FENG Mid Semester Assessment Timetable_27 Mrt.xlsx | xlsx | 2026-06-05T15:54:10.908Z | announcement_attachment
+SYNCED | Student_Subscription_forms_2026.pdf | pdf | 2026-06-05T15:55:47.391Z | announcement_attachment
+SYNCED | FENG Exam Timetable 1st Sem_25 May 2026.xlsx | xlsx | 2026-06-05T15:55:55.420Z | announcement_attachment
+SYNCED | FENG Exam Timetable 1st Sem_22 May 2026.xlsx | xlsx | 2026-06-05T15:56:03.484Z | announcement_attachment
+SYNCED | FENG Mid Semester Assessment Timetable_27 Mrt.xlsx | xlsx | 2026-06-05T15:56:10.665Z | announcement_attachment
 INCOMPATIBLE | Bursary opportunity.jpeg | jpeg | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | Student_Subscription_forms_2025.pdf | pdf | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | MUST_Scholarships_2026_flyer.pdf | pdf | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | Application Guide for SARAO Doctoral Scholarships for 2026.pdf | pdf | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | Application Guide for SARAO Master's Scholarships for 2026.pdf | pdf | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | DSI-NRF Master's and Doctoral Application and Funding Guide for 2026 (final).pdf | pdf | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | DSTI-NRF Postgraduate Scholarship Framework for 2026 Funding__FINAL (003).pdf | pdf | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | Frequently Asked Questions_Postgraduate Funding_2025 (14 May).pdf | pdf | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | Student_Subscription_forms_2025.pdf | pdf | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | SITE-LAYOUT.pdf | pdf | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | 2025 Rhodes Invite, GLMN Info Session, 26 May (1).pdf | pdf | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | Potch Career fair A1 poster.pdf | pdf | 2026-06-05T15:54:10.908Z | announcement_attachment
+SYNCED | Student_Subscription_forms_2025.pdf | pdf | 2026-06-05T15:56:23.270Z | announcement_attachment
+NOT_SYNCED | MUST_Scholarships_2026_flyer.pdf | pdf | 2026-06-05T15:55:28.601Z | announcement_attachment
+NOT_SYNCED | Application Guide for SARAO Doctoral Scholarships for 2026.pdf | pdf | 2026-06-05T15:55:28.601Z | announcement_attachment
+NOT_SYNCED | Application Guide for SARAO Master's Scholarships for 2026.pdf | pdf | 2026-06-05T15:55:28.601Z | announcement_attachment
+NOT_SYNCED | DSI-NRF Master's and Doctoral Application and Funding Guide for 2026 (final).pdf | pdf | 2026-06-05T15:55:28.601Z | announcement_attachment
+NOT_SYNCED | DSTI-NRF Postgraduate Scholarship Framework for 2026 Funding__FINAL (003).pdf | pdf | 2026-06-05T15:55:28.601Z | announcement_attachment
+NOT_SYNCED | Frequently Asked Questions_Postgraduate Funding_2025 (14 May).pdf | pdf | 2026-06-05T15:55:28.601Z | announcement_attachment
+NOT_SYNCED | Student_Subscription_forms_2025.pdf | pdf | 2026-06-05T15:55:28.601Z | announcement_attachment
+NOT_SYNCED | SITE-LAYOUT.pdf | pdf | 2026-06-05T15:55:28.601Z | announcement_attachment
+NOT_SYNCED | 2025 Rhodes Invite, GLMN Info Session, 26 May (1).pdf | pdf | 2026-06-05T15:55:28.601Z | announcement_attachment
+NOT_SYNCED | Potch Career fair A1 poster.pdf | pdf | 2026-06-05T15:55:28.601Z | announcement_attachment
 INCOMPATIBLE | WhatsApp Image 2025-03-12 at 15.12.31_8922b7e0.jpg | jpg | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | Students 2.pdf | pdf | 2026-06-05T15:54:10.908Z | announcement_attachment
-NOT_SYNCED | MUST BOOTCAMP 2025 Advert.pdf | pdf | 2026-06-05T15:54:10.908Z | announcement_attachment
+NOT_SYNCED | Students 2.pdf | pdf | 2026-06-05T15:55:28.601Z | announcement_attachment
+NOT_SYNCED | MUST BOOTCAMP 2025 Advert.pdf | pdf | 2026-06-05T15:55:28.601Z | announcement_attachment
 INCOMPATIBLE | INVITATION.PNG | png | 2026-06-05T15:54:10.908Z | announcement_attachment
 INCOMPATIBLE | Invite.png | png | 2026-06-05T14:48:47.376Z | announcement_attachment
 INCOMPATIBLE | Programme.png | png | 2026-06-05T14:48:47.376Z | announcement_attachment
