@@ -48,3 +48,6 @@ NOT_SYNCED | NPHY111-2026 - Schedule.pdf | pdf | 2026-06-05T16:12:39.615Z | anno
 
 --- ERROR LOG (2026-06-05T16:13:00.398Z) ---
 Attachment processing failed: Pearson -Physics- NWU.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:13:08.462Z) ---
+Attachment processing failed: Physics for Scientists & Engineers with Modern Physics, Global Edition Flyer.pdf - Drive is not defined
