@@ -24,13 +24,13 @@ title: SEECE Work & Safety - ...
 last_sync: 2026-05-29T15:05:41.991Z
 last_announcement: 2026-06-04T19:14:07.550Z
 total_files: 12
-generated: 2026-06-05T18:23:36.906Z
+generated: 2026-06-05T19:53:25.193Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
 INCOMPATIBLE | Emergency Numbers.JPG | jpg | 2026-06-01T20:55:45.490Z | resource
 INCOMPATIBLE | N-Buidings.JPG | jpg | 2026-06-01T20:55:45.490Z | resource
-INCOMPATIBLE | Payment Image.png | png | 2026-06-05T18:23:35.107Z | resource
+INCOMPATIBLE | Payment Image.png | png | 2026-06-05T19:53:23.599Z | resource
 NOT_SYNCED | Safety.pdf | pdf | 2026-06-01T20:55:45.490Z | resource
 NOT_SYNCED | Signs and Color coding.pdf | pdf | 2026-06-01T20:55:45.490Z | resource
 NOT_SYNCED | Safety.pdf | pdf | 2026-06-01T20:55:45.490Z | resource
