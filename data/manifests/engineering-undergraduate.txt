@@ -448,3 +448,6 @@ Attachment processing failed: Field Engineer - Senior technician Job Description
 
 --- ERROR LOG (2026-06-05T16:18:01.781Z) ---
 Attachment processing failed: Industrial Engineer Advert.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:18:12.213Z) ---
+Attachment processing failed: Engineer in Training.Mech & Elect.docx - Drive is not defined
