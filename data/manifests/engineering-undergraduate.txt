@@ -24,7 +24,7 @@ title: Engineering Undergraduate
 last_sync: 2026-06-05T16:10:32.197Z
 last_announcement: 2026-06-04T19:16:04.586Z
 total_files: 100
-generated: 2026-06-05T16:16:44.039Z
+generated: 2026-06-05T16:17:15.854Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -88,26 +88,26 @@ NOT_SYNCED | Advert - MUST PG scholarships 2024.pdf | pdf | 2026-06-05T16:15:27.
 NOT_SYNCED | PR_09 June 2023.pdf | pdf | 2026-06-05T16:15:27.167Z | announcement_attachment
 INCOMPATIBLE | Youth Development Programme Invite.png | png | 2026-06-05T16:14:30.122Z | announcement_attachment
 INCOMPATIBLE | Junior Design Engineer.jpg | jpg | 2026-06-05T16:14:30.122Z | announcement_attachment
-INCOMPATIBLE | Notice - First Semester Examinations 2023.docm | docm | 2026-06-05T16:01:36.158Z | announcement_attachment
-SYNCED | Student Vacation Work at Master Drilling.pdf | pdf | 2026-06-05T16:02:28.240Z | announcement_attachment
-INCOMPATIBLE | CTPost2.png | png | 2026-06-05T16:01:36.158Z | announcement_attachment
-SYNCED | Career Coaching Poster NWU Potch Campus.pdf | pdf | 2026-06-05T16:02:36.820Z | announcement_attachment
-SYNCED | Career Coaching Session 1 - Potch Campus.pdf | pdf | 2026-06-05T16:02:46.028Z | announcement_attachment
-SYNCED | Interview Training Session Poster - Potch Campus.pdf | pdf | 2026-06-05T16:02:54.849Z | announcement_attachment
-SYNCED | CV training Session Potch Campus Poster.pdf | pdf | 2026-06-05T16:03:10.154Z | announcement_attachment
-NOT_SYNCED | CC Overview poster.pdf | pdf | 2026-06-05T16:02:14.943Z | announcement_attachment
-NOT_SYNCED | Field Engineer - Senior technician Job Description.pdf | pdf | 2026-06-05T16:02:14.943Z | announcement_attachment
-NOT_SYNCED | Industrial Engineer Advert.pdf | pdf | 2026-06-05T16:02:14.943Z | announcement_attachment
-NOT_SYNCED | Engineer in Training.Mech & Elect.docx | docx | 2026-06-05T16:02:14.943Z | announcement_attachment
-NOT_SYNCED | Post-graduate bursaries (Students).pdf | pdf | 2026-06-05T16:02:14.943Z | announcement_attachment
-INCOMPATIBLE | Graduate Electrical Engineer - JHB.png | png | 2026-06-05T16:01:36.158Z | announcement_attachment
-NOT_SYNCED | Electrical Engineer Advert.docx | docx | 2026-06-05T16:02:14.943Z | announcement_attachment
-NOT_SYNCED | EA 2023 - Talents from Africa  - Brochure.pdf | pdf | 2026-06-05T16:02:14.943Z | announcement_attachment
-NOT_SYNCED | EA2023 - Talents from Africa - Flyer.pdf | pdf | 2026-06-05T16:02:14.943Z | announcement_attachment
-INCOMPATIBLE | Agri Career Fair 19 October.jpg | jpg | 2026-06-05T16:01:36.158Z | announcement_attachment
-NOT_SYNCED | CV Poster.pdf | pdf | 2026-06-05T16:02:14.943Z | announcement_attachment
-NOT_SYNCED | Patent candidate attorney advert - Chemical Engineering - 11 August 2022.docx | docx | 2026-06-05T16:02:14.943Z | announcement_attachment
-NOT_SYNCED | Patent Candidate Attorney Advert - Electronic Engineering andor Computer Engineering - 11 August 2022.docx | docx | 2026-06-05T16:02:14.943Z | announcement_attachment
+INCOMPATIBLE | Notice - First Semester Examinations 2023.docm | docm | 2026-06-05T16:17:00.704Z | announcement_attachment
+SYNCED | Student Vacation Work at Master Drilling.pdf | pdf | 2026-06-05T16:17:00.704Z | announcement_attachment
+INCOMPATIBLE | CTPost2.png | png | 2026-06-05T16:17:00.704Z | announcement_attachment
+SYNCED | Career Coaching Poster NWU Potch Campus.pdf | pdf | 2026-06-05T16:17:00.704Z | announcement_attachment
+SYNCED | Career Coaching Session 1 - Potch Campus.pdf | pdf | 2026-06-05T16:17:00.704Z | announcement_attachment
+SYNCED | Interview Training Session Poster - Potch Campus.pdf | pdf | 2026-06-05T16:17:00.704Z | announcement_attachment
+SYNCED | CV training Session Potch Campus Poster.pdf | pdf | 2026-06-05T16:17:00.704Z | announcement_attachment
+NOT_SYNCED | CC Overview poster.pdf | pdf | 2026-06-05T16:17:00.704Z | announcement_attachment
+NOT_SYNCED | Field Engineer - Senior technician Job Description.pdf | pdf | 2026-06-05T16:17:00.704Z | announcement_attachment
+NOT_SYNCED | Industrial Engineer Advert.pdf | pdf | 2026-06-05T16:17:00.704Z | announcement_attachment
+NOT_SYNCED | Engineer in Training.Mech & Elect.docx | docx | 2026-06-05T16:17:00.704Z | announcement_attachment
+NOT_SYNCED | Post-graduate bursaries (Students).pdf | pdf | 2026-06-05T16:17:00.704Z | announcement_attachment
+INCOMPATIBLE | Graduate Electrical Engineer - JHB.png | png | 2026-06-05T16:17:00.704Z | announcement_attachment
+NOT_SYNCED | Electrical Engineer Advert.docx | docx | 2026-06-05T16:17:00.704Z | announcement_attachment
+NOT_SYNCED | EA 2023 - Talents from Africa  - Brochure.pdf | pdf | 2026-06-05T16:17:00.704Z | announcement_attachment
+NOT_SYNCED | EA2023 - Talents from Africa - Flyer.pdf | pdf | 2026-06-05T16:17:00.704Z | announcement_attachment
+INCOMPATIBLE | Agri Career Fair 19 October.jpg | jpg | 2026-06-05T16:17:00.704Z | announcement_attachment
+NOT_SYNCED | CV Poster.pdf | pdf | 2026-06-05T16:17:00.704Z | announcement_attachment
+NOT_SYNCED | Patent candidate attorney advert - Chemical Engineering - 11 August 2022.docx | docx | 2026-06-05T16:17:00.704Z | announcement_attachment
+NOT_SYNCED | Patent Candidate Attorney Advert - Electronic Engineering andor Computer Engineering - 11 August 2022.docx | docx | 2026-06-05T16:17:00.704Z | announcement_attachment
 SYNCED | DSI-NRF-Honours-Application-and-Funding-Guide-for-2023-FINAL.pdf | pdf | 2026-06-05T16:04:55.561Z | announcement_attachment
 SYNCED | NRF Honours session.pdf | pdf | 2026-06-05T16:05:04.055Z | announcement_attachment
 SYNCED | 2022 090 - Assistant Control and Instrumentation Engineer.doc | doc | 2026-06-05T16:05:19.617Z | announcement_attachment
