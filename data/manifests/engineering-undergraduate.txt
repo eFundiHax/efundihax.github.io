@@ -442,3 +442,6 @@ Attachment processing failed: SARAO NWU Visit July 2023.pdf - Drive is not defin
 
 --- ERROR LOG (2026-06-05T16:17:44.754Z) ---
 Attachment processing failed: CC Overview poster.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:17:53.243Z) ---
+Attachment processing failed: Field Engineer - Senior technician Job Description.pdf - Drive is not defined
