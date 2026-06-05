@@ -249,3 +249,6 @@ Attachment processing failed: Group Divisions.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T15:55:48.811Z) ---
 Attachment processing failed: Groups_Group Assignment.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:07:51.229Z) ---
+Lesson sync failed: ALDE Lessons - The document is inaccessible. Please try again later.
