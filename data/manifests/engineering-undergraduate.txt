@@ -508,3 +508,6 @@ Attachment processing failed: Advert - MUST PG scholarships 2024.pdf - Drive is 
 
 --- ERROR LOG (2026-06-05T16:31:42.943Z) ---
 Attachment processing failed: PR_09 June 2023.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:32:39.895Z) ---
+Attachment processing failed: Electrical Engineer Advert.docx - Drive is not defined
