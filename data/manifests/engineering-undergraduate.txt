@@ -547,3 +547,6 @@ Attachment processing failed: MUST BOOTCAMP 2025 Advert.pdf - Drive is not defin
 
 --- ERROR LOG (2026-06-05T17:13:49.775Z) ---
 Attachment processing failed: Patent Candidate Attorney Advert - Electronic Engineering andor Computer Engineering - 11 August 2022.docx - Drive is not defined
+
+--- ERROR LOG (2026-06-05T17:14:42.379Z) ---
+Attachment processing failed: SAGWRI PG Information Session Engineering.pdf - Drive is not defined
