@@ -411,3 +411,6 @@ Lesson sync failed: 9.  Visual Information - Service Documents failed while acce
 
 --- ERROR LOG (2026-06-05T18:25:50.380Z) ---
 Lesson sync failed: Lecturer Information - The document is inaccessible. Please try again later.
+
+--- ERROR LOG (2026-06-05T18:27:32.872Z) ---
+Lesson sync failed: 2. Reading, Writing & Listening - The document is inaccessible. Please try again later.
