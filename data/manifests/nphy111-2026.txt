@@ -54,3 +54,6 @@ Attachment processing failed: NPHY111-2026 - marks.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T17:13:58.783Z) ---
 Attachment processing failed: Tutorial questions (4 May).pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T17:14:06.183Z) ---
+Attachment processing failed: NPHY111-2026 - marks.pdf - Drive is not defined
