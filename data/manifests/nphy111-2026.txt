@@ -53,3 +53,6 @@ NOT_SYNCED | Physics for Scientists _ Engineers with Modern Physics, Global Edit
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) NPHY111-2026 — full extracted text from all synced files and lessons
 (SCHEDULE) NPHY111-2026 — calendar events and announcements spreadsheet
+
+--- ERROR LOG (2026-06-05T16:24:39.052Z) ---
+Resource processing failed: notebook-links.html - Drive is not defined
