@@ -469,3 +469,6 @@ Attachment processing failed: Extension of Closing date M&Ds.pdf - Drive is not 
 
 --- ERROR LOG (2026-06-05T16:20:36.316Z) ---
 Attachment processing failed: DSI-NRF-Postgraduate-Scholarship-Framework-for-2023-Funding-26-April-2022-FINAL-1.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:27:55.669Z) ---
+Attachment processing failed: Frequently Asked Questions_Postgraduate Funding_2025 (14 May).pdf - Drive is not defined
