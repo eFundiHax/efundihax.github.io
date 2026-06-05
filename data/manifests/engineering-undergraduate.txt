@@ -385,3 +385,6 @@ Attachment processing failed: DSI-NRF-Honours-Application-and-Funding-Guide-for-
 
 --- ERROR LOG (2026-06-05T16:04:57.059Z) ---
 Attachment processing failed: NRF Honours session.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:05:05.224Z) ---
+Attachment processing failed: 2022 090 - Assistant Control and Instrumentation Engineer.doc - Drive is not defined
