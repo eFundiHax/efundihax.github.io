@@ -1179,3 +1179,6 @@ Attachment processing failed: SCME Onboarding Guide_Workshop 1_2026.pdf - Drive 
 
 --- ERROR LOG (2026-06-05T15:56:31.026Z) ---
 Attachment processing failed: PPEP171_SEECE_GroupList_2026.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:56:40.944Z) ---
+Attachment processing failed: Group Mech 2 Mechanical Eng - First years.pdf - Drive is not defined
