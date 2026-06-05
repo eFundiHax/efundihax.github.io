@@ -435,3 +435,6 @@ Lesson sync failed: Semester test - The document is inaccessible. Please try aga
 
 --- ERROR LOG (2026-06-05T18:39:58.157Z) ---
 Lesson sync failed: 4. Source Integration - The document is inaccessible. Please try again later.
+
+--- ERROR LOG (2026-06-05T18:43:43.766Z) ---
+Lesson sync failed: 5. Academic Text Structure & Writing as a Process (Part 1) - The document is inaccessible. Please try again later.
