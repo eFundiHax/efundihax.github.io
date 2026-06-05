@@ -24,57 +24,57 @@ title: Library
 last_sync: 2026-05-29T15:06:43.288Z
 last_announcement: 2026-06-04T19:21:42.845Z
 total_files: 47
-generated: 2026-06-05T15:41:33.769Z
+generated: 2026-06-05T15:42:56.870Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
-NOT_SYNCED | EndNote20SiteInstaller-mac.dmg | dmg | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | EndNote-20-windows.zip | zip | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | EndNote21SiteInstaller.dmg | dmg | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | EndNote-21.zip | zip | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | EndNote2025SiteInstaller.dmg | dmg | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | NWUEndNote2025.exe | exe | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | EndNote LibGuide | endnote libguide | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 1. Finding more accessible information: textbooks |  finding more accessible information: textbooks | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 2. Common errors: Harvard Referencing Style |  common errors: harvard referencing style | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 3. The fundamentals of paraphrasing |  the fundamentals of paraphrasing | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 1. What is Referencing |  what is referencing | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 2. Text references |  text references | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 3. Referencing lists |  referencing lists | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 4. Introduction to source types |  introduction to source types | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 5. Referencing books |  referencing books | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 6. Referencing collected works |  referencing collected works | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 7. Referencing journal articles |  referencing journal articles | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 8. Dictionaries and encyclopedias |  dictionaries and encyclopedias | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 9. Referencing online sources |  referencing online sources | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 10. Reference managers |  reference managers | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | Academic Literacy Series 2 - Common Errors: Harvard Referencing Style | academic literacy series 2 - common errors: harvard referencing style | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 1. What is Referencing? |  what is referencing? | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 2. Text-References |  text-references | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 3. Story of Referencing Lists |  story of referencing lists | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 4. Introduction to source types |  introduction to source types | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 5. Referencing books |  referencing books | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 6. Collected Works |  collected works | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 7. Journal Articles |  journal articles | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 8. Dictionaries and encyclopaedias |  dictionaries and encyclopaedias | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 9. Referencing Online Sources |  referencing online sources | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 10. Reference Managers |  reference managers | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 1. General guidelines |  general guidelines | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 2. Principles of footnotes |  principles of footnotes | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 3. Layout of the bibliography |  layout of the bibliography | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 4. Referencing books |  referencing books | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 5. Journal articles |  journal articles | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 6. Referenceing Case Law |  referenceing case law | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 7. Referencing Legislation |  referencing legislation | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 8. Referencing international law instruments |  referencing international law instruments | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 9. Referencing government publications |  referencing government publications | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 10. Referencing internet sources |  referencing internet sources | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | 11. Reference managers |  reference managers | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | Referencing Guides | referencing guides | 2026-06-01T17:42:25.014Z | resource
-NOT_SYNCED | student-assistants-for-2026.png | png | 2026-06-01T18:34:29.225Z | resource
-NOT_SYNCED | Course 1.png | png | 2026-06-01T18:34:29.225Z | resource
-NOT_SYNCED | Course 2.png | png | 2026-06-01T18:34:29.225Z | resource
-NOT_SYNCED | Course 3.png | png | 2026-06-01T18:34:29.225Z | resource
+INCOMPATIBLE | EndNote20SiteInstaller-mac.dmg | dmg | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | EndNote-20-windows.zip | zip | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | EndNote21SiteInstaller.dmg | dmg | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | EndNote-21.zip | zip | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | EndNote2025SiteInstaller.dmg | dmg | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | NWUEndNote2025.exe | exe | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | EndNote LibGuide | endnote libguide | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 1. Finding more accessible information: textbooks |  finding more accessible information: textbooks | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 2. Common errors: Harvard Referencing Style |  common errors: harvard referencing style | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 3. The fundamentals of paraphrasing |  the fundamentals of paraphrasing | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 1. What is Referencing |  what is referencing | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 2. Text references |  text references | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 3. Referencing lists |  referencing lists | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 4. Introduction to source types |  introduction to source types | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 5. Referencing books |  referencing books | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 6. Referencing collected works |  referencing collected works | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 7. Referencing journal articles |  referencing journal articles | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 8. Dictionaries and encyclopedias |  dictionaries and encyclopedias | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 9. Referencing online sources |  referencing online sources | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 10. Reference managers |  reference managers | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | Academic Literacy Series 2 - Common Errors: Harvard Referencing Style | academic literacy series 2 - common errors: harvard referencing style | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 1. What is Referencing? |  what is referencing? | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 2. Text-References |  text-references | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 3. Story of Referencing Lists |  story of referencing lists | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 4. Introduction to source types |  introduction to source types | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 5. Referencing books |  referencing books | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 6. Collected Works |  collected works | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 7. Journal Articles |  journal articles | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 8. Dictionaries and encyclopaedias |  dictionaries and encyclopaedias | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 9. Referencing Online Sources |  referencing online sources | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 10. Reference Managers |  reference managers | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 1. General guidelines |  general guidelines | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 2. Principles of footnotes |  principles of footnotes | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 3. Layout of the bibliography |  layout of the bibliography | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 4. Referencing books |  referencing books | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 5. Journal articles |  journal articles | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 6. Referenceing Case Law |  referenceing case law | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 7. Referencing Legislation |  referencing legislation | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 8. Referencing international law instruments |  referencing international law instruments | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 9. Referencing government publications |  referencing government publications | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 10. Referencing internet sources |  referencing internet sources | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | 11. Reference managers |  reference managers | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | Referencing Guides | referencing guides | 2026-06-01T17:42:25.014Z | resource
+INCOMPATIBLE | student-assistants-for-2026.png | png | 2026-06-01T18:34:29.225Z | resource
+INCOMPATIBLE | Course 1.png | png | 2026-06-01T18:34:29.225Z | resource
+INCOMPATIBLE | Course 2.png | png | 2026-06-01T18:34:29.225Z | resource
+INCOMPATIBLE | Course 3.png | png | 2026-06-01T18:34:29.225Z | resource
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
