@@ -1194,3 +1194,6 @@ Attachment processing failed: Plagiarism Form.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T16:08:52.729Z) ---
 Resource processing failed: 2023_PPEP171_W2_W7_Combined.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:10:25.821Z) ---
+Attachment processing failed: SCME Onboarding Guide_Workshop 1_2026.pdf - Drive is not defined
