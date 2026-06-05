@@ -327,3 +327,6 @@ Lesson sync failed: Lecturer Information - The document is inaccessible. Please 
 
 --- ERROR LOG (2026-06-05T17:17:50.310Z) ---
 Lesson sync failed: ALDE Lessons - The document is inaccessible. Please try again later.
+
+--- ERROR LOG (2026-06-05T17:18:13.868Z) ---
+Lesson sync failed: Lecturer Information - The document is inaccessible. Please try again later.
