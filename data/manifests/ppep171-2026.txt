@@ -1188,3 +1188,6 @@ Attachment processing failed: Group 1 Mechanical Eng - First years.pdf - Drive i
 
 --- ERROR LOG (2026-06-05T15:57:02.176Z) ---
 Attachment processing failed: Roll Mechanical Eng - First years.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:57:12.962Z) ---
+Attachment processing failed: Plagiarism Form.pdf - Drive is not defined
