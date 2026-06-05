@@ -487,3 +487,6 @@ Attachment processing failed: Potch Career fair A1 poster.pdf - Drive is not def
 
 --- ERROR LOG (2026-06-05T16:29:53.187Z) ---
 Attachment processing failed: ECSA Road to Registration Slides.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:30:01.981Z) ---
+Attachment processing failed: Updated - WIE 2023.pdf - Drive is not defined
