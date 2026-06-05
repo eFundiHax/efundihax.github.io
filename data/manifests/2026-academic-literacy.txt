@@ -513,3 +513,6 @@ Lesson sync failed: 1. Orientation - The document is inaccessible. Please try ag
 
 --- ERROR LOG (2026-06-05T20:22:02.731Z) ---
 Lesson sync failed: 9.  Visual Information - The document is inaccessible. Please try again later.
+
+--- ERROR LOG (2026-06-05T20:22:39.537Z) ---
+Lesson sync failed: ALDE Lessons - The document is inaccessible. Please try again later.
