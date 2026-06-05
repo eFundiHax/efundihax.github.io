@@ -502,3 +502,6 @@ Attachment processing failed: Student Subscription forms 2023[75].pdf - Drive is
 
 --- ERROR LOG (2026-06-05T16:31:27.787Z) ---
 Attachment processing failed: 2023 SRCS Canned Food Day Points system.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:31:35.975Z) ---
+Attachment processing failed: Advert - MUST PG scholarships 2024.pdf - Drive is not defined
