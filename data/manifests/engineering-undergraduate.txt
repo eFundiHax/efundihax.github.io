@@ -352,3 +352,6 @@ Attachment processing failed: 2024 Document upload Checklist for candidates - So
 
 --- ERROR LOG (2026-06-05T16:00:21.329Z) ---
 Attachment processing failed: Origins, Humanity & Science.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:00:32.195Z) ---
+Attachment processing failed: LD multilingo poster A4 28 aug.pdf - Drive is not defined
