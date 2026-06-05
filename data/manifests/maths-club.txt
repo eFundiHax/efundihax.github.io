@@ -43,3 +43,6 @@ SYNCED | Massuress_3.pdf | pdf | 2026-06-05T15:52:29.346Z | announcement_attachm
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) Maths Club — full extracted text from all synced files and lessons
 (SCHEDULE) Maths Club — calendar events and announcements spreadsheet
+
+--- ERROR LOG (2026-06-05T16:07:29.126Z) ---
+Resource processing failed: Partially ordered sets.pdf - Drive is not defined
