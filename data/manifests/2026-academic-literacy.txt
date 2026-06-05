@@ -495,3 +495,6 @@ Lesson sync failed: 6. Text Production - The document is inaccessible. Please tr
 
 --- ERROR LOG (2026-06-05T20:06:55.312Z) ---
 Lesson sync failed: 8. The Writing Process (Part 3) - The document is inaccessible. Please try again later.
+
+--- ERROR LOG (2026-06-05T20:07:16.931Z) ---
+Lesson sync failed: Resources - The document is inaccessible. Please try again later.
