@@ -62,3 +62,6 @@ Resource processing failed: NPHY111-2026 - marks.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T17:18:56.436Z) ---
 Resource processing failed: NPHY111-2026 - Schedule.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T17:19:03.974Z) ---
+Resource processing failed: NPHY111 2026 Study Guide.pdf - Drive is not defined
