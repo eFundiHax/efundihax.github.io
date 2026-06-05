@@ -472,3 +472,6 @@ Attachment processing failed: DSI-NRF-Postgraduate-Scholarship-Framework-for-202
 
 --- ERROR LOG (2026-06-05T16:27:55.669Z) ---
 Attachment processing failed: Frequently Asked Questions_Postgraduate Funding_2025 (14 May).pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:28:07.701Z) ---
+Attachment processing failed: Student_Subscription_forms_2025.pdf - Drive is not defined
