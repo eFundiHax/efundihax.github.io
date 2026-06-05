@@ -544,3 +544,6 @@ Attachment processing failed: Students 2.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T17:12:31.710Z) ---
 Attachment processing failed: MUST BOOTCAMP 2025 Advert.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T17:13:49.775Z) ---
+Attachment processing failed: Patent Candidate Attorney Advert - Electronic Engineering andor Computer Engineering - 11 August 2022.docx - Drive is not defined
