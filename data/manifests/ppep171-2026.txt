@@ -24,7 +24,7 @@ title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
 last_announcement: 2026-06-04T19:17:09.559Z
 total_files: 226
-generated: 2026-06-05T16:10:06.503Z
+generated: 2026-06-05T16:11:07.646Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -239,10 +239,10 @@ SYNCED | SDCC.pdf | pdf | 2026-06-05T16:09:55.272Z | announcement_attachment
 SYNCED | PPEP171_SEECE_GroupList_16March2026.pdf | pdf | 2026-06-05T16:09:55.272Z | announcement_attachment
 SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-06-05T16:09:55.272Z | announcement_attachment
 SYNCED | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-06-05T16:09:55.272Z | announcement_attachment
-NOT_SYNCED | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-06-05T16:09:55.272Z | announcement_attachment
-NOT_SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-06-05T16:09:55.272Z | announcement_attachment
-NOT_SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-06-05T16:09:55.272Z | announcement_attachment
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-06-05T16:09:55.272Z | announcement_attachment
+SYNCED | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-06-05T16:10:34.801Z | announcement_attachment
+SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-06-05T16:10:43.648Z | announcement_attachment
+SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-06-05T16:10:54.638Z | announcement_attachment
+SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-06-05T16:11:06.241Z | announcement_attachment
 SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-06-05T15:56:39.592Z | announcement_attachment
 SYNCED | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-06-05T15:56:49.740Z | announcement_attachment
 SYNCED | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-06-05T15:57:00.793Z | announcement_attachment
@@ -1203,3 +1203,6 @@ Attachment processing failed: PPEP171_SEECE_GroupList_2026.pdf - Drive is not de
 
 --- ERROR LOG (2026-06-05T16:10:45.060Z) ---
 Attachment processing failed: PPEP171_SEECE_GroupList_2026.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:10:57.967Z) ---
+Attachment processing failed: Professional Practice Engineering Practical (PPEP171) Slide 1.pptx - Drive is not defined
