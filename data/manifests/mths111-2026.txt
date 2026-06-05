@@ -305,3 +305,6 @@ NOT_SYNCED | MTHS111_Algemene Inligting _General Information_2026_F.pdf | pdf | 
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) MTHS111-2026 — full extracted text from all synced files and lessons
 (SCHEDULE) MTHS111-2026 — calendar events and announcements spreadsheet
+
+--- ERROR LOG (2026-06-05T14:51:18.626Z) ---
+Attachment processing failed: MTHS111 Revision session 23 May 2026.PDF - Drive is not defined
