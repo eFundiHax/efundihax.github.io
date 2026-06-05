@@ -24,32 +24,32 @@ title: 2026 | Academic Literacy
 last_sync: 2026-06-05T14:47:43.093Z
 last_announcement: 2026-06-04T19:15:03.935Z
 total_files: 22
-generated: 2026-06-05T14:45:35.382Z
+generated: 2026-06-05T14:48:07.914Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
 NOT_SYNCED | ALDE122_9.Source Intergration.pdf | pdf | 2026-06-04T17:48:04.519Z | resource
 NOT_SYNCED | ALDE122_3. Academic Writing.pdf | pdf | 2026-06-04T17:48:23.476Z | resource
-SYNCED | 2026_ALDE111_03June.pdf | pdf | 2026-06-05T14:44:52.931Z | announcement_attachment
-SYNCED | 2026_ALDE111_Seniors_03June.pdf | pdf | 2026-06-05T14:45:02.326Z | announcement_attachment
-SYNCED | 2026_ALDE112_03June.pdf | pdf | 2026-06-05T14:45:11.347Z | announcement_attachment
-SYNCED | 2026_ALDE122_Seniors_03June.pdf | pdf | 2026-06-05T14:45:20.741Z | announcement_attachment
-SYNCED | ALDE112_2026_Individual Written Assessment.pdf | pdf | 2026-06-05T14:45:33.466Z | announcement_attachment
-NOT_SYNCED | ALDE112_2026_Final Marks.pdf | pdf | 2026-06-05T14:44:32.815Z | announcement_attachment
-NOT_SYNCED | Individual Essay Submissions on Mindjoy.pdf | pdf | 2026-06-05T14:44:32.815Z | announcement_attachment
-NOT_SYNCED | 2026_ALDE112.pdf | pdf | 2026-06-05T14:44:32.815Z | announcement_attachment
-NOT_SYNCED | Semester Test Registration.pdf | pdf | 2026-06-05T14:44:32.815Z | announcement_attachment
-NOT_SYNCED | Sign-up Details_Semester test 1.pdf | pdf | 2026-06-05T14:44:32.815Z | announcement_attachment
-INCOMPATIBLE | Saturday_qr-Invigilator Web_ Invigilated Class Work 5 test - Tests and quizzes - 18-04-26 - 09_00.png | png | 2026-06-05T14:43:54.046Z | announcement_attachment
-NOT_SYNCED | Final_Pre_Assessment_Checklist.docx | docx | 2026-06-05T14:44:32.815Z | announcement_attachment
-NOT_SYNCED | The Invigilator Web Student User Guide - NWU - short version PDF-2.pdf | pdf | 2026-06-05T14:44:32.815Z | announcement_attachment
-NOT_SYNCED | Group Divisions_23 March.pdf | pdf | 2026-06-05T14:44:32.815Z | announcement_attachment
-NOT_SYNCED | Group Divisions.pdf | pdf | 2026-06-05T14:44:32.815Z | announcement_attachment
-NOT_SYNCED | Groups_Group Assignment.pdf | pdf | 2026-06-05T14:44:32.815Z | announcement_attachment
-NOT_SYNCED | 2026_ALDE112_Assessment 2.pdf | pdf | 2026-06-05T14:44:32.815Z | announcement_attachment
-NOT_SYNCED | 2026_ALDE112_Assessment 2_Answer Template.docx | docx | 2026-06-05T14:44:32.815Z | announcement_attachment
-NOT_SYNCED | Finding and integrating sources.pdf | pdf | 2026-06-05T14:44:32.815Z | announcement_attachment
-NOT_SYNCED | Engineering Students’ Perceptions of Academic Literacy- A Synthesis of Empirical Evidence.pdf | pdf | 2026-06-05T14:44:32.815Z | announcement_attachment
+SYNCED | 2026_ALDE111_03June.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+SYNCED | 2026_ALDE111_Seniors_03June.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+SYNCED | 2026_ALDE112_03June.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+SYNCED | 2026_ALDE122_Seniors_03June.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+SYNCED | ALDE112_2026_Individual Written Assessment.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+NOT_SYNCED | ALDE112_2026_Final Marks.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+NOT_SYNCED | Individual Essay Submissions on Mindjoy.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+NOT_SYNCED | 2026_ALDE112.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+NOT_SYNCED | Semester Test Registration.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+NOT_SYNCED | Sign-up Details_Semester test 1.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+INCOMPATIBLE | Saturday_qr-Invigilator Web_ Invigilated Class Work 5 test - Tests and quizzes - 18-04-26 - 09_00.png | png | 2026-06-05T14:47:54.084Z | announcement_attachment
+NOT_SYNCED | Final_Pre_Assessment_Checklist.docx | docx | 2026-06-05T14:47:54.084Z | announcement_attachment
+NOT_SYNCED | The Invigilator Web Student User Guide - NWU - short version PDF-2.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+NOT_SYNCED | Group Divisions_23 March.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+NOT_SYNCED | Group Divisions.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+NOT_SYNCED | Groups_Group Assignment.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+NOT_SYNCED | 2026_ALDE112_Assessment 2.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+NOT_SYNCED | 2026_ALDE112_Assessment 2_Answer Template.docx | docx | 2026-06-05T14:47:54.084Z | announcement_attachment
+NOT_SYNCED | Finding and integrating sources.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
+NOT_SYNCED | Engineering Students’ Perceptions of Academic Literacy- A Synthesis of Empirical Evidence.pdf | pdf | 2026-06-05T14:47:54.084Z | announcement_attachment
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
