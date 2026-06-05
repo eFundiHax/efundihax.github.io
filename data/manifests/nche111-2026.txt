@@ -196,3 +196,6 @@ NOT_SYNCED | NCHE111_semester test marksNumbers only.pdf | pdf | 2026-06-05T14:4
 
 --- ERROR LOG (2026-06-05T14:47:18.134Z) ---
 Attachment processing failed: Participation marks_Numbers only.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T14:47:29.568Z) ---
+Attachment processing failed: NCHE 111 2026 final_Numbers only.pdf - Drive is not defined
