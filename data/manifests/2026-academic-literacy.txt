@@ -384,3 +384,6 @@ Lesson sync failed: 7. The Academic Argument & Writing as a Process (Part 2) - T
 
 --- ERROR LOG (2026-06-05T18:05:40.161Z) ---
 Lesson sync failed: 8. The Writing Process (Part 3) - The document is inaccessible. Please try again later.
+
+--- ERROR LOG (2026-06-05T18:06:46.540Z) ---
+Lesson sync failed: 6. Text Production - The document is inaccessible. Please try again later.
