@@ -314,3 +314,6 @@ Attachment processing failed: MTHS111 Exam Information2026.pdf - Drive is not de
 
 --- ERROR LOG (2026-06-05T14:51:41.382Z) ---
 Attachment processing failed: 28 March Saturday Extra classes notes.PDF - Drive is not defined
+
+--- ERROR LOG (2026-06-05T14:51:53.103Z) ---
+Attachment processing failed: MTHS111 ST Information.pdf - Drive is not defined
