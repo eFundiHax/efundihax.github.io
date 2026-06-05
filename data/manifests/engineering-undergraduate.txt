@@ -451,3 +451,6 @@ Attachment processing failed: Industrial Engineer Advert.pdf - Drive is not defi
 
 --- ERROR LOG (2026-06-05T16:18:12.213Z) ---
 Attachment processing failed: Engineer in Training.Mech & Elect.docx - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:18:21.945Z) ---
+Attachment processing failed: Post-graduate bursaries (Students).pdf - Drive is not defined
