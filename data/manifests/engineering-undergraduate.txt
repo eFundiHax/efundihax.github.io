@@ -406,3 +406,6 @@ Attachment processing failed: Application Guide for SARAO Master's Scholarships 
 
 --- ERROR LOG (2026-06-05T16:12:18.191Z) ---
 Attachment processing failed: DSI-NRF Master's and Doctoral Application and Funding Guide for 2026 (final).pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:12:26.762Z) ---
+Attachment processing failed: DSTI-NRF Postgraduate Scholarship Framework for 2026 Funding__FINAL (003).pdf - Drive is not defined
