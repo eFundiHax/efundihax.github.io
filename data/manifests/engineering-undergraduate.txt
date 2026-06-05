@@ -517,3 +517,6 @@ Attachment processing failed: EA 2023 - Talents from Africa  - Brochure.pdf - Dr
 
 --- ERROR LOG (2026-06-05T16:32:57.192Z) ---
 Attachment processing failed: EA2023 - Talents from Africa - Flyer.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:33:06.212Z) ---
+Attachment processing failed: CV Poster.pdf - Drive is not defined
