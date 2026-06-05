@@ -1218,3 +1218,6 @@ Attachment processing failed: Major Groups.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T16:12:16.302Z) ---
 Attachment processing failed: Plagiarism Form.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:12:24.104Z) ---
+Attachment processing failed: Doc1.pdf - Drive is not defined
