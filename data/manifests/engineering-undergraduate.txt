@@ -346,3 +346,6 @@ Attachment processing failed: STUDENT CALL _SATNAC INUSTRY SOLUTIONS CHALLENGE 2
 
 --- ERROR LOG (2026-06-05T15:58:31.344Z) ---
 Attachment processing failed: 2024 CV Template.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:58:39.350Z) ---
+Attachment processing failed: 2024 Document upload Checklist for candidates - Southern Africa Rhodes Scholarships 2025.pdf - Drive is not defined
