@@ -367,3 +367,6 @@ Attachment processing failed: DSI-NRF Postgraduate Scholarship Framework for 202
 
 --- ERROR LOG (2026-06-05T16:02:21.301Z) ---
 Attachment processing failed: Student Vacation Work at Master Drilling.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:02:29.788Z) ---
+Attachment processing failed: Career Coaching Poster NWU Potch Campus.pdf - Drive is not defined
