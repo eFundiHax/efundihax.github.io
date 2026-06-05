@@ -222,3 +222,6 @@ Attachment processing failed: ALDE112_2026_Individual Written Assessment.pdf - D
 
 --- ERROR LOG (2026-06-05T14:48:52.299Z) ---
 Attachment processing failed: ALDE112_2026_Final Marks.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T14:49:00.788Z) ---
+Attachment processing failed: Individual Essay Submissions on Mindjoy.pdf - Drive is not defined
