@@ -193,3 +193,6 @@ NOT_SYNCED | NCHE111_semester test marksNumbers only.pdf | pdf | 2026-06-05T14:4
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) NCHE111-2026 — full extracted text from all synced files and lessons
 (SCHEDULE) NCHE111-2026 — calendar events and announcements spreadsheet
+
+--- ERROR LOG (2026-06-05T14:47:18.134Z) ---
+Attachment processing failed: Participation marks_Numbers only.pdf - Drive is not defined
