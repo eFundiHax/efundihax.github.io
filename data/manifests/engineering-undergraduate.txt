@@ -355,3 +355,6 @@ Attachment processing failed: Origins, Humanity & Science.pdf - Drive is not def
 
 --- ERROR LOG (2026-06-05T16:00:32.195Z) ---
 Attachment processing failed: LD multilingo poster A4 28 aug.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:00:41.322Z) ---
+Attachment processing failed: Work Readiness Seminar Web banner.pdf - Drive is not defined
