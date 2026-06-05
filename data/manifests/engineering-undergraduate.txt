@@ -373,3 +373,6 @@ Attachment processing failed: Career Coaching Poster NWU Potch Campus.pdf - Driv
 
 --- ERROR LOG (2026-06-05T16:02:38.400Z) ---
 Attachment processing failed: Career Coaching Session 1 - Potch Campus.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:02:47.459Z) ---
+Attachment processing failed: Interview Training Session Poster - Potch Campus.pdf - Drive is not defined
