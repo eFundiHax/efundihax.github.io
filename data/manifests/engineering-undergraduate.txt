@@ -24,7 +24,7 @@ title: Engineering Undergraduate
 last_sync: 2026-06-05T16:26:52.439Z
 last_announcement: 2026-06-04T19:16:04.586Z
 total_files: 100
-generated: 2026-06-05T16:33:21.411Z
+generated: 2026-06-05T16:33:45.796Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -108,26 +108,26 @@ INCOMPATIBLE | Agri Career Fair 19 October.jpg | jpg | 2026-06-05T16:32:03.239Z 
 SYNCED | CV Poster.pdf | pdf | 2026-06-05T16:33:12.565Z | announcement_attachment
 SYNCED | Patent candidate attorney advert - Chemical Engineering - 11 August 2022.docx | docx | 2026-06-05T16:33:20.056Z | announcement_attachment
 NOT_SYNCED | Patent Candidate Attorney Advert - Electronic Engineering andor Computer Engineering - 11 August 2022.docx | docx | 2026-06-05T16:32:36.307Z | announcement_attachment
-SYNCED | DSI-NRF-Honours-Application-and-Funding-Guide-for-2023-FINAL.pdf | pdf | 2026-06-05T16:18:45.048Z | announcement_attachment
-SYNCED | NRF Honours session.pdf | pdf | 2026-06-05T16:18:45.048Z | announcement_attachment
-SYNCED | 2022 090 - Assistant Control and Instrumentation Engineer.doc | doc | 2026-06-05T16:18:45.048Z | announcement_attachment
-SYNCED | DSI CSIR InterBursary Support Programme - Eligibility Guidelines_ Final.pdf | pdf | 2026-06-05T16:18:45.048Z | announcement_attachment
-SYNCED | CSIR IBS FAQ's.pdf | pdf | 2026-06-05T16:18:45.048Z | announcement_attachment
-SYNCED | IBS Advert for 2023-call for applications.pdf | pdf | 2026-06-05T16:20:02.378Z | announcement_attachment
-SYNCED | Student Subscription forms 2022[83][34].pdf | pdf | 2026-06-05T16:20:13.613Z | announcement_attachment
-SYNCED | FENG 2nd Sem Timetable 2022_CTF_Efundi.xlsx | xlsx | 2026-06-05T16:20:22.408Z | announcement_attachment
-SYNCED | Extension of Closing date M&Ds.pdf | pdf | 2026-06-05T16:20:34.118Z | announcement_attachment
-SYNCED | DSI-NRF-Postgraduate-Scholarship-Framework-for-2023-Funding-26-April-2022-FINAL-1.pdf | pdf | 2026-06-05T16:20:46.033Z | announcement_attachment
-NOT_SYNCED | NRF Postgraduate Scholarships_2023 Presentation.pdf | pdf | 2026-06-05T16:19:47.641Z | announcement_attachment
-NOT_SYNCED | ResearchSupport_poster(I)June.pdf | pdf | 2026-06-05T16:19:47.641Z | announcement_attachment
-NOT_SYNCED | Hackathon_2022_Afrikaans.pdf | pdf | 2026-06-05T16:19:47.641Z | announcement_attachment
-NOT_SYNCED | Hackathon_2022_English.pdf | pdf | 2026-06-05T16:19:47.641Z | announcement_attachment
-NOT_SYNCED | Hackathon_2022_Setswana.pdf | pdf | 2026-06-05T16:19:47.641Z | announcement_attachment
-NOT_SYNCED | SAGWRI PG Information Session Engineering.pdf | pdf | 2026-06-05T16:19:47.641Z | announcement_attachment
-NOT_SYNCED | Jurumani Grad Poster  -NWU.pdf | pdf | 2026-06-05T16:19:47.641Z | announcement_attachment
-NOT_SYNCED | Curriculum control and Timetable 2022 (M426 & EM425).xlsx | xlsx | 2026-06-05T16:19:47.641Z | announcement_attachment
-NOT_SYNCED | FENG Time table 2022.xlsx | xlsx | 2026-06-05T16:19:47.641Z | announcement_attachment
-NOT_SYNCED | FENG Time table 2022.xlsx | xlsx | 2026-06-05T16:19:47.641Z | announcement_attachment
+SYNCED | DSI-NRF-Honours-Application-and-Funding-Guide-for-2023-FINAL.pdf | pdf | 2026-06-05T16:33:34.737Z | announcement_attachment
+SYNCED | NRF Honours session.pdf | pdf | 2026-06-05T16:33:34.737Z | announcement_attachment
+SYNCED | 2022 090 - Assistant Control and Instrumentation Engineer.doc | doc | 2026-06-05T16:33:34.737Z | announcement_attachment
+SYNCED | DSI CSIR InterBursary Support Programme - Eligibility Guidelines_ Final.pdf | pdf | 2026-06-05T16:33:34.737Z | announcement_attachment
+SYNCED | CSIR IBS FAQ's.pdf | pdf | 2026-06-05T16:33:34.737Z | announcement_attachment
+SYNCED | IBS Advert for 2023-call for applications.pdf | pdf | 2026-06-05T16:33:34.737Z | announcement_attachment
+SYNCED | Student Subscription forms 2022[83][34].pdf | pdf | 2026-06-05T16:33:34.737Z | announcement_attachment
+SYNCED | FENG 2nd Sem Timetable 2022_CTF_Efundi.xlsx | xlsx | 2026-06-05T16:33:34.737Z | announcement_attachment
+SYNCED | Extension of Closing date M&Ds.pdf | pdf | 2026-06-05T16:33:34.737Z | announcement_attachment
+SYNCED | DSI-NRF-Postgraduate-Scholarship-Framework-for-2023-Funding-26-April-2022-FINAL-1.pdf | pdf | 2026-06-05T16:33:34.737Z | announcement_attachment
+NOT_SYNCED | NRF Postgraduate Scholarships_2023 Presentation.pdf | pdf | 2026-06-05T16:33:34.737Z | announcement_attachment
+NOT_SYNCED | ResearchSupport_poster(I)June.pdf | pdf | 2026-06-05T16:33:34.737Z | announcement_attachment
+NOT_SYNCED | Hackathon_2022_Afrikaans.pdf | pdf | 2026-06-05T16:33:34.737Z | announcement_attachment
+NOT_SYNCED | Hackathon_2022_English.pdf | pdf | 2026-06-05T16:33:34.737Z | announcement_attachment
+NOT_SYNCED | Hackathon_2022_Setswana.pdf | pdf | 2026-06-05T16:33:34.737Z | announcement_attachment
+NOT_SYNCED | SAGWRI PG Information Session Engineering.pdf | pdf | 2026-06-05T16:33:34.737Z | announcement_attachment
+NOT_SYNCED | Jurumani Grad Poster  -NWU.pdf | pdf | 2026-06-05T16:33:34.737Z | announcement_attachment
+NOT_SYNCED | Curriculum control and Timetable 2022 (M426 & EM425).xlsx | xlsx | 2026-06-05T16:33:34.737Z | announcement_attachment
+NOT_SYNCED | FENG Time table 2022.xlsx | xlsx | 2026-06-05T16:33:34.737Z | announcement_attachment
+NOT_SYNCED | FENG Time table 2022.xlsx | xlsx | 2026-06-05T16:33:34.737Z | announcement_attachment
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
