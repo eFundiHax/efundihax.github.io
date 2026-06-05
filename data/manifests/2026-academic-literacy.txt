@@ -21,7 +21,7 @@ emoji: 📘
 color: #6b3d8f
 calendar_id: 
 title: 2026 | Academic Literacy
-last_sync: 2026-06-05T11:23:27.914Z
+last_sync: 2026-06-05T11:24:47.517Z
 last_announcement: 2026-06-04T19:15:03.935Z
 total_files: 2
 generated: 2026-06-04T17:48:25.395Z
