@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-06-05T10:52:34.289Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -24,14 +24,14 @@ title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
 last_announcement: 2026-06-04T19:17:09.559Z
 total_files: 195
-generated: 2026-06-04T20:55:07.541Z
+generated: 2026-06-05T11:26:56.346Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
-PENDING | 2023_PPEP171_W2_W7_Combined.pdf | pdf | 2026-06-04T20:55:03.995Z | resource
-PENDING | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf | pdf | 2026-06-04T20:55:03.995Z | resource
-PENDING | PPEP171 Component Collection Registrar _Alpha_.pdf | pdf | 2026-06-04T20:55:03.995Z | resource
-PENDING | W2_Wireing_Session2023.pdf | pdf | 2026-06-04T20:55:03.995Z | resource
+PENDING | 2023_PPEP171_W2_W7_Combined.pdf | pdf | 2026-06-05T11:26:52.329Z | resource
+PENDING | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf | pdf | 2026-06-05T11:26:52.329Z | resource
+PENDING | PPEP171 Component Collection Registrar _Alpha_.pdf | pdf | 2026-06-05T11:26:52.329Z | resource
+PENDING | W2_Wireing_Session2023.pdf | pdf | 2026-06-05T11:26:52.329Z | resource
 PENDING | SANS10142-1_2017_Ed2-3.pdf | pdf | 2026-06-01T18:31:18.945Z | resource
 PENDING | Search_SANS10142-1.mp4 | mp4 | 2026-06-01T18:31:18.945Z | resource
 PENDING | Search_SANS10142.mp4 | mp4 | 2026-06-01T18:31:18.945Z | resource
