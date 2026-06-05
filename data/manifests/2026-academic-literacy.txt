@@ -243,3 +243,6 @@ Attachment processing failed: The Invigilator Web Student User Guide - NWU - sho
 
 --- ERROR LOG (2026-06-05T15:55:23.498Z) ---
 Attachment processing failed: Group Divisions_23 March.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:55:37.493Z) ---
+Attachment processing failed: Group Divisions.pdf - Drive is not defined
