@@ -475,3 +475,6 @@ Attachment processing failed: Frequently Asked Questions_Postgraduate Funding_20
 
 --- ERROR LOG (2026-06-05T16:28:07.701Z) ---
 Attachment processing failed: Student_Subscription_forms_2025.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:28:20.441Z) ---
+Attachment processing failed: SITE-LAYOUT.pdf - Drive is not defined
