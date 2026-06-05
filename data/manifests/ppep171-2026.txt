@@ -1176,3 +1176,6 @@ Attachment processing failed: PPEP171_SEECE_GroupList_2026.pdf - Drive is not de
 
 --- ERROR LOG (2026-06-05T15:55:15.118Z) ---
 Attachment processing failed: SCME Onboarding Guide_Workshop 1_2026.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:56:31.026Z) ---
+Attachment processing failed: PPEP171_SEECE_GroupList_2026.pdf - Drive is not defined
