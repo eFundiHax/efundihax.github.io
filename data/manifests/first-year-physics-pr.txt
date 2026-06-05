@@ -70,3 +70,6 @@ NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-06-05T14:43:41.369Z | announcement_
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) First year physics pr ... — full extracted text from all synced files and lessons
 (SCHEDULE) First year physics pr ... — calendar events and announcements spreadsheet
+
+--- ERROR LOG (2026-06-05T14:44:09.831Z) ---
+Attachment processing failed: 2026 scheduleUpdated.pdf - Drive is not defined
