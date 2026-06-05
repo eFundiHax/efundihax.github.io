@@ -364,3 +364,6 @@ Attachment processing failed: Virtual WR Programe.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T16:01:01.375Z) ---
 Attachment processing failed: DSI-NRF Postgraduate Scholarship Framework for 2024 - 03 April 2023-FINAL.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:02:21.301Z) ---
+Attachment processing failed: Student Vacation Work at Master Drilling.pdf - Drive is not defined
