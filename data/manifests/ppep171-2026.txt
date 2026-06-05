@@ -1182,3 +1182,6 @@ Attachment processing failed: PPEP171_SEECE_GroupList_2026.pdf - Drive is not de
 
 --- ERROR LOG (2026-06-05T15:56:40.944Z) ---
 Attachment processing failed: Group Mech 2 Mechanical Eng - First years.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:56:51.000Z) ---
+Attachment processing failed: Group 1 Mechanical Eng - First years.pdf - Drive is not defined
