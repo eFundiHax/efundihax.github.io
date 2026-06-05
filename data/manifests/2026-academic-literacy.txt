@@ -336,3 +336,6 @@ Lesson sync failed: 2. Reading, Writing & Listening - The document is inaccessib
 
 --- ERROR LOG (2026-06-05T17:24:30.017Z) ---
 Lesson sync failed: 3. Academic Integrity - The document is inaccessible. Please try again later.
+
+--- ERROR LOG (2026-06-05T17:27:16.379Z) ---
+Lesson sync failed: 7. The Academic Argument & Writing as a Process (Part 2) - The document is inaccessible. Please try again later.
