@@ -1164,3 +1164,6 @@ Attachment processing failed: PPEP171_SEECE_GroupList_17March2026.pdf - Drive is
 
 --- ERROR LOG (2026-06-05T15:54:19.661Z) ---
 Attachment processing failed: REII 121 Development Board Documentation 2026.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:54:37.153Z) ---
+Attachment processing failed: SDCC.pdf - Drive is not defined
