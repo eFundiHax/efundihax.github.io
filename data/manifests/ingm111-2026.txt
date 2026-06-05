@@ -553,3 +553,6 @@ Attachment processing failed: INGM111_Exam_venues.xlsx - Drive is not defined
 
 --- ERROR LOG (2026-06-05T14:46:40.628Z) ---
 Attachment processing failed: INGM1111_Exam_venues.xlsx - Drive is not defined
+
+--- ERROR LOG (2026-06-05T14:46:48.725Z) ---
+Attachment processing failed: INGM111_26_MIXED_GROUPS_FINAL.xlsx - Drive is not defined
