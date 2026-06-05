@@ -65,3 +65,6 @@ Resource processing failed: NPHY111-2026 - Schedule.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T16:25:32.861Z) ---
 Resource processing failed: NPHY111 2026 Study Guide.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:25:40.197Z) ---
+Resource processing failed: Pearson -Physics- NWU.pdf - Drive is not defined
