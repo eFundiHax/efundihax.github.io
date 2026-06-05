@@ -433,3 +433,6 @@ Attachment processing failed: ISFAP - Application Consent Form FINAL.pdf - Drive
 
 --- ERROR LOG (2026-06-05T16:15:58.018Z) ---
 Attachment processing failed: NRF Statement of expectation for Postgradute Training 2023- 27 March 2023 - FINAL.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:16:22.593Z) ---
+Attachment processing failed: Grad invite II (4).pdf - Drive is not defined
