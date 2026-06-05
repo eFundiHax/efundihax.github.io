@@ -24,14 +24,14 @@ title: Maths Club
 last_sync: 2026-05-29T15:05:50.875Z
 last_announcement: 2026-06-04T19:14:18.565Z
 total_files: 10
-generated: 2026-06-05T15:42:31.820Z
+generated: 2026-06-05T15:43:42.323Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
 NOT_SYNCED | Eureka newsletter January 2025.pdf | pdf | 2026-06-01T20:56:09.283Z | resource
 NOT_SYNCED | Eureka newsletter March 2025.pdf | pdf | 2026-06-01T20:56:09.283Z | resource
-NOT_SYNCED | Arxiv paper | arxiv paper | 2026-06-01T17:06:44.369Z | resource
-NOT_SYNCED | Youtube Video (Matt Parker) | youtube video (matt parker) | 2026-06-01T17:06:44.369Z | resource
+INCOMPATIBLE | Arxiv paper | arxiv paper | 2026-06-01T17:06:44.369Z | resource
+INCOMPATIBLE | Youtube Video (Matt Parker) | youtube video (matt parker) | 2026-06-01T17:06:44.369Z | resource
 NOT_SYNCED | Maths club pi 2026.xlsx | xlsx | 2026-06-01T20:56:09.283Z | resource
 SYNCED | Categories.pdf | pdf | 2026-06-05T11:26:33.367Z | resource
 SYNCED | Groups.pdf | pdf | 2026-06-05T11:26:33.367Z | resource
