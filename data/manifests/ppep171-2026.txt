@@ -1212,3 +1212,9 @@ Attachment processing failed: PPEP171_SEECE_GroupList_2026.pdf - Drive is not de
 
 --- ERROR LOG (2026-06-05T16:11:53.897Z) ---
 Attachment processing failed: PPEP171_GroupList_2026.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:12:06.122Z) ---
+Attachment processing failed: Major Groups.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:12:16.302Z) ---
+Attachment processing failed: Plagiarism Form.pdf - Drive is not defined
