@@ -24,7 +24,7 @@ title: NPHY111-2026
 last_sync: 2026-06-05T17:12:47.402Z
 last_announcement: —
 total_files: 20
-generated: 2026-06-05T17:18:16.851Z
+generated: 2026-06-05T17:19:23.219Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -41,11 +41,11 @@ NOT_SYNCED | NPHY111-2026-formula1.pdf | pdf | 2026-06-05T17:13:34.833Z | announ
 INCOMPATIBLE | NPHY 111 Tutors 2026.jpg | jpg | 2026-06-05T17:13:11.290Z | announcement_attachment
 NOT_SYNCED | NPHY111-2026 - Schedule.pdf | pdf | 2026-06-05T17:13:34.833Z | announcement_attachment
 SYNCED | notebook-links.html | html | 2026-06-05T17:18:12.492Z | resource
-NOT_SYNCED | NPHY111-2026-appendix.pdf | pdf | 2026-06-05T17:17:48.914Z | resource
-NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-06-05T17:17:48.914Z | resource
-NOT_SYNCED | NPHY111-2026 - Schedule.pdf | pdf | 2026-06-05T17:17:48.914Z | resource
-NOT_SYNCED | NPHY111 2026 Study Guide.pdf | pdf | 2026-06-05T17:17:48.914Z | resource
-NOT_SYNCED | Pearson -Physics- NWU.pdf | pdf | 2026-06-05T17:17:48.914Z | resource
+SYNCED | NPHY111-2026-appendix.pdf | pdf | 2026-06-05T17:18:43.946Z | resource
+SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-06-05T17:18:55.314Z | resource
+SYNCED | NPHY111-2026 - Schedule.pdf | pdf | 2026-06-05T17:19:02.741Z | resource
+SYNCED | NPHY111 2026 Study Guide.pdf | pdf | 2026-06-05T17:19:10.674Z | resource
+SYNCED | Pearson -Physics- NWU.pdf | pdf | 2026-06-05T17:19:21.945Z | resource
 INCOMPATIBLE | Pearson - video examples.mp4 | mp4 | 2026-06-05T17:17:48.914Z | resource
 NOT_SYNCED | Physics for Scientists _ Engineers with Modern Physics, Global Edition Flyer.pdf | pdf | 2026-06-05T17:17:48.914Z | resource
 
@@ -53,18 +53,3 @@ NOT_SYNCED | Physics for Scientists _ Engineers with Modern Physics, Global Edit
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) NPHY111-2026 — full extracted text from all synced files and lessons
 (SCHEDULE) NPHY111-2026 — calendar events and announcements spreadsheet
-
---- ERROR LOG (2026-06-05T17:18:36.815Z) ---
-Resource processing failed: NPHY111-2026-appendix.pdf - Drive is not defined
-
---- ERROR LOG (2026-06-05T17:18:45.149Z) ---
-Resource processing failed: NPHY111-2026 - marks.pdf - Drive is not defined
-
---- ERROR LOG (2026-06-05T17:18:56.436Z) ---
-Resource processing failed: NPHY111-2026 - Schedule.pdf - Drive is not defined
-
---- ERROR LOG (2026-06-05T17:19:03.974Z) ---
-Resource processing failed: NPHY111 2026 Study Guide.pdf - Drive is not defined
-
---- ERROR LOG (2026-06-05T17:19:16.285Z) ---
-Resource processing failed: Pearson -Physics- NWU.pdf - Drive is not defined
