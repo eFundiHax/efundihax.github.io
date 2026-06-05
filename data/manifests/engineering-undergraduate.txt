@@ -526,3 +526,6 @@ Attachment processing failed: Patent candidate attorney advert - Chemical Engine
 
 --- ERROR LOG (2026-06-05T16:34:35.742Z) ---
 Attachment processing failed: NRF Postgraduate Scholarships_2023 Presentation.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:34:45.189Z) ---
+Attachment processing failed: ResearchSupport_poster(I)June.pdf - Drive is not defined
