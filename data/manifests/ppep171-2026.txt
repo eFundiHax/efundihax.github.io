@@ -1209,3 +1209,6 @@ Attachment processing failed: Professional Practice Engineering Practical (PPEP1
 
 --- ERROR LOG (2026-06-05T16:11:45.756Z) ---
 Attachment processing failed: PPEP171_SEECE_GroupList_2026.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:11:53.897Z) ---
+Attachment processing failed: PPEP171_GroupList_2026.pdf - Drive is not defined
