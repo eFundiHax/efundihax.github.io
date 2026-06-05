@@ -511,3 +511,6 @@ Attachment processing failed: PR_09 June 2023.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T16:32:39.895Z) ---
 Attachment processing failed: Electrical Engineer Advert.docx - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:32:49.734Z) ---
+Attachment processing failed: EA 2023 - Talents from Africa  - Brochure.pdf - Drive is not defined
