@@ -45,3 +45,6 @@ NOT_SYNCED | NPHY111-2026 - Schedule.pdf | pdf | 2026-06-05T14:50:47.464Z | anno
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) NPHY111-2026 — full extracted text from all synced files and lessons
 (SCHEDULE) NPHY111-2026 — calendar events and announcements spreadsheet
+
+--- ERROR LOG (2026-06-05T14:51:18.138Z) ---
+Attachment processing failed: Exam Guideline 2026 NPHY 111.pdf - Drive is not defined
