@@ -1221,3 +1221,6 @@ Attachment processing failed: Plagiarism Form.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T16:12:24.104Z) ---
 Attachment processing failed: Doc1.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:23:14.183Z) ---
+Resource processing failed: CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf - Drive is not defined
