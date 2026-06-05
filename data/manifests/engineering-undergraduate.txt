@@ -334,3 +334,9 @@ Attachment processing failed: FENG Mid Semester Assessment Timetable_27 Mrt.xlsx
 
 --- ERROR LOG (2026-06-05T15:56:16.668Z) ---
 Attachment processing failed: Student_Subscription_forms_2025.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:58:04.199Z) ---
+Attachment processing failed: AGRI-CAREER FAIR (002).pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:58:14.108Z) ---
+Attachment processing failed: MUST_scholarships_2025.pdf - Drive is not defined
