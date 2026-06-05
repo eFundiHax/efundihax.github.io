@@ -1191,3 +1191,6 @@ Attachment processing failed: Roll Mechanical Eng - First years.pdf - Drive is n
 
 --- ERROR LOG (2026-06-05T15:57:12.962Z) ---
 Attachment processing failed: Plagiarism Form.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:08:52.729Z) ---
+Resource processing failed: 2023_PPEP171_W2_W7_Combined.pdf - Drive is not defined
