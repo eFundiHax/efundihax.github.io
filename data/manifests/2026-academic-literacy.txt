@@ -234,3 +234,6 @@ Attachment processing failed: Semester Test Registration.pdf - Drive is not defi
 
 --- ERROR LOG (2026-06-05T14:49:28.023Z) ---
 Attachment processing failed: Sign-up Details_Semester test 1.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T15:54:02.333Z) ---
+Attachment processing failed: Final_Pre_Assessment_Checklist.docx - Drive is not defined
