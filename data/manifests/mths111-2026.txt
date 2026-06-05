@@ -24,276 +24,276 @@ title: MTHS111-2026
 last_sync: 2026-05-29T15:06:37.595Z
 last_announcement: 2026-06-04T19:21:00.010Z
 total_files: 272
-generated: 2026-06-05T14:52:12.816Z
+generated: 2026-06-05T15:41:43.864Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
-PENDING | Poster 1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Poster 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Poster 3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Poster 4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Poster 5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | 2026_setup_your_NWU_email_account1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | General Academic Rules.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Senate-Rules-on-Academic-Integrity_Latest_.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Teaching Learning and Assessment Policy_2023_.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111_Algemene Inligting _General Information_2026_F.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 Semesterbeplanning_Semester planning 2026_F.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Die 6 Epsilon-delta _formele limiet_ bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 1 se bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 3 Bewys_Limiet Identiteit van cos funksie.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 5 Kontinuteitsstelling bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 6 Differensiasiesstelling LE4_1 en LE4_2 bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 7 Differensiasiesstelling LE4_3 en LE4_6 bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 8 Differensiasie bewyse vervolg.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 9 Integrasie bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 11 en Week 12 Bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111_Algemene Inligting _General Information_2026_F.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 Semesterbeplanning_Semester planning 2026_F.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.4a.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.4b.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.5a.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.4a.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.4b.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.6.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.7.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | wisn111 huiswerk LE 1 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | wisn111 huiswerk LE 2 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | wisn111 huiswerk LE 3 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | wisn111 huiswerk LE 4 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | wisn111 huiswerk LE 5 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 huiswerk LE 1 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 huiswerk LE 2 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 huiswerk LE 3 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 huiswerk LE 4 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 huiswerk LE 5 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 1 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 3 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 4 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 klasaantekeninge LE 3 klaswerk.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 1 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 1 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 2 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 2 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 3 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 3 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 4 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 4 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 5 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 5 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 6 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 6 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Absolute waarde funksie.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Funksie opdrag.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Inverse funkse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Stuksgewyse funksie.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Versamelleer.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Een-eenduidige en Inverse Funksies1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Ekstra Opsommings Week 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Huiswerk vir Woensdag_Donderdag.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Ken verskil in sketse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Opdrag_Eksponensiale_funksies Week2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Opdrag_Inverse Trig funksies Week2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Opdrag_Radiale Week 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 2 teorie vir studente.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | HW Week 3 vir Woensdag_Donderdag.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 3_Limet Opdrag 3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 3_Limiet  Opdrag 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 3_Opdrag 1 Limiete.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Die 6 Epsilon-delta _formele limiet_ bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Limiete Formele Def W4.ppt | ppt | 2026-06-01T18:33:15.618Z | resource
-PENDING | Limiete linker en regter Week 4.ppt | ppt | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 4 Huiswerk vir Woensdag.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 4 Opdrag 1 Limiete Informeel.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 4 Opdrag 2 Epsilon_delta.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Continuity.pptx | pptx | 2026-06-01T18:33:15.618Z | resource
-PENDING | HW vir Wo_Do Week 5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 5 Opdrag Kontinuteit in _n punt.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 5 Opdrag Kontinuteit vervolg.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 5 Opdrag Onbepaalde Magte.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 5 Opdrag Tussenwaardest.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Hersiening Week 6.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | KT 3 Memo Afrikaanse groepe.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 klasaantekeninge LE 4 klaswerk.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Teorie Differensiasie.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 6_Opdrag1_Differensiasie met eerste beginsels.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 6_ Opdrag2_Differensiasiereels.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 7 Somme wat moet doen in klas Vr.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 7 HW vir WO_Do.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 7 Somme Di_Wo_Do.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | L_H Se Reel Week 8.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lineere benadering_Toepassing van diff.pptx | pptx | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 8 Deel 1 en Deel 2 van somme in klas.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 8 Deel 3 van somme in klas.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 8 Differensiasie bewyse vervolg.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 8 HW vir Wo_Do.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Woordsom vir HW Week 8.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Calculus_Cheat_Sheet_Integrals.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Common Algebraic Errors.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Deel 3 Somme Week 9.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 klasaantekeninge LE 5 antw.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 klasaantekeninge LE 5 klaswerk.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 9 Deel 1 Integrasie somme in klas.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 9 Deel 2 Integrasie somme in klas.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 9 Integrasie bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 10 Deel 1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 10 HW vir Wo_Do.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | LE 5 mixed questions.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 klasaantekeninge LE 6 klaswerk.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Teenvoorbeeld en Kontrapositiewe bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 10 Bewys bewering geld vir alle Natuurlike getalle.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 10 Deel 2 en Deel 3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 10 ekstra teorie.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 10 HW vir Vr.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | HW Week 11 Deel 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 klasaantekeninge LE 6 antw.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 klasaantekeninge LE 6 antw Vraag 1 tot Vraag 17.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 klasaantekeninge LE 6 klaswerk.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Tut 2 F.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 11 Deel 1 Komplekse getalle.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 11 Gedeelte van Teorie.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Week 11 Tut 1 Deel 2 Komplekse getalle.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | HW oef 3.4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | HW vir Wo_Do.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Tut 2 F.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Tut 3 F.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Tut 4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Common Algebraic Errors.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Konsultasie tye_ Prof. Schoeman.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | KT 3 Memo Afrikaanse groepe.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | KT8  Memo Afrikaanse groepe.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Toets 9.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Class Works week 10-11.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | LN week 1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | LN week 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | LN week 3-4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | LN week 4-5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | LN Week 6.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | LN week 7.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | LN Week 9 - Part 1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | LN Weeks 10-11.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecturer Time Table.xlsx | xlsx | 2026-06-01T18:33:15.618Z | resource
-PENDING | Dr Nogwebela Consultation.xlsx | xlsx | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 6.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 7.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 8.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 9.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 10.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 11.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 12 Gugu.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 12 Naeem.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 14.PDF | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 15.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 16.PDF | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 17.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 18.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 19.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 20.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 21.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 22.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 23.PDF | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 24.PDF | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 25.PDF | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 26.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 27.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 28.PDF | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 29.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 30.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 31.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Lecture 32.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Additional ALEKS Help.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | ALEKS Access MTHS111 _2026_.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 1 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 2 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 3 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 4 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 5 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 6 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.4a.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.4b.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 1.5a.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.4a.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.4b.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.6.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 huiswerk LE 6 De la Rosa 3.7.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | wisn111 huiswerk LE 1 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | wisn111 huiswerk LE 2 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | wisn111 huiswerk LE 3 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | wisn111 huiswerk LE 4 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | wisn111 huiswerk LE 5 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 huiswerk LE 1 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 huiswerk LE 2 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 huiswerk LE 3 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 huiswerk LE 4 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 huiswerk LE 5 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 voorbereiding LE 1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 voorbereiding LE 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 voorbereiding LE 3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 voorbereiding LE 4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 voorbereiding LE 5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 voorbereiding LE 6.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | CONSULTATION  Dr. Sias.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Front MTHS111 Afr.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Front MTHS111 Eng.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 studiegids Afrikaans_2026.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 studyguide English_2026.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | absolutevalues.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Calculus_Made_Easy_Thompson.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | curvesketching.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Differensiasie.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | differentialcalculus.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Logaritmes bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | logs_loglaws.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MathReviewManual.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Radiale Radians.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Trig_Functions.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | trigidentities.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | vertical-horizontal.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Voorbeelde L R afgeleides.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Memo TUT 4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111_tutorial 6_solution.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 tutorial 1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 tutorial 2 2026.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 tutorial 2 2026 memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 Tutorial 3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 tutorial 4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 Tutorial5 2026 - SOLUTIONS.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 Tutorial 5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 Tutorial 6.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 tutorial 7.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 tutorial 7 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 Tutorial 8 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 Tutorial 9.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 Tutorial 9 memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Tutorial 1 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Tutorial 3 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Tutorial 8.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | CT2 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | CT4 MEMO.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | CT5 2026 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | CT6 2026 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MEMO CT8.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111_ST_2026_MemoF.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 CT3 2026 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | MTHS111 CT7 2026 -Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | Test 1 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 1 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 2 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 3 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 4 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 5 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
-PENDING | mths111 SU 6 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Poster 1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Poster 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Poster 3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Poster 4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Poster 5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | 2026_setup_your_NWU_email_account1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | General Academic Rules.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Senate-Rules-on-Academic-Integrity_Latest_.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Teaching Learning and Assessment Policy_2023_.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111_Algemene Inligting _General Information_2026_F.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 Semesterbeplanning_Semester planning 2026_F.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Die 6 Epsilon-delta _formele limiet_ bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 1 se bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 3 Bewys_Limiet Identiteit van cos funksie.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 5 Kontinuteitsstelling bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 6 Differensiasiesstelling LE4_1 en LE4_2 bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 7 Differensiasiesstelling LE4_3 en LE4_6 bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 8 Differensiasie bewyse vervolg.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 9 Integrasie bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 11 en Week 12 Bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111_Algemene Inligting _General Information_2026_F.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 Semesterbeplanning_Semester planning 2026_F.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 1.4a.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 1.4b.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 1.5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 1.5a.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 3.3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 3.4a.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 3.4b.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 3.5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 3.6.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 3.7.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | wisn111 huiswerk LE 1 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | wisn111 huiswerk LE 2 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | wisn111 huiswerk LE 3 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | wisn111 huiswerk LE 4 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | wisn111 huiswerk LE 5 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 huiswerk LE 1 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 huiswerk LE 2 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 huiswerk LE 3 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 huiswerk LE 4 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 huiswerk LE 5 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 1 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 3 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 4 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 klasaantekeninge LE 3 klaswerk.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 1 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 1 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 2 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 2 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 3 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 3 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 4 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 4 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 5 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 5 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 6 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 6 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Absolute waarde funksie.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Funksie opdrag.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Inverse funkse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Stuksgewyse funksie.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Versamelleer.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Een-eenduidige en Inverse Funksies1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Ekstra Opsommings Week 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Huiswerk vir Woensdag_Donderdag.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Ken verskil in sketse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Opdrag_Eksponensiale_funksies Week2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Opdrag_Inverse Trig funksies Week2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Opdrag_Radiale Week 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 2 teorie vir studente.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | HW Week 3 vir Woensdag_Donderdag.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 3_Limet Opdrag 3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 3_Limiet  Opdrag 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 3_Opdrag 1 Limiete.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Die 6 Epsilon-delta _formele limiet_ bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Limiete Formele Def W4.ppt | ppt | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Limiete linker en regter Week 4.ppt | ppt | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 4 Huiswerk vir Woensdag.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 4 Opdrag 1 Limiete Informeel.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 4 Opdrag 2 Epsilon_delta.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Continuity.pptx | pptx | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | HW vir Wo_Do Week 5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 5 Opdrag Kontinuteit in _n punt.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 5 Opdrag Kontinuteit vervolg.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 5 Opdrag Onbepaalde Magte.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 5 Opdrag Tussenwaardest.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Hersiening Week 6.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | KT 3 Memo Afrikaanse groepe.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 klasaantekeninge LE 4 klaswerk.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Teorie Differensiasie.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 6_Opdrag1_Differensiasie met eerste beginsels.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 6_ Opdrag2_Differensiasiereels.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 7 Somme wat moet doen in klas Vr.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 7 HW vir WO_Do.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 7 Somme Di_Wo_Do.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | L_H Se Reel Week 8.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lineere benadering_Toepassing van diff.pptx | pptx | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 8 Deel 1 en Deel 2 van somme in klas.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 8 Deel 3 van somme in klas.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 8 Differensiasie bewyse vervolg.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 8 HW vir Wo_Do.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Woordsom vir HW Week 8.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Calculus_Cheat_Sheet_Integrals.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Common Algebraic Errors.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Deel 3 Somme Week 9.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 klasaantekeninge LE 5 antw.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 klasaantekeninge LE 5 klaswerk.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 9 Deel 1 Integrasie somme in klas.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 9 Deel 2 Integrasie somme in klas.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 9 Integrasie bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 10 Deel 1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 10 HW vir Wo_Do.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | LE 5 mixed questions.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 klasaantekeninge LE 6 klaswerk.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Teenvoorbeeld en Kontrapositiewe bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 10 Bewys bewering geld vir alle Natuurlike getalle.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 10 Deel 2 en Deel 3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 10 ekstra teorie.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 10 HW vir Vr.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | HW Week 11 Deel 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 klasaantekeninge LE 6 antw.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 klasaantekeninge LE 6 antw Vraag 1 tot Vraag 17.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 klasaantekeninge LE 6 klaswerk.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Tut 2 F.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 11 Deel 1 Komplekse getalle.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 11 Gedeelte van Teorie.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Week 11 Tut 1 Deel 2 Komplekse getalle.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | HW oef 3.4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | HW vir Wo_Do.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Tut 2 F.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Tut 3 F.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Tut 4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Common Algebraic Errors.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Konsultasie tye_ Prof. Schoeman.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | KT 3 Memo Afrikaanse groepe.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | KT8  Memo Afrikaanse groepe.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Toets 9.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Class Works week 10-11.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | LN week 1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | LN week 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | LN week 3-4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | LN week 4-5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | LN Week 6.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | LN week 7.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | LN Week 9 - Part 1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | LN Weeks 10-11.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecturer Time Table.xlsx | xlsx | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Dr Nogwebela Consultation.xlsx | xlsx | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 6.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 7.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 8.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 9.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 10.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 11.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 12 Gugu.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 12 Naeem.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 14.PDF | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 15.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 16.PDF | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 17.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 18.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 19.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 20.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 21.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 22.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 23.PDF | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 24.PDF | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 25.PDF | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 26.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 27.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 28.PDF | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 29.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 30.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 31.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Lecture 32.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Additional ALEKS Help.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | ALEKS Access MTHS111 _2026_.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 1 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 2 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 3 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 4 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 5 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 6 answ.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 1.4a.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 1.4b.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 1.5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 1.5a.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 3.3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 3.4a.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 3.4b.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 3.5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 3.6.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 huiswerk LE 6 De la Rosa 3.7.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | wisn111 huiswerk LE 1 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | wisn111 huiswerk LE 2 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | wisn111 huiswerk LE 3 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | wisn111 huiswerk LE 4 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | wisn111 huiswerk LE 5 Stewart 8e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 huiswerk LE 1 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 huiswerk LE 2 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 huiswerk LE 3 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 huiswerk LE 4 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 huiswerk LE 5 Stewart 9e.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 voorbereiding LE 1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 voorbereiding LE 2.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 voorbereiding LE 3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 voorbereiding LE 4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 voorbereiding LE 5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 voorbereiding LE 6.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | CONSULTATION  Dr. Sias.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Front MTHS111 Afr.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Front MTHS111 Eng.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 studiegids Afrikaans_2026.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 studyguide English_2026.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | absolutevalues.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Calculus_Made_Easy_Thompson.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | curvesketching.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Differensiasie.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | differentialcalculus.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Logaritmes bewyse.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | logs_loglaws.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MathReviewManual.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Radiale Radians.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Trig_Functions.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | trigidentities.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | vertical-horizontal.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Voorbeelde L R afgeleides.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Memo TUT 4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111_tutorial 6_solution.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 tutorial 1.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 tutorial 2 2026.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 tutorial 2 2026 memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 Tutorial 3.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 tutorial 4.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 Tutorial5 2026 - SOLUTIONS.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 Tutorial 5.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 Tutorial 6.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 tutorial 7.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 tutorial 7 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 Tutorial 8 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 Tutorial 9.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 Tutorial 9 memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Tutorial 1 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Tutorial 3 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Tutorial 8.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | CT2 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | CT4 MEMO.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | CT5 2026 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | CT6 2026 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MEMO CT8.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111_ST_2026_MemoF.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 CT3 2026 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | MTHS111 CT7 2026 -Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | Test 1 Memo.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 1 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 2 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 3 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 4 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 5 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
+NOT_SYNCED | mths111 SU 6 class work.pdf | pdf | 2026-06-01T18:33:15.618Z | resource
 SYNCED | MTHS111 Revision session 23 May 2026.PDF | pdf | 2026-06-05T14:51:27.338Z | announcement_attachment
 SYNCED | MTHS111 Exam Information2026.pdf | pdf | 2026-06-05T14:51:37.235Z | announcement_attachment
 SYNCED | 28 March Saturday Extra classes notes.PDF | pdf | 2026-06-05T14:51:51.601Z | announcement_attachment
