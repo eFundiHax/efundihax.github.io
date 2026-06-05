@@ -460,3 +460,6 @@ Attachment processing failed: IBS Advert for 2023-call for applications.pdf - Dr
 
 --- ERROR LOG (2026-06-05T16:20:06.104Z) ---
 Attachment processing failed: Student Subscription forms 2022[83][34].pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:20:14.735Z) ---
+Attachment processing failed: FENG 2nd Sem Timetable 2022_CTF_Efundi.xlsx - Drive is not defined
