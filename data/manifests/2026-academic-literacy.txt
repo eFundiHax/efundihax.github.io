@@ -231,3 +231,6 @@ Attachment processing failed: 2026_ALDE112.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T14:49:19.494Z) ---
 Attachment processing failed: Semester Test Registration.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T14:49:28.023Z) ---
+Attachment processing failed: Sign-up Details_Semester test 1.pdf - Drive is not defined
