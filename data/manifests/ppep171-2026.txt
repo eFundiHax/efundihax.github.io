@@ -1224,3 +1224,6 @@ Attachment processing failed: Doc1.pdf - Drive is not defined
 
 --- ERROR LOG (2026-06-05T16:23:14.183Z) ---
 Resource processing failed: CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:23:38.165Z) ---
+Resource processing failed: PPEP171 Component Collection Registrar _Alpha_.pdf - Drive is not defined
