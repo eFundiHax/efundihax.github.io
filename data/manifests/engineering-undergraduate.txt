@@ -415,3 +415,6 @@ Attachment processing failed: 2024 Information for Candidates (IfC) Southern Afr
 
 --- ERROR LOG (2026-06-05T16:13:41.589Z) ---
 Attachment processing failed: 2024- Letter to high achievers at SA Universities - NWU.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:13:50.326Z) ---
+Attachment processing failed: 2024 Rhodes Scholarship flyer  - Orange (1).pdf - Drive is not defined
