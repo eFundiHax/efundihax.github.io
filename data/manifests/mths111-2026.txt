@@ -308,3 +308,6 @@ NOT_SYNCED | MTHS111_Algemene Inligting _General Information_2026_F.pdf | pdf | 
 
 --- ERROR LOG (2026-06-05T14:51:18.626Z) ---
 Attachment processing failed: MTHS111 Revision session 23 May 2026.PDF - Drive is not defined
+
+--- ERROR LOG (2026-06-05T14:51:28.765Z) ---
+Attachment processing failed: MTHS111 Exam Information2026.pdf - Drive is not defined
