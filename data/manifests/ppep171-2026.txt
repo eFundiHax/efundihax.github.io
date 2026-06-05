@@ -1134,3 +1134,6 @@ https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4
 
 --- ERROR LOG (2026-06-05T14:45:45.334Z) ---
 Attachment processing failed: PPEP171_SEECE_GroupList_2026_Ver-4.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T14:45:55.622Z) ---
+Attachment processing failed: PPEP171_SEECE_GroupList_2026_Ver-3.pdf - Drive is not defined
