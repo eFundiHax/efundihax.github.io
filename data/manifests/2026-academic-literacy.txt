@@ -276,3 +276,6 @@ Lesson sync failed: Lecturer Information - The document is inaccessible. Please 
 
 --- ERROR LOG (2026-06-05T16:25:26.137Z) ---
 Lesson sync failed: 2. Reading, Writing & Listening - The document is inaccessible. Please try again later.
+
+--- ERROR LOG (2026-06-05T16:27:52.104Z) ---
+Lesson sync failed: 3. Academic Integrity - The document is inaccessible. Please try again later.
