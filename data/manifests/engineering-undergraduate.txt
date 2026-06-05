@@ -370,3 +370,6 @@ Attachment processing failed: Student Vacation Work at Master Drilling.pdf - Dri
 
 --- ERROR LOG (2026-06-05T16:02:29.788Z) ---
 Attachment processing failed: Career Coaching Poster NWU Potch Campus.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:02:38.400Z) ---
+Attachment processing failed: Career Coaching Session 1 - Potch Campus.pdf - Drive is not defined
