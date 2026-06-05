@@ -1197,3 +1197,6 @@ Resource processing failed: 2023_PPEP171_W2_W7_Combined.pdf - Drive is not defin
 
 --- ERROR LOG (2026-06-05T16:10:25.821Z) ---
 Attachment processing failed: SCME Onboarding Guide_Workshop 1_2026.pdf - Drive is not defined
+
+--- ERROR LOG (2026-06-05T16:10:36.373Z) ---
+Attachment processing failed: PPEP171_SEECE_GroupList_2026.pdf - Drive is not defined
