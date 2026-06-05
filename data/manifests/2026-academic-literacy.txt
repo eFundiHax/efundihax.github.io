@@ -255,3 +255,6 @@ Lesson sync failed: ALDE Lessons - The document is inaccessible. Please try agai
 
 --- ERROR LOG (2026-06-05T16:08:16.710Z) ---
 Lesson sync failed: Lecturer Information - The document is inaccessible. Please try again later.
+
+--- ERROR LOG (2026-06-05T16:10:15.306Z) ---
+Lesson sync failed: 2. Reading, Writing & Listening - The document is inaccessible. Please try again later.
