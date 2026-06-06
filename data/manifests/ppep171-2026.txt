@@ -24,7 +24,7 @@ title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
 last_announcement: 2026-06-04T19:17:09.559Z
 total_files: 226
-generated: 2026-06-06T17:58:10.455Z
+generated: 2026-06-06T18:00:10.032Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -41,7 +41,7 @@ INCOMPATIBLE | PPEP_CBI_2023.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
 NOT_SYNCED | SANS10142-1_2017_Ed2-3.pdf | pdf | 2026-06-06T17:44:46.884Z | resource
 SYNCED | 1. Line Types_Lyntipes.pdf | pdf | 2026-06-06T17:54:54.349Z | resource
 SYNCED | 2. Printing_Drukskryf.pdf | pdf | 2026-06-06T17:58:08.933Z | resource
-NOT_SYNCED | 3. Additional Notes_FREEHAND DRAWING.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
+SYNCED | 3. Additional Notes_FREEHAND DRAWING.pdf | pdf | 2026-06-06T18:00:08.361Z | resource
 NOT_SYNCED | 3. Freehand Drawings_Vryhand Tekeninge.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
 NOT_SYNCED | 4. Additional Notes_GEOMETRIC CONSTRUCTIONS.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
 NOT_SYNCED | 4. Geometrical Construction_Meetkundige Kontruksies.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
