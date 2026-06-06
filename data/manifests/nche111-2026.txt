@@ -24,7 +24,7 @@ title: NCHE111-2026
 last_sync: 2026-05-29T15:06:28.790Z
 last_announcement: 2026-06-06T15:50:05.781Z
 total_files: 161
-generated: 2026-06-06T15:57:13.627Z
+generated: 2026-06-06T15:57:37.138Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -95,7 +95,7 @@ NOT_SYNCED | Memorandum_Semester test.pdf | pdf | 2026-06-06T15:54:27.879Z | res
 NOT_SYNCED | Memorandum_Semestertoets_2023.pdf | pdf | 2026-06-06T15:54:27.879Z | resource
 NOT_SYNCED | Memorandum_Semestertoets_2025.pdf | pdf | 2026-06-06T15:54:27.879Z | resource
 NOT_SYNCED | Semester test_NCHE111_2023.pdf | pdf | 2026-06-06T15:54:27.879Z | resource
-NOT_SYNCED | Semester test_NCHE111_2025.pdf | pdf | 2026-06-06T15:54:27.879Z | resource
+SYNCED | Semester test_NCHE111_2025.pdf | pdf | 2026-06-06T15:57:35.096Z | resource
 NOT_SYNCED | Semester test.pdf | pdf | 2026-06-06T15:54:27.879Z | resource
 NOT_SYNCED | Periodic table.pdf | pdf | 2026-06-06T15:54:27.879Z | resource
 NOT_SYNCED | Solubility table.pdf | pdf | 2026-06-06T15:54:27.879Z | resource
