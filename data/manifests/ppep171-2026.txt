@@ -24,7 +24,7 @@ title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
 last_announcement: 2026-06-04T19:17:09.559Z
 total_files: 226
-generated: 2026-06-06T15:54:11.880Z
+generated: 2026-06-06T16:28:04.864Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -223,26 +223,26 @@ INCOMPATIBLE | ADL - 3 - Establishing the Timebase.mp4 | mp4 | 2026-06-01T18:31:
 INCOMPATIBLE | ADL - 4 - Talking to the outside world.mp4 | mp4 | 2026-06-01T18:31:18.945Z | resource
 INCOMPATIBLE | ADL - 5 - Getting the temperature.mp4 | mp4 | 2026-06-01T18:31:18.945Z | resource
 INCOMPATIBLE | ADL - 6 - Improving the LED output.mp4 | mp4 | 2026-06-01T18:31:18.945Z | resource
-SYNCED | PPEP171_SEECE_GroupList_2026_Ver-4.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | PPEP171_SEECE_GroupList_2026_Ver-3.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-INCOMPATIBLE | Test456.hex | hex | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | PPEP171_SEECE_GroupList_2026_Ver-2 14 April 2026.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | Group Mech 4 Mechanical&ElectroMechanical Eng - First years.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | PPEP171_SEECE_GroupList_2026_Ver-2 27 March 2026.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | PPEP171_SEECE_GroupList_2026_Ver-2 24 March 2026.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | Workshop Rotation.docx | docx | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | Group Mech 3 Mechanical Eng - First years.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | PPEP171_SEECE_GroupList_20March2026_Ver-1.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | PPEP171_SEECE_GroupList_17March2026.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | SDCC.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | PPEP171_SEECE_GroupList_16March2026.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-06-06T15:49:21.481Z | announcement_attachment
-SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-06-06T15:49:21.481Z | announcement_attachment
+SYNCED | PPEP171_SEECE_GroupList_2026_Ver-4.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | PPEP171_SEECE_GroupList_2026_Ver-3.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+INCOMPATIBLE | Test456.hex | hex | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | PPEP171_SEECE_GroupList_2026_Ver-2 14 April 2026.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | Group Mech 4 Mechanical&ElectroMechanical Eng - First years.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | PPEP171_SEECE_GroupList_2026_Ver-2 27 March 2026.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | PPEP171_SEECE_GroupList_2026_Ver-2 24 March 2026.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | Workshop Rotation.docx | docx | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | Group Mech 3 Mechanical Eng - First years.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | PPEP171_SEECE_GroupList_20March2026_Ver-1.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | PPEP171_SEECE_GroupList_17March2026.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | SDCC.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | PPEP171_SEECE_GroupList_16March2026.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-06-06T16:27:51.506Z | announcement_attachment
+SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-06-06T16:27:51.506Z | announcement_attachment
 SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-06-06T15:49:45.696Z | announcement_attachment
 SYNCED | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-06-06T15:49:45.696Z | announcement_attachment
 SYNCED | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-06-06T15:49:45.696Z | announcement_attachment
