@@ -24,7 +24,7 @@ title: NPHY111-2026
 last_sync: 2026-06-06T19:33:37.455Z
 last_announcement: 2026-06-06T19:33:26.624Z
 total_files: 12
-generated: 2026-06-06T19:35:35.440Z
+generated: 2026-06-06T19:35:56.169Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -34,7 +34,7 @@ SYNCED | Tutorial questions (4 May).pdf | pdf | 2026-06-06T19:34:58.661Z | annou
 NOT_SYNCED | Screenshot 2026-03-30 at 08.53.19.png | png | 2026-06-06T19:35:10.424Z | announcement_attachment
 SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-06-06T19:35:33.262Z | announcement_attachment
 INCOMPATIBLE | Pearson - video examples.mp4 | mp4 | 2026-06-06T19:33:49.919Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-06-06T19:33:49.919Z | announcement_attachment
+SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-06-06T19:35:54.908Z | announcement_attachment
 NOT_SYNCED | Pearson -Physics- NWU.pdf | pdf | 2026-06-06T19:33:49.919Z | announcement_attachment
 NOT_SYNCED | Physics for Scientists & Engineers with Modern Physics, Global Edition Flyer.pdf | pdf | 2026-06-06T19:33:49.919Z | announcement_attachment
 NOT_SYNCED | NPHY111-2026-formula1.pdf | pdf | 2026-06-06T19:33:49.919Z | announcement_attachment
