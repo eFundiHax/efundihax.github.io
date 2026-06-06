@@ -24,205 +24,205 @@ title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
 last_announcement: 2026-06-04T19:17:09.559Z
 total_files: 226
-generated: 2026-06-06T18:37:24.396Z
+generated: 2026-06-06T18:43:43.707Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
-SYNCED | 2023_PPEP171_W2_W7_Combined.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-SYNCED | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-SYNCED | PPEP171 Component Collection Registrar _Alpha_.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-SYNCED | W2_Wireing_Session2023.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | SANS10142-1_2017_Ed2-3.pdf | pdf | 2026-06-06T16:49:40.790Z | resource
-INCOMPATIBLE | Search_SANS10142-1.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Search_SANS10142.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf | pdf | 2026-06-06T17:08:08.466Z | resource
-NOT_SYNCED | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018-1.pdf | pdf | 2026-06-06T17:26:33.030Z | resource
-INCOMPATIBLE | PPEP_CBI_2023.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | SANS10142-1_2017_Ed2-3.pdf | pdf | 2026-06-06T17:44:46.884Z | resource
-SYNCED | 1. Line Types_Lyntipes.pdf | pdf | 2026-06-06T17:54:54.349Z | resource
-SYNCED | 2. Printing_Drukskryf.pdf | pdf | 2026-06-06T17:58:08.933Z | resource
-SYNCED | 3. Additional Notes_FREEHAND DRAWING.pdf | pdf | 2026-06-06T18:00:08.361Z | resource
-SYNCED | 3. Freehand Drawings_Vryhand Tekeninge.pdf | pdf | 2026-06-06T18:03:31.602Z | resource
-NOT_SYNCED | 4. Additional Notes_GEOMETRIC CONSTRUCTIONS.pdf | pdf | 2026-06-06T18:09:48.672Z | resource
-NOT_SYNCED | 4. Geometrical Construction_Meetkundige Kontruksies.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 5. and 6. Additional Notes_1ST ANGLE AND 3RD ANGLE.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 5. First Angle Orthographic Projection_Eerstehoekse Ortografiese Projeksie.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 5. and 6. Additional Notes_1ST ANGLE AND 3RD ANGLE.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 6. Third Angle Orthographic Projection_Derdehoekse Ortografiese Projeksie.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 7. Additional Notes_ISOMETRIC DRAWING.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 7. Isometric Drawings_Isometriese Tekeninge.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 8. Descriptive Geometry_Beskrywende Meetkunde.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 9. Additional Notes_GEOMETRICAL SOLIDS.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 9. Sections on Solid Geometry_Snitte op vaste liggame.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 10. Additional Notes 2_SECTIONAL DRAWING.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 10. Additional Notes_SECTIONAL DRAWING PRINCIPLES.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 10. Casting Drawings_Gietstuk Tekeninge.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 11. and 12. Additional Notes_ ISOMETRIC _ PERSPECTIVES.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 11. One Point Perspective Drawings_Eenpuntperspektief Tekeninge.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 11. and 12. Additional Notes_ ISOMETRIC _ PERSPECTIVES.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | 12. Two Point Perspective Drawings_Tweepuntperspektief Tekeninge.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Direct Coupling.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Alignment video.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Engine Assembly.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | Ergonomics checklist.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | Ergonomics IE python lab.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Slide1.PNG | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | BOOR EN TAP VIDEO.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Question 4.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Question 6.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Question 8.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | BOOR EN TAP VIDEO.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Assignment 3 Lathe.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | NWU Workshop Practice - Turning.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Basic welding and grinding.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_CBI_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_CBI_ENG-1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_CBI_ENG-2.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_CBI_ENG-3.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Eng Drawings_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Engines_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Engines_ENG-1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Engines_ENG-2.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Engines_ENG-3.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Eng Part 1_Alignment.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Eng Part 1_Assembly.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Ergonomics_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Ergonomics_ENG-1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Ergonomics_ENG-2.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Ergonomics_ENG-3.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Instrumentation_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Instrumentation_ENG-1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Instrumentation_ENG-2.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Instrumentation_ENG-3.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Instrumentation Lesson 1 Image 1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Instrumentation Lesson 1 Questions 1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Eng Part 1_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Eng Part 2_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Eng Part 3_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Manufacturing_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Manufacturing_ENG-1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Manufacturing_ENG-2.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Manufacturing_ENG-3.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | PPE_1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | PPE_2.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | PPE_3.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | PPE_4.PNG | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Pumps_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Pumps_ENG-1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Pumps_ENG-2.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Pumps_ENG-3.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Labs_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | DFG.PNG | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | DisplayOscilloscope.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | DMM.PNG | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | N-Assembly Points.JPG | jpg | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | NWU-Emergency-Procedure.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Oscilloscop Control.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Oscilloscop Display 1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Oscilloscope Probe.PNG | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | PSU.PNG | png | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | SEECELaboratoryRules.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | SMT-Through-Hole-Soldering.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Software Installation.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | TBS1000C.PNG | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | VeroboardAndResistors.PNG | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Soldering_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Soldering_ENG-1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Soldering_ENG-2.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Soldering_ENG-3.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_SVC_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_SVC_ENG-1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_SVC_ENG-2.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_SVC_ENG-3.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | proper-workplace-ergonomics-infographic-v3.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | proper-workplace-ergonomics-infographic-v3-1.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | proper-workplace-ergonomics-infographic-v3-2.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | proper-workplace-ergonomics-infographic-v3-3.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Swagelok_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Swagelok_ENG-1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Swagelok_ENG-2.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Swagelok_ENG-3.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Wiring_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Wiring_ENG-1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Wiring_ENG-2.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Wiring_ENG-3.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Welcome_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Welcome_ENG-1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Welcome_ENG-2.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Welcome_ENG-3.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | IMG_20210507_104327.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | IMG_20210507_104723.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | IMG_20210507_110202.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | IMG_20210507_110707.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | IMG_20210507_112446.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | IMG_20210507_112742.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | IMG_20210507_115512.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | IMG_20210507_115514.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | IMG_20210507_120045.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | AfrikaansSolderWorkshopVidLow.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | AfrPolarity.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | EngPolarized.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | Marks_5MaySoldering.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | SolderingWorkshopV1.1Manual.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | SolderingWorkshopV1.1Manual-1.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-NOT_SYNCED | SolderingWorkshopV1.1Manual-2.pdf | pdf | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | SolderWorkshopVidLow.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Activity 2.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Tutorial 2.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Activity 3.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Tutorial 3.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Activity 4.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Tutorial 4.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Activity 5.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Activity 6.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Activity 7.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Install Git.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | ICON_assignment.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | ICON_example.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | ICON_information.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | ICON_outcomes.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | ICON_PPE.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | ICON_reflection.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | ICON_studymaterial.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Banner_Instrumentation_ENG.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 1. data from terminal.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 2. Data paste in Excel.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 3. Text Import Wizzard.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 4. Average.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 5. std dev.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 6. range.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 7. complete.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 8. Graphing.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | FindAndReplace.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 1. terminal.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 2. terminal sensor.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 3. interface dupont.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 4.1 dupont Arduino.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 4.2 interface to arduino 1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 4.3 dat to arduino.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 4. dupont Arduino.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 5. dupont data.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 6 Strain relief - cable.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | 7 Strain relief total.jpg | jpg | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Driver issue.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Driver issue - resolved.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | hardware_kit.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Instrumentation Lesson 1 Image 1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Instrumentation Lesson 1 Questions 1.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Normal Distribution deviations.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | platformIO.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | rulers.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Screenshot 2021-04-29 121724.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | sensor labeled.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | Vscode.install.png | png | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | ADL - 1 - First Steps.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | ADL - 2 - Initial Flashing.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | ADL - 3 - Establishing the Timebase.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | ADL - 4 - Talking to the outside world.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | ADL - 5 - Getting the temperature.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
-INCOMPATIBLE | ADL - 6 - Improving the LED output.mp4 | mp4 | 2026-06-06T16:35:13.957Z | resource
+SYNCED | 2023_PPEP171_W2_W7_Combined.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+SYNCED | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+SYNCED | PPEP171 Component Collection Registrar _Alpha_.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+SYNCED | W2_Wireing_Session2023.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | SANS10142-1_2017_Ed2-3.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Search_SANS10142-1.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Search_SANS10142.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018-1.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | PPEP_CBI_2023.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | SANS10142-1_2017_Ed2-3.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+SYNCED | 1. Line Types_Lyntipes.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+SYNCED | 2. Printing_Drukskryf.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+SYNCED | 3. Additional Notes_FREEHAND DRAWING.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+SYNCED | 3. Freehand Drawings_Vryhand Tekeninge.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 4. Additional Notes_GEOMETRIC CONSTRUCTIONS.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 4. Geometrical Construction_Meetkundige Kontruksies.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 5. and 6. Additional Notes_1ST ANGLE AND 3RD ANGLE.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 5. First Angle Orthographic Projection_Eerstehoekse Ortografiese Projeksie.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 5. and 6. Additional Notes_1ST ANGLE AND 3RD ANGLE.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 6. Third Angle Orthographic Projection_Derdehoekse Ortografiese Projeksie.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 7. Additional Notes_ISOMETRIC DRAWING.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 7. Isometric Drawings_Isometriese Tekeninge.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 8. Descriptive Geometry_Beskrywende Meetkunde.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 9. Additional Notes_GEOMETRICAL SOLIDS.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 9. Sections on Solid Geometry_Snitte op vaste liggame.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 10. Additional Notes 2_SECTIONAL DRAWING.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 10. Additional Notes_SECTIONAL DRAWING PRINCIPLES.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 10. Casting Drawings_Gietstuk Tekeninge.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 11. and 12. Additional Notes_ ISOMETRIC _ PERSPECTIVES.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 11. One Point Perspective Drawings_Eenpuntperspektief Tekeninge.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 11. and 12. Additional Notes_ ISOMETRIC _ PERSPECTIVES.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | 12. Two Point Perspective Drawings_Tweepuntperspektief Tekeninge.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Direct Coupling.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Alignment video.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Engine Assembly.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | Ergonomics checklist.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | Ergonomics IE python lab.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Slide1.PNG | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | BOOR EN TAP VIDEO.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Question 4.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Question 6.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Question 8.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | BOOR EN TAP VIDEO.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Assignment 3 Lathe.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | NWU Workshop Practice - Turning.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Basic welding and grinding.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_CBI_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_CBI_ENG-1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_CBI_ENG-2.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_CBI_ENG-3.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Eng Drawings_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Engines_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Engines_ENG-1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Engines_ENG-2.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Engines_ENG-3.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Eng Part 1_Alignment.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Eng Part 1_Assembly.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Ergonomics_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Ergonomics_ENG-1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Ergonomics_ENG-2.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Ergonomics_ENG-3.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Instrumentation_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Instrumentation_ENG-1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Instrumentation_ENG-2.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Instrumentation_ENG-3.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Instrumentation Lesson 1 Image 1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Instrumentation Lesson 1 Questions 1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Eng Part 1_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Eng Part 2_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Eng Part 3_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Manufacturing_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Manufacturing_ENG-1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Manufacturing_ENG-2.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Manufacturing_ENG-3.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | PPE_1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | PPE_2.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | PPE_3.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | PPE_4.PNG | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Pumps_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Pumps_ENG-1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Pumps_ENG-2.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Pumps_ENG-3.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Labs_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | DFG.PNG | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | DisplayOscilloscope.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | DMM.PNG | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | N-Assembly Points.JPG | jpg | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | NWU-Emergency-Procedure.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Oscilloscop Control.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Oscilloscop Display 1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Oscilloscope Probe.PNG | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | PSU.PNG | png | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | SEECELaboratoryRules.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | SMT-Through-Hole-Soldering.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Software Installation.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | TBS1000C.PNG | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | VeroboardAndResistors.PNG | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Soldering_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Soldering_ENG-1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Soldering_ENG-2.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Soldering_ENG-3.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_SVC_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_SVC_ENG-1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_SVC_ENG-2.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_SVC_ENG-3.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | proper-workplace-ergonomics-infographic-v3.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | proper-workplace-ergonomics-infographic-v3-1.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | proper-workplace-ergonomics-infographic-v3-2.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | proper-workplace-ergonomics-infographic-v3-3.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Swagelok_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Swagelok_ENG-1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Swagelok_ENG-2.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Swagelok_ENG-3.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Wiring_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Wiring_ENG-1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Wiring_ENG-2.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Wiring_ENG-3.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Welcome_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Welcome_ENG-1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Welcome_ENG-2.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Welcome_ENG-3.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | IMG_20210507_104327.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | IMG_20210507_104723.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | IMG_20210507_110202.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | IMG_20210507_110707.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | IMG_20210507_112446.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | IMG_20210507_112742.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | IMG_20210507_115512.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | IMG_20210507_115514.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | IMG_20210507_120045.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | AfrikaansSolderWorkshopVidLow.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | AfrPolarity.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | EngPolarized.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | Marks_5MaySoldering.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | SolderingWorkshopV1.1Manual.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | SolderingWorkshopV1.1Manual-1.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+NOT_SYNCED | SolderingWorkshopV1.1Manual-2.pdf | pdf | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | SolderWorkshopVidLow.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Activity 2.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Tutorial 2.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Activity 3.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Tutorial 3.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Activity 4.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Tutorial 4.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Activity 5.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Activity 6.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Activity 7.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Install Git.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | ICON_assignment.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | ICON_example.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | ICON_information.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | ICON_outcomes.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | ICON_PPE.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | ICON_reflection.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | ICON_studymaterial.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Banner_Instrumentation_ENG.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 1. data from terminal.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 2. Data paste in Excel.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 3. Text Import Wizzard.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 4. Average.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 5. std dev.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 6. range.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 7. complete.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 8. Graphing.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | FindAndReplace.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 1. terminal.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 2. terminal sensor.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 3. interface dupont.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 4.1 dupont Arduino.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 4.2 interface to arduino 1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 4.3 dat to arduino.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 4. dupont Arduino.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 5. dupont data.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 6 Strain relief - cable.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | 7 Strain relief total.jpg | jpg | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Driver issue.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Driver issue - resolved.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | hardware_kit.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Instrumentation Lesson 1 Image 1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Instrumentation Lesson 1 Questions 1.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Normal Distribution deviations.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | platformIO.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | rulers.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Screenshot 2021-04-29 121724.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | sensor labeled.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | Vscode.install.png | png | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | ADL - 1 - First Steps.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | ADL - 2 - Initial Flashing.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | ADL - 3 - Establishing the Timebase.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | ADL - 4 - Talking to the outside world.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | ADL - 5 - Getting the temperature.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
+INCOMPATIBLE | ADL - 6 - Improving the LED output.mp4 | mp4 | 2026-06-06T18:42:28.820Z | resource
 SYNCED | PPEP171_SEECE_GroupList_2026_Ver-4.pdf | pdf | 2026-06-06T18:36:31.533Z | announcement_attachment
 SYNCED | PPEP171_SEECE_GroupList_2026_Ver-3.pdf | pdf | 2026-06-06T18:36:31.533Z | announcement_attachment
 INCOMPATIBLE | Test456.hex | hex | 2026-06-06T18:36:31.533Z | announcement_attachment
