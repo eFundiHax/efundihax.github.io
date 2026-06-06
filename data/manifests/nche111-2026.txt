@@ -24,7 +24,7 @@ title: NCHE111-2026
 last_sync: 2026-05-29T15:06:28.790Z
 last_announcement: 2026-06-06T15:50:05.781Z
 total_files: 161
-generated: 2026-06-06T15:58:25.685Z
+generated: 2026-06-06T15:58:49.946Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -122,7 +122,7 @@ NOT_SYNCED | Try yourself questions for Study section 4.6.pdf | pdf | 2026-06-06
 NOT_SYNCED | Try yourself questions for Study section 4.7.pdf | pdf | 2026-06-06T15:54:27.879Z | resource
 SYNCED | Answers to Try Yourself Questions for 5.1 and 5.2.pdf | pdf | 2026-06-06T15:58:03.410Z | resource
 SYNCED | Answer to Try yourself question for Study Section 5.3.pdf | pdf | 2026-06-06T15:58:24.187Z | resource
-NOT_SYNCED | Answer to Try yourself question for Study Section 5.4 to 5.6.pdf | pdf | 2026-06-06T15:54:27.879Z | resource
+SYNCED | Answer to Try yourself question for Study Section 5.4 to 5.6.pdf | pdf | 2026-06-06T15:58:48.295Z | resource
 NOT_SYNCED | Extra worked out problems SU5.pdf | pdf | 2026-06-06T15:54:27.879Z | resource
 NOT_SYNCED | Answer to Example 5.7_Hess Law.pdf | pdf | 2026-06-06T15:54:27.879Z | resource
 NOT_SYNCED | Answer to Try yourself question for Study Section 5.7.pdf | pdf | 2026-06-06T15:54:27.879Z | resource
