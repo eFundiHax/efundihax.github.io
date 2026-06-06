@@ -582,3 +582,6 @@ Lesson sync failed: 9.  Visual Information - The document is inaccessible. Pleas
 
 --- ERROR LOG (2026-06-06T17:01:57.266Z) ---
 Lesson sync failed: ALDE Lessons - The document is inaccessible. Please try again later.
+
+--- ERROR LOG (2026-06-06T17:02:20.323Z) ---
+Lesson sync failed: Lecturer Information - The document is inaccessible. Please try again later.
