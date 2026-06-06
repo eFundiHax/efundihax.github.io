@@ -24,22 +24,22 @@ title: 2026 | Academic Literacy
 last_sync: 2026-06-06T18:35:56.667Z
 last_announcement: 2026-06-04T19:15:03.935Z
 total_files: 22
-generated: 2026-06-06T16:28:13.229Z
+generated: 2026-06-06T18:37:22.990Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
 NOT_SYNCED | ALDE122_9.Source Intergration.pdf | pdf | 2026-06-04T17:48:04.519Z | resource
 NOT_SYNCED | ALDE122_3. Academic Writing.pdf | pdf | 2026-06-04T17:48:23.476Z | resource
-SYNCED | 2026_ALDE111_03June.pdf | pdf | 2026-06-06T16:28:06.712Z | announcement_attachment
-SYNCED | 2026_ALDE111_Seniors_03June.pdf | pdf | 2026-06-06T16:28:06.712Z | announcement_attachment
-SYNCED | 2026_ALDE112_03June.pdf | pdf | 2026-06-06T16:28:06.712Z | announcement_attachment
-SYNCED | 2026_ALDE122_Seniors_03June.pdf | pdf | 2026-06-06T16:28:06.712Z | announcement_attachment
-SYNCED | ALDE112_2026_Individual Written Assessment.pdf | pdf | 2026-06-06T16:28:06.712Z | announcement_attachment
-SYNCED | ALDE112_2026_Final Marks.pdf | pdf | 2026-06-06T16:28:06.712Z | announcement_attachment
-SYNCED | Individual Essay Submissions on Mindjoy.pdf | pdf | 2026-06-06T16:28:06.712Z | announcement_attachment
-SYNCED | 2026_ALDE112.pdf | pdf | 2026-06-06T16:28:06.712Z | announcement_attachment
-SYNCED | Semester Test Registration.pdf | pdf | 2026-06-06T16:28:06.712Z | announcement_attachment
-SYNCED | Sign-up Details_Semester test 1.pdf | pdf | 2026-06-06T16:28:06.712Z | announcement_attachment
+SYNCED | 2026_ALDE111_03June.pdf | pdf | 2026-06-06T18:37:17.536Z | announcement_attachment
+SYNCED | 2026_ALDE111_Seniors_03June.pdf | pdf | 2026-06-06T18:37:17.536Z | announcement_attachment
+SYNCED | 2026_ALDE112_03June.pdf | pdf | 2026-06-06T18:37:17.536Z | announcement_attachment
+SYNCED | 2026_ALDE122_Seniors_03June.pdf | pdf | 2026-06-06T18:37:17.536Z | announcement_attachment
+SYNCED | ALDE112_2026_Individual Written Assessment.pdf | pdf | 2026-06-06T18:37:17.536Z | announcement_attachment
+SYNCED | ALDE112_2026_Final Marks.pdf | pdf | 2026-06-06T18:37:17.536Z | announcement_attachment
+SYNCED | Individual Essay Submissions on Mindjoy.pdf | pdf | 2026-06-06T18:37:17.536Z | announcement_attachment
+SYNCED | 2026_ALDE112.pdf | pdf | 2026-06-06T18:37:17.536Z | announcement_attachment
+SYNCED | Semester Test Registration.pdf | pdf | 2026-06-06T18:37:17.536Z | announcement_attachment
+SYNCED | Sign-up Details_Semester test 1.pdf | pdf | 2026-06-06T18:37:17.536Z | announcement_attachment
 INCOMPATIBLE | Saturday_qr-Invigilator Web_ Invigilated Class Work 5 test - Tests and quizzes - 18-04-26 - 09_00.png | png | 2026-06-06T16:28:06.712Z | announcement_attachment
 SYNCED | Final_Pre_Assessment_Checklist.docx | docx | 2026-06-06T16:28:06.712Z | announcement_attachment
 SYNCED | The Invigilator Web Student User Guide - NWU - short version PDF-2.pdf | pdf | 2026-06-06T16:28:06.712Z | announcement_attachment
