@@ -24,14 +24,14 @@ title: First year physics pr ...
 last_sync: 2026-06-03T16:06:00.153Z
 last_announcement: 2026-06-04T19:15:51.025Z
 total_files: 37
-generated: 2026-06-06T18:36:01.709Z
+generated: 2026-06-06T18:42:01.397Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
 INCOMPATIBLE | A Vektore Teorie-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
 INCOMPATIBLE | A Vektore Voorbeelde-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | E Vectors examples.mp4 | mp4 | 2026-06-06T16:34:53.623Z | resource
-INCOMPATIBLE | E Vectors theory.mp4 | mp4 | 2026-06-06T16:34:53.623Z | resource
+INCOMPATIBLE | E Vectors examples.mp4 | mp4 | 2026-06-06T18:41:55.822Z | resource
+INCOMPATIBLE | E Vectors theory.mp4 | mp4 | 2026-06-06T18:41:55.822Z | resource
 INCOMPATIBLE | VEK 1 Angles-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
 INCOMPATIBLE | VEK 1 Hoeke-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
 INCOMPATIBLE | A Eenhede-1-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
@@ -57,12 +57,12 @@ INCOMPATIBLE | A KMK 1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
 INCOMPATIBLE | E KMK 1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
 INCOMPATIBLE | A KMK2 2024.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
 INCOMPATIBLE | E KMK2 2024.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-NOT_SYNCED | WRY 2 NB! Info.pdf | pdf | 2026-06-06T16:34:53.623Z | resource
-NOT_SYNCED | FSKS113FINAL.pdf | pdf | 2026-06-06T16:34:53.623Z | resource
-NOT_SYNCED | NPH111FINAL.pdf | pdf | 2026-06-06T16:34:53.623Z | resource
-NOT_SYNCED | PracManual2026Sem1.pdf | pdf | 2026-06-06T16:34:53.623Z | resource
-NOT_SYNCED | PrakHandleiding2026Sem1.pdf | pdf | 2026-06-06T16:34:53.623Z | resource
-NOT_SYNCED | 2026 schedule.pdf | pdf | 2026-06-06T16:34:53.623Z | resource
+NOT_SYNCED | WRY 2 NB! Info.pdf | pdf | 2026-06-06T18:41:55.822Z | resource
+NOT_SYNCED | FSKS113FINAL.pdf | pdf | 2026-06-06T18:41:55.822Z | resource
+NOT_SYNCED | NPH111FINAL.pdf | pdf | 2026-06-06T18:41:55.822Z | resource
+NOT_SYNCED | PracManual2026Sem1.pdf | pdf | 2026-06-06T18:41:55.822Z | resource
+NOT_SYNCED | PrakHandleiding2026Sem1.pdf | pdf | 2026-06-06T18:41:55.822Z | resource
+NOT_SYNCED | 2026 schedule.pdf | pdf | 2026-06-06T18:41:55.822Z | resource
 SYNCED | 2026 scheduleUpdated.pdf | pdf | 2026-06-06T18:35:58.717Z | announcement_attachment
 SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-06-06T18:35:58.717Z | announcement_attachment
 
