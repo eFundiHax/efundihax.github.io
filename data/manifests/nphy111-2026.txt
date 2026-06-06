@@ -21,7 +21,7 @@ emoji: 📘
 color: #6b3d8f
 calendar_id: 
 title: NPHY111-2026
-last_sync: 2026-06-06T19:33:23.070Z
+last_sync: 2026-06-06T19:33:37.455Z
 last_announcement: 2026-06-06T19:33:26.624Z
 total_files: 0
 generated: 2026-06-06T19:33:23.070Z
