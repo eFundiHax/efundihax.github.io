@@ -24,7 +24,7 @@ title: Engineering Undergraduate
 last_sync: 2026-06-06T18:36:39.709Z
 last_announcement: 2026-06-04T19:16:04.586Z
 total_files: 100
-generated: 2026-06-06T18:38:29.852Z
+generated: 2026-06-06T18:38:44.211Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -98,16 +98,16 @@ SYNCED | CV training Session Potch Campus Poster.pdf | pdf | 2026-06-06T18:38:25
 SYNCED | CC Overview poster.pdf | pdf | 2026-06-06T18:38:25.037Z | announcement_attachment
 SYNCED | Field Engineer - Senior technician Job Description.pdf | pdf | 2026-06-06T18:38:25.037Z | announcement_attachment
 SYNCED | Industrial Engineer Advert.pdf | pdf | 2026-06-06T18:38:25.037Z | announcement_attachment
-SYNCED | Engineer in Training.Mech & Elect.docx | docx | 2026-06-06T16:29:35.384Z | announcement_attachment
-SYNCED | Post-graduate bursaries (Students).pdf | pdf | 2026-06-06T16:29:35.384Z | announcement_attachment
-INCOMPATIBLE | Graduate Electrical Engineer - JHB.png | png | 2026-06-06T16:29:35.384Z | announcement_attachment
-SYNCED | Electrical Engineer Advert.docx | docx | 2026-06-06T16:29:35.384Z | announcement_attachment
-SYNCED | EA 2023 - Talents from Africa  - Brochure.pdf | pdf | 2026-06-06T16:29:35.384Z | announcement_attachment
-SYNCED | EA2023 - Talents from Africa - Flyer.pdf | pdf | 2026-06-06T16:29:35.384Z | announcement_attachment
-INCOMPATIBLE | Agri Career Fair 19 October.jpg | jpg | 2026-06-06T16:29:35.384Z | announcement_attachment
-SYNCED | CV Poster.pdf | pdf | 2026-06-06T16:29:35.384Z | announcement_attachment
-SYNCED | Patent candidate attorney advert - Chemical Engineering - 11 August 2022.docx | docx | 2026-06-06T16:29:35.384Z | announcement_attachment
-SYNCED | Patent Candidate Attorney Advert - Electronic Engineering andor Computer Engineering - 11 August 2022.docx | docx | 2026-06-06T16:29:35.384Z | announcement_attachment
+SYNCED | Engineer in Training.Mech & Elect.docx | docx | 2026-06-06T18:38:39.562Z | announcement_attachment
+SYNCED | Post-graduate bursaries (Students).pdf | pdf | 2026-06-06T18:38:39.562Z | announcement_attachment
+INCOMPATIBLE | Graduate Electrical Engineer - JHB.png | png | 2026-06-06T18:38:39.562Z | announcement_attachment
+SYNCED | Electrical Engineer Advert.docx | docx | 2026-06-06T18:38:39.562Z | announcement_attachment
+SYNCED | EA 2023 - Talents from Africa  - Brochure.pdf | pdf | 2026-06-06T18:38:39.562Z | announcement_attachment
+SYNCED | EA2023 - Talents from Africa - Flyer.pdf | pdf | 2026-06-06T18:38:39.562Z | announcement_attachment
+INCOMPATIBLE | Agri Career Fair 19 October.jpg | jpg | 2026-06-06T18:38:39.562Z | announcement_attachment
+SYNCED | CV Poster.pdf | pdf | 2026-06-06T18:38:39.562Z | announcement_attachment
+SYNCED | Patent candidate attorney advert - Chemical Engineering - 11 August 2022.docx | docx | 2026-06-06T18:38:39.562Z | announcement_attachment
+SYNCED | Patent Candidate Attorney Advert - Electronic Engineering andor Computer Engineering - 11 August 2022.docx | docx | 2026-06-06T18:38:39.562Z | announcement_attachment
 SYNCED | DSI-NRF-Honours-Application-and-Funding-Guide-for-2023-FINAL.pdf | pdf | 2026-06-06T16:29:53.854Z | announcement_attachment
 SYNCED | NRF Honours session.pdf | pdf | 2026-06-06T16:29:53.854Z | announcement_attachment
 SYNCED | 2022 090 - Assistant Control and Instrumentation Engineer.doc | doc | 2026-06-06T16:29:53.854Z | announcement_attachment
