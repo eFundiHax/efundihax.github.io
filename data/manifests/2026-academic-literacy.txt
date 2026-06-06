@@ -645,3 +645,6 @@ Lesson sync failed: Resources - The document is inaccessible. Please try again l
 
 --- ERROR LOG (2026-06-06T17:44:27.441Z) ---
 Lesson sync failed: Semester test - The document is inaccessible. Please try again later.
+
+--- ERROR LOG (2026-06-06T17:45:48.894Z) ---
+Lesson sync failed: 4. Source Integration - The document is inaccessible. Please try again later.
