@@ -24,7 +24,7 @@ title: NCHE111-2026
 last_sync: 2026-05-29T15:06:28.790Z
 last_announcement: 2026-06-06T15:50:05.781Z
 total_files: 161
-generated: 2026-06-06T16:03:08.184Z
+generated: 2026-06-06T16:03:34.895Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -156,7 +156,7 @@ NOT_SYNCED | Answers to Try yourself questions for Study Section 8.4.pdf | pdf |
 NOT_SYNCED | Answers to Try yourself questions for Study Sections 8.5 8.6 and 8.7.pdf | pdf | 2026-06-06T15:54:27.879Z | resource
 NOT_SYNCED | Answers to Try yourself questions for Study Sections 8.8.pdf | pdf | 2026-06-06T15:54:27.879Z | resource
 SYNCED | Study Section 8.3.ppt | ppt | 2026-06-06T16:03:06.762Z | resource
-NOT_SYNCED | Study Section 8.4.ppt | ppt | 2026-06-06T15:54:27.879Z | resource
+SYNCED | Study Section 8.4.ppt | ppt | 2026-06-06T16:03:33.532Z | resource
 NOT_SYNCED | Study Sections 8.1 and 8.2.ppt | ppt | 2026-06-06T15:54:27.879Z | resource
 NOT_SYNCED | Study Sections 8.5 8.6 and 8.7.ppt | ppt | 2026-06-06T15:54:27.879Z | resource
 NOT_SYNCED | Study Sections 8.8 8.9 8.10 and 8.11.ppt | ppt | 2026-06-06T15:54:27.879Z | resource
@@ -194,6 +194,3 @@ SYNCED | Memorandum for ExamPaper 1_NCHE111_2025.pdf | pdf | 2026-06-06T15:50:55
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) NCHE111-2026 — full extracted text from all synced files and lessons
 (SCHEDULE) NCHE111-2026 — calendar events and announcements spreadsheet
-
---- ERROR LOG (2026-06-06T16:03:27.734Z) ---
-Resource processing failed: Study Section 8.4.ppt - Document is missing (perhaps it was deleted, or you don't have read access?)
