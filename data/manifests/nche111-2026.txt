@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 
 title: NCHE111-2026
 last_sync: 2026-05-29T15:06:28.790Z
-last_announcement: 2026-06-04T19:19:20.057Z
+last_announcement: 2026-06-06T15:50:05.781Z
 total_files: 160
 generated: 2026-06-05T19:50:04.804Z
 
