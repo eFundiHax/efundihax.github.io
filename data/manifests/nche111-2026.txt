@@ -194,3 +194,6 @@ SYNCED | Memorandum for ExamPaper 1_NCHE111_2025.pdf | pdf | 2026-06-06T15:50:55
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) NCHE111-2026 — full extracted text from all synced files and lessons
 (SCHEDULE) NCHE111-2026 — calendar events and announcements spreadsheet
+
+--- ERROR LOG (2026-06-06T15:57:06.776Z) ---
+Resource processing failed: Participation marks_Numbers only.pdf - Too many changes applied before saving document. Please save changes in smaller batches using Document.saveAndClose(), then reopen the document with Document.openById().
