@@ -528,3 +528,6 @@ Lesson sync failed: 3. Academic Integrity - The document is inaccessible. Please
 
 --- ERROR LOG (2026-06-06T15:53:39.550Z) ---
 Lesson sync failed: ALDE Lessons - The document is inaccessible. Please try again later.
+
+--- ERROR LOG (2026-06-06T15:53:57.060Z) ---
+Lesson sync failed: Lecturer Information - The document is inaccessible. Please try again later.
