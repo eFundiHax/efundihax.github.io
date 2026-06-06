@@ -194,3 +194,6 @@ SYNCED | Memorandum for ExamPaper 1_NCHE111_2025.pdf | pdf | 2026-06-06T15:50:55
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) NCHE111-2026 — full extracted text from all synced files and lessons
 (SCHEDULE) NCHE111-2026 — calendar events and announcements spreadsheet
+
+--- ERROR LOG (2026-06-06T16:01:11.813Z) ---
+Resource processing failed: Study Section 7.1 and 7.2.ppt - Document is missing (perhaps it was deleted, or you don't have read access?)
