@@ -24,7 +24,7 @@ title: Engineering Undergraduate
 last_sync: 2026-06-06T19:32:03.593Z
 last_announcement: 2026-06-04T19:16:04.586Z
 total_files: 100
-generated: 2026-06-06T19:32:33.579Z
+generated: 2026-06-06T19:32:47.928Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -48,16 +48,16 @@ INCOMPATIBLE | WhatsApp Image 2025-03-12 at 15.12.31_8922b7e0.jpg | jpg | 2026-0
 SYNCED | Students 2.pdf | pdf | 2026-06-06T19:32:29.584Z | announcement_attachment
 SYNCED | MUST BOOTCAMP 2025 Advert.pdf | pdf | 2026-06-06T19:32:29.584Z | announcement_attachment
 INCOMPATIBLE | INVITATION.PNG | png | 2026-06-06T19:32:29.584Z | announcement_attachment
-INCOMPATIBLE | Invite.png | png | 2026-06-06T18:37:25.230Z | announcement_attachment
-INCOMPATIBLE | Programme.png | png | 2026-06-06T18:37:25.230Z | announcement_attachment
-SYNCED | AGRI-CAREER FAIR (002).pdf | pdf | 2026-06-06T18:37:25.230Z | announcement_attachment
-SYNCED | MUST_scholarships_2025.pdf | pdf | 2026-06-06T18:37:25.230Z | announcement_attachment
-SYNCED | STUDENT CALL _SATNAC INUSTRY SOLUTIONS CHALLENGE 2024.pdf | pdf | 2026-06-06T18:37:25.230Z | announcement_attachment
-SYNCED | 2024 CV Template.pdf | pdf | 2026-06-06T18:37:25.230Z | announcement_attachment
-SYNCED | 2024 Document upload Checklist for candidates - Southern Africa Rhodes Scholarships 2025.pdf | pdf | 2026-06-06T18:37:25.230Z | announcement_attachment
-SYNCED | 2024 Information for Candidates (IfC) Southern Africa_Final Updated.pdf | pdf | 2026-06-06T18:37:25.230Z | announcement_attachment
-SYNCED | 2024- Letter to high achievers at SA Universities - NWU.pdf | pdf | 2026-06-06T18:37:25.230Z | announcement_attachment
-SYNCED | 2024 Rhodes Scholarship flyer  - Orange (1).pdf | pdf | 2026-06-06T18:37:25.230Z | announcement_attachment
+INCOMPATIBLE | Invite.png | png | 2026-06-06T19:32:43.318Z | announcement_attachment
+INCOMPATIBLE | Programme.png | png | 2026-06-06T19:32:43.318Z | announcement_attachment
+SYNCED | AGRI-CAREER FAIR (002).pdf | pdf | 2026-06-06T19:32:43.318Z | announcement_attachment
+SYNCED | MUST_scholarships_2025.pdf | pdf | 2026-06-06T19:32:43.318Z | announcement_attachment
+SYNCED | STUDENT CALL _SATNAC INUSTRY SOLUTIONS CHALLENGE 2024.pdf | pdf | 2026-06-06T19:32:43.318Z | announcement_attachment
+SYNCED | 2024 CV Template.pdf | pdf | 2026-06-06T19:32:43.318Z | announcement_attachment
+SYNCED | 2024 Document upload Checklist for candidates - Southern Africa Rhodes Scholarships 2025.pdf | pdf | 2026-06-06T19:32:43.318Z | announcement_attachment
+SYNCED | 2024 Information for Candidates (IfC) Southern Africa_Final Updated.pdf | pdf | 2026-06-06T19:32:43.318Z | announcement_attachment
+SYNCED | 2024- Letter to high achievers at SA Universities - NWU.pdf | pdf | 2026-06-06T19:32:43.318Z | announcement_attachment
+SYNCED | 2024 Rhodes Scholarship flyer  - Orange (1).pdf | pdf | 2026-06-06T19:32:43.318Z | announcement_attachment
 INCOMPATIBLE | MarketingInvite_16May24_Prof Chris Schoor talk png.png | png | 2026-06-06T18:37:39.650Z | announcement_attachment
 SYNCED | Student_Subscription_forms_2024.pdf | pdf | 2026-06-06T18:37:39.650Z | announcement_attachment
 INCOMPATIBLE | Engineering Fair.jpg | jpg | 2026-06-06T18:37:39.650Z | announcement_attachment
