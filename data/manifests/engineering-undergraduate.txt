@@ -21,7 +21,7 @@ emoji: 📘
 color: #6b3d8f
 calendar_id: 
 title: Engineering Undergraduate
-last_sync: 2026-06-06T21:08:26.243Z
+last_sync: 2026-06-21T10:00:41.022Z
 last_announcement: 2026-06-04T19:16:04.586Z
 total_files: 337
 generated: 2026-06-06T23:34:31.762Z
