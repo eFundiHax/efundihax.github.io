@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 
 title: Maths Club
 last_sync: 2026-05-29T15:05:50.875Z
-last_announcement: 2026-06-04T19:14:18.565Z
+last_announcement: 2026-07-14T08:59:52.463Z
 total_files: 15
 generated: 2026-06-21T09:59:57.530Z
 
