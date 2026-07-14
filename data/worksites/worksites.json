@@ -21,6 +21,13 @@
     "manifestId": "1AYAt586RnMtMvbbZqZxp-t6BsqnLiBAd"
   },
   {
+    "slug": "eeri124-2026",
+    "title": "EERI124-2026",
+    "folderUrl": "https://drive.google.com/drive/folders/1vZiNWQP8LYXn9iouJ9yHF19Z4SgACd2v",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1w-Q70Tg03e7wOVtpmpzwJmF7QQ7HhdETY5KJ1Bf9rNc/edit?usp=drivesdk",
+    "manifestId": "1VQ0kPD0mM61qyyaLlCpKgjbGeOU7n2ko"
+  },
+  {
     "slug": "engineering-undergraduate",
     "title": "Engineering Undergraduate",
     "folderUrl": "https://drive.google.com/drive/folders/1fXuQRWE7EyICKS-fK7s1Na4ZrMu1tA8E",
@@ -91,11 +98,25 @@
     "manifestId": "11QbYJISren8ACn37EfuzCoDuFdsP2eUk"
   },
   {
+    "slug": "physics-prac-2026sem2",
+    "title": "Physics Prac 2026SEM2",
+    "folderUrl": "https://drive.google.com/drive/folders/1W7_cJuqiD7glND-ZENlnQ171tdwTcpjs",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1F6NY_fq52Z_Ez9AufcIGxyIT_2mRrMT9Wf9Omd6DqkI/edit?usp=drivesdk",
+    "manifestId": "15qODPGY8X6WF_tqbGIc-1ejXoXVsSsPz"
+  },
+  {
     "slug": "ppep171-2026",
     "title": "PPEP171-2026",
     "folderUrl": "https://drive.google.com/drive/folders/1AJGLWMZbOuUDVOGBSloGfyGH1h-cl7hV",
     "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1nKbJQmqxedYEc1GSlb4wb4SLoqXQ8vyuznU18FbYmKU/edit?usp=drivesdk",
     "manifestId": "1CjSdmuenhonMqnIyqKKtMwod5MTwjP6R"
+  },
+  {
+    "slug": "reii121-2026",
+    "title": "REII121-2026",
+    "folderUrl": "https://drive.google.com/drive/folders/13e2hrJxNPK4no5UIeY6Im8ySXZ9SjDGh",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1nXhPt3EiislIGCE3v5PKBknwjELHVl3jQzoNHyzGoJ4/edit?usp=drivesdk",
+    "manifestId": "1Ycpyd5iqqisxOnC8hCyd3ND-7qX0baaI"
   },
   {
     "slug": "seece-work-safety-",
