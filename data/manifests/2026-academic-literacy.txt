@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 
 title: 2026 | Academic Literacy
 last_sync: 2026-06-21T09:59:23.940Z
-last_announcement: 2026-06-04T19:15:03.935Z
+last_announcement: 2026-07-14T09:00:05.995Z
 total_files: 98
 generated: 2026-06-21T11:10:28.762Z
 
