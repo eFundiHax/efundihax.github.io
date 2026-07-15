@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 
 title: REII121-2026
 last_sync: 2026-07-14T08:55:56.396Z
-last_announcement: —
+last_announcement: 2026-07-15T18:50:31.780Z
 total_files: 0
 generated: 2026-07-14T08:55:56.396Z
 
