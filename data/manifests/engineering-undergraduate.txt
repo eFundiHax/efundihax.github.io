@@ -21,7 +21,7 @@ emoji: 📘
 color: #6b3d8f
 calendar_id: f361c7d2c854a2c0535ea693b2562dfbb5ddb75472b802c3c14a07a018248e3b@group.calendar.google.com
 title: Engineering Undergraduate
-last_sync: 2026-07-15T14:41:42.298Z
+last_sync: 2026-07-15T14:56:58.747Z
 last_announcement: 2026-07-15T09:39:56.722Z
 total_files: 876
 generated: 2026-07-15T14:44:19.196Z
