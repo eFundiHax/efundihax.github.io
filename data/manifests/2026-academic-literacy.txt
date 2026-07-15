@@ -1,6 +1,6 @@
 emoji: 📘
 color: #6b3d8f
-calendar_id: 
+calendar_id: 3a850597d64d4946d6f1ae5f2db71b0b616de4b0ba467c944b65601ad35bc1a4@group.calendar.google.com
 ---
 
 These sources come from North-West University's eFundi website.
