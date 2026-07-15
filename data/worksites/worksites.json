@@ -56,6 +56,13 @@
     "manifestId": "1F5Kk628ABtZvpm6Z3o1F8tvrIyhmH_E-"
   },
   {
+    "slug": "imageembedtest",
+    "title": "Image_Embed_Test",
+    "folderUrl": "https://drive.google.com/drive/folders/19zXrV5shrIWahDL9WTc_7UYtWM-OC6ez",
+    "spreadsheetUrl": "",
+    "manifestId": ""
+  },
+  {
     "slug": "ingm111-2026",
     "title": "INGM111-2026",
     "folderUrl": "https://drive.google.com/drive/folders/1Dncd3sCA3hrZ75P-Oy-DbEiqylHUZOS0",
@@ -159,5 +166,12 @@
     "folderUrl": "https://drive.google.com/drive/folders/1kz9mwnNtxFJsvic2XDueAGaHvyxcsJdV",
     "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1d4MeZ3Rq_PBYalixkNiQumhreyQl0-xVkpXCPZoRAI0/edit?usp=drivesdk",
     "manifestId": "1oEF33NoENepgn1ZQcM68Q_NhjmyAqm2T"
+  },
+  {
+    "slug": "testimageembed",
+    "title": "Test_Image_Embed",
+    "folderUrl": "https://drive.google.com/drive/folders/1CEKgNJI70nVwZ4XI20Py47MSbU6DiuKu",
+    "spreadsheetUrl": "",
+    "manifestId": ""
   }
 ]
