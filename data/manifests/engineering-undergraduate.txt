@@ -23,8 +23,8 @@ calendar_id: f361c7d2c854a2c0535ea693b2562dfbb5ddb75472b802c3c14a07a018248e3b@gr
 title: Engineering Undergraduate
 last_sync: 2026-07-15T14:32:20.202Z
 last_announcement: 2026-07-15T09:39:56.722Z
-total_files: 844
-generated: 2026-07-15T14:31:06.543Z
+total_files: 894
+generated: 2026-07-15T14:32:59.196Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -872,6 +872,56 @@ NOT_SYNCED | Jurumani Grad Poster  -NWU.pdf | pdf | 2026-07-15T14:29:51.455Z | a
 NOT_SYNCED | Curriculum control and Timetable 2022 (M426 & EM425).xlsx | xlsx | 2026-07-15T14:29:51.455Z | announcement_attachment
 NOT_SYNCED | FENG Time table 2022.xlsx | xlsx | 2026-07-15T14:29:51.455Z | announcement_attachment
 IMAGES_NOT_SYNCED | FENG Time table 2022.xlsx | xlsx | 2026-07-15T14:30:09.305Z | announcement_attachment
+INCOMPATIBLE | MUST 2027 student recruitment flyer.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+INCOMPATIBLE | Student_Subscription_forms_2026.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+INCOMPATIBLE | FENG Exam Timetable 1st Sem_25 May 2026.xlsx | xlsx | 2026-07-15T14:32:58.338Z | announcement_attachment
+INCOMPATIBLE | FENG Exam Timetable 1st Sem_22 May 2026.xlsx | xlsx | 2026-07-15T14:32:58.338Z | announcement_attachment
+INCOMPATIBLE | FENG Mid Semester Assessment Timetable_27 Mrt.xlsx | xlsx | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Bursary opportunity.jpeg | jpeg | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Student_Subscription_forms_2025.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | MUST_Scholarships_2026_flyer.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Application Guide for SARAO Doctoral Scholarships for 2026.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Application Guide for SARAO Master's Scholarships for 2026.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | DSI-NRF Master's and Doctoral Application and Funding Guide for 2026 (final).pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | DSTI-NRF Postgraduate Scholarship Framework for 2026 Funding__FINAL (003).pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Frequently Asked Questions_Postgraduate Funding_2025 (14 May).pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Student_Subscription_forms_2025.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | SITE-LAYOUT.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | 2025 Rhodes Invite, GLMN Info Session, 26 May (1).pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Potch Career fair A1 poster.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | WhatsApp Image 2025-03-12 at 15.12.31_8922b7e0.jpg | jpg | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Students 2.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | MUST BOOTCAMP 2025 Advert.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | INVITATION.PNG | png | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Invite.png | png | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Programme.png | png | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | AGRI-CAREER FAIR (002).pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | MUST_scholarships_2025.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | STUDENT CALL _SATNAC INUSTRY SOLUTIONS CHALLENGE 2024.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | 2024 CV Template.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | 2024 Document upload Checklist for candidates - Southern Africa Rhodes Scholarships 2025.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | 2024 Information for Candidates (IfC) Southern Africa_Final Updated.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | 2024- Letter to high achievers at SA Universities - NWU.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | 2024 Rhodes Scholarship flyer  - Orange (1).pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | MarketingInvite_16May24_Prof Chris Schoor talk png.png | png | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Student_Subscription_forms_2024.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Engineering Fair.jpg | jpg | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | StudyWell eFundi Poster_2023.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Take Note - Vervet Monkeys.jpg | jpg | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | 2024.02.21 FENG International Mother Language Day_b.png | png | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | ECSA Road to Registration Slides.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Updated - WIE 2023.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Ecsa_Visit.jpeg | jpeg | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | StudyWell eFundi Poster_2023.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Origins, Humanity & Science.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | LAW  facebook 2-01.jpg | jpg | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | LAW web banner 30Aug-01.jpg | jpg | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | LD multilingo poster A4 28 aug.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Work Readiness Seminar Web banner.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Virtual WR Programe.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | DSI-NRF Postgraduate Scholarship Framework for 2024 - 03 April 2023-FINAL.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | Frequently Asked Questions_Postgraduate Funding_FINAL.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
+NOT_SYNCED | ISFAP - Application Consent Form FINAL.pdf | pdf | 2026-07-15T14:32:58.338Z | announcement_attachment
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
