@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 
 title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
-last_announcement: 2026-07-14T09:01:51.255Z
+last_announcement: 2026-07-15T09:40:14.055Z
 total_files: 415
 generated: 2026-07-14T10:50:52.633Z
 
