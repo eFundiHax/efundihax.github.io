@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 
 title: SEECE Work & Safety - ...
 last_sync: 2026-05-29T15:05:41.991Z
-last_announcement: 2026-07-14T08:59:50.889Z
+last_announcement: 2026-07-15T09:38:53.058Z
 total_files: 12
 generated: 2026-07-14T08:59:56.192Z
 
