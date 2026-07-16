@@ -1,6 +1,6 @@
 {
   "test-manual": 1,
-  "_total": 35,
+  "_total": 36,
   "_homepage": 19,
   "2026-academic-literacy": 2,
   "engineering-undergraduate": 1,
@@ -8,5 +8,6 @@
   "test-worksite": 1,
   "nphy111-2026": 2,
   "mths111-2026": 5,
-  "nche111-2026": 1
+  "nche111-2026": 1,
+  "imageembedtest": 1
 }
