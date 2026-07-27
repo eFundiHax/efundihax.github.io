@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 02a8a121993e62e05e9e6bdb1eb74bb78cd880c3389c3372ba205350f20c064f@group.calendar.google.com
 title: CMPG115-2026
 last_sync: 2026-06-01T20:17:06.804Z
-last_announcement: 2026-07-24T07:42:31.712Z
+last_announcement: 2026-07-27T17:41:47.506Z
 total_files: 33
 generated: 2026-07-24T14:12:26.664Z
 
