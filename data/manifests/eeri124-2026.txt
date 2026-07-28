@@ -21,7 +21,7 @@ emoji: 📘
 color: #6b3d8f
 calendar_id: 251ac8a5b3d09861a7ffda3ef46a131cf8b2494d391d071f0a82ff1ec5104bca@group.calendar.google.com
 title: EERI124-2026
-last_sync: 2026-07-28T07:33:02.231Z
+last_sync: 2026-07-28T07:33:05.941Z
 last_announcement: 2026-07-28T07:13:06.780Z
 total_files: 0
 generated: 2026-07-28T07:13:21.508Z
