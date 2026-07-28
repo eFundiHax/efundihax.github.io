@@ -22,9 +22,9 @@ color: #6b3d8f
 calendar_id: 21fdd2cc35606ba4911d508c5be7a26e93937f43d9ee171de85360e78d8b80ac@group.calendar.google.com
 title: NPHY121-2026
 last_sync: 2026-07-14T08:58:35.545Z
-last_announcement: 2026-07-28T07:37:15.495Z
+last_announcement: 2026-07-28T07:37:09.582Z
 total_files: 0
-generated: 2026-07-28T07:37:06.441Z
+generated: 2026-07-28T07:37:00.072Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
