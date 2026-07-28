@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 
 title: MTHS111-2026
 last_sync: 2026-05-29T15:06:37.595Z
-last_announcement: 2026-06-04T19:21:00.010Z
+last_announcement: 2026-07-28T07:24:49.146Z
 total_files: 284
 generated: 2026-06-07T01:40:03.004Z
 
