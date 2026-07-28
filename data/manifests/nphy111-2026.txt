@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 48bf8ac94a50112d9522f2457996996aa99b8df73f878c85b5408bc62a5481b5@group.calendar.google.com
 title: NPHY111-2026
 last_sync: 2026-06-06T23:42:13.701Z
-last_announcement: 2026-07-28T07:24:48.267Z
+last_announcement: 2026-07-28T07:24:50.460Z
 total_files: 37
 generated: 2026-07-21T13:55:10.298Z
 
