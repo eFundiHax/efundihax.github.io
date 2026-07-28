@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 
 title: APPM121-2026
 last_sync: 2026-07-14T08:57:57.505Z
-last_announcement: —
+last_announcement: 2026-07-28T07:13:38.406Z
 total_files: 0
 generated: 2026-07-14T08:57:57.505Z
 
