@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 4fef2c5c3558ddd40746a6eeb4fe8d1f304bdb272694a92363826ed7f45fb568@group.calendar.google.com
 title: APPM121-2026
 last_sync: 2026-07-14T08:57:57.505Z
-last_announcement: 2026-07-28T07:13:38.406Z
+last_announcement: 2026-07-29T11:35:32.538Z
 total_files: 0
 generated: 2026-07-28T07:13:44.563Z
 
