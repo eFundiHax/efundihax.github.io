@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 233662f0cac9c26df385bcd03033f4e1a0e394877a01db568c3a9a100b68af3f@group.calendar.google.com
 title: MTHS121-2026
 last_sync: 2026-07-14T08:57:30.094Z
-last_announcement: 2026-07-28T07:18:33.890Z
+last_announcement: 2026-07-29T12:45:53.060Z
 total_files: 0
 generated: 2026-07-28T07:18:39.332Z
 
