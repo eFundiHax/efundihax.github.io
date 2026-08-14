@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 112b5c83e2f79c142565db970584c37b5b28f00129ffb947fea35f030d0d6008@group.calendar.google.com
 title: Maths Club
 last_sync: 2026-05-29T15:05:50.875Z
-last_announcement: 2026-07-21T10:15:35.263Z
+last_announcement: 2026-08-14T13:25:53.413Z
 total_files: 124
 generated: 2026-08-08T11:03:34.594Z
 
