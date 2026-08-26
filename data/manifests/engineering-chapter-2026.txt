@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 
 title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
-last_announcement: —
+last_announcement: 2026-08-26T20:57:00.435Z
 total_files: 0
 generated: 2026-08-26T20:51:13.478Z
 
