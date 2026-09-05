@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax Sync
 // @namespace    https://efundihax.github.io
-// @version      4.0.11
+// @version      4.0.12
 // @description  Syncs eFundi announcements, resources, lessons and calendars to Google Drive via Apps Script
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -19,7 +19,7 @@
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '4.0.11';
+    window.__efhVersion = '4.0.12';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
@@ -134,6 +134,32 @@
     const IMAGE_FORMATS = new Set([
         'png', 'jpg', 'jpeg', 'gif', 'bmp', 'webp'
     ]);
+
+    // Sniff real type from base64 magic bytes (eFundi serves files from extensionless URLs)
+    function sniffExtFromBase64(b64) {
+        try {
+            if (!b64 || b64.length < 8) { return ''; }
+            var bin = atob(b64.slice(0, 20));
+            function b(i) { return bin.charCodeAt(i) & 0xFF; }
+            if (bin.length < 4) { return ''; }
+            if (b(0) === 0xFF && b(1) === 0xD8 && b(2) === 0xFF) { return 'jpg'; }
+            if (b(0) === 0x89 && b(1) === 0x50 && b(2) === 0x4E && b(3) === 0x47) { return 'png'; }
+            if (b(0) === 0x47 && b(1) === 0x49 && b(2) === 0x46 && b(3) === 0x38) { return 'gif'; }
+            if (b(0) === 0x42 && b(1) === 0x4D) { return 'bmp'; }
+            if (b(0) === 0x25 && b(1) === 0x50 && b(2) === 0x44 && b(3) === 0x46) { return 'pdf'; }
+            if (bin.length >= 12 && b(0) === 0x52 && b(1) === 0x49 && b(2) === 0x46 && b(3) === 0x46 && b(8) === 0x57 && b(9) === 0x45 && b(10) === 0x42 && b(11) === 0x50) { return 'webp'; }
+            return '';
+        } catch (e) { return ''; }
+    }
+
+    function correctExt(urlExt, base64Data, fileName) {
+        var sniffed = sniffExtFromBase64(base64Data);
+        if (sniffed && sniffed !== urlExt) {
+            console.log('[ext-sniff] ' + fileName + ': url said "' + urlExt + '", content is "' + sniffed + '"');
+            return sniffed;
+        }
+        return urlExt;
+    }
 
     const PAGE_PICKER_PARAMS = '/PagePicker?returnView=&studentItemId=0&backPath=&bltiAppStores=false' +
         '&errorMessage=&clearAttr=&messageId=&source=summary&title=&newTopLevel=false' +
@@ -1536,6 +1562,7 @@
             var file = result.file;
             var ext = (file.ext || '').toLowerCase();
             var base64Data = result.base64;
+            ext = correctExt(ext, base64Data, file.name);
 
             // U127: PNG fix - check IMAGE_FORMATS with lowercase (e.g. Textbook.PNG -> png)
             if (IMAGE_FORMATS.has(ext)) {
@@ -2112,6 +2139,7 @@
             var file = result.file;
             var ext = (file.ext || '').toLowerCase();
             var base64Data = result.base64;
+            ext = correctExt(ext, base64Data, file.name);
 
             if (IMAGE_FORMATS.has(ext)) {
                 var p1 = processSingleImageFromBase64(base64Data, file.name, file.url, ext).then(function(imageResult) {
@@ -3175,7 +3203,7 @@
     // BOOT
     // ============================================================
 
-    console.log('[eFundiHax Sync] v4.0.11 loaded. URL:', window.location.href);
+    console.log('[eFundiHax Sync] v4.0.12 loaded. URL:', window.location.href);
 
     if (window.self !== window.top) {
         console.log('[eFundiHax Sync] Inside iframe — skipping');
