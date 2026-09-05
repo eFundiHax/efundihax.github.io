@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 0edd80cff580a1120dcb286ec38e30d94277d02d15eaf4a96b119125d6668871@group.calendar.google.com
 title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
-last_announcement: 2026-08-26T20:57:00.435Z
+last_announcement: 2026-09-05T16:04:47.999Z
 total_files: 170
 generated: 2026-08-26T21:52:57.211Z
 
