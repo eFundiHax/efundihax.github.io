@@ -18,6 +18,32 @@
 (function() {
     'use strict';
 
+    window.__efhErrors = window.__efhErrors || [];
+    window.__efhVersion = '4.0.9';
+    function __efhPushErr(msg, src) {
+        try {
+            window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
+            var el = document.getElementById('efh-errors');
+            if (!el) {
+                el = document.createElement('div');
+                el.id = 'efh-errors';
+                el.style.cssText = 'position:fixed;bottom:10px;right:10px;max-width:400px;max-height:150px;overflow:auto;background:#300;color:#fff;padding:8px;font-size:12px;z-index:99999;font-family:monospace;border:2px solid red;border-radius:6px;';
+                document.documentElement.appendChild(el);
+            }
+            el.textContent = 'EFH ERRORS (' + window.__efhErrors.length + '): ' + window.__efhErrors.slice(-3).map(function(e){return e.msg;}).join(' | ');
+            var v = document.getElementById('efh-version');
+            if (!v) {
+                v = document.createElement('div');
+                v.id = 'efh-version';
+                v.style.display = 'none';
+                v.textContent = window.__efhVersion;
+                document.documentElement.appendChild(v);
+            }
+        } catch(e) {}
+    }
+    window.addEventListener('error', function(ev){ __efhPushErr(ev.message + ' @ ' + (ev.filename||'').slice(-40) + ':' + ev.lineno, 'window.onerror'); });
+    window.addEventListener('unhandledrejection', function(ev){ __efhPushErr('unhandled: ' + (ev.reason && ev.reason.message || ev.reason), 'promise'); });
+
     // ============================================================
     // CONFIGURATION
     // ============================================================
