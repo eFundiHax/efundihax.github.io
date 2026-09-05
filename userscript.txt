@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax Sync
 // @namespace    https://efundihax.github.io
-// @version      4.0.10
+// @version      4.0.11
 // @description  Syncs eFundi announcements, resources, lessons and calendars to Google Drive via Apps Script
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -19,7 +19,7 @@
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '4.0.10';
+    window.__efhVersion = '4.0.11';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
@@ -43,6 +43,35 @@
     }
     window.addEventListener('error', function(ev){ __efhPushErr(ev.message + ' @ ' + (ev.filename||'').slice(-40) + ':' + ev.lineno, 'window.onerror'); });
     window.addEventListener('unhandledrejection', function(ev){ __efhPushErr('unhandled: ' + (ev.reason && ev.reason.message || ev.reason), 'promise'); });
+
+    // CONSOLE MIRROR (readable from page as window.__efhConsole, max 300 lines)
+    window.__efhConsole = window.__efhConsole || [];
+    (function() {
+        var levels = ['log', 'warn', 'error'];
+        for (var li = 0; li < levels.length; li++) {
+            (function(lvl) {
+                try {
+                    var orig = console[lvl].bind(console);
+                    console[lvl] = function() {
+                        try {
+                            var s = '';
+                            for (var i = 0; i < arguments.length; i++) {
+                                var v = arguments[i];
+                                var part = '';
+                                try { part = (v && v.stack) ? String(v.stack).split('\n').slice(0, 3).join(' | ') : (typeof v === 'object' ? JSON.stringify(v).slice(0, 300) : String(v)); } catch (e) { part = '[unprintable]'; }
+                                s += (i ? ' ' : '') + part;
+                            }
+                            window.__efhConsole.push(new Date().toISOString().slice(11, 19) + ' ' + lvl.toUpperCase() + ' ' + s.slice(0, 500));
+                            if (window.__efhConsole.length > 300) { window.__efhConsole.splice(0, window.__efhConsole.length - 300); }
+                            try { unsafeWindow.__efhConsole = window.__efhConsole; } catch (e) {}
+                        } catch (e) {}
+                        return orig.apply(null, arguments);
+                    };
+                } catch (e) {}
+            })(levels[li]);
+        }
+        try { unsafeWindow.__efhConsole = window.__efhConsole; } catch (e) {}
+    })();
 
     // ============================================================
     // CONFIGURATION
@@ -3146,7 +3175,7 @@
     // BOOT
     // ============================================================
 
-    console.log('[eFundiHax Sync] v4.0.10 loaded. URL:', window.location.href);
+    console.log('[eFundiHax Sync] v4.0.11 loaded. URL:', window.location.href);
 
     if (window.self !== window.top) {
         console.log('[eFundiHax Sync] Inside iframe — skipping');
