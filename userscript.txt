@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax Sync
 // @namespace    https://efundihax.github.io
-// @version      4.0.9
+// @version      4.0.10
 // @description  Syncs eFundi announcements, resources, lessons and calendars to Google Drive via Apps Script
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -19,7 +19,7 @@
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '4.0.9';
+    window.__efhVersion = '4.0.10';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
@@ -1741,7 +1741,12 @@
     // U102: N+1 PROOF LOGIC (Announcements - use newest)
     // ============================================================
 
-    function getAnnouncements(siteId, siteTitle, isPriority) {
+    function getAnnouncements(siteId, siteTitle, isPriority, depth) {
+        depth = depth || 0;
+        if (depth >= 2) {
+            console.warn('[Announcements] Resync loop cap hit for ' + siteTitle + ' - moving on');
+            return Promise.resolve();
+        }
         console.log('[Announcements] Syncing ' + siteTitle);
         if (isPriority) setIndicator('announcements', 'syncing', 'Checking...');
 
@@ -1788,7 +1793,7 @@
                         if (checkResult.resync === true) {
                             console.log('[Announcements] Proof mismatch - resetting cache');
                             GM_setValue(cacheKey, JSON.stringify([]));
-                            return getAnnouncements(siteId, siteTitle, isPriority);
+                            return getAnnouncements(siteId, siteTitle, isPriority, depth + 1);
                         }
                         setIndicator('announcements', 'ok', 'Up to date');
                         return;
@@ -1820,7 +1825,7 @@
                 if (checkResult.resync === true) {
                     console.log('[Announcements] Proof mismatch - resetting cache');
                     GM_setValue(cacheKey, JSON.stringify([]));
-                    return getAnnouncements(siteId, siteTitle, isPriority);
+                    return getAnnouncements(siteId, siteTitle, isPriority, depth + 1);
                 }
 
                 var newIds = newItems.map(function(a) { return a.announcementId; });
@@ -1845,7 +1850,12 @@
         return (ev.title || '') + '|' + (ev.firstTime && ev.firstTime.time ? ev.firstTime.time : '');
     }
 
-    function syncCalendar(siteId, siteTitle, isPriority) {
+    function syncCalendar(siteId, siteTitle, isPriority, depth) {
+        depth = depth || 0;
+        if (depth >= 2) {
+            console.warn('[Calendar] Resync loop cap hit for ' + siteTitle + ' - moving on');
+            return Promise.resolve();
+        }
         console.log('[Calendar] Syncing ' + siteTitle);
         if (isPriority) setIndicator('calendar', 'syncing', 'Checking...');
 
@@ -1901,7 +1911,7 @@
                         if (checkResult.resync === true) {
                             console.log('[Calendar] Proof mismatch - resetting cache');
                             GM_setValue(cacheKey, JSON.stringify([]));
-                            return syncCalendar(siteId, siteTitle, isPriority);
+                            return syncCalendar(siteId, siteTitle, isPriority, depth + 1);
                         }
                         setIndicator('calendar', 'ok', 'Up to date');
                         return;
@@ -1934,7 +1944,7 @@
                 if (checkResult.resync === true) {
                     console.log('[Calendar] Proof mismatch - resetting cache');
                     GM_setValue(cacheKey, JSON.stringify([]));
-                    return syncCalendar(siteId, siteTitle, isPriority);
+                    return syncCalendar(siteId, siteTitle, isPriority, depth + 1);
                 }
 
                 var newKeys = newEvents.map(getEventKey);
@@ -2867,7 +2877,7 @@
                         return;
                     }
                     var site = queue.shift();
-                    processor(site).then(processNext);
+                    processor(site).then(processNext, processNext);
                 }
                 processNext();
             });
@@ -2900,7 +2910,9 @@
         var pageInfo = getPageInfo();
         var prioritySiteId = pageInfo.siteId && !pageInfo.siteId.match(/^~/) ? pageInfo.siteId : null;
 
-        return feedPromise.then(function() {
+        return feedPromise.catch(function(feedErr) {
+            console.error('[eFundiHax Sync] Registration failed, continuing with schedule anyway:', feedErr && feedErr.message);
+        }).then(function() {
             if (prioritySiteId) {
                 console.log('[U103] Module-first priority: syncing current site first');
                 return syncModuleSite(prioritySiteId, true).then(function() {
@@ -3134,7 +3146,7 @@
     // BOOT
     // ============================================================
 
-    console.log('[eFundiHax Sync] v4.0.6 loaded. URL:', window.location.href);
+    console.log('[eFundiHax Sync] v4.0.10 loaded. URL:', window.location.href);
 
     if (window.self !== window.top) {
         console.log('[eFundiHax Sync] Inside iframe — skipping');
