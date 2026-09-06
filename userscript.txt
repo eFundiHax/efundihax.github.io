@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax Sync
 // @namespace    https://efundihax.github.io
-// @version      4.0.13
+// @version      4.0.14
 // @description  Syncs eFundi announcements, resources, lessons and calendars to Google Drive via Apps Script
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -19,7 +19,7 @@
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '4.0.13';
+    window.__efhVersion = '4.0.14';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
@@ -1563,6 +1563,10 @@
             }).then(function() {
                 batchIndex++;
                 return processNextBatch();
+            }, function(batchErr) {
+                console.warn('[Batch] Continuing after batch error: ' + (batchErr && batchErr.message));
+                batchIndex++;
+                return processNextBatch();
             });
         }
 
@@ -1693,7 +1697,17 @@
             })(results[i]);
         }
 
-        return Promise.all(promises);
+        // v4.0.14: one hung file must never wedge the batch — 240s cap each, failures resolve null
+        var guarded = promises.map(function(pr, idx) {
+            var timeout = new Promise(function(_, reject) {
+                setTimeout(function() { reject(new Error('file-promise-timeout idx=' + idx)); }, 240000);
+            });
+            return Promise.race([pr, timeout]).then(null, function(e) {
+                console.warn('[TIMEOUT] File promise failed, continuing batch: ' + (e && e.message));
+                return null;
+            });
+        });
+        return Promise.all(guarded);
     }
 
     function processSingleImageFromBase64(base64Data, fileName, fileUrl, fileExt) {
@@ -1705,7 +1719,15 @@
 
             var img = new Image();
             img.src = dataUrl;
-            return new Promise(function(resolve) {
+            // v4.0.14: hard 150s timeout — CSP-blocked blob workers never settle, and .catch can't catch a hang
+            var _imgDone = false;
+            var _resolveInner = null;
+            var _imgTimer = setTimeout(function() {
+                if (!_imgDone && _resolveInner) { console.warn('[Image] 150s hard timeout, continuing without OCR: ' + fileName); try { result.images.push({id: 0, filename: fileName, source: fileName, type: 'image/' + fileExt, originalWidth: 0, originalHeight: 0, state: 'extraction_failed', data: null, skip: false}); result.success = true; } catch(eT){} _imgDone = true; _resolveInner(result); }
+            }, 150000);
+            return new Promise(function(_resolve) {
+                _resolveInner = _resolve;
+                var resolve = function(v) { if (!_imgDone) { _imgDone = true; clearTimeout(_imgTimer); _resolve(v); } };
                 img.onload = function() {
                     var width = img.naturalWidth || 0;
                     var height = img.naturalHeight || 0;
@@ -3223,7 +3245,7 @@
     // BOOT
     // ============================================================
 
-    console.log('[eFundiHax Sync] v4.0.13 loaded. URL:', window.location.href);
+    console.log('[eFundiHax Sync] v4.0.14 loaded. URL:', window.location.href);
 
     if (window.self !== window.top) {
         console.log('[eFundiHax Sync] Inside iframe — skipping');
