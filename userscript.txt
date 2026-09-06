@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax Sync
 // @namespace    https://efundihax.github.io
-// @version      4.0.12
+// @version      4.0.13
 // @description  Syncs eFundi announcements, resources, lessons and calendars to Google Drive via Apps Script
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -19,7 +19,7 @@
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '4.0.12';
+    window.__efhVersion = '4.0.13';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
@@ -1241,23 +1241,43 @@
                         }
 
                         if (expandBtn && expandBtn.style.display !== 'none') {
-                            console.log('[U93] Clicking Expand All');
-                            expandBtn.click();
-
-                            setTimeout(function() {
-                                var urls = extractFilesFromDoc(iframeDoc);
-                                console.log('[U93] Extracted ' + urls.length + ' files');
-
-                                var collapseAfter = iframeDoc.querySelector('a.fa-compress[onclick*="doUnexpandall"]');
-                                if (collapseAfter) {
-                                    collapseAfter.click();
+                            console.log('[U93] Clicking Expand All — observing DOM + network');
+                            var startUrls = extractFilesFromDoc(iframeDoc).length;
+                            var moDone = false;
+                            var netIdleTimer = null;
+                            var fallbackTimer = null;
+                            var mo = new MutationObserver(function(){ 
+                                if (moDone) return;
+                                var cur = extractFilesFromDoc(iframeDoc).length;
+                                if (cur > startUrls) {
+                                    if (netIdleTimer) clearTimeout(netIdleTimer);
+                                    netIdleTimer = setTimeout(finish, 800);
                                 }
-
+                            });
+                            try { mo.observe(iframeDoc.body, {childList:true, subtree:true}); } catch(eObs){}
+                            // Also clear timer if Sakai fires resources:expanded
+                            try {
+                                var uw = (typeof unsafeWindow!=='undefined'?unsafeWindow:null) || iframe.contentWindow;
+                                if (uw && uw.jQuery) uw.jQuery(iframeDoc).on('resources:expanded', function(){ if(!moDone) { setTimeout(finish, 400); }});
+                            } catch(eJ){}
+                            function finish(){
+                                if (moDone) return;
+                                moDone = true;
+                                try{ mo.disconnect(); }catch(e){}
+                                if (netIdleTimer) clearTimeout(netIdleTimer);
+                                if (fallbackTimer) clearTimeout(fallbackTimer);
+                                var urls = extractFilesFromDoc(iframeDoc);
+                                console.log('[U93] Extracted ' + urls.length + ' files (was '+startUrls+' before expand)');
+                                var collapseAfter = iframeDoc.querySelector('a.fa-compress[onclick*="doUnexpandall"]');
+                                if (collapseAfter) { try{ collapseAfter.click(); }catch(e){} }
                                 iframe.remove();
                                 clearTimeout(timeout);
                                 resolve(urls);
                                 resolved = true;
-                            }, 3000);
+                            }
+                            expandBtn.click();
+                            netIdleTimer = setTimeout(finish, 1200);
+                            fallbackTimer = setTimeout(function(){ console.log('[U93] expand fallback 15s'); finish(); }, 15000);
                             return;
                         }
 
@@ -3203,7 +3223,7 @@
     // BOOT
     // ============================================================
 
-    console.log('[eFundiHax Sync] v4.0.12 loaded. URL:', window.location.href);
+    console.log('[eFundiHax Sync] v4.0.13 loaded. URL:', window.location.href);
 
     if (window.self !== window.top) {
         console.log('[eFundiHax Sync] Inside iframe — skipping');
