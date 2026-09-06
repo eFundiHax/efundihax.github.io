@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-06T10:52:03.542Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -23,8 +23,8 @@ calendar_id: ee5a07338688feca410e489f64240c075690873ce0a26797c01ca124e80957f1@gr
 title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
 last_announcement: 2026-09-06T13:12:39.573Z
-total_files: 1199
-generated: 2026-08-26T20:55:33.624Z
+total_files: 1237
+generated: 2026-09-06T13:14:32.369Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type)
@@ -1227,6 +1227,44 @@ INCOMPATIBLE | Group Mech 4 Mechanical&ElectroMechanical Eng - First years.pdf |
 INCOMPATIBLE | PPEP171_SEECE_GroupList_2026_Ver-2 27 March 2026.pdf | pdf | 2026-08-24T07:05:49.950Z | announcement_attachment
 INCOMPATIBLE | Chemical Eng Class Groups.pdf | pdf | 2026-08-26T20:55:32.794Z | announcement_attachment
 INCOMPATIBLE | PPEP171_SEECE_GroupList_Wiring_2026.pdf | pdf | 2026-08-26T20:55:32.794Z | announcement_attachment
+NOT_SYNCED | Chemical Eng Class Groups.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_SEECE_GroupList_Wiring_2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_SEECE_Wiring.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | Industrial Eng Group  - First years.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_SEECE_GroupList_2026_Ver-4.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_SEECE_GroupList_2026_Ver-3.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+INCOMPATIBLE | Test456.hex | hex | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_SEECE_GroupList_2026_Ver-2 14 April 2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | Group Mech 4 Mechanical&ElectroMechanical Eng - First years.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_SEECE_GroupList_2026_Ver-2 27 March 2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_SEECE_GroupList_2026_Ver-2 24 March 2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | Workshop Rotation.docx | docx | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | Group Mech 3 Mechanical Eng - First years.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_SEECE_GroupList_20March2026_Ver-1.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_SEECE_GroupList_17March2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | SDCC.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_SEECE_GroupList_16March2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | Roll Mechanical Eng - First years.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | PPEP171_GroupList_2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | Rekening Info 1.png | png | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | Major Groups.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+NOT_SYNCED | Doc1.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment
+INCOMPATIBLE | Chemical Eng Class Groups.pdf | pdf | 2026-09-06T13:14:31.358Z | announcement_attachment
+INCOMPATIBLE | PPEP171_SEECE_GroupList_Wiring_2026.pdf | pdf | 2026-09-06T13:14:31.358Z | announcement_attachment
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
