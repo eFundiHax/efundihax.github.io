@@ -23,187 +23,188 @@ calendar_id: 112b5c83e2f79c142565db970584c37b5b28f00129ffb947fea35f030d0d6008@gr
 title: Maths Club
 last_sync: 2026-05-29T15:05:50.875Z
 last_announcement: 2026-09-05T16:17:49.904Z
-total_files: 176
-generated: 2026-09-06T15:42:27.811Z
+total_files: 177
+generated: 2026-09-06T17:30:48.763Z
 
 --- FILE REGISTRY ---
-(status | filename | extension | last_seen | type)
-NOT_SYNCED | Eureka newsletter January 2025.pdf | pdf | 2026-06-06T19:38:54.158Z | resource
-NOT_SYNCED | Eureka newsletter March 2025.pdf | pdf | 2026-06-06T19:38:54.158Z | resource
-NOT_SYNCED | Maths club pi 2026.xlsx | xlsx | 2026-06-06T19:38:54.158Z | resource
-SYNCED | Categories.pdf | pdf | 2026-06-06T19:38:54.158Z | resource
-SYNCED | Groups.pdf | pdf | 2026-06-06T19:38:54.158Z | resource
-SYNCED | Partially ordered sets.pdf | pdf | 2026-06-06T19:38:54.158Z | resource
-SYNCED | Topological spaces.pdf | pdf | 2026-06-06T19:38:54.158Z | resource
-SYNCED | Massuress_3.pdf | pdf | 2026-06-06T19:31:19.620Z | announcement_attachment
-NOT_SYNCED | Massuress_3.pdf | pdf | 2026-06-06T20:55:22.197Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-06-06T20:55:38.581Z | announcement_attachment
-NOT_SYNCED | Massuress_3.pdf | pdf | 2026-06-06T21:07:14.282Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-06-06T21:07:31.249Z | announcement_attachment
-NOT_SYNCED | Massuress_3.pdf | pdf | 2026-06-21T09:59:05.166Z | announcement_attachment
-NOT_SYNCED | Massuress_3.pdf | pdf | 2026-06-21T09:59:22.867Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-06-21T09:59:44.058Z | announcement_attachment
-NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-14T08:59:51.019Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-14T09:00:09.126Z | announcement_attachment
-IMAGES_NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-14T09:01:37.089Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-14T09:59:48.546Z | announcement_attachment
-IMAGES_NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-14T10:00:04.729Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-14T10:47:41.806Z | announcement_attachment
-IMAGES_NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-14T10:47:57.179Z | announcement_attachment
-NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-15T09:38:54.050Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T09:39:09.522Z | announcement_attachment
-IMAGES_NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-15T09:39:42.992Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T09:47:52.733Z | announcement_attachment
-IMAGES_NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-15T09:48:35.908Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T11:57:09.633Z | announcement_attachment
-IMAGES_NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-15T11:57:41.286Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T12:07:33.100Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T13:58:27.278Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-15T13:58:53.701Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T14:13:31.596Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-15T14:13:51.106Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T14:14:52.914Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-15T14:15:08.686Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T14:27:42.823Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-15T14:28:02.331Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T14:31:21.692Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-15T14:31:45.840Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T14:35:08.049Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-15T14:35:31.756Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T14:40:31.750Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-15T14:40:50.994Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T14:47:00.275Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-15T14:47:16.322Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T15:42:19.457Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-15T15:42:36.531Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T15:56:00.637Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-15T15:56:21.809Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T16:01:00.890Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-15T16:01:28.459Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T17:01:33.913Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-15T17:02:06.723Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-16T10:47:30.838Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-16T10:47:48.647Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-17T07:52:46.691Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-17T07:53:05.338Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-17T08:11:40.392Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-17T08:11:59.845Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-17T08:50:44.269Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-17T08:51:56.886Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-17T08:52:14.914Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-21T10:15:50.098Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-21T10:20:25.100Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-21T10:50:42.301Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-21T10:51:04.804Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-24T07:39:43.045Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-24T09:39:01.548Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-24T09:39:19.122Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-24T09:53:53.504Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-24T09:54:10.297Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-24T12:41:40.563Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-24T12:42:03.946Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-27T17:48:08.886Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-27T17:48:27.436Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-28T07:20:41.029Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-28T07:21:34.915Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-28T07:24:27.861Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-28T07:25:52.645Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-28T07:26:12.538Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-28T07:39:20.882Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-28T07:39:40.041Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-28T07:40:39.783Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-28T07:40:57.804Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-28T07:42:12.424Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-28T07:42:30.459Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-29T11:36:35.121Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-29T11:36:58.715Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-29T12:47:25.693Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-29T12:47:44.713Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-29T12:48:34.478Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-29T12:48:53.921Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-29T12:49:22.758Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-29T12:49:39.468Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-29T14:39:40.803Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-29T14:39:58.830Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-29T14:46:50.996Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-29T14:47:12.213Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-30T12:18:07.177Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-07-30T12:18:26.461Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-03T05:35:38.842Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-08-03T05:35:56.989Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-03T05:45:50.280Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-08-03T05:46:05.648Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-03T09:02:11.169Z | announcement_attachment
-INCOMPATIBLE | Categories.pdf | pdf | 2026-08-03T09:05:17.264Z | resource
-INCOMPATIBLE | Groups.pdf | pdf | 2026-08-03T09:05:17.264Z | resource
-INCOMPATIBLE | Integration_and_Differentiation_Bee_Competition.pdf | pdf | 2026-08-03T09:05:17.264Z | resource
-INCOMPATIBLE | Partially ordered sets.pdf | pdf | 2026-08-03T09:05:17.264Z | resource
-INCOMPATIBLE | Topological spaces.pdf | pdf | 2026-08-03T09:05:17.264Z | resource
-IMAGES_NOT_SYNCED | Groups.pdf | pdf | 2026-08-03T09:05:40.624Z | resource
-IMAGES_NOT_SYNCED | Partially ordered sets.pdf | pdf | 2026-08-03T09:06:08.620Z | resource
-IMAGES_NOT_SYNCED | Topological spaces.pdf | pdf | 2026-08-03T09:06:38.751Z | resource
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-05T14:07:00.110Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-08-05T14:07:17.583Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-07T07:48:53.116Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-08-07T07:49:13.216Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-07T10:28:54.783Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-08-07T10:29:15.012Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-07T15:08:54.140Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-08-07T15:09:11.127Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-08T11:02:47.526Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-08-08T11:03:04.681Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-14T13:26:11.243Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-08-14T13:26:29.558Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-14T13:41:18.597Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-08-14T13:41:37.293Z | announcement_attachment
-INCOMPATIBLE | Categories.pdf | pdf | 2026-08-19T16:00:12.838Z | resource
-INCOMPATIBLE | Groups.pdf | pdf | 2026-08-19T16:00:12.838Z | resource
-INCOMPATIBLE | Integration_and_Differentiation_Bee_Competition.pdf | pdf | 2026-08-19T16:00:12.838Z | resource
-INCOMPATIBLE | Partially ordered sets.pdf | pdf | 2026-08-19T16:00:12.838Z | resource
-INCOMPATIBLE | Topological spaces.pdf | pdf | 2026-08-19T16:00:12.838Z | resource
-INCOMPATIBLE | Eureka newsletter January 2025.pdf | pdf | 2026-08-19T16:00:35.898Z | resource
-INCOMPATIBLE | Eureka newsletter March 2025.pdf | pdf | 2026-08-19T16:00:35.898Z | resource
-INCOMPATIBLE | Maths club pi 2026.xlsx | xlsx | 2026-08-19T16:00:35.898Z | resource
-INCOMPATIBLE | Categories.pdf | pdf | 2026-08-19T16:00:35.898Z | resource
-INCOMPATIBLE | Groups.pdf | pdf | 2026-08-19T16:00:35.898Z | resource
-NOT_SYNCED | Integration_and_Differentiation_Bee_Competition.pdf | pdf | 2026-08-19T16:00:35.898Z | resource
-NOT_SYNCED | Partially ordered sets.pdf | pdf | 2026-08-19T16:00:35.898Z | resource
-NOT_SYNCED | Topological spaces.pdf | pdf | 2026-08-19T16:00:35.898Z | resource
-SYNCED | Eureka newsletter March 2025.pdf | pdf | 2026-08-19T16:47:26.225Z | resource
-IMAGES_NOT_SYNCED | Categories.pdf | pdf | 2026-08-19T17:04:43.495Z | resource
-IMAGES_NOT_SYNCED | Integration_and_Differentiation_Bee_Competition.pdf | pdf | 2026-08-19T18:03:10.838Z | resource
-IMAGES_NOT_SYNCED | Topological spaces.pdf | pdf | 2026-08-19T18:11:43.648Z | resource
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-19T18:12:09.001Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-08-19T18:12:29.365Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-19T19:22:55.900Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-08-19T19:23:16.673Z | announcement_attachment
-INCOMPATIBLE | Eureka newsletter January 2025.pdf | pdf | 2026-08-19T19:24:03.549Z | resource
-INCOMPATIBLE | Eureka newsletter March 2025.pdf | pdf | 2026-08-19T19:24:03.549Z | resource
-INCOMPATIBLE | Maths club pi 2026.xlsx | xlsx | 2026-08-19T19:24:03.549Z | resource
-INCOMPATIBLE | Categories.pdf | pdf | 2026-08-19T19:24:03.549Z | resource
-INCOMPATIBLE | Groups.pdf | pdf | 2026-08-19T19:24:03.549Z | resource
-NOT_SYNCED | Integration_and_Differentiation_Bee_Competition.pdf | pdf | 2026-08-19T19:24:03.549Z | resource
-NOT_SYNCED | Partially ordered sets.pdf | pdf | 2026-08-19T19:24:03.549Z | resource
-NOT_SYNCED | Topological spaces.pdf | pdf | 2026-08-19T19:24:03.549Z | resource
-SYNCED | Eureka newsletter March 2025.pdf | pdf | 2026-08-19T19:37:47.127Z | resource
-IMAGES_NOT_SYNCED | Categories.pdf | pdf | 2026-08-19T19:49:43.044Z | resource
-IMAGES_NOT_SYNCED | Integration_and_Differentiation_Bee_Competition.pdf | pdf | 2026-08-19T19:54:43.385Z | resource
-IMAGES_NOT_SYNCED | Topological spaces.pdf | pdf | 2026-08-19T20:03:43.173Z | resource
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-19T20:04:22.279Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-08-19T20:04:40.222Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-21T12:32:14.741Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-08-21T12:32:31.317Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-31T08:46:07.154Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-08-31T08:46:32.715Z | announcement_attachment
-NOT_SYNCED | Massuress_3.pdf | pdf | 2026-09-05T16:17:47.775Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-09-05T16:18:10.150Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-09-05T16:18:33.018Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-09-06T14:17:38.209Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-09-06T14:17:56.402Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-09-06T14:57:11.364Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-09-06T14:57:27.687Z | announcement_attachment
-INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-09-06T15:41:27.667Z | announcement_attachment
-SYNCED | Massuress_3.pdf | pdf | 2026-09-06T15:41:49.693Z | announcement_attachment
+(status | filename | extension | last_seen | type | url)
+NOT_SYNCED | Eureka newsletter January 2025.pdf | pdf | 2026-06-06T19:38:54.158Z | resource | 
+NOT_SYNCED | Eureka newsletter March 2025.pdf | pdf | 2026-06-06T19:38:54.158Z | resource | 
+NOT_SYNCED | Maths club pi 2026.xlsx | xlsx | 2026-06-06T19:38:54.158Z | resource | 
+SYNCED | Categories.pdf | pdf | 2026-06-06T19:38:54.158Z | resource | 
+SYNCED | Groups.pdf | pdf | 2026-06-06T19:38:54.158Z | resource | 
+SYNCED | Partially ordered sets.pdf | pdf | 2026-06-06T19:38:54.158Z | resource | 
+SYNCED | Topological spaces.pdf | pdf | 2026-06-06T19:38:54.158Z | resource | 
+SYNCED | Massuress_3.pdf | pdf | 2026-06-06T19:31:19.620Z | announcement_attachment | 
+NOT_SYNCED | Massuress_3.pdf | pdf | 2026-06-06T20:55:22.197Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-06-06T20:55:38.581Z | announcement_attachment | 
+NOT_SYNCED | Massuress_3.pdf | pdf | 2026-06-06T21:07:14.282Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-06-06T21:07:31.249Z | announcement_attachment | 
+NOT_SYNCED | Massuress_3.pdf | pdf | 2026-06-21T09:59:05.166Z | announcement_attachment | 
+NOT_SYNCED | Massuress_3.pdf | pdf | 2026-06-21T09:59:22.867Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-06-21T09:59:44.058Z | announcement_attachment | 
+NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-14T08:59:51.019Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-14T09:00:09.126Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-14T09:01:37.089Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-14T09:59:48.546Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-14T10:00:04.729Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-14T10:47:41.806Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-14T10:47:57.179Z | announcement_attachment | 
+NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-15T09:38:54.050Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T09:39:09.522Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-15T09:39:42.992Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T09:47:52.733Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-15T09:48:35.908Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T11:57:09.633Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Massuress_3.pdf | pdf | 2026-07-15T11:57:41.286Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T12:07:33.100Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T13:58:27.278Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-15T13:58:53.701Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T14:13:31.596Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-15T14:13:51.106Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T14:14:52.914Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-15T14:15:08.686Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T14:27:42.823Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-15T14:28:02.331Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T14:31:21.692Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-15T14:31:45.840Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T14:35:08.049Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-15T14:35:31.756Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T14:40:31.750Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-15T14:40:50.994Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T14:47:00.275Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-15T14:47:16.322Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T15:42:19.457Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-15T15:42:36.531Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T15:56:00.637Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-15T15:56:21.809Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T16:01:00.890Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-15T16:01:28.459Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-15T17:01:33.913Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-15T17:02:06.723Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-16T10:47:30.838Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-16T10:47:48.647Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-17T07:52:46.691Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-17T07:53:05.338Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-17T08:11:40.392Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-17T08:11:59.845Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-17T08:50:44.269Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-17T08:51:56.886Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-17T08:52:14.914Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-21T10:15:50.098Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-21T10:20:25.100Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-21T10:50:42.301Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-21T10:51:04.804Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-24T07:39:43.045Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-24T09:39:01.548Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-24T09:39:19.122Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-24T09:53:53.504Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-24T09:54:10.297Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-24T12:41:40.563Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-24T12:42:03.946Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-27T17:48:08.886Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-27T17:48:27.436Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-28T07:20:41.029Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-28T07:21:34.915Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-28T07:24:27.861Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-28T07:25:52.645Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-28T07:26:12.538Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-28T07:39:20.882Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-28T07:39:40.041Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-28T07:40:39.783Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-28T07:40:57.804Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-28T07:42:12.424Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-28T07:42:30.459Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-29T11:36:35.121Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-29T11:36:58.715Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-29T12:47:25.693Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-29T12:47:44.713Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-29T12:48:34.478Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-29T12:48:53.921Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-29T12:49:22.758Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-29T12:49:39.468Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-29T14:39:40.803Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-29T14:39:58.830Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-29T14:46:50.996Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-29T14:47:12.213Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-07-30T12:18:07.177Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-07-30T12:18:26.461Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-03T05:35:38.842Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-08-03T05:35:56.989Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-03T05:45:50.280Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-08-03T05:46:05.648Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-03T09:02:11.169Z | announcement_attachment | 
+INCOMPATIBLE | Categories.pdf | pdf | 2026-08-03T09:05:17.264Z | resource | 
+INCOMPATIBLE | Groups.pdf | pdf | 2026-08-03T09:05:17.264Z | resource | 
+INCOMPATIBLE | Integration_and_Differentiation_Bee_Competition.pdf | pdf | 2026-08-03T09:05:17.264Z | resource | 
+INCOMPATIBLE | Partially ordered sets.pdf | pdf | 2026-08-03T09:05:17.264Z | resource | 
+INCOMPATIBLE | Topological spaces.pdf | pdf | 2026-08-03T09:05:17.264Z | resource | 
+IMAGES_NOT_SYNCED | Groups.pdf | pdf | 2026-08-03T09:05:40.624Z | resource | 
+IMAGES_NOT_SYNCED | Partially ordered sets.pdf | pdf | 2026-08-03T09:06:08.620Z | resource | 
+IMAGES_NOT_SYNCED | Topological spaces.pdf | pdf | 2026-08-03T09:06:38.751Z | resource | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-05T14:07:00.110Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-08-05T14:07:17.583Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-07T07:48:53.116Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-08-07T07:49:13.216Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-07T10:28:54.783Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-08-07T10:29:15.012Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-07T15:08:54.140Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-08-07T15:09:11.127Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-08T11:02:47.526Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-08-08T11:03:04.681Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-14T13:26:11.243Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-08-14T13:26:29.558Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-14T13:41:18.597Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-08-14T13:41:37.293Z | announcement_attachment | 
+INCOMPATIBLE | Categories.pdf | pdf | 2026-08-19T16:00:12.838Z | resource | 
+INCOMPATIBLE | Groups.pdf | pdf | 2026-08-19T16:00:12.838Z | resource | 
+INCOMPATIBLE | Integration_and_Differentiation_Bee_Competition.pdf | pdf | 2026-08-19T16:00:12.838Z | resource | 
+INCOMPATIBLE | Partially ordered sets.pdf | pdf | 2026-08-19T16:00:12.838Z | resource | 
+INCOMPATIBLE | Topological spaces.pdf | pdf | 2026-08-19T16:00:12.838Z | resource | 
+INCOMPATIBLE | Eureka newsletter January 2025.pdf | pdf | 2026-08-19T16:00:35.898Z | resource | 
+INCOMPATIBLE | Eureka newsletter March 2025.pdf | pdf | 2026-08-19T16:00:35.898Z | resource | 
+INCOMPATIBLE | Maths club pi 2026.xlsx | xlsx | 2026-08-19T16:00:35.898Z | resource | 
+INCOMPATIBLE | Categories.pdf | pdf | 2026-08-19T16:00:35.898Z | resource | 
+INCOMPATIBLE | Groups.pdf | pdf | 2026-08-19T16:00:35.898Z | resource | 
+NOT_SYNCED | Integration_and_Differentiation_Bee_Competition.pdf | pdf | 2026-08-19T16:00:35.898Z | resource | 
+NOT_SYNCED | Partially ordered sets.pdf | pdf | 2026-08-19T16:00:35.898Z | resource | 
+NOT_SYNCED | Topological spaces.pdf | pdf | 2026-08-19T16:00:35.898Z | resource | 
+SYNCED | Eureka newsletter March 2025.pdf | pdf | 2026-08-19T16:47:26.225Z | resource | 
+IMAGES_NOT_SYNCED | Categories.pdf | pdf | 2026-08-19T17:04:43.495Z | resource | 
+IMAGES_NOT_SYNCED | Integration_and_Differentiation_Bee_Competition.pdf | pdf | 2026-08-19T18:03:10.838Z | resource | 
+IMAGES_NOT_SYNCED | Topological spaces.pdf | pdf | 2026-08-19T18:11:43.648Z | resource | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-19T18:12:09.001Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-08-19T18:12:29.365Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-19T19:22:55.900Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-08-19T19:23:16.673Z | announcement_attachment | 
+INCOMPATIBLE | Eureka newsletter January 2025.pdf | pdf | 2026-08-19T19:24:03.549Z | resource | 
+INCOMPATIBLE | Eureka newsletter March 2025.pdf | pdf | 2026-08-19T19:24:03.549Z | resource | 
+INCOMPATIBLE | Maths club pi 2026.xlsx | xlsx | 2026-08-19T19:24:03.549Z | resource | 
+INCOMPATIBLE | Categories.pdf | pdf | 2026-08-19T19:24:03.549Z | resource | 
+INCOMPATIBLE | Groups.pdf | pdf | 2026-08-19T19:24:03.549Z | resource | 
+NOT_SYNCED | Integration_and_Differentiation_Bee_Competition.pdf | pdf | 2026-08-19T19:24:03.549Z | resource | 
+NOT_SYNCED | Partially ordered sets.pdf | pdf | 2026-08-19T19:24:03.549Z | resource | 
+NOT_SYNCED | Topological spaces.pdf | pdf | 2026-08-19T19:24:03.549Z | resource | 
+SYNCED | Eureka newsletter March 2025.pdf | pdf | 2026-08-19T19:37:47.127Z | resource | 
+IMAGES_NOT_SYNCED | Categories.pdf | pdf | 2026-08-19T19:49:43.044Z | resource | 
+IMAGES_NOT_SYNCED | Integration_and_Differentiation_Bee_Competition.pdf | pdf | 2026-08-19T19:54:43.385Z | resource | 
+IMAGES_NOT_SYNCED | Topological spaces.pdf | pdf | 2026-08-19T20:03:43.173Z | resource | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-19T20:04:22.279Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-08-19T20:04:40.222Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-21T12:32:14.741Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-08-21T12:32:31.317Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-08-31T08:46:07.154Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-08-31T08:46:32.715Z | announcement_attachment | 
+NOT_SYNCED | Massuress_3.pdf | pdf | 2026-09-05T16:17:47.775Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-09-05T16:18:10.150Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-09-05T16:18:33.018Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-09-06T14:17:38.209Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-09-06T14:17:56.402Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-09-06T14:57:11.364Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-09-06T14:57:27.687Z | announcement_attachment | 
+INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-09-06T15:41:27.667Z | announcement_attachment | 
+SYNCED | Massuress_3.pdf | pdf | 2026-09-06T15:41:49.693Z | announcement_attachment | 
+NOT_SYNCED | Massuress_3.pdf | pdf | 2026-09-06T17:30:46.275Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f483045c-098a-4650-820f-a2c8397e697b/Announcements/3ee97574-b8bc-4614-b002-5be6bb1311f1/Massuress_3.pdf
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
