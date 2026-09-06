@@ -402,17 +402,16 @@ async function fetchManifest(manifestId) {
   const lines = text.split('\n');
   let inFiles = false;
   for (const line of lines) {
-    if (line.trim() === '--- FILES ---') { inFiles = true; continue; }
+    const t = line.trim();
+    if (t === '--- FILE REGISTRY ---' || t === '--- FILES ---') { inFiles = true; continue; }
+    if (t.startsWith('--- ') && inFiles) break;
     if (!inFiles) continue;
-    if (line.trim() === '') continue;
+    if (t === '' || t.startsWith('(')) continue;
     const parts = line.split(' | ');
-    if (parts.length >= 4) {
-      files.push({
-        status: parts[0].trim(),
-        name: parts[1].trim(),
-        ext: parts[2].trim(),
-        url: parts[3].trim()
-      });
+    if (parts.length >= 6) {
+      files.push({ status: parts[0].trim(), name: parts[1].trim(), ext: parts[2].trim(), last_seen: parts[3].trim(), type: parts[4].trim(), url: parts[5].trim() });
+    } else if (parts.length >= 4) {
+      files.push({ status: parts[0].trim(), name: parts[1].trim(), ext: parts[2].trim(), url: parts[3].trim() });
     }
   }
   return files;
@@ -567,12 +566,22 @@ function initSlideshow() {
 // ============================================================
 // COPY ALL LINKS
 // ============================================================
-function initCopyAll(files) {
+function initCopyAll(files, worksite) {
   const btn = document.getElementById('copyAllLinksBtn');
+  if (!btn) return;
   btn.addEventListener('click', async () => {
-    const urls = files.map(f => f.url).filter(Boolean);
-    if (!urls.length) return;
-    await navigator.clipboard.writeText(urls.join('\n'));
+    const driveLinks = [];
+    if (worksite?.folderUrl) driveLinks.push(worksite.folderUrl);
+    if (worksite?.masterDocUrl) driveLinks.push(worksite.masterDocUrl);
+    if (worksite?.spreadsheetUrl) driveLinks.push(worksite.spreadsheetUrl);
+    if (worksite?.manifestId) driveLinks.push(`https://drive.google.com/file/d/${worksite.manifestId}/view`);
+    // Also include per-file eFundi source URLs for reference (optional second block)
+    const fileUrls = files.map(f => f.url).filter(Boolean);
+    const all = driveLinks.length ? driveLinks : fileUrls;
+    // If both exist, put Drive links first then file sources
+    const toCopy = driveLinks.length && fileUrls.length ? [...driveLinks, '', '# eFundi source URLs', ...fileUrls] : all;
+    if (!toCopy.length) return;
+    try { await navigator.clipboard.writeText(toCopy.join('\n')); } catch (e) { prompt('Copy these links:', toCopy.join('\n')); return; }
     const orig = btn.innerHTML;
     btn.innerHTML = '<span class="material-symbols-outlined text-sm">check</span>Copied!';
     setTimeout(() => btn.innerHTML = orig, 2000);
@@ -658,7 +667,7 @@ async function init() {
     const res = await fetch(WORKSITES_JSON);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const list = await res.json();
-    worksite = list.find(w => w.slug === slug);
+    worksite = list.find(w => w.slug.toLowerCase().replace(/[_\-]/g,'') === slug.toLowerCase().replace(/[_\-]/g,'')) || list.find(w => w.slug === slug);
   } catch (e) { showError('Failed to load worksite list', e.message); return; }
   if (!worksite) { showError(`Worksite "${slug}" not found`, 'Run a sync to register it.'); return; }
 
@@ -707,7 +716,23 @@ async function init() {
   renderAnnouncements(annRows);
   renderDates(calRows);
   renderResources(manifestFiles);
-  initCopyAll(manifestFiles);
+  // Direct eFundi link (stored as site_id on Drive, exposed as efundiUrl in worksites.json)
+  if (worksite.efundiUrl || worksite.siteId) {
+    const eUrl = worksite.efundiUrl || `https://efundi.nwu.ac.za/portal/site/${worksite.siteId}`;
+    let eBtn = document.getElementById('openEfundiBtn');
+    if (!eBtn) {
+      const header = document.querySelector('#siteTitle')?.parentElement || document.querySelector('h1')?.parentElement;
+      if (header) {
+        eBtn = document.createElement('a');
+        eBtn.id = 'openEfundiBtn';
+        eBtn.href = eUrl; eBtn.target = '_blank'; eBtn.rel = 'noopener';
+        eBtn.className = 'ml-2 inline-flex items-center gap-1 bevel-out bg-surface-container-high text-on-surface font-label font-black text-[10px] px-2 py-1 uppercase tracking-widest hover:brightness-110';
+        eBtn.innerHTML = '<span class="material-symbols-outlined text-[14px]">open_in_new</span>Open in eFundi';
+        header.appendChild(eBtn);
+      }
+    } else { eBtn.href = eUrl; }
+  }
+  initCopyAll(manifestFiles, worksite);
 
   if (calRows.length) {
     document.getElementById('downloadIcsBtn').addEventListener('click', () => {
