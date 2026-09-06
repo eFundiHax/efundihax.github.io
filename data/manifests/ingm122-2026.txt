@@ -19,818 +19,820 @@ https://greasyfork.org/en/scripts/579058-efundi-scraper
 
 emoji: 📘
 color: #6b3d8f
-calendar_id: 90b43f19ac56e70f68afa24093cc5f81d699c7b090f91eae0de1d1fbd9ad62f2@group.calendar.google.com
+calendar_id: df301682f984fb6ab03b94c06ea876bc12389024155ffe0c2cc260ffc3af5bc7@group.calendar.google.com
 title: INGM122-2026
 last_sync: 2026-09-06T17:33:44.983Z
 last_announcement: 2026-09-06T14:13:56.588Z
-total_files: 803
-generated: 2026-09-06T15:45:16.030Z
+total_files: 805
+generated: 2026-09-06T17:34:04.604Z
 
 --- FILE REGISTRY ---
-(status | filename | extension | last_seen | type)
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-17T08:10:53.349Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-17T08:10:53.349Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-17T08:10:53.349Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-17T08:50:09.596Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-17T08:50:09.596Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-17T08:50:09.596Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-17T08:51:20.926Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-17T08:51:20.926Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-17T08:51:20.926Z | announcement_attachment
-NOT_SYNCED | PPE.pdf | pdf | 2026-07-24T07:37:46.296Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T07:38:14.572Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T07:38:14.572Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T07:38:14.572Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T07:38:14.572Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T07:38:14.572Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T07:38:30.564Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T07:39:05.965Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T07:39:05.965Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T07:39:05.965Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T07:39:05.965Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T07:39:05.965Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T07:39:18.439Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T07:40:50.116Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T07:40:50.116Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T07:40:50.116Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T07:40:50.116Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T07:40:50.116Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T07:41:13.622Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T07:41:13.622Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T07:41:13.622Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T07:41:13.622Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T07:41:13.622Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T07:41:26.898Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T07:42:03.198Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T07:42:03.198Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T07:42:03.198Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T07:42:03.198Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T07:42:03.198Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T07:42:14.283Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:08:14.519Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:08:14.519Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:08:14.519Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:08:14.519Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:08:14.519Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:08:26.087Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:21:36.596Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:21:36.596Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:21:36.596Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:21:36.596Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:21:36.596Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:22:49.962Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:22:49.962Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:22:49.962Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:22:49.962Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:22:49.962Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:23:04.318Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:23:42.664Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:23:42.664Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:23:42.664Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:23:42.664Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:23:42.664Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:23:56.054Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:25:28.046Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:25:28.046Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:25:28.046Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:25:28.046Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:25:28.046Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:25:43.053Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:26:17.475Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:26:17.475Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:26:17.475Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:26:17.475Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:26:17.475Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:26:30.664Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:27:07.132Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:27:07.132Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:27:07.132Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:27:07.132Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:27:07.132Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:27:20.419Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:27:49.064Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:27:49.064Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:27:49.064Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:27:49.064Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:27:49.064Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:28:01.659Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:28:33.935Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:28:33.935Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:28:33.935Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:28:33.935Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:28:33.935Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:28:47.309Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:29:40.186Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:29:40.186Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:29:40.186Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:29:40.186Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:29:40.186Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:29:51.646Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:30:21.595Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:30:21.595Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:30:21.595Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:30:21.595Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:30:21.595Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:30:34.957Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:31:40.658Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:31:40.658Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:31:40.658Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:31:40.658Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:31:40.658Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:31:52.999Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:32:25.153Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:32:25.153Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:32:25.153Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:32:25.153Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:32:25.153Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:32:39.775Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:33:26.287Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:33:26.287Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:33:26.287Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:33:26.287Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:33:26.287Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:33:44.378Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:33:44.378Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:33:44.378Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:33:44.378Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:33:44.378Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:33:55.936Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:34:29.042Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:34:29.042Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:34:29.042Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:34:29.042Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:34:29.042Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:34:41.389Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:36:19.162Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:36:19.162Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:36:19.162Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:36:19.162Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:36:19.162Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:36:30.684Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:37:08.652Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:37:08.652Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:37:08.652Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:37:08.652Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:37:08.652Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:37:20.447Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:37:45.170Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:37:45.170Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:37:45.170Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:37:45.170Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:37:45.170Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:37:56.840Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:38:28.951Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:38:28.951Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:38:28.951Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:38:28.951Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:38:28.951Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:38:40.665Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:41:50.887Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:41:50.887Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:41:50.887Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:41:50.887Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:41:50.887Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:42:03.214Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:42:20.374Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:42:20.374Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:42:20.374Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:42:20.374Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:42:20.374Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:42:33.193Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:43:09.367Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:43:09.367Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:43:09.367Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:43:09.367Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:43:09.367Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:43:21.469Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:44:05.611Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:44:05.611Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:44:05.611Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:44:05.611Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:44:05.611Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:44:18.205Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:44:53.086Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:44:53.086Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:44:53.086Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:44:53.086Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:44:53.086Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:45:05.151Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:46:45.671Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:46:45.671Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:46:45.671Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:46:45.671Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:46:45.671Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:47:03.502Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:47:03.502Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:47:03.502Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:47:03.502Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:47:03.502Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:47:18.807Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:48:02.280Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:48:02.280Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:48:02.280Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:48:02.280Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:48:02.280Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:48:13.963Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:48:44.002Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:48:44.002Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:48:44.002Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:48:44.002Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:48:44.002Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:49:12.876Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:49:12.876Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:49:12.876Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:49:12.876Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:49:12.876Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:49:31.443Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:49:31.443Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:49:31.443Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:49:31.443Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:49:31.443Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:49:54.154Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:49:54.154Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:49:54.154Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:49:54.154Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:49:54.154Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:50:15.702Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:50:15.702Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:50:15.702Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:50:15.702Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:50:15.702Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:50:28.784Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:50:58.940Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:50:58.940Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:50:58.940Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:50:58.940Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:50:58.940Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:51:10.929Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:52:22.865Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:52:22.865Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:52:22.865Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:52:22.865Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:52:22.865Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:52:35.762Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:53:11.772Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:53:11.772Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:53:11.772Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:53:11.772Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:53:11.772Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T09:53:30.023Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T11:41:10.445Z | announcement_attachment
-INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T11:41:10.445Z | announcement_attachment
-INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T11:41:10.445Z | announcement_attachment
-INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T11:41:10.445Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T11:41:10.445Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-24T11:41:23.319Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T15:55:25.903Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-26T15:55:37.952Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T15:55:56.645Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-26T15:56:08.895Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T15:56:43.895Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-26T15:56:56.083Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T15:58:00.575Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-26T15:58:12.795Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T15:59:05.179Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-26T15:59:20.940Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T15:59:55.839Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-26T16:00:07.524Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T16:01:54.697Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-26T16:02:08.045Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T16:02:44.356Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-26T16:02:57.586Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T16:44:29.133Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-26T16:44:46.378Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T16:45:26.426Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-26T16:45:42.569Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-27T17:35:25.614Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-27T17:35:42.326Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-27T17:36:47.319Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-27T17:37:04.198Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-27T17:37:34.626Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-27T17:37:47.364Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-27T17:40:33.714Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-27T17:40:49.410Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-27T17:41:19.730Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-27T17:41:31.994Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T07:19:23.549Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-28T07:20:09.028Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T07:24:43.378Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-28T07:25:06.924Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T07:32:44.797Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T07:39:58.836Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-28T07:40:12.695Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T07:40:56.428Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-28T07:41:07.500Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T07:43:22.111Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-28T07:43:38.970Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-28T07:43:50.275Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T07:44:37.869Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-28T07:44:50.381Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T08:46:23.110Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-28T08:46:36.990Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T08:47:10.892Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-28T08:47:23.996Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T11:36:12.447Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-29T11:36:25.873Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T11:37:53.827Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-29T11:38:06.698Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T11:38:43.031Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-29T11:38:54.872Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T11:39:18.816Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T11:39:43.540Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-29T11:39:58.016Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T11:40:42.723Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T11:41:17.689Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-29T11:41:32.415Z | announcement_attachment
-NOT_SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T12:42:58.643Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T12:43:25.404Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T12:43:25.404Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-29T12:43:41.928Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T12:47:19.990Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T12:47:19.990Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-29T12:47:35.480Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T12:48:19.532Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T12:48:19.532Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-29T12:48:32.921Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T14:22:13.638Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T14:22:13.638Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-29T14:22:27.238Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T14:23:05.223Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T14:23:05.223Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-29T14:23:17.189Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T14:45:20.464Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T14:45:20.464Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-29T14:45:39.135Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T14:46:13.339Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T14:46:13.339Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-29T14:46:29.161Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T15:29:40.245Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T15:29:40.245Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T15:30:05.629Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T15:30:05.629Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-29T15:30:21.976Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T15:31:08.217Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T15:31:08.217Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-29T15:31:29.737Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-07-30T13:15:34.716Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-07-30T13:16:02.687Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-30T13:16:02.687Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-30T13:16:02.687Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-30T13:16:19.186Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-07-30T13:17:09.014Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-30T13:17:09.014Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-30T13:17:09.014Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-30T13:17:24.627Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-07-31T07:56:05.167Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-31T07:56:05.167Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-31T07:56:05.167Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-07-31T07:56:45.966Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-31T07:56:45.966Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-31T07:56:45.966Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-31T07:57:04.434Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-07-31T07:57:43.791Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-31T07:57:43.791Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-07-31T07:57:43.791Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-07-31T07:57:57.657Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T05:42:45.601Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T05:42:45.601Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T05:42:45.601Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-03T05:43:19.919Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T05:44:12.424Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T05:44:12.424Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T05:44:12.424Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-03T05:44:29.399Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T09:01:18.324Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T09:01:18.324Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T09:01:18.324Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-03T09:01:44.545Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T09:17:27.953Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T09:17:27.953Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T09:17:27.953Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T09:18:13.556Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T09:18:13.556Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T09:18:13.556Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-03T09:18:33.259Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T09:19:11.921Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T09:19:11.921Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T09:19:11.921Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-03T09:19:27.515Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T09:45:39.513Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T09:45:39.513Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T09:45:39.513Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-03T09:45:57.057Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T09:46:48.626Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T09:46:48.626Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T09:46:48.626Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-03T09:47:02.938Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-04T10:49:22.607Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-05T14:11:29.073Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-05T14:11:29.073Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-05T14:11:29.073Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-05T14:11:29.073Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-05T14:12:00.161Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-05T14:12:54.870Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-05T14:12:54.870Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-05T14:12:54.870Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-05T14:12:54.870Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-05T14:13:09.588Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-05T14:13:33.991Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-05T14:13:33.991Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-05T14:13:33.991Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-05T14:13:33.991Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-05T14:13:51.853Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-05T14:14:43.460Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-05T14:14:43.460Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-05T14:14:43.460Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-05T14:14:43.460Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-05T14:15:12.268Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-07T11:35:02.583Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-07T11:35:02.583Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-07T11:35:02.583Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-07T11:35:02.583Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-07T11:35:17.930Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-07T11:35:51.519Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-07T11:35:51.519Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-07T11:35:51.519Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-07T11:35:51.519Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-07T11:36:04.222Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-08T11:02:08.143Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-08T11:02:08.143Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-08T11:02:08.143Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-08T11:02:08.143Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-08T11:02:21.610Z | announcement_attachment
-NOT_SYNCED | Online tests_13082026.pdf | pdf | 2026-08-14T13:22:08.282Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T13:22:40.202Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T13:22:40.202Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T13:22:40.202Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T13:22:40.202Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:22:40.202Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:22:57.696Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:23:02.655Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-14T13:23:16.787Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-14T13:23:30.721Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T13:24:10.033Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T13:24:10.033Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T13:24:10.033Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T13:24:10.033Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:24:10.033Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:24:32.414Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-14T13:25:19.250Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-14T13:25:34.407Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T13:35:43.677Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T13:35:43.677Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T13:35:43.677Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T13:35:43.677Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:35:43.677Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:36:02.041Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:36:07.842Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-14T13:36:55.517Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-14T13:37:09.258Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T13:39:10.833Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T13:39:10.833Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T13:39:10.833Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T13:39:10.833Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:39:10.833Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:39:28.398Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-14T13:39:40.756Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-14T13:39:53.131Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T13:40:25.962Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T13:40:25.962Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T13:40:25.962Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T13:40:25.962Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:40:25.962Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:40:42.924Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:40:48.122Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T13:42:59.481Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T13:42:59.481Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T13:42:59.481Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T13:42:59.481Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:42:59.481Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:43:13.061Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:48:44.235Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-14T13:51:07.776Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-14T13:51:21.574Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T13:54:14.995Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T13:54:14.995Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T13:54:14.995Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T13:54:14.995Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:54:14.995Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:59:20.177Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-14T13:59:38.776Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-14T14:04:43.525Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T14:16:08.234Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T14:16:08.234Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T14:16:08.234Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T14:16:08.234Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T14:16:08.234Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T14:16:31.251Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-18T11:03:48.625Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-18T11:03:48.625Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-18T11:03:48.625Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-18T11:03:48.625Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-18T11:03:48.625Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-18T11:04:06.605Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-18T11:04:23.674Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-18T11:04:37.198Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-19T06:17:21.288Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-19T06:17:21.288Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-19T06:17:21.288Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-19T06:17:21.288Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:17:21.288Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:17:39.209Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:17:47.089Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-19T06:18:05.998Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-19T06:18:21.379Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-19T06:22:03.203Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-19T06:22:03.203Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-19T06:22:03.203Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-19T06:22:03.203Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:22:03.203Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:22:25.641Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:22:32.006Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-19T06:25:07.449Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-19T06:25:22.394Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-19T06:26:12.898Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-19T06:26:12.898Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-19T06:26:12.898Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-19T06:26:12.898Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:26:12.898Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:26:33.298Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-19T06:27:23.136Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-19T06:27:23.136Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-19T06:27:23.136Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-19T06:27:23.136Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:27:23.136Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-19T06:28:07.196Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-19T06:28:07.196Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-19T06:28:07.196Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-19T06:28:07.196Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:28:07.196Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-19T06:28:37.476Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-19T06:28:37.476Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-19T06:28:37.476Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-19T06:28:37.476Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:28:37.476Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:29:00.054Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-19T06:29:16.860Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-19T06:29:35.237Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-19T06:37:15.715Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-19T06:37:15.715Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-19T06:37:15.715Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-19T06:37:15.715Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:37:15.715Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:37:35.926Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-19T06:37:53.804Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-19T06:38:10.619Z | announcement_attachment
-NOT_SYNCED | Assignment 1 marks.pdf | pdf | 2026-08-21T07:25:24.650Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T07:25:56.136Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T07:25:56.136Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T07:25:56.136Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T07:25:56.136Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T07:25:56.136Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T07:26:10.165Z | announcement_attachment
-IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T07:26:53.811Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T07:27:06.082Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T07:27:06.082Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-21T07:27:19.856Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T11:53:00.160Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T11:53:00.160Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:53:00.160Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T11:53:00.160Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T11:53:00.160Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:53:17.110Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T11:54:06.927Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T11:54:06.927Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:54:06.927Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T11:54:06.927Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T11:54:06.927Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T11:54:32.842Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T11:54:32.842Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:54:32.842Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T11:54:32.842Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T11:54:32.842Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:54:47.291Z | announcement_attachment
-IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T11:55:13.531Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T11:55:43.030Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T11:55:43.030Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:55:43.030Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T11:55:43.030Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T11:55:43.030Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:55:56.927Z | announcement_attachment
-IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T11:56:23.440Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T11:56:35.563Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T11:56:35.563Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-21T11:56:48.825Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T11:57:29.573Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T11:57:29.573Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:57:29.573Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T11:57:29.573Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T11:57:29.573Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T11:57:59.051Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T11:57:59.051Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:57:59.051Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T11:57:59.051Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T11:57:59.051Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:58:15.874Z | announcement_attachment
-IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T11:58:42.245Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T11:58:54.008Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T11:58:54.008Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-21T11:59:07.526Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T11:59:48.802Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T11:59:48.802Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:59:48.802Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T11:59:48.802Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T11:59:48.802Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:00:02.252Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:00:14.789Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:00:14.789Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:01:01.814Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:01:01.814Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:01:01.814Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:01:01.814Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:01:01.814Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:01:15.995Z | announcement_attachment
-IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T12:01:42.813Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:01:55.885Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:01:55.885Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:02:28.867Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:02:28.867Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:02:28.867Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:02:28.867Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:02:28.867Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:02:43.607Z | announcement_attachment
-IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T12:03:11.206Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:03:25.750Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:03:25.750Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-21T12:03:47.111Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:04:22.056Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:04:22.056Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:04:22.056Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:04:22.056Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:04:22.056Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:04:38.740Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:04:49.706Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:04:49.706Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-21T12:05:03.701Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:11:17.437Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:11:17.437Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:11:17.437Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:11:17.437Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:11:17.437Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:11:32.091Z | announcement_attachment
-IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T12:11:58.723Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:12:10.943Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:12:10.943Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-21T12:12:24.524Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:13:03.726Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:13:03.726Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:13:03.726Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:13:03.726Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:13:03.726Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:13:19.269Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:13:33.034Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:13:33.034Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-21T12:13:45.647Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:16:13.727Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:16:13.727Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:16:13.727Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:16:13.727Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:16:13.727Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:16:27.622Z | announcement_attachment
-IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T12:16:54.379Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:17:05.316Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:17:05.316Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-21T12:17:18.047Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:17:53.931Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:17:53.931Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:17:53.931Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:17:53.931Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:17:53.931Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:18:07.308Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:18:17.936Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:18:17.936Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:18:58.688Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:18:58.688Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:18:58.688Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:18:58.688Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:18:58.688Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:19:12.175Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:19:49.044Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:19:49.044Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:19:49.044Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:19:49.044Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:19:49.044Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:20:06.030Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:20:59.552Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:20:59.552Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:20:59.552Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:20:59.552Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:20:59.552Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:21:13.670Z | announcement_attachment
-IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T12:21:40.309Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:21:54.326Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:21:54.326Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-21T12:22:24.614Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:23:51.039Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:23:51.039Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:23:51.039Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:23:51.039Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:23:51.039Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:24:16.295Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:24:16.295Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:24:16.295Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:24:16.295Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:24:16.295Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:24:55.806Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:24:55.806Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:24:55.806Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:24:55.806Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:24:55.806Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:25:10.405Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:26:01.458Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:26:01.458Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:26:01.458Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:26:01.458Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:26:01.458Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:26:16.329Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:27:17.199Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:27:17.199Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:27:17.199Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:27:17.199Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:27:17.199Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:27:31.727Z | announcement_attachment
-IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T12:28:07.529Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:28:31.438Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:28:31.438Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-21T12:28:50.819Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:30:13.072Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:30:13.072Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:30:13.072Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:30:13.072Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:30:13.072Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:30:29.011Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:30:44.273Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:30:44.273Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-08-21T12:31:14.341Z | announcement_attachment
-NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-08-24T07:08:07.844Z | announcement_attachment
-INCOMPATIBLE | Class tests 1_marks.pdf | pdf | 2026-08-24T07:09:02.956Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-24T07:09:02.956Z | announcement_attachment
-IMAGES_NOT_SYNCED | Assignment 1 marks.pdf | pdf | 2026-08-24T07:27:44.184Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-24T07:28:02.464Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-24T07:28:02.464Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-24T07:28:02.464Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-24T07:28:02.464Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-24T07:28:02.464Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-24T07:28:23.056Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-24T07:28:30.418Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-08-25T12:32:31.420Z | announcement_attachment
-INCOMPATIBLE | Class tests 1_marks.pdf | pdf | 2026-08-25T12:34:04.908Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-25T12:34:04.908Z | announcement_attachment
-IMAGES_NOT_SYNCED | Assignment 1 marks.pdf | pdf | 2026-08-25T16:11:46.403Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-25T16:12:14.261Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-25T16:12:14.261Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-25T16:12:14.261Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-25T16:12:14.261Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-25T16:12:14.261Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-25T16:12:28.361Z | announcement_attachment
-INCOMPATIBLE | Class tests 1_marks.pdf | pdf | 2026-08-30T11:11:34.877Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-30T11:11:34.877Z | announcement_attachment
-IMAGES_NOT_SYNCED | Assignment 1 marks.pdf | pdf | 2026-08-30T12:10:02.589Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-30T12:10:14.973Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-30T12:10:14.973Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-30T12:10:14.973Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-30T12:10:14.973Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-30T12:10:14.973Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-30T12:10:32.121Z | announcement_attachment
-SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-30T12:15:43.552Z | announcement_attachment
-NOT_SYNCED | Practical discussion.pptx | pptx | 2026-09-06T14:13:54.764Z | announcement_attachment
-NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-09-06T14:13:54.764Z | announcement_attachment
-NOT_SYNCED | Assignment 1 marks.pdf | pdf | 2026-09-06T14:13:54.764Z | announcement_attachment
-NOT_SYNCED | Online tests_13082026.pdf | pdf | 2026-09-06T14:13:54.764Z | announcement_attachment
-NOT_SYNCED | Test venue.jpg | jpg | 2026-09-06T14:13:54.764Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-09-06T14:13:54.764Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-09-06T14:13:54.764Z | announcement_attachment
-NOT_SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-09-06T14:13:54.764Z | announcement_attachment
-NOT_SYNCED | PPE.pdf | pdf | 2026-09-06T14:13:54.764Z | announcement_attachment
-INCOMPATIBLE | Practical discussion.pptx | pptx | 2026-09-06T14:14:21.826Z | announcement_attachment
-INCOMPATIBLE | Class tests 1_marks.pdf | pdf | 2026-09-06T14:14:21.826Z | announcement_attachment
-IMAGES_NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-09-06T14:14:38.978Z | announcement_attachment
-IMAGES_NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-09-06T14:15:04.263Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-09-06T14:15:15.328Z | announcement_attachment
-INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-09-06T14:15:15.328Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-09-06T14:15:15.328Z | announcement_attachment
-INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-09-06T14:15:15.328Z | announcement_attachment
-INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-09-06T14:15:15.328Z | announcement_attachment
-INCOMPATIBLE | Test venue.jpg | jpg | 2026-09-06T14:15:31.736Z | announcement_attachment
-IMAGES_NOT_SYNCED | Test venue.jpg | pdf | 2026-09-06T14:15:56.615Z | announcement_attachment
-IMAGES_NOT_SYNCED | Test venue.jpg | pdf | 2026-09-06T14:16:34.377Z | announcement_attachment
-INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-09-06T14:16:46.101Z | announcement_attachment
-INCOMPATIBLE | PPE.pdf | pdf | 2026-09-06T14:16:46.101Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-09-06T14:16:58.794Z | announcement_attachment
-SYNCED | PPE.pdf | pdf | 2026-09-06T14:17:12.778Z | announcement_attachment
-INCOMPATIBLE | Practical discussion.pptx | pptx | 2026-09-06T15:44:20.270Z | announcement_attachment
-INCOMPATIBLE | Class tests 1_marks.pdf | pdf | 2026-09-06T15:44:20.270Z | announcement_attachment
-IMAGES_NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-09-06T15:45:13.999Z | announcement_attachment
+(status | filename | extension | last_seen | type | url)
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-17T08:10:53.349Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-17T08:10:53.349Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-17T08:10:53.349Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-17T08:50:09.596Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-17T08:50:09.596Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-17T08:50:09.596Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-17T08:51:20.926Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-17T08:51:20.926Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-17T08:51:20.926Z | announcement_attachment | 
+NOT_SYNCED | PPE.pdf | pdf | 2026-07-24T07:37:46.296Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T07:38:14.572Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T07:38:14.572Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T07:38:14.572Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T07:38:14.572Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T07:38:14.572Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T07:38:30.564Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T07:39:05.965Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T07:39:05.965Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T07:39:05.965Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T07:39:05.965Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T07:39:05.965Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T07:39:18.439Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T07:40:50.116Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T07:40:50.116Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T07:40:50.116Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T07:40:50.116Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T07:40:50.116Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T07:41:13.622Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T07:41:13.622Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T07:41:13.622Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T07:41:13.622Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T07:41:13.622Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T07:41:26.898Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T07:42:03.198Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T07:42:03.198Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T07:42:03.198Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T07:42:03.198Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T07:42:03.198Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T07:42:14.283Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:08:14.519Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:08:14.519Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:08:14.519Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:08:14.519Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:08:14.519Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:08:26.087Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:21:36.596Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:21:36.596Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:21:36.596Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:21:36.596Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:21:36.596Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:22:49.962Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:22:49.962Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:22:49.962Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:22:49.962Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:22:49.962Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:23:04.318Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:23:42.664Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:23:42.664Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:23:42.664Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:23:42.664Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:23:42.664Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:23:56.054Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:25:28.046Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:25:28.046Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:25:28.046Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:25:28.046Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:25:28.046Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:25:43.053Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:26:17.475Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:26:17.475Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:26:17.475Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:26:17.475Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:26:17.475Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:26:30.664Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:27:07.132Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:27:07.132Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:27:07.132Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:27:07.132Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:27:07.132Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:27:20.419Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:27:49.064Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:27:49.064Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:27:49.064Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:27:49.064Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:27:49.064Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:28:01.659Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:28:33.935Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:28:33.935Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:28:33.935Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:28:33.935Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:28:33.935Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:28:47.309Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:29:40.186Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:29:40.186Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:29:40.186Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:29:40.186Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:29:40.186Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:29:51.646Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:30:21.595Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:30:21.595Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:30:21.595Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:30:21.595Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:30:21.595Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:30:34.957Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:31:40.658Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:31:40.658Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:31:40.658Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:31:40.658Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:31:40.658Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:31:52.999Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:32:25.153Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:32:25.153Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:32:25.153Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:32:25.153Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:32:25.153Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:32:39.775Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:33:26.287Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:33:26.287Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:33:26.287Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:33:26.287Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:33:26.287Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:33:44.378Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:33:44.378Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:33:44.378Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:33:44.378Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:33:44.378Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:33:55.936Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:34:29.042Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:34:29.042Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:34:29.042Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:34:29.042Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:34:29.042Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:34:41.389Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:36:19.162Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:36:19.162Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:36:19.162Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:36:19.162Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:36:19.162Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:36:30.684Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:37:08.652Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:37:08.652Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:37:08.652Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:37:08.652Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:37:08.652Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:37:20.447Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:37:45.170Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:37:45.170Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:37:45.170Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:37:45.170Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:37:45.170Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:37:56.840Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:38:28.951Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:38:28.951Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:38:28.951Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:38:28.951Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:38:28.951Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:38:40.665Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:41:50.887Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:41:50.887Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:41:50.887Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:41:50.887Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:41:50.887Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:42:03.214Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:42:20.374Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:42:20.374Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:42:20.374Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:42:20.374Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:42:20.374Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:42:33.193Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:43:09.367Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:43:09.367Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:43:09.367Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:43:09.367Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:43:09.367Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:43:21.469Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:44:05.611Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:44:05.611Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:44:05.611Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:44:05.611Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:44:05.611Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:44:18.205Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:44:53.086Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:44:53.086Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:44:53.086Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:44:53.086Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:44:53.086Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:45:05.151Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:46:45.671Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:46:45.671Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:46:45.671Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:46:45.671Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:46:45.671Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:47:03.502Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:47:03.502Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:47:03.502Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:47:03.502Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:47:03.502Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:47:18.807Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:48:02.280Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:48:02.280Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:48:02.280Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:48:02.280Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:48:02.280Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:48:13.963Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:48:44.002Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:48:44.002Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:48:44.002Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:48:44.002Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:48:44.002Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:49:12.876Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:49:12.876Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:49:12.876Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:49:12.876Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:49:12.876Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:49:31.443Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:49:31.443Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:49:31.443Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:49:31.443Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:49:31.443Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:49:54.154Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:49:54.154Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:49:54.154Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:49:54.154Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:49:54.154Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:50:15.702Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:50:15.702Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:50:15.702Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:50:15.702Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:50:15.702Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:50:28.784Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:50:58.940Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:50:58.940Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:50:58.940Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:50:58.940Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:50:58.940Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:51:10.929Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:52:22.865Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:52:22.865Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:52:22.865Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:52:22.865Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:52:22.865Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:52:35.762Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T09:53:11.772Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T09:53:11.772Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T09:53:11.772Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T09:53:11.772Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T09:53:11.772Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T09:53:30.023Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 Approach-compressed.mp4 | mp4 | 2026-07-24T11:41:10.445Z | announcement_attachment | 
+INCOMPATIBLE | Making A Poster-compressed.mp4 | mp4 | 2026-07-24T11:41:10.445Z | announcement_attachment | 
+INCOMPATIBLE | Peer Reviewed Journal Articles-compressed.mp4 | mp4 | 2026-07-24T11:41:10.445Z | announcement_attachment | 
+INCOMPATIBLE | South African context.mp4 | mp4 | 2026-07-24T11:41:10.445Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-24T11:41:10.445Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-24T11:41:23.319Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T15:55:25.903Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-26T15:55:37.952Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T15:55:56.645Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-26T15:56:08.895Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T15:56:43.895Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-26T15:56:56.083Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T15:58:00.575Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-26T15:58:12.795Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T15:59:05.179Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-26T15:59:20.940Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T15:59:55.839Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-26T16:00:07.524Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T16:01:54.697Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-26T16:02:08.045Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T16:02:44.356Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-26T16:02:57.586Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T16:44:29.133Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-26T16:44:46.378Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-26T16:45:26.426Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-26T16:45:42.569Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-27T17:35:25.614Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-27T17:35:42.326Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-27T17:36:47.319Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-27T17:37:04.198Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-27T17:37:34.626Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-27T17:37:47.364Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-27T17:40:33.714Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-27T17:40:49.410Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-27T17:41:19.730Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-27T17:41:31.994Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T07:19:23.549Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-28T07:20:09.028Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T07:24:43.378Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-28T07:25:06.924Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T07:32:44.797Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T07:39:58.836Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-28T07:40:12.695Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T07:40:56.428Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-28T07:41:07.500Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T07:43:22.111Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-28T07:43:38.970Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-28T07:43:50.275Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T07:44:37.869Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-28T07:44:50.381Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T08:46:23.110Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-28T08:46:36.990Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-28T08:47:10.892Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-28T08:47:23.996Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T11:36:12.447Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-29T11:36:25.873Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T11:37:53.827Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-29T11:38:06.698Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T11:38:43.031Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-29T11:38:54.872Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T11:39:18.816Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T11:39:43.540Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-29T11:39:58.016Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T11:40:42.723Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T11:41:17.689Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-29T11:41:32.415Z | announcement_attachment | 
+NOT_SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T12:42:58.643Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T12:43:25.404Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T12:43:25.404Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-29T12:43:41.928Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T12:47:19.990Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T12:47:19.990Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-29T12:47:35.480Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T12:48:19.532Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T12:48:19.532Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-29T12:48:32.921Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T14:22:13.638Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T14:22:13.638Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-29T14:22:27.238Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T14:23:05.223Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T14:23:05.223Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-29T14:23:17.189Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T14:45:20.464Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T14:45:20.464Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-29T14:45:39.135Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T14:46:13.339Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T14:46:13.339Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-29T14:46:29.161Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T15:29:40.245Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T15:29:40.245Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T15:30:05.629Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T15:30:05.629Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-29T15:30:21.976Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-29T15:31:08.217Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-29T15:31:08.217Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-29T15:31:29.737Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-07-30T13:15:34.716Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-07-30T13:16:02.687Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-30T13:16:02.687Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-30T13:16:02.687Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-30T13:16:19.186Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-07-30T13:17:09.014Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-30T13:17:09.014Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-30T13:17:09.014Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-30T13:17:24.627Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-07-31T07:56:05.167Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-31T07:56:05.167Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-31T07:56:05.167Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-07-31T07:56:45.966Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-31T07:56:45.966Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-31T07:56:45.966Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-31T07:57:04.434Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-07-31T07:57:43.791Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-07-31T07:57:43.791Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-07-31T07:57:43.791Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-07-31T07:57:57.657Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T05:42:45.601Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T05:42:45.601Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T05:42:45.601Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-03T05:43:19.919Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T05:44:12.424Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T05:44:12.424Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T05:44:12.424Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-03T05:44:29.399Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T09:01:18.324Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T09:01:18.324Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T09:01:18.324Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-03T09:01:44.545Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T09:17:27.953Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T09:17:27.953Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T09:17:27.953Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T09:18:13.556Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T09:18:13.556Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T09:18:13.556Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-03T09:18:33.259Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T09:19:11.921Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T09:19:11.921Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T09:19:11.921Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-03T09:19:27.515Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T09:45:39.513Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T09:45:39.513Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T09:45:39.513Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-03T09:45:57.057Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-03T09:46:48.626Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-03T09:46:48.626Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-03T09:46:48.626Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-03T09:47:02.938Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-04T10:49:22.607Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-05T14:11:29.073Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-05T14:11:29.073Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-05T14:11:29.073Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-05T14:11:29.073Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-05T14:12:00.161Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-05T14:12:54.870Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-05T14:12:54.870Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-05T14:12:54.870Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-05T14:12:54.870Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-05T14:13:09.588Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-05T14:13:33.991Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-05T14:13:33.991Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-05T14:13:33.991Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-05T14:13:33.991Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-05T14:13:51.853Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-05T14:14:43.460Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-05T14:14:43.460Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-05T14:14:43.460Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-05T14:14:43.460Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-05T14:15:12.268Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-07T11:35:02.583Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-07T11:35:02.583Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-07T11:35:02.583Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-07T11:35:02.583Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-07T11:35:17.930Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-07T11:35:51.519Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-07T11:35:51.519Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-07T11:35:51.519Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-07T11:35:51.519Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-07T11:36:04.222Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-08T11:02:08.143Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-08T11:02:08.143Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-08T11:02:08.143Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-08T11:02:08.143Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-08T11:02:21.610Z | announcement_attachment | 
+NOT_SYNCED | Online tests_13082026.pdf | pdf | 2026-08-14T13:22:08.282Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T13:22:40.202Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T13:22:40.202Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T13:22:40.202Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T13:22:40.202Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:22:40.202Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:22:57.696Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:23:02.655Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-14T13:23:16.787Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-14T13:23:30.721Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T13:24:10.033Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T13:24:10.033Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T13:24:10.033Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T13:24:10.033Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:24:10.033Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:24:32.414Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-14T13:25:19.250Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-14T13:25:34.407Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T13:35:43.677Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T13:35:43.677Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T13:35:43.677Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T13:35:43.677Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:35:43.677Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:36:02.041Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:36:07.842Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-14T13:36:55.517Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-14T13:37:09.258Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T13:39:10.833Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T13:39:10.833Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T13:39:10.833Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T13:39:10.833Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:39:10.833Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:39:28.398Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-14T13:39:40.756Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-14T13:39:53.131Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T13:40:25.962Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T13:40:25.962Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T13:40:25.962Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T13:40:25.962Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:40:25.962Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:40:42.924Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:40:48.122Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T13:42:59.481Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T13:42:59.481Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T13:42:59.481Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T13:42:59.481Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:42:59.481Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:43:13.061Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:48:44.235Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-14T13:51:07.776Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-14T13:51:21.574Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T13:54:14.995Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T13:54:14.995Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T13:54:14.995Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T13:54:14.995Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:54:14.995Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T13:59:20.177Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-14T13:59:38.776Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-14T14:04:43.525Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-14T14:16:08.234Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-14T14:16:08.234Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-14T14:16:08.234Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-14T14:16:08.234Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T14:16:08.234Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-14T14:16:31.251Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-18T11:03:48.625Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-18T11:03:48.625Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-18T11:03:48.625Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-18T11:03:48.625Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-18T11:03:48.625Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-18T11:04:06.605Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-18T11:04:23.674Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-18T11:04:37.198Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-19T06:17:21.288Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-19T06:17:21.288Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-19T06:17:21.288Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-19T06:17:21.288Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:17:21.288Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:17:39.209Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:17:47.089Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-19T06:18:05.998Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-19T06:18:21.379Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-19T06:22:03.203Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-19T06:22:03.203Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-19T06:22:03.203Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-19T06:22:03.203Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:22:03.203Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:22:25.641Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:22:32.006Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-19T06:25:07.449Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-19T06:25:22.394Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-19T06:26:12.898Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-19T06:26:12.898Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-19T06:26:12.898Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-19T06:26:12.898Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:26:12.898Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:26:33.298Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-19T06:27:23.136Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-19T06:27:23.136Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-19T06:27:23.136Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-19T06:27:23.136Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:27:23.136Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-19T06:28:07.196Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-19T06:28:07.196Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-19T06:28:07.196Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-19T06:28:07.196Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:28:07.196Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-19T06:28:37.476Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-19T06:28:37.476Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-19T06:28:37.476Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-19T06:28:37.476Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:28:37.476Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:29:00.054Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-19T06:29:16.860Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-19T06:29:35.237Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-19T06:37:15.715Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-19T06:37:15.715Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-19T06:37:15.715Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-19T06:37:15.715Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:37:15.715Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-19T06:37:35.926Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-19T06:37:53.804Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-19T06:38:10.619Z | announcement_attachment | 
+NOT_SYNCED | Assignment 1 marks.pdf | pdf | 2026-08-21T07:25:24.650Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T07:25:56.136Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T07:25:56.136Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T07:25:56.136Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T07:25:56.136Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T07:25:56.136Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T07:26:10.165Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T07:26:53.811Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T07:27:06.082Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T07:27:06.082Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-21T07:27:19.856Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T11:53:00.160Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T11:53:00.160Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:53:00.160Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T11:53:00.160Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T11:53:00.160Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:53:17.110Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T11:54:06.927Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T11:54:06.927Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:54:06.927Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T11:54:06.927Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T11:54:06.927Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T11:54:32.842Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T11:54:32.842Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:54:32.842Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T11:54:32.842Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T11:54:32.842Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:54:47.291Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T11:55:13.531Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T11:55:43.030Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T11:55:43.030Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:55:43.030Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T11:55:43.030Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T11:55:43.030Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:55:56.927Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T11:56:23.440Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T11:56:35.563Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T11:56:35.563Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-21T11:56:48.825Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T11:57:29.573Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T11:57:29.573Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:57:29.573Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T11:57:29.573Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T11:57:29.573Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T11:57:59.051Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T11:57:59.051Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:57:59.051Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T11:57:59.051Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T11:57:59.051Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:58:15.874Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T11:58:42.245Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T11:58:54.008Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T11:58:54.008Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-21T11:59:07.526Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T11:59:48.802Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T11:59:48.802Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T11:59:48.802Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T11:59:48.802Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T11:59:48.802Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:00:02.252Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:00:14.789Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:00:14.789Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:01:01.814Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:01:01.814Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:01:01.814Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:01:01.814Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:01:01.814Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:01:15.995Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T12:01:42.813Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:01:55.885Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:01:55.885Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:02:28.867Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:02:28.867Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:02:28.867Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:02:28.867Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:02:28.867Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:02:43.607Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T12:03:11.206Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:03:25.750Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:03:25.750Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-21T12:03:47.111Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:04:22.056Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:04:22.056Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:04:22.056Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:04:22.056Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:04:22.056Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:04:38.740Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:04:49.706Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:04:49.706Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-21T12:05:03.701Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:11:17.437Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:11:17.437Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:11:17.437Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:11:17.437Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:11:17.437Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:11:32.091Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T12:11:58.723Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:12:10.943Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:12:10.943Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-21T12:12:24.524Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:13:03.726Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:13:03.726Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:13:03.726Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:13:03.726Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:13:03.726Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:13:19.269Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:13:33.034Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:13:33.034Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-21T12:13:45.647Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:16:13.727Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:16:13.727Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:16:13.727Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:16:13.727Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:16:13.727Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:16:27.622Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T12:16:54.379Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:17:05.316Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:17:05.316Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-21T12:17:18.047Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:17:53.931Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:17:53.931Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:17:53.931Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:17:53.931Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:17:53.931Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:18:07.308Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:18:17.936Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:18:17.936Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:18:58.688Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:18:58.688Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:18:58.688Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:18:58.688Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:18:58.688Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:19:12.175Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:19:49.044Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:19:49.044Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:19:49.044Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:19:49.044Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:19:49.044Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:20:06.030Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:20:59.552Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:20:59.552Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:20:59.552Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:20:59.552Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:20:59.552Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:21:13.670Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T12:21:40.309Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:21:54.326Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:21:54.326Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-21T12:22:24.614Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:23:51.039Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:23:51.039Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:23:51.039Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:23:51.039Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:23:51.039Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:24:16.295Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:24:16.295Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:24:16.295Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:24:16.295Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:24:16.295Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:24:55.806Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:24:55.806Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:24:55.806Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:24:55.806Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:24:55.806Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:25:10.405Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:26:01.458Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:26:01.458Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:26:01.458Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:26:01.458Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:26:01.458Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:26:16.329Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:27:17.199Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:27:17.199Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:27:17.199Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:27:17.199Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:27:17.199Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:27:31.727Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Test venue.jpg | jpg | 2026-08-21T12:28:07.529Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:28:31.438Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:28:31.438Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-21T12:28:50.819Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-21T12:30:13.072Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-21T12:30:13.072Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:30:13.072Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-21T12:30:13.072Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-21T12:30:13.072Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-21T12:30:29.011Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-21T12:30:44.273Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-21T12:30:44.273Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-08-21T12:31:14.341Z | announcement_attachment | 
+NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-08-24T07:08:07.844Z | announcement_attachment | 
+INCOMPATIBLE | Class tests 1_marks.pdf | pdf | 2026-08-24T07:09:02.956Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-24T07:09:02.956Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Assignment 1 marks.pdf | pdf | 2026-08-24T07:27:44.184Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-24T07:28:02.464Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-24T07:28:02.464Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-24T07:28:02.464Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-24T07:28:02.464Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-24T07:28:02.464Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-24T07:28:23.056Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-24T07:28:30.418Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-08-25T12:32:31.420Z | announcement_attachment | 
+INCOMPATIBLE | Class tests 1_marks.pdf | pdf | 2026-08-25T12:34:04.908Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-25T12:34:04.908Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Assignment 1 marks.pdf | pdf | 2026-08-25T16:11:46.403Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-25T16:12:14.261Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-25T16:12:14.261Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-25T16:12:14.261Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-25T16:12:14.261Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-25T16:12:14.261Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-25T16:12:28.361Z | announcement_attachment | 
+INCOMPATIBLE | Class tests 1_marks.pdf | pdf | 2026-08-30T11:11:34.877Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-08-30T11:11:34.877Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Assignment 1 marks.pdf | pdf | 2026-08-30T12:10:02.589Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-08-30T12:10:14.973Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-08-30T12:10:14.973Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-08-30T12:10:14.973Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-08-30T12:10:14.973Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-30T12:10:14.973Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-30T12:10:32.121Z | announcement_attachment | 
+SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-08-30T12:15:43.552Z | announcement_attachment | 
+NOT_SYNCED | Practical discussion.pptx | pptx | 2026-09-06T14:13:54.764Z | announcement_attachment | 
+NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-09-06T14:13:54.764Z | announcement_attachment | 
+NOT_SYNCED | Assignment 1 marks.pdf | pdf | 2026-09-06T14:13:54.764Z | announcement_attachment | 
+NOT_SYNCED | Online tests_13082026.pdf | pdf | 2026-09-06T14:13:54.764Z | announcement_attachment | 
+NOT_SYNCED | Test venue.jpg | jpg | 2026-09-06T14:13:54.764Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-09-06T14:13:54.764Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-09-06T14:13:54.764Z | announcement_attachment | 
+NOT_SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-09-06T14:13:54.764Z | announcement_attachment | 
+NOT_SYNCED | PPE.pdf | pdf | 2026-09-06T14:13:54.764Z | announcement_attachment | 
+INCOMPATIBLE | Practical discussion.pptx | pptx | 2026-09-06T14:14:21.826Z | announcement_attachment | 
+INCOMPATIBLE | Class tests 1_marks.pdf | pdf | 2026-09-06T14:14:21.826Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-09-06T14:14:38.978Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-09-06T14:15:04.263Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 marks.pdf | pdf | 2026-09-06T14:15:15.328Z | announcement_attachment | 
+INCOMPATIBLE | Online tests_13082026.pdf | pdf | 2026-09-06T14:15:15.328Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-09-06T14:15:15.328Z | announcement_attachment | 
+INCOMPATIBLE | Assignment 1 feedback #2.mp4 | mp4 | 2026-09-06T14:15:15.328Z | announcement_attachment | 
+INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-09-06T14:15:15.328Z | announcement_attachment | 
+INCOMPATIBLE | Test venue.jpg | jpg | 2026-09-06T14:15:31.736Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Test venue.jpg | pdf | 2026-09-06T14:15:56.615Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Test venue.jpg | pdf | 2026-09-06T14:16:34.377Z | announcement_attachment | 
+INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-09-06T14:16:46.101Z | announcement_attachment | 
+INCOMPATIBLE | PPE.pdf | pdf | 2026-09-06T14:16:46.101Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-09-06T14:16:58.794Z | announcement_attachment | 
+SYNCED | PPE.pdf | pdf | 2026-09-06T14:17:12.778Z | announcement_attachment | 
+INCOMPATIBLE | Practical discussion.pptx | pptx | 2026-09-06T15:44:20.270Z | announcement_attachment | 
+INCOMPATIBLE | Class tests 1_marks.pdf | pdf | 2026-09-06T15:44:20.270Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-09-06T15:45:13.999Z | announcement_attachment | 
+NOT_SYNCED | Practical discussion.pptx | pptx | 2026-09-06T17:34:02.028Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/de16c4b3-31f3-4e11-8ad3-29108f85b309/Practical%20discussion.pptx
+NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-09-06T17:34:02.028Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/8b592192-9015-4d36-9dad-3d470e968930/Class%20tests%201_marks.pdf
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
