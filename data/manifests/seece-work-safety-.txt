@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-06T22:51:52.974Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -23,69 +23,70 @@ calendar_id: 1204d7c176900ddee6cfd2ee98a3fa2eec0769902062c5877ea3fa0e77416b13@gr
 title: SEECE Work & Safety - ...
 last_sync: 2026-05-29T15:05:41.991Z
 last_announcement: 2026-09-07T10:03:55.484Z
-total_files: 58
-generated: 2026-09-05T16:21:53.648Z
+total_files: 59
+generated: 2026-09-07T10:04:15.151Z
 
 --- FILE REGISTRY ---
-(status | filename | extension | last_seen | type)
-INCOMPATIBLE | Emergency Numbers.JPG | jpg | 2026-06-06T19:38:29.650Z | resource
-INCOMPATIBLE | N-Buidings.JPG | jpg | 2026-06-06T19:38:29.650Z | resource
-INCOMPATIBLE | Payment Image.png | png | 2026-06-06T19:38:29.650Z | resource
-NOT_SYNCED | Safety.pdf | pdf | 2026-06-06T19:38:29.650Z | resource
-NOT_SYNCED | Signs and Color coding.pdf | pdf | 2026-06-06T19:38:29.650Z | resource
-NOT_SYNCED | Safety.pdf | pdf | 2026-06-06T19:38:29.650Z | resource
-NOT_SYNCED | DMM Fuses Ver1.pdf | pdf | 2026-06-06T19:38:29.650Z | resource
-NOT_SYNCED | Fluke77 safety ver1.pdf | pdf | 2026-06-06T19:38:29.650Z | resource
-NOT_SYNCED | Safetyguidelines ver1.pdf | pdf | 2026-06-06T19:38:29.650Z | resource
-SYNCED | Vac_work_EmployersReport.pdf | pdf | 2026-06-06T19:38:29.650Z | resource
-SYNCED | Vac_Work_GUIDELINES STUDENTS_REPORT.docx | docx | 2026-06-06T19:38:29.650Z | resource
-NOT_SYNCED | Vacation Work Procedure.docx | docx | 2026-06-06T19:38:29.650Z | resource
-INCOMPATIBLE | Payment Image.png | png | 2026-07-15T18:56:02.356Z | resource
-INCOMPATIBLE | Payment Image.png | png | 2026-07-28T07:24:23.769Z | resource
-INCOMPATIBLE | Payment Image.png | png | 2026-07-28T07:24:34.578Z | resource
-INCOMPATIBLE | Safety.pdf | pdf | 2026-07-28T07:26:24.084Z | resource
-INCOMPATIBLE | Emergency Numbers.JPG | jpg | 2026-07-28T07:26:24.084Z | resource
-INCOMPATIBLE | N-Buidings.JPG | jpg | 2026-07-28T07:26:24.084Z | resource
-INCOMPATIBLE | Signs and Color coding.pdf | pdf | 2026-07-28T07:26:24.084Z | resource
-INCOMPATIBLE | Safety.pdf | pdf | 2026-07-28T07:26:24.084Z | resource
-NOT_SYNCED | DMM Fuses Ver1.pdf | pdf | 2026-07-28T07:26:24.084Z | resource
-NOT_SYNCED | Fluke77 safety ver1.pdf | pdf | 2026-07-28T07:26:24.084Z | resource
-NOT_SYNCED | Safetyguidelines ver1.pdf | pdf | 2026-07-28T07:26:24.084Z | resource
-NOT_SYNCED | Vac_work_EmployersReport.pdf | pdf | 2026-07-28T07:26:24.084Z | resource
-NOT_SYNCED | Vac_Work_GUIDELINES STUDENTS_REPORT.docx | docx | 2026-07-28T07:26:24.084Z | resource
-NOT_SYNCED | Vacation Work Procedure.docx | docx | 2026-07-28T07:26:24.084Z | resource
-NOT_SYNCED | Payment Image.png | png | 2026-07-28T07:26:24.084Z | resource
-NOT_SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-03T05:32:55.990Z | announcement_attachment
-NOT_SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-03T05:34:20.828Z | announcement_attachment
-INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-03T05:34:36.226Z | announcement_attachment
-SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-03T05:34:47.288Z | announcement_attachment
-INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-03T05:45:14.836Z | announcement_attachment
-SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-03T05:45:27.296Z | announcement_attachment
-INCOMPATIBLE | Payment Image.png | png | 2026-08-03T09:06:57.137Z | resource
-INCOMPATIBLE | Payment Image.png | png | 2026-08-03T09:16:15.213Z | resource
-INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-03T09:47:31.575Z | announcement_attachment
-SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-03T09:47:46.391Z | announcement_attachment
-INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-04T10:52:30.270Z | announcement_attachment
-SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-04T10:52:42.638Z | announcement_attachment
-INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-05T14:08:15.509Z | announcement_attachment
-SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-05T14:08:27.862Z | announcement_attachment
-INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-07T11:36:25.641Z | announcement_attachment
-SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-07T11:36:42.273Z | announcement_attachment
-INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-08T11:03:54.902Z | announcement_attachment
-SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-08T11:04:06.284Z | announcement_attachment
-INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-18T11:05:01.300Z | announcement_attachment
-SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-18T11:05:19.407Z | announcement_attachment
-INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-19T20:05:29.276Z | announcement_attachment
-SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-19T20:05:44.355Z | announcement_attachment
-INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-21T12:33:22.981Z | announcement_attachment
-SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-21T12:33:34.050Z | announcement_attachment
-INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-24T05:52:37.412Z | announcement_attachment
-SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-24T05:52:49.187Z | announcement_attachment
-NOT_SYNCED | N3D Safety Rules.pdf | pdf | 2026-09-05T16:03:56.406Z | announcement_attachment
-INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-09-05T16:04:12.931Z | announcement_attachment
-SYNCED | N3D Safety Rules.pdf | pdf | 2026-09-05T16:04:30.677Z | announcement_attachment
-INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-09-05T16:21:35.159Z | announcement_attachment
-SYNCED | N3D Safety Rules.pdf | pdf | 2026-09-05T16:21:51.855Z | announcement_attachment
+(status | filename | extension | last_seen | type | url)
+INCOMPATIBLE | Emergency Numbers.JPG | jpg | 2026-06-06T19:38:29.650Z | resource | 
+INCOMPATIBLE | N-Buidings.JPG | jpg | 2026-06-06T19:38:29.650Z | resource | 
+INCOMPATIBLE | Payment Image.png | png | 2026-06-06T19:38:29.650Z | resource | 
+NOT_SYNCED | Safety.pdf | pdf | 2026-06-06T19:38:29.650Z | resource | 
+NOT_SYNCED | Signs and Color coding.pdf | pdf | 2026-06-06T19:38:29.650Z | resource | 
+NOT_SYNCED | Safety.pdf | pdf | 2026-06-06T19:38:29.650Z | resource | 
+NOT_SYNCED | DMM Fuses Ver1.pdf | pdf | 2026-06-06T19:38:29.650Z | resource | 
+NOT_SYNCED | Fluke77 safety ver1.pdf | pdf | 2026-06-06T19:38:29.650Z | resource | 
+NOT_SYNCED | Safetyguidelines ver1.pdf | pdf | 2026-06-06T19:38:29.650Z | resource | 
+SYNCED | Vac_work_EmployersReport.pdf | pdf | 2026-06-06T19:38:29.650Z | resource | 
+SYNCED | Vac_Work_GUIDELINES STUDENTS_REPORT.docx | docx | 2026-06-06T19:38:29.650Z | resource | 
+NOT_SYNCED | Vacation Work Procedure.docx | docx | 2026-06-06T19:38:29.650Z | resource | 
+INCOMPATIBLE | Payment Image.png | png | 2026-07-15T18:56:02.356Z | resource | 
+INCOMPATIBLE | Payment Image.png | png | 2026-07-28T07:24:23.769Z | resource | 
+INCOMPATIBLE | Payment Image.png | png | 2026-07-28T07:24:34.578Z | resource | 
+INCOMPATIBLE | Safety.pdf | pdf | 2026-07-28T07:26:24.084Z | resource | 
+INCOMPATIBLE | Emergency Numbers.JPG | jpg | 2026-07-28T07:26:24.084Z | resource | 
+INCOMPATIBLE | N-Buidings.JPG | jpg | 2026-07-28T07:26:24.084Z | resource | 
+INCOMPATIBLE | Signs and Color coding.pdf | pdf | 2026-07-28T07:26:24.084Z | resource | 
+INCOMPATIBLE | Safety.pdf | pdf | 2026-07-28T07:26:24.084Z | resource | 
+NOT_SYNCED | DMM Fuses Ver1.pdf | pdf | 2026-07-28T07:26:24.084Z | resource | 
+NOT_SYNCED | Fluke77 safety ver1.pdf | pdf | 2026-07-28T07:26:24.084Z | resource | 
+NOT_SYNCED | Safetyguidelines ver1.pdf | pdf | 2026-07-28T07:26:24.084Z | resource | 
+NOT_SYNCED | Vac_work_EmployersReport.pdf | pdf | 2026-07-28T07:26:24.084Z | resource | 
+NOT_SYNCED | Vac_Work_GUIDELINES STUDENTS_REPORT.docx | docx | 2026-07-28T07:26:24.084Z | resource | 
+NOT_SYNCED | Vacation Work Procedure.docx | docx | 2026-07-28T07:26:24.084Z | resource | 
+NOT_SYNCED | Payment Image.png | png | 2026-07-28T07:26:24.084Z | resource | 
+NOT_SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-03T05:32:55.990Z | announcement_attachment | 
+NOT_SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-03T05:34:20.828Z | announcement_attachment | 
+INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-03T05:34:36.226Z | announcement_attachment | 
+SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-03T05:34:47.288Z | announcement_attachment | 
+INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-03T05:45:14.836Z | announcement_attachment | 
+SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-03T05:45:27.296Z | announcement_attachment | 
+INCOMPATIBLE | Payment Image.png | png | 2026-08-03T09:06:57.137Z | resource | 
+INCOMPATIBLE | Payment Image.png | png | 2026-08-03T09:16:15.213Z | resource | 
+INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-03T09:47:31.575Z | announcement_attachment | 
+SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-03T09:47:46.391Z | announcement_attachment | 
+INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-04T10:52:30.270Z | announcement_attachment | 
+SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-04T10:52:42.638Z | announcement_attachment | 
+INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-05T14:08:15.509Z | announcement_attachment | 
+SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-05T14:08:27.862Z | announcement_attachment | 
+INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-07T11:36:25.641Z | announcement_attachment | 
+SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-07T11:36:42.273Z | announcement_attachment | 
+INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-08T11:03:54.902Z | announcement_attachment | 
+SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-08T11:04:06.284Z | announcement_attachment | 
+INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-18T11:05:01.300Z | announcement_attachment | 
+SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-18T11:05:19.407Z | announcement_attachment | 
+INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-19T20:05:29.276Z | announcement_attachment | 
+SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-19T20:05:44.355Z | announcement_attachment | 
+INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-21T12:33:22.981Z | announcement_attachment | 
+SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-21T12:33:34.050Z | announcement_attachment | 
+INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-08-24T05:52:37.412Z | announcement_attachment | 
+SYNCED | N3D Safety Rules.pdf | pdf | 2026-08-24T05:52:49.187Z | announcement_attachment | 
+NOT_SYNCED | N3D Safety Rules.pdf | pdf | 2026-09-05T16:03:56.406Z | announcement_attachment | 
+INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-09-05T16:04:12.931Z | announcement_attachment | 
+SYNCED | N3D Safety Rules.pdf | pdf | 2026-09-05T16:04:30.677Z | announcement_attachment | 
+INCOMPATIBLE | N3D Safety Rules.pdf | pdf | 2026-09-05T16:21:35.159Z | announcement_attachment | 
+SYNCED | N3D Safety Rules.pdf | pdf | 2026-09-05T16:21:51.855Z | announcement_attachment | 
+NOT_SYNCED | N3D Safety Rules.pdf | pdf | 2026-09-07T10:04:14.157Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/d95f45b4-b37b-4ca5-bd71-4d2c4f1ec0d5/Announcements/3512d399-995b-422b-bf0e-606e2a109cd4/N3D%20Safety%20Rules.pdf
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
