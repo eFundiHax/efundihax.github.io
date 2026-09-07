@@ -24,7 +24,7 @@ title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
 last_announcement: 2026-09-06T13:12:39.573Z
 total_files: 1293
-generated: 2026-09-07T21:46:47.523Z
+generated: 2026-09-07T21:51:56.475Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -1311,8 +1311,8 @@ INCOMPATIBLE | Test456.hex | hex | 2026-09-07T21:29:03.493Z | announcement_attac
 NOT_SYNCED | PPEP171_SEECE_GroupList_2026_Ver-2 14 April 2026.pdf | pdf | 2026-09-07T21:29:03.493Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/79ec9856-411e-4280-912d-85563611235c/PPEP171_SEECE_GroupList_2026_Ver-2%2014%20April%202026.pdf
 NOT_SYNCED | Group Mech 4 Mechanical&ElectroMechanical Eng - First years.pdf | pdf | 2026-09-07T21:42:17.064Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/11d90ca4-a70d-41b3-8a89-371e8be21531/Group%20Mech%204%20Mechanical_ElectroMechanical%20Eng%20-%20First%20years.pdf
 NOT_SYNCED | PPEP171_SEECE_GroupList_2026_Ver-2 27 March 2026.pdf | pdf | 2026-09-07T21:42:17.064Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/9b358739-5d94-423a-b645-96dfecac6ae6/PPEP171_SEECE_GroupList_2026_Ver-2%2027%20March%202026.pdf
-NOT_SYNCED | PPEP171_SEECE_GroupList_2026_Ver-2 24 March 2026.pdf | pdf | 2026-09-07T16:54:58.164Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/0e568396-cb3d-4275-8dc0-ed700e7e3716/PPEP171_SEECE_GroupList_2026_Ver-2%2024%20March%202026.pdf
-NOT_SYNCED | Workshop Rotation.docx | docx | 2026-09-07T16:54:58.164Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/ea0a85e2-4f96-444a-a844-659133ca1754/Workshop%20Rotation.docx
+NOT_SYNCED | PPEP171_SEECE_GroupList_2026_Ver-2 24 March 2026.pdf | pdf | 2026-09-07T21:51:02.934Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/0e568396-cb3d-4275-8dc0-ed700e7e3716/PPEP171_SEECE_GroupList_2026_Ver-2%2024%20March%202026.pdf
+NOT_SYNCED | Workshop Rotation.docx | docx | 2026-09-07T21:51:02.934Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/ea0a85e2-4f96-444a-a844-659133ca1754/Workshop%20Rotation.docx
 NOT_SYNCED | Group Mech 3 Mechanical Eng - First years.pdf | pdf | 2026-09-07T12:49:21.191Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/9289423a-a584-40e5-b2bb-8e08ab6fc8e3/Group%20Mech%203%20Mechanical%20Eng%20-%20First%20years.pdf
 NOT_SYNCED | PPEP171_SEECE_GroupList_20March2026_Ver-1.pdf | pdf | 2026-09-07T12:49:21.191Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/527e218a-a74c-4134-bdd1-b32d8c37d3fe/PPEP171_SEECE_GroupList_20March2026_Ver-1.pdf
 NOT_SYNCED | PPEP171_SEECE_GroupList_17March2026.pdf | pdf | 2026-09-07T12:52:39.497Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/e4b63c25-0543-4d2c-894d-4e1f2d5a8a6b/PPEP171_SEECE_GroupList_17March2026.pdf
