@@ -24,7 +24,7 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-09-05T16:04:47.999Z
 total_files: 499
-generated: 2026-09-07T21:16:26.016Z
+generated: 2026-09-07T21:16:43.983Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -485,9 +485,9 @@ NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-07T21:16:07.
 NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:16:21.636Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/73956941-2b60-4c6e-82bd-df6a2e79a613/2024.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf
 NOT_SYNCED | Industrial Automation Short Course_Siemens TIA-Micro.jpg | jpg | 2026-09-07T21:16:21.636Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0bd05699-4088-4e88-ba28-ef7880ea8103/Industrial%20Automation%20Short%20Course_Siemens%20TIA-Micro.jpg
 NOT_SYNCED | Word Wise Week.jpg | jpg | 2026-09-07T21:16:21.636Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5fa20c74-8a4f-4d86-bff0-edbe5673cbb8/Word%20Wise%20Week.jpg
-NOT_SYNCED | Industrial Automation Short Course.jpg | jpg | 2026-09-07T18:03:18.718Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/91e0c3d1-755a-4db2-870f-8beff31088cd/Industrial%20Automation%20Short%20Course.jpg
-NOT_SYNCED | SCD Thuso A4 dgt.pdf | pdf | 2026-09-07T18:03:18.718Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f97b0782-a4f9-4d45-900a-9332b11b04f7/SCD%20Thuso%20A4%20dgt.pdf
-NOT_SYNCED | Cybathlon 2024.jpg | jpg | 2026-09-07T18:03:18.718Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7941dd05-687e-4716-ba81-fdcf5c7f86e2/Cybathlon%202024.jpg
+NOT_SYNCED | Industrial Automation Short Course.jpg | jpg | 2026-09-07T21:16:38.171Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/91e0c3d1-755a-4db2-870f-8beff31088cd/Industrial%20Automation%20Short%20Course.jpg
+NOT_SYNCED | SCD Thuso A4 dgt.pdf | pdf | 2026-09-07T21:16:38.171Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f97b0782-a4f9-4d45-900a-9332b11b04f7/SCD%20Thuso%20A4%20dgt.pdf
+NOT_SYNCED | Cybathlon 2024.jpg | jpg | 2026-09-07T21:16:38.171Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7941dd05-687e-4716-ba81-fdcf5c7f86e2/Cybathlon%202024.jpg
 NOT_SYNCED | abb5180b-d34e-4805-902e-5fe27441a836.jpeg | jpeg | 2026-09-07T18:03:36.676Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/b8eebd91-611b-4fc9-b2d1-d6689a82ade6/abb5180b-d34e-4805-902e-5fe27441a836.jpeg
 NOT_SYNCED | Hoodie Competition.png | png | 2026-09-07T18:03:36.676Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/fc4dc8f3-2cf1-4e9a-96a9-eadfe7d0db10/Hoodie%20Competition.png
 NOT_SYNCED | Engineering Fair.jpg | jpg | 2026-09-07T18:04:51.845Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/eb13bb9c-b79a-4cf8-9980-45c005e0db78/Engineering%20Fair.jpg
