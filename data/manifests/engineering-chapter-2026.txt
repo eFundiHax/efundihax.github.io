@@ -24,7 +24,7 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-09-05T16:04:47.999Z
 total_files: 499
-generated: 2026-09-07T18:05:38.607Z
+generated: 2026-09-07T18:05:54.999Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -496,9 +496,9 @@ NOT_SYNCED | Volleyball Tournament.jpg | jpg | 2026-09-07T18:05:09.281Z | announ
 NOT_SYNCED | Siemens TIA-Micro Course.jpg | jpg | 2026-09-07T18:05:09.281Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/260bc1ee-e7ab-4709-a945-c7a339d2099f/Siemens%20TIA-Micro%20Course.jpg
 NOT_SYNCED | Barefoot Day, SCC.jpg | jpg | 2026-09-07T18:05:33.617Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/92ded784-9503-45b9-a470-c931f5f36a05/Barefoot%20Day%2C%20SCC.jpg
 NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-09-07T18:05:33.617Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5da7923a-d1c7-483d-be3c-327931a4098b/Hoodie%20Competition.jpg
-NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-07T13:29:30.909Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f91f99a0-2617-4290-af63-139e69a8f272/SAC%20Clothing%20Drive.png
-NOT_SYNCED | final candidate .pdf | pdf | 2026-09-07T13:29:30.909Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/9d9e366c-178c-4790-a3c3-0a02247b21ee/final%20candidate%20.pdf
-NOT_SYNCED | elected candidates .pdf | pdf | 2026-09-07T13:29:30.909Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8fa16d2f-836b-4945-96d8-dac29b441c28/elected%20candidates%20.pdf
+NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-07T18:05:51.129Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f91f99a0-2617-4290-af63-139e69a8f272/SAC%20Clothing%20Drive.png
+NOT_SYNCED | final candidate .pdf | pdf | 2026-09-07T18:05:51.129Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/9d9e366c-178c-4790-a3c3-0a02247b21ee/final%20candidate%20.pdf
+NOT_SYNCED | elected candidates .pdf | pdf | 2026-09-07T18:05:51.129Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8fa16d2f-836b-4945-96d8-dac29b441c28/elected%20candidates%20.pdf
 NOT_SYNCED | Final list of Candidates.pdf | pdf | 2026-09-07T13:29:46.492Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8ae7645c-64cf-4c19-8245-092211560065/Final%20list%20of%20Candidates.pdf
 NOT_SYNCED | Quiz Night .jpg | jpg | 2026-09-07T13:29:46.492Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/1a2d31e0-87a1-4910-8bbf-b5e9c00191a7/Quiz%20Night%20.jpg
 NOT_SYNCED | Amapiano Friday.jpg | jpg | 2026-09-07T13:29:46.492Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8372533d-6253-4615-b78f-af7672ead53c/Amapiano%20Friday.jpg
