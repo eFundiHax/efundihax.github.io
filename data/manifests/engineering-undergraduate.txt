@@ -24,7 +24,7 @@ title: Engineering Undergraduate
 last_sync: 2026-09-07T17:48:13.740Z
 last_announcement: 2026-09-05T16:19:33.834Z
 total_files: 1383
-generated: 2026-09-07T16:36:36.328Z
+generated: 2026-09-07T17:51:09.813Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -1396,8 +1396,8 @@ INCOMPATIBLE | 2024 Document upload Checklist for candidates - Southern Africa R
 INCOMPATIBLE | 2024 Information for Candidates (IfC) Southern Africa_Final Updated.pdf | pdf | 2026-09-06T15:35:45.102Z | announcement_attachment | 
 INCOMPATIBLE | 2026 FENG_MSA Timetable_31 Aug.xlsx | xlsx | 2026-09-06T15:43:53.345Z | announcement_attachment | 
 INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to students.pdf | pdf | 2026-09-06T15:43:53.345Z | announcement_attachment | 
-NOT_SYNCED | 2026 FENG_MSA Timetable_31 Aug.xlsx | xlsx | 2026-09-07T15:31:24.160Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/7d764432-71bc-42ba-b1fd-295f7624acd3/2026%20FENG_MSA%20Timetable_31%20Aug.xlsx
-NOT_SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to students.pdf | pdf | 2026-09-07T15:31:24.160Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/b8347307-5845-4d15-a96d-25c5803902d6/2026%20ACADEMIC%20ADVISING%20Infographic%20invitation%20to%20students.pdf
+NOT_SYNCED | 2026 FENG_MSA Timetable_31 Aug.xlsx | xlsx | 2026-09-07T17:50:32.605Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/7d764432-71bc-42ba-b1fd-295f7624acd3/2026%20FENG_MSA%20Timetable_31%20Aug.xlsx
+NOT_SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to students.pdf | pdf | 2026-09-07T17:50:32.605Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/b8347307-5845-4d15-a96d-25c5803902d6/2026%20ACADEMIC%20ADVISING%20Infographic%20invitation%20to%20students.pdf
 NOT_SYNCED | MUST 2027 student recruitment flyer.pdf | pdf | 2026-09-07T16:20:58.216Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/96926ddf-6b76-4093-bfb8-932475e567c4/MUST%202027%20student%20recruitment%20flyer.pdf
 NOT_SYNCED | Student_Subscription_forms_2026.pdf | pdf | 2026-09-07T16:20:58.216Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/eea7379e-a6cd-430d-b234-89cce5981a0b/Student_Subscription_forms_2026.pdf
 NOT_SYNCED | FENG Exam Timetable 1st Sem_25 May 2026.xlsx | xlsx | 2026-09-07T16:35:46.304Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/130ff49b-a3ca-40de-b326-1168e7742315/FENG%20Exam%20Timetable%201st%20Sem_25%20May%202026.xlsx
