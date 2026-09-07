@@ -24,7 +24,7 @@ title: Villagers Manskoshuis
 last_sync: 2026-08-25T12:32:58.752Z
 last_announcement: 2026-08-30T11:08:30.814Z
 total_files: 71
-generated: 2026-09-07T15:35:26.921Z
+generated: 2026-09-07T15:35:42.788Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -91,8 +91,8 @@ INCOMPATIBLE | 2024.09.02_Prelim nominees_ELIGIBLE_template.docm | docm | 2026-0
 INCOMPATIBLE | 2024.09.02_Prelim nominees_NOT ELIGIBLE_template.docm | docm | 2026-09-07T15:35:24.962Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/8a9b2ca7-54bd-4f7c-bab9-e676a3dfccd0/2024.09.02_Prelim%20nominees_NOT%20ELIGIBLE_template.docm
 NOT_SYNCED | IMG_2047.jpeg | jpeg | 2026-09-07T15:35:24.962Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/aae2807e-43a1-496a-8989-5ddbf1a0bd57/IMG_2047.jpeg
 NOT_SYNCED | IMG_2048.jpeg | jpeg | 2026-09-07T15:35:24.962Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/22a87bc6-7909-44d3-aba1-3088b38dfb88/IMG_2048.jpeg
-NOT_SYNCED | 89088e48-888a-4a79-84f1-1a5f13ee51d5.jpeg | jpeg | 2026-09-07T13:39:44.274Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/d0415105-dd7f-4958-91d9-4a4b43f49420/89088e48-888a-4a79-84f1-1a5f13ee51d5.jpeg
-NOT_SYNCED | 8753cb43-7cb9-49b3-8e8d-5d775710f490.jpeg | jpeg | 2026-09-07T13:40:10.862Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/3ad6976e-fb43-4111-9505-e69e67bcfa50/8753cb43-7cb9-49b3-8e8d-5d775710f490.jpeg
+NOT_SYNCED | 89088e48-888a-4a79-84f1-1a5f13ee51d5.jpeg | jpeg | 2026-09-07T15:35:40.914Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/d0415105-dd7f-4958-91d9-4a4b43f49420/89088e48-888a-4a79-84f1-1a5f13ee51d5.jpeg
+NOT_SYNCED | 8753cb43-7cb9-49b3-8e8d-5d775710f490.jpeg | jpeg | 2026-09-07T15:35:40.914Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/3ad6976e-fb43-4111-9505-e69e67bcfa50/8753cb43-7cb9-49b3-8e8d-5d775710f490.jpeg
 NOT_SYNCED | Black and White Horse Eye Art Canvas.png | png | 2026-09-07T13:40:23.403Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/51175596-f3cf-438f-a649-fdda1a022623/Black%20and%20White%20Horse%20Eye%20Art%20Canvas.png
 NOT_SYNCED | WhatsApp Image 2023-08-08 at 11.36.44.jpg | jpg | 2026-09-07T13:40:49.705Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/eb63bfed-b73b-452c-9655-555f944a4922/WhatsApp%20Image%202023-08-08%20at%2011.36.44.jpg
 NOT_SYNCED | WhatsApp Image 2023-02-09 at 12.53.31.jpg | jpg | 2026-09-07T14:37:40.054Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/6c3505ba-dc39-487d-b52a-6b85f4cf47bd/WhatsApp%20Image%202023-02-09%20at%2012.53.31.jpg
