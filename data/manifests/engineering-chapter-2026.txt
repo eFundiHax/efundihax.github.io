@@ -24,7 +24,7 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-09-05T16:04:47.999Z
 total_files: 499
-generated: 2026-09-07T17:46:56.363Z
+generated: 2026-09-07T17:47:29.617Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -413,9 +413,9 @@ NOT_SYNCED | Micro 18July.png | png | 2026-09-07T17:46:27.601Z | announcement_at
 NOT_SYNCED | Pro1 25July.png | png | 2026-09-07T17:46:27.601Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a910014a-08fc-4560-abc5-d632105cc784/Pro1%2025July.png
 NOT_SYNCED | Pro2-22June.png | png | 2026-09-07T17:46:52.237Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/29ecf28f-d643-41a6-98d7-21331245807a/Pro2-22June.png
 NOT_SYNCED | Pro2-22June.png | png | 2026-09-07T17:46:52.237Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f69e00df-ce3c-4ccc-a895-e3493fb970c1/Pro2-22June.png
-NOT_SYNCED | SRC_ConstitutionReview.jpeg | jpeg | 2026-09-07T13:18:07.443Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/4c11eadf-c357-4a88-ae24-a9566a7336c6/SRC_ConstitutionReview.jpeg
-NOT_SYNCED | SiemensCourse_TIA-MICRO.png | png | 2026-09-07T13:18:07.443Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e3c38026-60fc-4a12-b518-6556d54cfa81/SiemensCourse_TIA-MICRO.png
-NOT_SYNCED | Upcoming Courses in Robotics.pdf | pdf | 2026-09-07T13:18:07.443Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7a9dbde9-1aef-4bd2-ade8-638f1c5df189/Upcoming%20Courses%20in%20Robotics.pdf
+NOT_SYNCED | SRC_ConstitutionReview.jpeg | jpeg | 2026-09-07T17:47:25.887Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/4c11eadf-c357-4a88-ae24-a9566a7336c6/SRC_ConstitutionReview.jpeg
+NOT_SYNCED | SiemensCourse_TIA-MICRO.png | png | 2026-09-07T17:47:25.887Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e3c38026-60fc-4a12-b518-6556d54cfa81/SiemensCourse_TIA-MICRO.png
+NOT_SYNCED | Upcoming Courses in Robotics.pdf | pdf | 2026-09-07T17:47:25.887Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7a9dbde9-1aef-4bd2-ade8-638f1c5df189/Upcoming%20Courses%20in%20Robotics.pdf
 NOT_SYNCED | CareerFairs2026.jpeg | jpeg | 2026-09-07T13:18:25.553Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/210d3557-9cc2-40b3-af5e-e3a4b199c02a/CareerFairs2026.jpeg
 NOT_SYNCED | SIEMENS Course Advert.jpeg | jpeg | 2026-09-07T13:18:25.553Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f19b4ded-b6bb-48c0-af4c-e1fbd671914f/SIEMENS%20Course%20Advert.jpeg
 NOT_SYNCED | IMG-20251023-WA0051.jpg | jpg | 2026-09-07T13:18:40.298Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/862ad276-c633-4281-98eb-772819de3553/IMG-20251023-WA0051.jpg
