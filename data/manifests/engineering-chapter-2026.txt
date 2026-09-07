@@ -24,7 +24,7 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-09-05T16:04:47.999Z
 total_files: 499
-generated: 2026-09-07T21:22:19.023Z
+generated: 2026-09-07T21:22:33.314Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -519,8 +519,8 @@ NOT_SYNCED | Coversations that Matter.jpg | jpg | 2026-09-07T21:21:58.296Z | ann
 NOT_SYNCED | Quiz Night.jpg | jpg | 2026-09-07T21:22:14.069Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/b8ab7328-56ed-45aa-bf6e-02adfd112033/Quiz%20Night.jpg
 NOT_SYNCED | 9March2024 TIA-Micro.png | png | 2026-09-07T21:22:14.069Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/340a2540-1634-46e2-9f18-9cde320e5364/9March2024%20TIA-Micro.png
 NOT_SYNCED | LETTER TO UNIVERSITIES- 2024 ACADEMIC YEAR UPDATE - North West University.pdf | pdf | 2026-09-07T21:22:14.069Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/68a96fe0-620c-4b95-ad83-787c999a724e/LETTER%20TO%20UNIVERSITIES-%202024%20ACADEMIC%20YEAR%20UPDATE%20-%20North%20West%20University.pdf
-NOT_SYNCED | Safety and awareness.jpg | jpg | 2026-09-07T18:08:28.303Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/ffdb2f91-3081-4e4c-a19c-93e788be9d9a/Safety%20and%20awareness.jpg
-NOT_SYNCED | Safety and Awareness Week (5).png | png | 2026-09-07T18:08:28.303Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/45901403-f019-45cd-a0b8-b01d92c01990/Safety%20and%20Awareness%20Week%20_5_.png
+NOT_SYNCED | Safety and awareness.jpg | jpg | 2026-09-07T21:22:30.338Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/ffdb2f91-3081-4e4c-a19c-93e788be9d9a/Safety%20and%20awareness.jpg
+NOT_SYNCED | Safety and Awareness Week (5).png | png | 2026-09-07T21:22:30.338Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/45901403-f019-45cd-a0b8-b01d92c01990/Safety%20and%20Awareness%20Week%20_5_.png
 NOT_SYNCED | SubCom.jpg | jpg | 2026-09-07T18:08:44.164Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/aa0bd527-e4ab-4bd8-b377-1a5780fc04db/SubCom.jpg
 NOT_SYNCED | First Generation Students.jpg | jpg | 2026-09-07T18:08:44.164Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0694e083-7a77-4dcc-9d21-9e5d62da0ddb/First%20Generation%20Students.jpg
 NOT_SYNCED | SAiEE Membership Drive.jpg | jpg | 2026-09-07T18:08:59.538Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/080729cd-6178-49f9-af1a-796ba0a1ffa0/SAiEE%20Membership%20Drive.jpg
