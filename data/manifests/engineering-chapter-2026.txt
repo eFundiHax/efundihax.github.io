@@ -24,7 +24,7 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-09-05T16:04:47.999Z
 total_files: 499
-generated: 2026-09-07T17:54:47.694Z
+generated: 2026-09-07T17:55:00.917Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -446,8 +446,8 @@ NOT_SYNCED | Volleyball.png | png | 2026-09-07T17:54:12.726Z | announcement_atta
 NOT_SYNCED | Weekly planner.png | png | 2026-09-07T17:54:41.950Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/74f0cdd5-f73e-4a59-8ac2-c4c142a25239/Weekly%20planner.png
 NOT_SYNCED | 2025.02.17_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-07T17:54:41.950Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/33f30cb0-10ab-4ccc-a80a-a66a334dcae0/2025.02.17_Nomination%20Form%20Students_%20Academic%20Chapter.pdf
 NOT_SYNCED | 2025.02.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-07T17:54:41.950Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7033e0d6-78a8-4b10-a5b5-a64602c97fe4/2025.02.13_PC%20Election%20Schedule_HC%20SAC_for%20publication%20-%20By-ELECTIONS.pdf
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-07T13:22:51.459Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/1b56d872-c266-4809-859f-a51ab90177b9/2022.09.05_Rules%20SSLS_approved%20_2_.pdf
-NOT_SYNCED | 2025.02.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-07T13:22:51.459Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7ca3d1d8-aba9-4df8-97d3-a3c0ab300aa2/2025.02.13_PC%20Election%20Schedule_HC%20SAC_for%20publication%20-%20By-ELECTIONS.pdf
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-07T17:54:57.846Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/1b56d872-c266-4809-859f-a51ab90177b9/2022.09.05_Rules%20SSLS_approved%20_2_.pdf
+NOT_SYNCED | 2025.02.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-07T17:54:57.846Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7ca3d1d8-aba9-4df8-97d3-a3c0ab300aa2/2025.02.13_PC%20Election%20Schedule_HC%20SAC_for%20publication%20-%20By-ELECTIONS.pdf
 NOT_SYNCED | 2024.10.06_Final list elected_ENG.pdf | pdf | 2026-09-07T13:23:07.241Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a1b6e1a8-7aac-4987-9ec4-decac7ef3144/2024.10.06_Final%20list%20elected_ENG.pdf
 NOT_SYNCED | 2024.10.05_Prelim list of elected candidates.pdf | pdf | 2026-09-07T13:23:07.241Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a0ddb864-b17d-4370-9ff4-c6017ec95963/2024.10.05_Prelim%20list%20of%20elected%20candidates.pdf
 NOT_SYNCED | 2024.10.02_Final list of candidates_.pdf | pdf | 2026-09-07T13:23:23.771Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/df62cec0-0adb-44cf-b4e4-796f368fd33b/2024.10.02_Final%20list%20of%20candidates_.pdf
