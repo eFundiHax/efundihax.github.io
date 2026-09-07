@@ -24,7 +24,7 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-09-05T16:04:47.999Z
 total_files: 499
-generated: 2026-09-07T13:24:49.421Z
+generated: 2026-09-07T13:25:04.431Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -460,8 +460,8 @@ NOT_SYNCED | Christian Van Wyk CV.pdf | pdf | 2026-09-07T13:24:20.822Z | announc
 NOT_SYNCED | Roedine van der Merwe CV.pdf | pdf | 2026-09-07T13:24:20.822Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0ec402a5-45b3-45f7-b851-f93d4ea1bff7/Roedine%20van%20der%20Merwe%20CV.pdf
 NOT_SYNCED | 2022.09.05_Rules SSLS_approved _2_.pdf | pdf | 2026-09-07T13:24:45.612Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/cfcccad9-04ab-4da4-9546-5f6cd9da19b9/2022.09.05_Rules%20SSLS_approved%20_2_.pdf
 NOT_SYNCED | 2024.09.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-07T13:24:45.612Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2edea737-841b-40bb-af92-fe7ba038de74/2024.09.13_PC%20Election%20Schedule_HC%20SAC_for%20publication%20-%20By-ELECTIONS.pdf
-NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-07T11:19:02.389Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e2b43ea6-a6fc-435a-89d0-6b1260cca350/Portfolio%20descriptions%20for%20SAC.pdf
-SYNCED | 2024.09.09_Final list elected_Engineering.pdf | pdf | 2026-09-07T11:23:45.081Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7f669595-a374-4f14-9a23-1edfd723415a/2024.09.09_Final%20list%20elected_Engineering.pdf
+NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-07T13:25:01.331Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e2b43ea6-a6fc-435a-89d0-6b1260cca350/Portfolio%20descriptions%20for%20SAC.pdf
+NOT_SYNCED | 2024.09.09_Final list elected_Engineering.pdf | pdf | 2026-09-07T13:25:01.331Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7f669595-a374-4f14-9a23-1edfd723415a/2024.09.09_Final%20list%20elected_Engineering.pdf
 NOT_SYNCED | 2024.09.06_Prelim list elected_Engineering.pdf | pdf | 2026-09-07T11:24:00.539Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/829b29a7-1b62-4fa2-854c-08836ab68240/2024.09.06_Prelim%20list%20elected_Engineering.pdf
 SYNCED | 2024.09.05_Prelim list elected_Chapters_Engineering (Publish ).pdf | pdf | 2026-09-07T11:31:02.052Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/45d774b7-dbd9-418c-ae58-5b76b86d4e85/2024.09.05_Prelim%20list%20elected_Chapters_Engineering%20_Publish%20_.pdf
 NOT_SYNCED | 2024.09.04_Final list of candidates_Engineering .pdf | pdf | 2026-09-07T11:31:18.156Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5453d4a4-034b-42f5-b3bc-278ae300385e/2024.09.04_Final%20list%20of%20candidates_Engineering%20.pdf
