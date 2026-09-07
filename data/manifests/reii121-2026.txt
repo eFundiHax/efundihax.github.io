@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-06T22:51:23.369Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -23,304 +23,305 @@ calendar_id: 38904b2f84d4bbd660a27358184791481cd52e359513dac75260466cb33fc3aa@gr
 title: REII121-2026
 last_sync: 2026-09-07T09:22:11.236Z
 last_announcement: 2026-09-05T16:17:11.793Z
-total_files: 293
-generated: 2026-09-06T13:12:25.339Z
+total_files: 294
+generated: 2026-09-07T09:22:27.791Z
 
 --- FILE REGISTRY ---
-(status | filename | extension | last_seen | type)
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-21T10:37:28.045Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-21T10:37:58.572Z | announcement_attachment
-INCOMPATIBLE | Textbook.PNG | png | 2026-07-21T10:38:18.934Z | resource
-INCOMPATIBLE | Textbook.PNG | png | 2026-07-21T10:50:09.620Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-21T11:51:30.841Z | announcement_attachment
-INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-07-21T11:51:50.236Z | resource
-INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-07-21T11:51:50.236Z | resource
-INCOMPATIBLE | Video Links.docx | docx | 2026-07-21T11:51:50.236Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-21T11:51:50.236Z | resource
-INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-07-21T11:51:50.236Z | resource
-NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-07-21T11:51:50.236Z | resource
-NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-07-21T11:51:50.236Z | resource
-NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-07-21T11:51:50.236Z | resource
-NOT_SYNCED | SDCC.pdf | pdf | 2026-07-21T11:51:50.236Z | resource
-NOT_SYNCED | Textbook.PNG | png | 2026-07-21T11:51:50.236Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-21T11:52:03.382Z | resource
-SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-07-21T11:52:41.297Z | resource
-SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-07-21T11:53:10.111Z | resource
-INCOMPATIBLE | Textbook.PNG | png | 2026-07-21T11:53:28.259Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-21T11:53:58.720Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-21T13:55:46.753Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-27T17:42:50.561Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-28T07:12:48.279Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-28T07:24:45.805Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-28T07:35:38.470Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-28T07:39:27.405Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-28T07:40:32.388Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-28T08:47:56.210Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T11:26:31.471Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T11:36:51.476Z | announcement_attachment
-INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-07-29T11:37:23.186Z | resource
-INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-07-29T11:37:23.186Z | resource
-INCOMPATIBLE | Video Links.docx | docx | 2026-07-29T11:37:23.186Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T11:37:23.186Z | resource
-INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-07-29T11:37:23.186Z | resource
-NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-07-29T11:37:23.186Z | resource
-NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-07-29T11:37:23.186Z | resource
-NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-07-29T11:37:23.186Z | resource
-NOT_SYNCED | SDCC.pdf | pdf | 2026-07-29T11:37:23.186Z | resource
-NOT_SYNCED | Textbook.PNG | png | 2026-07-29T11:37:23.186Z | resource
-IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T12:07:22.147Z | resource
-SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T12:43:37.213Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T12:44:18.655Z | announcement_attachment
-INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-07-29T12:44:33.625Z | resource
-INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-07-29T12:44:33.625Z | resource
-INCOMPATIBLE | Video Links.docx | docx | 2026-07-29T12:44:33.625Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T12:44:33.625Z | resource
-INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-07-29T12:44:33.625Z | resource
-NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-07-29T12:44:33.625Z | resource
-NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-07-29T12:44:33.625Z | resource
-NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-07-29T12:44:33.625Z | resource
-NOT_SYNCED | SDCC.pdf | pdf | 2026-07-29T12:44:33.625Z | resource
-NOT_SYNCED | Textbook.PNG | png | 2026-07-29T12:44:33.625Z | resource
-SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T12:45:30.949Z | resource
-SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-07-29T12:46:22.476Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T12:47:13.070Z | announcement_attachment
-INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-07-29T12:47:28.778Z | resource
-INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-07-29T12:47:28.778Z | resource
-INCOMPATIBLE | Video Links.docx | docx | 2026-07-29T12:47:28.778Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T12:47:28.778Z | resource
-INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-07-29T12:47:28.778Z | resource
-NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-07-29T12:47:28.778Z | resource
-NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-07-29T12:47:28.778Z | resource
-NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-07-29T12:47:28.778Z | resource
-NOT_SYNCED | SDCC.pdf | pdf | 2026-07-29T12:47:28.778Z | resource
-NOT_SYNCED | Textbook.PNG | png | 2026-07-29T12:47:28.778Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T12:49:02.412Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T12:55:40.189Z | announcement_attachment
-IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T13:11:23.480Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T14:41:09.210Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T14:48:25.898Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T22:16:17.466Z | announcement_attachment
-INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-07-29T22:16:32.364Z | resource
-INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-07-29T22:16:32.364Z | resource
-INCOMPATIBLE | Video Links.docx | docx | 2026-07-29T22:16:32.364Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T22:16:32.364Z | resource
-INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-07-29T22:16:32.364Z | resource
-NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-07-29T22:16:32.364Z | resource
-NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-07-29T22:16:32.364Z | resource
-NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-07-29T22:16:32.364Z | resource
-NOT_SYNCED | SDCC.pdf | pdf | 2026-07-29T22:16:32.364Z | resource
-NOT_SYNCED | Textbook.PNG | png | 2026-07-29T22:16:32.364Z | resource
-IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T22:17:18.338Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-30T12:17:06.795Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-30T12:19:22.887Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-30T13:15:06.816Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-31T08:38:14.378Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-03T05:33:22.672Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-03T05:35:18.914Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-03T05:44:58.678Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-03T08:37:23.132Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-03T09:48:12.403Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-04T10:50:23.354Z | announcement_attachment
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-04T10:50:47.649Z | resource
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-04T10:52:17.227Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-04T10:53:39.264Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-04T10:54:00.086Z | announcement_attachment
-INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-04T10:54:15.800Z | resource
-INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-04T10:54:15.800Z | resource
-INCOMPATIBLE | Video Links.docx | docx | 2026-08-04T10:54:15.800Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-04T10:54:15.800Z | resource
-INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-04T10:54:15.800Z | resource
-NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-04T10:54:15.800Z | resource
-NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-04T10:54:15.800Z | resource
-NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-04T10:54:15.800Z | resource
-NOT_SYNCED | SDCC.pdf | pdf | 2026-08-04T10:54:15.800Z | resource
-NOT_SYNCED | Textbook.PNG | png | 2026-08-04T10:54:15.800Z | resource
-SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-04T11:01:37.437Z | resource
-SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-04T11:02:20.718Z | resource
-SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-04T11:02:59.461Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-05T14:16:25.107Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-05T14:48:05.362Z | announcement_attachment
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-05T14:48:26.784Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-07T10:28:34.836Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-07T15:02:33.830Z | announcement_attachment
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-07T15:02:56.527Z | resource
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-07T15:08:03.840Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-07T15:08:32.117Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-07T15:10:10.247Z | announcement_attachment
-INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-07T15:10:28.219Z | resource
-INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-07T15:10:28.219Z | resource
-INCOMPATIBLE | Video Links.docx | docx | 2026-08-07T15:10:28.219Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-07T15:10:28.219Z | resource
-INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-07T15:10:28.219Z | resource
-NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-07T15:10:28.219Z | resource
-NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-07T15:10:28.219Z | resource
-NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-07T15:10:28.219Z | resource
-NOT_SYNCED | SDCC.pdf | pdf | 2026-08-07T15:10:28.219Z | resource
-NOT_SYNCED | Textbook.PNG | png | 2026-08-07T15:10:28.219Z | resource
-IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-07T15:11:19.550Z | resource
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-08T11:01:13.517Z | resource
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-08T11:01:28.471Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-08T13:07:31.671Z | announcement_attachment
-INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-08T13:07:55.328Z | resource
-INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-08T13:07:55.328Z | resource
-INCOMPATIBLE | Video Links.docx | docx | 2026-08-08T13:07:55.328Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-08T13:07:55.328Z | resource
-INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-08T13:07:55.328Z | resource
-NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-08T13:07:55.328Z | resource
-NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-08T13:07:55.328Z | resource
-NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-08T13:07:55.328Z | resource
-NOT_SYNCED | SDCC.pdf | pdf | 2026-08-08T13:07:55.328Z | resource
-NOT_SYNCED | Textbook.PNG | png | 2026-08-08T13:07:55.328Z | resource
-IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-08T13:37:17.748Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-13T17:01:01.666Z | announcement_attachment
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-13T17:01:20.760Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-14T13:37:53.705Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-14T13:38:24.898Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-14T13:40:56.014Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-17T05:37:34.656Z | announcement_attachment
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-17T05:37:54.690Z | resource
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-18T11:03:00.142Z | resource
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-18T11:03:18.877Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-18T11:16:53.172Z | announcement_attachment
-INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-18T11:17:09.851Z | resource
-INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-18T11:17:09.851Z | resource
-INCOMPATIBLE | Video Links.docx | docx | 2026-08-18T11:17:09.851Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-18T11:17:09.851Z | resource
-INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-18T11:17:09.851Z | resource
-NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-18T11:17:09.851Z | resource
-NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-18T11:17:09.851Z | resource
-NOT_SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-08-18T11:17:09.851Z | resource
-NOT_SYNCED | REII121 Planner-2026.pdf | pdf | 2026-08-18T11:17:09.851Z | resource
-NOT_SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-08-18T11:17:09.851Z | resource
-NOT_SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-08-18T11:17:09.851Z | resource
-NOT_SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-08-18T11:17:09.851Z | resource
-NOT_SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-08-18T11:17:09.851Z | resource
-NOT_SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-08-18T11:17:09.851Z | resource
-NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-18T11:17:09.851Z | resource
-NOT_SYNCED | SDCC.pdf | pdf | 2026-08-18T11:17:09.851Z | resource
-NOT_SYNCED | Textbook.PNG | png | 2026-08-18T11:17:09.851Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-18T11:17:25.168Z | resource
-IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-18T11:17:59.794Z | resource
-SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-18T11:26:55.244Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-18T11:27:21.389Z | announcement_attachment
-INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-18T11:27:37.577Z | resource
-INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-18T11:27:37.577Z | resource
-INCOMPATIBLE | Video Links.docx | docx | 2026-08-18T11:27:37.577Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-18T11:27:37.577Z | resource
-INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-18T11:27:37.577Z | resource
-NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-18T11:27:37.577Z | resource
-NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-18T11:27:37.577Z | resource
-NOT_SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-08-18T11:27:37.577Z | resource
-NOT_SYNCED | REII121 Planner-2026.pdf | pdf | 2026-08-18T11:27:37.577Z | resource
-NOT_SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-08-18T11:27:37.577Z | resource
-NOT_SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-08-18T11:27:37.577Z | resource
-NOT_SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-08-18T11:27:37.577Z | resource
-NOT_SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-08-18T11:27:37.577Z | resource
-NOT_SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-08-18T11:27:37.577Z | resource
-NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-18T11:27:37.577Z | resource
-NOT_SYNCED | SDCC.pdf | pdf | 2026-08-18T11:27:37.577Z | resource
-NOT_SYNCED | Textbook.PNG | png | 2026-08-18T11:27:37.577Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-18T11:27:48.428Z | resource
-IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-18T11:28:23.831Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-19T12:31:34.858Z | announcement_attachment
-INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-19T12:31:57.378Z | resource
-INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-19T12:31:57.378Z | resource
-INCOMPATIBLE | Video Links.docx | docx | 2026-08-19T12:31:57.378Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-19T12:31:57.378Z | resource
-INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-19T12:31:57.378Z | resource
-NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-19T12:31:57.378Z | resource
-NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-19T12:31:57.378Z | resource
-NOT_SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-08-19T12:31:57.378Z | resource
-NOT_SYNCED | REII121 Planner-2026.pdf | pdf | 2026-08-19T12:31:57.378Z | resource
-NOT_SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-08-19T12:31:57.378Z | resource
-NOT_SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-08-19T12:31:57.378Z | resource
-NOT_SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-08-19T12:31:57.378Z | resource
-NOT_SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-08-19T12:31:57.378Z | resource
-NOT_SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-08-19T12:31:57.378Z | resource
-NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-19T12:31:57.378Z | resource
-NOT_SYNCED | SDCC.pdf | pdf | 2026-08-19T12:31:57.378Z | resource
-NOT_SYNCED | Textbook.PNG | png | 2026-08-19T12:31:57.378Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-19T12:32:33.191Z | announcement_attachment
-INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-19T12:32:47.663Z | resource
-INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-19T12:32:47.663Z | resource
-INCOMPATIBLE | Video Links.docx | docx | 2026-08-19T12:32:47.663Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-19T12:32:47.663Z | resource
-INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-19T12:32:47.663Z | resource
-NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-19T12:32:47.663Z | resource
-NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-19T12:32:47.663Z | resource
-NOT_SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-08-19T12:32:47.663Z | resource
-NOT_SYNCED | REII121 Planner-2026.pdf | pdf | 2026-08-19T12:32:47.663Z | resource
-NOT_SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-08-19T12:32:47.663Z | resource
-NOT_SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-08-19T12:32:47.663Z | resource
-NOT_SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-08-19T12:32:47.663Z | resource
-NOT_SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-08-19T12:32:47.663Z | resource
-NOT_SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-08-19T12:32:47.663Z | resource
-NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-19T12:32:47.663Z | resource
-NOT_SYNCED | SDCC.pdf | pdf | 2026-08-19T12:32:47.663Z | resource
-NOT_SYNCED | Textbook.PNG | png | 2026-08-19T12:32:47.663Z | resource
-SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-19T12:33:38.910Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-19T12:34:03.024Z | announcement_attachment
-INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-19T12:34:20.337Z | resource
-INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-19T12:34:20.337Z | resource
-INCOMPATIBLE | Video Links.docx | docx | 2026-08-19T12:34:20.337Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-19T12:34:20.337Z | resource
-INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-19T12:34:20.337Z | resource
-NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-19T12:34:20.337Z | resource
-NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-19T12:34:20.337Z | resource
-NOT_SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-08-19T12:34:20.337Z | resource
-NOT_SYNCED | REII121 Planner-2026.pdf | pdf | 2026-08-19T12:34:20.337Z | resource
-NOT_SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-08-19T12:34:20.337Z | resource
-NOT_SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-08-19T12:34:20.337Z | resource
-NOT_SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-08-19T12:34:20.337Z | resource
-NOT_SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-08-19T12:34:20.337Z | resource
-NOT_SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-08-19T12:34:20.337Z | resource
-NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-19T12:34:20.337Z | resource
-NOT_SYNCED | SDCC.pdf | pdf | 2026-08-19T12:34:20.337Z | resource
-NOT_SYNCED | Textbook.PNG | png | 2026-08-19T12:34:20.337Z | resource
-IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-19T12:35:07.307Z | resource
-SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-19T12:50:14.085Z | resource
-SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-19T12:51:07.931Z | resource
-IMAGES_NOT_SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-08-19T12:51:24.057Z | resource
-SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-08-19T14:25:53.283Z | resource
-INCOMPATIBLE | REII 121+Les+Signals+2026.pdf | pdf | 2026-08-19T14:26:13.941Z | resource
-INCOMPATIBLE | REII121 Les Micros 2026.pdf | pdf | 2026-08-19T14:26:24.079Z | resource
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-19T14:26:38.276Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-21T12:14:22.003Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-21T12:31:46.910Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-21T12:56:35.938Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-21T12:56:52.649Z | announcement_attachment
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-21T12:57:13.531Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-24T05:53:39.959Z | announcement_attachment
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-24T05:53:59.600Z | resource
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-24T05:54:11.432Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-24T05:54:53.920Z | announcement_attachment
-INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-24T05:55:11.540Z | resource
-INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-24T05:55:11.540Z | resource
-INCOMPATIBLE | Video Links.docx | docx | 2026-08-24T05:55:11.540Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-24T05:55:11.540Z | resource
-INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-24T05:55:11.540Z | resource
-NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-24T05:55:11.540Z | resource
-NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-24T05:55:11.540Z | resource
-NOT_SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-08-24T05:55:11.540Z | resource
-NOT_SYNCED | REII121 Planner-2026.pdf | pdf | 2026-08-24T05:55:11.540Z | resource
-NOT_SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-08-24T05:55:11.540Z | resource
-NOT_SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-08-24T05:55:11.540Z | resource
-NOT_SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-08-24T05:55:11.540Z | resource
-NOT_SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-08-24T05:55:11.540Z | resource
-NOT_SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-08-24T05:55:11.540Z | resource
-NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-24T05:55:11.540Z | resource
-NOT_SYNCED | SDCC.pdf | pdf | 2026-08-24T05:55:11.540Z | resource
-NOT_SYNCED | Textbook.PNG | png | 2026-08-24T05:55:11.540Z | resource
-INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-24T05:55:22.257Z | resource
-IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-24T06:21:44.136Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-24T06:59:20.225Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-30T11:09:21.757Z | announcement_attachment
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-30T11:09:41.230Z | resource
-INCOMPATIBLE | Textbook.PNG | png | 2026-08-30T11:10:05.227Z | resource
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-30T11:11:00.458Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-05T16:17:07.904Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-05T16:17:37.931Z | announcement_attachment
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-06T13:12:24.400Z | announcement_attachment
+(status | filename | extension | last_seen | type | url)
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-21T10:37:28.045Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-21T10:37:58.572Z | announcement_attachment | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-07-21T10:38:18.934Z | resource | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-07-21T10:50:09.620Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-21T11:51:30.841Z | announcement_attachment | 
+INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-07-21T11:51:50.236Z | resource | 
+INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-07-21T11:51:50.236Z | resource | 
+INCOMPATIBLE | Video Links.docx | docx | 2026-07-21T11:51:50.236Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-21T11:51:50.236Z | resource | 
+INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-07-21T11:51:50.236Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-07-21T11:51:50.236Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-07-21T11:51:50.236Z | resource | 
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-07-21T11:51:50.236Z | resource | 
+NOT_SYNCED | SDCC.pdf | pdf | 2026-07-21T11:51:50.236Z | resource | 
+NOT_SYNCED | Textbook.PNG | png | 2026-07-21T11:51:50.236Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-21T11:52:03.382Z | resource | 
+SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-07-21T11:52:41.297Z | resource | 
+SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-07-21T11:53:10.111Z | resource | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-07-21T11:53:28.259Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-21T11:53:58.720Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-21T13:55:46.753Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-27T17:42:50.561Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-28T07:12:48.279Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-28T07:24:45.805Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-28T07:35:38.470Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-28T07:39:27.405Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-28T07:40:32.388Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-28T08:47:56.210Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T11:26:31.471Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T11:36:51.476Z | announcement_attachment | 
+INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-07-29T11:37:23.186Z | resource | 
+INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-07-29T11:37:23.186Z | resource | 
+INCOMPATIBLE | Video Links.docx | docx | 2026-07-29T11:37:23.186Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T11:37:23.186Z | resource | 
+INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-07-29T11:37:23.186Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-07-29T11:37:23.186Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-07-29T11:37:23.186Z | resource | 
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-07-29T11:37:23.186Z | resource | 
+NOT_SYNCED | SDCC.pdf | pdf | 2026-07-29T11:37:23.186Z | resource | 
+NOT_SYNCED | Textbook.PNG | png | 2026-07-29T11:37:23.186Z | resource | 
+IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T12:07:22.147Z | resource | 
+SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T12:43:37.213Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T12:44:18.655Z | announcement_attachment | 
+INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-07-29T12:44:33.625Z | resource | 
+INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-07-29T12:44:33.625Z | resource | 
+INCOMPATIBLE | Video Links.docx | docx | 2026-07-29T12:44:33.625Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T12:44:33.625Z | resource | 
+INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-07-29T12:44:33.625Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-07-29T12:44:33.625Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-07-29T12:44:33.625Z | resource | 
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-07-29T12:44:33.625Z | resource | 
+NOT_SYNCED | SDCC.pdf | pdf | 2026-07-29T12:44:33.625Z | resource | 
+NOT_SYNCED | Textbook.PNG | png | 2026-07-29T12:44:33.625Z | resource | 
+SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T12:45:30.949Z | resource | 
+SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-07-29T12:46:22.476Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T12:47:13.070Z | announcement_attachment | 
+INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-07-29T12:47:28.778Z | resource | 
+INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-07-29T12:47:28.778Z | resource | 
+INCOMPATIBLE | Video Links.docx | docx | 2026-07-29T12:47:28.778Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T12:47:28.778Z | resource | 
+INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-07-29T12:47:28.778Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-07-29T12:47:28.778Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-07-29T12:47:28.778Z | resource | 
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-07-29T12:47:28.778Z | resource | 
+NOT_SYNCED | SDCC.pdf | pdf | 2026-07-29T12:47:28.778Z | resource | 
+NOT_SYNCED | Textbook.PNG | png | 2026-07-29T12:47:28.778Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T12:49:02.412Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T12:55:40.189Z | announcement_attachment | 
+IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T13:11:23.480Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T14:41:09.210Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T14:48:25.898Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-29T22:16:17.466Z | announcement_attachment | 
+INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-07-29T22:16:32.364Z | resource | 
+INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-07-29T22:16:32.364Z | resource | 
+INCOMPATIBLE | Video Links.docx | docx | 2026-07-29T22:16:32.364Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T22:16:32.364Z | resource | 
+INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-07-29T22:16:32.364Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-07-29T22:16:32.364Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-07-29T22:16:32.364Z | resource | 
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-07-29T22:16:32.364Z | resource | 
+NOT_SYNCED | SDCC.pdf | pdf | 2026-07-29T22:16:32.364Z | resource | 
+NOT_SYNCED | Textbook.PNG | png | 2026-07-29T22:16:32.364Z | resource | 
+IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-07-29T22:17:18.338Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-30T12:17:06.795Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-30T12:19:22.887Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-30T13:15:06.816Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-31T08:38:14.378Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-03T05:33:22.672Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-03T05:35:18.914Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-03T05:44:58.678Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-03T08:37:23.132Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-03T09:48:12.403Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-04T10:50:23.354Z | announcement_attachment | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-04T10:50:47.649Z | resource | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-04T10:52:17.227Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-04T10:53:39.264Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-04T10:54:00.086Z | announcement_attachment | 
+INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-04T10:54:15.800Z | resource | 
+INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-04T10:54:15.800Z | resource | 
+INCOMPATIBLE | Video Links.docx | docx | 2026-08-04T10:54:15.800Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-04T10:54:15.800Z | resource | 
+INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-04T10:54:15.800Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-04T10:54:15.800Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-04T10:54:15.800Z | resource | 
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-04T10:54:15.800Z | resource | 
+NOT_SYNCED | SDCC.pdf | pdf | 2026-08-04T10:54:15.800Z | resource | 
+NOT_SYNCED | Textbook.PNG | png | 2026-08-04T10:54:15.800Z | resource | 
+SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-04T11:01:37.437Z | resource | 
+SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-04T11:02:20.718Z | resource | 
+SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-04T11:02:59.461Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-05T14:16:25.107Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-05T14:48:05.362Z | announcement_attachment | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-05T14:48:26.784Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-07T10:28:34.836Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-07T15:02:33.830Z | announcement_attachment | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-07T15:02:56.527Z | resource | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-07T15:08:03.840Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-07T15:08:32.117Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-07T15:10:10.247Z | announcement_attachment | 
+INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-07T15:10:28.219Z | resource | 
+INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-07T15:10:28.219Z | resource | 
+INCOMPATIBLE | Video Links.docx | docx | 2026-08-07T15:10:28.219Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-07T15:10:28.219Z | resource | 
+INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-07T15:10:28.219Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-07T15:10:28.219Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-07T15:10:28.219Z | resource | 
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-07T15:10:28.219Z | resource | 
+NOT_SYNCED | SDCC.pdf | pdf | 2026-08-07T15:10:28.219Z | resource | 
+NOT_SYNCED | Textbook.PNG | png | 2026-08-07T15:10:28.219Z | resource | 
+IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-07T15:11:19.550Z | resource | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-08T11:01:13.517Z | resource | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-08T11:01:28.471Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-08T13:07:31.671Z | announcement_attachment | 
+INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-08T13:07:55.328Z | resource | 
+INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-08T13:07:55.328Z | resource | 
+INCOMPATIBLE | Video Links.docx | docx | 2026-08-08T13:07:55.328Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-08T13:07:55.328Z | resource | 
+INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-08T13:07:55.328Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-08T13:07:55.328Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-08T13:07:55.328Z | resource | 
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-08T13:07:55.328Z | resource | 
+NOT_SYNCED | SDCC.pdf | pdf | 2026-08-08T13:07:55.328Z | resource | 
+NOT_SYNCED | Textbook.PNG | png | 2026-08-08T13:07:55.328Z | resource | 
+IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-08T13:37:17.748Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-13T17:01:01.666Z | announcement_attachment | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-13T17:01:20.760Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-14T13:37:53.705Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-14T13:38:24.898Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-14T13:40:56.014Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-17T05:37:34.656Z | announcement_attachment | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-17T05:37:54.690Z | resource | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-18T11:03:00.142Z | resource | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-18T11:03:18.877Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-18T11:16:53.172Z | announcement_attachment | 
+INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-18T11:17:09.851Z | resource | 
+INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-18T11:17:09.851Z | resource | 
+INCOMPATIBLE | Video Links.docx | docx | 2026-08-18T11:17:09.851Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-18T11:17:09.851Z | resource | 
+INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-18T11:17:09.851Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-18T11:17:09.851Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-18T11:17:09.851Z | resource | 
+NOT_SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-08-18T11:17:09.851Z | resource | 
+NOT_SYNCED | REII121 Planner-2026.pdf | pdf | 2026-08-18T11:17:09.851Z | resource | 
+NOT_SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-08-18T11:17:09.851Z | resource | 
+NOT_SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-08-18T11:17:09.851Z | resource | 
+NOT_SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-08-18T11:17:09.851Z | resource | 
+NOT_SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-08-18T11:17:09.851Z | resource | 
+NOT_SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-08-18T11:17:09.851Z | resource | 
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-18T11:17:09.851Z | resource | 
+NOT_SYNCED | SDCC.pdf | pdf | 2026-08-18T11:17:09.851Z | resource | 
+NOT_SYNCED | Textbook.PNG | png | 2026-08-18T11:17:09.851Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-18T11:17:25.168Z | resource | 
+IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-18T11:17:59.794Z | resource | 
+SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-18T11:26:55.244Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-18T11:27:21.389Z | announcement_attachment | 
+INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-18T11:27:37.577Z | resource | 
+INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-18T11:27:37.577Z | resource | 
+INCOMPATIBLE | Video Links.docx | docx | 2026-08-18T11:27:37.577Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-18T11:27:37.577Z | resource | 
+INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-18T11:27:37.577Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-18T11:27:37.577Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-18T11:27:37.577Z | resource | 
+NOT_SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-08-18T11:27:37.577Z | resource | 
+NOT_SYNCED | REII121 Planner-2026.pdf | pdf | 2026-08-18T11:27:37.577Z | resource | 
+NOT_SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-08-18T11:27:37.577Z | resource | 
+NOT_SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-08-18T11:27:37.577Z | resource | 
+NOT_SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-08-18T11:27:37.577Z | resource | 
+NOT_SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-08-18T11:27:37.577Z | resource | 
+NOT_SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-08-18T11:27:37.577Z | resource | 
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-18T11:27:37.577Z | resource | 
+NOT_SYNCED | SDCC.pdf | pdf | 2026-08-18T11:27:37.577Z | resource | 
+NOT_SYNCED | Textbook.PNG | png | 2026-08-18T11:27:37.577Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-18T11:27:48.428Z | resource | 
+IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-18T11:28:23.831Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-19T12:31:34.858Z | announcement_attachment | 
+INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-19T12:31:57.378Z | resource | 
+INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-19T12:31:57.378Z | resource | 
+INCOMPATIBLE | Video Links.docx | docx | 2026-08-19T12:31:57.378Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-19T12:31:57.378Z | resource | 
+INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-19T12:31:57.378Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-19T12:31:57.378Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-19T12:31:57.378Z | resource | 
+NOT_SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-08-19T12:31:57.378Z | resource | 
+NOT_SYNCED | REII121 Planner-2026.pdf | pdf | 2026-08-19T12:31:57.378Z | resource | 
+NOT_SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-08-19T12:31:57.378Z | resource | 
+NOT_SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-08-19T12:31:57.378Z | resource | 
+NOT_SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-08-19T12:31:57.378Z | resource | 
+NOT_SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-08-19T12:31:57.378Z | resource | 
+NOT_SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-08-19T12:31:57.378Z | resource | 
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-19T12:31:57.378Z | resource | 
+NOT_SYNCED | SDCC.pdf | pdf | 2026-08-19T12:31:57.378Z | resource | 
+NOT_SYNCED | Textbook.PNG | png | 2026-08-19T12:31:57.378Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-19T12:32:33.191Z | announcement_attachment | 
+INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-19T12:32:47.663Z | resource | 
+INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-19T12:32:47.663Z | resource | 
+INCOMPATIBLE | Video Links.docx | docx | 2026-08-19T12:32:47.663Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-19T12:32:47.663Z | resource | 
+INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-19T12:32:47.663Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-19T12:32:47.663Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-19T12:32:47.663Z | resource | 
+NOT_SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-08-19T12:32:47.663Z | resource | 
+NOT_SYNCED | REII121 Planner-2026.pdf | pdf | 2026-08-19T12:32:47.663Z | resource | 
+NOT_SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-08-19T12:32:47.663Z | resource | 
+NOT_SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-08-19T12:32:47.663Z | resource | 
+NOT_SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-08-19T12:32:47.663Z | resource | 
+NOT_SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-08-19T12:32:47.663Z | resource | 
+NOT_SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-08-19T12:32:47.663Z | resource | 
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-19T12:32:47.663Z | resource | 
+NOT_SYNCED | SDCC.pdf | pdf | 2026-08-19T12:32:47.663Z | resource | 
+NOT_SYNCED | Textbook.PNG | png | 2026-08-19T12:32:47.663Z | resource | 
+SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-19T12:33:38.910Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-19T12:34:03.024Z | announcement_attachment | 
+INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-19T12:34:20.337Z | resource | 
+INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-19T12:34:20.337Z | resource | 
+INCOMPATIBLE | Video Links.docx | docx | 2026-08-19T12:34:20.337Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-19T12:34:20.337Z | resource | 
+INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-19T12:34:20.337Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-19T12:34:20.337Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-19T12:34:20.337Z | resource | 
+NOT_SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-08-19T12:34:20.337Z | resource | 
+NOT_SYNCED | REII121 Planner-2026.pdf | pdf | 2026-08-19T12:34:20.337Z | resource | 
+NOT_SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-08-19T12:34:20.337Z | resource | 
+NOT_SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-08-19T12:34:20.337Z | resource | 
+NOT_SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-08-19T12:34:20.337Z | resource | 
+NOT_SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-08-19T12:34:20.337Z | resource | 
+NOT_SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-08-19T12:34:20.337Z | resource | 
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-19T12:34:20.337Z | resource | 
+NOT_SYNCED | SDCC.pdf | pdf | 2026-08-19T12:34:20.337Z | resource | 
+NOT_SYNCED | Textbook.PNG | png | 2026-08-19T12:34:20.337Z | resource | 
+IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-19T12:35:07.307Z | resource | 
+SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-19T12:50:14.085Z | resource | 
+SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-19T12:51:07.931Z | resource | 
+IMAGES_NOT_SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-08-19T12:51:24.057Z | resource | 
+SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-08-19T14:25:53.283Z | resource | 
+INCOMPATIBLE | REII 121+Les+Signals+2026.pdf | pdf | 2026-08-19T14:26:13.941Z | resource | 
+INCOMPATIBLE | REII121 Les Micros 2026.pdf | pdf | 2026-08-19T14:26:24.079Z | resource | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-19T14:26:38.276Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-21T12:14:22.003Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-21T12:31:46.910Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-21T12:56:35.938Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-21T12:56:52.649Z | announcement_attachment | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-21T12:57:13.531Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-24T05:53:39.959Z | announcement_attachment | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-24T05:53:59.600Z | resource | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-24T05:54:11.432Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-24T05:54:53.920Z | announcement_attachment | 
+INCOMPATIBLE | BaseBoardComponents.PNG | png | 2026-08-24T05:55:11.540Z | resource | 
+INCOMPATIBLE | Micro89LP51RD2.PNG | png | 2026-08-24T05:55:11.540Z | resource | 
+INCOMPATIBLE | Video Links.docx | docx | 2026-08-24T05:55:11.540Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-24T05:55:11.540Z | resource | 
+INCOMPATIBLE | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-08-24T05:55:11.540Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-08-24T05:55:11.540Z | resource | 
+NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-08-24T05:55:11.540Z | resource | 
+NOT_SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-08-24T05:55:11.540Z | resource | 
+NOT_SYNCED | REII121 Planner-2026.pdf | pdf | 2026-08-24T05:55:11.540Z | resource | 
+NOT_SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-08-24T05:55:11.540Z | resource | 
+NOT_SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-08-24T05:55:11.540Z | resource | 
+NOT_SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-08-24T05:55:11.540Z | resource | 
+NOT_SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-08-24T05:55:11.540Z | resource | 
+NOT_SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-08-24T05:55:11.540Z | resource | 
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-08-24T05:55:11.540Z | resource | 
+NOT_SYNCED | SDCC.pdf | pdf | 2026-08-24T05:55:11.540Z | resource | 
+NOT_SYNCED | Textbook.PNG | png | 2026-08-24T05:55:11.540Z | resource | 
+INCOMPATIBLE | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-24T05:55:22.257Z | resource | 
+IMAGES_NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-08-24T06:21:44.136Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-24T06:59:20.225Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-30T11:09:21.757Z | announcement_attachment | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-30T11:09:41.230Z | resource | 
+INCOMPATIBLE | Textbook.PNG | png | 2026-08-30T11:10:05.227Z | resource | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-30T11:11:00.458Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-05T16:17:07.904Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-05T16:17:37.931Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-06T13:12:24.400Z | announcement_attachment | 
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-07T09:22:26.958Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/4fd1db7d-0399-4017-8984-d4c1c71b751e/Announcements/f875517f-34b1-474a-8e48-181e72b4bd80/AT89LP51RD2.H
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
