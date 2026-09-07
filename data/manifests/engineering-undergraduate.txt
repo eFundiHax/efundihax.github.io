@@ -24,7 +24,7 @@ title: Engineering Undergraduate
 last_sync: 2026-09-07T18:13:20.464Z
 last_announcement: 2026-09-05T16:19:33.834Z
 total_files: 1383
-generated: 2026-09-07T18:56:48.365Z
+generated: 2026-09-07T19:04:36.927Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -1398,8 +1398,8 @@ INCOMPATIBLE | 2026 FENG_MSA Timetable_31 Aug.xlsx | xlsx | 2026-09-06T15:43:53.
 INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to students.pdf | pdf | 2026-09-06T15:43:53.345Z | announcement_attachment | 
 NOT_SYNCED | 2026 FENG_MSA Timetable_31 Aug.xlsx | xlsx | 2026-09-07T18:14:49.548Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/7d764432-71bc-42ba-b1fd-295f7624acd3/2026%20FENG_MSA%20Timetable_31%20Aug.xlsx
 NOT_SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to students.pdf | pdf | 2026-09-07T18:14:49.548Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/b8347307-5845-4d15-a96d-25c5803902d6/2026%20ACADEMIC%20ADVISING%20Infographic%20invitation%20to%20students.pdf
-NOT_SYNCED | MUST 2027 student recruitment flyer.pdf | pdf | 2026-09-07T18:48:56.068Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/96926ddf-6b76-4093-bfb8-932475e567c4/MUST%202027%20student%20recruitment%20flyer.pdf
-NOT_SYNCED | Student_Subscription_forms_2026.pdf | pdf | 2026-09-07T18:48:56.068Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/eea7379e-a6cd-430d-b234-89cce5981a0b/Student_Subscription_forms_2026.pdf
+NOT_SYNCED | MUST 2027 student recruitment flyer.pdf | pdf | 2026-09-07T19:04:16.624Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/96926ddf-6b76-4093-bfb8-932475e567c4/MUST%202027%20student%20recruitment%20flyer.pdf
+NOT_SYNCED | Student_Subscription_forms_2026.pdf | pdf | 2026-09-07T19:04:16.624Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/eea7379e-a6cd-430d-b234-89cce5981a0b/Student_Subscription_forms_2026.pdf
 NOT_SYNCED | FENG Exam Timetable 1st Sem_25 May 2026.xlsx | xlsx | 2026-09-07T18:56:05.614Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/130ff49b-a3ca-40de-b326-1168e7742315/FENG%20Exam%20Timetable%201st%20Sem_25%20May%202026.xlsx
 NOT_SYNCED | FENG Exam Timetable 1st Sem_22 May 2026.xlsx | xlsx | 2026-09-07T18:56:05.614Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/2dcc215a-2531-4958-946a-ab32380342ab/FENG%20Exam%20Timetable%201st%20Sem_22%20May%202026.xlsx
 NOT_SYNCED | FENG Mid Semester Assessment Timetable_27 Mrt.xlsx | xlsx | 2026-09-07T14:59:45.046Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/6c09222a-6eb6-4ece-82f6-ae2db690717a/FENG%20Mid%20Semester%20Assessment%20Timetable_27%20Mrt.xlsx
