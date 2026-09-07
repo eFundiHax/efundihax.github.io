@@ -24,7 +24,7 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-09-05T16:04:47.999Z
 total_files: 499
-generated: 2026-09-07T17:53:38.550Z
+generated: 2026-09-07T17:53:53.451Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -439,8 +439,8 @@ NOT_SYNCED | Academics SUBCOM.jpg | jpg | 2026-09-07T17:53:12.764Z | announcemen
 NOT_SYNCED | Art Auditions.jpg | jpg | 2026-09-07T17:53:12.764Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7ecdb3fa-4398-4aa2-a9a0-2e118b40c8cf/Art%20Auditions.jpg
 NOT_SYNCED | MPR SUBCOM.jpg | jpg | 2026-09-07T17:53:35.489Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/90d4c3fd-d74d-40a1-9b47-b8eba39699ca/MPR%20SUBCOM.jpg
 NOT_SYNCED | Mr & Miss Campus.jpg | jpg | 2026-09-07T17:53:35.489Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/c77a7ec3-ce07-4f96-981a-3d7aa5955fdd/Mr%20_%20Miss%20Campus.jpg
-NOT_SYNCED | Siemens Course.jpg | jpg | 2026-09-07T13:22:05.553Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/631ad562-6845-4199-8e9d-07b655492e4a/Siemens%20Course.jpg
-NOT_SYNCED | Societies booklet.jpg | jpg | 2026-09-07T13:22:05.553Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f270c2b1-ef09-407f-9d2d-55987d7aaa5b/Societies%20booklet.jpg
+NOT_SYNCED | Siemens Course.jpg | jpg | 2026-09-07T17:53:49.522Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/631ad562-6845-4199-8e9d-07b655492e4a/Siemens%20Course.jpg
+NOT_SYNCED | Societies booklet.jpg | jpg | 2026-09-07T17:53:49.522Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f270c2b1-ef09-407f-9d2d-55987d7aaa5b/Societies%20booklet.jpg
 NOT_SYNCED | Society stalls.jpg | jpg | 2026-09-07T13:22:21.004Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5e446563-aaf4-4dcb-b318-572a82698792/Society%20stalls.jpg
 NOT_SYNCED | Volleyball.png | png | 2026-09-07T13:22:21.004Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/ed7da901-d13f-4c30-a723-3ad04ac08586/Volleyball.png
 NOT_SYNCED | Weekly planner.png | png | 2026-09-07T13:22:37.666Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/74f0cdd5-f73e-4a59-8ac2-c4c142a25239/Weekly%20planner.png
