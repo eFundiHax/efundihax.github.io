@@ -24,7 +24,7 @@ title: Engineering Undergraduate
 last_sync: 2026-09-07T18:13:20.464Z
 last_announcement: 2026-09-05T16:19:33.834Z
 total_files: 1383
-generated: 2026-09-07T20:22:18.767Z
+generated: 2026-09-07T20:23:41.303Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -1402,9 +1402,9 @@ NOT_SYNCED | MUST 2027 student recruitment flyer.pdf | pdf | 2026-09-07T19:04:16
 NOT_SYNCED | Student_Subscription_forms_2026.pdf | pdf | 2026-09-07T19:04:16.624Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/eea7379e-a6cd-430d-b234-89cce5981a0b/Student_Subscription_forms_2026.pdf
 NOT_SYNCED | FENG Exam Timetable 1st Sem_25 May 2026.xlsx | xlsx | 2026-09-07T19:19:01.414Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/130ff49b-a3ca-40de-b326-1168e7742315/FENG%20Exam%20Timetable%201st%20Sem_25%20May%202026.xlsx
 NOT_SYNCED | FENG Exam Timetable 1st Sem_22 May 2026.xlsx | xlsx | 2026-09-07T19:19:01.414Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/2dcc215a-2531-4958-946a-ab32380342ab/FENG%20Exam%20Timetable%201st%20Sem_22%20May%202026.xlsx
-NOT_SYNCED | FENG Mid Semester Assessment Timetable_27 Mrt.xlsx | xlsx | 2026-09-07T20:21:30.871Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/6c09222a-6eb6-4ece-82f6-ae2db690717a/FENG%20Mid%20Semester%20Assessment%20Timetable_27%20Mrt.xlsx
-NOT_SYNCED | Bursary opportunity.jpeg | jpeg | 2026-09-07T20:21:30.871Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/dd859794-b4fd-4a7e-b22f-63bd938b6de4/Bursary%20opportunity.jpeg
-NOT_SYNCED | Student_Subscription_forms_2025.pdf | pdf | 2026-09-07T20:21:30.871Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/55bc5b7b-786e-415e-8c6b-bac13be86ebf/Student_Subscription_forms_2025.pdf
+NOT_SYNCED | FENG Mid Semester Assessment Timetable_27 Mrt.xlsx | xlsx | 2026-09-07T20:23:10.644Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/6c09222a-6eb6-4ece-82f6-ae2db690717a/FENG%20Mid%20Semester%20Assessment%20Timetable_27%20Mrt.xlsx
+NOT_SYNCED | Bursary opportunity.jpeg | jpeg | 2026-09-07T20:23:10.644Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/dd859794-b4fd-4a7e-b22f-63bd938b6de4/Bursary%20opportunity.jpeg
+NOT_SYNCED | Student_Subscription_forms_2025.pdf | pdf | 2026-09-07T20:23:10.644Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/55bc5b7b-786e-415e-8c6b-bac13be86ebf/Student_Subscription_forms_2025.pdf
 NOT_SYNCED | MUST_Scholarships_2026_flyer.pdf | pdf | 2026-09-07T14:52:09.506Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/551bbe53-5b7c-416e-8014-caa26680cae5/MUST_Scholarships_2026_flyer.pdf
 NOT_SYNCED | Application Guide for SARAO Doctoral Scholarships for 2026.pdf | pdf | 2026-09-07T14:52:09.506Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/e71da6f1-4f13-4a55-b684-a64b0260e0cd/Application%20Guide%20for%20SARAO%20Doctoral%20Scholarships%20for%202026.pdf
 NOT_SYNCED | Application Guide for SARAO Master's Scholarships for 2026.pdf | pdf | 2026-09-07T14:54:33.087Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/0870e1c5-6386-45a4-b0ef-654c9fc1f985/Application%20Guide%20for%20SARAO%20Master_s%20Scholarships%20for%202026.pdf
