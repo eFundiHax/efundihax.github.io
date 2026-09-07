@@ -24,7 +24,7 @@ title: Villagers Manskoshuis
 last_sync: 2026-08-25T12:32:58.752Z
 last_announcement: 2026-08-30T11:08:30.814Z
 total_files: 71
-generated: 2026-09-07T15:35:00.615Z
+generated: 2026-09-07T15:35:15.086Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -84,8 +84,8 @@ NOT_SYNCED | 2025.09.15_Prelim nominees_ELIGIBLE_Residence VILLAGERS.pdf | pdf |
 NOT_SYNCED | PRELIMINARY LIST OF NOMINATED STUDENTS DEEMED NOT ELIGIBLE FOR ELECTION.pdf | pdf | 2026-09-07T15:34:27.956Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/8b44a4cd-a4e0-4029-bd23-f16953ca1de4/PRELIMINARY%20LIST%20OF%20NOMINATED%20STUDENTS%20DEEMED%20NOT%20ELIGIBLE%20FOR%20ELECTION.pdf
 NOT_SYNCED | 2024.09.05_Prelim list elected_Prim D-Prim Villagers.pdf | pdf | 2026-09-07T15:34:58.782Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/c199e07a-9bbe-4f91-8f08-dc00cf8d3f35/2024.09.05_Prelim%20list%20elected_Prim%20D-Prim%20Villagers.pdf
 NOT_SYNCED | 2024.09.04_Final list of candidates_Villagers.pdf | pdf | 2026-09-07T15:34:58.782Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/9afcf0a3-decc-41c2-8a87-f50292f8ed50/2024.09.04_Final%20list%20of%20candidates_Villagers.pdf
-NOT_SYNCED | CAMPAIGNING AND VOTING SCHEDULE FOR VILLAGERS MENS RESIDENCE 2024.pdf | pdf | 2026-09-07T13:37:24.958Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/0ee8024a-6f20-4029-8d42-16686639f8ec/CAMPAIGNING%20AND%20VOTING%20SCHEDULE%20FOR%20VILLAGERS%20MENS%20RESIDENCE%202024.pdf
-SYNCED | 2022.09.05_Rules SSLS_approved.pdf | pdf | 2026-09-07T13:38:23.496Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/4c482d93-6df4-4d32-aeb1-36d3a5d20b04/2022.09.05_Rules%20SSLS_approved.pdf
+NOT_SYNCED | CAMPAIGNING AND VOTING SCHEDULE FOR VILLAGERS MENS RESIDENCE 2024.pdf | pdf | 2026-09-07T15:35:13.616Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/0ee8024a-6f20-4029-8d42-16686639f8ec/CAMPAIGNING%20AND%20VOTING%20SCHEDULE%20FOR%20VILLAGERS%20MENS%20RESIDENCE%202024.pdf
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved.pdf | pdf | 2026-09-07T15:35:13.616Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/4c482d93-6df4-4d32-aeb1-36d3a5d20b04/2022.09.05_Rules%20SSLS_approved.pdf
 NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T13:38:47.536Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/a2c5cfc7-fb4d-4db6-8554-fce14bda4f7c/2024.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf
 INCOMPATIBLE | 2024.09.02_Prelim nominees_ELIGIBLE_template.docm | docm | 2026-09-07T13:38:47.536Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/7f93d2fc-b984-4304-b3fa-850794d25b8d/2024.09.02_Prelim%20nominees_ELIGIBLE_template.docm
 INCOMPATIBLE | 2024.09.02_Prelim nominees_NOT ELIGIBLE_template.docm | docm | 2026-09-07T13:38:47.536Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/8a9b2ca7-54bd-4f7c-bab9-e676a3dfccd0/2024.09.02_Prelim%20nominees_NOT%20ELIGIBLE_template.docm
