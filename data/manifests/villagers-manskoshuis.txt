@@ -24,7 +24,7 @@ title: Villagers Manskoshuis
 last_sync: 2026-08-25T12:32:58.752Z
 last_announcement: 2026-08-30T11:08:30.814Z
 total_files: 71
-generated: 2026-09-07T15:34:13.698Z
+generated: 2026-09-07T15:34:29.327Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -72,7 +72,7 @@ INCOMPATIBLE | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-31T12
 SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-31T12:46:07.874Z | announcement_attachment | 
 INCOMPATIBLE | 2025_Prelim list elected_ Villagers HC.pdf | pdf | 2026-08-31T12:46:19.408Z | announcement_attachment | 
 INCOMPATIBLE | 2025_Prelim list elected_Dep Prim Villagers.pdf | pdf | 2026-08-31T12:46:19.408Z | announcement_attachment | 
-NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_[1].pdf | pdf | 2026-09-07T13:34:57.499Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/a422accc-3fb2-460d-aa4b-87e52d5fbf18/2025.09.03_PC%20Election%20Schedule_HC%20SAC__1_.pdf
+NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_[1].pdf | pdf | 2026-09-07T15:34:27.956Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/a422accc-3fb2-460d-aa4b-87e52d5fbf18/2025.09.03_PC%20Election%20Schedule_HC%20SAC__1_.pdf
 NOT_SYNCED | 2024.09.09_Final list elected_template_Villagers & portfolios.pdf | pdf | 2026-09-07T13:35:39.268Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/85922989-f013-4c15-9934-084480261538/2024.09.09_Final%20list%20elected_template_Villagers%20_%20portfolios.pdf
 NOT_SYNCED | 2024.09.05_Prelim list elected_Villagers Prim, Dep-Prim & HC 2024.pdf | pdf | 2026-09-07T13:35:39.268Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/8fa26684-26a1-4ab6-a7c8-611f9a823f9d/2024.09.05_Prelim%20list%20elected_Villagers%20Prim%2C%20Dep-Prim%20_%20HC%202024.pdf
 NOT_SYNCED | 2026.08.24_Nomination Form House Committee.pdf | pdf | 2026-09-07T15:33:38.983Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/5eac74bb-1351-402d-8f39-f653473a9334/2026.08.24_Nomination%20Form%20House%20Committee.pdf
@@ -81,7 +81,7 @@ NOT_SYNCED | 2025_Prelim list elected_ Villagers HC.pdf | pdf | 2026-09-07T15:33
 NOT_SYNCED | 2025_Prelim list elected_Dep Prim Villagers.pdf | pdf | 2026-09-07T15:33:52.573Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/8ff11be8-ab5b-4c66-acd0-2c2f7f2d29a4/2025_Prelim%20list%20elected_Dep%20Prim%20Villagers.pdf
 NOT_SYNCED | 2025_Prelim list Villagers Prim elected.pdf | pdf | 2026-09-07T15:34:11.594Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/3fe16bdd-398c-4d37-b8ca-071e48208b2f/2025_Prelim%20list%20Villagers%20Prim%20elected.pdf
 NOT_SYNCED | 2025.09.15_Prelim nominees_ELIGIBLE_Residence VILLAGERS.pdf | pdf | 2026-09-07T15:34:11.594Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/abfef7ce-9915-4888-9a18-38bff328658a/2025.09.15_Prelim%20nominees_ELIGIBLE_Residence%20VILLAGERS.pdf
-SYNCED | PRELIMINARY LIST OF NOMINATED STUDENTS DEEMED NOT ELIGIBLE FOR ELECTION.pdf | pdf | 2026-09-07T13:35:25.733Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/8b44a4cd-a4e0-4029-bd23-f16953ca1de4/PRELIMINARY%20LIST%20OF%20NOMINATED%20STUDENTS%20DEEMED%20NOT%20ELIGIBLE%20FOR%20ELECTION.pdf
+NOT_SYNCED | PRELIMINARY LIST OF NOMINATED STUDENTS DEEMED NOT ELIGIBLE FOR ELECTION.pdf | pdf | 2026-09-07T15:34:27.956Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/8b44a4cd-a4e0-4029-bd23-f16953ca1de4/PRELIMINARY%20LIST%20OF%20NOMINATED%20STUDENTS%20DEEMED%20NOT%20ELIGIBLE%20FOR%20ELECTION.pdf
 NOT_SYNCED | 2024.09.05_Prelim list elected_Prim D-Prim Villagers.pdf | pdf | 2026-09-07T13:35:51.871Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/c199e07a-9bbe-4f91-8f08-dc00cf8d3f35/2024.09.05_Prelim%20list%20elected_Prim%20D-Prim%20Villagers.pdf
 SYNCED | 2024.09.04_Final list of candidates_Villagers.pdf | pdf | 2026-09-07T13:37:10.850Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/9afcf0a3-decc-41c2-8a87-f50292f8ed50/2024.09.04_Final%20list%20of%20candidates_Villagers.pdf
 NOT_SYNCED | CAMPAIGNING AND VOTING SCHEDULE FOR VILLAGERS MENS RESIDENCE 2024.pdf | pdf | 2026-09-07T13:37:24.958Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/0ee8024a-6f20-4029-8d42-16686639f8ec/CAMPAIGNING%20AND%20VOTING%20SCHEDULE%20FOR%20VILLAGERS%20MENS%20RESIDENCE%202024.pdf
