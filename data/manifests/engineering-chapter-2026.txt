@@ -24,7 +24,7 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-09-05T16:04:47.999Z
 total_files: 499
-generated: 2026-09-07T21:08:56.326Z
+generated: 2026-09-07T21:09:10.936Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -427,8 +427,8 @@ NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:0
 NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-07T21:08:35.548Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/c3c847d5-eef0-4614-86e7-e9f77f659830/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf
 NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-07T21:08:52.392Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/870f1c08-7cad-4dd1-9239-e44c2e0ce557/2025.09.04_Nomination%20Form%20Students%20Academic%20Chapter.pdf
 NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_ (2).pdf | pdf | 2026-09-07T21:08:52.392Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/3402b808-8de5-4c44-a2cc-91767f82fce1/2025.09.03_PC%20Election%20Schedule_HC%20SAC_%20_2_.pdf
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-07T17:52:16.798Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/6f74b6ab-f38b-4515-95e6-e4bb570ac776/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf
-NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T17:52:16.798Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/08716348-db80-4554-b81f-2872cd83f90e/2025.09.03_PC%20Election%20Schedule_HC%20SAC_.pdf
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-07T21:09:06.951Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/6f74b6ab-f38b-4515-95e6-e4bb570ac776/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf
+NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:09:06.951Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/08716348-db80-4554-b81f-2872cd83f90e/2025.09.03_PC%20Election%20Schedule_HC%20SAC_.pdf
 NOT_SYNCED | IATC-Flyer.pdf | pdf | 2026-09-07T17:52:32.406Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2a237612-ba14-4766-ade5-b86fd6e21e80/IATC-Flyer.pdf
 NOT_SYNCED | NWU SADS Services 2025.pptx | pptx | 2026-09-07T17:52:32.406Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/bded5b1a-a5dc-4959-8a00-08b086696fd0/NWU%20SADS%20Services%202025.pptx
 NOT_SYNCED | Siemens Course.jpg | jpg | 2026-09-07T17:52:32.406Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2e7f76a4-c8c1-4485-9216-54d9fdd7d4ac/Siemens%20Course.jpg
