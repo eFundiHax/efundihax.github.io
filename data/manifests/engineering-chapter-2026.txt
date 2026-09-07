@@ -24,7 +24,7 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-09-05T16:04:47.999Z
 total_files: 499
-generated: 2026-09-07T17:46:15.469Z
+generated: 2026-09-07T17:46:30.637Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -409,8 +409,8 @@ NOT_SYNCED | TIA-MICRO.jpeg | jpeg | 2026-09-07T17:45:33.107Z | announcement_att
 NOT_SYNCED | Micro 1Aug.jpeg | jpeg | 2026-09-07T17:45:33.107Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5657a470-3903-442c-a228-aab661063b8f/Micro%201Aug.jpeg
 NOT_SYNCED | Micro 15Aug.png | png | 2026-09-07T17:46:11.951Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/d6f97a4a-e513-4eba-99bd-4d1483980771/Micro%2015Aug.png
 NOT_SYNCED | Micro 9July.png | png | 2026-09-07T17:46:11.951Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0d067416-ec76-4676-9c9c-322997920b82/Micro%209July.png
-NOT_SYNCED | Micro 18July.png | png | 2026-09-07T13:17:36.516Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f35768f9-04f1-4282-ae42-ace80b50878c/Micro%2018July.png
-NOT_SYNCED | Pro1 25July.png | png | 2026-09-07T13:17:36.516Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a910014a-08fc-4560-abc5-d632105cc784/Pro1%2025July.png
+NOT_SYNCED | Micro 18July.png | png | 2026-09-07T17:46:27.601Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f35768f9-04f1-4282-ae42-ace80b50878c/Micro%2018July.png
+NOT_SYNCED | Pro1 25July.png | png | 2026-09-07T17:46:27.601Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a910014a-08fc-4560-abc5-d632105cc784/Pro1%2025July.png
 NOT_SYNCED | Pro2-22June.png | png | 2026-09-07T13:17:53.686Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/29ecf28f-d643-41a6-98d7-21331245807a/Pro2-22June.png
 NOT_SYNCED | Pro2-22June.png | png | 2026-09-07T13:17:53.686Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f69e00df-ce3c-4ccc-a895-e3493fb970c1/Pro2-22June.png
 NOT_SYNCED | SRC_ConstitutionReview.jpeg | jpeg | 2026-09-07T13:18:07.443Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/4c11eadf-c357-4a88-ae24-a9566a7336c6/SRC_ConstitutionReview.jpeg
