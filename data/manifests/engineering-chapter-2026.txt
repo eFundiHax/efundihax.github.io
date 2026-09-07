@@ -24,7 +24,7 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-09-05T16:04:47.999Z
 total_files: 499
-generated: 2026-09-07T17:49:45.015Z
+generated: 2026-09-07T17:50:01.255Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -421,8 +421,8 @@ NOT_SYNCED | SIEMENS Course Advert.jpeg | jpeg | 2026-09-07T17:48:22.640Z | anno
 NOT_SYNCED | IMG-20251023-WA0051.jpg | jpg | 2026-09-07T17:49:41.234Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/862ad276-c633-4281-98eb-772819de3553/IMG-20251023-WA0051.jpg
 NOT_SYNCED | 2025.10.13_Final list elected_Engineering_SAC.pdf | pdf | 2026-09-07T17:49:41.234Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8616bb1c-252c-4ae1-b506-3a4e0ba393d3/2025.10.13_Final%20list%20elected_Engineering_SAC.pdf
 NOT_SYNCED | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-09-07T17:49:41.234Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/b2f17f66-c25e-4c44-9008-a973604652c4/2025_Prelim%20list%20elected_SAC%20Committee_template_Engineering_Faculty.pdf
-NOT_SYNCED | 2025.09.22_Final list of candidates_Engineering.pdf | pdf | 2026-09-07T13:18:58.204Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/cce58c62-20c4-48dc-9dea-0049177b72ca/2025.09.22_Final%20list%20of%20candidates_Engineering.pdf
-NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-07T13:18:58.204Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8235f505-597e-4d8f-b886-27574e4f93de/2025.09.04_Nomination%20Form%20Students%20Academic%20Chapter.pdf
+NOT_SYNCED | 2025.09.22_Final list of candidates_Engineering.pdf | pdf | 2026-09-07T17:49:56.887Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/cce58c62-20c4-48dc-9dea-0049177b72ca/2025.09.22_Final%20list%20of%20candidates_Engineering.pdf
+NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-07T17:49:56.887Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8235f505-597e-4d8f-b886-27574e4f93de/2025.09.04_Nomination%20Form%20Students%20Academic%20Chapter.pdf
 NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T13:19:11.788Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0e5f1993-0734-4227-aa37-40d697b014d6/2025.09.03_PC%20Election%20Schedule_HC%20SAC_.pdf
 NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-07T13:19:11.788Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/c3c847d5-eef0-4614-86e7-e9f77f659830/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf
 NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-07T13:19:24.872Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/870f1c08-7cad-4dd1-9239-e44c2e0ce557/2025.09.04_Nomination%20Form%20Students%20Academic%20Chapter.pdf
