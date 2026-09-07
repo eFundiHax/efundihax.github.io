@@ -24,7 +24,7 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-09-05T16:04:47.999Z
 total_files: 499
-generated: 2026-09-07T18:07:01.683Z
+generated: 2026-09-07T18:07:18.336Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -509,8 +509,8 @@ NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-09-07T18:06:39.865Z | announcem
 NOT_SYNCED | Recyclable Materials Donations.jpg | jpg | 2026-09-07T18:06:39.865Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8742e77a-70af-4a54-984c-ab42068a4ea4/Recyclable%20Materials%20Donations.jpg
 NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-07T18:06:57.685Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/ac7abfb8-9ddf-4913-a982-bbbb79a26f2d/SAC%20Clothing%20Drive.png
 NOT_SYNCED | SAiEE Member Social.jpg | jpg | 2026-09-07T18:06:57.685Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/1bfccbba-e591-4a29-bcc8-515cba33f231/SAiEE%20Member%20Social.jpg
-NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-07T13:30:49.404Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/39efbeb4-fab8-43e5-907b-e94bca6a5f5a/SAC%20Clothing%20Drive.png
-NOT_SYNCED | Siemens TIA-Micro.png | png | 2026-09-07T13:30:49.404Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/08a350da-da67-4ab2-9f26-53724c369fc3/Siemens%20TIA-Micro.png
+NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-07T18:07:14.622Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/39efbeb4-fab8-43e5-907b-e94bca6a5f5a/SAC%20Clothing%20Drive.png
+NOT_SYNCED | Siemens TIA-Micro.png | png | 2026-09-07T18:07:14.622Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/08a350da-da67-4ab2-9f26-53724c369fc3/Siemens%20TIA-Micro.png
 NOT_SYNCED | ENG SAC Table Tennis.jpg | jpg | 2026-09-07T13:31:05.912Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/cc32de5c-d23c-449a-a541-6edbee60a4d9/ENG%20SAC%20Table%20Tennis.jpg
 NOT_SYNCED | 2024.03.04_SRC_Correspondence_ Update on Motsepe Foundation and Vice Chancellor's Donation .pdf | pdf | 2026-09-07T13:31:05.912Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8e31eaf3-c526-4000-8087-6bbf4b103903/2024.03.04_SRC_Correspondence_%20Update%20on%20Motsepe%20Foundation%20and%20Vice%20Chancellor_s%20Donation%20.pdf
 NOT_SYNCED | Eagles U20 vs UJ U20 Match Day.jpg | jpg | 2026-09-07T13:31:05.912Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/63f5cecb-f726-4dd0-9c8a-ac7b5ebb12b5/Eagles%20U20%20vs%20UJ%20U20%20Match%20Day.jpg
