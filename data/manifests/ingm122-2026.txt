@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-07T10:52:58.998Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -24,7 +24,7 @@ title: INGM122-2026
 last_sync: 2026-09-07T13:08:17.552Z
 last_announcement: 2026-09-06T14:13:56.588Z
 total_files: 812
-generated: 2026-09-07T10:02:15.338Z
+generated: 2026-09-07T13:08:36.097Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -831,8 +831,8 @@ SYNCED | PPE.pdf | pdf | 2026-09-06T14:17:12.778Z | announcement_attachment |
 INCOMPATIBLE | Practical discussion.pptx | pptx | 2026-09-06T15:44:20.270Z | announcement_attachment | 
 INCOMPATIBLE | Class tests 1_marks.pdf | pdf | 2026-09-06T15:44:20.270Z | announcement_attachment | 
 IMAGES_NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-09-06T15:45:13.999Z | announcement_attachment | 
-NOT_SYNCED | Practical discussion.pptx | pptx | 2026-09-07T10:01:36.686Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/de16c4b3-31f3-4e11-8ad3-29108f85b309/Practical%20discussion.pptx
-NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-09-07T10:01:36.686Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/8b592192-9015-4d36-9dad-3d470e968930/Class%20tests%201_marks.pdf
+NOT_SYNCED | Practical discussion.pptx | pptx | 2026-09-07T13:08:33.740Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/de16c4b3-31f3-4e11-8ad3-29108f85b309/Practical%20discussion.pptx
+NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-09-07T13:08:33.740Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/8b592192-9015-4d36-9dad-3d470e968930/Class%20tests%201_marks.pdf
 NOT_SYNCED | Assignment 1 marks.pdf | pdf | 2026-09-07T10:01:53.886Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/be53872b-2dae-479a-825d-9b92c0d31938/Assignment%201%20marks.pdf
 NOT_SYNCED | Online tests_13082026.pdf | pdf | 2026-09-07T10:01:53.886Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/74728493-3ae0-456c-ad22-83f7db093f8e/Online%20tests_13082026.pdf
 NOT_SYNCED | Test venue.jpg | jpg | 2026-09-07T10:01:53.886Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/1d6a4751-9f62-412e-8af3-d861c1905ee0/Test%20venue.jpg
