@@ -24,7 +24,7 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-09-05T16:04:47.999Z
 total_files: 499
-generated: 2026-09-07T18:01:01.747Z
+generated: 2026-09-07T18:01:17.684Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -468,8 +468,8 @@ NOT_SYNCED | 2024.09.04_Final list of candidates_Engineering .pdf | pdf | 2026-0
 NOT_SYNCED | 04_Sept_2024 Schedule for Engineering SAC Elections .pdf | pdf | 2026-09-07T18:00:42.590Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5f2499a8-6a9b-4853-9917-b5caa7c8d91e/04_Sept_2024%20Schedule%20for%20Engineering%20SAC%20Elections%20.pdf
 NOT_SYNCED | 2024.09.02_Prelim nominees_ELIGIBLE_Engineering.pdf | pdf | 2026-09-07T18:00:58.574Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/3aeb63e3-c558-44ee-a3e8-edb1c3d50af0/2024.09.02_Prelim%20nominees_ELIGIBLE_Engineering.pdf
 NOT_SYNCED | 2024.09.02_Prelim nominees_NOT ELIGIBLE_Engineering.pdf | pdf | 2026-09-07T18:00:58.574Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/36b04158-fb9e-4e04-804c-c222f5f2ac21/2024.09.02_Prelim%20nominees_NOT%20ELIGIBLE_Engineering.pdf
-NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-07T13:26:03.134Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/376ab8ba-1cc0-4cf2-ba26-918667088899/Portfolio%20descriptions%20for%20SAC.pdf
-NOT_SYNCED | Charné_Griessel_38217953.pdf | pdf | 2026-09-07T13:26:03.134Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e38e20fc-a8a1-414a-92d5-afb9ed5ae83a/Charn%C3%A9_Griessel_38217953.pdf
+NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-07T18:01:13.462Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/376ab8ba-1cc0-4cf2-ba26-918667088899/Portfolio%20descriptions%20for%20SAC.pdf
+NOT_SYNCED | Charné_Griessel_38217953.pdf | pdf | 2026-09-07T18:01:13.462Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e38e20fc-a8a1-414a-92d5-afb9ed5ae83a/Charn%C3%A9_Griessel_38217953.pdf
 NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-07T13:26:19.167Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8234d5c5-005e-4745-907c-4b9a77570b2a/2024.08.26_Nomination%20Form%20Students_%20Academic%20Chapter.pdf
 NOT_SYNCED | Tayler_Geldenhuys_37575597.pdf | pdf | 2026-09-07T13:26:19.167Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/c4db505e-e31c-4952-982b-671e18ddddc1/Tayler_Geldenhuys_37575597.pdf
 NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-07T13:26:35.821Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2cb5cdb7-3101-4814-b75a-caeb9ed3d6fa/2022.09.05_Rules%20SSLS_approved%20_2_.pdf
