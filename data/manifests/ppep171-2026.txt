@@ -24,7 +24,7 @@ title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
 last_announcement: 2026-09-06T13:12:39.573Z
 total_files: 1293
-generated: 2026-09-09T06:21:41.500Z
+generated: 2026-09-09T06:23:06.851Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -1301,7 +1301,7 @@ INCOMPATIBLE | Major Groups.pdf | png | 2026-09-06T14:09:41.148Z | announcement_
 INCOMPATIBLE | Plagiarism Form.pdf | pdf | 2026-09-06T14:11:24.535Z | announcement_attachment | 
 INCOMPATIBLE | Doc1.pdf | pdf | 2026-09-06T14:11:24.535Z | announcement_attachment | 
 NOT_SYNCED | Chemical Eng Class Groups.pdf | pdf | 2026-09-09T06:20:27.819Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/d932e908-45ba-4981-9739-8a9d8519a46f/Chemical%20Eng%20Class%20Groups.pdf
-NOT_SYNCED | PPEP171_SEECE_GroupList_Wiring_2026.pdf | pdf | 2026-09-09T06:20:27.819Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/7fd06937-b32b-4a8c-96fe-d2bb542d4f82/PPEP171_SEECE_GroupList_Wiring_2026.pdf
+IMAGES_NOT_SYNCED | PPEP171_SEECE_GroupList_Wiring_2026.pdf | pdf | 2026-09-09T06:21:52.166Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/7fd06937-b32b-4a8c-96fe-d2bb542d4f82/PPEP171_SEECE_GroupList_Wiring_2026.pdf
 NOT_SYNCED | PPEP171_SEECE_Wiring.pdf | pdf | 2026-09-09T05:56:45.522Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/37e69338-f770-4a00-a207-a479571c9a9f/PPEP171_SEECE_Wiring.pdf
 IMAGES_NOT_SYNCED | Industrial Eng Group  - First years.pdf | pdf | 2026-09-09T06:17:31.993Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/9b43e6f9-51ce-435c-9c84-39661e661758/Industrial%20Eng%20Group%20%20-%20First%20years.pdf
 NOT_SYNCED | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-09-08T15:12:10.146Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/2d00e6fd-1b24-45ba-9b20-8bfaa7642ba2/PPEP171_W4_Marks_Students.xlsx
