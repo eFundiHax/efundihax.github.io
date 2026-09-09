@@ -23,8 +23,8 @@ calendar_id: 38904b2f84d4bbd660a27358184791481cd52e359513dac75260466cb33fc3aa@gr
 title: REII121-2026
 last_sync: 2026-09-09T05:32:29.939Z
 last_announcement: 2026-09-05T16:17:11.793Z
-total_files: 296
-generated: 2026-09-09T05:32:49.669Z
+total_files: 312
+generated: 2026-09-09T05:33:12.182Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -322,8 +322,24 @@ INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-05T16:17:07.904Z | announcement_attac
 INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-05T16:17:37.931Z | announcement_attachment | 
 INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-06T13:12:24.400Z | announcement_attachment | 
 INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-09T05:32:48.911Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/4fd1db7d-0399-4017-8984-d4c1c71b751e/Announcements/f875517f-34b1-474a-8e48-181e72b4bd80/AT89LP51RD2.H
-NOT_SYNCED | MSA 1 Spetember 2026.PNG | png | 2026-09-09T05:27:19.303Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/MSA%201%20Spetember%202026.PNG
-NOT_SYNCED | Textbook.PNG | png | 2026-09-09T05:27:19.303Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Textbook.PNG
+NOT_SYNCED | MSA 1 Spetember 2026.PNG | png | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/MSA%201%20Spetember%202026.PNG
+NOT_SYNCED | Textbook.PNG | png | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Textbook.PNG
+NOT_SYNCED | BaseBoardComponents.PNG | png | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Hardware/BaseBoardComponents.PNG
+NOT_SYNCED | Micro89LP51RD2.PNG | png | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Hardware/Micro89LP51RD2.PNG
+NOT_SYNCED | Video Links.docx | docx | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Hardware/Video%20Links.docx
+NOT_SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111%20-%20Binary%20Values%202025.xlsx
+NOT_SYNCED | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111HF2%20Numbring%20Systems%20Binary%20P6-1-2020.pdf
+NOT_SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111%20-%20HF%203%20Binary.pdf
+NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111%20-%20HF%203%20Gates.pdf
+NOT_SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Layout/Module%20assessment%20plan%20%20REII121%202026%20-%20Ver%201.0.pdf
+NOT_SYNCED | REII121 Planner-2026.pdf | pdf | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Layout/REII121%20Planner-2026.pdf
+NOT_SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII121%2BLes%2BHex-files%2B2026.pdf
+NOT_SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII121%2BLes%2BRegisters%2B2026.pdf
+NOT_SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII%20121%2BLes%2BSignals%2B2026.pdf
+NOT_SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII%20121%20Flow%20Charts.pdf
+NOT_SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII121%20Les%20Micros%202026.pdf
+NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Software/REII%20121%20Development%20Board%20Documentation%202026.pdf
+NOT_SYNCED | SDCC.pdf | pdf | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Software/SDCC.pdf
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
