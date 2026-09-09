@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-08T22:52:15.848Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -19,12 +19,12 @@ https://greasyfork.org/en/scripts/579058-efundi-scraper
 
 emoji: 📘
 color: #6b3d8f
-calendar_id: ee5a07338688feca410e489f64240c075690873ce0a26797c01ca124e80957f1@group.calendar.google.com
+calendar_id: bdd3f3d6e360367c1b64322d57d396087c1c18b44c471e3909ba2593883b921a@group.calendar.google.com
 title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
 last_announcement: 2026-09-06T13:12:39.573Z
 total_files: 1293
-generated: 2026-09-08T15:25:18.947Z
+generated: 2026-09-09T05:39:57.040Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -1300,8 +1300,8 @@ INCOMPATIBLE | Major Groups.pdf | pdf | 2026-09-06T14:09:23.669Z | announcement_
 INCOMPATIBLE | Major Groups.pdf | png | 2026-09-06T14:09:41.148Z | announcement_attachment | 
 INCOMPATIBLE | Plagiarism Form.pdf | pdf | 2026-09-06T14:11:24.535Z | announcement_attachment | 
 INCOMPATIBLE | Doc1.pdf | pdf | 2026-09-06T14:11:24.535Z | announcement_attachment | 
-NOT_SYNCED | Chemical Eng Class Groups.pdf | pdf | 2026-09-08T15:24:30.558Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/d932e908-45ba-4981-9739-8a9d8519a46f/Chemical%20Eng%20Class%20Groups.pdf
-NOT_SYNCED | PPEP171_SEECE_GroupList_Wiring_2026.pdf | pdf | 2026-09-08T15:24:30.558Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/7fd06937-b32b-4a8c-96fe-d2bb542d4f82/PPEP171_SEECE_GroupList_Wiring_2026.pdf
+NOT_SYNCED | Chemical Eng Class Groups.pdf | pdf | 2026-09-09T05:38:49.231Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/d932e908-45ba-4981-9739-8a9d8519a46f/Chemical%20Eng%20Class%20Groups.pdf
+NOT_SYNCED | PPEP171_SEECE_GroupList_Wiring_2026.pdf | pdf | 2026-09-09T05:38:49.231Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/7fd06937-b32b-4a8c-96fe-d2bb542d4f82/PPEP171_SEECE_GroupList_Wiring_2026.pdf
 NOT_SYNCED | PPEP171_SEECE_Wiring.pdf | pdf | 2026-09-08T15:06:59.138Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/37e69338-f770-4a00-a207-a479571c9a9f/PPEP171_SEECE_Wiring.pdf
 IMAGES_NOT_SYNCED | Industrial Eng Group  - First years.pdf | pdf | 2026-09-08T15:10:29.521Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/9b43e6f9-51ce-435c-9c84-39661e661758/Industrial%20Eng%20Group%20%20-%20First%20years.pdf
 NOT_SYNCED | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-09-08T15:12:10.146Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/2d00e6fd-1b24-45ba-9b20-8bfaa7642ba2/PPEP171_W4_Marks_Students.xlsx
