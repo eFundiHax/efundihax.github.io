@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-08T22:54:20.159Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -19,12 +19,12 @@ https://greasyfork.org/en/scripts/579058-efundi-scraper
 
 emoji: 📘
 color: #6b3d8f
-calendar_id: f361c7d2c854a2c0535ea693b2562dfbb5ddb75472b802c3c14a07a018248e3b@group.calendar.google.com
+calendar_id: 706bd2741c980823adb09b86efbb0fbb2709be5b03e60ed9d28a733c4e08f818@group.calendar.google.com
 title: Engineering Undergraduate
 last_sync: 2026-09-09T05:30:48.621Z
 last_announcement: 2026-09-05T16:19:33.834Z
 total_files: 1383
-generated: 2026-09-07T21:27:43.251Z
+generated: 2026-09-09T05:32:21.976Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -1396,8 +1396,8 @@ INCOMPATIBLE | 2024 Document upload Checklist for candidates - Southern Africa R
 INCOMPATIBLE | 2024 Information for Candidates (IfC) Southern Africa_Final Updated.pdf | pdf | 2026-09-06T15:35:45.102Z | announcement_attachment | 
 INCOMPATIBLE | 2026 FENG_MSA Timetable_31 Aug.xlsx | xlsx | 2026-09-06T15:43:53.345Z | announcement_attachment | 
 INCOMPATIBLE | 2026 ACADEMIC ADVISING Infographic invitation to students.pdf | pdf | 2026-09-06T15:43:53.345Z | announcement_attachment | 
-NOT_SYNCED | 2026 FENG_MSA Timetable_31 Aug.xlsx | xlsx | 2026-09-07T21:27:14.977Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/7d764432-71bc-42ba-b1fd-295f7624acd3/2026%20FENG_MSA%20Timetable_31%20Aug.xlsx
-NOT_SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to students.pdf | pdf | 2026-09-07T21:27:14.977Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/b8347307-5845-4d15-a96d-25c5803902d6/2026%20ACADEMIC%20ADVISING%20Infographic%20invitation%20to%20students.pdf
+NOT_SYNCED | 2026 FENG_MSA Timetable_31 Aug.xlsx | xlsx | 2026-09-09T05:31:46.958Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/7d764432-71bc-42ba-b1fd-295f7624acd3/2026%20FENG_MSA%20Timetable_31%20Aug.xlsx
+NOT_SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to students.pdf | pdf | 2026-09-09T05:31:46.958Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/b8347307-5845-4d15-a96d-25c5803902d6/2026%20ACADEMIC%20ADVISING%20Infographic%20invitation%20to%20students.pdf
 NOT_SYNCED | MUST 2027 student recruitment flyer.pdf | pdf | 2026-09-07T19:04:16.624Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/96926ddf-6b76-4093-bfb8-932475e567c4/MUST%202027%20student%20recruitment%20flyer.pdf
 NOT_SYNCED | Student_Subscription_forms_2026.pdf | pdf | 2026-09-07T19:04:16.624Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/eea7379e-a6cd-430d-b234-89cce5981a0b/Student_Subscription_forms_2026.pdf
 NOT_SYNCED | FENG Exam Timetable 1st Sem_25 May 2026.xlsx | xlsx | 2026-09-07T19:19:01.414Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/a0ce8bca-1c66-4986-8967-aeec00208a16/Announcements/130ff49b-a3ca-40de-b326-1168e7742315/FENG%20Exam%20Timetable%201st%20Sem_25%20May%202026.xlsx
