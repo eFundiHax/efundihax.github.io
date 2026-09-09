@@ -24,7 +24,7 @@ title: REII121-2026
 last_sync: 2026-09-09T05:32:29.939Z
 last_announcement: 2026-09-05T16:17:11.793Z
 total_files: 296
-generated: 2026-09-09T05:28:06.023Z
+generated: 2026-09-09T05:32:49.669Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -321,7 +321,7 @@ INCOMPATIBLE | AT89LP51RD2.H | h | 2026-08-30T11:11:00.458Z | announcement_attac
 INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-05T16:17:07.904Z | announcement_attachment | 
 INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-05T16:17:37.931Z | announcement_attachment | 
 INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-06T13:12:24.400Z | announcement_attachment | 
-INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-09T05:28:05.292Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/4fd1db7d-0399-4017-8984-d4c1c71b751e/Announcements/f875517f-34b1-474a-8e48-181e72b4bd80/AT89LP51RD2.H
+INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-09T05:32:48.911Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/4fd1db7d-0399-4017-8984-d4c1c71b751e/Announcements/f875517f-34b1-474a-8e48-181e72b4bd80/AT89LP51RD2.H
 NOT_SYNCED | MSA 1 Spetember 2026.PNG | png | 2026-09-09T05:27:19.303Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/MSA%201%20Spetember%202026.PNG
 NOT_SYNCED | Textbook.PNG | png | 2026-09-09T05:27:19.303Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Textbook.PNG
 
