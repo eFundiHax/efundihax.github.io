@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-09T10:52:37.219Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-09T22:52:25.322Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -23,514 +23,515 @@ calendar_id: 0edd80cff580a1120dcb286ec38e30d94277d02d15eaf4a96b119125d6668871@gr
 title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-09-09T13:33:21.763Z
-total_files: 503
-generated: 2026-09-09T05:26:15.036Z
+total_files: 504
+generated: 2026-09-09T13:33:31.891Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Tia_Pro1 30 Sep.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Tia_Micro 12 Sep.jpeg | jpeg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | TIA-MICRO.jpeg | jpeg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Micro 1Aug.jpeg | jpeg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Micro 15Aug.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Micro 9July.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Micro 18July.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Pro1 25July.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Pro2-22June.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Pro2-22June.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | SRC_ConstitutionReview.jpeg | jpeg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | SiemensCourse_TIA-MICRO.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Upcoming Courses in Robotics.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | CareerFairs2026.jpeg | jpeg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | SIEMENS Course Advert.jpeg | jpeg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | IMG-20251023-WA0051.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2025.10.13_Final list elected_Engineering_SAC.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2025.09.22_Final list of candidates_Engineering.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_ (2).pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | IATC-Flyer.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | NWU SADS Services 2025.pptx | pptx | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Siemens Course.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Prelim list elected Engineering.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Go Vote.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Siemens Course.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Academics SUBCOM.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Art Auditions.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | MPR SUBCOM.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Mr & Miss Campus.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Siemens Course.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Societies booklet.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Society stalls.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Volleyball.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Weekly planner.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2025.02.17_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2025.02.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2025.02.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.10.06_Final list elected_ENG.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.10.05_Prelim list of elected candidates.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.10.02_Final list of candidates_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 30.09.2024_Prelim nominees_ELIGIBLE_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 30.09.2024_Prelim nominees_NOT ELIGIBLE_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved _2_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Christian Van Wyk CV.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Roedine van der Merwe CV.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved _2_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.09_Final list elected_Engineering.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.06_Prelim list elected_Engineering.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.05_Prelim list elected_Chapters_Engineering (Publish ).pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.04_Final list of candidates_Engineering .pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 04_Sept_2024 Schedule for Engineering SAC Elections .pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.02_Prelim nominees_ELIGIBLE_Engineering.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.02_Prelim nominees_NOT ELIGIBLE_Engineering.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Charné_Griessel_38217953.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Tayler_Geldenhuys_37575597.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Tayler_Geldenhuys_37575597.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Charné_Griessel_38217953.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Industrial Automation Short Course_Siemens TIA-Micro.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Word Wise Week.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Industrial Automation Short Course.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | SCD Thuso A4 dgt.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Cybathlon 2024.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | abb5180b-d34e-4805-902e-5fe27441a836.jpeg | jpeg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Hoodie Competition.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Engineering Fair.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | TIA-Micro 13April2024.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Volleyball Tournament.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Siemens TIA-Micro Course.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Barefoot Day, SCC.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | SAC Clothing Drive.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | final candidate .pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | elected candidates .pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Final list of Candidates.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Quiz Night .jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Amapiano Friday.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | SAC Clothing Drive.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Prelim_nominees.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Recyclable Materials Donations.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | SAC Clothing Drive.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | SAiEE Member Social.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | SAC Clothing Drive.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Siemens TIA-Micro.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | ENG SAC Table Tennis.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 2024.03.04_SRC_Correspondence_ Update on Motsepe Foundation and Vice Chancellor's Donation .pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Eagles U20 vs UJ U20 Match Day.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | SAiEE Member Social.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Coversations that Matter.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Quiz Night.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | 9March2024 TIA-Micro.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | LETTER TO UNIVERSITIES- 2024 ACADEMIC YEAR UPDATE - North West University.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Safety and awareness.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Safety and Awareness Week (5).png | png | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | SubCom.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | First Generation Students.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | SAiEE Membership Drive.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | Safety and awareness.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | SubCom.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-NOT_SYNCED | SubCom.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment | 
-INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-08-26T20:57:15.089Z | announcement_attachment | 
-INCOMPATIBLE | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:57:15.089Z | announcement_attachment | 
-SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:57:42.461Z | announcement_attachment | 
-INCOMPATIBLE | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T20:57:58.055Z | announcement_attachment | 
-INCOMPATIBLE | Tia_Pro1 30 Sep.png | png | 2026-08-26T20:57:58.055Z | announcement_attachment | 
-INCOMPATIBLE | Tia_Micro 12 Sep.jpeg | jpeg | 2026-08-26T20:57:58.055Z | announcement_attachment | 
-INCOMPATIBLE | Tia_Micro 12 Sep.jpeg | jpeg | 2026-08-26T20:58:14.653Z | announcement_attachment | 
-INCOMPATIBLE | TIA-MICRO.jpeg | jpeg | 2026-08-26T20:58:27.599Z | announcement_attachment | 
-INCOMPATIBLE | Micro 1Aug.jpeg | jpeg | 2026-08-26T20:58:27.599Z | announcement_attachment | 
-INCOMPATIBLE | Micro 1Aug.jpeg | jpeg | 2026-08-26T20:58:39.156Z | announcement_attachment | 
-INCOMPATIBLE | Micro 15Aug.png | png | 2026-08-26T20:58:48.405Z | announcement_attachment | 
-INCOMPATIBLE | Micro 9July.png | png | 2026-08-26T20:58:48.405Z | announcement_attachment | 
-INCOMPATIBLE | Micro 9July.png | png | 2026-08-26T20:59:00.559Z | announcement_attachment | 
-INCOMPATIBLE | Micro 18July.png | png | 2026-08-26T20:59:11.824Z | announcement_attachment | 
-INCOMPATIBLE | Pro1 25July.png | png | 2026-08-26T20:59:11.824Z | announcement_attachment | 
-INCOMPATIBLE | Pro1 25July.png | png | 2026-08-26T20:59:22.127Z | announcement_attachment | 
-INCOMPATIBLE | Pro2-22June.png | png | 2026-08-26T20:59:34.735Z | announcement_attachment | 
-INCOMPATIBLE | Pro2-22June.png | png | 2026-08-26T20:59:34.735Z | announcement_attachment | 
-INCOMPATIBLE | Pro2-22June.png | png | 2026-08-26T20:59:48.802Z | announcement_attachment | 
-INCOMPATIBLE | SRC_ConstitutionReview.jpeg | jpeg | 2026-08-26T21:00:00.533Z | announcement_attachment | 
-INCOMPATIBLE | SiemensCourse_TIA-MICRO.png | png | 2026-08-26T21:00:00.533Z | announcement_attachment | 
-INCOMPATIBLE | Upcoming Courses in Robotics.pdf | pdf | 2026-08-26T21:00:00.533Z | announcement_attachment | 
-INCOMPATIBLE | Upcoming Courses in Robotics.pdf | pdf | 2026-08-26T21:00:14.935Z | announcement_attachment | 
-SYNCED | Upcoming Courses in Robotics.pdf | pdf | 2026-08-26T21:02:50.913Z | announcement_attachment | 
-INCOMPATIBLE | CareerFairs2026.jpeg | jpeg | 2026-08-26T21:03:07.733Z | announcement_attachment | 
-INCOMPATIBLE | SIEMENS Course Advert.jpeg | jpeg | 2026-08-26T21:03:07.733Z | announcement_attachment | 
-INCOMPATIBLE | SIEMENS Course Advert.jpeg | jpeg | 2026-08-26T21:03:19.436Z | announcement_attachment | 
-INCOMPATIBLE | IMG-20251023-WA0051.jpg | jpg | 2026-08-26T21:03:31.566Z | announcement_attachment | 
-INCOMPATIBLE | 2025.10.13_Final list elected_Engineering_SAC.pdf | pdf | 2026-08-26T21:03:31.566Z | announcement_attachment | 
-INCOMPATIBLE | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-08-26T21:03:31.566Z | announcement_attachment | 
-SYNCED | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-08-26T21:10:43.831Z | announcement_attachment | 
-SYNCED | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-08-26T21:18:45.961Z | announcement_attachment | 
-INCOMPATIBLE | 2025.09.22_Final list of candidates_Engineering.pdf | pdf | 2026-08-26T21:18:57.700Z | announcement_attachment | 
-INCOMPATIBLE | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T21:18:57.700Z | announcement_attachment | 
-SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T21:19:44.065Z | announcement_attachment | 
-INCOMPATIBLE | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T21:19:59.077Z | announcement_attachment | 
-INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-08-26T21:19:59.077Z | announcement_attachment | 
-SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-08-26T21:28:46.652Z | announcement_attachment | 
-INCOMPATIBLE | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T21:28:59.390Z | announcement_attachment | 
-INCOMPATIBLE | 2025.09.03_PC Election Schedule_HC SAC_ (2).pdf | pdf | 2026-08-26T21:28:59.390Z | announcement_attachment | 
-SYNCED | 2025.09.03_PC Election Schedule_HC SAC_ (2).pdf | pdf | 2026-08-26T21:52:44.248Z | announcement_attachment | 
-INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-08-26T21:52:56.519Z | announcement_attachment | 
-INCOMPATIBLE | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T21:52:56.519Z | announcement_attachment | 
-NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Tia_Pro1 30 Sep.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Tia_Micro 12 Sep.jpeg | jpeg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | TIA-MICRO.jpeg | jpeg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Micro 1Aug.jpeg | jpeg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Micro 15Aug.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Micro 9July.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Micro 18July.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Pro1 25July.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Pro2-22June.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Pro2-22June.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | SRC_ConstitutionReview.jpeg | jpeg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | SiemensCourse_TIA-MICRO.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Upcoming Courses in Robotics.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | CareerFairs2026.jpeg | jpeg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | SIEMENS Course Advert.jpeg | jpeg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | IMG-20251023-WA0051.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2025.10.13_Final list elected_Engineering_SAC.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2025.09.22_Final list of candidates_Engineering.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_ (2).pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | IATC-Flyer.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | NWU SADS Services 2025.pptx | pptx | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Siemens Course.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Prelim list elected Engineering.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Go Vote.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Siemens Course.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Academics SUBCOM.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Art Auditions.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | MPR SUBCOM.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Mr & Miss Campus.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Siemens Course.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Societies booklet.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Society stalls.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Volleyball.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Weekly planner.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2025.02.17_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2025.02.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2025.02.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.10.06_Final list elected_ENG.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.10.05_Prelim list of elected candidates.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.10.02_Final list of candidates_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 30.09.2024_Prelim nominees_ELIGIBLE_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 30.09.2024_Prelim nominees_NOT ELIGIBLE_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved _2_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Christian Van Wyk CV.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Roedine van der Merwe CV.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved _2_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.09_Final list elected_Engineering.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.06_Prelim list elected_Engineering.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.05_Prelim list elected_Chapters_Engineering (Publish ).pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.04_Final list of candidates_Engineering .pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 04_Sept_2024 Schedule for Engineering SAC Elections .pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.02_Prelim nominees_ELIGIBLE_Engineering.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.09.02_Prelim nominees_NOT ELIGIBLE_Engineering.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Charné_Griessel_38217953.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Tayler_Geldenhuys_37575597.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Tayler_Geldenhuys_37575597.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Charné_Griessel_38217953.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Industrial Automation Short Course_Siemens TIA-Micro.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Word Wise Week.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Industrial Automation Short Course.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | SCD Thuso A4 dgt.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Cybathlon 2024.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | abb5180b-d34e-4805-902e-5fe27441a836.jpeg | jpeg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Hoodie Competition.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Engineering Fair.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | TIA-Micro 13April2024.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Volleyball Tournament.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Siemens TIA-Micro Course.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Barefoot Day, SCC.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | final candidate .pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | elected candidates .pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Final list of Candidates.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Quiz Night .jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Amapiano Friday.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Prelim_nominees.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Recyclable Materials Donations.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | SAiEE Member Social.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Siemens TIA-Micro.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | ENG SAC Table Tennis.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 2024.03.04_SRC_Correspondence_ Update on Motsepe Foundation and Vice Chancellor's Donation .pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Eagles U20 vs UJ U20 Match Day.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | SAiEE Member Social.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Coversations that Matter.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Quiz Night.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | 9March2024 TIA-Micro.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | LETTER TO UNIVERSITIES- 2024 ACADEMIC YEAR UPDATE - North West University.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Safety and awareness.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Safety and Awareness Week (5).png | png | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | SubCom.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | First Generation Students.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | SAiEE Membership Drive.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | Safety and awareness.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | SubCom.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-NOT_SYNCED | SubCom.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment | 
-INCOMPATIBLE | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:05:02.638Z | announcement_attachment | 
-INCOMPATIBLE | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:05:02.638Z | announcement_attachment | 
-SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:05:21.416Z | announcement_attachment | 
-SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:05:35.749Z | announcement_attachment | 
-INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:05:47.859Z | announcement_attachment | 
-INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:05:47.859Z | announcement_attachment | 
-SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:06:49.605Z | announcement_attachment | 
-INCOMPATIBLE | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:07:04.200Z | announcement_attachment | 
-INCOMPATIBLE | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:07:04.200Z | announcement_attachment | 
-INCOMPATIBLE | Tia_Pro1 30 Sep.png | png | 2026-09-05T16:07:04.200Z | announcement_attachment | 
-INCOMPATIBLE | Tia_Micro 12 Sep.jpeg | jpeg | 2026-09-05T16:07:04.200Z | announcement_attachment | 
-INCOMPATIBLE | Tia_Micro 12 Sep.jpeg | jpeg | 2026-09-05T16:07:26.214Z | announcement_attachment | 
-INCOMPATIBLE | Tia_Pro1 30 Sep.png | png | 2026-09-05T16:07:36.895Z | announcement_attachment | 
-INCOMPATIBLE | TIA-MICRO.jpeg | jpeg | 2026-09-05T16:07:46.998Z | announcement_attachment | 
-INCOMPATIBLE | Micro 1Aug.jpeg | jpeg | 2026-09-05T16:07:46.998Z | announcement_attachment | 
-INCOMPATIBLE | Micro 1Aug.jpeg | jpeg | 2026-09-05T16:08:07.530Z | announcement_attachment | 
-INCOMPATIBLE | Micro 1Aug.jpeg | jpeg | 2026-09-05T16:08:17.964Z | announcement_attachment | 
-INCOMPATIBLE | Micro 15Aug.png | png | 2026-09-05T16:08:27.969Z | announcement_attachment | 
-INCOMPATIBLE | Micro 9July.png | png | 2026-09-05T16:08:27.969Z | announcement_attachment | 
-INCOMPATIBLE | Micro 9July.png | png | 2026-09-05T16:08:46.812Z | announcement_attachment | 
-INCOMPATIBLE | Micro 9July.png | png | 2026-09-05T16:09:04.090Z | announcement_attachment | 
-INCOMPATIBLE | Micro 18July.png | png | 2026-09-05T16:09:13.803Z | announcement_attachment | 
-INCOMPATIBLE | Pro1 25July.png | png | 2026-09-05T16:09:13.803Z | announcement_attachment | 
-INCOMPATIBLE | Pro1 25July.png | png | 2026-09-05T16:09:36.474Z | announcement_attachment | 
-INCOMPATIBLE | Pro1 25July.png | png | 2026-09-05T16:09:49.066Z | announcement_attachment | 
-INCOMPATIBLE | Pro2-22June.png | png | 2026-09-05T16:10:00.145Z | announcement_attachment | 
-INCOMPATIBLE | Pro2-22June.png | png | 2026-09-05T16:10:00.145Z | announcement_attachment | 
-INCOMPATIBLE | Pro2-22June.png | png | 2026-09-05T16:13:05.692Z | announcement_attachment | 
-INCOMPATIBLE | SRC_ConstitutionReview.jpeg | jpeg | 2026-09-05T16:13:17.783Z | announcement_attachment | 
-INCOMPATIBLE | SiemensCourse_TIA-MICRO.png | png | 2026-09-05T16:13:17.783Z | announcement_attachment | 
-INCOMPATIBLE | Upcoming Courses in Robotics.pdf | pdf | 2026-09-05T16:13:17.783Z | announcement_attachment | 
-INCOMPATIBLE | Upcoming Courses in Robotics.pdf | pdf | 2026-09-05T16:13:31.219Z | announcement_attachment | 
-INCOMPATIBLE | Upcoming Courses in Robotics.pdf | pdf | 2026-09-05T16:13:42.745Z | announcement_attachment | 
-SYNCED | Upcoming Courses in Robotics.pdf | pdf | 2026-09-05T16:13:53.920Z | announcement_attachment | 
-INCOMPATIBLE | CareerFairs2026.jpeg | jpeg | 2026-09-05T16:14:11.708Z | announcement_attachment | 
-INCOMPATIBLE | SIEMENS Course Advert.jpeg | jpeg | 2026-09-05T16:14:11.708Z | announcement_attachment | 
-INCOMPATIBLE | SIEMENS Course Advert.jpeg | jpeg | 2026-09-05T16:14:32.163Z | announcement_attachment | 
-INCOMPATIBLE | SIEMENS Course Advert.jpeg | jpeg | 2026-09-05T16:14:42.776Z | announcement_attachment | 
-INCOMPATIBLE | IMG-20251023-WA0051.jpg | jpg | 2026-09-05T16:14:53.440Z | announcement_attachment | 
-INCOMPATIBLE | 2025.10.13_Final list elected_Engineering_SAC.pdf | pdf | 2026-09-05T16:14:53.440Z | announcement_attachment | 
-INCOMPATIBLE | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-09-05T16:14:53.440Z | announcement_attachment | 
-INCOMPATIBLE | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-09-05T16:15:04.331Z | announcement_attachment | 
-SYNCED | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-09-05T16:15:14.980Z | announcement_attachment | 
-SYNCED | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-09-05T16:15:26.633Z | announcement_attachment | 
-INCOMPATIBLE | 2025.09.22_Final list of candidates_Engineering.pdf | pdf | 2026-09-05T16:15:39.111Z | announcement_attachment | 
-INCOMPATIBLE | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:15:39.111Z | announcement_attachment | 
-SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:15:54.873Z | announcement_attachment | 
-SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:16:07.852Z | announcement_attachment | 
-INCOMPATIBLE | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:16:21.718Z | announcement_attachment | 
-INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:16:21.718Z | announcement_attachment | 
-SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:16:47.066Z | announcement_attachment | 
-INCOMPATIBLE | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-06T14:18:53.607Z | announcement_attachment | 
-INCOMPATIBLE | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-06T14:18:53.607Z | announcement_attachment | 
-SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-06T14:19:17.936Z | announcement_attachment | 
-SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-06T14:19:28.411Z | announcement_attachment | 
-INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-06T14:19:40.315Z | announcement_attachment | 
-INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-06T14:19:40.315Z | announcement_attachment | 
-SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-06T14:21:55.372Z | announcement_attachment | 
-INCOMPATIBLE | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-06T14:22:08.582Z | announcement_attachment | 
-INCOMPATIBLE | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-06T14:22:08.582Z | announcement_attachment | 
-INCOMPATIBLE | Tia_Pro1 30 Sep.png | png | 2026-09-06T14:22:08.582Z | announcement_attachment | 
-INCOMPATIBLE | Tia_Micro 12 Sep.jpeg | jpeg | 2026-09-06T14:22:08.582Z | announcement_attachment | 
-SYNCED | Tia_Pro1 30 Sep.png | pdf | 2026-09-06T14:22:35.607Z | announcement_attachment | 
-SYNCED | Tia_Pro1 30 Sep.png | pdf | 2026-09-06T14:29:42.927Z | announcement_attachment | 
-INCOMPATIBLE | Tia_Pro1 30 Sep.png | png | 2026-09-06T14:53:00.131Z | announcement_attachment | 
-INCOMPATIBLE | Tia_Micro 12 Sep.jpeg | jpg | 2026-09-06T14:53:11.167Z | announcement_attachment | 
-INCOMPATIBLE | TIA-MICRO.jpeg | jpeg | 2026-09-06T14:53:20.829Z | announcement_attachment | 
-INCOMPATIBLE | Micro 1Aug.jpeg | jpeg | 2026-09-06T14:53:20.829Z | announcement_attachment | 
-INCOMPATIBLE | Micro 1Aug.jpeg | jpg | 2026-09-06T14:53:40.249Z | announcement_attachment | 
-NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-07T21:05:18.394Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/84ecbd9d-4933-4911-a7da-31e9d95a378e/2026.08.24_Nomination%20Form%20Students%20Academic%20Chapter.pdf
-NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:05:18.394Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/567058f8-c620-4a17-8d4c-e7bb68aa0c78/2026.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-07T21:05:34.052Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/d30807db-f12b-4c7f-b9c8-337d60e10b49/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-07T21:05:34.052Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/b697bdc6-8a29-4480-bd92-341b95882647/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf
-NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:05:49.905Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a89282d4-3a9b-4794-b0b2-52f6db66df61/2026.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf
-NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-07T21:05:49.905Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/dc7f7eb6-2594-4fef-86ad-33822ea751ad/2026.08.24_Nomination%20Form%20Students%20Academic%20Chapter.pdf
-NOT_SYNCED | Tia_Pro1 30 Sep.png | png | 2026-09-07T21:05:49.905Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/9a0d06d0-4cad-48da-8762-11101e114654/Tia_Pro1%2030%20Sep.png
-NOT_SYNCED | Tia_Micro 12 Sep.jpeg | jpeg | 2026-09-07T21:05:49.905Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/bc9ebc15-0cca-4a67-8bc6-67f4e539c5f4/Tia_Micro%2012%20Sep.jpeg
-NOT_SYNCED | TIA-MICRO.jpeg | jpeg | 2026-09-07T21:06:05.829Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/25d7af4b-ce52-484e-aed4-3ae8eb835606/TIA-MICRO.jpeg
-NOT_SYNCED | Micro 1Aug.jpeg | jpeg | 2026-09-07T21:06:05.829Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5657a470-3903-442c-a228-aab661063b8f/Micro%201Aug.jpeg
-NOT_SYNCED | Micro 15Aug.png | png | 2026-09-07T21:06:19.427Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/d6f97a4a-e513-4eba-99bd-4d1483980771/Micro%2015Aug.png
-NOT_SYNCED | Micro 9July.png | png | 2026-09-07T21:06:19.427Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0d067416-ec76-4676-9c9c-322997920b82/Micro%209July.png
-NOT_SYNCED | Micro 18July.png | png | 2026-09-07T21:06:37.598Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f35768f9-04f1-4282-ae42-ace80b50878c/Micro%2018July.png
-NOT_SYNCED | Pro1 25July.png | png | 2026-09-07T21:06:37.598Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a910014a-08fc-4560-abc5-d632105cc784/Pro1%2025July.png
-NOT_SYNCED | Pro2-22June.png | png | 2026-09-07T21:06:56.222Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/29ecf28f-d643-41a6-98d7-21331245807a/Pro2-22June.png
-NOT_SYNCED | Pro2-22June.png | png | 2026-09-07T21:06:56.222Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f69e00df-ce3c-4ccc-a895-e3493fb970c1/Pro2-22June.png
-NOT_SYNCED | SRC_ConstitutionReview.jpeg | jpeg | 2026-09-07T21:07:13.065Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/4c11eadf-c357-4a88-ae24-a9566a7336c6/SRC_ConstitutionReview.jpeg
-NOT_SYNCED | SiemensCourse_TIA-MICRO.png | png | 2026-09-07T21:07:13.065Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e3c38026-60fc-4a12-b518-6556d54cfa81/SiemensCourse_TIA-MICRO.png
-NOT_SYNCED | Upcoming Courses in Robotics.pdf | pdf | 2026-09-07T21:07:13.065Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7a9dbde9-1aef-4bd2-ade8-638f1c5df189/Upcoming%20Courses%20in%20Robotics.pdf
-NOT_SYNCED | CareerFairs2026.jpeg | jpeg | 2026-09-07T21:07:31.971Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/210d3557-9cc2-40b3-af5e-e3a4b199c02a/CareerFairs2026.jpeg
-NOT_SYNCED | SIEMENS Course Advert.jpeg | jpeg | 2026-09-07T21:07:31.971Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f19b4ded-b6bb-48c0-af4c-e1fbd671914f/SIEMENS%20Course%20Advert.jpeg
-NOT_SYNCED | IMG-20251023-WA0051.jpg | jpg | 2026-09-07T21:07:47.358Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/862ad276-c633-4281-98eb-772819de3553/IMG-20251023-WA0051.jpg
-NOT_SYNCED | 2025.10.13_Final list elected_Engineering_SAC.pdf | pdf | 2026-09-07T21:07:47.358Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8616bb1c-252c-4ae1-b506-3a4e0ba393d3/2025.10.13_Final%20list%20elected_Engineering_SAC.pdf
-NOT_SYNCED | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-09-07T21:07:47.358Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/b2f17f66-c25e-4c44-9008-a973604652c4/2025_Prelim%20list%20elected_SAC%20Committee_template_Engineering_Faculty.pdf
-NOT_SYNCED | 2025.09.22_Final list of candidates_Engineering.pdf | pdf | 2026-09-07T21:08:15.686Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/cce58c62-20c4-48dc-9dea-0049177b72ca/2025.09.22_Final%20list%20of%20candidates_Engineering.pdf
-NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-07T21:08:15.686Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8235f505-597e-4d8f-b886-27574e4f93de/2025.09.04_Nomination%20Form%20Students%20Academic%20Chapter.pdf
-NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:08:35.548Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0e5f1993-0734-4227-aa37-40d697b014d6/2025.09.03_PC%20Election%20Schedule_HC%20SAC_.pdf
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-07T21:08:35.548Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/c3c847d5-eef0-4614-86e7-e9f77f659830/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf
-NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-07T21:08:52.392Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/870f1c08-7cad-4dd1-9239-e44c2e0ce557/2025.09.04_Nomination%20Form%20Students%20Academic%20Chapter.pdf
-NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_ (2).pdf | pdf | 2026-09-07T21:08:52.392Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/3402b808-8de5-4c44-a2cc-91767f82fce1/2025.09.03_PC%20Election%20Schedule_HC%20SAC_%20_2_.pdf
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-07T21:09:06.951Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/6f74b6ab-f38b-4515-95e6-e4bb570ac776/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf
-NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:09:06.951Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/08716348-db80-4554-b81f-2872cd83f90e/2025.09.03_PC%20Election%20Schedule_HC%20SAC_.pdf
-NOT_SYNCED | IATC-Flyer.pdf | pdf | 2026-09-07T21:09:22.795Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2a237612-ba14-4766-ade5-b86fd6e21e80/IATC-Flyer.pdf
-NOT_SYNCED | NWU SADS Services 2025.pptx | pptx | 2026-09-07T21:09:22.795Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/bded5b1a-a5dc-4959-8a00-08b086696fd0/NWU%20SADS%20Services%202025.pptx
-NOT_SYNCED | Siemens Course.jpg | jpg | 2026-09-07T21:09:22.795Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2e7f76a4-c8c1-4485-9216-54d9fdd7d4ac/Siemens%20Course.jpg
-NOT_SYNCED | Prelim list elected Engineering.pdf | pdf | 2026-09-07T21:09:39.555Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/dd2aa706-a2ba-4a07-806b-c8e93fe9e864/Prelim%20list%20elected%20Engineering.pdf
-NOT_SYNCED | Go Vote.jpg | jpg | 2026-09-07T21:09:39.555Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/3b97158e-2561-4eb4-855c-fb11064522f2/Go%20Vote.jpg
-NOT_SYNCED | Siemens Course.jpg | jpg | 2026-09-07T21:09:39.555Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2884f468-4355-4a1d-92ca-5bad1cb639f7/Siemens%20Course.jpg
-NOT_SYNCED | Academics SUBCOM.jpg | jpg | 2026-09-07T21:09:56.287Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8b936de0-8e9e-45fd-8d5f-01e42e900603/Academics%20SUBCOM.jpg
-NOT_SYNCED | Art Auditions.jpg | jpg | 2026-09-07T21:09:56.287Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7ecdb3fa-4398-4aa2-a9a0-2e118b40c8cf/Art%20Auditions.jpg
-NOT_SYNCED | MPR SUBCOM.jpg | jpg | 2026-09-07T21:10:12.090Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/90d4c3fd-d74d-40a1-9b47-b8eba39699ca/MPR%20SUBCOM.jpg
-NOT_SYNCED | Mr & Miss Campus.jpg | jpg | 2026-09-07T21:10:12.090Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/c77a7ec3-ce07-4f96-981a-3d7aa5955fdd/Mr%20_%20Miss%20Campus.jpg
-NOT_SYNCED | Siemens Course.jpg | jpg | 2026-09-07T21:10:27.877Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/631ad562-6845-4199-8e9d-07b655492e4a/Siemens%20Course.jpg
-NOT_SYNCED | Societies booklet.jpg | jpg | 2026-09-07T21:10:27.877Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f270c2b1-ef09-407f-9d2d-55987d7aaa5b/Societies%20booklet.jpg
-NOT_SYNCED | Society stalls.jpg | jpg | 2026-09-07T21:10:45.515Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5e446563-aaf4-4dcb-b318-572a82698792/Society%20stalls.jpg
-NOT_SYNCED | Volleyball.png | png | 2026-09-07T21:10:45.515Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/ed7da901-d13f-4c30-a723-3ad04ac08586/Volleyball.png
-NOT_SYNCED | Weekly planner.png | png | 2026-09-07T21:11:07.786Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/74f0cdd5-f73e-4a59-8ac2-c4c142a25239/Weekly%20planner.png
-NOT_SYNCED | 2025.02.17_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-07T21:11:07.786Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/33f30cb0-10ab-4ccc-a80a-a66a334dcae0/2025.02.17_Nomination%20Form%20Students_%20Academic%20Chapter.pdf
-NOT_SYNCED | 2025.02.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-07T21:11:07.786Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7033e0d6-78a8-4b10-a5b5-a64602c97fe4/2025.02.13_PC%20Election%20Schedule_HC%20SAC_for%20publication%20-%20By-ELECTIONS.pdf
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-07T21:11:25.255Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/1b56d872-c266-4809-859f-a51ab90177b9/2022.09.05_Rules%20SSLS_approved%20_2_.pdf
-NOT_SYNCED | 2025.02.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-07T21:11:25.255Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7ca3d1d8-aba9-4df8-97d3-a3c0ab300aa2/2025.02.13_PC%20Election%20Schedule_HC%20SAC_for%20publication%20-%20By-ELECTIONS.pdf
-NOT_SYNCED | 2024.10.06_Final list elected_ENG.pdf | pdf | 2026-09-07T21:11:40.184Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a1b6e1a8-7aac-4987-9ec4-decac7ef3144/2024.10.06_Final%20list%20elected_ENG.pdf
-NOT_SYNCED | 2024.10.05_Prelim list of elected candidates.pdf | pdf | 2026-09-07T21:11:40.184Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a0ddb864-b17d-4370-9ff4-c6017ec95963/2024.10.05_Prelim%20list%20of%20elected%20candidates.pdf
-NOT_SYNCED | 2024.10.02_Final list of candidates_.pdf | pdf | 2026-09-07T21:11:54.514Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/df62cec0-0adb-44cf-b4e4-796f368fd33b/2024.10.02_Final%20list%20of%20candidates_.pdf
-NOT_SYNCED | 30.09.2024_Prelim nominees_ELIGIBLE_.pdf | pdf | 2026-09-07T21:11:54.514Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/ce995fa6-1740-4a29-a66f-a35e7e01077b/30.09.2024_Prelim%20nominees_ELIGIBLE_.pdf
-NOT_SYNCED | 30.09.2024_Prelim nominees_NOT ELIGIBLE_.pdf | pdf | 2026-09-07T21:12:08.942Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/1b0fde63-8c5a-4fd7-a942-d1c904422aa7/30.09.2024_Prelim%20nominees_NOT%20ELIGIBLE_.pdf
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved _2_.pdf | pdf | 2026-09-07T21:12:08.942Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8fed9c05-b4db-42d9-b67c-abd6ecd15701/2022.09.05_Rules%20SSLS_approved%20_2_.pdf
-NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-07T21:12:24.273Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/deac183e-c1b4-41ee-955d-3e3a12f2985e/2024.08.26_Nomination%20Form%20Students_%20Academic%20Chapter.pdf
-NOT_SYNCED | 2024.09.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-07T21:12:24.273Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/1058c26a-85d2-4428-8b09-b35048852ea0/2024.09.13_PC%20Election%20Schedule_HC%20SAC_for%20publication%20-%20By-ELECTIONS.pdf
-NOT_SYNCED | Christian Van Wyk CV.pdf | pdf | 2026-09-07T21:12:38.676Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0c5ea150-ac2d-4c18-8bdf-b6894daf064d/Christian%20Van%20Wyk%20CV.pdf
-NOT_SYNCED | Roedine van der Merwe CV.pdf | pdf | 2026-09-07T21:12:38.676Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0ec402a5-45b3-45f7-b851-f93d4ea1bff7/Roedine%20van%20der%20Merwe%20CV.pdf
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved _2_.pdf | pdf | 2026-09-07T21:12:53.554Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/cfcccad9-04ab-4da4-9546-5f6cd9da19b9/2022.09.05_Rules%20SSLS_approved%20_2_.pdf
-NOT_SYNCED | 2024.09.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-07T21:12:53.554Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2edea737-841b-40bb-af92-fe7ba038de74/2024.09.13_PC%20Election%20Schedule_HC%20SAC_for%20publication%20-%20By-ELECTIONS.pdf
-NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-07T21:13:08.051Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e2b43ea6-a6fc-435a-89d0-6b1260cca350/Portfolio%20descriptions%20for%20SAC.pdf
-NOT_SYNCED | 2024.09.09_Final list elected_Engineering.pdf | pdf | 2026-09-07T21:13:08.051Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7f669595-a374-4f14-9a23-1edfd723415a/2024.09.09_Final%20list%20elected_Engineering.pdf
-NOT_SYNCED | 2024.09.06_Prelim list elected_Engineering.pdf | pdf | 2026-09-07T21:13:26.899Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/829b29a7-1b62-4fa2-854c-08836ab68240/2024.09.06_Prelim%20list%20elected_Engineering.pdf
-NOT_SYNCED | 2024.09.05_Prelim list elected_Chapters_Engineering (Publish ).pdf | pdf | 2026-09-07T21:13:26.899Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/45d774b7-dbd9-418c-ae58-5b76b86d4e85/2024.09.05_Prelim%20list%20elected_Chapters_Engineering%20_Publish%20_.pdf
-NOT_SYNCED | 2024.09.04_Final list of candidates_Engineering .pdf | pdf | 2026-09-07T21:13:43.128Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5453d4a4-034b-42f5-b3bc-278ae300385e/2024.09.04_Final%20list%20of%20candidates_Engineering%20.pdf
-NOT_SYNCED | 04_Sept_2024 Schedule for Engineering SAC Elections .pdf | pdf | 2026-09-07T21:13:43.128Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5f2499a8-6a9b-4853-9917-b5caa7c8d91e/04_Sept_2024%20Schedule%20for%20Engineering%20SAC%20Elections%20.pdf
-NOT_SYNCED | 2024.09.02_Prelim nominees_ELIGIBLE_Engineering.pdf | pdf | 2026-09-07T21:13:59.580Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/3aeb63e3-c558-44ee-a3e8-edb1c3d50af0/2024.09.02_Prelim%20nominees_ELIGIBLE_Engineering.pdf
-NOT_SYNCED | 2024.09.02_Prelim nominees_NOT ELIGIBLE_Engineering.pdf | pdf | 2026-09-07T21:13:59.580Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/36b04158-fb9e-4e04-804c-c222f5f2ac21/2024.09.02_Prelim%20nominees_NOT%20ELIGIBLE_Engineering.pdf
-NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-07T21:14:17.079Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/376ab8ba-1cc0-4cf2-ba26-918667088899/Portfolio%20descriptions%20for%20SAC.pdf
-NOT_SYNCED | Charné_Griessel_38217953.pdf | pdf | 2026-09-07T21:14:17.079Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e38e20fc-a8a1-414a-92d5-afb9ed5ae83a/Charn%C3%A9_Griessel_38217953.pdf
-NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-07T21:14:32.212Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8234d5c5-005e-4745-907c-4b9a77570b2a/2024.08.26_Nomination%20Form%20Students_%20Academic%20Chapter.pdf
-NOT_SYNCED | Tayler_Geldenhuys_37575597.pdf | pdf | 2026-09-07T21:14:32.212Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/c4db505e-e31c-4952-982b-671e18ddddc1/Tayler_Geldenhuys_37575597.pdf
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-07T21:14:55.697Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2cb5cdb7-3101-4814-b75a-caeb9ed3d6fa/2022.09.05_Rules%20SSLS_approved%20_2_.pdf
-NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:14:55.697Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e852579a-856b-4a51-921e-e6e9e750e2ef/2024.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf
-NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:15:23.290Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a3f233a6-36bd-40e3-b18d-654bc7e5d09b/2024.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-07T21:15:23.290Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/9c4d79ef-436e-48cb-b4f2-04d24e42a130/2022.09.05_Rules%20SSLS_approved%20_2_.pdf
-NOT_SYNCED | Tayler_Geldenhuys_37575597.pdf | pdf | 2026-09-07T21:15:38.516Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/374b63a3-0595-4a39-82b7-53fe70707a07/Tayler_Geldenhuys_37575597.pdf
-NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-07T21:15:38.516Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/3e2a2c70-7c19-45dd-afa8-74372e106a00/2024.08.26_Nomination%20Form%20Students_%20Academic%20Chapter.pdf
-NOT_SYNCED | Charné_Griessel_38217953.pdf | pdf | 2026-09-07T21:15:52.514Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/293aef55-d5e1-4437-a04f-b4d5257ea666/Charn%C3%A9_Griessel_38217953.pdf
-NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-07T21:15:52.514Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f9526ed9-c0c5-44de-81cd-8e73c111da5b/Portfolio%20descriptions%20for%20SAC.pdf
-NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-07T21:16:07.523Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/462ca729-32f3-4650-a4a8-49f4dee20853/Portfolio%20descriptions%20for%20SAC.pdf
-NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-07T21:16:07.523Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/aab9b827-80aa-4c83-acbe-0dc6c3976ac1/2022.09.05_Rules%20SSLS_approved%20_2_.pdf
-NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:16:21.636Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/73956941-2b60-4c6e-82bd-df6a2e79a613/2024.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf
-NOT_SYNCED | Industrial Automation Short Course_Siemens TIA-Micro.jpg | jpg | 2026-09-07T21:16:21.636Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0bd05699-4088-4e88-ba28-ef7880ea8103/Industrial%20Automation%20Short%20Course_Siemens%20TIA-Micro.jpg
-NOT_SYNCED | Word Wise Week.jpg | jpg | 2026-09-07T21:16:21.636Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5fa20c74-8a4f-4d86-bff0-edbe5673cbb8/Word%20Wise%20Week.jpg
-NOT_SYNCED | Industrial Automation Short Course.jpg | jpg | 2026-09-07T21:16:38.171Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/91e0c3d1-755a-4db2-870f-8beff31088cd/Industrial%20Automation%20Short%20Course.jpg
-NOT_SYNCED | SCD Thuso A4 dgt.pdf | pdf | 2026-09-07T21:16:38.171Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f97b0782-a4f9-4d45-900a-9332b11b04f7/SCD%20Thuso%20A4%20dgt.pdf
-NOT_SYNCED | Cybathlon 2024.jpg | jpg | 2026-09-07T21:16:38.171Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7941dd05-687e-4716-ba81-fdcf5c7f86e2/Cybathlon%202024.jpg
-NOT_SYNCED | abb5180b-d34e-4805-902e-5fe27441a836.jpeg | jpeg | 2026-09-07T21:16:54.191Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/b8eebd91-611b-4fc9-b2d1-d6689a82ade6/abb5180b-d34e-4805-902e-5fe27441a836.jpeg
-NOT_SYNCED | Hoodie Competition.png | png | 2026-09-07T21:16:54.191Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/fc4dc8f3-2cf1-4e9a-96a9-eadfe7d0db10/Hoodie%20Competition.png
-NOT_SYNCED | Engineering Fair.jpg | jpg | 2026-09-07T21:18:09.038Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/eb13bb9c-b79a-4cf8-9980-45c005e0db78/Engineering%20Fair.jpg
-NOT_SYNCED | TIA-Micro 13April2024.png | png | 2026-09-07T21:18:09.038Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8e0bac54-56d4-47e9-bc58-a642993bd6a3/TIA-Micro%2013April2024.png
-NOT_SYNCED | Volleyball Tournament.jpg | jpg | 2026-09-07T21:18:25.191Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/9577517e-b19a-4631-89f6-4bfa20b38229/Volleyball%20Tournament.jpg
-NOT_SYNCED | Siemens TIA-Micro Course.jpg | jpg | 2026-09-07T21:18:25.191Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/260bc1ee-e7ab-4709-a945-c7a339d2099f/Siemens%20TIA-Micro%20Course.jpg
-NOT_SYNCED | Barefoot Day, SCC.jpg | jpg | 2026-09-07T21:18:39.312Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/92ded784-9503-45b9-a470-c931f5f36a05/Barefoot%20Day%2C%20SCC.jpg
-NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-09-07T21:18:39.312Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5da7923a-d1c7-483d-be3c-327931a4098b/Hoodie%20Competition.jpg
-NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-07T21:18:53.326Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f91f99a0-2617-4290-af63-139e69a8f272/SAC%20Clothing%20Drive.png
-NOT_SYNCED | final candidate .pdf | pdf | 2026-09-07T21:18:53.326Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/9d9e366c-178c-4790-a3c3-0a02247b21ee/final%20candidate%20.pdf
-NOT_SYNCED | elected candidates .pdf | pdf | 2026-09-07T21:18:53.326Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8fa16d2f-836b-4945-96d8-dac29b441c28/elected%20candidates%20.pdf
-NOT_SYNCED | Final list of Candidates.pdf | pdf | 2026-09-07T21:19:10.403Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8ae7645c-64cf-4c19-8245-092211560065/Final%20list%20of%20Candidates.pdf
-NOT_SYNCED | Quiz Night .jpg | jpg | 2026-09-07T21:19:10.403Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/1a2d31e0-87a1-4910-8bbf-b5e9c00191a7/Quiz%20Night%20.jpg
-NOT_SYNCED | Amapiano Friday.jpg | jpg | 2026-09-07T21:19:10.403Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8372533d-6253-4615-b78f-af7672ead53c/Amapiano%20Friday.jpg
-NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-09-07T21:19:27.914Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2677389b-4e68-4915-b157-051d1f8cd578/Hoodie%20Competition.jpg
-NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-07T21:19:27.914Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a3e16359-f324-4cfb-9764-0791a703980b/SAC%20Clothing%20Drive.png
-NOT_SYNCED | Prelim_nominees.pdf | pdf | 2026-09-07T21:19:27.914Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/991adcf9-7572-43a3-b4f8-a49d4727ca02/Prelim_nominees.pdf
-NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-09-07T21:19:48.565Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/d91cfbd4-ac12-420e-a0c2-459a6579a933/Hoodie%20Competition.jpg
-NOT_SYNCED | Recyclable Materials Donations.jpg | jpg | 2026-09-07T21:19:48.565Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8742e77a-70af-4a54-984c-ab42068a4ea4/Recyclable%20Materials%20Donations.jpg
-NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-07T21:20:05.890Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/ac7abfb8-9ddf-4913-a982-bbbb79a26f2d/SAC%20Clothing%20Drive.png
-NOT_SYNCED | SAiEE Member Social.jpg | jpg | 2026-09-07T21:20:05.890Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/1bfccbba-e591-4a29-bcc8-515cba33f231/SAiEE%20Member%20Social.jpg
-NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-07T21:20:25.328Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/39efbeb4-fab8-43e5-907b-e94bca6a5f5a/SAC%20Clothing%20Drive.png
-NOT_SYNCED | Siemens TIA-Micro.png | png | 2026-09-07T21:20:25.328Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/08a350da-da67-4ab2-9f26-53724c369fc3/Siemens%20TIA-Micro.png
-NOT_SYNCED | ENG SAC Table Tennis.jpg | jpg | 2026-09-07T21:21:42.037Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/cc32de5c-d23c-449a-a541-6edbee60a4d9/ENG%20SAC%20Table%20Tennis.jpg
-NOT_SYNCED | 2024.03.04_SRC_Correspondence_ Update on Motsepe Foundation and Vice Chancellor's Donation .pdf | pdf | 2026-09-07T21:21:42.037Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8e31eaf3-c526-4000-8087-6bbf4b103903/2024.03.04_SRC_Correspondence_%20Update%20on%20Motsepe%20Foundation%20and%20Vice%20Chancellor_s%20Donation%20.pdf
-NOT_SYNCED | Eagles U20 vs UJ U20 Match Day.jpg | jpg | 2026-09-07T21:21:42.037Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/63f5cecb-f726-4dd0-9c8a-ac7b5ebb12b5/Eagles%20U20%20vs%20UJ%20U20%20Match%20Day.jpg
-NOT_SYNCED | SAiEE Member Social.jpg | jpg | 2026-09-07T21:21:58.296Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/c61359d8-4588-4542-865e-7c2d0cce1666/SAiEE%20Member%20Social.jpg
-NOT_SYNCED | Coversations that Matter.jpg | jpg | 2026-09-07T21:21:58.296Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/aa076814-4b4a-4dcf-80d2-35e331371a97/Coversations%20that%20Matter.jpg
-NOT_SYNCED | Quiz Night.jpg | jpg | 2026-09-07T21:22:14.069Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/b8ab7328-56ed-45aa-bf6e-02adfd112033/Quiz%20Night.jpg
-NOT_SYNCED | 9March2024 TIA-Micro.png | png | 2026-09-07T21:22:14.069Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/340a2540-1634-46e2-9f18-9cde320e5364/9March2024%20TIA-Micro.png
-NOT_SYNCED | LETTER TO UNIVERSITIES- 2024 ACADEMIC YEAR UPDATE - North West University.pdf | pdf | 2026-09-07T21:22:14.069Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/68a96fe0-620c-4b95-ad83-787c999a724e/LETTER%20TO%20UNIVERSITIES-%202024%20ACADEMIC%20YEAR%20UPDATE%20-%20North%20West%20University.pdf
-NOT_SYNCED | Safety and awareness.jpg | jpg | 2026-09-07T21:22:30.338Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/ffdb2f91-3081-4e4c-a19c-93e788be9d9a/Safety%20and%20awareness.jpg
-NOT_SYNCED | Safety and Awareness Week (5).png | png | 2026-09-07T21:22:30.338Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/45901403-f019-45cd-a0b8-b01d92c01990/Safety%20and%20Awareness%20Week%20_5_.png
-NOT_SYNCED | SubCom.jpg | jpg | 2026-09-07T21:22:43.414Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/aa0bd527-e4ab-4bd8-b377-1a5780fc04db/SubCom.jpg
-NOT_SYNCED | First Generation Students.jpg | jpg | 2026-09-07T21:22:43.414Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0694e083-7a77-4dcc-9d21-9e5d62da0ddb/First%20Generation%20Students.jpg
-NOT_SYNCED | SAiEE Membership Drive.jpg | jpg | 2026-09-07T21:22:59.423Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/080729cd-6178-49f9-af1a-796ba0a1ffa0/SAiEE%20Membership%20Drive.jpg
-NOT_SYNCED | Safety and awareness.jpg | jpg | 2026-09-07T21:22:59.423Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/457767d1-707d-414f-a2b8-5fc641c836e4/Safety%20and%20awareness.jpg
-NOT_SYNCED | SubCom.jpg | jpg | 2026-09-07T21:23:14.412Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/c0683d21-0338-4419-91d3-ab42de18f98c/SubCom.jpg
-NOT_SYNCED | SubCom.jpg | jpg | 2026-09-07T21:23:14.412Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e012dab5-f592-4c44-a79e-af304d9a2577/SubCom.jpg
-NOT_SYNCED | 2026.09.08_Prelim nominees_ELIGIBLE_SAC.pdf | pdf | 2026-09-09T05:26:08.587Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e6262f8d-ae5e-48fe-9d88-117fb7d4897f/2026.09.08_Prelim%20nominees_ELIGIBLE_SAC.pdf
-NOT_SYNCED | 2026.09.08_Prelim nominees_NOT ELIGIBLE_SAC.pdf | pdf | 2026-09-08T14:28:12.027Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5bdcf5e7-ea45-4f48-8b91-992e06eaeb75/2026.09.08_Prelim%20nominees_NOT%20ELIGIBLE_SAC.pdf
-NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-09T05:26:08.587Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2782970e-ec86-4825-922c-41b63194df60/2026.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-08T14:28:12.027Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e8695174-c99e-4c45-8e46-ea17346b3c00/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Tia_Pro1 30 Sep.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Tia_Micro 12 Sep.jpeg | jpeg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | TIA-MICRO.jpeg | jpeg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Micro 1Aug.jpeg | jpeg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Micro 15Aug.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Micro 9July.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Micro 18July.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Pro1 25July.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Pro2-22June.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Pro2-22June.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SRC_ConstitutionReview.jpeg | jpeg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SiemensCourse_TIA-MICRO.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Upcoming Courses in Robotics.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | CareerFairs2026.jpeg | jpeg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SIEMENS Course Advert.jpeg | jpeg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | IMG-20251023-WA0051.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.10.13_Final list elected_Engineering_SAC.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.09.22_Final list of candidates_Engineering.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_ (2).pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | IATC-Flyer.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | NWU SADS Services 2025.pptx | pptx | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Siemens Course.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Prelim list elected Engineering.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Go Vote.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Siemens Course.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Academics SUBCOM.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Art Auditions.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | MPR SUBCOM.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Mr & Miss Campus.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Siemens Course.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Societies booklet.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Society stalls.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Volleyball.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Weekly planner.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.02.17_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.02.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.02.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.10.06_Final list elected_ENG.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.10.05_Prelim list of elected candidates.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.10.02_Final list of candidates_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 30.09.2024_Prelim nominees_ELIGIBLE_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 30.09.2024_Prelim nominees_NOT ELIGIBLE_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved _2_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Christian Van Wyk CV.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Roedine van der Merwe CV.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved _2_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.09_Final list elected_Engineering.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.06_Prelim list elected_Engineering.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.05_Prelim list elected_Chapters_Engineering (Publish ).pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.04_Final list of candidates_Engineering .pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 04_Sept_2024 Schedule for Engineering SAC Elections .pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.02_Prelim nominees_ELIGIBLE_Engineering.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.02_Prelim nominees_NOT ELIGIBLE_Engineering.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Charné_Griessel_38217953.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Tayler_Geldenhuys_37575597.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Tayler_Geldenhuys_37575597.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Charné_Griessel_38217953.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Industrial Automation Short Course_Siemens TIA-Micro.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Word Wise Week.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Industrial Automation Short Course.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SCD Thuso A4 dgt.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Cybathlon 2024.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | abb5180b-d34e-4805-902e-5fe27441a836.jpeg | jpeg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Hoodie Competition.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Engineering Fair.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | TIA-Micro 13April2024.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Volleyball Tournament.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Siemens TIA-Micro Course.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Barefoot Day, SCC.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SAC Clothing Drive.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | final candidate .pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | elected candidates .pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Final list of Candidates.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Quiz Night .jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Amapiano Friday.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SAC Clothing Drive.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Prelim_nominees.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Recyclable Materials Donations.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SAC Clothing Drive.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SAiEE Member Social.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SAC Clothing Drive.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Siemens TIA-Micro.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | ENG SAC Table Tennis.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.03.04_SRC_Correspondence_ Update on Motsepe Foundation and Vice Chancellor's Donation .pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Eagles U20 vs UJ U20 Match Day.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SAiEE Member Social.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Coversations that Matter.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Quiz Night.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 9March2024 TIA-Micro.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | LETTER TO UNIVERSITIES- 2024 ACADEMIC YEAR UPDATE - North West University.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Safety and awareness.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Safety and Awareness Week (5).png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SubCom.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | First Generation Students.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SAiEE Membership Drive.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Safety and awareness.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SubCom.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SubCom.jpg | jpg | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-08-26T20:57:15.089Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:57:15.089Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:57:42.461Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T20:57:58.055Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Tia_Pro1 30 Sep.png | png | 2026-08-26T20:57:58.055Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Tia_Micro 12 Sep.jpeg | jpeg | 2026-08-26T20:57:58.055Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Tia_Micro 12 Sep.jpeg | jpeg | 2026-08-26T20:58:14.653Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | TIA-MICRO.jpeg | jpeg | 2026-08-26T20:58:27.599Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 1Aug.jpeg | jpeg | 2026-08-26T20:58:27.599Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 1Aug.jpeg | jpeg | 2026-08-26T20:58:39.156Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 15Aug.png | png | 2026-08-26T20:58:48.405Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 9July.png | png | 2026-08-26T20:58:48.405Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 9July.png | png | 2026-08-26T20:59:00.559Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 18July.png | png | 2026-08-26T20:59:11.824Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Pro1 25July.png | png | 2026-08-26T20:59:11.824Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Pro1 25July.png | png | 2026-08-26T20:59:22.127Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Pro2-22June.png | png | 2026-08-26T20:59:34.735Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Pro2-22June.png | png | 2026-08-26T20:59:34.735Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Pro2-22June.png | png | 2026-08-26T20:59:48.802Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | SRC_ConstitutionReview.jpeg | jpeg | 2026-08-26T21:00:00.533Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | SiemensCourse_TIA-MICRO.png | png | 2026-08-26T21:00:00.533Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Upcoming Courses in Robotics.pdf | pdf | 2026-08-26T21:00:00.533Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Upcoming Courses in Robotics.pdf | pdf | 2026-08-26T21:00:14.935Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | Upcoming Courses in Robotics.pdf | pdf | 2026-08-26T21:02:50.913Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | CareerFairs2026.jpeg | jpeg | 2026-08-26T21:03:07.733Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | SIEMENS Course Advert.jpeg | jpeg | 2026-08-26T21:03:07.733Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | SIEMENS Course Advert.jpeg | jpeg | 2026-08-26T21:03:19.436Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | IMG-20251023-WA0051.jpg | jpg | 2026-08-26T21:03:31.566Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2025.10.13_Final list elected_Engineering_SAC.pdf | pdf | 2026-08-26T21:03:31.566Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-08-26T21:03:31.566Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-08-26T21:10:43.831Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-08-26T21:18:45.961Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2025.09.22_Final list of candidates_Engineering.pdf | pdf | 2026-08-26T21:18:57.700Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T21:18:57.700Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T21:19:44.065Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T21:19:59.077Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-08-26T21:19:59.077Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-08-26T21:28:46.652Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T21:28:59.390Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2025.09.03_PC Election Schedule_HC SAC_ (2).pdf | pdf | 2026-08-26T21:28:59.390Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | 2025.09.03_PC Election Schedule_HC SAC_ (2).pdf | pdf | 2026-08-26T21:52:44.248Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-08-26T21:52:56.519Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T21:52:56.519Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Tia_Pro1 30 Sep.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Tia_Micro 12 Sep.jpeg | jpeg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | TIA-MICRO.jpeg | jpeg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Micro 1Aug.jpeg | jpeg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Micro 15Aug.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Micro 9July.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Micro 18July.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Pro1 25July.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Pro2-22June.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Pro2-22June.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SRC_ConstitutionReview.jpeg | jpeg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SiemensCourse_TIA-MICRO.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Upcoming Courses in Robotics.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | CareerFairs2026.jpeg | jpeg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SIEMENS Course Advert.jpeg | jpeg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | IMG-20251023-WA0051.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.10.13_Final list elected_Engineering_SAC.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.09.22_Final list of candidates_Engineering.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_ (2).pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | IATC-Flyer.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | NWU SADS Services 2025.pptx | pptx | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Siemens Course.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Prelim list elected Engineering.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Go Vote.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Siemens Course.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Academics SUBCOM.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Art Auditions.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | MPR SUBCOM.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Mr & Miss Campus.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Siemens Course.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Societies booklet.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Society stalls.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Volleyball.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Weekly planner.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.02.17_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.02.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2025.02.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.10.06_Final list elected_ENG.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.10.05_Prelim list of elected candidates.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.10.02_Final list of candidates_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 30.09.2024_Prelim nominees_ELIGIBLE_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 30.09.2024_Prelim nominees_NOT ELIGIBLE_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved _2_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Christian Van Wyk CV.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Roedine van der Merwe CV.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved _2_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.09_Final list elected_Engineering.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.06_Prelim list elected_Engineering.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.05_Prelim list elected_Chapters_Engineering (Publish ).pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.04_Final list of candidates_Engineering .pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 04_Sept_2024 Schedule for Engineering SAC Elections .pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.02_Prelim nominees_ELIGIBLE_Engineering.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.09.02_Prelim nominees_NOT ELIGIBLE_Engineering.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Charné_Griessel_38217953.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Tayler_Geldenhuys_37575597.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Tayler_Geldenhuys_37575597.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Charné_Griessel_38217953.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Industrial Automation Short Course_Siemens TIA-Micro.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Word Wise Week.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Industrial Automation Short Course.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SCD Thuso A4 dgt.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Cybathlon 2024.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | abb5180b-d34e-4805-902e-5fe27441a836.jpeg | jpeg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Hoodie Competition.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Engineering Fair.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | TIA-Micro 13April2024.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Volleyball Tournament.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Siemens TIA-Micro Course.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Barefoot Day, SCC.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | final candidate .pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | elected candidates .pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Final list of Candidates.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Quiz Night .jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Amapiano Friday.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Prelim_nominees.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Recyclable Materials Donations.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SAiEE Member Social.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Siemens TIA-Micro.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | ENG SAC Table Tennis.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2024.03.04_SRC_Correspondence_ Update on Motsepe Foundation and Vice Chancellor's Donation .pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Eagles U20 vs UJ U20 Match Day.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SAiEE Member Social.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Coversations that Matter.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Quiz Night.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 9March2024 TIA-Micro.png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | LETTER TO UNIVERSITIES- 2024 ACADEMIC YEAR UPDATE - North West University.pdf | pdf | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Safety and awareness.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Safety and Awareness Week (5).png | png | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SubCom.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | First Generation Students.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SAiEE Membership Drive.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | Safety and awareness.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SubCom.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | SubCom.jpg | jpg | 2026-09-05T16:04:45.732Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:05:02.638Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:05:02.638Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:05:21.416Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:05:35.749Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:05:47.859Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:05:47.859Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:06:49.605Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:07:04.200Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:07:04.200Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Tia_Pro1 30 Sep.png | png | 2026-09-05T16:07:04.200Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Tia_Micro 12 Sep.jpeg | jpeg | 2026-09-05T16:07:04.200Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Tia_Micro 12 Sep.jpeg | jpeg | 2026-09-05T16:07:26.214Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Tia_Pro1 30 Sep.png | png | 2026-09-05T16:07:36.895Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | TIA-MICRO.jpeg | jpeg | 2026-09-05T16:07:46.998Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 1Aug.jpeg | jpeg | 2026-09-05T16:07:46.998Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 1Aug.jpeg | jpeg | 2026-09-05T16:08:07.530Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 1Aug.jpeg | jpeg | 2026-09-05T16:08:17.964Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 15Aug.png | png | 2026-09-05T16:08:27.969Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 9July.png | png | 2026-09-05T16:08:27.969Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 9July.png | png | 2026-09-05T16:08:46.812Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 9July.png | png | 2026-09-05T16:09:04.090Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 18July.png | png | 2026-09-05T16:09:13.803Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Pro1 25July.png | png | 2026-09-05T16:09:13.803Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Pro1 25July.png | png | 2026-09-05T16:09:36.474Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Pro1 25July.png | png | 2026-09-05T16:09:49.066Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Pro2-22June.png | png | 2026-09-05T16:10:00.145Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Pro2-22June.png | png | 2026-09-05T16:10:00.145Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Pro2-22June.png | png | 2026-09-05T16:13:05.692Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | SRC_ConstitutionReview.jpeg | jpeg | 2026-09-05T16:13:17.783Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | SiemensCourse_TIA-MICRO.png | png | 2026-09-05T16:13:17.783Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Upcoming Courses in Robotics.pdf | pdf | 2026-09-05T16:13:17.783Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Upcoming Courses in Robotics.pdf | pdf | 2026-09-05T16:13:31.219Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Upcoming Courses in Robotics.pdf | pdf | 2026-09-05T16:13:42.745Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | Upcoming Courses in Robotics.pdf | pdf | 2026-09-05T16:13:53.920Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | CareerFairs2026.jpeg | jpeg | 2026-09-05T16:14:11.708Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | SIEMENS Course Advert.jpeg | jpeg | 2026-09-05T16:14:11.708Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | SIEMENS Course Advert.jpeg | jpeg | 2026-09-05T16:14:32.163Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | SIEMENS Course Advert.jpeg | jpeg | 2026-09-05T16:14:42.776Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | IMG-20251023-WA0051.jpg | jpg | 2026-09-05T16:14:53.440Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2025.10.13_Final list elected_Engineering_SAC.pdf | pdf | 2026-09-05T16:14:53.440Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-09-05T16:14:53.440Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-09-05T16:15:04.331Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-09-05T16:15:14.980Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-09-05T16:15:26.633Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2025.09.22_Final list of candidates_Engineering.pdf | pdf | 2026-09-05T16:15:39.111Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:15:39.111Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:15:54.873Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-05T16:16:07.852Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-05T16:16:21.718Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:16:21.718Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-05T16:16:47.066Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-06T14:18:53.607Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-06T14:18:53.607Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-06T14:19:17.936Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-06T14:19:28.411Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-06T14:19:40.315Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-06T14:19:40.315Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-06T14:21:55.372Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-06T14:22:08.582Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-06T14:22:08.582Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Tia_Pro1 30 Sep.png | png | 2026-09-06T14:22:08.582Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Tia_Micro 12 Sep.jpeg | jpeg | 2026-09-06T14:22:08.582Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | Tia_Pro1 30 Sep.png | pdf | 2026-09-06T14:22:35.607Z | announcement_attachment |  | fails=0 | failts=
+SYNCED | Tia_Pro1 30 Sep.png | pdf | 2026-09-06T14:29:42.927Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Tia_Pro1 30 Sep.png | png | 2026-09-06T14:53:00.131Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Tia_Micro 12 Sep.jpeg | jpg | 2026-09-06T14:53:11.167Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | TIA-MICRO.jpeg | jpeg | 2026-09-06T14:53:20.829Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 1Aug.jpeg | jpeg | 2026-09-06T14:53:20.829Z | announcement_attachment |  | fails=0 | failts=
+INCOMPATIBLE | Micro 1Aug.jpeg | jpg | 2026-09-06T14:53:40.249Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-07T21:05:18.394Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/84ecbd9d-4933-4911-a7da-31e9d95a378e/2026.08.24_Nomination%20Form%20Students%20Academic%20Chapter.pdf | fails=0 | failts=
+NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:05:18.394Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/567058f8-c620-4a17-8d4c-e7bb68aa0c78/2026.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf | fails=0 | failts=
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-07T21:05:34.052Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/d30807db-f12b-4c7f-b9c8-337d60e10b49/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | fails=0 | failts=
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-07T21:05:34.052Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/b697bdc6-8a29-4480-bd92-341b95882647/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | fails=0 | failts=
+NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:05:49.905Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a89282d4-3a9b-4794-b0b2-52f6db66df61/2026.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf | fails=0 | failts=
+NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-07T21:05:49.905Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/dc7f7eb6-2594-4fef-86ad-33822ea751ad/2026.08.24_Nomination%20Form%20Students%20Academic%20Chapter.pdf | fails=0 | failts=
+NOT_SYNCED | Tia_Pro1 30 Sep.png | png | 2026-09-07T21:05:49.905Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/9a0d06d0-4cad-48da-8762-11101e114654/Tia_Pro1%2030%20Sep.png | fails=0 | failts=
+NOT_SYNCED | Tia_Micro 12 Sep.jpeg | jpeg | 2026-09-07T21:05:49.905Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/bc9ebc15-0cca-4a67-8bc6-67f4e539c5f4/Tia_Micro%2012%20Sep.jpeg | fails=0 | failts=
+NOT_SYNCED | TIA-MICRO.jpeg | jpeg | 2026-09-07T21:06:05.829Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/25d7af4b-ce52-484e-aed4-3ae8eb835606/TIA-MICRO.jpeg | fails=0 | failts=
+NOT_SYNCED | Micro 1Aug.jpeg | jpeg | 2026-09-07T21:06:05.829Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5657a470-3903-442c-a228-aab661063b8f/Micro%201Aug.jpeg | fails=0 | failts=
+NOT_SYNCED | Micro 15Aug.png | png | 2026-09-07T21:06:19.427Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/d6f97a4a-e513-4eba-99bd-4d1483980771/Micro%2015Aug.png | fails=0 | failts=
+NOT_SYNCED | Micro 9July.png | png | 2026-09-07T21:06:19.427Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0d067416-ec76-4676-9c9c-322997920b82/Micro%209July.png | fails=0 | failts=
+NOT_SYNCED | Micro 18July.png | png | 2026-09-07T21:06:37.598Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f35768f9-04f1-4282-ae42-ace80b50878c/Micro%2018July.png | fails=0 | failts=
+NOT_SYNCED | Pro1 25July.png | png | 2026-09-07T21:06:37.598Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a910014a-08fc-4560-abc5-d632105cc784/Pro1%2025July.png | fails=0 | failts=
+NOT_SYNCED | Pro2-22June.png | png | 2026-09-07T21:06:56.222Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/29ecf28f-d643-41a6-98d7-21331245807a/Pro2-22June.png | fails=0 | failts=
+NOT_SYNCED | Pro2-22June.png | png | 2026-09-07T21:06:56.222Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f69e00df-ce3c-4ccc-a895-e3493fb970c1/Pro2-22June.png | fails=0 | failts=
+NOT_SYNCED | SRC_ConstitutionReview.jpeg | jpeg | 2026-09-07T21:07:13.065Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/4c11eadf-c357-4a88-ae24-a9566a7336c6/SRC_ConstitutionReview.jpeg | fails=0 | failts=
+NOT_SYNCED | SiemensCourse_TIA-MICRO.png | png | 2026-09-07T21:07:13.065Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e3c38026-60fc-4a12-b518-6556d54cfa81/SiemensCourse_TIA-MICRO.png | fails=0 | failts=
+NOT_SYNCED | Upcoming Courses in Robotics.pdf | pdf | 2026-09-07T21:07:13.065Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7a9dbde9-1aef-4bd2-ade8-638f1c5df189/Upcoming%20Courses%20in%20Robotics.pdf | fails=0 | failts=
+NOT_SYNCED | CareerFairs2026.jpeg | jpeg | 2026-09-07T21:07:31.971Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/210d3557-9cc2-40b3-af5e-e3a4b199c02a/CareerFairs2026.jpeg | fails=0 | failts=
+NOT_SYNCED | SIEMENS Course Advert.jpeg | jpeg | 2026-09-07T21:07:31.971Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f19b4ded-b6bb-48c0-af4c-e1fbd671914f/SIEMENS%20Course%20Advert.jpeg | fails=0 | failts=
+NOT_SYNCED | IMG-20251023-WA0051.jpg | jpg | 2026-09-07T21:07:47.358Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/862ad276-c633-4281-98eb-772819de3553/IMG-20251023-WA0051.jpg | fails=0 | failts=
+NOT_SYNCED | 2025.10.13_Final list elected_Engineering_SAC.pdf | pdf | 2026-09-07T21:07:47.358Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8616bb1c-252c-4ae1-b506-3a4e0ba393d3/2025.10.13_Final%20list%20elected_Engineering_SAC.pdf | fails=0 | failts=
+NOT_SYNCED | 2025_Prelim list elected_SAC Committee_template_Engineering_Faculty.pdf | pdf | 2026-09-07T21:07:47.358Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/b2f17f66-c25e-4c44-9008-a973604652c4/2025_Prelim%20list%20elected_SAC%20Committee_template_Engineering_Faculty.pdf | fails=0 | failts=
+NOT_SYNCED | 2025.09.22_Final list of candidates_Engineering.pdf | pdf | 2026-09-07T21:08:15.686Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/cce58c62-20c4-48dc-9dea-0049177b72ca/2025.09.22_Final%20list%20of%20candidates_Engineering.pdf | fails=0 | failts=
+NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-07T21:08:15.686Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8235f505-597e-4d8f-b886-27574e4f93de/2025.09.04_Nomination%20Form%20Students%20Academic%20Chapter.pdf | fails=0 | failts=
+NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:08:35.548Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0e5f1993-0734-4227-aa37-40d697b014d6/2025.09.03_PC%20Election%20Schedule_HC%20SAC_.pdf | fails=0 | failts=
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-07T21:08:35.548Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/c3c847d5-eef0-4614-86e7-e9f77f659830/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | fails=0 | failts=
+NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-07T21:08:52.392Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/870f1c08-7cad-4dd1-9239-e44c2e0ce557/2025.09.04_Nomination%20Form%20Students%20Academic%20Chapter.pdf | fails=0 | failts=
+NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_ (2).pdf | pdf | 2026-09-07T21:08:52.392Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/3402b808-8de5-4c44-a2cc-91767f82fce1/2025.09.03_PC%20Election%20Schedule_HC%20SAC_%20_2_.pdf | fails=0 | failts=
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-07T21:09:06.951Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/6f74b6ab-f38b-4515-95e6-e4bb570ac776/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | fails=0 | failts=
+NOT_SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:09:06.951Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/08716348-db80-4554-b81f-2872cd83f90e/2025.09.03_PC%20Election%20Schedule_HC%20SAC_.pdf | fails=0 | failts=
+NOT_SYNCED | IATC-Flyer.pdf | pdf | 2026-09-07T21:09:22.795Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2a237612-ba14-4766-ade5-b86fd6e21e80/IATC-Flyer.pdf | fails=0 | failts=
+NOT_SYNCED | NWU SADS Services 2025.pptx | pptx | 2026-09-07T21:09:22.795Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/bded5b1a-a5dc-4959-8a00-08b086696fd0/NWU%20SADS%20Services%202025.pptx | fails=0 | failts=
+NOT_SYNCED | Siemens Course.jpg | jpg | 2026-09-07T21:09:22.795Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2e7f76a4-c8c1-4485-9216-54d9fdd7d4ac/Siemens%20Course.jpg | fails=0 | failts=
+NOT_SYNCED | Prelim list elected Engineering.pdf | pdf | 2026-09-07T21:09:39.555Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/dd2aa706-a2ba-4a07-806b-c8e93fe9e864/Prelim%20list%20elected%20Engineering.pdf | fails=0 | failts=
+NOT_SYNCED | Go Vote.jpg | jpg | 2026-09-07T21:09:39.555Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/3b97158e-2561-4eb4-855c-fb11064522f2/Go%20Vote.jpg | fails=0 | failts=
+NOT_SYNCED | Siemens Course.jpg | jpg | 2026-09-07T21:09:39.555Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2884f468-4355-4a1d-92ca-5bad1cb639f7/Siemens%20Course.jpg | fails=0 | failts=
+NOT_SYNCED | Academics SUBCOM.jpg | jpg | 2026-09-07T21:09:56.287Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8b936de0-8e9e-45fd-8d5f-01e42e900603/Academics%20SUBCOM.jpg | fails=0 | failts=
+NOT_SYNCED | Art Auditions.jpg | jpg | 2026-09-07T21:09:56.287Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7ecdb3fa-4398-4aa2-a9a0-2e118b40c8cf/Art%20Auditions.jpg | fails=0 | failts=
+NOT_SYNCED | MPR SUBCOM.jpg | jpg | 2026-09-07T21:10:12.090Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/90d4c3fd-d74d-40a1-9b47-b8eba39699ca/MPR%20SUBCOM.jpg | fails=0 | failts=
+NOT_SYNCED | Mr & Miss Campus.jpg | jpg | 2026-09-07T21:10:12.090Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/c77a7ec3-ce07-4f96-981a-3d7aa5955fdd/Mr%20_%20Miss%20Campus.jpg | fails=0 | failts=
+NOT_SYNCED | Siemens Course.jpg | jpg | 2026-09-07T21:10:27.877Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/631ad562-6845-4199-8e9d-07b655492e4a/Siemens%20Course.jpg | fails=0 | failts=
+NOT_SYNCED | Societies booklet.jpg | jpg | 2026-09-07T21:10:27.877Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f270c2b1-ef09-407f-9d2d-55987d7aaa5b/Societies%20booklet.jpg | fails=0 | failts=
+NOT_SYNCED | Society stalls.jpg | jpg | 2026-09-07T21:10:45.515Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5e446563-aaf4-4dcb-b318-572a82698792/Society%20stalls.jpg | fails=0 | failts=
+NOT_SYNCED | Volleyball.png | png | 2026-09-07T21:10:45.515Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/ed7da901-d13f-4c30-a723-3ad04ac08586/Volleyball.png | fails=0 | failts=
+NOT_SYNCED | Weekly planner.png | png | 2026-09-07T21:11:07.786Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/74f0cdd5-f73e-4a59-8ac2-c4c142a25239/Weekly%20planner.png | fails=0 | failts=
+NOT_SYNCED | 2025.02.17_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-07T21:11:07.786Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/33f30cb0-10ab-4ccc-a80a-a66a334dcae0/2025.02.17_Nomination%20Form%20Students_%20Academic%20Chapter.pdf | fails=0 | failts=
+NOT_SYNCED | 2025.02.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-07T21:11:07.786Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7033e0d6-78a8-4b10-a5b5-a64602c97fe4/2025.02.13_PC%20Election%20Schedule_HC%20SAC_for%20publication%20-%20By-ELECTIONS.pdf | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-07T21:11:25.255Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/1b56d872-c266-4809-859f-a51ab90177b9/2022.09.05_Rules%20SSLS_approved%20_2_.pdf | fails=0 | failts=
+NOT_SYNCED | 2025.02.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-07T21:11:25.255Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7ca3d1d8-aba9-4df8-97d3-a3c0ab300aa2/2025.02.13_PC%20Election%20Schedule_HC%20SAC_for%20publication%20-%20By-ELECTIONS.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.10.06_Final list elected_ENG.pdf | pdf | 2026-09-07T21:11:40.184Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a1b6e1a8-7aac-4987-9ec4-decac7ef3144/2024.10.06_Final%20list%20elected_ENG.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.10.05_Prelim list of elected candidates.pdf | pdf | 2026-09-07T21:11:40.184Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a0ddb864-b17d-4370-9ff4-c6017ec95963/2024.10.05_Prelim%20list%20of%20elected%20candidates.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.10.02_Final list of candidates_.pdf | pdf | 2026-09-07T21:11:54.514Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/df62cec0-0adb-44cf-b4e4-796f368fd33b/2024.10.02_Final%20list%20of%20candidates_.pdf | fails=0 | failts=
+NOT_SYNCED | 30.09.2024_Prelim nominees_ELIGIBLE_.pdf | pdf | 2026-09-07T21:11:54.514Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/ce995fa6-1740-4a29-a66f-a35e7e01077b/30.09.2024_Prelim%20nominees_ELIGIBLE_.pdf | fails=0 | failts=
+NOT_SYNCED | 30.09.2024_Prelim nominees_NOT ELIGIBLE_.pdf | pdf | 2026-09-07T21:12:08.942Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/1b0fde63-8c5a-4fd7-a942-d1c904422aa7/30.09.2024_Prelim%20nominees_NOT%20ELIGIBLE_.pdf | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved _2_.pdf | pdf | 2026-09-07T21:12:08.942Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8fed9c05-b4db-42d9-b67c-abd6ecd15701/2022.09.05_Rules%20SSLS_approved%20_2_.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-07T21:12:24.273Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/deac183e-c1b4-41ee-955d-3e3a12f2985e/2024.08.26_Nomination%20Form%20Students_%20Academic%20Chapter.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.09.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-07T21:12:24.273Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/1058c26a-85d2-4428-8b09-b35048852ea0/2024.09.13_PC%20Election%20Schedule_HC%20SAC_for%20publication%20-%20By-ELECTIONS.pdf | fails=0 | failts=
+NOT_SYNCED | Christian Van Wyk CV.pdf | pdf | 2026-09-07T21:12:38.676Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0c5ea150-ac2d-4c18-8bdf-b6894daf064d/Christian%20Van%20Wyk%20CV.pdf | fails=0 | failts=
+NOT_SYNCED | Roedine van der Merwe CV.pdf | pdf | 2026-09-07T21:12:38.676Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0ec402a5-45b3-45f7-b851-f93d4ea1bff7/Roedine%20van%20der%20Merwe%20CV.pdf | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved _2_.pdf | pdf | 2026-09-07T21:12:53.554Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/cfcccad9-04ab-4da4-9546-5f6cd9da19b9/2022.09.05_Rules%20SSLS_approved%20_2_.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.09.13_PC Election Schedule_HC SAC_for publication - By-ELECTIONS.pdf | pdf | 2026-09-07T21:12:53.554Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2edea737-841b-40bb-af92-fe7ba038de74/2024.09.13_PC%20Election%20Schedule_HC%20SAC_for%20publication%20-%20By-ELECTIONS.pdf | fails=0 | failts=
+NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-07T21:13:08.051Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e2b43ea6-a6fc-435a-89d0-6b1260cca350/Portfolio%20descriptions%20for%20SAC.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.09.09_Final list elected_Engineering.pdf | pdf | 2026-09-07T21:13:08.051Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7f669595-a374-4f14-9a23-1edfd723415a/2024.09.09_Final%20list%20elected_Engineering.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.09.06_Prelim list elected_Engineering.pdf | pdf | 2026-09-07T21:13:26.899Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/829b29a7-1b62-4fa2-854c-08836ab68240/2024.09.06_Prelim%20list%20elected_Engineering.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.09.05_Prelim list elected_Chapters_Engineering (Publish ).pdf | pdf | 2026-09-07T21:13:26.899Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/45d774b7-dbd9-418c-ae58-5b76b86d4e85/2024.09.05_Prelim%20list%20elected_Chapters_Engineering%20_Publish%20_.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.09.04_Final list of candidates_Engineering .pdf | pdf | 2026-09-07T21:13:43.128Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5453d4a4-034b-42f5-b3bc-278ae300385e/2024.09.04_Final%20list%20of%20candidates_Engineering%20.pdf | fails=0 | failts=
+NOT_SYNCED | 04_Sept_2024 Schedule for Engineering SAC Elections .pdf | pdf | 2026-09-07T21:13:43.128Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5f2499a8-6a9b-4853-9917-b5caa7c8d91e/04_Sept_2024%20Schedule%20for%20Engineering%20SAC%20Elections%20.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.09.02_Prelim nominees_ELIGIBLE_Engineering.pdf | pdf | 2026-09-07T21:13:59.580Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/3aeb63e3-c558-44ee-a3e8-edb1c3d50af0/2024.09.02_Prelim%20nominees_ELIGIBLE_Engineering.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.09.02_Prelim nominees_NOT ELIGIBLE_Engineering.pdf | pdf | 2026-09-07T21:13:59.580Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/36b04158-fb9e-4e04-804c-c222f5f2ac21/2024.09.02_Prelim%20nominees_NOT%20ELIGIBLE_Engineering.pdf | fails=0 | failts=
+NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-07T21:14:17.079Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/376ab8ba-1cc0-4cf2-ba26-918667088899/Portfolio%20descriptions%20for%20SAC.pdf | fails=0 | failts=
+NOT_SYNCED | Charné_Griessel_38217953.pdf | pdf | 2026-09-07T21:14:17.079Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e38e20fc-a8a1-414a-92d5-afb9ed5ae83a/Charn%C3%A9_Griessel_38217953.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-07T21:14:32.212Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8234d5c5-005e-4745-907c-4b9a77570b2a/2024.08.26_Nomination%20Form%20Students_%20Academic%20Chapter.pdf | fails=0 | failts=
+NOT_SYNCED | Tayler_Geldenhuys_37575597.pdf | pdf | 2026-09-07T21:14:32.212Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/c4db505e-e31c-4952-982b-671e18ddddc1/Tayler_Geldenhuys_37575597.pdf | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-07T21:14:55.697Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2cb5cdb7-3101-4814-b75a-caeb9ed3d6fa/2022.09.05_Rules%20SSLS_approved%20_2_.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:14:55.697Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e852579a-856b-4a51-921e-e6e9e750e2ef/2024.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:15:23.290Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a3f233a6-36bd-40e3-b18d-654bc7e5d09b/2024.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-07T21:15:23.290Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/9c4d79ef-436e-48cb-b4f2-04d24e42a130/2022.09.05_Rules%20SSLS_approved%20_2_.pdf | fails=0 | failts=
+NOT_SYNCED | Tayler_Geldenhuys_37575597.pdf | pdf | 2026-09-07T21:15:38.516Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/374b63a3-0595-4a39-82b7-53fe70707a07/Tayler_Geldenhuys_37575597.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.08.26_Nomination Form Students' Academic Chapter.pdf | pdf | 2026-09-07T21:15:38.516Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/3e2a2c70-7c19-45dd-afa8-74372e106a00/2024.08.26_Nomination%20Form%20Students_%20Academic%20Chapter.pdf | fails=0 | failts=
+NOT_SYNCED | Charné_Griessel_38217953.pdf | pdf | 2026-09-07T21:15:52.514Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/293aef55-d5e1-4437-a04f-b4d5257ea666/Charn%C3%A9_Griessel_38217953.pdf | fails=0 | failts=
+NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-07T21:15:52.514Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f9526ed9-c0c5-44de-81cd-8e73c111da5b/Portfolio%20descriptions%20for%20SAC.pdf | fails=0 | failts=
+NOT_SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-09-07T21:16:07.523Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/462ca729-32f3-4650-a4a8-49f4dee20853/Portfolio%20descriptions%20for%20SAC.pdf | fails=0 | failts=
+NOT_SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-09-07T21:16:07.523Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/aab9b827-80aa-4c83-acbe-0dc6c3976ac1/2022.09.05_Rules%20SSLS_approved%20_2_.pdf | fails=0 | failts=
+NOT_SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:16:21.636Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/73956941-2b60-4c6e-82bd-df6a2e79a613/2024.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf | fails=0 | failts=
+NOT_SYNCED | Industrial Automation Short Course_Siemens TIA-Micro.jpg | jpg | 2026-09-07T21:16:21.636Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0bd05699-4088-4e88-ba28-ef7880ea8103/Industrial%20Automation%20Short%20Course_Siemens%20TIA-Micro.jpg | fails=0 | failts=
+NOT_SYNCED | Word Wise Week.jpg | jpg | 2026-09-07T21:16:21.636Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5fa20c74-8a4f-4d86-bff0-edbe5673cbb8/Word%20Wise%20Week.jpg | fails=0 | failts=
+NOT_SYNCED | Industrial Automation Short Course.jpg | jpg | 2026-09-07T21:16:38.171Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/91e0c3d1-755a-4db2-870f-8beff31088cd/Industrial%20Automation%20Short%20Course.jpg | fails=0 | failts=
+NOT_SYNCED | SCD Thuso A4 dgt.pdf | pdf | 2026-09-07T21:16:38.171Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f97b0782-a4f9-4d45-900a-9332b11b04f7/SCD%20Thuso%20A4%20dgt.pdf | fails=0 | failts=
+NOT_SYNCED | Cybathlon 2024.jpg | jpg | 2026-09-07T21:16:38.171Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7941dd05-687e-4716-ba81-fdcf5c7f86e2/Cybathlon%202024.jpg | fails=0 | failts=
+NOT_SYNCED | abb5180b-d34e-4805-902e-5fe27441a836.jpeg | jpeg | 2026-09-07T21:16:54.191Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/b8eebd91-611b-4fc9-b2d1-d6689a82ade6/abb5180b-d34e-4805-902e-5fe27441a836.jpeg | fails=0 | failts=
+NOT_SYNCED | Hoodie Competition.png | png | 2026-09-07T21:16:54.191Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/fc4dc8f3-2cf1-4e9a-96a9-eadfe7d0db10/Hoodie%20Competition.png | fails=0 | failts=
+NOT_SYNCED | Engineering Fair.jpg | jpg | 2026-09-07T21:18:09.038Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/eb13bb9c-b79a-4cf8-9980-45c005e0db78/Engineering%20Fair.jpg | fails=0 | failts=
+NOT_SYNCED | TIA-Micro 13April2024.png | png | 2026-09-07T21:18:09.038Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8e0bac54-56d4-47e9-bc58-a642993bd6a3/TIA-Micro%2013April2024.png | fails=0 | failts=
+NOT_SYNCED | Volleyball Tournament.jpg | jpg | 2026-09-07T21:18:25.191Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/9577517e-b19a-4631-89f6-4bfa20b38229/Volleyball%20Tournament.jpg | fails=0 | failts=
+NOT_SYNCED | Siemens TIA-Micro Course.jpg | jpg | 2026-09-07T21:18:25.191Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/260bc1ee-e7ab-4709-a945-c7a339d2099f/Siemens%20TIA-Micro%20Course.jpg | fails=0 | failts=
+NOT_SYNCED | Barefoot Day, SCC.jpg | jpg | 2026-09-07T21:18:39.312Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/92ded784-9503-45b9-a470-c931f5f36a05/Barefoot%20Day%2C%20SCC.jpg | fails=0 | failts=
+NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-09-07T21:18:39.312Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5da7923a-d1c7-483d-be3c-327931a4098b/Hoodie%20Competition.jpg | fails=0 | failts=
+NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-07T21:18:53.326Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f91f99a0-2617-4290-af63-139e69a8f272/SAC%20Clothing%20Drive.png | fails=0 | failts=
+NOT_SYNCED | final candidate .pdf | pdf | 2026-09-07T21:18:53.326Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/9d9e366c-178c-4790-a3c3-0a02247b21ee/final%20candidate%20.pdf | fails=0 | failts=
+NOT_SYNCED | elected candidates .pdf | pdf | 2026-09-07T21:18:53.326Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8fa16d2f-836b-4945-96d8-dac29b441c28/elected%20candidates%20.pdf | fails=0 | failts=
+NOT_SYNCED | Final list of Candidates.pdf | pdf | 2026-09-07T21:19:10.403Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8ae7645c-64cf-4c19-8245-092211560065/Final%20list%20of%20Candidates.pdf | fails=0 | failts=
+NOT_SYNCED | Quiz Night .jpg | jpg | 2026-09-07T21:19:10.403Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/1a2d31e0-87a1-4910-8bbf-b5e9c00191a7/Quiz%20Night%20.jpg | fails=0 | failts=
+NOT_SYNCED | Amapiano Friday.jpg | jpg | 2026-09-07T21:19:10.403Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8372533d-6253-4615-b78f-af7672ead53c/Amapiano%20Friday.jpg | fails=0 | failts=
+NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-09-07T21:19:27.914Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2677389b-4e68-4915-b157-051d1f8cd578/Hoodie%20Competition.jpg | fails=0 | failts=
+NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-07T21:19:27.914Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/a3e16359-f324-4cfb-9764-0791a703980b/SAC%20Clothing%20Drive.png | fails=0 | failts=
+NOT_SYNCED | Prelim_nominees.pdf | pdf | 2026-09-07T21:19:27.914Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/991adcf9-7572-43a3-b4f8-a49d4727ca02/Prelim_nominees.pdf | fails=0 | failts=
+NOT_SYNCED | Hoodie Competition.jpg | jpg | 2026-09-07T21:19:48.565Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/d91cfbd4-ac12-420e-a0c2-459a6579a933/Hoodie%20Competition.jpg | fails=0 | failts=
+NOT_SYNCED | Recyclable Materials Donations.jpg | jpg | 2026-09-07T21:19:48.565Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8742e77a-70af-4a54-984c-ab42068a4ea4/Recyclable%20Materials%20Donations.jpg | fails=0 | failts=
+NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-07T21:20:05.890Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/ac7abfb8-9ddf-4913-a982-bbbb79a26f2d/SAC%20Clothing%20Drive.png | fails=0 | failts=
+NOT_SYNCED | SAiEE Member Social.jpg | jpg | 2026-09-07T21:20:05.890Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/1bfccbba-e591-4a29-bcc8-515cba33f231/SAiEE%20Member%20Social.jpg | fails=0 | failts=
+NOT_SYNCED | SAC Clothing Drive.png | png | 2026-09-07T21:20:25.328Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/39efbeb4-fab8-43e5-907b-e94bca6a5f5a/SAC%20Clothing%20Drive.png | fails=0 | failts=
+NOT_SYNCED | Siemens TIA-Micro.png | png | 2026-09-07T21:20:25.328Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/08a350da-da67-4ab2-9f26-53724c369fc3/Siemens%20TIA-Micro.png | fails=0 | failts=
+NOT_SYNCED | ENG SAC Table Tennis.jpg | jpg | 2026-09-07T21:21:42.037Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/cc32de5c-d23c-449a-a541-6edbee60a4d9/ENG%20SAC%20Table%20Tennis.jpg | fails=0 | failts=
+NOT_SYNCED | 2024.03.04_SRC_Correspondence_ Update on Motsepe Foundation and Vice Chancellor's Donation .pdf | pdf | 2026-09-07T21:21:42.037Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/8e31eaf3-c526-4000-8087-6bbf4b103903/2024.03.04_SRC_Correspondence_%20Update%20on%20Motsepe%20Foundation%20and%20Vice%20Chancellor_s%20Donation%20.pdf | fails=0 | failts=
+NOT_SYNCED | Eagles U20 vs UJ U20 Match Day.jpg | jpg | 2026-09-07T21:21:42.037Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/63f5cecb-f726-4dd0-9c8a-ac7b5ebb12b5/Eagles%20U20%20vs%20UJ%20U20%20Match%20Day.jpg | fails=0 | failts=
+NOT_SYNCED | SAiEE Member Social.jpg | jpg | 2026-09-07T21:21:58.296Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/c61359d8-4588-4542-865e-7c2d0cce1666/SAiEE%20Member%20Social.jpg | fails=0 | failts=
+NOT_SYNCED | Coversations that Matter.jpg | jpg | 2026-09-07T21:21:58.296Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/aa076814-4b4a-4dcf-80d2-35e331371a97/Coversations%20that%20Matter.jpg | fails=0 | failts=
+NOT_SYNCED | Quiz Night.jpg | jpg | 2026-09-07T21:22:14.069Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/b8ab7328-56ed-45aa-bf6e-02adfd112033/Quiz%20Night.jpg | fails=0 | failts=
+NOT_SYNCED | 9March2024 TIA-Micro.png | png | 2026-09-07T21:22:14.069Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/340a2540-1634-46e2-9f18-9cde320e5364/9March2024%20TIA-Micro.png | fails=0 | failts=
+NOT_SYNCED | LETTER TO UNIVERSITIES- 2024 ACADEMIC YEAR UPDATE - North West University.pdf | pdf | 2026-09-07T21:22:14.069Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/68a96fe0-620c-4b95-ad83-787c999a724e/LETTER%20TO%20UNIVERSITIES-%202024%20ACADEMIC%20YEAR%20UPDATE%20-%20North%20West%20University.pdf | fails=0 | failts=
+NOT_SYNCED | Safety and awareness.jpg | jpg | 2026-09-07T21:22:30.338Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/ffdb2f91-3081-4e4c-a19c-93e788be9d9a/Safety%20and%20awareness.jpg | fails=0 | failts=
+NOT_SYNCED | Safety and Awareness Week (5).png | png | 2026-09-07T21:22:30.338Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/45901403-f019-45cd-a0b8-b01d92c01990/Safety%20and%20Awareness%20Week%20_5_.png | fails=0 | failts=
+NOT_SYNCED | SubCom.jpg | jpg | 2026-09-07T21:22:43.414Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/aa0bd527-e4ab-4bd8-b377-1a5780fc04db/SubCom.jpg | fails=0 | failts=
+NOT_SYNCED | First Generation Students.jpg | jpg | 2026-09-07T21:22:43.414Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0694e083-7a77-4dcc-9d21-9e5d62da0ddb/First%20Generation%20Students.jpg | fails=0 | failts=
+NOT_SYNCED | SAiEE Membership Drive.jpg | jpg | 2026-09-07T21:22:59.423Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/080729cd-6178-49f9-af1a-796ba0a1ffa0/SAiEE%20Membership%20Drive.jpg | fails=0 | failts=
+NOT_SYNCED | Safety and awareness.jpg | jpg | 2026-09-07T21:22:59.423Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/457767d1-707d-414f-a2b8-5fc641c836e4/Safety%20and%20awareness.jpg | fails=0 | failts=
+NOT_SYNCED | SubCom.jpg | jpg | 2026-09-07T21:23:14.412Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/c0683d21-0338-4419-91d3-ab42de18f98c/SubCom.jpg | fails=0 | failts=
+NOT_SYNCED | SubCom.jpg | jpg | 2026-09-07T21:23:14.412Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e012dab5-f592-4c44-a79e-af304d9a2577/SubCom.jpg | fails=0 | failts=
+NOT_SYNCED | 2026.09.08_Prelim nominees_ELIGIBLE_SAC.pdf | pdf | 2026-09-09T05:26:08.587Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e6262f8d-ae5e-48fe-9d88-117fb7d4897f/2026.09.08_Prelim%20nominees_ELIGIBLE_SAC.pdf | fails=0 | failts=
+NOT_SYNCED | 2026.09.08_Prelim nominees_NOT ELIGIBLE_SAC.pdf | pdf | 2026-09-08T14:28:12.027Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5bdcf5e7-ea45-4f48-8b91-992e06eaeb75/2026.09.08_Prelim%20nominees_NOT%20ELIGIBLE_SAC.pdf | fails=0 | failts=
+NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-09T05:26:08.587Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2782970e-ec86-4825-922c-41b63194df60/2026.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf | fails=0 | failts=
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-08T14:28:12.027Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e8695174-c99e-4c45-8e46-ea17346b3c00/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | fails=0 | failts=
+NOT_SYNCED | Siemens TIA-Micro.jpeg | jpeg | 2026-09-09T13:33:19.286Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2f148bcc-5287-44b3-936d-f1b282d6e386/Siemens%20TIA-Micro.jpeg | fails=0 | failts=
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
