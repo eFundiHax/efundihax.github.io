@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax Sync
 // @namespace    https://efundihax.github.io
-// @version      4.0.14
+// @version      4.0.15
 // @description  Syncs eFundi announcements, resources, lessons and calendars to Google Drive via Apps Script
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -2473,19 +2473,20 @@
 
                     console.log('[Lessons] Fetching: ' + page.title);
                     extractLessonContent(page.url, page.title).then(function(lessonData) {
-                        computeHash(lessonData.html).then(function(hash) {
-                            results.push({
-                                page: page,
-                                html: lessonData.html,
-                                images: lessonData.images,
-                                lessonTitle: lessonData.lessonTitle,
-                                hash: hash,
-                                success: true,
-                                changed: true
-                            });
-                            processNext();
-                        });
-                    }).catch(function(err) {
+                                            computeHash(lessonData.html).then(function(hash) {
+                                                results.push({
+                                                    page: page,
+                                                    html: lessonData.html,
+                                                    images: lessonData.images,
+                                                    resources: lessonData.resources || [],
+                                                    lessonTitle: lessonData.lessonTitle,
+                                                    hash: hash,
+                                                    success: true,
+                                                    changed: true
+                                                });
+                                                processNext();
+                                            });
+                                        }).catch(function(err) {
                         console.error('[Lessons] Failed "' + page.title + '":', err.message);
                         results.push({ page: page, success: false, error: err.message });
                         processNext();
@@ -2541,16 +2542,17 @@
                     for (var i = 0; i < changedLessons.length; i++) {
                         var lesson = changedLessons[i];
                         var promise = post({
-                            action: 'sync_lesson',
-                            secret: SECRET,
-                            siteId: siteId,
-                            siteTitle: siteTitle,
-                            lessonTitle: lesson.lessonTitle,
-                            lessonUrl: lesson.page.url,
-                            lessonHtml: lesson.html,
-                            images: lesson.images,
-                            lessonHash: lesson.hash
-                        }).then(function() {
+                                                    action: 'sync_lesson',
+                                                    secret: SECRET,
+                                                    siteId: siteId,
+                                                    siteTitle: siteTitle,
+                                                    lessonTitle: lesson.lessonTitle,
+                                                    lessonUrl: lesson.page.url,
+                                                    lessonHtml: lesson.html,
+                                                    images: lesson.images,
+                                                    resources: lesson.resources,
+                                                    lessonHash: lesson.hash
+                                                }).then(function() {
                             localHashes[lesson.page.url] = lesson.hash;
                             updateProgress('lessons', i + 1, changedLessons.length, 'Sending');
                         });
@@ -2588,54 +2590,103 @@
     }
 
     function extractLessonContent(lessonUrl, pagePickerTitle) {
-        return fetchHtmlPage(lessonUrl).then(function(html) {
-            var dom = new DOMParser().parseFromString(html, 'text/html');
-            var content = dom.querySelector('#content, .Mrphs-mainContent, main[role="main"], #pagecontents, .lessonbuilder-div') || dom.body;
-            var clone = content.cloneNode(true);
-            clone.querySelectorAll(GARBAGE_SELECTORS).forEach(function(el) { el.remove(); });
-            clone.querySelectorAll('[style*="display:none"],[style*="display: none"],[aria-hidden="true"]').forEach(function(el) { el.remove(); });
+            return fetchHtmlPage(lessonUrl).then(function(html) {
+                var dom = new DOMParser().parseFromString(html, 'text/html');
+                var content = dom.querySelector('#content, .Mrphs-mainContent, main[role="main"], #pagecontents, .lessonbuilder-div') || dom.body;
+                var clone = content.cloneNode(true);
+                clone.querySelectorAll(GARBAGE_SELECTORS).forEach(function(el) { el.remove(); });
+                clone.querySelectorAll('[style*="display:none"],[style*="display: none"],[aria-hidden="true"]').forEach(function(el) { el.remove(); });
 
-            var images = [];
-            var imgElements = clone.querySelectorAll('img');
-            var imgPromises = [];
+                var images = [];
+                var imgElements = clone.querySelectorAll('img');
+                var imgPromises = [];
 
-            for (var i = 0; i < imgElements.length; i++) {
-                var img = imgElements[i];
-                var src = img.getAttribute('src') || '';
-                if (!src || src.indexOf('data:') === 0) continue;
-                var absoluteSrc = src.indexOf('http') === 0 ? src : 'https://efundi.nwu.ac.za' + src;
-                var filename = absoluteSrc.split('/').pop().split('?')[0] || 'image.png';
-                var knownW = img.naturalWidth || parseInt(img.getAttribute('width')) || 0;
-                var knownH = img.naturalHeight || parseInt(img.getAttribute('height')) || 0;
+                for (var i = 0; i < imgElements.length; i++) {
+                    var img = imgElements[i];
+                    var src = img.getAttribute('src') || '';
+                    if (!src || src.indexOf('data:') === 0) continue;
+                    var absoluteSrc = src.indexOf('http') === 0 ? src : 'https://efundi.nwu.ac.za' + src;
+                    var filename = absoluteSrc.split('/').pop().split('?')[0] || 'image.png';
+                    var knownW = img.naturalWidth || parseInt(img.getAttribute('width')) || 0;
+                    var knownH = img.naturalHeight || parseInt(img.getAttribute('height')) || 0;
 
-                if (knownW > 0 && knownH > 0 && (knownW < 128 || knownH < 128)) {
-                    img.replaceWith(dom.createTextNode('[Small image removed: ' + filename + ']'));
-                    continue;
+                    if (knownW > 0 && knownH > 0 && (knownW < 128 || knownH < 128)) {
+                        img.replaceWith(dom.createTextNode('[Small image removed: ' + filename + ']'));
+                        continue;
+                    }
+
+                    var promise = processImage(absoluteSrc, lessonUrl).then(function(processed) {
+                        images.push({
+                            filename: filename,
+                            base64: processed.base64,
+                            mimeType: 'image/webp',
+                            width: processed.width,
+                            height: processed.height
+                        });
+                        img.replaceWith(dom.createTextNode('[Image: ' + filename + ']'));
+                    }).catch(function(e) {
+                        console.warn('[Lessons] Image failed: ' + filename, e.message);
+                        img.replaceWith(dom.createTextNode('[Image: ' + filename + ']'));
+                    });
+                    imgPromises.push(promise);
                 }
 
-                var promise = processImage(absoluteSrc, lessonUrl).then(function(processed) {
-                    images.push({
-                        filename: filename,
-                        base64: processed.base64,
-                        mimeType: 'image/webp',
-                        width: processed.width,
-                        height: processed.height
-                    });
-                    img.replaceWith(dom.createTextNode('[Image: ' + filename + ']'));
-                }).catch(function(e) {
-                    console.warn('[Lessons] Image failed: ' + filename, e.message);
-                    img.replaceWith(dom.createTextNode('[Image: ' + filename + ']'));
-                });
-                imgPromises.push(promise);
-            }
+                // ---- Embedded link + PDF resource harvesting (2026-09-12) ----
+                // Treat links to files (pdf/doc/docx/ppt/pptx/xls/xlsx/txt/md/csv/images/archives)
+                // inside lesson pages as first-class resources: download in background,
+                // keep small text docs inline (base64) so the Apps Script can extract text.
+                var resources = [];
+                var resourcePromises = [];
+                var linkEls = clone.querySelectorAll('a[href]');
+                var RES_EXT_RE = /\.(pdf|doc|docx|ppt|pptx|xls|xlsx|txt|md|csv|rtf|odt|ods|zip|rar|7z|tar|gz|c|h|java|py|js|sql|html?|ipynb|tex)$/i;
 
-            return Promise.all(imgPromises).then(function() {
-                var cleanHtml = clone.innerHTML.replace(/\s{3,}/g, ' ').replace(/(<br\s*\/?>\s*){3,}/gi, '<br><br>').trim();
-                var lessonTitle = getLessonTitleFromDoc(dom, pagePickerTitle);
-                return { html: cleanHtml, images: images, lessonTitle: lessonTitle };
+                for (var li = 0; li < linkEls.length; li++) {
+                    (function(anchor) {
+                    var href = anchor.getAttribute('href') || '';
+                    if (!href || href.indexOf('#') === 0 || href.indexOf('javascript:') === 0) return;
+                    var finalUrl = href.indexOf('http') === 0 ? href : 'https://efundi.nwu.ac.za' + href;
+                    var linkText = (anchor.textContent || '').trim();
+                    var hrefName = decodeURIComponent(finalUrl.split('/').pop().split('?')[0] || '');
+                    var dispName = linkText || hrefName || 'file';
+
+                    if (!RES_EXT_RE.test(finalUrl) && !RES_EXT_RE.test(dispName.toLowerCase())) return;
+
+                    // Skip obvious nav/portal links (ShowPage, return, etc.)
+                    if (/ShowPage|return|back|portal\/site|logout|login|javascript/i.test(finalUrl)) return;
+
+                    // Skip images already handled above
+                    if (/\.(png|jpe?g|gif|webp|svg|bmp)$/i.test(finalUrl)) return;
+
+                    var fname = dispName.indexOf('.') === -1 && hrefName ? hrefName : dispName;
+
+                    var rp = fetchFileAsBase64(finalUrl).then(function(bin) {
+                                            // Only store inline if reasonably small (docs/PDFs < ~1.5 MB base64)
+                                            var inline = null;
+                                            if (bin.byteLength < 1500000) inline = bin.base64;
+                                            resources.push({
+                                                filename: fname,
+                                                url: finalUrl,
+                                                ext: (finalUrl.split('.').pop().split('?')[0] || '').toLowerCase(),
+                                                byteLength: bin.byteLength,
+                                                mimeType: bin.mimeType,
+                                                inlineBase64: inline
+                                            });
+                                            anchor.replaceWith(dom.createTextNode('[Resource: ' + fname + ']'));
+                                        }).catch(function(e) {
+                                            console.warn('[Lessons] Resource failed: ' + fname, e.message);
+                                            anchor.replaceWith(dom.createTextNode('[Resource: ' + fname + ']'));
+                                        });
+                    resourcePromises.push(rp);
+                    })(linkEls[li]);
+                }
+
+                return Promise.all(imgPromises.concat(resourcePromises)).then(function() {
+                    var cleanHtml = clone.innerHTML.replace(/\s{3,}/g, ' ').replace(/(<br\s*\/?>\s*){3,}/gi, '<br><br>').trim();
+                    var lessonTitle = getLessonTitleFromDoc(dom, pagePickerTitle);
+                    return { html: cleanHtml, images: images, resources: resources, lessonTitle: lessonTitle };
+                });
             });
-        });
-    }
+        }
 
     function computeHash(text) {
         if (window.crypto && window.crypto.subtle) {
