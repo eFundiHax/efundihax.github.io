@@ -200,7 +200,7 @@
               <span class="font-label font-black text-[11px] uppercase tracking-widest text-on-primary">Dates</span>
             </div>
             <div class="flex items-center gap-2">
-              <a id="openGoogleCalendarBtn" href="#" target="_blank" class="bevel-out bg-surface-variant w-7 h-7 flex items-center justify-center hover:bg-primary transition-colors" title="Open in Google Calendar">
+              <a id="openGoogleCalendarBtn" href="#btn" target="_blank" class="bevel-out bg-surface-variant w-7 h-7 flex items-center justify-center hover:bg-primary transition-colors" title="Open in Google Calendar">
                 <span class="material-symbols-outlined text-sm text-on-surface">calendar_month</span>
               </a>
               <button id="downloadIcsBtn" class="bevel-out bg-surface-variant px-2 py-1 text-[9px] font-black uppercase tracking-widest hover:bg-primary transition-colors flex items-center gap-1" title="Download iCal">
@@ -284,10 +284,10 @@
               </div>
             </div>
           </div>
-          <a id="openFolderBtn" href="#" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
+          <a id="openFolderBtn" href="#btn" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
             <span class="material-symbols-outlined text-sm">open_in_new</span>Drive Folder
           </a>
-          <a id="scheduleSheetBtn" href="#" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
+          <a id="scheduleSheetBtn" href="#btn" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
             <span class="material-symbols-outlined text-sm">table_chart</span>Schedule Sheet
           </a>
           <div class="bevel-in bg-surface-container-lowest p-3 mt-2">
@@ -685,21 +685,25 @@ async function init() {
   const ssId = ssMatch[1];
 
   // Fetch calendar_id from manifest and set Google Calendar button
-  if (worksite.manifestId) {
-    try {
-      const manifestText = await fetch(`https://drive.google.com/uc?export=download&id=${worksite.manifestId}`).then(r => r.text());
-      const calendarIdMatch = manifestText.match(/calendar_id: (.+)/);
-      if (calendarIdMatch && calendarIdMatch[1]) {
-        const calendarId = calendarIdMatch[1].trim();
-        const googleCalendarBtn = document.getElementById('openGoogleCalendarBtn');
-        if (googleCalendarBtn) {
-          googleCalendarBtn.href = `https://calendar.google.com/calendar/embed?src=${encodeURIComponent(calendarId)}`;
-        }
-      }
-    } catch (e) {
-      console.warn('Failed to fetch calendar_id from manifest:', e);
+    const googleCalendarBtn = document.getElementById('openGoogleCalendarBtn');
+    // Real fallback: search this worksite on Google Calendar (always works)
+    if (googleCalendarBtn) {
+      googleCalendarBtn.href = `https://calendar.google.com/calendar/r/search?q=${encodeURIComponent(title)}`;
     }
-  }
+    if (worksite.manifestId) {
+      try {
+        const manifestText = await fetch(`https://drive.google.com/uc?export=download&id=${worksite.manifestId}`).then(r => r.text());
+        const calendarIdMatch = manifestText.match(/calendar_id: (.+)/);
+        if (calendarIdMatch && calendarIdMatch[1]) {
+          const calendarId = calendarIdMatch[1].trim();
+          if (googleCalendarBtn) {
+            googleCalendarBtn.href = `https://calendar.google.com/calendar/embed?src=${encodeURIComponent(calendarId)}`;
+          }
+        }
+      } catch (e) {
+        console.warn('Failed to fetch calendar_id from manifest:', e);
+      }
+    }
 
   let annRows = [], calRows = [], manifestFiles = [];
   try {
