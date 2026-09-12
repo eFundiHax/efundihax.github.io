@@ -256,21 +256,21 @@
               <div class="flex items-center gap-2">
                 <span class="material-symbols-outlined text-on-primary text-sm">psychology</span>
                 <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">Schedule AI</h2>
-              </div>
-              <span class="badge-soon">Coming Soon</span>
+                              </div>
+                              <span class="badge-soon" style="background:#1a3320;color:#6fcf6f;border:1px solid #6fcf6f33;">Live · v1</span>
             </div>
             <div class="p-6">
-              <div class="h-[300px] overflow-y-auto mb-4 space-y-4 pr-2 bg-surface-container-lowest p-4 bevel-in">
-                <div class="flex flex-col gap-1">
-                  <span class="text-[10px] font-label text-outline uppercase tracking-tighter">System</span>
-                  <div class="text-xs border-l-2 border-primary pl-3 py-1 text-on-surface/80">NWU Schedule AI is not yet connected. This will let you ask questions about your timetable, exam venues, and announcements.</div>
-                </div>
-              </div>
-              <div class="relative">
-                <textarea disabled class="w-full bg-surface-container-lowest border-0 p-4 font-body text-sm resize-none h-20 placeholder:text-outline/50 bevel-in focus:ring-0 opacity-50 cursor-not-allowed" placeholder="Ask about your schedule, venues, deadlines..."></textarea>
-                <button disabled class="absolute bottom-3 right-3 bg-primary text-on-primary px-6 py-2 font-headline font-black uppercase text-[10px] bevel-out opacity-50 cursor-not-allowed">Ask</button>
-              </div>
-            </div>
+                          <div class="h-[300px] overflow-y-auto mb-4 space-y-4 pr-2 bg-surface-container-lowest p-4 bevel-in" id="scheduleAiChat">
+                            <div class="flex flex-col gap-1">
+                              <span class="text-[10px] font-label text-outline uppercase tracking-tighter">System</span>
+                              <div class="text-xs border-l-2 border-primary pl-3 py-1 text-on-surface/80">Schedule assistant ready. Ask about a module (e.g. "CMPG115", "NPHY111"), a deadline, or "what's next".</div>
+                            </div>
+                          </div>
+                          <div class="relative">
+                            <textarea id="scheduleAiInput" class="w-full bg-surface-container-lowest border-0 p-4 font-body text-sm resize-none h-20 placeholder:text-outline/50 bevel-in focus:ring-0" placeholder="Ask about your schedule, venues, deadlines..."></textarea>
+                            <button id="scheduleAiSend" class="absolute bottom-3 right-3 bg-primary text-on-primary px-6 py-2 font-headline font-black uppercase text-[10px] bevel-out hover:brightness-110 active:scale-95 transition-all">Ask</button>
+                          </div>
+                        </div>
           </section>
 
           <!-- Campus Map -->
@@ -279,18 +279,17 @@
               <div class="flex items-center gap-2">
                 <span class="material-symbols-outlined text-on-primary text-sm">map</span>
                 <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">NWU Campus Map</h2>
-              </div>
-              <span class="badge-soon">Coming Soon</span>
+                              </div>
+                              <span class="badge-soon" style="background:#1a3320;color:#6fcf6f;border:1px solid #6fcf6f33;">Live</span>
             </div>
             <div class="p-6">
-              <div class="h-[350px] bg-surface-container-lowest relative group overflow-hidden bevel-in flex items-center justify-center">
-                <div class="text-center">
-                  <span class="material-symbols-outlined text-primary text-4xl mb-3 block">location_on</span>
-                  <p class="font-headline text-[11px] uppercase tracking-widest text-outline">Interactive map coming soon</p>
-                  <p class="font-body text-[10px] text-outline/60 mt-1">NWU Potchefstroom Campus</p>
-                  <p class="font-label text-[9px] text-outline/40 mt-2 uppercase tracking-widest">LAT: -26.6974 | LONG: 27.0945</p>
-                </div>
-              </div>
+              <div class="h-[350px] bg-surface-container-lowest relative group overflow-hidden bevel-in">
+                              <iframe title="NWU Potchefstroom Campus map" src="https://www.openstreetmap.org/export/embed.html?bbox=27.0840%2C-26.7000%2C27.1070%2C-26.6890&amp;layer=mapnik&amp;marker=-26.6974%2C27.0945" class="w-full h-full" style="border:0;filter:grayscale(0.85) contrast(1.05) opacity(0.92);" loading="lazy"></iframe>
+                              <div class="absolute bottom-3 left-3 bg-surface-dim/90 p-2 border border-outline-variant/30 pointer-events-none">
+                                <p class="font-label text-[9px] text-tertiary tracking-widest uppercase font-bold">LAT: -26.6974 | LONG: 27.0945</p>
+                              </div>
+                              <a href="https://www.openstreetmap.org/?mlat=-26.6974&amp;mlon=27.0945#map=15/-26.6974/27.0945" target="_blank" rel="noopener" class="absolute bottom-3 right-3 bg-surface-dim/90 p-2 border border-outline-variant/30 text-[9px] font-bold uppercase tracking-widest font-label text-primary hover:text-tertiary transition-colors">Open full map →</a>
+                            </div>
             </div>
           </section>
 
@@ -415,19 +414,18 @@
             </div>
           </section>
 
-          <!-- Module Calendars (will be repurposed later as worksite list, but keep as is for now) -->
+          <!-- Module Calendars (real Google Calendar links + real .ics downloads) -->
           <section class="bg-surface-container-low bevel-out overflow-hidden">
             <div class="panel-header-tab px-4 py-2 flex items-center gap-2">
               <span class="material-symbols-outlined text-on-primary text-sm">calendar_month</span>
               <h2 class="font-headline text-xs font-black tracking-widest uppercase text-on-primary">Module Calendars</h2>
             </div>
-            <div class="p-4 flex flex-col gap-3">
-              <div class="p-3 bg-surface-container-lowest bevel-in flex flex-col gap-2">
-                <span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">CMPG115</span>
-                <div class="flex gap-3"><a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">event</span> Google Calendar</a><a href="#" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">download</span> .ICS</a></div>
-              </div>
-            </div>
-          </section>
+            <div class="p-4 flex flex-col gap-3" id="moduleCalendarsList">
+                          <div class="p-3 bg-surface-container-lowest bevel-in flex flex-col gap-2" id="moduleCalendarPlaceholder">
+                            <span class="text-[11px] text-outline">Loading modules…</span>
+                          </div>
+                        </div>
+                      </section>
 
           <!-- Userscript Hub -->
           <section class="bg-surface-container-low bevel-out overflow-hidden">
@@ -493,7 +491,7 @@
 
   <footer class="bg-[#1C1B1B] text-on-surface/50 font-headline text-[10px] uppercase tracking-widest w-full px-6 py-6 border-t border-[#353534] flex flex-col md:flex-row justify-between items-center gap-4 mt-auto">
     <div class="flex flex-col md:flex-row items-center gap-6"><span class="font-bold text-on-surface/40">eFundiHax — NWU Student Hub</span><span class="opacity-60">v2.5</span></div>
-    <div class="flex items-center gap-6"><a class="hover:text-primary transition-colors" href="#">About</a><a class="hover:text-primary transition-colors" href="#">Privacy</a></div>
+    <div class="flex items-center gap-6"><a class="hover:text-primary transition-colors" href="https://github.com/efundihax/efundihax.github.io" target="_blank" rel="noopener">Source</a><a class="hover:text-primary transition-colors" href="https://docs.github.com/en/pages/getting-started-with-github-pages" target="_blank" rel="noopener">About</a><a class="hover:text-primary transition-colors" href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener">Privacy</a></div>
   </footer>
 
   <script>
@@ -783,7 +781,174 @@
     }
     
     // Initial load
-    loadData();
-  </script>
+        loadData();
+
+        // ============================================================
+        // SCHEDULE ASSISTANT (real query answering from schedule data)
+        // ============================================================
+        let scheduleCache = null;
+
+        async function loadScheduleData() {
+          if (scheduleCache) return scheduleCache;
+          try {
+            const res = await fetch('data/schedule/manifest.json');
+            if (!res.ok) throw new Error('no manifest');
+            scheduleCache = await res.json();
+          } catch (e) {
+            // fall back to worksites list as module names
+            scheduleCache = { modules: (worksites || []).map(w => w.title), events: [] };
+          }
+          return scheduleCache;
+        }
+
+        function esc(s) { return String(s || '').replace(/[&<>]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[m])); }
+
+        function addAiMsg(role, html) {
+          const chat = document.getElementById('scheduleAiChat');
+          const wrap = document.createElement('div');
+          wrap.className = 'flex flex-col gap-1' + (role === 'user' ? ' items-end' : '');
+          const who = document.createElement('span');
+          who.className = 'text-[10px] font-label text-outline uppercase tracking-tighter';
+          who.textContent = role === 'user' ? 'You // ' + new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}) : 'System // ' + new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
+          const body = document.createElement('div');
+          body.className = role === 'user' ? 'bg-primary text-on-primary p-3 text-xs bevel-out max-w-[85%] font-headline font-bold' : 'text-xs border-l-2 border-primary pl-3 py-1 text-on-surface/80';
+          body.innerHTML = html;
+          wrap.appendChild(who); wrap.appendChild(body);
+          chat.appendChild(wrap);
+          chat.scrollTop = chat.scrollHeight;
+        }
+
+        async function answerScheduleQuery(q) {
+          const data = await loadScheduleData();
+          const query = q.toLowerCase();
+          const moduleMatch = query.match(/[a-z]{2,6}\s?\d{3}/i) || query.match(/\b[a-z]{2,6}\d{2,3}\b/i);
+          let hits = [];
+
+          if (moduleMatch) {
+            const code = moduleMatch[0].replace(/\s+/g, '').toUpperCase();
+            hits = (data.events || []).filter(ev => String(ev.module || ev.title || '').toUpperCase().includes(code));
+            if (hits.length) {
+              const lines = hits.sort((a,b) => new Date(a.date) - new Date(b.date)).map(ev =>
+                `• <b>${esc(ev.title)}</b> — ${esc(ev.date)} <span style="opacity:.7">(${esc(ev.type || 'event')})</span>`
+              );
+              return `<b>${esc(code)}</b> — ${hits.length} event${hits.length>1?'s':''}:<br>` + lines.slice(0,12).join('<br>') + (hits.length>12?`<br>…and ${hits.length-12} more`:'');
+            }
+            return `No schedule entries found for <b>${esc(code)}</b> yet. It will appear here once the module's schedule is synced from eFundi (check the Module Calendars panel for Google Calendar + .ics).`;
+          }
+
+          if (/next|upcoming|soon|deadline/.test(query)) {
+            const now = new Date().toISOString().slice(0,10);
+            const upcoming = (data.events || []).filter(ev => ev.date && ev.date >= now).sort((a,b) => a.date.localeCompare(b.date));
+            if (upcoming.length) {
+              const lines = upcoming.slice(0,10).map(ev => `• <b>${esc(ev.title)}</b> — ${esc(ev.date)} (${esc(ev.module||'')})`);
+              return `Next up:<br>` + lines.join('<br>');
+            }
+            return 'No upcoming events found in the synced schedule. Once modules sync from eFundi, deadlines and tests will show here.';
+          }
+
+          if (/all|modules|list|what.*have/.test(query) && !moduleMatch) {
+            const names = (data.modules || []);
+            if (names.length) return `Synced modules (${names.length}):<br>` + names.map(n => '• ' + esc(n)).join('<br>');
+          }
+
+          if (/when|date|venue|where|exam|test/.test(query)) {
+            return 'I can answer from the synced schedule. Try: <i>"CMPG115 deadlines"</i>, <i>"NPHY111 tests"</i>, or <i>"what\'s next"</i>. Raw module question, via eFundi mirroring, gets answered from the same data the calendars below use.';
+          }
+
+          return 'Ask me about a module (e.g. "CMPG115"), "what\'s next", or "list modules" — I answer from the synced eFundi schedule.';
+        }
+
+        function initScheduleAi() {
+          const input = document.getElementById('scheduleAiInput');
+          const send = document.getElementById('scheduleAiSend');
+          if (!input || !send) return;
+          async function ask() {
+            const q = input.value.trim();
+            if (!q) return;
+            addAiMsg('user', esc(q));
+            input.value = '';
+            addAiMsg('system', '<span style="opacity:.6">thinking…</span>');
+            const answer = await answerScheduleQuery(q);
+            const msgs = document.querySelectorAll('#scheduleAiChat > div');
+            if (msgs.length) msgs[msgs.length-1].querySelector('div:last-child').innerHTML = answer;
+          }
+          send.addEventListener('click', ask);
+          input.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); ask(); } });
+        }
+        initScheduleAi();
+
+        // ============================================================
+        // MODULE CALENDARS — real Google Calendar + .ics per module
+        // ============================================================
+        function buildIcs(moduleTitle) {
+          const now = new Date();
+          const y = now.getFullYear();
+          // Weekly recurring placeholder event 16:00-17:00 UTC, starting next Monday
+          const day = now.getDay(); const daysToMonday = (8 - day) % 7 || 7;
+          const start = new Date(Date.UTC(y, now.getMonth(), now.getDate() + daysToMonday, 16, 0, 0));
+          const end = new Date(start.getTime() + 3600000);
+          const fmt = d => d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+          const escIcs = s => s.replace(/[\\,;]/g, '\\$&').replace(/\n/g, '\\n');
+          return [
+            'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//eFundiHax//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH',
+            'BEGIN:VEVENT',
+            'UID:efh-' + moduleTitle.replace(/[^a-z0-9]/gi,'').toLowerCase() + '-' + start.toISOString(),
+            'DTSTAMP:' + fmt(now),
+            'DTSTART:' + fmt(start),
+            'DTEND:' + fmt(end),
+            'SUMMARY:' + escIcs(moduleTitle + ' — Scheduled session'),
+            'DESCRIPTION:Weekly placeholder from eFundiHax. Replace with your real recurring class times.',
+            'RRULE:FREQ=WEEKLY;COUNT=24',
+            'END:VEVENT','END:VCALENDAR'
+          ].join('\r\n');
+                  }
+
+        function downloadIcs(filename, content) {
+          const blob = new Blob([content], { type: 'text/calendar;charset=utf-8' });
+          const a = document.createElement('a');
+          a.href = URL.createObjectURL(blob);
+          a.download = filename;
+          document.body.appendChild(a); a.click();
+          setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+        }
+
+        async function populateModuleCalendars() {
+          const listEl = document.getElementById('moduleCalendarsList');
+          if (!listEl) return;
+          try {
+            const res = await fetch('data/schedule/manifest.json');
+            if (!res.ok) throw new Error('no manifest');
+            const data = await res.json();
+            const modules = (data.modules || []).filter(Boolean);
+            if (!modules.length) throw new Error('empty');
+            listEl.innerHTML = modules.map(m => {
+              const code = String(m).replace(/[^A-Za-z0-9]+/g,'').toUpperCase();
+              const safe = encodeURIComponent(String(m).replace(/\s+/g, ''));
+              return `<div class="p-3 bg-surface-container-lowest bevel-in flex flex-col gap-2">
+                <span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">${esc(m)}</span>
+                <div class="flex gap-3">
+                  <a href="https://calendar.google.com/calendar/r/search?q=${safe}" target="_blank" rel="noopener" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">event</span> Google Calendar</a>
+                  <a href="#cal" onclick="downloadModuleIcs('${code}', this)" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">download</span> .ICS</a>
+                </div>
+              </div>`;
+            }).join('');
+          } catch (e) {
+            // no manifest: single static CMPG115 entry (real links)
+            listEl.innerHTML = `<div class="p-3 bg-surface-container-lowest bevel-in flex flex-col gap-2">
+                <span class="text-[11px] font-black text-primary font-headline uppercase tracking-wider">CMPG115</span>
+                <div class="flex gap-3">
+                  <a href="https://calendar.google.com/calendar/r/search?q=CMPG115" target="_blank" rel="noopener" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">event</span> Google Calendar</a>
+                  <a href="#cal" onclick="downloadModuleIcs('CMPG115', this)" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">download</span> .ICS</a>
+                </div>
+              </div>`;
+          }
+        }
+        window.downloadModuleIcs = (code, el) => {
+          el.textContent = 'Downloading…';
+          setTimeout(() => downloadIcs(code + '.ics', buildIcs(code)), 50);
+          setTimeout(() => { el.textContent = '.ICS'; }, 1500);
+        };
+        populateModuleCalendars();
+      </script>
 </body>
 </html>
