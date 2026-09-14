@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-13T22:52:34.950Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-11T10:53:02.022Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -328,3 +328,9 @@ IMAGES_NOT_SYNCED | MTHS111 Exam Information2026.pdf | pdf | 2026-07-28T07:25:59
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) MTHS111-2026 — full extracted text from all synced files and lessons
 (SCHEDULE) MTHS111-2026 — calendar events and announcements spreadsheet
+
+--- DRIVE FOLDER (auto-listed files in this worksite's Google Drive folder) ---
+(name | type | mimeType | modifiedTime | id)
+!Update Me Daily! MTHS111-2026.txt | plain | text/plain | 2026-09-13T22:52:35.418Z | 19Jyzsvwz7wXjc3nxqZbvLS01JmYc0A5a
+(MASTER) MTHS111-2026 | gdoc | application/vnd.google-apps.document | 2026-07-28T07:26:04.571Z | 1Fsb5fNSL-aSwbKxuVb84yH1cFjfQHTIJIFdcRgi5eg0
+(SCHEDULE) MTHS111-2026 | gsheet | application/vnd.google-apps.spreadsheet | 2026-07-28T07:24:51.605Z | 162EJRmsdA0hR_enUSzwXfsaZaTN4xz4rWpJyG6qENfo
