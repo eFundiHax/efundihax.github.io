@@ -69,6 +69,23 @@
       pointer-events: none;
     }
     .tooltip-container:hover .tooltip-content { visibility: visible; opacity: 1; }
+    /* Resource (Drive folder) rows */
+    .resource-row {
+      display: grid; grid-template-columns: 6fr 2fr 4fr; gap: 8px; align-items: center;
+      padding: 8px 12px; border-bottom: 1px solid #2e2e2d; transition: background 0.15s;
+    }
+    .resource-row:hover { background: rgba(255,255,255,0.04); }
+    .resource-row .fname { display: flex; align-items: center; gap: 8px; min-width: 0; font-size: 12px; color: #e5e2e1; }
+    .resource-row .fname .mat { color: #a78bba; font-size: 18px; flex-shrink: 0; }
+    .resource-row .fname .name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .resource-row .type { font-size: 10px; color: #9a9a97; text-transform: uppercase; font-family: 'JetBrains Mono', monospace; }
+    .resource-row .links { display: flex; gap: 4px; justify-content: flex-end; }
+    .resource-row .mini-btn {
+      width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center;
+      background: #3a3a39; color: #e5e2e1; border: none; border-radius: 2px; cursor: pointer;
+      box-shadow: 3px 3px 0 rgba(0,0,0,0.5); text-decoration: none;
+    }
+    .resource-row .mini-btn:hover { background: #6b3d8f; color: #fff; }
     /* Search input with arrow */
     .search-with-arrow {
       position: relative;
@@ -245,27 +262,47 @@
       </div>
     </section>
 
-    <!-- ROW 3: Drive Preview (the files in the Drive folder) -->
+    <!-- ROW 3: Resource Directory (Drive folder files) -->
     <section class="bevel-out bg-surface-container-low flex flex-col">
       <div class="panel-header-tab px-4 py-2 flex items-center justify-between">
         <div class="flex items-center gap-2">
-          <span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings:'FILL' 1">folder_shared</span>
-          <span class="font-headline font-black text-sm text-on-primary uppercase tracking-widest">Drive Preview</span>
+          <span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings:'FILL' 1">folder_open</span>
+          <span class="font-headline font-black text-sm text-on-primary uppercase tracking-widest">Resource Directory</span>
         </div>
-        <span class="font-label font-black text-[9px] text-on-primary/60 uppercase tracking-widest" id="drivePreviewCount">Loading…</span>
       </div>
-      <div class="p-4 flex flex-col gap-3">
-        <div id="drivePreviewList" class="flex flex-col gap-2 bevel-in bg-surface-container-lowest p-2">
-          <div class="flex items-center justify-center p-6 text-outline text-xs">Detecting files in Drive folder…</div>
+      <div class="p-4 grid grid-cols-1 md:grid-cols-12 gap-4">
+
+        <!-- File list (Drive folder files) -->
+        <div class="md:col-span-8 bevel-in bg-surface-container-lowest flex flex-col" style="min-height:200px;max-height:360px;overflow-y:auto">
+          <div class="grid grid-cols-12 gap-2 px-3 py-2 border-b border-outline-variant sticky top-0 bg-surface-container-lowest z-10">
+            <div class="col-span-6 font-label font-black text-[9px] uppercase tracking-widest text-outline">Filename</div>
+            <div class="col-span-2 font-label font-black text-[9px] uppercase tracking-widest text-outline">Type</div>
+            <div class="col-span-4 font-label font-black text-[9px] uppercase tracking-widest text-outline">Link</div>
+          </div>
+          <div id="drivePreviewList" class="flex flex-col">
+            <div class="flex items-center justify-center p-8 text-outline">Detecting files in Drive folder…</div>
+          </div>
         </div>
-        <div class="flex flex-wrap items-center gap-2">
-          <button id="copyAllLinksBtn" class="bevel-out bg-primary text-on-primary font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
-            <span class="material-symbols-outlined text-sm">content_copy</span>Copy All Links
-          </button>
-          <a id="openFolderBtn" href="#" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
-            <span class="material-symbols-outlined text-sm">open_in_new</span>Open Drive Folder
+
+        <!-- Action panel -->
+        <div class="md:col-span-4 flex flex-col gap-3">
+          <div class="flex items-center gap-2">
+            <button id="copyAllLinksBtn" class="flex-1 bevel-out bg-primary text-on-primary font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
+              <span class="material-symbols-outlined text-sm">content_copy</span>Copy All Links
+            </button>
+            <div class="tooltip-container">
+              <div class="bevel-in bg-surface-container-lowest w-7 h-7 flex items-center justify-center cursor-help">
+                <span class="material-symbols-outlined text-outline text-sm">help</span>
+              </div>
+              <div class="tooltip-content">
+                <p class="text-[10px]">Copies the Drive links for this worksite.</p>
+              </div>
+            </div>
+          </div>
+          <a id="openFolderBtn" href="#btn" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
+            <span class="material-symbols-outlined text-sm">open_in_new</span>Drive Folder
           </a>
-          <div class="bevel-in bg-surface-container-lowest px-3 py-2 ml-auto">
+          <div class="bevel-in bg-surface-container-lowest p-3 mt-2">
             <p class="font-label font-black text-[9px] uppercase tracking-widest text-outline mb-1">Last Sync</p>
             <p class="font-body text-[10px] text-on-surface-variant" id="lastSyncDisplay">—</p>
           </div>
@@ -385,26 +422,30 @@ async function fetchManifest(slug, manifestId) {
     if (res.ok) text = await res.text();
   }
   if (text === null) throw new Error('No manifest source available');
-  const files = [];
+  return text;
+}
+
+// Parse the `--- DRIVE FOLDER ---` section (name | type | mimeType | modifiedTime | id) into items.
+function parseDriveFolder(text) {
+  const items = [];
+  if (!text) return items;
   const lines = text.split('\n');
-  let inFiles = false;
+  let inDrive = false;
   for (const line of lines) {
     const t = line.trim();
-    if (t === '--- FILE REGISTRY ---' || t === '--- FILES ---') { inFiles = true; continue; }
-    if (t.startsWith('--- ') && inFiles) break;
-    if (!inFiles) continue;
-    if (t === '' || t.startsWith('(')) continue;
+    if (t.startsWith('--- DRIVE FOLDER')) { inDrive = true; continue; }
+    if (inDrive && t.startsWith('--- ')) break;
+    if (!inDrive || t === '' || t.startsWith('(') || t.startsWith('---')) continue;
     const parts = line.split(' | ');
-    // Registry row: status | filename | extension | last_seen | type  (5 fields)
-    if (parts.length >= 6) {
-      files.push({ status: parts[0].trim(), name: parts[1].trim(), ext: parts[2].trim(), last_seen: parts[3].trim(), type: parts[4].trim(), url: parts[5].trim() });
-    } else if (parts.length === 5) {
-      files.push({ status: parts[0].trim(), name: parts[1].trim(), ext: parts[2].trim(), last_seen: parts[3].trim(), type: parts[4].trim(), url: '' });
-    } else if (parts.length >= 4) {
-      files.push({ status: parts[0].trim(), name: parts[1].trim(), ext: parts[2].trim(), url: parts[3].trim() });
+    if (parts.length >= 5) {
+      items.push({
+        name: parts[0].trim(), type: parts[1].trim(),
+        mimeType: parts[2].trim(), modifiedTime: parts[3].trim(),
+        id: parts[4].trim()
+      });
     }
   }
-  return files;
+  return items;
 }
 
 // ============================================================
@@ -518,57 +559,90 @@ function copyText(text) {
   return new Promise((res) => { const ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); res(); });
 }
 
-function initDrivePreview(worksite) {
+async function initDrivePreview(worksite) {
   const listEl = document.getElementById('drivePreviewList');
-  const countEl = document.getElementById('drivePreviewCount');
   if (!listEl) return;
 
-  const items = [];
+  // Try to load the manifest's `--- DRIVE FOLDER ---` section (lists ALL files in the Drive folder).
+  let driveItems = [];
+  try {
+    const text = await fetchManifest(worksite.slug, worksite.manifestId);
+    driveItems = parseDriveFolder(text);
+  } catch (e) { console.warn('Drive Preview: manifest not available', e); }
+
+  // Build fallback items (core 3) if manifest has no DRIVE FOLDER section or fetch failed.
+  let items = [];
   const title = worksite.title || '';
-  // 1) Master doc
-  if (worksite.masterDocUrl) {
-    items.push({ label: `(MASTER) ${title}`, url: worksite.masterDocUrl, icon: 'description' });
-  }
-  // 2) Schedule sheet
-  if (worksite.spreadsheetUrl) {
-    items.push({ label: `(SCHEDULE) ${title}`, url: worksite.spreadsheetUrl, icon: 'table_chart' });
-  }
-  // 3) Manifest text file
-  if (worksite.manifestId) {
-    items.push({ label: `!Update Me Daily! ${title}.txt`, url: `https://drive.google.com/file/d/${worksite.manifestId}/view`, icon: 'description' });
-  }
-  // 4) Folder itself (always 1 to show)
-  if (worksite.folderUrl && items.length === 0) {
-    items.push({ label: `${title} folder`, url: worksite.folderUrl, icon: 'folder_open' });
+  if (driveItems.length > 0) {
+    items = driveItems.map(f => {
+      // Build a Drive view/open URL from the id; pick an icon by mime/type.
+      const m = (f.mimeType || '');
+      let url;
+      if (m.includes('document')) url = `https://docs.google.com/document/d/${f.id}/edit`;
+      else if (m.includes('spreadsheet')) url = `https://docs.google.com/spreadsheets/d/${f.id}/edit`;
+      else if (m.includes('presentation')) url = `https://docs.google.com/presentation/d/${f.id}/edit`;
+      else url = `https://drive.google.com/file/d/${f.id}/view`;
+      return {
+        label: f.name, url: url, icon: iconForMime(m),
+        type: (f.type || 'file')
+      };
+    });
+  } else {
+    // Fallback: the core 3 from worksites.json
+    if (worksite.masterDocUrl) items.push({ label: `(MASTER) ${title}`, url: worksite.masterDocUrl, icon: 'description', type: 'gdoc' });
+    if (worksite.spreadsheetUrl) items.push({ label: `(SCHEDULE) ${title}`, url: worksite.spreadsheetUrl, icon: 'table_chart', type: 'gsheet' });
+    if (worksite.manifestId) items.push({ label: `!Update Me Daily! ${title}.txt`, url: `https://drive.google.com/file/d/${worksite.manifestId}/view`, icon: 'description', type: 'txt' });
   }
 
   if (!items.length) {
-    listEl.innerHTML = '<div class="flex items-center justify-center p-6 text-outline text-xs">No Drive files detected.</div>';
-    if (countEl) countEl.textContent = '0 found';
+    listEl.innerHTML = '<div class="flex items-center justify-center p-6 text-outline text-xs">No Drive files.</div>';
     return;
   }
 
-  if (countEl) countEl.textContent = `${items.length} file${items.length !== 1 ? 's' : ''}`;
-  listEl.innerHTML = items.map((it, i) => `
-    <div class="flex items-center gap-3 p-3 bevel-in bg-surface-container-lowest">
-      <span class="material-symbols-outlined text-on-primary/70 text-xl">${it.icon}</span>
-      <div class="min-w-0 flex-1">
-        <p class="font-body text-[11px] text-on-surface truncate" title="${escapeHtml(it.label)}">${escapeHtml(it.label)}</p>
+  // Approved design: original Resource Directory shell, right Action panel, LEFT 4-col table.
+  // We render the inner list as table rows. No status column, no file count, real extension.
+  listEl.innerHTML = items.map((it) => `
+    <div class="resource-row">
+      <div class="fname"><span class="mat icon">${it.icon}</span><span class="name" title="${escapeHtml(it.label)}">${escapeHtml(it.label)}</span></div>
+      <div class="type">${escapeHtml(extForType(it.type))}</div>
+      <div class="links">
+        <button data-url="${escapeHtml(it.url)}" class="mini-btn copy">${'' /* icon via css */}<span class="material-symbols-outlined text-sm">content_copy</span></button>
+        <a href="${escapeHtml(it.url)}" target="_blank" rel="noopener" class="mini-btn open" title="Open"><span class="material-symbols-outlined text-sm">open_in_new</span></a>
       </div>
-      <button data-copy="${i}" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[9px] px-3 py-1 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all flex items-center gap-1"><span class="material-symbols-outlined text-sm">content_copy</span>Copy Link</button>
-      <a href="${escapeHtml(it.url)}" target="_blank" rel="noopener" class="bevel-out bg-primary text-on-primary font-label font-black text-[9px] px-3 py-1 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all flex items-center gap-1"><span class="material-symbols-outlined text-sm">open_in_new</span>Open</a>
     </div>
   `).join('');
 
-  listEl.querySelectorAll('button[data-copy]').forEach(btn => {
+  listEl.querySelectorAll('button.copy').forEach(btn => {
     btn.addEventListener('click', async () => {
-      const url = items[Number(btn.dataset.copy)].url;
+      const url = btn.dataset.url;
       try { await copyText(url); } catch (e) { prompt('Copy drive link:', url); }
       const orig = btn.innerHTML;
-      btn.innerHTML = '<span class="material-symbols-outlined text-sm">check</span>Copied';
-      setTimeout(() => btn.innerHTML = orig, 1500);
+      btn.innerHTML = '<span class="material-symbols-outlined text-sm">check</span>';
+      setTimeout(() => btn.innerHTML = orig, 1200);
     });
   });
+}
+
+function iconForMime(m) {
+  if (m.includes('spreadsheet')) return 'table_chart';
+  if (m.includes('document')) return 'description';
+  if (m.includes('presentation')) return 'slideshow';
+  if (m.includes('pdf')) return 'picture_as_pdf';
+  if (m.includes('image')) return 'image';
+  if (m.includes('text')) return 'text_snippet';
+  return 'insert_drive_file';
+}
+function extForType(t) {
+  const s = String(t || '').toLowerCase();
+  if (s === 'gdoc' || s === 'document') return 'docx';
+  if (s === 'gsheet' || s === 'spreadsheet') return 'xlsx';
+  if (s === 'gslides' || s === 'presentation') return 'pptx';
+  if (s === 'plain' || s === 'text') return 'txt';
+  if (s === 'pdf') return 'pdf';
+  // already has a dot (like .txt) -> strip
+  const trimmed = s.replace(/^\./,'');
+  if (trimmed.includes('.')) return trimmed.split('.').pop();
+  return trimmed || 'file';
 }
 
 // ============================================================
