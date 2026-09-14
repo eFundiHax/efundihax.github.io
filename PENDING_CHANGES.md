@@ -56,3 +56,7 @@ Track all modifications made to the eFundiHax setup (website, userscript, backen
 
 ### Standing
 - [ ] Add scheduled/standing "sync everything incl. lesson pages" coverage.
+
+### Planned (added 2026-09-14, not yet built)
+- [ ] **Drive folder listing via manifest** — user drops files into the Drive folder manually; static dashboard can't list Drive (no auth/CORS). Plan: backend adds a `[DRIVE_FOLDER]` section to each worksite's manifest on sync, listing ALL files in the folder (id/name/mimeType/modifiedDate). Frontend Drive Preview reads the section → shows every folder file, incl. ones the user added. See DESIGN_DOC.md item 5.
+- [ ] **Master doc splitting (NotebookLM limit)** — NotebookLM's published per-source limit is **500,000 words / 200 MB per source** (NOT 50K characters — no such public cap exists; the 50K figure was the user's guess). If a course exceeds it, backend splits master doc into numbered parts (`(MASTER) {title} — Part 1`, …) each its own NotebookLM source. See DESIGN_DOC.md item 4.
