@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax Sync
 // @namespace    https://efundihax.github.io
-// @version      4.0.15
+// @version      4.0.16
 // @description  Syncs eFundi announcements, resources, lessons and calendars to Google Drive via Apps Script
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -1969,6 +1969,11 @@
             var relevantEvents = events.filter(function(ev) {
                 var t = ev.firstTime && ev.firstTime.time ? Number(ev.firstTime.time) : 0;
                 return t > 0 && t >= now - 30*24*3600*1000 && t <= now + 90*24*3600*1000;
+            }).filter(function(ev) {
+                // SPAM FILTER: drop events that look like meeting/attendee spam
+                // (e.g. "0 attendees" meetings), per user 2026-09-14.
+                var hay = String(ev.title || '') + ' ' + String(ev.description || '');
+                return !/(\b0\s+attendees?\b|0\s*attendees?|\bno\s+attendees?\b)/i.test(hay);
             }).sort(function(a, b) {
                 return (a.firstTime && a.firstTime.time || 0) - (b.firstTime && b.firstTime.time || 0);
             });
