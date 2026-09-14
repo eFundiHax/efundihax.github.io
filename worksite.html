@@ -298,38 +298,6 @@
               </div>
             </section>
 
-            <!-- ROW 4: Drive Preview -->
-            <section class="bevel-out bg-surface-container-low flex flex-col">
-              <div class="panel-header-tab px-4 py-2 flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings:'FILL' 1">folder_shared</span>
-                  <span class="font-headline font-black text-sm text-on-primary uppercase tracking-widest">Drive Preview</span>
-                </div>
-                <span class="font-label font-black text-[9px] text-on-primary/60 uppercase tracking-widest">Synced · owned by efundihax@gmail.com</span>
-              </div>
-              <div class="p-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-                <!-- Master Doc embed -->
-                <div class="md:col-span-2 bevel-in bg-surface-container-lowest flex flex-col" style="min-height:360px">
-                  <div class="flex items-center justify-between px-3 py-2 border-b border-outline-variant">
-                    <span class="font-label font-black text-[9px] uppercase tracking-widest text-outline">📄 Master Doc</span>
-                    <a id="driveMasterDocLink" href="#" target="_blank" rel="noopener" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">open_in_new</span>Open</a>
-                  </div>
-                  <div id="driveMasterDocPreview" class="flex-1 p-4 flex items-center justify-center text-outline/50 text-xs">
-                    <span class="flex items-center gap-2"><span class="material-symbols-outlined text-lg">hourglass_empty</span> Loading master doc…</span>
-                  </div>
-                </div>
-                <!-- Schedule Sheet embed -->
-                <div class="md:col-span-1 bevel-in bg-surface-container-lowest flex flex-col" style="min-height:360px">
-                  <div class="flex items-center justify-between px-3 py-2 border-b border-outline-variant">
-                    <span class="font-label font-black text-[9px] uppercase tracking-widest text-outline">📊 Schedule Sheet</span>
-                    <a id="driveScheduleLink" href="#" target="_blank" rel="noopener" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">open_in_new</span>Open</a>
-                  </div>
-                  <div id="driveSheetPreview" class="flex-1 p-4 flex items-center justify-center text-outline/50 text-xs">
-                    <span class="flex items-center gap-2"><span class="material-symbols-outlined text-lg">hourglass_empty</span> Loading…</span>
-                  </div>
-                </div>
-              </div>
-            </section>
           </main>
 
   <footer class="bg-[#1C1B1B] border-t border-[#353534] w-full px-6 py-4 flex justify-between items-center mt-auto">
@@ -426,11 +394,22 @@ function downloadIcs(filename, content) {
 // ============================================================
 // FETCH MANIFEST TXT
 // ============================================================
-async function fetchManifest(manifestId) {
-  const url = `https://drive.google.com/uc?export=download&id=${manifestId}`;
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`Manifest HTTP ${res.status}`);
-  const text = await res.text();
+async function fetchManifest(slug, manifestId) {
+  // Prefer the in-repo manifest (same-origin, CORS-safe) over the Drive uc URL (CORS-blocked).
+  let text = null;
+  if (slug) {
+    try {
+      const localUrl = `data/manifests/${encodeURIComponent(slug)}.txt`;
+      const localRes = await fetch(localUrl);
+      if (localRes.ok) text = await localRes.text();
+    } catch (e) { /* fall through to Drive */ }
+  }
+  if (text === null && manifestId) {
+    const url = `https://drive.google.com/uc?export=download&id=${manifestId}`;
+    const res = await fetch(url);
+    if (res.ok) text = await res.text();
+  }
+  if (text === null) throw new Error('No manifest source available');
   const files = [];
   const lines = text.split('\n');
   let inFiles = false;
@@ -441,8 +420,11 @@ async function fetchManifest(manifestId) {
     if (!inFiles) continue;
     if (t === '' || t.startsWith('(')) continue;
     const parts = line.split(' | ');
+    // Registry row: status | filename | extension | last_seen | type  (5 fields)
     if (parts.length >= 6) {
       files.push({ status: parts[0].trim(), name: parts[1].trim(), ext: parts[2].trim(), last_seen: parts[3].trim(), type: parts[4].trim(), url: parts[5].trim() });
+    } else if (parts.length === 5) {
+      files.push({ status: parts[0].trim(), name: parts[1].trim(), ext: parts[2].trim(), last_seen: parts[3].trim(), type: parts[4].trim(), url: '' });
     } else if (parts.length >= 4) {
       files.push({ status: parts[0].trim(), name: parts[1].trim(), ext: parts[2].trim(), url: parts[3].trim() });
     }
@@ -562,12 +544,14 @@ function renderResources(files) {
   countEl.textContent = `${files.length} file${files.length !== 1 ? 's' : ''}`;
   el.innerHTML = files.map(f => {
     const badgeCls = f.status === 'SYNCED' ? 'badge-synced' : f.status === 'PENDING' ? 'badge-pending' : 'badge-not-synced';
+    let linkHref = f.url;
+    if (!linkHref) linkHref = `https://drive.google.com/drive/search?q=${encodeURIComponent(f.name)}`;
     return `
       <div class="grid grid-cols-12 gap-2 px-3 py-2 border-b border-outline-variant/30 hover:bg-surface-container-low transition-colors items-center">
         <div class="col-span-6 flex items-center gap-2 min-w-0"><span class="font-body text-[10px] text-on-surface truncate" title="${escapeHtml(f.name)}">${escapeHtml(f.name)}</span></div>
         <div class="col-span-2"><span class="font-label font-black text-[9px] text-outline">${escapeHtml(f.ext || '?')}</span></div>
-        <div class="col-span-2"><span class="${badgeCls}">${f.status.replace('_', ' ')}</span></div>
-        <div class="col-span-2"><a href="${escapeHtml(f.url)}" target="_blank" class="material-symbols-outlined text-outline hover:text-primary transition-colors text-sm">open_in_new</a></div>
+        <div class="col-span-2"><span class="${badgeCls}">${(f.status||'').replace('_', ' ')}</span></div>
+        <div class="col-span-2"><a href="${escapeHtml(linkHref)}" target="_blank" rel="noopener" class="material-symbols-outlined text-outline hover:text-primary transition-colors text-sm" title="Open in Drive">open_in_new</a></div>
       </div>
     `;
   }).join('');
@@ -743,7 +727,7 @@ async function init() {
   } catch (e) { console.error('gviz fetch error', e); }
 
   if (worksite.manifestId) {
-    try { manifestFiles = await fetchManifest(worksite.manifestId); } catch (e) { console.warn('Manifest fetch error', e); }
+    try { manifestFiles = await fetchManifest(worksite.slug, worksite.manifestId); } catch (e) { console.warn('Manifest fetch error', e); }
   }
 
   renderAnnouncements(annRows);
@@ -766,44 +750,6 @@ async function init() {
     } else { eBtn.href = eUrl; }
   }
   initCopyAll(manifestFiles, worksite);
-
-  // ---- DRIVE PREVIEW ----
-  // Embed the Drive folder (shows all synced docs inline) + spreadsheet preview
-  if (worksite.folderUrl) {
-    const folderMatch = worksite.folderUrl.match(/folders\/([a-zA-Z0-9_-]+)/);
-    if (folderMatch) {
-      const folderId = folderMatch[1];
-      const previewEl = document.getElementById('driveMasterDocPreview');
-      const linkEl  = document.getElementById('driveMasterDocLink');
-      if (previewEl) {
-        previewEl.innerHTML = '';
-        const iframe = document.createElement('iframe');
-        iframe.src = `https://drive.google.com/embeddedfolderview?id=${folderId}#list`;
-        iframe.className = 'w-full h-full border-0';
-        iframe.style.minHeight = '360px';
-        iframe.loading = 'lazy';
-        previewEl.appendChild(iframe);
-        previewEl.classList.remove('items-center','justify-center','text-outline/50','text-xs');
-      }
-      if (linkEl) linkEl.href = worksite.folderUrl;
-    }
-  }
-  if (ssMatch) {
-    const sheetId = ssMatch[1];
-    const sheetEl = document.getElementById('driveSheetPreview');
-    const sheetLink = document.getElementById('driveScheduleLink');
-    if (sheetEl) {
-      sheetEl.innerHTML = '';
-      const iframe = document.createElement('iframe');
-      iframe.src = `https://docs.google.com/spreadsheets/d/${sheetId}/preview`;
-      iframe.className = 'w-full h-full border-0';
-      iframe.style.minHeight = '360px';
-      iframe.loading = 'lazy';
-      sheetEl.appendChild(iframe);
-      sheetEl.classList.remove('items-center','justify-center','text-outline/50','text-xs');
-    }
-    if (sheetLink) sheetLink.href = worksite.spreadsheetUrl;
-  }
 
   if (calRows.length) {
     document.getElementById('downloadIcsBtn').addEventListener('click', () => {
