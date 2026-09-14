@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-13T22:53:44.996Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-11T10:55:03.396Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -150,3 +150,9 @@ IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-28T07:26:12.677Z | announ
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) First year physics pr ... — full extracted text from all synced files and lessons
 (SCHEDULE) First year physics pr ... — calendar events and announcements spreadsheet
+
+--- DRIVE FOLDER (auto-listed files in this worksite's Google Drive folder) ---
+(name | type | mimeType | modifiedTime | id)
+!Update Me Daily! First year physics pr ....txt | plain | text/plain | 2026-09-13T22:53:45.476Z | 1GySlyds0bjLE91LGLXtFT83u4BZJTzKv
+(MASTER) First year physics pr ... | gdoc | application/vnd.google-apps.document | 2026-07-28T07:26:13.348Z | 1YU0qWDlwl1xES9m-oUSdMca2hTuG6mCW-yAJg-Shk78
+(SCHEDULE) First year physics pr ... | gsheet | application/vnd.google-apps.spreadsheet | 2026-07-15T09:39:14.268Z | 1jKGY8ZUOsEvpLCezT7mApSjGFJrgD9dVreC6HYzUHYs
