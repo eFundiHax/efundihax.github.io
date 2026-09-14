@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-13T22:51:36.622Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-11T10:51:40.854Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -139,3 +139,9 @@ SYNCED | Study unit 5 | https://efundi.nwu.ac.za/portal/site/59795ebd-6401-4b98-
 SYNCED | Study Unit 6 | https://efundi.nwu.ac.za/portal/site/59795ebd-6401-4b98-83bc-d874645e2f61/tool/3e093502-4ef2-4045-9859-931ceb8231df/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2531185&postedComment=false&addBefore=&itemId=22294195&path=log&topicId=&addTool=-1&recheck=&id=&forumId=
 SYNCED | Study Guide | https://efundi.nwu.ac.za/portal/site/59795ebd-6401-4b98-83bc-d874645e2f61/tool/3e093502-4ef2-4045-9859-931ceb8231df/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2531186&postedComment=false&addBefore=&itemId=22294196&path=log&topicId=&addTool=-1&recheck=&id=&forumId=
 SYNCED | Study Guide | https://efundi.nwu.ac.za/portal/site/59795ebd-6401-4b98-83bc-d874645e2f61/tool/3e093502-4ef2-4045-9859-931ceb8231df/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2531187&postedComment=false&addBefore=&itemId=22294197&path=log&topicId=&addTool=-1&recheck=&id=&forumId=
+
+--- DRIVE FOLDER (auto-listed files in this worksite's Google Drive folder) ---
+(name | type | mimeType | modifiedTime | id)
+!Update Me Daily! CMPG115-2026.txt | plain | text/plain | 2026-09-13T22:51:37.205Z | 1AYAt586RnMtMvbbZqZxp-t6BsqnLiBAd
+(MASTER) CMPG115-2026 | gdoc | application/vnd.google-apps.document | 2026-07-31T09:45:23.626Z | 1d1wWCnzhc4RvUXJY5wvqp204auNGmYiUAe4rs_Hz5Wk
+(SCHEDULE) CMPG115-2026 | gsheet | application/vnd.google-apps.spreadsheet | 2026-07-27T17:41:50.597Z | 1f4UoaESzoHulIHk0yaJYHVhTqpxy-gByhNShPrcoAxU
