@@ -41,9 +41,10 @@ Track all modifications made to the eFundiHax setup (website, userscript, backen
 ## PENDING (next to do)
 
 ### Frontend (worksite.html) — user-requested
-- [x] **Copy All Links** button → now copies ONLY the Drive folder link (deployed, verified live 2026-09-14, commit `cb9f393`).
-- [x] **Resource Directory / "Drive preview"** → FIXED (was showing "No files synced yet"). Root cause: manifest was fetched from CORS-blocked `drive.google.com/uc` URL → silent fail → empty list. Fixed: fetch the same-origin `data/manifests/<slug>.txt`, and parse 5-field registry rows (`status | filename | ext | last_seen | type`). Empty `url` → link to Drive search. Verified live: 469 files show for 2026-academic-literacy. Commit `325b1a07`.
-- [ ] ~~Drive Preview panel~~ (REMOVED — was a wrongly-added duplicate panel; the real panel to fix was the Resource Directory. This is the "no new panel, fix existing" correction.)
+- [x] **Drive Preview panel** → REAL one (auto-detects the ~3 Drive folder files: master doc / schedule sheet / manifest .txt) with a **Copy Link** + **Open** button on each item. Built from `masterDocUrl`/`spreadsheetUrl`/`manifestId` in worksites.json; verified live on 2026-academic-literacy (3 files, copy=master doc URL). Commits `fa07d46` + `f4765a1`.
+- [x] **Backfilled `masterDocUrl`** into worksites.json for 27 worksites (auto-detected from Drive folder → (MASTER) doc). NOTE: regenerated on Apps Script sync, so masterDocUrl could be dropped next sync unless the backend adds it — the frontend gracefully shows 2 items if missing.
+- [x] **Resource Directory / "Drive preview"** → FIXED (was "No files synced yet"): fetch same-origin `data/manifests/<slug>.txt` (CORS-safe) instead of CORS-blocked drive.google.com/uc; parse 5-field registry rows. Verified live: 469 files. Commit `325b1a07`.
+- [x] **Copy All Links** button → now copies ONLY the Drive folder link (verified live). Commit `cb9f393`.
 
 ### Calendar event filter (NEW, user-requested 2026-09-14)
 - [x] **Do NOT add calendar events containing the phrase '0 attendees'** (also '0 attendee' / meeting spam). INGM and Engineering Undergraduate calendars are filled with "meeting" spam — filter these out during sync so they never reach Google Calendar.
