@@ -40,9 +40,14 @@ Track all modifications made to the eFundiHax setup (website, userscript, backen
 ---
 ## PENDING (next to do)
 
+### Calendar event filter (NEW, user-requested 2026-09-14)
+- [x] **Do NOT add calendar events containing the phrase '0 attendees'** (also '0 attendee' / meeting spam). INGM and Engineering Undergraduate calendars are filled with "meeting" spam — filter these out during sync so they never reach Google Calendar.
+  - **DONE in userscript v4.0.16** (commit `949cc33`): `syncCalendar` now filters events whose title+description match `/0 attendees?|no attendees?/i` before caching/syncing. CDN purged & verified serving v4.0.16.
+  - Existing spam events already in the Google Calendars/Drive sheets were NOT removed — needs a cleanup pass if desired.
+
 ### Frontend (worksite.html) — user-requested
-- [ ] **Copy All Links** button → should copy ONLY the folder link (currently copies folder + spreadsheet + manifest + source files). Fix to copy just `folderUrl`.
-- [ ] **Drive Preview** panel — never added. Add a panel previewing the synced Drive docs (from manifest/`folderUrl`).
+- [x] **Copy All Links** button → now copies ONLY the Drive folder link (deployed, verified live 2026-09-14, commit `cb9f393`).
+- [x] **Drive Preview** panel → added, embeds folder + spreadsheet (deployed, verified live 2026-09-14, commit `cb9f393`).
 
 ### Backend / account (user-requested)
 - [ ] Add `resources` handler to Apps Script backend (store embedded lesson links/PDFs + extract PDF text/images into master doc).
