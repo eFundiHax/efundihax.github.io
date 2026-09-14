@@ -245,74 +245,33 @@
       </div>
     </section>
 
-    <!-- ROW 3: Resource Directory -->
+    <!-- ROW 3: Drive Preview (the files in the Drive folder) -->
     <section class="bevel-out bg-surface-container-low flex flex-col">
       <div class="panel-header-tab px-4 py-2 flex items-center justify-between">
         <div class="flex items-center gap-2">
-          <span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings:'FILL' 1">folder_open</span>
-          <span class="font-headline font-black text-sm text-on-primary uppercase tracking-widest">Resource Directory</span>
+          <span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings:'FILL' 1">folder_shared</span>
+          <span class="font-headline font-black text-sm text-on-primary uppercase tracking-widest">Drive Preview</span>
         </div>
-        <span class="font-label font-black text-[9px] text-on-primary/60 uppercase tracking-widest" id="resourceCount">Loading…</span>
+        <span class="font-label font-black text-[9px] text-on-primary/60 uppercase tracking-widest" id="drivePreviewCount">Loading…</span>
       </div>
-      <div class="p-4 grid grid-cols-1 md:grid-cols-12 gap-4">
-
-        <!-- File list -->
-        <div class="md:col-span-8 bevel-in bg-surface-container-lowest flex flex-col" style="min-height:200px;max-height:360px;overflow-y:auto">
-          <div class="grid grid-cols-12 gap-2 px-3 py-2 border-b border-outline-variant sticky top-0 bg-surface-container-lowest z-10">
-            <div class="col-span-6 font-label font-black text-[9px] uppercase tracking-widest text-outline">Filename</div>
-            <div class="col-span-2 font-label font-black text-[9px] uppercase tracking-widest text-outline">Type</div>
-            <div class="col-span-2 font-label font-black text-[9px] uppercase tracking-widest text-outline">Status</div>
-            <div class="col-span-2 font-label font-black text-[9px] uppercase tracking-widest text-outline">Link</div>
-          </div>
-          <div id="resourceList">
-            <div class="flex items-center justify-center p-8 text-outline"><div class="skeleton h-8 w-full mb-2"></div></div>
-          </div>
+      <div class="p-4 flex flex-col gap-3">
+        <div id="drivePreviewList" class="flex flex-col gap-2 bevel-in bg-surface-container-lowest p-2">
+          <div class="flex items-center justify-center p-6 text-outline text-xs">Detecting files in Drive folder…</div>
         </div>
-
-        <!-- Action panel -->
-        <div class="md:col-span-4 flex flex-col gap-3">
-          <div class="flex items-center gap-2">
-            <button id="copyAllLinksBtn" class="flex-1 bevel-out bg-primary text-on-primary font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
-              <span class="material-symbols-outlined text-sm">content_copy</span>Copy All Links
-            </button>
-            <div class="tooltip-container">
-              <div class="bevel-in bg-surface-container-lowest w-7 h-7 flex items-center justify-center cursor-help">
-                <span class="material-symbols-outlined text-outline text-sm">help</span>
-              </div>
-              <div class="tooltip-content">
-                <p class="text-[10px]">Copies the Drive folder link for this worksite (owner: efundihax@gmail.com) — paste it anywhere to open the folder.</p>
-              </div>
-            </div>
-          </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <button id="copyAllLinksBtn" class="bevel-out bg-primary text-on-primary font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
+            <span class="material-symbols-outlined text-sm">content_copy</span>Copy All Links
+          </button>
           <a id="openFolderBtn" href="#" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
-            <span class="material-symbols-outlined text-sm">open_in_new</span>Drive Folder
+            <span class="material-symbols-outlined text-sm">open_in_new</span>Open Drive Folder
           </a>
-          <a id="scheduleSheetBtn" href="#" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
-            <span class="material-symbols-outlined text-sm">table_chart</span>Schedule Sheet
-          </a>
-          <div class="bevel-in bg-surface-container-lowest p-3 mt-2">
+          <div class="bevel-in bg-surface-container-lowest px-3 py-2 ml-auto">
             <p class="font-label font-black text-[9px] uppercase tracking-widest text-outline mb-1">Last Sync</p>
             <p class="font-body text-[10px] text-on-surface-variant" id="lastSyncDisplay">—</p>
           </div>
         </div>
-              </div>
-            </section>
-
-            <!-- ROW 4: Drive Preview (auto-detects the ~3 files in the Drive folder) -->
-            <section class="bevel-out bg-surface-container-low flex flex-col">
-              <div class="panel-header-tab px-4 py-2 flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings:'FILL' 1">folder_shared</span>
-                  <span class="font-headline font-black text-sm text-on-primary uppercase tracking-widest">Drive Preview</span>
-                </div>
-                <span class="font-label font-black text-[9px] text-on-primary/60 uppercase tracking-widest" id="drivePreviewCount">Loading…</span>
-              </div>
-              <div class="p-4">
-                <div class="flex flex-col gap-2" id="drivePreviewList">
-                  <div class="flex items-center justify-center p-6 text-outline text-xs">Detecting files in Drive folder…</div>
-                </div>
-              </div>
-            </section>
+      </div>
+    </section>
 
           </main>
 
@@ -549,40 +508,9 @@ function renderDates(rows) {
   }
 }
 
-function renderResources(files) {
-  const el = document.getElementById('resourceList');
-  const countEl = document.getElementById('resourceCount');
-  if (!files || files.length === 0) {
-    countEl.textContent = '0 files';
-    el.innerHTML = `<div class="flex flex-col items-center justify-center p-8 text-center"><span class="material-symbols-outlined text-outline text-3xl mb-2">cloud_off</span><p class="font-label font-black text-[10px] uppercase tracking-widest text-outline">No files synced yet</p><p class="font-body text-[9px] text-outline/60 mt-1">Visit this module on eFundi with the sync script installed</p></div>`;
-    return;
-  }
-  countEl.textContent = `${files.length} file${files.length !== 1 ? 's' : ''}`;
-  el.innerHTML = files.map(f => {
-    const badgeCls = f.status === 'SYNCED' ? 'badge-synced' : f.status === 'PENDING' ? 'badge-pending' : 'badge-not-synced';
-    let linkHref = f.url;
-    if (!linkHref) linkHref = `https://drive.google.com/drive/search?q=${encodeURIComponent(f.name)}`;
-    return `
-      <div class="grid grid-cols-12 gap-2 px-3 py-2 border-b border-outline-variant/30 hover:bg-surface-container-low transition-colors items-center">
-        <div class="col-span-6 flex items-center gap-2 min-w-0"><span class="font-body text-[10px] text-on-surface truncate" title="${escapeHtml(f.name)}">${escapeHtml(f.name)}</span></div>
-        <div class="col-span-2"><span class="font-label font-black text-[9px] text-outline">${escapeHtml(f.ext || '?')}</span></div>
-        <div class="col-span-2"><span class="${badgeCls}">${(f.status||'').replace('_', ' ')}</span></div>
-        <div class="col-span-2"><a href="${escapeHtml(linkHref)}" target="_blank" rel="noopener" class="material-symbols-outlined text-outline hover:text-primary transition-colors text-sm" title="Open in Drive">open_in_new</a></div>
-      </div>
-    `;
-  }).join('');
-}
-
 // ============================================================
 // DRIVE PREVIEW — auto-detect the files in the Drive folder
 // ============================================================
-function driveItemIcon(url, name) {
-  const n = (name || '').toLowerCase();
-  if (/\(master\)/.test(n) || /\.docx?$/.test(n)) return 'description';
-  if (/\(schedule\)/.test(n) || /\.xlsx?$|spreadsheet/.test(url)) return 'table_chart';
-  return 'description';
-}
-
 function copyText(text) {
   if (navigator.clipboard && navigator.clipboard.writeText) {
     return navigator.clipboard.writeText(text);
@@ -669,22 +597,18 @@ function initSlideshow() {
 // ============================================================
 // COPY ALL LINKS
 // ============================================================
-function initCopyAll(files, worksite) {
+function initCopyAll(worksite) {
   const btn = document.getElementById('copyAllLinksBtn');
   if (!btn) return;
   btn.addEventListener('click', async () => {
-    // Copy ONLY the Drive folder link (owner = efundihax@gmail.com).
-    // Fall back to individual file URLs only if there's no folder.
-    let toCopy;
-        if (worksite?.folderUrl) {
-          toCopy = [worksite.folderUrl];
-        }
-    if (!toCopy) {
-      const fileUrls = files.map(f => f.folderUrl || f.driveUrl || f.url).filter(Boolean);
-      toCopy = fileUrls.length ? fileUrls : null;
-    }
-    if (!toCopy || !toCopy.length) return;
-    try { await navigator.clipboard.writeText(toCopy.join('\n')); } catch (e) { prompt('Copy these links:', toCopy.join('\n')); return; }
+    // Copy all the Drive file links for this worksite (master, schedule, manifest, folder).
+    const urls = [];
+    if (worksite?.masterDocUrl) urls.push(worksite.masterDocUrl);
+    if (worksite?.spreadsheetUrl) urls.push(worksite.spreadsheetUrl);
+    if (worksite?.manifestId) urls.push(`https://drive.google.com/file/d/${worksite.manifestId}/view`);
+    if (worksite?.folderUrl) urls.push(worksite.folderUrl);
+    if (!urls.length) return;
+    try { await navigator.clipboard.writeText(urls.join('\n')); } catch (e) { prompt('Copy these links:', urls.join('\n')); return; }
     const orig = btn.innerHTML;
     btn.innerHTML = '<span class="material-symbols-outlined text-sm">check</span>Copied!';
     setTimeout(() => btn.innerHTML = orig, 2000);
@@ -781,7 +705,6 @@ async function init() {
   document.getElementById('footerLabel').textContent = `eFundiHax — ${title}`;
 
   if (worksite.folderUrl) document.getElementById('openFolderBtn').href = worksite.folderUrl;
-  if (worksite.spreadsheetUrl) document.getElementById('scheduleSheetBtn').href = worksite.spreadsheetUrl;
 
   const ssMatch = (worksite.spreadsheetUrl || '').match(/spreadsheets\/d\/([a-zA-Z0-9_-]+)/);
   if (!ssMatch) { showError('No spreadsheet found', 'Schedule sheet not created yet.'); return; }
@@ -804,7 +727,7 @@ async function init() {
     }
   }
 
-  let annRows = [], calRows = [], manifestFiles = [];
+  let annRows = [], calRows = [];
   try {
     [annRows, calRows] = await Promise.all([
       fetchGviz(ssId, 'Announcements').catch(e => { console.warn('Announcements:', e); return []; }),
@@ -812,13 +735,8 @@ async function init() {
     ]);
   } catch (e) { console.error('gviz fetch error', e); }
 
-  if (worksite.manifestId) {
-    try { manifestFiles = await fetchManifest(worksite.slug, worksite.manifestId); } catch (e) { console.warn('Manifest fetch error', e); }
-  }
-
   renderAnnouncements(annRows);
   renderDates(calRows);
-  renderResources(manifestFiles);
   initDrivePreview(worksite);
   // Direct eFundi link (stored as site_id on Drive, exposed as efundiUrl in worksites.json)
   if (worksite.efundiUrl || worksite.siteId) {
@@ -836,7 +754,7 @@ async function init() {
       }
     } else { eBtn.href = eUrl; }
   }
-  initCopyAll(manifestFiles, worksite);
+  initCopyAll(worksite);
 
   if (calRows.length) {
     document.getElementById('downloadIcsBtn').addEventListener('click', () => {
