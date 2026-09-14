@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-11T10:54:08.206Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-14T10:53:31.725Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -30,14 +30,3 @@ generated: 2026-05-30T22:51:27.814Z
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) Home — full extracted text from all synced files and lessons
 (SCHEDULE) Home — calendar events and announcements spreadsheet
-
---- DRIVE FOLDER (auto-listed files in this worksite's Google Drive folder) ---
-(name | type | mimeType | modifiedTime | id)
-!Update Me Daily! Home.txt | plain | text/plain | 2026-09-13T22:53:15.502Z | 1F5Kk628ABtZvpm6Z3o1F8tvrIyhmH_E-
-master file | gdoc | application/vnd.google-apps.document | 2026-06-05T22:45:30.238Z | 1pS9geQKSQVvfGciDr1K-oC3zxPEFRpqe4Lo-u8lC5Wg
-Tutorial | gdoc | application/vnd.google-apps.document | 2026-06-05T21:30:00.980Z | 15U4A9PFYaMEguCF6W7bejxMHjgHgKjnSj0uSNSftrOA
-Tutorial.pdf | pdf | application/pdf | 2026-06-05T21:28:56.922Z | 1m2Pb5lUDz8rH8HOmz1NsBc5SEiEFCvTs
-Tutorial questions _4 May_ | gdoc | application/vnd.google-apps.document | 2026-06-05T21:27:29.242Z | 1j_0RRiLJ73jMee-wPyZT3W9UqCzJVNGkSjCEhJmltZg
-(SCHEDULE) Home | gsheet | application/vnd.google-apps.spreadsheet | 2026-06-05T15:41:31.083Z | 1zWjNXv8whe0V3d7yLErtC8yzpGrUN7UqH7n-0yXHb-I
-(MASTER) Home | gdoc | application/vnd.google-apps.document | 2026-06-05T15:06:24.522Z | 1yisTH5grwZIM9PJ8y4VZa9eIwh8C7IAXG3GMMetc-SY
-merge me! | gdoc | application/vnd.google-apps.document | 2026-05-30T21:27:34.300Z | 1VGLkHvvFwtRNPjJ8bw-3FHFGm7NqYZbugwKxnpuyjqA
