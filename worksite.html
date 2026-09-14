@@ -298,6 +298,22 @@
               </div>
             </section>
 
+            <!-- ROW 4: Drive Preview (auto-detects the ~3 files in the Drive folder) -->
+            <section class="bevel-out bg-surface-container-low flex flex-col">
+              <div class="panel-header-tab px-4 py-2 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings:'FILL' 1">folder_shared</span>
+                  <span class="font-headline font-black text-sm text-on-primary uppercase tracking-widest">Drive Preview</span>
+                </div>
+                <span class="font-label font-black text-[9px] text-on-primary/60 uppercase tracking-widest" id="drivePreviewCount">Loading…</span>
+              </div>
+              <div class="p-4">
+                <div class="flex flex-col gap-2" id="drivePreviewList">
+                  <div class="flex items-center justify-center p-6 text-outline text-xs">Detecting files in Drive folder…</div>
+                </div>
+              </div>
+            </section>
+
           </main>
 
   <footer class="bg-[#1C1B1B] border-t border-[#353534] w-full px-6 py-4 flex justify-between items-center mt-auto">
@@ -558,6 +574,76 @@ function renderResources(files) {
 }
 
 // ============================================================
+// DRIVE PREVIEW — auto-detect the files in the Drive folder
+// ============================================================
+function driveItemIcon(url, name) {
+  const n = (name || '').toLowerCase();
+  if (/\(master\)/.test(n) || /\.docx?$/.test(n)) return 'description';
+  if (/\(schedule\)/.test(n) || /\.xlsx?$|spreadsheet/.test(url)) return 'table_chart';
+  return 'description';
+}
+
+function copyText(text) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    return navigator.clipboard.writeText(text);
+  }
+  return new Promise((res) => { const ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); res(); });
+}
+
+function initDrivePreview(worksite) {
+  const listEl = document.getElementById('drivePreviewList');
+  const countEl = document.getElementById('drivePreviewCount');
+  if (!listEl) return;
+
+  const items = [];
+  const title = worksite.title || '';
+  // 1) Master doc
+  if (worksite.masterDocUrl) {
+    items.push({ label: `(MASTER) ${title}`, url: worksite.masterDocUrl, icon: 'description' });
+  }
+  // 2) Schedule sheet
+  if (worksite.spreadsheetUrl) {
+    items.push({ label: `(SCHEDULE) ${title}`, url: worksite.spreadsheetUrl, icon: 'table_chart' });
+  }
+  // 3) Manifest text file
+  if (worksite.manifestId) {
+    items.push({ label: `!Update Me Daily! ${title}.txt`, url: `https://drive.google.com/file/d/${worksite.manifestId}/view`, icon: 'description' });
+  }
+  // 4) Folder itself (always 1 to show)
+  if (worksite.folderUrl && items.length === 0) {
+    items.push({ label: `${title} folder`, url: worksite.folderUrl, icon: 'folder_open' });
+  }
+
+  if (!items.length) {
+    listEl.innerHTML = '<div class="flex items-center justify-center p-6 text-outline text-xs">No Drive files detected.</div>';
+    if (countEl) countEl.textContent = '0 found';
+    return;
+  }
+
+  if (countEl) countEl.textContent = `${items.length} file${items.length !== 1 ? 's' : ''}`;
+  listEl.innerHTML = items.map((it, i) => `
+    <div class="flex items-center gap-3 p-3 bevel-in bg-surface-container-lowest">
+      <span class="material-symbols-outlined text-on-primary/70 text-xl">${it.icon}</span>
+      <div class="min-w-0 flex-1">
+        <p class="font-body text-[11px] text-on-surface truncate" title="${escapeHtml(it.label)}">${escapeHtml(it.label)}</p>
+      </div>
+      <button data-copy="${i}" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[9px] px-3 py-1 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all flex items-center gap-1"><span class="material-symbols-outlined text-sm">content_copy</span>Copy Link</button>
+      <a href="${escapeHtml(it.url)}" target="_blank" rel="noopener" class="bevel-out bg-primary text-on-primary font-label font-black text-[9px] px-3 py-1 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all flex items-center gap-1"><span class="material-symbols-outlined text-sm">open_in_new</span>Open</a>
+    </div>
+  `).join('');
+
+  listEl.querySelectorAll('button[data-copy]').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const url = items[Number(btn.dataset.copy)].url;
+      try { await copyText(url); } catch (e) { prompt('Copy drive link:', url); }
+      const orig = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-sm">check</span>Copied';
+      setTimeout(() => btn.innerHTML = orig, 1500);
+    });
+  });
+}
+
+// ============================================================
 // SLIDESHOW
 // ============================================================
 let currentSlide = 0;
@@ -733,6 +819,7 @@ async function init() {
   renderAnnouncements(annRows);
   renderDates(calRows);
   renderResources(manifestFiles);
+  initDrivePreview(worksite);
   // Direct eFundi link (stored as site_id on Drive, exposed as efundiUrl in worksites.json)
   if (worksite.efundiUrl || worksite.siteId) {
     const eUrl = worksite.efundiUrl || `https://efundi.nwu.ac.za/portal/site/${worksite.siteId}`;
