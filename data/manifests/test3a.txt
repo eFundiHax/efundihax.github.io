@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-13T22:51:18.654Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-11T10:51:20.001Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -33,3 +33,9 @@ generated: 2026-09-05T10:19:21.125Z
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) Test_3A — full extracted text from all synced files and lessons
 (SCHEDULE) Test_3A — calendar events and announcements spreadsheet
+
+--- DRIVE FOLDER (auto-listed files in this worksite's Google Drive folder) ---
+(name | type | mimeType | modifiedTime | id)
+!Update Me Daily! Test_3A.txt | plain | text/plain | 2026-09-13T22:51:19.221Z | 1UMNYn0JQcokXtq1rui13asoHb-oYbfK-
+(SCHEDULE) Test_3A | gsheet | application/vnd.google-apps.spreadsheet | 2026-09-07T09:21:50.269Z | 15Qb7mrD0xbLROvLw7n70fLH2hiU-riVi_eIXvUceDXo
+(MASTER) Test_3A | gdoc | application/vnd.google-apps.document | 2026-09-05T10:19:26.546Z | 1uNxHWVpvOuCx2iLt3lOGNuIuXIPNuBjIEIlr7dn4s2E
