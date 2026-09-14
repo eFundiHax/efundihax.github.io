@@ -200,7 +200,7 @@
               <span class="font-label font-black text-[11px] uppercase tracking-widest text-on-primary">Dates</span>
             </div>
             <div class="flex items-center gap-2">
-              <a id="openGoogleCalendarBtn" href="#btn" target="_blank" class="bevel-out bg-surface-variant w-7 h-7 flex items-center justify-center hover:bg-primary transition-colors" title="Open in Google Calendar">
+              <a id="openGoogleCalendarBtn" href="#" target="_blank" class="bevel-out bg-surface-variant w-7 h-7 flex items-center justify-center hover:bg-primary transition-colors" title="Open in Google Calendar">
                 <span class="material-symbols-outlined text-sm text-on-surface">calendar_month</span>
               </a>
               <button id="downloadIcsBtn" class="bevel-out bg-surface-variant px-2 py-1 text-[9px] font-black uppercase tracking-widest hover:bg-primary transition-colors flex items-center gap-1" title="Download iCal">
@@ -280,14 +280,14 @@
                 <span class="material-symbols-outlined text-outline text-sm">help</span>
               </div>
               <div class="tooltip-content">
-                <p class="text-[10px]">Copies all resource URLs for this worksite to paste into NotebookLM.</p>
+                <p class="text-[10px]">Copies the Drive folder link for this worksite (owner: efundihax@gmail.com) — paste it anywhere to open the folder.</p>
               </div>
             </div>
           </div>
-          <a id="openFolderBtn" href="#btn" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
+          <a id="openFolderBtn" href="#" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
             <span class="material-symbols-outlined text-sm">open_in_new</span>Drive Folder
           </a>
-          <a id="scheduleSheetBtn" href="#btn" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
+          <a id="scheduleSheetBtn" href="#" target="_blank" class="bevel-out bg-surface-variant text-on-surface font-label font-black text-[11px] py-2 px-4 flex items-center justify-center gap-2 uppercase tracking-widest hover:brightness-110 active:translate-y-px transition-all">
             <span class="material-symbols-outlined text-sm">table_chart</span>Schedule Sheet
           </a>
           <div class="bevel-in bg-surface-container-lowest p-3 mt-2">
@@ -295,9 +295,42 @@
             <p class="font-body text-[10px] text-on-surface-variant" id="lastSyncDisplay">—</p>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+              </div>
+            </section>
+
+            <!-- ROW 4: Drive Preview -->
+            <section class="bevel-out bg-surface-container-low flex flex-col">
+              <div class="panel-header-tab px-4 py-2 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings:'FILL' 1">folder_shared</span>
+                  <span class="font-headline font-black text-sm text-on-primary uppercase tracking-widest">Drive Preview</span>
+                </div>
+                <span class="font-label font-black text-[9px] text-on-primary/60 uppercase tracking-widest">Synced · owned by efundihax@gmail.com</span>
+              </div>
+              <div class="p-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Master Doc embed -->
+                <div class="md:col-span-2 bevel-in bg-surface-container-lowest flex flex-col" style="min-height:360px">
+                  <div class="flex items-center justify-between px-3 py-2 border-b border-outline-variant">
+                    <span class="font-label font-black text-[9px] uppercase tracking-widest text-outline">📄 Master Doc</span>
+                    <a id="driveMasterDocLink" href="#" target="_blank" rel="noopener" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">open_in_new</span>Open</a>
+                  </div>
+                  <div id="driveMasterDocPreview" class="flex-1 p-4 flex items-center justify-center text-outline/50 text-xs">
+                    <span class="flex items-center gap-2"><span class="material-symbols-outlined text-lg">hourglass_empty</span> Loading master doc…</span>
+                  </div>
+                </div>
+                <!-- Schedule Sheet embed -->
+                <div class="md:col-span-1 bevel-in bg-surface-container-lowest flex flex-col" style="min-height:360px">
+                  <div class="flex items-center justify-between px-3 py-2 border-b border-outline-variant">
+                    <span class="font-label font-black text-[9px] uppercase tracking-widest text-outline">📊 Schedule Sheet</span>
+                    <a id="driveScheduleLink" href="#" target="_blank" rel="noopener" class="text-[9px] font-black uppercase tracking-widest text-on-surface/60 hover:text-primary transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">open_in_new</span>Open</a>
+                  </div>
+                  <div id="driveSheetPreview" class="flex-1 p-4 flex items-center justify-center text-outline/50 text-xs">
+                    <span class="flex items-center gap-2"><span class="material-symbols-outlined text-lg">hourglass_empty</span> Loading…</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
 
   <footer class="bg-[#1C1B1B] border-t border-[#353534] w-full px-6 py-4 flex justify-between items-center mt-auto">
     <span class="font-label font-black text-[10px] uppercase tracking-widest text-outline" id="footerLabel">eFundiHax</span>
@@ -570,17 +603,17 @@ function initCopyAll(files, worksite) {
   const btn = document.getElementById('copyAllLinksBtn');
   if (!btn) return;
   btn.addEventListener('click', async () => {
-    const driveLinks = [];
-    if (worksite?.folderUrl) driveLinks.push(worksite.folderUrl);
-    if (worksite?.masterDocUrl) driveLinks.push(worksite.masterDocUrl);
-    if (worksite?.spreadsheetUrl) driveLinks.push(worksite.spreadsheetUrl);
-    if (worksite?.manifestId) driveLinks.push(`https://drive.google.com/file/d/${worksite.manifestId}/view`);
-    // Also include per-file eFundi source URLs for reference (optional second block)
-    const fileUrls = files.map(f => f.url).filter(Boolean);
-    const all = driveLinks.length ? driveLinks : fileUrls;
-    // If both exist, put Drive links first then file sources
-    const toCopy = driveLinks.length && fileUrls.length ? [...driveLinks, '', '# eFundi source URLs', ...fileUrls] : all;
-    if (!toCopy.length) return;
+    // Copy ONLY the Drive folder link (owner = efundihax@gmail.com).
+    // Fall back to individual file URLs only if there's no folder.
+    let toCopy;
+        if (worksite?.folderUrl) {
+          toCopy = [worksite.folderUrl];
+        }
+    if (!toCopy) {
+      const fileUrls = files.map(f => f.folderUrl || f.driveUrl || f.url).filter(Boolean);
+      toCopy = fileUrls.length ? fileUrls : null;
+    }
+    if (!toCopy || !toCopy.length) return;
     try { await navigator.clipboard.writeText(toCopy.join('\n')); } catch (e) { prompt('Copy these links:', toCopy.join('\n')); return; }
     const orig = btn.innerHTML;
     btn.innerHTML = '<span class="material-symbols-outlined text-sm">check</span>Copied!';
@@ -685,25 +718,21 @@ async function init() {
   const ssId = ssMatch[1];
 
   // Fetch calendar_id from manifest and set Google Calendar button
-    const googleCalendarBtn = document.getElementById('openGoogleCalendarBtn');
-    // Real fallback: search this worksite on Google Calendar (always works)
-    if (googleCalendarBtn) {
-      googleCalendarBtn.href = `https://calendar.google.com/calendar/r/search?q=${encodeURIComponent(title)}`;
-    }
-    if (worksite.manifestId) {
-      try {
-        const manifestText = await fetch(`https://drive.google.com/uc?export=download&id=${worksite.manifestId}`).then(r => r.text());
-        const calendarIdMatch = manifestText.match(/calendar_id: (.+)/);
-        if (calendarIdMatch && calendarIdMatch[1]) {
-          const calendarId = calendarIdMatch[1].trim();
-          if (googleCalendarBtn) {
-            googleCalendarBtn.href = `https://calendar.google.com/calendar/embed?src=${encodeURIComponent(calendarId)}`;
-          }
+  if (worksite.manifestId) {
+    try {
+      const manifestText = await fetch(`https://drive.google.com/uc?export=download&id=${worksite.manifestId}`).then(r => r.text());
+      const calendarIdMatch = manifestText.match(/calendar_id: (.+)/);
+      if (calendarIdMatch && calendarIdMatch[1]) {
+        const calendarId = calendarIdMatch[1].trim();
+        const googleCalendarBtn = document.getElementById('openGoogleCalendarBtn');
+        if (googleCalendarBtn) {
+          googleCalendarBtn.href = `https://calendar.google.com/calendar/embed?src=${encodeURIComponent(calendarId)}`;
         }
-      } catch (e) {
-        console.warn('Failed to fetch calendar_id from manifest:', e);
       }
+    } catch (e) {
+      console.warn('Failed to fetch calendar_id from manifest:', e);
     }
+  }
 
   let annRows = [], calRows = [], manifestFiles = [];
   try {
@@ -737,6 +766,44 @@ async function init() {
     } else { eBtn.href = eUrl; }
   }
   initCopyAll(manifestFiles, worksite);
+
+  // ---- DRIVE PREVIEW ----
+  // Embed the Drive folder (shows all synced docs inline) + spreadsheet preview
+  if (worksite.folderUrl) {
+    const folderMatch = worksite.folderUrl.match(/folders\/([a-zA-Z0-9_-]+)/);
+    if (folderMatch) {
+      const folderId = folderMatch[1];
+      const previewEl = document.getElementById('driveMasterDocPreview');
+      const linkEl  = document.getElementById('driveMasterDocLink');
+      if (previewEl) {
+        previewEl.innerHTML = '';
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://drive.google.com/embeddedfolderview?id=${folderId}#list`;
+        iframe.className = 'w-full h-full border-0';
+        iframe.style.minHeight = '360px';
+        iframe.loading = 'lazy';
+        previewEl.appendChild(iframe);
+        previewEl.classList.remove('items-center','justify-center','text-outline/50','text-xs');
+      }
+      if (linkEl) linkEl.href = worksite.folderUrl;
+    }
+  }
+  if (ssMatch) {
+    const sheetId = ssMatch[1];
+    const sheetEl = document.getElementById('driveSheetPreview');
+    const sheetLink = document.getElementById('driveScheduleLink');
+    if (sheetEl) {
+      sheetEl.innerHTML = '';
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://docs.google.com/spreadsheets/d/${sheetId}/preview`;
+      iframe.className = 'w-full h-full border-0';
+      iframe.style.minHeight = '360px';
+      iframe.loading = 'lazy';
+      sheetEl.appendChild(iframe);
+      sheetEl.classList.remove('items-center','justify-center','text-outline/50','text-xs');
+    }
+    if (sheetLink) sheetLink.href = worksite.spreadsheetUrl;
+  }
 
   if (calRows.length) {
     document.getElementById('downloadIcsBtn').addEventListener('click', () => {
