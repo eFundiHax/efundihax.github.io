@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-11T10:52:16.270Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-14T10:52:10.899Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -2305,9 +2305,3 @@ SYNCED | W12-TEST-PROBE | https://efundi.nwu.ac.za/x
 https://efundi.nwu.ac.za/x | probe123
 SYNCED | W12-TEST-PROBE | https://efundi.nwu.ac.za/x
 https://efundi.nwu.ac.za/x | probe123
-
---- DRIVE FOLDER (auto-listed files in this worksite's Google Drive folder) ---
-(name | type | mimeType | modifiedTime | id)
-!Update Me Daily! PPEP171-2026.txt | plain | text/plain | 2026-09-13T22:52:06.308Z | 1CjSdmuenhonMqnIyqKKtMwod5MTwjP6R
-(SCHEDULE) PPEP171-2026 | gsheet | application/vnd.google-apps.spreadsheet | 2026-09-09T05:38:30.995Z | 1nKbJQmqxedYEc1GSlb4wb4SLoqXQ8vyuznU18FbYmKU
-(MASTER) PPEP171-2026 | gdoc | application/vnd.google-apps.document | 2026-07-14T10:50:12.697Z | 1Ri3AVt6c9iuMIMxkAM_SrqsrZ4mo22NQhacBQamrvqo
