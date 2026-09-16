@@ -2881,7 +2881,7 @@
         var resolvedTimeout = timeoutMs || (payload.action === 'sync_resources' ? TIMEOUT_POST_MS : TIMEOUT_POST_OTHER_MS);
         var label = payload.action + (payload.siteTitle ? ' / ' + payload.siteTitle : '');
 
-        var requestKey = label + '_' + JSON.stringify(payload.files || payload.sites || []);
+        var requestKey = label + '_' + JSON.stringify(payload.files || payload.sites || payload.lessonUrl || payload.siteId || []);
 
         if (window.self !== window.top) {
             console.warn('[U106] Skipping POST from iframe context:', label);
