@@ -24,7 +24,7 @@ title: INGM122-2026
 last_sync: 2026-09-16T09:30:35.944Z
 last_announcement: 2026-09-16T08:09:41.847Z
 total_files: 812
-generated: 2026-09-16T09:29:46.792Z
+generated: 2026-09-16T09:30:53.186Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -831,8 +831,8 @@ SYNCED | PPE.pdf | pdf | 2026-09-06T14:17:12.778Z | announcement_attachment |  |
 INCOMPATIBLE | Practical discussion.pptx | pptx | 2026-09-06T15:44:20.270Z | announcement_attachment |  | fails=0 | failts=
 INCOMPATIBLE | Class tests 1_marks.pdf | pdf | 2026-09-06T15:44:20.270Z | announcement_attachment |  | fails=0 | failts=
 IMAGES_NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-09-06T15:45:13.999Z | announcement_attachment |  | fails=0 | failts=
-NOT_SYNCED | Practical discussion.pptx | pptx | 2026-09-16T09:29:14.271Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/de16c4b3-31f3-4e11-8ad3-29108f85b309/Practical%20discussion.pptx | fails=0 | failts=
-NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-09-16T09:29:14.271Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/8b592192-9015-4d36-9dad-3d470e968930/Class%20tests%201_marks.pdf | fails=0 | failts=
+NOT_SYNCED | Practical discussion.pptx | pptx | 2026-09-16T09:30:50.634Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/de16c4b3-31f3-4e11-8ad3-29108f85b309/Practical%20discussion.pptx | fails=0 | failts=
+NOT_SYNCED | Class tests 1_marks.pdf | pdf | 2026-09-16T09:30:50.634Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/8b592192-9015-4d36-9dad-3d470e968930/Class%20tests%201_marks.pdf | fails=0 | failts=
 NOT_SYNCED | Assignment 1 marks.pdf | pdf | 2026-09-16T09:29:28.258Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/be53872b-2dae-479a-825d-9b92c0d31938/Assignment%201%20marks.pdf | fails=0 | failts=
 NOT_SYNCED | Online tests_13082026.pdf | pdf | 2026-09-16T09:29:28.258Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/74728493-3ae0-456c-ad22-83f7db093f8e/Online%20tests_13082026.pdf | fails=0 | failts=
 NOT_SYNCED | Test venue.jpg | jpg | 2026-09-16T09:29:28.258Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/1d6a4751-9f62-412e-8af3-d861c1905ee0/Test%20venue.jpg | fails=0 | failts=
