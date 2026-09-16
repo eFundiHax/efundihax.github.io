@@ -3301,7 +3301,7 @@
     // BOOT
     // ============================================================
 
-    console.log('[eFundiHax Sync] v4.0.14 loaded. URL:', window.location.href);
+    console.log('[eFundiHax Sync] v' + (window.__efhVersion || '?') + ' loaded. URL:', window.location.href);
 
     if (window.self !== window.top) {
         console.log('[eFundiHax Sync] Inside iframe — skipping');
