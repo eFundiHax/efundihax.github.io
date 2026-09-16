@@ -2543,28 +2543,30 @@
 
                     if (isPriority) setIndicator('lessons', 'syncing', 'Sending ' + changedLessons.length + ' lessons...');
 
-                    var promises = [];
-                    for (var i = 0; i < changedLessons.length; i++) {
-                        var lesson = changedLessons[i];
-                        var promise = post({
-                                                    action: 'sync_lesson',
-                                                    secret: SECRET,
-                                                    siteId: siteId,
-                                                    siteTitle: siteTitle,
-                                                    lessonTitle: lesson.lessonTitle,
-                                                    lessonUrl: lesson.page.url,
-                                                    lessonHtml: lesson.html,
-                                                    images: lesson.images,
-                                                    resources: lesson.resources,
-                                                    lessonHash: lesson.hash
-                                                }).then(function() {
-                            localHashes[lesson.page.url] = lesson.hash;
-                            updateProgress('lessons', i + 1, changedLessons.length, 'Sending');
-                        });
-                        promises.push(promise);
-                    }
+                    var chain = Promise.resolve();
+                                        for (var i = 0; i < changedLessons.length; i++) {
+                                            (function(lesson, idx) {
+                                                chain = chain.then(function() {
+                                                    return post({
+                                                        action: 'sync_lesson',
+                                                        secret: SECRET,
+                                                        siteId: siteId,
+                                                        siteTitle: siteTitle,
+                                                        lessonTitle: lesson.lessonTitle,
+                                                        lessonUrl: lesson.page.url,
+                                                        lessonHtml: lesson.html,
+                                                        images: lesson.images,
+                                                        resources: lesson.resources,
+                                                        lessonHash: lesson.hash
+                                                    }).then(function() {
+                                                        localHashes[lesson.page.url] = lesson.hash;
+                                                        updateProgress('lessons', idx + 1, changedLessons.length, 'Sending');
+                                                    });
+                                                });
+                                            })(changedLessons[i], i);
+                                        }
 
-                    return Promise.all(promises).then(function() {
+                                        return chain.then(function() {
                         GM_setValue(hashKey, JSON.stringify(localHashes));
                         if (isPriority) setIndicator('lessons', 'ok', changedLessons.length + ' synced');
                         console.log('[Lessons] Complete: ' + changedLessons.length + ' lessons synced');
