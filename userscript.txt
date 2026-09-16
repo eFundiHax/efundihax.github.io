@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax Sync
 // @namespace    https://efundihax.github.io
-// @version      4.0.18
+// @version      4.0.19
 // @description  Syncs eFundi announcements, resources, lessons and calendars to Google Drive via Apps Script
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -19,7 +19,7 @@
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '4.0.18';
+    window.__efhVersion = '4.0.19';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
@@ -2544,27 +2544,30 @@
                     if (isPriority) setIndicator('lessons', 'syncing', 'Sending ' + changedLessons.length + ' lessons...');
 
                     var chain = Promise.resolve();
-                                        for (var i = 0; i < changedLessons.length; i++) {
-                                            (function(lesson, idx) {
-                                                chain = chain.then(function() {
-                                                    return post({
-                                                        action: 'sync_lesson',
-                                                        secret: SECRET,
-                                                        siteId: siteId,
-                                                        siteTitle: siteTitle,
-                                                        lessonTitle: lesson.lessonTitle,
-                                                        lessonUrl: lesson.page.url,
-                                                        lessonHtml: lesson.html,
-                                                        images: lesson.images,
-                                                        resources: lesson.resources,
-                                                        lessonHash: lesson.hash
-                                                    }).then(function() {
-                                                        localHashes[lesson.page.url] = lesson.hash;
-                                                        updateProgress('lessons', idx + 1, changedLessons.length, 'Sending');
-                                                    });
-                                                });
-                                            })(changedLessons[i], i);
-                                        }
+                                                            for (var i = 0; i < changedLessons.length; i++) {
+                                                                (function(lesson, idx) {
+                                                                    chain = chain.then(function() {
+                                                                        return post({
+                                                                            action: 'sync_lesson',
+                                                                            secret: SECRET,
+                                                                            siteId: siteId,
+                                                                            siteTitle: siteTitle,
+                                                                            lessonTitle: lesson.lessonTitle,
+                                                                            lessonUrl: lesson.page.url,
+                                                                            lessonHtml: lesson.html,
+                                                                            images: lesson.images,
+                                                                            resources: lesson.resources,
+                                                                            lessonHash: lesson.hash
+                                                                        }).then(function() {
+                                                                            localHashes[lesson.page.url] = lesson.hash;
+                                                                            updateProgress('lessons', idx + 1, changedLessons.length, 'Sending');
+                                                                        }).catch(function(err) {
+                                                                            console.warn('[Lessons] Failed lesson: ' + lesson.lessonTitle + ' — ' + (err && err.message || err) + ' (continuing)');
+                                                                            updateProgress('lessons', idx + 1, changedLessons.length, 'Failed (skipped)');
+                                                                        });
+                                                                    });
+                                                                })(changedLessons[i], i);
+                                                            }
 
                                         return chain.then(function() {
                         GM_setValue(hashKey, JSON.stringify(localHashes));
@@ -2917,18 +2920,18 @@
                         clearTimeout(timeout);
                         delete activePostRequests[requestKey];
                         try {
-                            var resp = JSON.parse(r.responseText);
-                            if (resp.status !== 'ok') console.warn(resp.message || resp.error);
-                            if (resp.logs && resp.logs.length) {
-                                console.log('[Apps Script] ' + resp.logs.length + ' log lines:');
-                                for (var i = 0; i < resp.logs.length; i++) {
-                                    console.log('  ' + resp.logs[i]);
-                                }
-                            }
-                            resolve(resp);
-                        } catch(e) {
-                            resolve({ raw: r.responseText });
-                        }
+                                                    var resp = JSON.parse(r.responseText);
+                                                    if (resp.status !== 'ok') { console.warn(resp.message || resp.error); reject(new Error('POST failed: ' + (resp.message || resp.error || resp.status))); return; }
+                                                    if (resp.logs && resp.logs.length) {
+                                                        console.log('[Apps Script] ' + resp.logs.length + ' log lines:');
+                                                        for (var i = 0; i < resp.logs.length; i++) {
+                                                            console.log('  ' + resp.logs[i]);
+                                                        }
+                                                    }
+                                                    resolve(resp);
+                                                } catch(e) {
+                                                    resolve({ raw: r.responseText });
+                                                }
                     },
                     onerror: function() {
                         clearTimeout(timeout);
