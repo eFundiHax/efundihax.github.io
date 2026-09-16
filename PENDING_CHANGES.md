@@ -63,6 +63,31 @@ Track all modifications made to the eFundiHax setup (website, userscript, backen
 
 ---
 
+## 2026-09-16 — INGM122 lesson sync FIXED (root cause → deployed → verified end-to-end)
+
+### What was broken
+Apps Script backend `sync_resources` handler had a **`ReferenceError: lessons is not defined`** at L631 (stale-purge block referencing undefined `lessons`). Every `sync_resources` call crashed → no lessons synced for INGM122 → NotebookLM couldn't find lab info.
+
+### Fixes (all live & verified)
+1. **Backend (Apps Script v75, deployed)** — removed the dead stale-purge block (L626-641) that referenced undefined `lessons`. New deployment: `AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0`. sync_resources now returns ok (breadcrumb confirmed).
+2. **Userscript v4.0.19** (live on raw GitHub + jsDelivr) — three fixes:
+   - **U106 dedup key** now includes `payload.lessonUrl`/`siteId` so each lesson POST has a unique key (was: all 19 share one key → 18 blocked as "duplicate").
+   - **Serialized lesson POSTs** (sequential chain instead of `Promise.all`) — backend LockService (20s) made parallel POSTs hit "busy" and time out; sequential posts each get the lock cleanly.
+   - **Resilient chain**: a failed lesson no longer kills the batch; it logs `Failed lesson: … (continuing)` and moves on. Also `post()` now rejects non-ok responses so `onerror` retry logic engages.
+
+### End-to-end verification (live browser, CDP)
+- Before: manifest had 3 lesson hashes, master doc had NO lesson content (2.9KB).
+- After: **18/19 lessons appended to master doc (484KB)**, 1 failed (Assessment Information — huge page, network timed out; auto-retries next page load since hash not saved).
+- Master doc now contains: Practical Administration ×15, Practical Activities ×12, Study Units ×18+, 144 "lab" mentions.
+- All 29 manifests updated with SYNCED lesson entries.
+- Sync completes cleanly: "Module sync complete, continuing full sync..." → full site sweep.
+
+### Remaining
+- [ ] Assessment Information lesson (only 1 of 19 failed) — will auto-retry on next page load.
+- [ ] Sync status indicator (user-requested) — now UNBLOCKED since backend fix is verified working, but still NOT implemented (per earlier instruction).
+
+---
+
 ## 2026-09-14 — INGM122 NotebookLM failure: root cause + new feature request
 
 ### Root cause investigation (INGM122 "Practical Administration" missing from master doc)
