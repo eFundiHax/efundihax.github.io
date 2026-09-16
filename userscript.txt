@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax Sync
 // @namespace    https://efundihax.github.io
-// @version      4.0.16
+// @version      4.0.17
 // @description  Syncs eFundi announcements, resources, lessons and calendars to Google Drive via Apps Script
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -77,7 +77,7 @@
     // CONFIGURATION
     // ============================================================
 
-    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxLcCIfuZ_kLStJf-3R_rJrblDo1cVIfet7B0xKnAIBvokfNFeBlgPyDIWjvQGVsckG/exec';
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
     const SECRET = 'trackmania_is_peak';
     const DAYS_BACK = 60;
     const FETCH_COUNT = 100;
