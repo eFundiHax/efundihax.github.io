@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-16T10:51:21.264Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -42,3 +42,9 @@ NOT_SYNCED | PPE.pdf | pdf | 2026-09-16T09:33:47.445Z | announcement_attachment 
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) b58fe6cb-36f0-431b-846a-a188df91278f — full extracted text from all synced files and lessons
 (SCHEDULE) b58fe6cb-36f0-431b-846a-a188df91278f — calendar events and announcements spreadsheet
+
+--- LESSONS ---
+SYNCED | Module Orientation | https://efundi.nwu.ac.za/portal/site/b58fe6cb-36f0-431b-846a-a188df91278f/tool/52e7e268-bd1e-4a89-9fbc-39ecf3ef6190/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2675575&postedComment=false&addBefore=&itemId=23818513&path=log&topicId=&addTool=-1&recheck=&id=&forumId=
+
+--- LESSON HASHES ---
+https://efundi.nwu.ac.za/portal/site/b58fe6cb-36f0-431b-846a-a188df91278f/tool/52e7e268-bd1e-4a89-9fbc-39ecf3ef6190/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2675575&postedComment=false&addBefore=&itemId=23818513&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | c3abecf160e35e348949322f7c45883ccb729ac15d821c2c55f1c9cf17bba512
