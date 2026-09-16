@@ -21,7 +21,7 @@ emoji: 📘
 color: #6b3d8f
 calendar_id: 
 title: b58fe6cb-36f0-431b-846a-a188df91278f
-last_sync: 2026-09-16T09:32:13.159Z
+last_sync: 2026-09-16T09:32:59.494Z
 last_announcement: 2026-09-16T09:32:19.117Z
 total_files: 9
 generated: 2026-09-16T09:32:25.086Z
