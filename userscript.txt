@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax Sync
 // @namespace    https://efundihax.github.io
-// @version      4.0.17
+// @version      4.0.18
 // @description  Syncs eFundi announcements, resources, lessons and calendars to Google Drive via Apps Script
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -19,7 +19,7 @@
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '4.0.17';
+    window.__efhVersion = '4.0.18';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
