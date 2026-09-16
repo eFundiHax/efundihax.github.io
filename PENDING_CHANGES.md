@@ -60,3 +60,40 @@ Track all modifications made to the eFundiHax setup (website, userscript, backen
 ### Planned (added 2026-09-14, not yet built)
 - [ ] **Drive folder listing via manifest** — user drops files into the Drive folder manually; static dashboard can't list Drive (no auth/CORS). Plan: backend adds a `[DRIVE_FOLDER]` section to each worksite's manifest on sync, listing ALL files in the folder (id/name/mimeType/modifiedDate). Frontend Drive Preview reads the section → shows every folder file, incl. ones the user added. See DESIGN_DOC.md item 5.
 - [ ] **Master doc splitting (NotebookLM limit)** — NotebookLM's published per-source limit is **500,000 words / 200 MB per source** (NOT 50K characters — no such public cap exists; the 50K figure was the user's guess). **Automatic rolling when near limit:** before writing a synced doc, the backend estimates `current_master_length + incoming_doc_length`; if the sum lands **within 95% of the limit**, it does NOT append — it creates a **new master doc** with same base name + numeric suffix (`(MASTER) {title}`, `{title} 2`, …) and continues there. Old parts never deleted/merged (system keeps running), each part stays under the limit. **SAVE FOR LATER — do not implement now.** See DESIGN_DOC.md item 4.
+
+---
+
+## 2026-09-14 — INGM122 NotebookLM failure: root cause + new feature request
+
+### Root cause investigation (INGM122 "Practical Administration" missing from master doc)
+
+**Problem reported:** INGM122 NotebookLM couldn't find the lab info, even though the lesson ("Practical Administration" on eFundi) clearly states it.
+
+**Findings (verified against live eFundi via CDP on Chrome debug):**
+
+1. The INGM122 manifest LESSON HASHES contain only 3 itemIds: `23818437` (Module Assistance), `23818438` (Assessment Info), `23818513` (Module Orientation). **Missing:** 12+ pages including Practical Administration (`23818508`), Practical Activities (`23818509`), Study Units 1-8, Welcome, Getting Started, FAQs.
+2. Master doc export confirms "Lab schedule" text is **absent**.
+3. Replaying `extractLessonContent` on the live page → content IS present (31KB clean text, lab text survives GARBAGE_SELECTORS removal). The extraction logic is sound.
+4. Live eFundi console `window.__efhConsole` shows: **`ReferenceError: lessons is not defined`** thrown during `sync_resources` for INGM122 (at 08:10:33 and 08:11:21). The sync version running on eFundi is **v4.0.14** (stale — disk is v4.0.16).
+5. The `parseLessonPages` enumeration (DOM + subnav fallback) DOES correctly list all 19 pages including Practical Admin. The problem is NOT enumeration — it's that the server-side `sync_resources` handler crashes before processing lesson data.
+
+**Root cause:** Apps Script backend `sync_resources` handler references an undefined `lessons` variable (server-side `ReferenceError`), causing every `sync_resources` call to fail silently. The 12+ missing INGM122 lessons were added to eFundi after the last successful lesson sync, and every subsequent sync crashes before it can capture them.
+
+**Fix required (backend, not userscript):**
+1. Update the Apps Script backend to fix the undefined `lessons` variable in the `sync_resources` handler.
+2. Redeploy the backend (currently pinned to an old version via deployment; update requires Deploy → New version).
+3. Trigger a manual sync for INGM122 to backfill the 12 missing lessons.
+
+**Action needed from user:** Re-auth the Apps Script backend, fix the `lessons` variable reference in `sync_resources`, redeploy, and verify via `window.__efhConsole` that the error no longer appears.
+
+---
+
+### Sync status indicator (user-requested 2026-09-14, not yet implemented)
+
+**Request:** On the worksite dashboard page, add a small indicator (like the announcement sync indicator already present) to show whether each lesson page has been synced. For embedded resources, show a **red border** if not synced, and display their status on hover.
+
+**Details to implement (NOT STARTED, pending backend fix above):**
+- Each lesson in the dashboard gets a small status icon: ✅ synced (green/checked), ⚠️ unsynced (red), 🔄 in-progress.
+- Embedded resources (links/images in lessons) show a red border when their backing file is not in the Drive folder; hover tooltip shows: `Not synced — file not found in Drive folder` or `Synced — <filename>` or `Partial — images synced, text not extracted`.
+- Status is driven by comparing the lesson's last-sync hash (from manifest LESSON HASHES) against the live DOM, and checking embedded resources against the manifest's FILE REGISTRY / DRIVE FOLDER sections.
+- Implementation depends on the backend fix above (without a working `sync_resources` + lesson sync, status data is stale/meaningless).
