@@ -1,232 +1,302 @@
 [
- {
-  "slug": "2026-academic-literacy",
-  "title": "2026 | Academic Literacy",
-  "folderUrl": "https://drive.google.com/drive/folders/1W91WtaIhMkpLCThpNIHPTcOSvFjo97es",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1Ftg-t_7KSRpbkOAWJ1EvKffZAu6N3pKB5d7i21Ug-hQ/edit?usp=drivesdk",
-  "manifestId": "1JNG5RwLyk1W6J0X0OKbnmrdW43DZwBGG",
-  "masterDocUrl": "https://docs.google.com/document/d/1H3eLKfUBUlMoK8Wd4d8KBhofk6992QvGNEDGpTVigSs/edit"
- },
- {
-  "slug": "alde112-2026",
-  "title": "ALDE112-2026",
-  "folderUrl": "https://drive.google.com/drive/folders/1EVWam9P4lWCqCdvDMJa0d4Ysan07pABH",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1gjR1A-neu64TIOIe1k4s8hxOG3Y3K_e8U7eCqUJrjP0/edit?usp=drivesdk",
-  "manifestId": "1Dby_SU36apmOVq86rkLsxxF-EMYIhrEi",
-  "masterDocUrl": "https://docs.google.com/document/d/14j-_jkg4hNV-2x7MElZeCX05iYMpqWKwJ97rmyLuBWQ/edit"
- },
- {
-  "slug": "appm121-2026",
-  "title": "APPM121-2026",
-  "folderUrl": "https://drive.google.com/drive/folders/1pIwsrHDIpcqoOhJo5Yj3SOO1DKcqi2X-",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1QQHXxlXqoD5tJmL8z-BbdSeqO9Py9JRWB-KX14_LHDA/edit?usp=drivesdk",
-  "manifestId": "1bldKTXn2MqYMmdAvz9j1_L00REV1sFkY",
-  "masterDocUrl": "https://docs.google.com/document/d/1-Nbie-1I1CB9Rbbs22OhyqGdKJKYq8yWrs3Fy1dW_kU/edit"
- },
- {
-  "slug": "cmpg115friday",
-  "title": "CMPG115_Friday",
-  "folderUrl": "https://drive.google.com/drive/folders/1T8owIiigDlSiVDvpTrn4cYCJ3ulp8DZz",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1kYmUgzh7fCvCR6SCpTUXeLtGxzQT4g05tFzAYOOS7do/edit?usp=drivesdk",
-  "manifestId": "1yj5NxKb_4mzThSyxnVsQppDRpSoJ9D9Q"
- },
- {
-  "slug": "cmpg115-2026",
-  "title": "CMPG115-2026",
-  "folderUrl": "https://drive.google.com/drive/folders/1cOOZ1YSQEoXcpNHmvI53KJoJhRv3wfxU",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1f4UoaESzoHulIHk0yaJYHVhTqpxy-gByhNShPrcoAxU/edit?usp=drivesdk",
-  "manifestId": "1AYAt586RnMtMvbbZqZxp-t6BsqnLiBAd",
-  "masterDocUrl": "https://docs.google.com/document/d/1d1wWCnzhc4RvUXJY5wvqp204auNGmYiUAe4rs_Hz5Wk/edit"
- },
- {
-  "slug": "eeri124-2026",
-  "title": "EERI124-2026",
-  "folderUrl": "https://drive.google.com/drive/folders/1vZiNWQP8LYXn9iouJ9yHF19Z4SgACd2v",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1w-Q70Tg03e7wOVtpmpzwJmF7QQ7HhdETY5KJ1Bf9rNc/edit?usp=drivesdk",
-  "manifestId": "1VQ0kPD0mM61qyyaLlCpKgjbGeOU7n2ko",
-  "masterDocUrl": "https://docs.google.com/document/d/1o0WpMa7xVpME3PCxUfg_SFjBiLiF_tfpp0uP2yGjHGk/edit"
- },
- {
-  "slug": "engineering-chapter-2026",
-  "title": "Engineering Chapter 2026",
-  "folderUrl": "https://drive.google.com/drive/folders/1UG0Bq4lMuZmkwjcFPiifnlxBazS4bfNv",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1RqfLOZdsOyGq6zSWivh7-WkbZD1yWPR5Enymc4AMGkQ/edit?usp=drivesdk",
-  "manifestId": "1hjInrkufmykUvQThNLaEbP1xDKcfS2Qr",
-  "masterDocUrl": "https://docs.google.com/document/d/1DM1sOtqXwrnzKgaSaAm7DFPcYAGWUKbaxQiOt-Ux6wI/edit"
- },
- {
-  "slug": "engineering-undergraduate",
-  "title": "Engineering Undergraduate",
-  "folderUrl": "https://drive.google.com/drive/folders/1fXuQRWE7EyICKS-fK7s1Na4ZrMu1tA8E",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1mNngQldWrG5We00z_uzs-KlMGW09pbK0ZSTRA-2mezA/edit?usp=drivesdk",
-  "manifestId": "1ODeaQR1vMQK0ALuBzQAOcmtrvH8W0GeU",
-  "masterDocUrl": "https://docs.google.com/document/d/1VRP4xtEoGFVMrlRugoE0Mpe14OYeNFrXmNXUCCkDgws/edit"
- },
- {
-  "slug": "first-year-physics-pr",
-  "title": "First year physics pr ...",
-  "folderUrl": "https://drive.google.com/drive/folders/1XKTtLvJZkh12FemRSDw70nFQuQdiqNMk",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1jKGY8ZUOsEvpLCezT7mApSjGFJrgD9dVreC6HYzUHYs/edit?usp=drivesdk",
-  "manifestId": "1GySlyds0bjLE91LGLXtFT83u4BZJTzKv",
-  "masterDocUrl": "https://docs.google.com/document/d/1YU0qWDlwl1xES9m-oUSdMca2hTuG6mCW-yAJg-Shk78/edit"
- },
- {
-  "slug": "home",
-  "title": "Home",
-  "folderUrl": "https://drive.google.com/drive/folders/1EStQdYeIR-dlhj1iPlruFJC6e1fuqDos",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1zWjNXv8whe0V3d7yLErtC8yzpGrUN7UqH7n-0yXHb-I/edit?usp=drivesdk",
-  "manifestId": "1F5Kk628ABtZvpm6Z3o1F8tvrIyhmH_E-",
-  "masterDocUrl": "https://docs.google.com/document/d/1pS9geQKSQVvfGciDr1K-oC3zxPEFRpqe4Lo-u8lC5Wg/edit"
- },
- {
-  "slug": "imageembedtest",
-  "title": "Image_Embed_Test",
-  "folderUrl": "https://drive.google.com/drive/folders/19zXrV5shrIWahDL9WTc_7UYtWM-OC6ez",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1Cps0rRxADHe2renEwVtI8Qr6nEprtKRAR0VWDlEwEv0/edit?usp=drivesdk",
-  "manifestId": "1fINIQKcKm7an9vyZJZKRkKWy6tlnOmL_",
-  "masterDocUrl": "https://docs.google.com/document/d/1S1qG4hCTnfB0DcTyrWVsvt01fSjBw8DQbZRJzyewF74/edit"
- },
- {
-  "slug": "ingm111-2026",
-  "title": "INGM111-2026",
-  "folderUrl": "https://drive.google.com/drive/folders/1Dncd3sCA3hrZ75P-Oy-DbEiqylHUZOS0",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1uRsa44YuT3lMyxGbq3A_eE1cJRMuTxfihvJOaEM8Gt0/edit?usp=drivesdk",
-  "manifestId": "18eLdtomMcYiQCqVStKoItIGSxlHzqv7g",
-  "masterDocUrl": "https://docs.google.com/document/d/1Y9_0oOaMOBnKFzlJASwin8O0T0mcVm-tyaa-zSuc8VU/edit"
- },
- {
-  "slug": "ingm122-2026",
-  "title": "INGM122-2026",
-  "folderUrl": "https://drive.google.com/drive/folders/1npcpfVK0NRwHZ2OZ2lJG6CO0VAQKLucl",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1NXserEclBTzH0CbXHsuSmSd1VVaF5qM8R1InR5dJuwM/edit?usp=drivesdk",
-  "manifestId": "1Plkcti4rUgD9yqlIvKEhmfY-U7RUHl8-",
-  "masterDocUrl": "https://docs.google.com/document/d/1LQoI01mG3oDuSv2iEUKjWg1r81qi_oUHSCK7v3vSU94/edit"
- },
- {
-  "slug": "library",
-  "title": "Library",
-  "folderUrl": "https://drive.google.com/drive/folders/1bpDwqUbScaEqU9caNTHPMGakxBDtNumV",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1IL8eGEHoMidJfyF1DBYyF6uDQNN7kxlycMSnv6wNPoY/edit?usp=drivesdk",
-  "manifestId": "1pxVYM5H4uvniKXTFd5_6Mxz2ibytDaEm",
-  "masterDocUrl": "https://docs.google.com/document/d/14DHb45CK2A4PXc8vcDNcOutpCrRm1fiD5U__0BVXkqw/edit"
- },
- {
-  "slug": "maths-club",
-  "title": "Maths Club",
-  "folderUrl": "https://drive.google.com/drive/folders/1ZsefaTZLVNQlXyYvKuxlJQX5JO7psKQ4",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1B8j-cuAw8_k9CJX2L_-LOqT_9NKlw3CoNh7XKAiQ9Gg/edit?usp=drivesdk",
-  "manifestId": "126ysZB0o_2M8BFiOjAzB96hMC-djGhtK",
-  "masterDocUrl": "https://docs.google.com/document/d/1bwkGZr4NKq_YqiDJRSg1hH3TsZuo6pjZiDi4KXMIPEo/edit"
- },
- {
-  "slug": "message-of-the-day",
-  "title": "Message Of The Day",
-  "folderUrl": "https://drive.google.com/drive/folders/16QJ8JJHzsHK7Zg_YtlYdPKXL63ALcjgh",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1E77mrIi3dDJmhFa7DIjlLpwXB3oeVf64B9VGh1ZB4uc/edit?usp=drivesdk",
-  "manifestId": "1da47JGdRmout-kzOQ5OpW_Pd0ELyuM57"
- },
- {
-  "slug": "mths111-2026",
-  "title": "MTHS111-2026",
-  "folderUrl": "https://drive.google.com/drive/folders/1fN8Hp2MpmqZ2Stl22XOQtsvvAWXggQIA",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/162EJRmsdA0hR_enUSzwXfsaZaTN4xz4rWpJyG6qENfo/edit?usp=drivesdk",
-  "manifestId": "19Jyzsvwz7wXjc3nxqZbvLS01JmYc0A5a",
-  "masterDocUrl": "https://docs.google.com/document/d/1Fsb5fNSL-aSwbKxuVb84yH1cFjfQHTIJIFdcRgi5eg0/edit"
- },
- {
-  "slug": "mths121-2026",
-  "title": "MTHS121-2026",
-  "folderUrl": "https://drive.google.com/drive/folders/1lKwq4Zu_3crnwgga-y2G9_b-R5bsbCKg",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1lMCTWGy87L8-C47GLECRa99KAy5v3WARW5sCZ0ukl5Q/edit?usp=drivesdk",
-  "manifestId": "1j5VpP8Mt29LvwHMDYyo6KY6d1qqoq52a",
-  "masterDocUrl": "https://docs.google.com/document/d/1QkNomH4ghBf3GC9hELb9VVFSO6Q8cu2AbS03L1y8xQM/edit"
- },
- {
-  "slug": "nche111-2026",
-  "title": "NCHE111-2026",
-  "folderUrl": "https://drive.google.com/drive/folders/1MLGOOrBLh5IHh_z4lRcqYF8pF1kHzRF-",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1JacwF4Yx4I0hI_7Ro3oDKMhSevdfnH6aqBtXWxSs3yw/edit?usp=drivesdk",
-  "manifestId": "1r9NC_NcNnFSkcsR570JsirO8yeC2f5qF",
-  "masterDocUrl": "https://docs.google.com/document/d/1v9m05b8-IB3xFzrY7g17zyoAjzsHjS3MeaPTnK_Uh7o/edit"
- },
- {
-  "slug": "nphy111-2026",
-  "title": "NPHY111-2026",
-  "folderUrl": "https://drive.google.com/drive/folders/1kTtY_oKTIWEXxuWSJuaKfKpDC5nDzuZf",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1huammCsZAlfPcPZELNM2dq_2TyiAlsa56BmELQ83ci0/edit?usp=drivesdk",
-  "manifestId": "11QbYJISren8ACn37EfuzCoDuFdsP2eUk",
-  "masterDocUrl": "https://docs.google.com/document/d/1wljfudKzLnFcw6pw-RCo2s-uvXBQXC0swQeoxfgDpHc/edit"
- },
- {
-  "slug": "nphy121-2026",
-  "title": "NPHY121-2026",
-  "folderUrl": "https://drive.google.com/drive/folders/1wDKAuS8XElkOqZV24KccAuCcEpf6DO1j",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1QYvxAZxLqo7IqRCn3cY6Y0HRk1m3_sWQWNPxwF925Ng/edit?usp=drivesdk",
-  "manifestId": "1p9nLRXpNPULQmWcAM60uA9GzaiLXcoxw",
-  "masterDocUrl": "https://docs.google.com/document/d/1GKtTZc-OEFD1yocD55oXOFwHEdyP9I0CMf0Q545O0eA/edit"
- },
- {
-  "slug": "physics-prac-2026sem2",
-  "title": "Physics Prac 2026SEM2",
-  "folderUrl": "https://drive.google.com/drive/folders/1W7_cJuqiD7glND-ZENlnQ171tdwTcpjs",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1F6NY_fq52Z_Ez9AufcIGxyIT_2mRrMT9Wf9Omd6DqkI/edit?usp=drivesdk",
-  "manifestId": "15qODPGY8X6WF_tqbGIc-1ejXoXVsSsPz",
-  "masterDocUrl": "https://docs.google.com/document/d/1LLWvic0gOM22sgKBAAhbvz8UoZa5RQud0krezmOziI8/edit"
- },
- {
-  "slug": "ppep171-2026",
-  "title": "PPEP171-2026",
-  "folderUrl": "https://drive.google.com/drive/folders/1AJGLWMZbOuUDVOGBSloGfyGH1h-cl7hV",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1nKbJQmqxedYEc1GSlb4wb4SLoqXQ8vyuznU18FbYmKU/edit?usp=drivesdk",
-  "manifestId": "1CjSdmuenhonMqnIyqKKtMwod5MTwjP6R",
-  "masterDocUrl": "https://docs.google.com/document/d/1Ri3AVt6c9iuMIMxkAM_SrqsrZ4mo22NQhacBQamrvqo/edit"
- },
- {
-  "slug": "reii121-2026",
-  "title": "REII121-2026",
-  "folderUrl": "https://drive.google.com/drive/folders/13e2hrJxNPK4no5UIeY6Im8ySXZ9SjDGh",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1nXhPt3EiislIGCE3v5PKBknwjELHVl3jQzoNHyzGoJ4/edit?usp=drivesdk",
-  "manifestId": "1Ycpyd5iqqisxOnC8hCyd3ND-7qX0baaI",
-  "masterDocUrl": "https://docs.google.com/document/d/1yKH2nRR3zQn0gZQlVFawivBEHnt-u7BQn3K_wAIfc80/edit"
- },
- {
-  "slug": "seece-work-safety-",
-  "title": "SEECE Work & Safety - ...",
-  "folderUrl": "https://drive.google.com/drive/folders/1-N-oZFOkL0Q0uTt5tX9rGPuAPm8T55ty",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1dG9NSl7cRHvAA0H105bXMHDCp1tf7uxzbQ7ZGnbkgYg/edit?usp=drivesdk",
-  "manifestId": "1R37Udw5BX-Kd_w6qlsjPDPtssj32CqiI",
-  "masterDocUrl": "https://docs.google.com/document/d/100z2sHXEZzqJ6lmXlisVfU0dT5DTyZ3IEP9xer-V5-0/edit"
- },
- {
-  "slug": "site-unavailable",
-  "title": "Site Unavailable",
-  "folderUrl": "https://drive.google.com/drive/folders/1tbAgXPiOUxnkCF_1wFsdH-0Zk-0U57sG",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1UEXYCQGhs654hv62Vv285FUMQomDn7a6qmZgXVSk7a4/edit?usp=drivesdk",
-  "manifestId": "11i2Y9k5vMYDy-qlHtAiP9Zq2R3EnrewO",
-  "masterDocUrl": "https://docs.google.com/document/d/1o8u3AjFnAPK6bNjL7nKGLuuXSjTGxj-l8XcYD-6q-Jc/edit"
- },
- {
-  "slug": "test3a",
-  "title": "Test_3A",
-  "folderUrl": "https://drive.google.com/drive/folders/1Q56cnVUjWlYeTZVygxcJoIWQIL5sVlhn",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/15Qb7mrD0xbLROvLw7n70fLH2hiU-riVi_eIXvUceDXo/edit?usp=drivesdk",
-  "manifestId": "1UMNYn0JQcokXtq1rui13asoHb-oYbfK-",
-  "masterDocUrl": "https://docs.google.com/document/d/1uNxHWVpvOuCx2iLt3lOGNuIuXIPNuBjIEIlr7dn4s2E/edit"
- },
- {
-  "slug": "testimageembed",
-  "title": "Test_Image_Embed",
-  "folderUrl": "https://drive.google.com/drive/folders/1CEKgNJI70nVwZ4XI20Py47MSbU6DiuKu",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/17LjOrZvEsAcP9aTnL7BOlvbYBp4dVLarzFd5bwUUq2w/edit?usp=drivesdk",
-  "manifestId": "1jO0-SIuu3SqTFP1yNo73x6IAljyXV11U",
-  "masterDocUrl": "https://docs.google.com/document/d/1maUaM15HafremNh3gZVq43AXCTls6tcWSY7JrFBLlcM/edit"
- },
- {
-  "slug": "villagers-manskoshuis",
-  "title": "Villagers Manskoshuis",
-  "folderUrl": "https://drive.google.com/drive/folders/1YS4CrvyM-w099t8mRiI1V__aBvIjrB7d",
-  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1-FsktixZaFCJguxiULV5XAV4V5x1t6EItjcswLerPB8/edit?usp=drivesdk",
-  "manifestId": "1llGv5nRuVxBB0eTveopp576PT1qeiDbc",
-  "masterDocUrl": "https://docs.google.com/document/d/1zs3rpVd-RDQdnMo_8lBZ3FadxMI7g0gk1cqNiIPPM5o/edit"
- }
+  {
+    "slug": "2026-academic-literacy",
+    "title": "2026 | Academic Literacy",
+    "folderUrl": "https://drive.google.com/drive/folders/1W91WtaIhMkpLCThpNIHPTcOSvFjo97es",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1Ftg-t_7KSRpbkOAWJ1EvKffZAu6N3pKB5d7i21Ug-hQ/edit?usp=drivesdk",
+    "manifestId": "1JNG5RwLyk1W6J0X0OKbnmrdW43DZwBGG",
+    "masterDocUrl": "https://docs.google.com/document/d/1H3eLKfUBUlMoK8Wd4d8KBhofk6992QvGNEDGpTVigSs/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "alde112-2026",
+    "title": "ALDE112-2026",
+    "folderUrl": "https://drive.google.com/drive/folders/1EVWam9P4lWCqCdvDMJa0d4Ysan07pABH",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1gjR1A-neu64TIOIe1k4s8hxOG3Y3K_e8U7eCqUJrjP0/edit?usp=drivesdk",
+    "manifestId": "1Dby_SU36apmOVq86rkLsxxF-EMYIhrEi",
+    "masterDocUrl": "https://docs.google.com/document/d/14j-_jkg4hNV-2x7MElZeCX05iYMpqWKwJ97rmyLuBWQ/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "appm121-2026",
+    "title": "APPM121-2026",
+    "folderUrl": "https://drive.google.com/drive/folders/1pIwsrHDIpcqoOhJo5Yj3SOO1DKcqi2X-",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1QQHXxlXqoD5tJmL8z-BbdSeqO9Py9JRWB-KX14_LHDA/edit?usp=drivesdk",
+    "manifestId": "1bldKTXn2MqYMmdAvz9j1_L00REV1sFkY",
+    "masterDocUrl": "https://docs.google.com/document/d/1-Nbie-1I1CB9Rbbs22OhyqGdKJKYq8yWrs3Fy1dW_kU/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "b58fe6cb-36f0-431b-846a-a188df91278f",
+    "title": "b58fe6cb-36f0-431b-846a-a188df91278f",
+    "folderUrl": "https://drive.google.com/drive/folders/1CmH9nZ2ClGJjiO4ooWyxOdVzfGtYQZ6W",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1sH1yEe6Dszmbu-ji5Mil7FDDLBxLpsSppblLMkfigVM/edit?usp=drivesdk",
+    "manifestId": "1lE188RkpW5JgN0btoxzjS-Sf2aaASbmC",
+    "masterDocUrl": "https://docs.google.com/document/d/1TvNAe90DE72EuNw4V2vt7BxzH_Mnfef56FJfdBlncgE/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "cmpg115friday",
+    "title": "CMPG115_Friday",
+    "folderUrl": "https://drive.google.com/drive/folders/1T8owIiigDlSiVDvpTrn4cYCJ3ulp8DZz",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1kYmUgzh7fCvCR6SCpTUXeLtGxzQT4g05tFzAYOOS7do/edit?usp=drivesdk",
+    "manifestId": "1yj5NxKb_4mzThSyxnVsQppDRpSoJ9D9Q",
+    "masterDocUrl": "",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "cmpg115-2026",
+    "title": "CMPG115-2026",
+    "folderUrl": "https://drive.google.com/drive/folders/1cOOZ1YSQEoXcpNHmvI53KJoJhRv3wfxU",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1f4UoaESzoHulIHk0yaJYHVhTqpxy-gByhNShPrcoAxU/edit?usp=drivesdk",
+    "manifestId": "1AYAt586RnMtMvbbZqZxp-t6BsqnLiBAd",
+    "masterDocUrl": "https://docs.google.com/document/d/1d1wWCnzhc4RvUXJY5wvqp204auNGmYiUAe4rs_Hz5Wk/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "eeri124-2026",
+    "title": "EERI124-2026",
+    "folderUrl": "https://drive.google.com/drive/folders/1vZiNWQP8LYXn9iouJ9yHF19Z4SgACd2v",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1w-Q70Tg03e7wOVtpmpzwJmF7QQ7HhdETY5KJ1Bf9rNc/edit?usp=drivesdk",
+    "manifestId": "1VQ0kPD0mM61qyyaLlCpKgjbGeOU7n2ko",
+    "masterDocUrl": "https://docs.google.com/document/d/1o0WpMa7xVpME3PCxUfg_SFjBiLiF_tfpp0uP2yGjHGk/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "engineering-chapter-2026",
+    "title": "Engineering Chapter 2026",
+    "folderUrl": "https://drive.google.com/drive/folders/1UG0Bq4lMuZmkwjcFPiifnlxBazS4bfNv",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1RqfLOZdsOyGq6zSWivh7-WkbZD1yWPR5Enymc4AMGkQ/edit?usp=drivesdk",
+    "manifestId": "1hjInrkufmykUvQThNLaEbP1xDKcfS2Qr",
+    "masterDocUrl": "https://docs.google.com/document/d/1DM1sOtqXwrnzKgaSaAm7DFPcYAGWUKbaxQiOt-Ux6wI/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "engineering-undergraduate",
+    "title": "Engineering Undergraduate",
+    "folderUrl": "https://drive.google.com/drive/folders/1fXuQRWE7EyICKS-fK7s1Na4ZrMu1tA8E",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1mNngQldWrG5We00z_uzs-KlMGW09pbK0ZSTRA-2mezA/edit?usp=drivesdk",
+    "manifestId": "1ODeaQR1vMQK0ALuBzQAOcmtrvH8W0GeU",
+    "masterDocUrl": "https://docs.google.com/document/d/1VRP4xtEoGFVMrlRugoE0Mpe14OYeNFrXmNXUCCkDgws/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "first-year-physics-pr",
+    "title": "First year physics pr ...",
+    "folderUrl": "https://drive.google.com/drive/folders/1XKTtLvJZkh12FemRSDw70nFQuQdiqNMk",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1jKGY8ZUOsEvpLCezT7mApSjGFJrgD9dVreC6HYzUHYs/edit?usp=drivesdk",
+    "manifestId": "1GySlyds0bjLE91LGLXtFT83u4BZJTzKv",
+    "masterDocUrl": "https://docs.google.com/document/d/1YU0qWDlwl1xES9m-oUSdMca2hTuG6mCW-yAJg-Shk78/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "home",
+    "title": "Home",
+    "folderUrl": "https://drive.google.com/drive/folders/1EStQdYeIR-dlhj1iPlruFJC6e1fuqDos",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1zWjNXv8whe0V3d7yLErtC8yzpGrUN7UqH7n-0yXHb-I/edit?usp=drivesdk",
+    "manifestId": "1F5Kk628ABtZvpm6Z3o1F8tvrIyhmH_E-",
+    "masterDocUrl": "https://docs.google.com/document/d/1yisTH5grwZIM9PJ8y4VZa9eIwh8C7IAXG3GMMetc-SY/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "imageembedtest",
+    "title": "Image_Embed_Test",
+    "folderUrl": "https://drive.google.com/drive/folders/19zXrV5shrIWahDL9WTc_7UYtWM-OC6ez",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1Cps0rRxADHe2renEwVtI8Qr6nEprtKRAR0VWDlEwEv0/edit?usp=drivesdk",
+    "manifestId": "1fINIQKcKm7an9vyZJZKRkKWy6tlnOmL_",
+    "masterDocUrl": "https://docs.google.com/document/d/1S1qG4hCTnfB0DcTyrWVsvt01fSjBw8DQbZRJzyewF74/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "ingm111-2026",
+    "title": "INGM111-2026",
+    "folderUrl": "https://drive.google.com/drive/folders/1Dncd3sCA3hrZ75P-Oy-DbEiqylHUZOS0",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1uRsa44YuT3lMyxGbq3A_eE1cJRMuTxfihvJOaEM8Gt0/edit?usp=drivesdk",
+    "manifestId": "18eLdtomMcYiQCqVStKoItIGSxlHzqv7g",
+    "masterDocUrl": "https://docs.google.com/document/d/1Y9_0oOaMOBnKFzlJASwin8O0T0mcVm-tyaa-zSuc8VU/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "ingm122-2026",
+    "title": "INGM122-2026",
+    "folderUrl": "https://drive.google.com/drive/folders/1npcpfVK0NRwHZ2OZ2lJG6CO0VAQKLucl",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1NXserEclBTzH0CbXHsuSmSd1VVaF5qM8R1InR5dJuwM/edit?usp=drivesdk",
+    "manifestId": "1Plkcti4rUgD9yqlIvKEhmfY-U7RUHl8-",
+    "masterDocUrl": "https://docs.google.com/document/d/1yEHGWm6LkocafexlRuph0NxB3jAC330m2n7IioNQxr8/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "library",
+    "title": "Library",
+    "folderUrl": "https://drive.google.com/drive/folders/1bpDwqUbScaEqU9caNTHPMGakxBDtNumV",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1IL8eGEHoMidJfyF1DBYyF6uDQNN7kxlycMSnv6wNPoY/edit?usp=drivesdk",
+    "manifestId": "1pxVYM5H4uvniKXTFd5_6Mxz2ibytDaEm",
+    "masterDocUrl": "https://docs.google.com/document/d/14DHb45CK2A4PXc8vcDNcOutpCrRm1fiD5U__0BVXkqw/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "maths-club",
+    "title": "Maths Club",
+    "folderUrl": "https://drive.google.com/drive/folders/1ZsefaTZLVNQlXyYvKuxlJQX5JO7psKQ4",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1B8j-cuAw8_k9CJX2L_-LOqT_9NKlw3CoNh7XKAiQ9Gg/edit?usp=drivesdk",
+    "manifestId": "126ysZB0o_2M8BFiOjAzB96hMC-djGhtK",
+    "masterDocUrl": "https://docs.google.com/document/d/1bwkGZr4NKq_YqiDJRSg1hH3TsZuo6pjZiDi4KXMIPEo/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "message-of-the-day",
+    "title": "Message Of The Day",
+    "folderUrl": "https://drive.google.com/drive/folders/16QJ8JJHzsHK7Zg_YtlYdPKXL63ALcjgh",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1E77mrIi3dDJmhFa7DIjlLpwXB3oeVf64B9VGh1ZB4uc/edit?usp=drivesdk",
+    "manifestId": "1da47JGdRmout-kzOQ5OpW_Pd0ELyuM57",
+    "masterDocUrl": "",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "mths111-2026",
+    "title": "MTHS111-2026",
+    "folderUrl": "https://drive.google.com/drive/folders/1fN8Hp2MpmqZ2Stl22XOQtsvvAWXggQIA",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/162EJRmsdA0hR_enUSzwXfsaZaTN4xz4rWpJyG6qENfo/edit?usp=drivesdk",
+    "manifestId": "19Jyzsvwz7wXjc3nxqZbvLS01JmYc0A5a",
+    "masterDocUrl": "https://docs.google.com/document/d/1Fsb5fNSL-aSwbKxuVb84yH1cFjfQHTIJIFdcRgi5eg0/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "mths121-2026",
+    "title": "MTHS121-2026",
+    "folderUrl": "https://drive.google.com/drive/folders/1lKwq4Zu_3crnwgga-y2G9_b-R5bsbCKg",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1lMCTWGy87L8-C47GLECRa99KAy5v3WARW5sCZ0ukl5Q/edit?usp=drivesdk",
+    "manifestId": "1j5VpP8Mt29LvwHMDYyo6KY6d1qqoq52a",
+    "masterDocUrl": "https://docs.google.com/document/d/1QkNomH4ghBf3GC9hELb9VVFSO6Q8cu2AbS03L1y8xQM/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "nche111-2026",
+    "title": "NCHE111-2026",
+    "folderUrl": "https://drive.google.com/drive/folders/1MLGOOrBLh5IHh_z4lRcqYF8pF1kHzRF-",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1JacwF4Yx4I0hI_7Ro3oDKMhSevdfnH6aqBtXWxSs3yw/edit?usp=drivesdk",
+    "manifestId": "1r9NC_NcNnFSkcsR570JsirO8yeC2f5qF",
+    "masterDocUrl": "https://docs.google.com/document/d/1v9m05b8-IB3xFzrY7g17zyoAjzsHjS3MeaPTnK_Uh7o/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "nphy111-2026",
+    "title": "NPHY111-2026",
+    "folderUrl": "https://drive.google.com/drive/folders/1kTtY_oKTIWEXxuWSJuaKfKpDC5nDzuZf",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1huammCsZAlfPcPZELNM2dq_2TyiAlsa56BmELQ83ci0/edit?usp=drivesdk",
+    "manifestId": "11QbYJISren8ACn37EfuzCoDuFdsP2eUk",
+    "masterDocUrl": "https://docs.google.com/document/d/1wljfudKzLnFcw6pw-RCo2s-uvXBQXC0swQeoxfgDpHc/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "nphy121-2026",
+    "title": "NPHY121-2026",
+    "folderUrl": "https://drive.google.com/drive/folders/1wDKAuS8XElkOqZV24KccAuCcEpf6DO1j",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1QYvxAZxLqo7IqRCn3cY6Y0HRk1m3_sWQWNPxwF925Ng/edit?usp=drivesdk",
+    "manifestId": "1p9nLRXpNPULQmWcAM60uA9GzaiLXcoxw",
+    "masterDocUrl": "https://docs.google.com/document/d/1GKtTZc-OEFD1yocD55oXOFwHEdyP9I0CMf0Q545O0eA/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "physics-prac-2026sem2",
+    "title": "Physics Prac 2026SEM2",
+    "folderUrl": "https://drive.google.com/drive/folders/1W7_cJuqiD7glND-ZENlnQ171tdwTcpjs",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1F6NY_fq52Z_Ez9AufcIGxyIT_2mRrMT9Wf9Omd6DqkI/edit?usp=drivesdk",
+    "manifestId": "15qODPGY8X6WF_tqbGIc-1ejXoXVsSsPz",
+    "masterDocUrl": "https://docs.google.com/document/d/1LLWvic0gOM22sgKBAAhbvz8UoZa5RQud0krezmOziI8/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "ppep171-2026",
+    "title": "PPEP171-2026",
+    "folderUrl": "https://drive.google.com/drive/folders/1AJGLWMZbOuUDVOGBSloGfyGH1h-cl7hV",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1nKbJQmqxedYEc1GSlb4wb4SLoqXQ8vyuznU18FbYmKU/edit?usp=drivesdk",
+    "manifestId": "1CjSdmuenhonMqnIyqKKtMwod5MTwjP6R",
+    "masterDocUrl": "https://docs.google.com/document/d/1Ri3AVt6c9iuMIMxkAM_SrqsrZ4mo22NQhacBQamrvqo/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "reii121-2026",
+    "title": "REII121-2026",
+    "folderUrl": "https://drive.google.com/drive/folders/13e2hrJxNPK4no5UIeY6Im8ySXZ9SjDGh",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1nXhPt3EiislIGCE3v5PKBknwjELHVl3jQzoNHyzGoJ4/edit?usp=drivesdk",
+    "manifestId": "1Ycpyd5iqqisxOnC8hCyd3ND-7qX0baaI",
+    "masterDocUrl": "https://docs.google.com/document/d/1yKH2nRR3zQn0gZQlVFawivBEHnt-u7BQn3K_wAIfc80/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "seece-work-safety-",
+    "title": "SEECE Work & Safety - ...",
+    "folderUrl": "https://drive.google.com/drive/folders/1-N-oZFOkL0Q0uTt5tX9rGPuAPm8T55ty",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1dG9NSl7cRHvAA0H105bXMHDCp1tf7uxzbQ7ZGnbkgYg/edit?usp=drivesdk",
+    "manifestId": "1R37Udw5BX-Kd_w6qlsjPDPtssj32CqiI",
+    "masterDocUrl": "https://docs.google.com/document/d/100z2sHXEZzqJ6lmXlisVfU0dT5DTyZ3IEP9xer-V5-0/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "site-unavailable",
+    "title": "Site Unavailable",
+    "folderUrl": "https://drive.google.com/drive/folders/1tbAgXPiOUxnkCF_1wFsdH-0Zk-0U57sG",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1UEXYCQGhs654hv62Vv285FUMQomDn7a6qmZgXVSk7a4/edit?usp=drivesdk",
+    "manifestId": "11i2Y9k5vMYDy-qlHtAiP9Zq2R3EnrewO",
+    "masterDocUrl": "https://docs.google.com/document/d/1o8u3AjFnAPK6bNjL7nKGLuuXSjTGxj-l8XcYD-6q-Jc/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "test3a",
+    "title": "Test_3A",
+    "folderUrl": "https://drive.google.com/drive/folders/15MD-Na1KLLmsJDvpBPzfhG3b8-biLl7K",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1h1aqTjmnHscpyUBuvOYqRYTijjsJrXB2z1TMxvTEW8M/edit?usp=drivesdk",
+    "manifestId": "",
+    "masterDocUrl": "https://docs.google.com/document/d/1c-f_iqso-CeNKTaAOcAcHTQxzmxZJ23HO0klDctNddg/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "testimageembed",
+    "title": "Test_Image_Embed",
+    "folderUrl": "https://drive.google.com/drive/folders/1CEKgNJI70nVwZ4XI20Py47MSbU6DiuKu",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/17LjOrZvEsAcP9aTnL7BOlvbYBp4dVLarzFd5bwUUq2w/edit?usp=drivesdk",
+    "manifestId": "1jO0-SIuu3SqTFP1yNo73x6IAljyXV11U",
+    "masterDocUrl": "https://docs.google.com/document/d/1maUaM15HafremNh3gZVq43AXCTls6tcWSY7JrFBLlcM/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "villagers-manskoshuis",
+    "title": "Villagers Manskoshuis",
+    "folderUrl": "https://drive.google.com/drive/folders/1YS4CrvyM-w099t8mRiI1V__aBvIjrB7d",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1-FsktixZaFCJguxiULV5XAV4V5x1t6EItjcswLerPB8/edit?usp=drivesdk",
+    "manifestId": "1llGv5nRuVxBB0eTveopp576PT1qeiDbc",
+    "masterDocUrl": "https://docs.google.com/document/d/1zs3rpVd-RDQdnMo_8lBZ3FadxMI7g0gk1cqNiIPPM5o/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  }
 ]
