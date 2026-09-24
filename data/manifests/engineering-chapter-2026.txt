@@ -24,7 +24,7 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-09-24T16:52:33.012Z
 total_files: 511
-generated: 2026-09-24T16:54:27.770Z
+generated: 2026-09-24T16:54:45.842Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -397,7 +397,7 @@ INCOMPATIBLE | Tia_Micro 12 Sep.jpeg | jpg | 2026-09-06T14:53:11.167Z | announce
 INCOMPATIBLE | TIA-MICRO.jpeg | jpeg | 2026-09-06T14:53:20.829Z | announcement_attachment |  | fails=0 | failts=
 INCOMPATIBLE | Micro 1Aug.jpeg | jpeg | 2026-09-06T14:53:20.829Z | announcement_attachment |  | fails=0 | failts=
 INCOMPATIBLE | Micro 1Aug.jpeg | jpg | 2026-09-06T14:53:40.249Z | announcement_attachment |  | fails=0 | failts=
-NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-07T21:05:18.394Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/84ecbd9d-4933-4911-a7da-31e9d95a378e/2026.08.24_Nomination%20Form%20Students%20Academic%20Chapter.pdf | fails=0 | failts=
+NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-09-24T16:54:43.523Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/84ecbd9d-4933-4911-a7da-31e9d95a378e/2026.08.24_Nomination%20Form%20Students%20Academic%20Chapter.pdf | fails=0 | failts=
 NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-07T21:05:18.394Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/567058f8-c620-4a17-8d4c-e7bb68aa0c78/2026.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf | fails=0 | failts=
 NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-07T21:05:34.052Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/d30807db-f12b-4c7f-b9c8-337d60e10b49/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | fails=0 | failts=
 NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-07T21:05:34.052Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/b697bdc6-8a29-4480-bd92-341b95882647/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | fails=0 | failts=
@@ -530,7 +530,7 @@ NOT_SYNCED | SubCom.jpg | jpg | 2026-09-07T21:23:14.412Z | announcement_attachme
 NOT_SYNCED | 2026.09.08_Prelim nominees_ELIGIBLE_SAC.pdf | pdf | 2026-09-24T16:54:25.442Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e6262f8d-ae5e-48fe-9d88-117fb7d4897f/2026.09.08_Prelim%20nominees_ELIGIBLE_SAC.pdf | fails=0 | failts=
 NOT_SYNCED | 2026.09.08_Prelim nominees_NOT ELIGIBLE_SAC.pdf | pdf | 2026-09-24T16:54:25.442Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5bdcf5e7-ea45-4f48-8b91-992e06eaeb75/2026.09.08_Prelim%20nominees_NOT%20ELIGIBLE_SAC.pdf | fails=0 | failts=
 NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-24T16:54:08.082Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2782970e-ec86-4825-922c-41b63194df60/2026.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf | fails=0 | failts=
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-08T14:28:12.027Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e8695174-c99e-4c45-8e46-ea17346b3c00/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | fails=0 | failts=
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-24T16:54:43.523Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e8695174-c99e-4c45-8e46-ea17346b3c00/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | fails=0 | failts=
 NOT_SYNCED | Siemens TIA-Micro.jpeg | jpeg | 2026-09-24T16:54:08.082Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2f148bcc-5287-44b3-936d-f1b282d6e386/Siemens%20TIA-Micro.jpeg | fails=0 | failts=
 NOT_SYNCED | 2026_Prelim list elected_SAC_Engineering.pdf | pdf | 2026-09-24T16:52:59.277Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7c81a1a1-5e34-494c-9e71-f98e3fe2a55c/2026_Prelim%20list%20elected_SAC_Engineering.pdf | fails=0 | failts=
 NOT_SYNCED | Schedule_Engineering.pdf | pdf | 2026-09-24T16:53:16.216Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/05dde00e-041c-455f-947e-5c93d11b50f1/Schedule_Engineering.pdf | fails=0 | failts=
