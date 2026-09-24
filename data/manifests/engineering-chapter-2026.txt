@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-09-23T10:52:29.972Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -23,12 +23,12 @@ calendar_id: 0edd80cff580a1120dcb286ec38e30d94277d02d15eaf4a96b119125d6668871@gr
 title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-09-24T16:52:33.012Z
-total_files: 504
-generated: 2026-09-09T13:33:31.891Z
+total_files: 511
+generated: 2026-09-24T16:53:01.384Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-24T16:52:59.277Z | announcement_attachment |  | fails=0 | failts=
 NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
 NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
 NOT_SYNCED | Tia_Pro1 30 Sep.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
@@ -532,6 +532,13 @@ NOT_SYNCED | 2026.09.08_Prelim nominees_NOT ELIGIBLE_SAC.pdf | pdf | 2026-09-08T
 NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-09-09T05:26:08.587Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2782970e-ec86-4825-922c-41b63194df60/2026.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf | fails=0 | failts=
 NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-09-08T14:28:12.027Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/e8695174-c99e-4c45-8e46-ea17346b3c00/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | fails=0 | failts=
 NOT_SYNCED | Siemens TIA-Micro.jpeg | jpeg | 2026-09-09T13:33:19.286Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2f148bcc-5287-44b3-936d-f1b282d6e386/Siemens%20TIA-Micro.jpeg | fails=0 | failts=
+NOT_SYNCED | 2026_Prelim list elected_SAC_Engineering.pdf | pdf | 2026-09-24T16:52:59.277Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7c81a1a1-5e34-494c-9e71-f98e3fe2a55c/2026_Prelim%20list%20elected_SAC_Engineering.pdf | fails=0 | failts=
+NOT_SYNCED | Schedule_Engineering.pdf | pdf | 2026-09-24T16:52:30.682Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/05dde00e-041c-455f-947e-5c93d11b50f1/Schedule_Engineering.pdf | fails=0 | failts=
+NOT_SYNCED | 2026.09.19_Final_list_of_Engineering_SAC_Chairperson_DeputyChairperson.pdf | pdf | 2026-09-24T16:52:30.682Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/acf3a22f-09b5-4037-b9e4-f343871c0ae9/2026.09.19_Final_list_of_Engineering_SAC_Chairperson_DeputyChairperson.pdf | fails=0 | failts=
+NOT_SYNCED | 2026_Prelim list elected_SAC_Faculty_of_Engineering.pdf | pdf | 2026-09-24T16:52:30.682Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/4491af0d-0768-48b6-9cdf-2fd0af0ce3b8/2026_Prelim%20list%20elected_SAC_Faculty_of_Engineering.pdf | fails=0 | failts=
+NOT_SYNCED | Schedule_Engineering.pdf | pdf | 2026-09-24T16:52:30.682Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/20f2aa93-dcf5-42cd-8eb7-ab63b8923cc2/Schedule_Engineering.pdf | fails=0 | failts=
+NOT_SYNCED | 2026.09.14_Final list of candidates_SAC.pdf | pdf | 2026-09-24T16:52:30.682Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/de4d9407-f0b0-4eb0-9b8e-72eede0c0e90/2026.09.14_Final%20list%20of%20candidates_SAC.pdf | fails=0 | failts=
+NOT_SYNCED | Schedule_Engineering.pdf | pdf | 2026-09-24T16:52:30.682Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/56f50460-a4bd-434d-b358-3b45ef26af31/Schedule_Engineering.pdf | fails=0 | failts=
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
