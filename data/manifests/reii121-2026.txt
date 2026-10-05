@@ -24,7 +24,7 @@ title: REII121-2026
 last_sync: 2026-10-05T20:53:13.853Z
 last_announcement: 2026-10-05T13:04:17.687Z
 total_files: 313
-generated: 2026-10-05T20:27:49.146Z
+generated: 2026-10-05T22:16:15.329Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -322,8 +322,8 @@ INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-05T16:17:07.904Z | announcement_attac
 INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-05T16:17:37.931Z | announcement_attachment |  | fails=0 | failts=
 INCOMPATIBLE | AT89LP51RD2.H | h | 2026-09-06T13:12:24.400Z | announcement_attachment |  | fails=0 | failts=
 INCOMPATIBLE | AT89LP51RD2.H | h | 2026-10-05T20:27:48.226Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/4fd1db7d-0399-4017-8984-d4c1c71b751e/Announcements/f875517f-34b1-474a-8e48-181e72b4bd80/AT89LP51RD2.H | fails=0 | failts=
-NOT_SYNCED | MSA 1 Spetember 2026.PNG | png | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/MSA%201%20Spetember%202026.PNG | fails=0 | failts=
-NOT_SYNCED | Textbook.PNG | png | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Textbook.PNG | fails=0 | failts=
+NOT_SYNCED | MSA 1 Spetember 2026.PNG | png | 2026-10-05T22:16:14.144Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/MSA%201%20Spetember%202026.PNG | fails=0 | failts=
+NOT_SYNCED | Textbook.PNG | png | 2026-10-05T22:16:14.144Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Textbook.PNG | fails=0 | failts=
 NOT_SYNCED | BaseBoardComponents.PNG | png | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Hardware/BaseBoardComponents.PNG | fails=0 | failts=
 NOT_SYNCED | Micro89LP51RD2.PNG | png | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Hardware/Micro89LP51RD2.PNG | fails=0 | failts=
 NOT_SYNCED | Video Links.docx | docx | 2026-09-09T05:33:10.246Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Hardware/Video%20Links.docx | fails=0 | failts=
@@ -346,3 +346,14 @@ NOT_SYNCED | PunteBoekREII121_MSA_1Sep2026.pdf | pdf | 2026-10-05T20:27:48.226Z 
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) REII121-2026 — full extracted text from all synced files and lessons
 (SCHEDULE) REII121-2026 — calendar events and announcements spreadsheet
+--- LESSONS ---
+SYNCED | Microcontroller Board | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/c0fba4f7-d458-4bea-820d-246fa6afc6c4/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2746786&postedComment=false&addBefore=&itemId=24596746&path=log&topicId=&addTool=-1&recheck=&id=&forumId=
+
+--- LESSON HASHES ---
+https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/c0fba4f7-d458-4bea-820d-246fa6afc6c4/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2746786&postedComment=false&addBefore=&itemId=24596746&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | b0d5c16b5ce116edc53938eea997c5e334645aa259c5b3481ef6ce0404cad7f8
+SYNCED | Software | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/c0fba4f7-d458-4bea-820d-246fa6afc6c4/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2747444&postedComment=false&addBefore=&itemId=24603190&path=log&topicId=&addTool=-1&recheck=&id=&forumId=
+https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/c0fba4f7-d458-4bea-820d-246fa6afc6c4/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2747444&postedComment=false&addBefore=&itemId=24603190&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 08a3bc830881b4341a241066ef667982b39d3b887e2bfdb8b3f7d4a8da5fcf29
+SYNCED | Software | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/687473b7-265b-4c0c-821f-0c45c826ca08/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2747444&postedComment=false&addBefore=&itemId=24603190&path=log&topicId=&addTool=-1&recheck=&id=&forumId=
+https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/687473b7-265b-4c0c-821f-0c45c826ca08/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2747444&postedComment=false&addBefore=&itemId=24603190&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 10a43426fdeebcf6c21a59fad099749839f343e2924a7c455252aba7495d031a
+SYNCED | Microcontroller Board | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/687473b7-265b-4c0c-821f-0c45c826ca08/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2746786&postedComment=false&addBefore=&itemId=24596746&path=log&topicId=&addTool=-1&recheck=&id=&forumId=
+https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/687473b7-265b-4c0c-821f-0c45c826ca08/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2746786&postedComment=false&addBefore=&itemId=24596746&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 2f84267774913d13eb393984dad9828318a6614aa5314aa9c066e7972a7cde3e
