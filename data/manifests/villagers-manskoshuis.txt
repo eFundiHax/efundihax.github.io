@@ -24,7 +24,7 @@ title: Villagers Manskoshuis
 last_sync: 2026-08-25T12:32:58.752Z
 last_announcement: 2026-10-05T12:47:36.444Z
 total_files: 112
-generated: 2026-10-05T21:28:11.614Z
+generated: 2026-10-05T21:28:29.036Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -115,7 +115,7 @@ NOT_SYNCED | Wessel Nienaber.JPG | jpg | 2026-10-05T21:08:54.273Z | resource | h
 NOT_SYNCED | 2023.10.15_Prelim_nominees_Villagers[1].pdf | pdf | 2026-10-05T21:08:54.273Z | resource | https://efundi.nwu.ac.za/access/content/group/f83e1476-32a9-4021-8559-035939f8a164/Villagers%202023-24/2023.10.15_Prelim_nominees_Villagers%5B1%5D.pdf | fails=0 | failts=
 SYNCED | 2023.10.15_Prelim nominees_NOT ELIGIBLE_template (Villagers).pdf | pdf | 2026-10-05T21:23:27.844Z | resource | https://efundi.nwu.ac.za/access/content/group/f83e1476-32a9-4021-8559-035939f8a164/Villagers%202023-24/2023.10.15_Prelim%20nominees_NOT%20ELIGIBLE_template%20(Villagers).pdf | fails=0 | failts=
 NOT_SYNCED | 2023.10.19_Prelim list elected_template_Residences Villagers.pdf | pdf | 2026-10-05T21:08:54.273Z | resource | https://efundi.nwu.ac.za/access/content/group/f83e1476-32a9-4021-8559-035939f8a164/Villagers%202023-24/2023.10.19_Prelim%20list%20elected_template_Residences%20Villagers.pdf | fails=0 | failts=
-SYNCED | 2023.10.27_Final list Villagers by-election.pdf | pdf | 2026-10-05T21:23:10.386Z | resource | https://efundi.nwu.ac.za/access/content/group/f83e1476-32a9-4021-8559-035939f8a164/Villagers%202023-24/2023.10.27_Final%20list%20Villagers%20by-election.pdf | fails=0 | failts=
+SYNCED | 2023.10.27_Final list Villagers by-election.pdf | pdf | 2026-10-05T21:28:26.729Z | resource | https://efundi.nwu.ac.za/access/content/group/f83e1476-32a9-4021-8559-035939f8a164/Villagers%202023-24/2023.10.27_Final%20list%20Villagers%20by-election.pdf | fails=0 | failts=
 NOT_SYNCED | Election Schedule for the Election of Villagers House Committee 2023-24 fin.pdf | pdf | 2026-10-05T21:08:54.273Z | resource | https://efundi.nwu.ac.za/access/content/group/f83e1476-32a9-4021-8559-035939f8a164/Villagers%202023-24/Election%20Schedule%20for%20the%20Election%20of%20Villagers%20House%20Committee%202023-24%20fin.pdf | fails=0 | failts=
 NOT_SYNCED | Anastasios Kruger.jpg | jpg | 2026-10-05T21:08:54.273Z | resource | https://efundi.nwu.ac.za/access/content/group/f83e1476-32a9-4021-8559-035939f8a164/Villagers%202024-25/Anastasios%20Kruger.jpg | fails=0 | failts=
 IMAGES_NOT_SYNCED | Anastasios Kruger-1.jpg | jpg | 2026-10-05T21:28:10.624Z | resource | https://efundi.nwu.ac.za/access/content/group/f83e1476-32a9-4021-8559-035939f8a164/Villagers%202024-25/Anastasios%20Kruger-1.jpg | fails=0 | failts=
