@@ -24,7 +24,7 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-10-05T13:05:23.229Z
 total_files: 512
-generated: 2026-10-06T19:21:37.121Z
+generated: 2026-10-06T19:23:56.472Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -406,7 +406,7 @@ NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 20
 NOT_SYNCED | Tia_Pro1 30 Sep.png | png | 2026-10-06T19:20:57.883Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/9a0d06d0-4cad-48da-8762-11101e114654/Tia_Pro1%2030%20Sep.png | fails=0 | failts=
 NOT_SYNCED | Tia_Micro 12 Sep.jpeg | jpeg | 2026-10-06T19:21:15.508Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/bc9ebc15-0cca-4a67-8bc6-67f4e539c5f4/Tia_Micro%2012%20Sep.jpeg | fails=0 | failts=
 NOT_SYNCED | TIA-MICRO.jpeg | jpeg | 2026-10-06T19:21:33.624Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/25d7af4b-ce52-484e-aed4-3ae8eb835606/TIA-MICRO.jpeg | fails=0 | failts=
-NOT_SYNCED | Micro 1Aug.jpeg | jpeg | 2026-10-06T19:21:33.624Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5657a470-3903-442c-a228-aab661063b8f/Micro%201Aug.jpeg | fails=0 | failts=
+NOT_SYNCED | Micro 1Aug.jpeg | jpeg | 2026-10-06T19:23:53.813Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5657a470-3903-442c-a228-aab661063b8f/Micro%201Aug.jpeg | fails=0 | failts=
 NOT_SYNCED | Micro 15Aug.png | png | 2026-10-06T07:19:42.228Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/d6f97a4a-e513-4eba-99bd-4d1483980771/Micro%2015Aug.png | fails=0 | failts=
 NOT_SYNCED | Micro 9July.png | png | 2026-10-06T07:21:21.174Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0d067416-ec76-4676-9c9c-322997920b82/Micro%209July.png | fails=0 | failts=
 NOT_SYNCED | Micro 18July.png | png | 2026-10-06T07:21:38.716Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f35768f9-04f1-4282-ae42-ace80b50878c/Micro%2018July.png | fails=0 | failts=
