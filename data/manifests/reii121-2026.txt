@@ -24,7 +24,7 @@ title: REII121-2026
 last_sync: 2026-10-07T11:29:05.699Z
 last_announcement: 2026-10-05T13:04:17.687Z
 total_files: 314
-generated: 2026-10-07T11:42:49.157Z
+generated: 2026-10-07T11:43:20.750Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -337,7 +337,7 @@ SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-10-07T11:41:16.784Z | resou
 NOT_SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-10-07T11:30:55.752Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII121%2BLes%2BRegisters%2B2026.pdf | fails=0 | failts=
 IMAGES_NOT_SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-10-07T11:39:17.844Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII%20121%2BLes%2BSignals%2B2026.pdf | fails=0 | failts=
 NOT_SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-10-07T11:30:55.752Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII%20121%20Flow%20Charts.pdf | fails=0 | failts=
-NOT_SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-10-07T11:30:55.752Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII121%20Les%20Micros%202026.pdf | fails=0 | failts=
+IMAGES_NOT_SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-10-07T11:43:19.724Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII121%20Les%20Micros%202026.pdf | fails=0 | failts=
 NOT_SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-10-07T11:30:55.752Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Software/REII%20121%20Development%20Board%20Documentation%202026.pdf | fails=0 | failts=
 NOT_SYNCED | SDCC.pdf | pdf | 2026-10-07T11:30:55.752Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Software/SDCC.pdf | fails=0 | failts=
 SYNCED | PunteBoekREII121_MSA_1Sep2026.pdf | pdf | 2026-10-07T11:36:28.791Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/4fd1db7d-0399-4017-8984-d4c1c71b751e/Announcements/048f3465-7b78-4075-ab4a-0ff486d6b2f8/PunteBoekREII121_MSA_1Sep2026.pdf | fails=0 | failts=
