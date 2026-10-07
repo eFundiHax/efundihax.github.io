@@ -24,7 +24,7 @@ title: Villagers Manskoshuis
 last_sync: 2026-08-25T12:32:58.752Z
 last_announcement: 2026-10-05T12:47:36.444Z
 total_files: 112
-generated: 2026-10-07T13:11:42.414Z
+generated: 2026-10-07T13:32:59.430Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -103,10 +103,10 @@ NOT_SYNCED | CAMPAIGNING AND VOTING SCHEDULE - VILLAGERS.pdf | pdf | 2026-10-07T
 NOT_SYNCED | Final list of candidates-Villagers.pdf | pdf | 2026-10-07T10:43:37.344Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/fc7999cc-ae47-4870-8379-a3d83e12d891/Final%20list%20of%20candidates-Villagers.pdf | fails=0 | failts=
 NOT_SYNCED | 2026.09.08_Prelim Villagers HC nominees_ELIGIBLE.pdf | pdf | 2026-10-07T10:43:50.071Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/f057bc75-8304-4739-8370-4e337ab90b2e/2026.09.08_Prelim%20Villagers%20HC%20nominees_ELIGIBLE.pdf | fails=0 | failts=
 NOT_SYNCED | 2026.09.08_Prelim  Villagers HC nominees_NOT ELIGIBLE.pdf | pdf | 2026-10-07T10:43:50.071Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/1f7e1cd8-f047-49f0-85e8-78eb9928e24f/2026.09.08_Prelim%20%20Villagers%20HC%20nominees_NOT%20ELIGIBLE.pdf | fails=0 | failts=
-SYNCED | 2026_Prelim list elected_template_Residence Villagers P & oP & HC.pdf | pdf | 2026-10-07T13:11:39.146Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/55666dcf-21e4-4302-b08b-84e95659dea6/2026_Prelim%20list%20elected_template_Residence%20Villagers%20P%20_%20oP%20_%20HC.pdf | fails=0 | failts=
+NOT_SYNCED | 2026_Prelim list elected_template_Residence Villagers P & oP & HC.pdf | pdf | 2026-10-07T13:32:58.141Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/55666dcf-21e4-4302-b08b-84e95659dea6/2026_Prelim%20list%20elected_template_Residence%20Villagers%20P%20_%20oP%20_%20HC.pdf | fails=0 | failts=
 NOT_SYNCED | 2026_Prelim list elected_template_Residence Villagers P & oP.pdf | pdf | 2026-10-07T10:43:23.004Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/8a08ccd1-decc-488f-993c-577f996b2962/2026_Prelim%20list%20elected_template_Residence%20Villagers%20P%20_%20oP.pdf | fails=0 | failts=
 NOT_SYNCED | 2026_Prelim list elected_template_Residence Villagers.pdf | pdf | 2026-10-07T10:43:23.004Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/c0c0228f-f5ee-425b-a01d-93061a7a6cee/2026_Prelim%20list%20elected_template_Residence%20Villagers.pdf | fails=0 | failts=
-NOT_SYNCED | 2026.09.25_Final list elected_Villagers.pdf | pdf | 2026-10-07T13:11:05.950Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/0d77f707-e038-42e9-9873-f28cdc553d4d/2026.09.25_Final%20list%20elected_Villagers.pdf | fails=0 | failts=
+NOT_SYNCED | 2026.09.25_Final list elected_Villagers.pdf | pdf | 2026-10-07T13:32:58.141Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f83e1476-32a9-4021-8559-035939f8a164/Announcements/0d77f707-e038-42e9-9873-f28cdc553d4d/2026.09.25_Final%20list%20elected_Villagers.pdf | fails=0 | failts=
 NOT_SYNCED | De La Rouviere Liebenberg.JPG | jpg | 2026-10-05T21:08:54.273Z | resource | https://efundi.nwu.ac.za/access/content/group/f83e1476-32a9-4021-8559-035939f8a164/Villagers%202023-24/HC%20candidate%20pictures/De%20La%20Rouviere%20Liebenberg.JPG | fails=0 | failts=
 NOT_SYNCED | George Kotze.JPG | jpg | 2026-10-05T21:08:54.273Z | resource | https://efundi.nwu.ac.za/access/content/group/f83e1476-32a9-4021-8559-035939f8a164/Villagers%202023-24/HC%20candidate%20pictures/George%20Kotze.JPG | fails=0 | failts=
 NOT_SYNCED | Henre Sweers.JPG | jpg | 2026-10-05T21:08:54.273Z | resource | https://efundi.nwu.ac.za/access/content/group/f83e1476-32a9-4021-8559-035939f8a164/Villagers%202023-24/HC%20candidate%20pictures/Henre%20Sweers.JPG | fails=0 | failts=
