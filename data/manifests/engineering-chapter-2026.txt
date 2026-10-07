@@ -24,11 +24,11 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-10-05T13:05:23.229Z
 total_files: 512
-generated: 2026-10-07T14:28:53.507Z
+generated: 2026-10-07T14:29:09.336Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-10-07T14:27:21.032Z | announcement_attachment |  | fails=0 | failts=
+NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-10-07T14:29:06.729Z | announcement_attachment |  | fails=0 | failts=
 NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
 NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
 NOT_SYNCED | Tia_Pro1 30 Sep.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
@@ -534,7 +534,7 @@ SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-10-06T16
 NOT_SYNCED | Siemens TIA-Micro.jpeg | jpeg | 2026-10-07T12:21:49.588Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2f148bcc-5287-44b3-936d-f1b282d6e386/Siemens%20TIA-Micro.jpeg | fails=0 | failts=
 NOT_SYNCED | 2026_Prelim list elected_SAC_Engineering.pdf | pdf | 2026-10-07T14:26:22.484Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/7c81a1a1-5e34-494c-9e71-f98e3fe2a55c/2026_Prelim%20list%20elected_SAC_Engineering.pdf | fails=0 | failts=
 SYNCED | Schedule_Engineering.pdf | pdf | 2026-10-07T14:28:50.814Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/05dde00e-041c-455f-947e-5c93d11b50f1/Schedule_Engineering.pdf | fails=0 | failts=
-SYNCED | 2026.09.19_Final_list_of_Engineering_SAC_Chairperson_DeputyChairperson.pdf | pdf | 2026-10-07T12:20:28.369Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/acf3a22f-09b5-4037-b9e4-f343871c0ae9/2026.09.19_Final_list_of_Engineering_SAC_Chairperson_DeputyChairperson.pdf | fails=0 | failts=
+NOT_SYNCED | 2026.09.19_Final_list_of_Engineering_SAC_Chairperson_DeputyChairperson.pdf | pdf | 2026-10-07T14:29:06.729Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/acf3a22f-09b5-4037-b9e4-f343871c0ae9/2026.09.19_Final_list_of_Engineering_SAC_Chairperson_DeputyChairperson.pdf | fails=0 | failts=
 SYNCED | 2026_Prelim list elected_SAC_Faculty_of_Engineering.pdf | pdf | 2026-10-07T12:21:19.477Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/4491af0d-0768-48b6-9cdf-2fd0af0ce3b8/2026_Prelim%20list%20elected_SAC_Faculty_of_Engineering.pdf | fails=0 | failts=
 NOT_SYNCED | Schedule_Engineering.pdf | pdf | 2026-10-07T12:20:47.136Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/20f2aa93-dcf5-42cd-8eb7-ab63b8923cc2/Schedule_Engineering.pdf | fails=0 | failts=
 NOT_SYNCED | 2026.09.14_Final list of candidates_SAC.pdf | pdf | 2026-10-07T12:21:49.588Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/de4d9407-f0b0-4eb0-9b8e-72eede0c0e90/2026.09.14_Final%20list%20of%20candidates_SAC.pdf | fails=0 | failts=
