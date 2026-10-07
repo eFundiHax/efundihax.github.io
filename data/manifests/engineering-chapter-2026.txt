@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-07T22:52:32.404Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -24,7 +24,7 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-10-05T13:05:23.229Z
 total_files: 512
-generated: 2026-10-07T14:53:25.293Z
+generated: 2026-10-07T15:15:19.974Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -428,10 +428,10 @@ SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-10-07T14
 NOT_SYNCED | 2025.09.04_Nomination Form Students Academic Chapter.pdf | pdf | 2026-10-07T14:49:27.421Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/870f1c08-7cad-4dd1-9239-e44c2e0ce557/2025.09.04_Nomination%20Form%20Students%20Academic%20Chapter.pdf | fails=0 | failts=
 SYNCED | 2025.09.03_PC Election Schedule_HC SAC_ (2).pdf | pdf | 2026-10-07T14:50:15.423Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/3402b808-8de5-4c44-a2cc-91767f82fce1/2025.09.03_PC%20Election%20Schedule_HC%20SAC_%20_2_.pdf | fails=0 | failts=
 NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-10-07T14:50:31.186Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/6f74b6ab-f38b-4515-95e6-e4bb570ac776/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | fails=0 | failts=
-SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-10-07T14:53:21.442Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/08716348-db80-4554-b81f-2872cd83f90e/2025.09.03_PC%20Election%20Schedule_HC%20SAC_.pdf | fails=0 | failts=
-NOT_SYNCED | IATC-Flyer.pdf | pdf | 2026-10-05T13:13:10.876Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2a237612-ba14-4766-ade5-b86fd6e21e80/IATC-Flyer.pdf | fails=0 | failts=
-NOT_SYNCED | NWU SADS Services 2025.pptx | pptx | 2026-10-05T13:13:10.876Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/bded5b1a-a5dc-4959-8a00-08b086696fd0/NWU%20SADS%20Services%202025.pptx | fails=0 | failts=
-NOT_SYNCED | Siemens Course.jpg | jpg | 2026-10-05T13:13:10.876Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2e7f76a4-c8c1-4485-9216-54d9fdd7d4ac/Siemens%20Course.jpg | fails=0 | failts=
+SYNCED | 2025.09.03_PC Election Schedule_HC SAC_.pdf | pdf | 2026-10-07T15:13:14.126Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/08716348-db80-4554-b81f-2872cd83f90e/2025.09.03_PC%20Election%20Schedule_HC%20SAC_.pdf | fails=0 | failts=
+NOT_SYNCED | IATC-Flyer.pdf | pdf | 2026-10-07T15:13:28.519Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2a237612-ba14-4766-ade5-b86fd6e21e80/IATC-Flyer.pdf | fails=0 | failts=
+NOT_SYNCED | NWU SADS Services 2025.pptx | pptx | 2026-10-07T15:13:28.519Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/bded5b1a-a5dc-4959-8a00-08b086696fd0/NWU%20SADS%20Services%202025.pptx | fails=0 | failts=
+SYNCED | Siemens Course.jpg | jpg | 2026-10-07T15:15:17.736Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2e7f76a4-c8c1-4485-9216-54d9fdd7d4ac/Siemens%20Course.jpg | fails=0 | failts=
 NOT_SYNCED | Prelim list elected Engineering.pdf | pdf | 2026-10-05T13:13:26.470Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/dd2aa706-a2ba-4a07-806b-c8e93fe9e864/Prelim%20list%20elected%20Engineering.pdf | fails=0 | failts=
 NOT_SYNCED | Go Vote.jpg | jpg | 2026-10-05T13:13:26.470Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/3b97158e-2561-4eb4-855c-fb11064522f2/Go%20Vote.jpg | fails=0 | failts=
 NOT_SYNCED | Siemens Course.jpg | jpg | 2026-10-05T13:13:26.470Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/2884f468-4355-4a1d-92ca-5bad1cb639f7/Siemens%20Course.jpg | fails=0 | failts=
