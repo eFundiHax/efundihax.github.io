@@ -24,7 +24,7 @@ title: REII121-2026
 last_sync: 2026-10-07T13:19:11.085Z
 last_announcement: 2026-10-05T13:04:17.687Z
 total_files: 314
-generated: 2026-10-07T13:23:18.551Z
+generated: 2026-10-07T13:23:38.125Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
@@ -330,7 +330,7 @@ IMAGES_NOT_SYNCED | Video Links.docx | docx | 2026-10-07T13:22:43.991Z | resourc
 SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-10-07T13:21:36.939Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111%20-%20Binary%20Values%202025.xlsx | fails=0 | failts=
 NOT_SYNCED | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-10-07T13:21:09.289Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111HF2%20Numbring%20Systems%20Binary%20P6-1-2020.pdf | fails=0 | failts=
 SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-10-07T13:21:09.289Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111%20-%20HF%203%20Binary.pdf | fails=0 | failts=
-IMAGES_NOT_SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-10-07T13:23:17.529Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111%20-%20HF%203%20Gates.pdf | fails=0 | failts=
+SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-10-07T13:23:37.140Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111%20-%20HF%203%20Gates.pdf | fails=0 | failts=
 SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-10-07T13:21:09.289Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Layout/Module%20assessment%20plan%20%20REII121%202026%20-%20Ver%201.0.pdf | fails=0 | failts=
 SYNCED | REII121 Planner-2026.pdf | pdf | 2026-10-07T13:21:09.289Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Layout/REII121%20Planner-2026.pdf | fails=0 | failts=
 SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-10-07T13:21:09.289Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII121%2BLes%2BHex-files%2B2026.pdf | fails=0 | failts=
