@@ -24,11 +24,11 @@ title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-10-05T13:05:23.229Z
 total_files: 512
-generated: 2026-10-07T12:16:42.906Z
+generated: 2026-10-07T12:17:28.015Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url)
-NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-10-07T12:16:40.472Z | announcement_attachment |  | fails=0 | failts=
+IMAGES_NOT_SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-10-07T12:17:24.072Z | announcement_attachment |  | fails=0 | failts=
 NOT_SYNCED | 2026.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
 NOT_SYNCED | 2026.08.24_Nomination Form Students Academic Chapter.pdf | pdf | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
 NOT_SYNCED | Tia_Pro1 30 Sep.png | png | 2026-08-26T20:56:58.635Z | announcement_attachment |  | fails=0 | failts=
