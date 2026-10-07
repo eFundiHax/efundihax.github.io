@@ -1,7 +1,7 @@
-// ==UserScript==
+﻿// ==UserScript==
 // @name         eFundiHax Sync
 // @namespace    https://efundihax.github.io
-// @version      4.0.19
+// @version      4.0.20
 // @description  Syncs eFundi announcements, resources, lessons and calendars to Google Drive via Apps Script
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -19,7 +19,7 @@
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '4.0.19';
+    window.__efhVersion = '4.0.20';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
@@ -79,6 +79,7 @@
 
     const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
     const SECRET = 'trackmania_is_peak';
+    var SERVER_OCR_ENABLED = true; // Prefer Apps Script Drive conversion; fallback to device-side Docstream/Tesseract
     const DAYS_BACK = 60;
     const FETCH_COUNT = 100;
     const SYNC_INTERVAL_MS = 5 * 60 * 1000;
@@ -848,6 +849,28 @@
         };
 
         try {
+            try {
+                if (SERVER_OCR_ENABLED) {
+                    var base64 = await new Promise(function(resolve) {
+                        var reader = new FileReader();
+                        reader.onload = function() { resolve(String(reader.result).split(',')[1]); };
+                        reader.readAsDataURL(fileBlob);
+                    });
+                    var serverResult = await post({
+                        action: 'convert_file', secret: SECRET,
+                        name: fileName, mime: fileBlob.type || 'application/octet-stream',
+                        base64: base64
+                    }, 60000);
+                    if (serverResult && serverResult.status === 'ok' && serverResult.text) {
+                        result.success = true;
+                        result.images = [{ id: 0, filename: fileName, source: fileName, type: fileBlob.type, text: serverResult.text }];
+                        console.log('[ServerOCR] image ' + fileName + ' -> ' + serverResult.text.length + ' chars');
+                        return result;
+                    }
+                }
+            } catch (serverErr) {
+                console.warn('[ServerOCR] convert_file failed for ' + fileName + ', falling back to local OCR:', serverErr.message || serverErr);
+            }
             var dataUrl = await new Promise(function(resolve) {
                 var reader = new FileReader();
                 reader.onload = function() { resolve(reader.result); };
@@ -1109,6 +1132,32 @@
         }
 
         try {
+            if (SERVER_OCR_ENABLED) {
+                var base64 = await new Promise(function(resolve) {
+                    var reader = new FileReader();
+                    reader.onload = function() { resolve(String(reader.result).split(',')[1]); };
+                    reader.readAsDataURL(fileBlob);
+                });
+                var serverResult = await post({
+                    action: 'convert_file', secret: SECRET,
+                    name: fileName, mime: fileBlob.type || 'application/octet-stream',
+                    base64: base64
+                }, 60000);
+                if (serverResult && serverResult.status === 'ok' && serverResult.text) {
+                    result.text = serverResult.text;
+                    result.images = [];
+                    result.success = true;
+                    result.imagesPending = false;
+                    result.hasImagesWithData = false;
+                    console.log('[ServerOCR] ' + fileName + ' -> text ' + serverResult.text.length + ' chars, ' + serverResult.imageCount + ' images');
+                    return result;
+                }
+            }
+        } catch (serverErr) {
+            console.warn('[ServerOCR] convert_file failed for ' + fileName + ', falling back to device OCR:', serverErr.message || serverErr);
+        }
+
+        try {
             var arrayBuffer = await fileBlob.arrayBuffer();
             var parseResult = await unsafeWindow.officeParser.parseOffice(arrayBuffer, {
                 extractAttachments: true
@@ -1241,7 +1290,7 @@
                         }
 
                         if (expandBtn && expandBtn.style.display !== 'none') {
-                            console.log('[U93] Clicking Expand All — observing DOM + network');
+                            console.log('[U93] Clicking Expand All ÔÇö observing DOM + network');
                             var startUrls = extractFilesFromDoc(iframeDoc).length;
                             var moDone = false;
                             var netIdleTimer = null;
@@ -1697,7 +1746,7 @@
             })(results[i]);
         }
 
-        // v4.0.14: one hung file must never wedge the batch — 240s cap each, failures resolve null
+        // v4.0.14: one hung file must never wedge the batch ÔÇö 240s cap each, failures resolve null
         var guarded = promises.map(function(pr, idx) {
             var timeout = new Promise(function(_, reject) {
                 setTimeout(function() { reject(new Error('file-promise-timeout idx=' + idx)); }, 240000);
@@ -1719,7 +1768,7 @@
 
             var img = new Image();
             img.src = dataUrl;
-            // v4.0.14: hard 150s timeout — CSP-blocked blob workers never settle, and .catch can't catch a hang
+            // v4.0.14: hard 150s timeout ÔÇö CSP-blocked blob workers never settle, and .catch can't catch a hang
             var _imgDone = false;
             var _resolveInner = null;
             var _imgTimer = setTimeout(function() {
@@ -2562,7 +2611,7 @@
                                                                             localHashes[lesson.page.url] = lesson.hash;
                                                                             updateProgress('lessons', idx + 1, changedLessons.length, 'Sending');
                                                                         }).catch(function(err) {
-                                                                            console.warn('[Lessons] Failed lesson: ' + lesson.lessonTitle + ' — ' + (err && err.message || err) + ' (continuing)');
+                                                                            console.warn('[Lessons] Failed lesson: ' + lesson.lessonTitle + ' ÔÇö ' + (err && err.message || err) + ' (continuing)');
                                                                             updateProgress('lessons', idx + 1, changedLessons.length, 'Failed (skipped)');
                                                                         });
                                                                     });
@@ -2939,7 +2988,7 @@
                         if (attempt < POST_MAX_ATTEMPTS) {
                             attempt++;
                             var backoff = POST_RETRY_DELAYS_MS[attempt - 1] || 2000;
-                            console.log('[Retry] ' + label + ' — Attempt ' + attempt + '/' + POST_MAX_ATTEMPTS + ' (wait ' + backoff + 'ms)');
+                            console.log('[Retry] ' + label + ' ÔÇö Attempt ' + attempt + '/' + POST_MAX_ATTEMPTS + ' (wait ' + backoff + 'ms)');
                             setTimeout(tryPost, backoff);
                         } else {
                             reject(new Error('Network error after ' + POST_MAX_ATTEMPTS + ' attempts'));
@@ -3080,7 +3129,7 @@
                     return performFullSync(prioritySiteId);
                 });
             } else {
-                console.log('[eFundiHax Sync] Homepage — full sync');
+                console.log('[eFundiHax Sync] Homepage ÔÇö full sync');
                 return performFullSync(null);
             }
         });
@@ -3096,7 +3145,7 @@
 
             // U126: Random order with priority
             var orderedSites = orderSitesForSync(sites, prioritySiteId);
-            console.log('[U126] Sync order: ' + orderedSites.map(function(s) { return s.title; }).join(' → '));
+            console.log('[U126] Sync order: ' + orderedSites.map(function(s) { return s.title; }).join(' ÔåÆ '));
 
             var totalProcessed = 0;
             var totalSkipped = 0;
@@ -3132,8 +3181,8 @@
                     var lessonTaskList = results[0];
                     var resourceTaskList = results[1];
                     stopHeartbeat();
-                    console.log('📚 Lessons: ' + lessonTaskList.length + ' tools');
-                    console.log('📎 Resources: ' + resourceTaskList.length + ' sites');
+                    console.log('­ƒôÜ Lessons: ' + lessonTaskList.length + ' tools');
+                    console.log('­ƒôÄ Resources: ' + resourceTaskList.length + ' sites');
 
                     startHeartbeat('parallel uploads');
 
@@ -3309,7 +3358,7 @@
     console.log('[eFundiHax Sync] v' + (window.__efhVersion || '?') + ' loaded. URL:', window.location.href);
 
     if (window.self !== window.top) {
-        console.log('[eFundiHax Sync] Inside iframe — skipping');
+        console.log('[eFundiHax Sync] Inside iframe ÔÇö skipping');
         return;
     }
 
