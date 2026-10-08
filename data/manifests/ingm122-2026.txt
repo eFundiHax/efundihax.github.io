@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-08T10:54:05.432Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -24,7 +24,7 @@ title: INGM122-2026
 last_sync: 2026-10-08T09:37:04.150Z
 last_announcement: 2026-10-08T09:36:45.581Z
 total_files: 816
-generated: 2026-10-08T09:57:29.287Z
+generated: 2026-10-08T12:42:21.345Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
@@ -841,7 +841,7 @@ INCOMPATIBLE | Online test 1 error.mp4 | mp4 | 2026-10-07T12:51:25.482Z | announ
 NOT_SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distance students (002).pdf | pdf | 2026-10-07T12:54:13.232Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/a8e0f540-31db-4f24-a55e-0e94e9ebc820/2026%20ACADEMIC%20ADVISING%20Infographic%20invitation%20to%20contact%20and%20distance%20students%20_002_.pdf | fails=0 | fails=0 | failts=
 SYNCED | PPE.pdf | pdf | 2026-10-07T12:54:55.678Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/7f8c371d-4a6d-4b0a-a95b-e2cfd39afd4b/PPE.pdf | fails=0 | fails=0 | failts=
 SYNCED | Class tests 1 & 2_marks.pdf | pdf | 2026-10-08T09:56:53.953Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/278a7e4f-07aa-44f4-91be-b365d99441e3/Class%20tests%201%20_%202_marks.pdf | fails=0 | fails=0 | failts=
-NOT_SYNCED | 2025.09.18.Framework_2026 calendar.pdf | pdf | 2026-10-08T09:56:53.953Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/f0e63899-4c05-4212-81ab-7e71ffed190f/2025.09.18.Framework_2026%20calendar.pdf | fails=0 | fails=0 | failts=
+SYNCED | 2025.09.18.Framework_2026 calendar.pdf | pdf | 2026-10-08T12:41:49.733Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/f0e63899-4c05-4212-81ab-7e71ffed190f/2025.09.18.Framework_2026%20calendar.pdf | fails=0 | fails=0 | failts=
 SYNCED | Prelab test marks.pdf | pdf | 2026-10-08T09:37:20.587Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/d8113230-361c-4b68-85e1-2af8fc74a2c0/Prelab%20test%20marks.pdf | fails=0 | fails=0 | failts=
 IMAGES_NOT_SYNCED | Online tests_27092026.pdf | pdf | 2026-10-08T09:56:17.612Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/790b3b86-27de-4e45-9862-56c52dbaf086/Online%20tests_27092026.pdf | fails=0 | fails=0 | failts=
 
