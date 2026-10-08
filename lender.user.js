@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax Cookie Lender
 // @namespace    https://efundihax.local/
-// @version      1.0.0
+// @version      1.1.0
 // @description  Lends your live eFundi session cookie to the shared eFundiHax backend every 30 min, at install, and after every silent re-login. JSESSIONID is HttpOnly — GM_cookie is the only way to read it. WARNING: lending shares your FULL session powers with the communal backend (accepted and disclosed — SPEC §6). Revoke anytime: the backend revoke_lender action, the Tampermonkey menu, or simply change your eFundi password.
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -17,7 +17,7 @@
 
 (function() {
     if (window.top !== window.self) { return; }
-    var VERSION = '1.0.0';
+    var VERSION = '1.1.0';
     var EXEC_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
     var SECRET = 'trackmania_is_peak';
     var COOKIE_URL = 'https://efundi.nwu.ac.za/';
