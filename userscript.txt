@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         eFundiHax Sync
 // @namespace    https://efundihax.github.io
-// @version      16.0.0
+// @version      16.0.1
 // @description  Syncs eFundi announcements, resources, lessons and calendars to Google Drive via Apps Script
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
