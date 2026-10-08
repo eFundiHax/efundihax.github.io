@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         eFundiHax Sync
 // @namespace    https://efundihax.github.io
-// @version      4.0.20
+// @version      16.0.0
 // @description  Syncs eFundi announcements, resources, lessons and calendars to Google Drive via Apps Script
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -19,7 +19,7 @@
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '4.0.20';
+    window.__efhVersion = '16.0.1';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
@@ -178,13 +178,13 @@
     const KEY_SITE_SYNCED           = 'efh_site_synced';
     const KEY_ANNOUNCEMENT_CACHE    = 'efh_ann_cache_';
     const KEY_CALENDAR_CACHE        = 'efh_cal_cache_';
-    const KEY_LESSON_HASHES         = 'efh_lesson_hashes_';
     const KEY_RESOURCE_TOOL_CACHE   = 'efh_resource_tool_cache_';
     const KEY_SYNC_STATE            = 'efh_sync_state';
     const KEY_SESSION_ID            = 'efh_session_id';
     const KEY_LAST_APPS_SCRIPT_CHECK = 'efh_last_apps_script_check';
     const KEY_RESUME_RESOURCES      = 'efh_resume_resources';
     const KEY_RESUME_LESSONS        = 'efh_resume_lessons';
+    const KEY_RESUME_ASSESSMENTS    = 'efh_resume_assessments';
     const KEY_SYNC_COMPLETE         = 'efh_sync_complete';
     const KEY_PROCESSING_LOCKS      = 'efh_processing_locks';
 
@@ -197,6 +197,7 @@
         announcements: createIndicator('efh-ann-pip'),
         resources:     createIndicator('efh-res-pip'),
         lessons:       createIndicator('efh-les-pip'),
+        assessments:   createIndicator('efh-asg-pip'),
     };
 
     var activePostRequests = {};
@@ -231,6 +232,43 @@
         el.id = id;
         el.className = 'efh-indicator idle';
         el.innerHTML = '<span class="efh-dot"></span><span class="efh-label"></span>';
+        el.addEventListener('click', function() {
+            // Set to syncing immediately
+            const ind = indicators[id];
+            if (ind) {
+                ind.className = 'efh-indicator syncing';
+                ind.querySelector('.efh-label').textContent = 'Checking...';
+            }
+            // POST to the server: doGet returns only the liveness ping,
+            // so a GET would always look 'ok' regardless of real state.
+            GM_xmlhttpRequest({
+                method: 'POST',
+                url: APPS_SCRIPT_URL,
+                headers: { 'Content-Type': 'application/json' },
+                data: JSON.stringify({ action: 'check_status', secret: SECRET, panel: id, siteTitle: currentSiteTitle() }),
+                onload: function(r) {
+                    try {
+                        var data = JSON.parse(r.responseText);
+                        if (data.status === 'ok') {
+                            if (data.notFound) { setIndicator(id, 'waiting', 'Not synced'); return; }
+                            var p = (data.panels && data.panels[id]) || null;
+                            var synced = p ? p.filter(function(f) { return f.synced; }).length : 0;
+                            var total = p ? p.length : 0;
+                            if (!total) { setIndicator(id, 'waiting', 'No items'); return; }
+                            var label = synced === total ? 'Up to date' : (synced + '/' + total + ' synced');
+                            setIndicator(id, synced === total ? 'ok' : 'waiting', label);
+                        } else {
+                            setIndicator(id, 'error', data.message || 'Check failed');
+                        }
+                    } catch(e) {
+                        setIndicator(id, 'error', 'Parse error');
+                    }
+                },
+                onerror: function() {
+                    setIndicator(id, 'error', 'Network error');
+                }
+            });
+        });
         return el;
     }
 
@@ -1290,7 +1328,7 @@
                         }
 
                         if (expandBtn && expandBtn.style.display !== 'none') {
-                            console.log('[U93] Clicking Expand All ÔÇö observing DOM + network');
+                            console.log('[U93] Clicking Expand All Ã”Ã‡Ã¶ observing DOM + network');
                             var startUrls = extractFilesFromDoc(iframeDoc).length;
                             var moDone = false;
                             var netIdleTimer = null;
@@ -1746,7 +1784,7 @@
             })(results[i]);
         }
 
-        // v4.0.14: one hung file must never wedge the batch ÔÇö 240s cap each, failures resolve null
+        // v4.0.14: one hung file must never wedge the batch Ã”Ã‡Ã¶ 240s cap each, failures resolve null
         var guarded = promises.map(function(pr, idx) {
             var timeout = new Promise(function(_, reject) {
                 setTimeout(function() { reject(new Error('file-promise-timeout idx=' + idx)); }, 240000);
@@ -1768,7 +1806,7 @@
 
             var img = new Image();
             img.src = dataUrl;
-            // v4.0.14: hard 150s timeout ÔÇö CSP-blocked blob workers never settle, and .catch can't catch a hang
+            // v4.0.14: hard 150s timeout Ã”Ã‡Ã¶ CSP-blocked blob workers never settle, and .catch can't catch a hang
             var _imgDone = false;
             var _resolveInner = null;
             var _imgTimer = setTimeout(function() {
@@ -2488,16 +2526,13 @@
         return pages;
     }
 
-    function checkLessons(siteId, siteTitle, lessonUrls, localHashes) {
+    function checkLessons(siteId, siteTitle, lessonUrls) {
         return post({
             action: 'check_lessons',
             secret: SECRET,
             siteId: siteId,
             siteTitle: siteTitle,
             lessonUrls: lessonUrls
-        }).then(function(result) {
-            result.localHashes = localHashes;
-            return result;
         });
     }
 
@@ -2513,34 +2548,26 @@
                         return;
                     }
                     var page = queue.shift();
-                    var serverHash = checkResult.lessons && checkResult.lessons[page.url] ? checkResult.lessons[page.url] : null;
-                    var localHash = checkResult.localHashes && checkResult.localHashes[page.url] ? checkResult.localHashes[page.url] : null;
-
-                    var needsFetch = !serverHash || (localHash !== serverHash);
-
-                    if (!needsFetch) {
-                        console.log('[Lessons] Unchanged: ' + page.title);
-                        results.push({ page: page, success: true, changed: false });
-                        processNext();
-                        return;
-                    }
-
+                    // No browser-computed hashes (deleted
+                    // 2026-10-07): every lesson is fetched
+                    // and sent; the SERVER computes the
+                    // canonical hash and skips lessons
+                    // whose title AND url AND hash all
+                    // match (newest-wins replace on
+                    // hash change).
                     console.log('[Lessons] Fetching: ' + page.title);
                     extractLessonContent(page.url, page.title).then(function(lessonData) {
-                                            computeHash(lessonData.html).then(function(hash) {
                                                 results.push({
                                                     page: page,
                                                     html: lessonData.html,
                                                     images: lessonData.images,
                                                     resources: lessonData.resources || [],
                                                     lessonTitle: lessonData.lessonTitle,
-                                                    hash: hash,
                                                     success: true,
                                                     changed: true
                                                 });
                                                 processNext();
-                                            });
-                                        }).catch(function(err) {
+                                            }).catch(function(err) {
                         console.error('[Lessons] Failed "' + page.title + '":', err.message);
                         results.push({ page: page, success: false, error: err.message });
                         processNext();
@@ -2571,10 +2598,8 @@
             }
 
             var lessonUrls = pages.map(function(p) { return p.url; });
-            var hashKey = getLessonHash(siteTitle);
-            var localHashes = JSON.parse(GM_getValue(hashKey, '{}'));
 
-            return checkLessons(siteId, siteTitle, lessonUrls, localHashes).then(function(checkResult) {
+            return checkLessons(siteId, siteTitle, lessonUrls).then(function(checkResult) {
                 if (!checkResult || !checkResult.lessons) {
                     console.error('[Lessons] Failed to get status');
                     if (isPriority) setIndicator('lessons', 'error', 'Check failed');
@@ -2605,13 +2630,11 @@
                                                                             lessonUrl: lesson.page.url,
                                                                             lessonHtml: lesson.html,
                                                                             images: lesson.images,
-                                                                            resources: lesson.resources,
-                                                                            lessonHash: lesson.hash
+                                                                            resources: lesson.resources
                                                                         }).then(function() {
-                                                                            localHashes[lesson.page.url] = lesson.hash;
                                                                             updateProgress('lessons', idx + 1, changedLessons.length, 'Sending');
                                                                         }).catch(function(err) {
-                                                                            console.warn('[Lessons] Failed lesson: ' + lesson.lessonTitle + ' ÔÇö ' + (err && err.message || err) + ' (continuing)');
+                                                                            console.warn('[Lessons] Failed lesson: ' + lesson.lessonTitle + ' Ã”Ã‡Ã¶ ' + (err && err.message || err) + ' (continuing)');
                                                                             updateProgress('lessons', idx + 1, changedLessons.length, 'Failed (skipped)');
                                                                         });
                                                                     });
@@ -2619,7 +2642,6 @@
                                                             }
 
                                         return chain.then(function() {
-                        GM_setValue(hashKey, JSON.stringify(localHashes));
                         if (isPriority) setIndicator('lessons', 'ok', changedLessons.length + ' synced');
                         console.log('[Lessons] Complete: ' + changedLessons.length + ' lessons synced');
                     });
@@ -2747,30 +2769,6 @@
             });
         }
 
-    function computeHash(text) {
-        if (window.crypto && window.crypto.subtle) {
-            return window.crypto.subtle.digest('SHA-256', new TextEncoder().encode(text)).then(function(buf) {
-                var bytes = new Uint8Array(buf);
-                var hex = '';
-                for (var i = 0; i < bytes.length; i++) {
-                    hex += bytes[i].toString(16).padStart(2, '0');
-                }
-                return hex;
-            }).catch(function() {
-                return fallbackHash(text);
-            });
-        }
-        return Promise.resolve(fallbackHash(text));
-    }
-
-    function fallbackHash(text) {
-        var h = 5381;
-        for (var i = 0; i < text.length; i++) {
-            h = ((h << 5) + h) + text.charCodeAt(i);
-        }
-        return (h >>> 0).toString(16);
-    }
-
     function isLessonTool(siteId, toolId) {
         return fetchHtmlPage('https://efundi.nwu.ac.za/portal/site/' + siteId + '/tool/' + toolId + PAGE_PICKER_PARAMS).then(function(html) {
             return html.indexOf('ShowPage') !== -1;
@@ -2884,7 +2882,7 @@
 
     var getAnnCache = function(t) { return KEY_ANNOUNCEMENT_CACHE + encodeSlug(t); };
     var getCalCache = function(t) { return KEY_CALENDAR_CACHE + encodeSlug(t); };
-    var getLessonHash = function(t) { return KEY_LESSON_HASHES + encodeSlug(t); };
+
     var getToolCache = function(t) { return KEY_RESOURCE_TOOL_CACHE + encodeSlug(t); };
 
     // ============================================================
@@ -2923,6 +2921,12 @@
             if (t && ['Overview', 'Home', 'Resources', 'Announcements', 'Calendar', 'Gradebook'].indexOf(t) === -1) return t;
         } catch(e) {}
         return siteId;
+    }
+
+    // Site title for the page we are on (used by the sync pips).
+    function currentSiteTitle() {
+        var info = getPageInfo();
+        return info.siteId ? getSiteTitle(info.siteId) : '';
     }
 
     function delay(ms) { return new Promise(function(r) { setTimeout(r, ms); }); }
@@ -2988,7 +2992,7 @@
                         if (attempt < POST_MAX_ATTEMPTS) {
                             attempt++;
                             var backoff = POST_RETRY_DELAYS_MS[attempt - 1] || 2000;
-                            console.log('[Retry] ' + label + ' ÔÇö Attempt ' + attempt + '/' + POST_MAX_ATTEMPTS + ' (wait ' + backoff + 'ms)');
+                            console.log('[Retry] ' + label + ' Ã”Ã‡Ã¶ Attempt ' + attempt + '/' + POST_MAX_ATTEMPTS + ' (wait ' + backoff + 'ms)');
                             setTimeout(tryPost, backoff);
                         } else {
                             reject(new Error('Network error after ' + POST_MAX_ATTEMPTS + ' attempts'));
@@ -3129,7 +3133,7 @@
                     return performFullSync(prioritySiteId);
                 });
             } else {
-                console.log('[eFundiHax Sync] Homepage ÔÇö full sync');
+                console.log('[eFundiHax Sync] Homepage Ã”Ã‡Ã¶ full sync');
                 return performFullSync(null);
             }
         });
@@ -3145,7 +3149,7 @@
 
             // U126: Random order with priority
             var orderedSites = orderSitesForSync(sites, prioritySiteId);
-            console.log('[U126] Sync order: ' + orderedSites.map(function(s) { return s.title; }).join(' ÔåÆ '));
+            console.log('[U126] Sync order: ' + orderedSites.map(function(s) { return s.title; }).join(' Ã”Ã¥Ã† '));
 
             var totalProcessed = 0;
             var totalSkipped = 0;
@@ -3181,8 +3185,8 @@
                     var lessonTaskList = results[0];
                     var resourceTaskList = results[1];
                     stopHeartbeat();
-                    console.log('­ƒôÜ Lessons: ' + lessonTaskList.length + ' tools');
-                    console.log('­ƒôÄ Resources: ' + resourceTaskList.length + ' sites');
+                    console.log('Â­Æ’Ã´Ãœ Lessons: ' + lessonTaskList.length + ' tools');
+                    console.log('Â­Æ’Ã´Ã„ Resources: ' + resourceTaskList.length + ' sites');
 
                     startHeartbeat('parallel uploads');
 
@@ -3335,8 +3339,246 @@
             var sitesSynced = JSON.parse(GM_getValue(KEY_SITE_SYNCED, '{}'));
             sitesSynced[siteId] = Date.now();
             GM_setValue(KEY_SITE_SYNCED, JSON.stringify(sitesSynced));
+        }).then(function() {
+            return syncAssessmentsForSite(siteId, siteTitle, isPriority).catch(function(err) {
+                console.error('[Module] Assessments failed:', err.message);
+            });
         }).catch(function(err) {
             console.error('[Module] Unhandled error for ' + siteTitle + ':', err.message);
+        });
+    }
+
+    // ============================================================
+    // TESTS & QUIZZES (Samigo) DOM SCRAPE (v16.0, Task 5)
+    // Scrapes the Samigo tool for assessment rows and posts
+    // sync_assessments-compatible payload. Same-origin iframe
+    // (efundi.nwu.ac.za) â€” attempts iframe.contentDocument first;
+    // if access denied, falls back to navigating the top tab to
+    // the tool URL (saving/restoring sync state via KEY_RESUME_*).
+    // Follows pagination links until no next page.
+    // ============================================================
+    function syncAssessmentsForSite(siteId, siteTitle, isPriority) {
+        if (isPriority) setIndicator('assessments', 'syncing', 'Loading...');
+        
+        // Samigo tool URL (standard Sakai Samigo tool ID)
+        var samigoUrl = 'https://efundi.nwu.ac.za/portal/site/' + siteId + '/tool/sakai.samigo';
+        
+        // Strategy 1: Try iframe contentDocument (same-origin)
+        return tryIframeScrape(samigoUrl).then(function(result) {
+            if (result && result.assessments && result.assessments.length > 0) {
+                console.log('[Assessments] iframe scrape succeeded: ' + result.assessments.length + ' assessments');
+                return postAssessments(siteId, siteTitle, result.assessments).then(function() {
+                    if (isPriority) setIndicator('assessments', 'ok', result.assessments.length + ' synced');
+                });
+            }
+            // Strategy 2: Fallback - navigate top tab (save/restore sync state)
+            console.log('[Assessments] iframe scrape failed/empty, falling back to tab navigation');
+            return navigateAndScrape(siteId, siteTitle, samigoUrl, isPriority);
+        }).catch(function(err) {
+            console.warn('[Assessments] iframe scrape error:', err.message);
+            return navigateAndScrape(siteId, siteTitle, samigoUrl, isPriority);
+        });
+    }
+
+    function tryIframeScrape(url) {
+        return new Promise(function(resolve) {
+            // Create hidden iframe to access same-origin content
+            var iframe = document.createElement('iframe');
+            iframe.style.display = 'none';
+            iframe.src = url;
+            document.body.appendChild(iframe);
+            
+            var timeout = setTimeout(function() {
+                document.body.removeChild(iframe);
+                resolve({ assessments: [] });
+            }, 15000);
+            
+            iframe.onload = function() {
+                clearTimeout(timeout);
+                try {
+                    var doc = iframe.contentDocument || iframe.contentWindow.document;
+                    if (!doc) throw new Error('No contentDocument');
+                    var assessments = parseAssessmentsHtml(doc.documentElement.outerHTML);
+                    document.body.removeChild(iframe);
+                    resolve({ assessments: assessments });
+                } catch (e) {
+                    document.body.removeChild(iframe);
+                    resolve({ assessments: [], error: e.message });
+                }
+            };
+            iframe.onerror = function() {
+                clearTimeout(timeout);
+                document.body.removeChild(iframe);
+                resolve({ assessments: [], error: 'iframe load error' });
+            };
+        });
+    }
+
+    function navigateAndScrape(siteId, siteTitle, url, isPriority) {
+        // Save sync state before navigation
+        var state = {
+            siteId: siteId,
+            siteTitle: siteTitle,
+            isPriority: isPriority,
+            resumeAssessments: true
+        };
+        GM_setValue(KEY_RESUME_ASSESSMENTS, JSON.stringify(state));
+        
+        // Navigate top tab to Samigo tool
+        window.top.location.href = url;
+        
+        // This code won't run after navigation, but we return a pending promise
+        return new Promise(function() {}); // Never resolves - page unloads
+    }
+
+    function checkResumeAssessments() {
+        try {
+            var state = JSON.parse(GM_getValue(KEY_RESUME_ASSESSMENTS, '{}'));
+            if (state && state.resumeAssessments) {
+                GM_setValue(KEY_RESUME_ASSESSMENTS, JSON.stringify({ resumeAssessments: false }));
+                var siteId = state.siteId;
+                var siteTitle = state.siteTitle;
+                var isPriority = state.isPriority;
+                console.log('[Assessments] Resuming after navigation for ' + siteTitle);
+                
+                // Scrape the current page (now on Samigo tool)
+                var assessments = parseAssessmentsHtml(document.documentElement.outerHTML);
+                if (assessments.length > 0) {
+                    console.log('[Assessments] Resumed scrape found ' + assessments.length + ' assessments');
+                    return postAssessments(siteId, siteTitle, assessments).then(function() {
+                        if (isPriority) setIndicator('assessments', 'ok', assessments.length + ' synced');
+                    });
+                } else {
+                    // Try pagination
+                    return scrapeAllPages(siteId, siteTitle, isPriority);
+                }
+            }
+        } catch (e) {
+            console.warn('[Assessments] Resume check failed:', e.message);
+        }
+        return Promise.resolve();
+    }
+
+    function scrapeAllPages(siteId, siteTitle, isPriority) {
+        var allAssessments = [];
+        var currentUrl = window.location.href;
+        
+        return scrapePage(currentUrl).then(function processPage(result) {
+            allAssessments = allAssessments.concat(result.assessments);
+            if (result.nextPageUrl) {
+                // Navigate to next page
+                window.location.href = result.nextPageUrl;
+                // Save state for continuation
+                GM_setValue(KEY_RESUME_ASSESSMENTS, JSON.stringify({
+                    siteId: siteId,
+                    siteTitle: siteTitle,
+                    isPriority: isPriority,
+                    resumeAssessments: true,
+                    collectedAssessments: allAssessments,
+                    nextPageUrl: result.nextPageUrl
+                }));
+                return new Promise(function() {}); // Wait for navigation
+            } else {
+                // All pages scraped
+                console.log('[Assessments] All pages scraped: ' + allAssessments.length + ' total');
+                return postAssessments(siteId, siteTitle, allAssessments).then(function() {
+                    if (isPriority) setIndicator('assessments', 'ok', allAssessments.length + ' synced');
+                });
+            }
+        });
+    }
+
+    function scrapePage(url) {
+        // This runs on the Samigo page - parse current page + find next page link
+        var assessments = parseAssessmentsHtml(document.documentElement.outerHTML);
+        var nextLink = document.querySelector('a[rel="next"], .pagination .next a, .pager .next a, a:contains("Next"), a:contains("next")');
+        var nextPageUrl = nextLink ? nextLink.href : null;
+        return Promise.resolve({ assessments: assessments, nextPageUrl: nextPageUrl });
+    }
+
+    function tryAlternativeSamigoTools(siteId, candidates) {
+        var chain = Promise.resolve({ html: '', toolId: null });
+        candidates.forEach(function(cid) {
+            chain = chain.then(function(result) {
+                if (result.html) return result;
+                var url = 'https://efundi.nwu.ac.za/portal/site/' + siteId + '/tool/' + cid;
+                return fetchHtmlPage(url).then(function(html) {
+                    if (html.indexOf('assessmentList') !== -1 || html.indexOf('assessmentTable') !== -1 || html.indexOf('Take Assessment') !== -1) {
+                        return { html: html, toolId: cid };
+                    }
+                    return { html: '', toolId: null };
+                });
+            });
+        });
+        return chain;
+    }
+
+    function parseAssessmentsHtml(html) {
+        var assessments = [];
+        var doc = document.implementation.createHTMLDocument('');
+        doc.documentElement.innerHTML = html;
+
+        // Samigo assessment list table rows
+        var rows = doc.querySelectorAll('table#assessmentList tbody tr, table.assessmentTable tbody tr, .assessment-list tbody tr');
+        if (rows.length === 0) {
+            // Try generic table rows that look like assessments
+            rows = doc.querySelectorAll('table tbody tr');
+        }
+
+        for (var i = 0; i < rows.length; i++) {
+            var row = rows[i];
+            var cells = row.querySelectorAll('td, th');
+            if (cells.length < 3) continue;
+
+            var title = cells[0] ? cells[0].textContent.trim() : '';
+            var status = cells[1] ? cells[1].textContent.trim() : '';
+            var openDate = cells[2] ? cells[2].textContent.trim() : '';
+            var dueDate = cells[3] ? cells[3].textContent.trim() : '';
+
+            if (!title) continue;
+
+            var type = 'quiz';
+            if (/test|exam/i.test(title)) type = 'test';
+            if (/practical|lab|assignment/i.test(title)) type = 'practical';
+
+            assessments.push({
+                title: title,
+                status: status || 'Published',
+                openDate: parseDateFlexible(openDate),
+                dueDate: parseDateFlexible(dueDate),
+                type: type
+            });
+        }
+        return assessments;
+    }
+
+    function parseDateFlexible(str) {
+        if (!str) return '';
+        var d = new Date(str);
+        if (!isNaN(d.getTime())) return d.toISOString();
+        // Try common formats: MM/DD/YYYY, DD/MM/YYYY, etc.
+        var parts = str.split(/[\/\-\.]/);
+        if (parts.length === 3) {
+            var day = parseInt(parts[0], 10), month = parseInt(parts[1], 10), year = parseInt(parts[2], 10);
+            if (year < 100) year += 2000;
+            d = new Date(year, month - 1, day);
+            if (!isNaN(d.getTime())) return d.toISOString();
+        }
+        return '';
+    }
+
+    function postAssessments(siteId, siteTitle, assessments) {
+        return post({
+            action: 'sync_assessments',
+            secret: SECRET,
+            siteId: siteId,
+            siteTitle: siteTitle,
+            assessments: assessments
+        }).then(function() {
+            console.log('[Assessments] Posted ' + assessments.length + ' assessments');
+        }).catch(function(err) {
+            console.error('[Assessments] Post failed:', err.message);
+            throw err;
         });
     }
 
@@ -3358,7 +3600,7 @@
     console.log('[eFundiHax Sync] v' + (window.__efhVersion || '?') + ' loaded. URL:', window.location.href);
 
     if (window.self !== window.top) {
-        console.log('[eFundiHax Sync] Inside iframe ÔÇö skipping');
+        console.log('[eFundiHax Sync] Inside iframe Ã”Ã‡Ã¶ skipping');
         return;
     }
 
@@ -3366,6 +3608,9 @@
         console.warn('[eFundiHax Sync] URL not configured');
         return;
     }
+
+    // Check for assessment scrape resume after navigation
+    checkResumeAssessments();
 
     var PAGE = getPageInfo();
     console.log('[eFundiHax Sync] Page:', PAGE);
@@ -3376,8 +3621,9 @@
     setIndicator('announcements', 'idle', 'Ready');
     setIndicator('resources', 'idle', 'Ready');
     setIndicator('lessons', 'idle', 'Ready');
+    setIndicator('assessments', 'idle', 'Ready');
 
-    var injected = { calendar: false, announcements: false, resources: false, lessons: false };
+    var injected = { calendar: false, announcements: false, resources: false, lessons: false, assessments: false };
     var interval = setInterval(function() {
         if (!injected.calendar) {
             var calEl = findHeaderContaining(document, 'Calendar');
@@ -3447,3 +3693,4 @@
         setIndicator('lessons', 'error', 'Sync failed');
     });
 })();
+
