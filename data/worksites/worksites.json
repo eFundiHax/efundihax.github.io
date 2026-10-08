@@ -30,16 +30,6 @@
     "efundiUrl": ""
   },
   {
-    "slug": "b58fe6cb-36f0-431b-846a-a188df91278f",
-    "title": "b58fe6cb-36f0-431b-846a-a188df91278f",
-    "folderUrl": "https://drive.google.com/drive/folders/16jAsyW4iL_3dZPftACISvZsttth7n6Y7",
-    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/15-oUyywrjowuhUtvpgcZHae-DsKZBjnmJ5o4IoriIuM/edit?usp=drivesdk",
-    "manifestId": "1r3ZIfcuCldWeGJM_wDhyebBu2O9XpYAF",
-    "masterDocUrl": "https://docs.google.com/document/d/1E_V4eFEXprU4qnpeGkYg4sSBPohdkp2hAe4B3vNeXhI/edit?usp=drivesdk",
-    "siteId": "b58fe6cb-36f0-431b-846a-a188df91278f",
-    "efundiUrl": "https://efundi.nwu.ac.za/portal/site/b58fe6cb-36f0-431b-846a-a188df91278f"
-  },
-  {
     "slug": "cmpg115friday",
     "title": "CMPG115_Friday",
     "folderUrl": "https://drive.google.com/drive/folders/1T8owIiigDlSiVDvpTrn4cYCJ3ulp8DZz",
@@ -286,6 +276,16 @@
     "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/17LjOrZvEsAcP9aTnL7BOlvbYBp4dVLarzFd5bwUUq2w/edit?usp=drivesdk",
     "manifestId": "1jO0-SIuu3SqTFP1yNo73x6IAljyXV11U",
     "masterDocUrl": "https://docs.google.com/document/d/1maUaM15HafremNh3gZVq43AXCTls6tcWSY7JrFBLlcM/edit?usp=drivesdk",
+    "siteId": "",
+    "efundiUrl": ""
+  },
+  {
+    "slug": "undefined",
+    "title": "undefined",
+    "folderUrl": "https://drive.google.com/drive/folders/1kBKcYW2SkXxBltIrL1MGp-_L-gsRmXe5",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1CNikhxtNhfN0KJ_GghQtM4GdRR7OhRs0bGsod9nB9u8/edit?usp=drivesdk",
+    "manifestId": "1LVrYHGq49Mcqez8MyzyW7QpaTLir4YMG",
+    "masterDocUrl": "https://docs.google.com/document/d/160OpdBTLhF9jmmLQaWnBOTEEP_AHraAUgp5m_H1vxxA/edit?usp=drivesdk",
     "siteId": "",
     "efundiUrl": ""
   },
