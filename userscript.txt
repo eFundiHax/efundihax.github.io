@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax
 // @namespace    https://efundihax.github.io
-// @version      17.2.0
+// @version      17.3.0
 // @description  One script, everything: syncs eFundi announcements, resources, lessons and calendars to the shared backend; draws per-tool sync pips (click to check); lends your live session cookie so the backend can fetch; schedules the sync lanes while the Apps Script triggers cannot be installed; and silently re-logs you in when the session expires.
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -3713,7 +3713,7 @@
 (function() {
     if (window.top !== window.self) { return; }
 
-    var VERSION = '17.2.0';
+    var VERSION = '17.3.0';
     var EXEC_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
     var SECRET = 'trackmania_is_peak';
     var COOKIE_URL = 'https://efundi.nwu.ac.za/';
@@ -4054,6 +4054,131 @@
     }
 
     // ============================================================
+    // MODE CHOICE — tab-open browser lane, or automatic server login.
+    // Offered once, explicitly, and remembered. The browser lane is
+    // the default because it needs no credentials. The credential lane
+    // stores the user's REAL password (encrypted at rest, hard-deleted
+    // on opt-out), which is why it must never be implied or default.
+    //   mode 'browser' : browser lane only, works on a fresh install
+    //   mode 'login'   : also store credentials for automatic updates
+    //   mode 'ask'     : never chosen yet
+    // ============================================================
+    var K_MODE = 'efh_mode';
+    var K_ASKED = 'efh_mode_asked';
+
+    function currentMode() {
+        var m = getVal(K_MODE, 'ask');
+        return (m === 'login' || m === 'browser') ? m : 'ask';
+    }
+
+    function chooseMode(m) {
+        setVal(K_MODE, m);
+        setVal(K_ASKED, '1');
+        if (m === 'login') { setVal(K_BROWSER_LANE, true); setVal(K_DRIVER, true); }
+        if (m === 'browser') { setVal(K_BROWSER_LANE, true); }
+        log('Mode set to: ' + m);
+    }
+
+    // A real in-page choice, shown only once, only when signed in, and
+    // only on a site page (never on the CAS login form).
+    function maybeAskMode() {
+        if (currentMode() !== 'ask' || isCasPage()) return;
+        if (getVal(K_ASKED, '') === '1') return;
+        if (document.getElementById('efh-mode-ask')) return;
+        try {
+            var box = document.createElement('div');
+            box.id = 'efh-mode-ask';
+            box.setAttribute('style', 'position:fixed;top:12px;right:12px;z-index:2147483647;' +
+                'max-width:340px;background:#12141c;color:#e8eaf0;border:1px solid #3a4054;' +
+                'border-radius:12px;padding:14px 16px;font:13px/1.5 Open Sans,Arial,sans-serif;' +
+                'box-shadow:0 8px 28px rgba(0,0,0,.55)');
+            box.innerHTML =
+                '<div style="font-weight:800;margin-bottom:6px">eFundiHax — how should syncing work?</div>' +
+                '<div style="opacity:.85;margin-bottom:10px">' +
+                '<b>Open tab</b>: syncs while this tab is open. No credentials needed.<br>' +
+                '<b>Automatic</b>: syncs even with no tab open, and helps everyone who shares your subjects. ' +
+                'Stores your eFundi password encrypted, deleted the moment you switch back.' +
+                '</div>' +
+                '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
+                '<button id="efh-mode-browser" style="flex:1;padding:8px;border-radius:8px;border:1px solid #3a4054;' +
+                'background:#1d2130;color:#e8eaf0;cursor:pointer;font-weight:700">Open tab</button>' +
+                '<button id="efh-mode-login" style="flex:1;padding:8px;border-radius:8px;border:1px solid #6f5bd6;' +
+                'background:#6f5bd6;color:#fff;cursor:pointer;font-weight:700">Automatic</button>' +
+                '</div>';
+            document.documentElement.appendChild(box);
+
+            document.getElementById('efh-mode-browser').onclick = function() {
+                chooseMode('browser');
+                box.remove();
+                browserLaneTick();
+            };
+            document.getElementById('efh-mode-login').onclick = function() {
+                chooseMode('login');
+                box.remove();
+                askForPassword();
+            };
+        } catch (e) {}
+    }
+
+    // Second, separate prompt for the password itself — never bundled
+    // with the mode choice, so choosing "Automatic" is a single intent
+    // and entering credentials is a second, deliberate one.
+    function askForPassword() {
+        if (isCasPage() || document.getElementById('efh-pw-box')) return;
+        try {
+            var box = document.createElement('div');
+            box.id = 'efh-pw-box';
+            box.setAttribute('style', 'position:fixed;top:12px;right:12px;z-index:2147483647;' +
+                'max-width:340px;background:#12141c;color:#e8eaf0;border:1px solid #3a4054;' +
+                'border-radius:12px;padding:14px 16px;font:13px/1.5 Open Sans,Arial,sans-serif;' +
+                'box-shadow:0 8px 28px rgba(0,0,0,.55)');
+            box.innerHTML =
+                '<div style="font-weight:800;margin-bottom:6px">eFundiHax — store login for automatic syncing?</div>' +
+                '<div style="opacity:.85;margin-bottom:10px">Your password is encrypted before it is stored, ' +
+                'never sent anywhere but here, and deleted if you ever switch back. ' +
+                'It is not recoverable by us.</div>' +
+                '<input id="efh-pw" type="password" placeholder="eFundi password" ' +
+                'style="width:100%;box-sizing:border-box;padding:8px;margin-bottom:8px;border-radius:8px;' +
+                'border:1px solid #3a4054;background:#0d0f16;color:#e8eaf0">' +
+                '<div style="display:flex;gap:8px">' +
+                '<button id="efh-pw-ok" style="flex:1;padding:8px;border-radius:8px;border:1px solid #6f5bd6;' +
+                'background:#6f5bd6;color:#fff;cursor:pointer;font-weight:700">Store securely</button>' +
+                '<button id="efh-pw-no" style="flex:1;padding:8px;border-radius:8px;border:1px solid #3a4054;' +
+                'background:#1d2130;color:#e8eaf0;cursor:pointer;font-weight:700">Use open tab instead</button>' +
+                '</div>';
+            document.documentElement.appendChild(box);
+            var input = document.getElementById('efh-pw');
+            input.focus();
+
+            function clear() { var v = input.value; input.value = ''; return v; }
+            document.getElementById('efh-pw-ok').onclick = function() {
+                var pw = clear();
+                if (!pw) return;
+                readStudentId(function(eid) {
+                    GM_xmlhttpRequest({
+                        method: 'POST', url: EXEC_URL,
+                        headers: { 'Content-Type': 'application/json' },
+                        data: JSON.stringify({ action: 'store_credentials', secret: SECRET,
+                            username: eid || 'unknown', password: pw }),
+                        timeout: 30000,
+                        onload: function(r) {
+                            try {
+                                var b = JSON.parse(r.responseText || '{}');
+                                if (b.status === 'ok') { log('Credentials stored (encrypted). Automatic syncing armed.'); }
+                                else { log('Credential store failed: ' + (b.message || '?')); chooseMode('browser'); }
+                            } catch (e) { chooseMode('browser'); }
+                            box.remove();
+                        },
+                        onerror: function() { log('Credential POST failed.'); chooseMode('browser'); box.remove(); },
+                        ontimeout: function() { log('Credential POST timed out.'); chooseMode('browser'); box.remove(); }
+                    });
+                });
+            };
+            document.getElementById('efh-pw-no').onclick = function() { chooseMode('browser'); box.remove(); };
+        } catch (e) {}
+    }
+
+    // ============================================================
     // AUTO-LOGIN (merged from the keepalive)
     // On re-login the lender used to be told via a DOM attribute
     // contract, because separate Tampermonkey sandboxes cannot share
@@ -4245,9 +4370,51 @@
                     ' last=' + s[k].last + ' note=' + s[k].lastNote);
             });
         });
-        GM_registerMenuCommand('eFundiHax: Clear saved login', function() {
+        GM_registerMenuCommand('eFundiHax: Clear saved eFundi login', function() {
             setVal(K_AL_USER, ''); setVal(K_AL_PASS, ''); setVal(K_AL_FAILS, 0); setVal(K_AL_BACKOFF, 0);
-            log('Saved login cleared.');
+            log('Saved eFundi login cleared.');
+        });
+        GM_registerMenuCommand('eFundiHax: Ask sync mode again', function() {
+            setVal(K_MODE, 'ask'); setVal(K_ASKED, '');
+            log('Sync mode reset — the choice prompt will appear on the next page load.');
+        });
+        GM_registerMenuCommand('eFundiHax: Stored password — check status', function() {
+            GM_xmlhttpRequest({
+                method: 'POST', url: EXEC_URL,
+                headers: { 'Content-Type': 'application/json' },
+                data: JSON.stringify({ action: 'credential_status', secret: SECRET }),
+                timeout: 30000,
+                onload: function(r) {
+                    try {
+                        var b = JSON.parse(r.responseText || '{}');
+                        var us = (b.users || []);
+                        if (!us.length) { log('No stored password.'); return; }
+                        us.forEach(function(u) {
+                            log('  ' + u.username + ': enabled=' + u.enabled +
+                                ' hasSession=' + u.hasSession + (u.lastError ? ' err=' + u.lastError : ''));
+                        });
+                    } catch (e) {}
+                }
+            });
+        });
+        GM_registerMenuCommand('eFundiHax: Stored password — DELETE it', function() {
+            readStudentId(function(eid) {
+                GM_xmlhttpRequest({
+                    method: 'POST', url: EXEC_URL,
+                    headers: { 'Content-Type': 'application/json' },
+                    data: JSON.stringify({ action: 'delete_credentials', secret: SECRET,
+                        username: eid || 'unknown' }),
+                    timeout: 30000,
+                    onload: function(r) {
+                        try {
+                            var b = JSON.parse(r.responseText || '{}');
+                            log('Password deleted (removed=' + b.removed + '). Switching to open-tab syncing.');
+                        } catch (e) {}
+                        chooseMode('browser');
+                    },
+                    onerror: function() { log('Delete failed.'); }
+                });
+            });
         });
     } catch (e) {}
 
@@ -4286,6 +4453,8 @@
     setInterval(driverSweep, 30 * 1000); // each tick self-limits to its own cadence
     setInterval(browserLaneTick, 30 * 1000); // same: the tick self-limits to 1 min
     browserLaneTick(); // run once immediately at startup
+    // Ask which method the user wants, exactly once, only when signed in.
+    setTimeout(maybeAskMode, 4000);
 })();
 
 })();
