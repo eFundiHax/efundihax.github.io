@@ -22,9 +22,9 @@ color: #6b3d8f
 calendar_id: 1204d7c176900ddee6cfd2ee98a3fa2eec0769902062c5877ea3fa0e77416b13@group.calendar.google.com
 title: SEECE Work & Safety - ...
 last_sync: 2026-05-29T15:05:41.991Z
-last_announcement: 2026-10-09T11:51:06.525Z
+last_announcement: 2026-10-09T11:51:24.460Z
 total_files: 59
-generated: 2026-10-09T11:50:10.689Z
+generated: 2026-10-09T11:51:12.503Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
