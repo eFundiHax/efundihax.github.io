@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax
 // @namespace    https://efundihax.github.io
-// @version      17.0.0
+// @version      17.1.0
 // @description  One script, everything: syncs eFundi announcements, resources, lessons and calendars to the shared backend; draws per-tool sync pips (click to check); lends your live session cookie so the backend can fetch; schedules the sync lanes while the Apps Script triggers cannot be installed; and silently re-logs you in when the session expires.
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -3713,7 +3713,7 @@
 (function() {
     if (window.top !== window.self) { return; }
 
-    var VERSION = '17.0.0';
+    var VERSION = '17.1.0';
     var EXEC_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
     var SECRET = 'trackmania_is_peak';
     var COOKIE_URL = 'https://efundi.nwu.ac.za/';
@@ -3758,7 +3758,11 @@
     function log(m) { try { console.log('[eFundiHax ' + VERSION + '] ' + m); } catch (e) {} }
     function getVal(k, d) { try { var v = GM_getValue(k, d); return (v === undefined || v === null) ? d : v; } catch (e) { return d; } }
     function setVal(k, v) { try { GM_setValue(k, v); } catch (e) {} }
-    function consented() { return getVal(K_CONSENT, false) === true; }
+    // Lending arms automatically on install: the product is a shared
+    // communal backend, so a fresh install must work with no extra
+    // click. PLEDGE consent is a separate, much more dangerous
+    // permission and stays default-deny (see lend_cookies' pledgeAllowed).
+    function consented() { return getVal(K_CONSENT, true) === true; }
     function driverOn() { return getVal(K_DRIVER, true) === true; }
 
     // Consent without the menu: visit any eFundi page with
@@ -3798,30 +3802,58 @@
         } catch (e) { cb(null); }
     }
 
-    // GM_cookie.list reads HttpOnly cookies — the only way to see
-    // JSESSIONID, since document.cookie cannot.
+    // GM_cookie.list(details, cb) is CALLBACK-based in current
+    // Tampermonkey; some builds also return a Promise. Supporting only
+    // the Promise form made lend() report "GM_cookie unavailable" on
+    // stable 5.5.0 even though the grant was declared correctly.
+    // Both forms are handled here, whichever the build provides.
     function listCookies(cb) {
         try {
             if (typeof GM_cookie === 'undefined' || typeof GM_cookie.list !== 'function') { cb(null); return; }
-            var p = GM_cookie.list({ url: COOKIE_URL });
-            if (p && typeof p.then === 'function') {
-                p.then(function(list) { cb(list || []); }).catch(function() { cb(null); });
-            } else { cb(null); }
+            var settled = false;
+            function finish(list, err) {
+                if (settled) return;
+                settled = true;
+                if (err || !list) { cb(null); return; }
+                cb(list || []);
+            }
+            var maybe = GM_cookie.list({ url: COOKIE_URL }, function(list, err) { finish(list, err); });
+            if (maybe && typeof maybe.then === 'function') {
+                maybe.then(function(list) { finish(list || [], null); })
+                     .catch(function(e) { finish(null, e); });
+            }
         } catch (e) { cb(null); }
+    }
+
+    // Keep only the eFundi session cookies. Sending the browser's whole
+    // jar (Google account, YouTube, GitHub...) pushes the Cookie header
+    // past UrlFetch's size limit and the backend rejects the lend with
+    // "Limit Exceeded: URLFetch header size".
+    function eFundiCookiesOnly(list) {
+        var seen = {};
+        var out = [];
+        for (var i = 0; i < list.length; i++) {
+            var c = list[i];
+            if (!c || !c.name || c.value === undefined) continue;
+            if (String(c.domain || '').indexOf('nwu.ac.za') === -1) continue;
+            if (seen[c.name]) continue; // one per name (host + domain variants)
+            seen[c.name] = true;
+            out.push(c);
+        }
+        return out;
     }
 
     function lend() {
         if (!consented()) { return; }
         listCookies(function(list) {
-            if (!list) { log('GM_cookie unavailable — cannot lend.'); return; }
+            if (!list) { log('GM_cookie unavailable — cannot lend. Tampermonkey needs the cookies permission for this script.'); return; }
+            var ef = eFundiCookiesOnly(list);
+            if (!ef.length) { log('No eFundi cookies in the jar — not signed in? Not lending.'); return; }
             var parts = [];
-            for (var i = 0; i < list.length; i++) {
-                var c = list[i];
-                if (c && c.name && c.value !== undefined) parts.push(c.name + '=' + c.value);
-            }
+            for (var i = 0; i < ef.length; i++) parts.push(ef[i].name + '=' + ef[i].value);
             var cookieStr = parts.join('; ');
             if (cookieStr.indexOf('JSESSIONID') === -1) {
-                log('No JSESSIONID in the jar — not signed in? Not lending.');
+                log('No JSESSIONID in the eFundi cookie jar — not signed in? Not lending.');
                 return;
             }
             readStudentId(function(eid) {
@@ -4123,11 +4155,14 @@
         return; // no JSESSIONID worth lending on the CAS page
     }
 
+    // Lending is armed by default on install (see consented()). The
+    // only way it is off is an explicit opt-out, so this branch is a
+    // safety net, not the normal path.
     if (consented()) {
-        log('Lender armed — lending now and every 30 min.');
+        log('Lender armed — sharing your eFundi session with the communal backend so it can sync. Disable any time from the Tampermonkey menu or by visiting a page with #efh-lender-disable.');
         lend();
     } else {
-        log('Lender installed — consent not given yet. Enable via the Tampermonkey menu, or visit any eFundi page with #efh-lender-enable. Nothing is lent until you opt in.');
+        log('Lending is OFF (you disabled it). Re-enable from the Tampermonkey menu or a page with #efh-lender-enable.');
     }
 
     if (consented() && driverOn()) {
