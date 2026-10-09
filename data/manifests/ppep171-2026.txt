@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 7719caf2ed4ad294f9d9e74b2300db002f94e6675a0af59c291dff2d7182f133@group.calendar.google.com
 title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
-last_announcement: 2026-10-06T13:23:12.244Z
+last_announcement: 2026-10-09T10:31:15.477Z
 total_files: 1293
 generated: 2026-10-08T13:39:51.826Z
 
