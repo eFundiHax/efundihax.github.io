@@ -10,21 +10,21 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-08T22:52:32.894Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-09T10:52:22.892Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
 To keep all files up to date, the student needs the eFundiHax userscript installed:
 https://greasyfork.org/en/scripts/579058-efundi-scraper
 
-emoji: 📘
+emoji: ðŸ“˜
 color: #6b3d8f
 calendar_id: 7719caf2ed4ad294f9d9e74b2300db002f94e6675a0af59c291dff2d7182f133@group.calendar.google.com
 title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
 last_announcement: 2026-10-09T10:31:15.477Z
-total_files: 1293
-generated: 2026-10-08T13:39:51.826Z
+total_files: 1308
+generated: 2026-10-09T10:31:23.959Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
@@ -1321,11 +1321,26 @@ NOT_SYNCED | SDCC.pdf | pdf | 2026-09-07T12:58:48.317Z | announcement_attachment
 NOT_SYNCED | PPEP171_SEECE_GroupList_16March2026.pdf | pdf | 2026-09-07T12:58:48.317Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/91e5cf76-15ff-4d75-868b-ffaa584677f0/PPEP171_SEECE_GroupList_16March2026.pdf |  | fails=0 | failts=
 NOT_SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-09-07T13:02:34.069Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/4ce2cd22-e5db-40b9-baa3-f5e55af22a14/PPEP171_SEECE_GroupList_2026.pdf |  | fails=0 | failts=
 NOT_SYNCED | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-09-07T13:02:34.069Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/eb337257-1168-4d7a-8b72-1c351aa22704/SCME%20Onboarding%20Guide_Workshop%201_2026.pdf |  | fails=0 | failts=
+NOT_SYNCED | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/ea90a24a-9df8-4500-b129-6c02fe684185/SCME%20Onboarding%20Guide_Workshop%201_2026.pdf |  | fails=0 | failts=
+NOT_SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/1178aa8a-c176-4edb-8a9b-e5d84e2b92c7/PPEP171_SEECE_GroupList_2026.pdf |  | fails=0 | failts=
+NOT_SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/a4df93d1-a5e7-4b4f-bafd-0c471ab2a5e5/PPEP171_SEECE_GroupList_2026.pdf |  | fails=0 | failts=
+NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/ba393753-f6e0-45c4-91a8-49fd33a653e4/Professional%20Practice%20Engineering%20Practical%20_PPEP171_%20Slide%201.pptx |  | fails=0 | failts=
+NOT_SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/1458c161-06a7-4fbc-bc1a-cb07748aa4a9/PPEP171_SEECE_GroupList_2026.pdf |  | fails=0 | failts=
+NOT_SYNCED | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/befa2fb1-3332-4e1e-9e95-dc7e0a1e8645/Group%20Mech%202%20Mechanical%20Eng%20-%20First%20years.pdf |  | fails=0 | failts=
+NOT_SYNCED | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/384f9ee8-054e-4cd1-ba1a-c84228d5b158/Group%201%20Mechanical%20Eng%20-%20First%20years.pdf |  | fails=0 | failts=
+NOT_SYNCED | Roll Mechanical Eng - First years.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/d969293d-b6d7-42be-9644-bb175940495f/Roll%20Mechanical%20Eng%20-%20First%20years.pdf |  | fails=0 | failts=
+NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/33337b95-aa29-404d-abbe-9a53d4c1b8a4/Plagiarism%20Form.pdf |  | fails=0 | failts=
+NOT_SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/99d458dd-ea0b-4f9c-a742-cccc96a3638a/PPEP171_SEECE_GroupList_2026.pdf |  | fails=0 | failts=
+NOT_SYNCED | PPEP171_GroupList_2026.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/29f73993-e404-48c0-9fab-c2e78feca4be/PPEP171_GroupList_2026.pdf |  | fails=0 | failts=
+NOT_SYNCED | Rekening Info 1.png | png | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/7f6c34fe-ec93-4540-bb7a-b85f3bbc1168/Rekening%20Info%201.png |  | fails=0 | failts=
+NOT_SYNCED | Major Groups.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/eee43a7f-dcb3-44dd-a760-5253ad68fd48/Major%20Groups.pdf |  | fails=0 | failts=
+NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/a0fc5bf5-1f56-41fd-8899-ee6dd1759f9e/Plagiarism%20Form.pdf |  | fails=0 | failts=
+NOT_SYNCED | Doc1.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/437c3f19-5c5e-4973-8c21-b7967d83831f/Doc1.pdf |  | fails=0 | failts=
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
-(MASTER) PPEP171-2026 — full extracted text from all synced files and lessons
-(SCHEDULE) PPEP171-2026 — calendar events and announcements spreadsheet
+(MASTER) PPEP171-2026 â€” full extracted text from all synced files and lessons
+(SCHEDULE) PPEP171-2026 â€” calendar events and announcements spreadsheet
 --- LESSONS ---
 SYNCED | Completed Home Page (new) | https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4596bcb6-63cc-4a41-82e4-1c6162f9abb9/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646673&postedComment=false&addBefore=&itemId=23515683&path=log&topicId=&addTool=-1&recheck=&id=&forumId=
 SYNCED | Completed Module Content | https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4596bcb6-63cc-4a41-82e4-1c6162f9abb9/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646666&postedComment=false&addBefore=&itemId=23515684&path=log&topicId=&addTool=-1&recheck=&id=&forumId=
