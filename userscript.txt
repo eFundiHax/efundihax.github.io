@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax
 // @namespace    https://efundihax.github.io
-// @version      17.1.0
+// @version      17.2.0
 // @description  One script, everything: syncs eFundi announcements, resources, lessons and calendars to the shared backend; draws per-tool sync pips (click to check); lends your live session cookie so the backend can fetch; schedules the sync lanes while the Apps Script triggers cannot be installed; and silently re-logs you in when the session expires.
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -3713,7 +3713,7 @@
 (function() {
     if (window.top !== window.self) { return; }
 
-    var VERSION = '17.1.0';
+    var VERSION = '17.2.0';
     var EXEC_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
     var SECRET = 'trackmania_is_peak';
     var COOKIE_URL = 'https://efundi.nwu.ac.za/';
@@ -3956,6 +3956,104 @@
     }
 
     // ============================================================
+    // BROWSER LANE — works with NO cookie access.
+    // Fetching eFundi's /direct/...json endpoints SAME-ORIGIN means the
+    // browser attaches the HttpOnly JSESSIONID automatically. Nothing is
+    // read out of the cookie jar, so this needs no GM_cookie permission,
+    // no Tampermonkey cookie setting and no consent — which is what makes
+    // a fresh install just work. This is the primary lane; cookie
+    // lending stays as the fallback for the server-side drain, which
+    // needs raw bytes the page cannot hand over.
+    // ============================================================
+    var K_BROWSER_LANE = 'efh_browser_lane';
+    var K_LAST_BROWSER_LANE = 'efh_drv_browser';
+    var K_BROWSER_IDX = 'efh_drv_browser_idx';
+    var BROWSER_LANE_MS = 60 * 1000; // 1 min, same cadence as fast_lane
+
+    // Site ids straight from the page's own nav — no extra request.
+    function siteIdsFromNav() {
+        var out = [];
+        var seen = {};
+        var as = document.querySelectorAll('#linkNav a[href*="/portal/site/"], .Mrphs-sitesNav a[href*="/portal/site/"]');
+        for (var i = 0; i < as.length; i++) {
+            var m = (as[i].getAttribute('href') || '').match(/\/portal\/site\/([a-f0-9\-]{36})/);
+            if (m && !seen[m[1]]) { seen[m[1]] = true; out.push({ siteId: m[1], title: siteTitleForId(m[1]) }); }
+        }
+        return out;
+    }
+
+    function siteTitleForId(siteId) {
+        var el = document.querySelector('#linkNav a[href*="/portal/site/' + siteId + '"], .Mrphs-sitesNav a[href*="/portal/site/' + siteId + '"]');
+        if (el && el.textContent && el.textContent.trim()) return el.textContent.trim();
+        try { if (window.portal && window.portal.siteTitle) return window.portal.siteTitle; } catch (e) {}
+        return siteId;
+    }
+
+    function fetchJsonSameOrigin(path) {
+        return new Promise(function(resolve) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', path, true); // same-origin: session cookie is sent automatically
+            xhr.setRequestHeader('Accept', 'application/json');
+            xhr.timeout = 20000;
+            xhr.onload = function() {
+                if (xhr.status !== 200) { resolve(null); return; }
+                try { resolve(JSON.parse(xhr.responseText || 'null')); } catch (e) { resolve(null); }
+            };
+            xhr.onerror = function() { resolve(null); };
+            xhr.ontimeout = function() { resolve(null); };
+            xhr.send();
+        });
+    }
+
+    function postBrowserLane(site, rs) {
+        var payload = { action: 'ingest_site_json', secret: SECRET,
+            siteTitle: site.title, siteId: site.siteId };
+        if (rs[0]) payload.announcements = rs[0];
+        if (rs[1]) payload.calendar = rs[1];
+        if (rs[2]) payload.assignments = rs[2];
+        GM_xmlhttpRequest({
+            method: 'POST', url: EXEC_URL,
+            headers: { 'Content-Type': 'application/json' },
+            data: JSON.stringify(payload),
+            timeout: 60000,
+            onload: function(r) {
+                try {
+                    var b = JSON.parse(r.responseText || '{}');
+                    var got = (b.announcements || 0) + (b.events || 0) + (b.assignments || 0);
+                    bumpStats('browserLane', b.status, got, 0);
+                    if (got > 0) {
+                        log('[browser lane] ' + site.title + ': +' + (b.announcements || 0) + ' ann, +' +
+                            (b.events || 0) + ' ev, +' + (b.assignments || 0) + ' asg');
+                    }
+                } catch (e) {}
+            },
+            onerror: function() {}, ontimeout: function() {}
+        });
+    }
+
+    function browserLaneTick() {
+        if (getVal(K_BROWSER_LANE, true) !== true) return;
+        var now = Date.now();
+        if (now - (Number(getVal(K_LAST_BROWSER_LANE, 0)) || 0) < BROWSER_LANE_MS) return;
+        setVal(K_LAST_BROWSER_LANE, now);
+        var sites = siteIdsFromNav();
+        if (!sites.length) return;
+        // One site per tick keeps runs short and rotates through them all.
+        var idx = (Number(getVal(K_BROWSER_IDX, 0)) || 0) % sites.length;
+        setVal(K_BROWSER_IDX, idx + 1);
+        var site = sites[idx];
+        var enc = encodeURIComponent(site.siteId);
+        Promise.all([
+            fetchJsonSameOrigin('/direct/announcement/site/' + enc + '.json'),
+            fetchJsonSameOrigin('/direct/calendar/site/' + enc + '.json'),
+            fetchJsonSameOrigin('/direct/assignment/site/' + enc + '.json')
+        ]).then(function(rs) {
+            if (!rs[0] && !rs[1] && !rs[2]) return; // nothing readable this tick
+            postBrowserLane(site, rs);
+        }).catch(function() {});
+    }
+
+    // ============================================================
     // AUTO-LOGIN (merged from the keepalive)
     // On re-login the lender used to be told via a DOM attribute
     // contract, because separate Tampermonkey sandboxes cannot share
@@ -4128,6 +4226,13 @@
         GM_registerMenuCommand('eFundiHax: Sync driver ON', function() {
             setVal(K_DRIVER, true); log('Sync driver ENABLED (fast 1m / drain 5m / hard 5m / quarantine+audit weekly).'); driverSweep();
         });
+        GM_registerMenuCommand('eFundiHax: Browser lane ON (needs no cookie permission)', function() {
+            setVal(K_BROWSER_LANE, true); log('Browser lane ENABLED — same-origin fetch, no cookie access needed.');
+            browserLaneTick();
+        });
+        GM_registerMenuCommand('eFundiHax: Browser lane OFF', function() {
+            setVal(K_BROWSER_LANE, false); log('Browser lane DISABLED.');
+        });
         GM_registerMenuCommand('eFundiHax: Sync driver OFF', function() {
             setVal(K_DRIVER, false); log('Sync driver DISABLED.');
         });
@@ -4179,6 +4284,8 @@
 
     setInterval(lend, LEND_MS);
     setInterval(driverSweep, 30 * 1000); // each tick self-limits to its own cadence
+    setInterval(browserLaneTick, 30 * 1000); // same: the tick self-limits to 1 min
+    browserLaneTick(); // run once immediately at startup
 })();
 
 })();
