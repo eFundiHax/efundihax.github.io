@@ -22,9 +22,9 @@ color: #6b3d8f
 calendar_id: 61ea740e91c6169825fb07aae5671370fd2a75d2a38ac94a77b4e80237279bcf@group.calendar.google.com
 title: Engineering Undergraduate
 last_sync: 2026-10-08T05:14:23.830Z
-last_announcement: 2026-10-09T11:38:29.215Z
+last_announcement: 2026-10-09T11:38:48.614Z
 total_files: 1471
-generated: 2026-10-09T11:38:18.238Z
+generated: 2026-10-09T11:38:36.566Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
