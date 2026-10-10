@@ -4321,39 +4321,25 @@
         } catch (e) {}
     }
 
+    // ============================================================
+    // THE ONE SETTING: offline sync.
+    //
+    // The operator asked for a single option, so this is the only
+    // command in the menu. Everything else (lending, the sync driver,
+    // the browser lane) runs automatically with sane defaults and is
+    // not something a user should have to configure.
+    //
+    // Tampermonkey has no @setting metadata for custom per-script
+    // settings (its settings page only exposes run-at, noframes and the
+    // compat_* flags), so GM_registerMenuCommand - what appears under
+    // the Tampermonkey icon - is the supported surface.
+    //
+    // OFF (default): open-tab syncing, no credentials.
+    // ON           : stores the eFundi password so the backend can log
+    //                in and sync with no tab open.
+    // OFF again    : tells the backend to delete the password.
+    // ============================================================
     try {
-        GM_registerMenuCommand('eFundiHax: Enable cookie lending', function() {
-            setVal(K_CONSENT, true); log('Lending ENABLED.'); lend();
-        });
-        GM_registerMenuCommand('eFundiHax: Disable cookie lending', function() {
-            setVal(K_CONSENT, false); log('Lending DISABLED.');
-        });
-        GM_registerMenuCommand('eFundiHax: Sync driver ON', function() {
-            setVal(K_DRIVER, true); log('Sync driver ENABLED (fast 1m / drain 5m / hard 5m / quarantine+audit weekly).'); driverSweep();
-        });
-        GM_registerMenuCommand('eFundiHax: Browser lane ON (needs no cookie permission)', function() {
-            setVal(K_BROWSER_LANE, true); log('Browser lane ENABLED — same-origin fetch, no cookie access needed.');
-            browserLaneTick();
-        });
-        GM_registerMenuCommand('eFundiHax: Browser lane OFF', function() {
-            setVal(K_BROWSER_LANE, false); log('Browser lane DISABLED.');
-        });
-        GM_registerMenuCommand('eFundiHax: Sync driver OFF', function() {
-            setVal(K_DRIVER, false); log('Sync driver DISABLED.');
-        });
-        GM_registerMenuCommand('eFundiHax: Sync driver stats', function() {
-            var s = JSON.parse(getVal(K_DRIVER_STATS, '{}') || '{}');
-            var names = Object.keys(s);
-            if (!names.length) { log('Sync driver: no runs yet.'); return; }
-            names.forEach(function(k) {
-                log('  ' + k + ': runs=' + s[k].runs + ' ok=' + s[k].ok + ' files=' + s[k].files +
-                    ' last=' + s[k].last + ' note=' + s[k].lastNote);
-            });
-        });
-        GM_registerMenuCommand('eFundiHax: Clear saved eFundi login', function() {
-            setVal(K_AL_USER, ''); setVal(K_AL_PASS, ''); setVal(K_AL_FAILS, 0); setVal(K_AL_BACKOFF, 0);
-            log('Saved eFundi login cleared.');
-        });
         GM_registerMenuCommand('eFundiHax: Offline sync - click to toggle (now ' +
             (offlineSyncOn() ? 'ON' : 'OFF') + ')', function() {
             if (offlineSyncOn()) { turnOffOfflineSync(); }
