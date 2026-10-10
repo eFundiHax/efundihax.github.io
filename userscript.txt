@@ -23,7 +23,7 @@
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '16.0.1';
+    window.__efhVersion = '17.5.0';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
