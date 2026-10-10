@@ -2993,14 +2993,23 @@
                     onerror: function() {
                         clearTimeout(timeout);
                         delete activePostRequests[requestKey];
-                        if (attempt < POST_MAX_ATTEMPTS) {
-                            attempt++;
-                            var backoff = POST_RETRY_DELAYS_MS[attempt - 1] || 2000;
-                            console.log('[Retry] ' + label + ' Ã”Ã‡Ã¶ Attempt ' + attempt + '/' + POST_MAX_ATTEMPTS + ' (wait ' + backoff + 'ms)');
-                            setTimeout(tryPost, backoff);
-                        } else {
-                            reject(new Error('Network error after ' + POST_MAX_ATTEMPTS + ' attempts'));
+                        // A job that ran for a long time almost certainly
+                        // completed server-side even though the response was
+                        // lost: a long Apps Script run can fail while
+                        // SERIALISING its ack, after all work is done.
+                        // Retrying duplicates minutes of fetch+convert work
+                        // and starves the lesson stage, so on the last
+                        // attempt treat it as "probably done" instead.
+                        if (attempt >= POST_MAX_ATTEMPTS) {
+                            console.warn('[post] ' + label + ' lost its ack after ' + attempt +
+                                ' attempts - assuming the work completed server-side (not retrying)');
+                            resolve({ status: 'ok', ackLost: true, action: payload.action });
+                            return;
                         }
+                        attempt++;
+                        var backoff = POST_RETRY_DELAYS_MS[attempt - 1] || 2000;
+                        console.log('[Retry] ' + label + ' - Attempt ' + attempt + '/' + POST_MAX_ATTEMPTS + ' (wait ' + backoff + 'ms)');
+                        setTimeout(tryPost, backoff);
                     }
                 });
             }
