@@ -24,7 +24,7 @@ title: Maths Club
 last_sync: 2026-05-29T15:05:50.875Z
 last_announcement: 2026-10-10T15:06:39.810Z
 total_files: 182
-generated: 2026-10-10T15:07:38.297Z
+generated: 2026-10-10T15:07:52.299Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
@@ -204,7 +204,7 @@ INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-09-06T14:57:11.364Z | announcement_a
 SYNCED | Massuress_3.pdf | pdf | 2026-09-06T14:57:27.687Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Massuress_3.pdf | pdf | 2026-09-06T15:41:27.667Z | announcement_attachment |  |  | fails=0 | failts=
 SYNCED | Massuress_3.pdf | pdf | 2026-09-06T15:41:49.693Z | announcement_attachment |  |  | fails=0 | failts=
-SYNCED | Massuress_3.pdf | pdf | 2026-10-10T15:07:37.691Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f483045c-098a-4650-820f-a2c8397e697b/Announcements/3ee97574-b8bc-4614-b002-5be6bb1311f1/Massuress_3.pdf |  | fails=0 | failts=
+SYNCED | Massuress_3.pdf | pdf | 2026-10-10T15:07:51.641Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f483045c-098a-4650-820f-a2c8397e697b/Announcements/3ee97574-b8bc-4614-b002-5be6bb1311f1/Massuress_3.pdf |  | fails=0 | failts=
 NOT_SYNCED | Categories.pdf | pdf | 2026-10-09T17:34:47.185Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Categories.pdf |  | fails=0 | failts=
 NOT_SYNCED | Groups.pdf | pdf | 2026-10-09T17:34:47.185Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Groups.pdf |  | fails=0 | failts=
 NOT_SYNCED | Integration_and_Differentiation_Bee_Competition.pdf | pdf | 2026-10-09T17:34:47.185Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Integration_and_Differentiation_Bee_Competition.pdf |  | fails=0 | failts=
