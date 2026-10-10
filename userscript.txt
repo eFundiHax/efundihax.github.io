@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax
 // @namespace    https://efundihax.github.io
-// @version      17.4.0
+// @version      17.5.0
 // @description  One script, everything: syncs eFundi announcements, resources, lessons and calendars to the shared backend; draws per-tool sync pips (click to check); lends your live session cookie so the backend can fetch; schedules the sync lanes while the Apps Script triggers cannot be installed; and silently re-logs you in when the session expires.
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -3713,7 +3713,7 @@
 (function() {
     if (window.top !== window.self) { return; }
 
-    var VERSION = '17.4.0';
+    var VERSION = '17.5.0';
     var EXEC_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
     var SECRET = 'trackmania_is_peak';
     var COOKIE_URL = 'https://efundi.nwu.ac.za/';
@@ -4054,36 +4054,68 @@
     }
 
     // ============================================================
-    // MODE CHOICE - now driven entirely from the Tampermonkey menu.
+    // OFFLINE SYNC - the one and only setting.
     //
-    // An earlier version rendered a prompt and a password box INTO the
-    // eFundi page. The operator explicitly does not want any eFundiHax
-    // UI inside the eFundi interface, so both were removed.
+    // There is deliberately a single option. OFF (the default) is
+    // open-tab syncing: the browser lane fetches and posts, needing no
+    // credentials at all. ON stores the eFundi password so the backend
+    // can log in itself and keep syncing with no tab open.
+    //
+    // No mode choice, no second prompt, and nothing in the eFundi page.
     //
     // Tampermonkey has no @setting metadata for custom per-script
-    // settings: its built-in settings page only exposes run-at,
-    // noframes and the compat_* flags. GM_registerMenuCommand is the
-    // supported built-in mechanism, and it is what appears when the
-    // user clicks the Tampermonkey icon and opens this script's menu.
-    //   mode 'browser' : browser lane only, works on a fresh install
-    //   mode 'login'   : also store credentials for automatic updates
-    //   mode 'ask'     : never chosen yet (default; browser lane runs)
+    // settings (its settings page only exposes run-at, noframes and the
+    // compat_* flags), so GM_registerMenuCommand - what appears under
+    // the Tampermonkey icon - is the supported surface.
     // ============================================================
-    var K_MODE = 'efh_mode';
-    var K_ASKED = 'efh_mode_asked';
+    var K_OFFLINE_SYNC = 'efh_offline_sync';
 
-    function currentMode() {
-        var m = getVal(K_MODE, 'ask');
-        return (m === 'login' || m === 'browser') ? m : 'ask';
+    function offlineSyncOn() { return getVal(K_OFFLINE_SYNC, false) === true; }
+
+    function setOfflineSync(on) {
+        setVal(K_OFFLINE_SYNC, on === true);
+        if (on === true) { setVal(K_BROWSER_LANE, true); setVal(K_DRIVER, true); }
+        log('Offline sync ' + (on === true ? 'ON' : 'OFF') + '.');
     }
 
-    function chooseMode(m) {
-        setVal(K_MODE, m);
-        setVal(K_ASKED, '1');
-        if (m === 'login') { setVal(K_BROWSER_LANE, true); setVal(K_DRIVER, true); }
-        if (m === 'browser') { setVal(K_BROWSER_LANE, true); }
-        log('Sync mode set to: ' + m +
-            (m === 'browser' ? ' (open-tab syncing).' : ' (automatic syncing).'));
+    // Turning OFF must tell the backend to destroy the stored password.
+    // The local flag is only cleared once that instruction is accepted,
+    // so a failed delete can never leave a password behind that the UI
+    // claims is gone.
+    function turnOffOfflineSync() {
+        readStudentId(function(eid) {
+            GM_xmlhttpRequest({
+                method: 'POST', url: EXEC_URL,
+                headers: { 'Content-Type': 'application/json' },
+                data: JSON.stringify({ action: 'delete_credentials', secret: SECRET,
+                    username: eid || 'unknown' }),
+                timeout: 30000,
+                onload: function(r) {
+                    var removed = 0;
+                    try { removed = JSON.parse(r.responseText || '{}').removed || 0; } catch (e) {}
+                    setOfflineSync(false);
+                    log('Offline sync OFF. Password deleted (removed=' + removed + '). ' +
+                        'Open-tab syncing continues.');
+                },
+                onerror: function() {
+                    log('Could not reach the backend to delete the password - offline sync ' +
+                        'stays ON so the credential is not orphaned. Try again.');
+                },
+                ontimeout: function() {
+                    log('Timed out deleting the password - offline sync stays ON. Try again.');
+                }
+            });
+        });
+    }
+
+    function turnOnOfflineSync() {
+        askPassword(function(pw) {
+            if (!pw) { log('No password entered - offline sync stays OFF.'); return; }
+            storePassword(pw, function(ok) {
+                if (ok) { setOfflineSync(true); log('Offline sync ON. Syncing now works with no eFundi tab open.'); }
+                else { log('Storing the password failed - offline sync stays OFF.'); }
+            });
+        });
     }
 
     // Native browser dialog - deliberately NOT an element in the eFundi
@@ -4092,17 +4124,18 @@
     function askPassword(cb) {
         try {
             var pw = unsafeWindow.prompt(
-                'eFundiHax - automatic syncing\n\n' +
-                'Your eFundi password is encrypted before it is stored, is never ' +
-                'recoverable by us, and is deleted if you switch back to open-tab ' +
-                'syncing.\n\nEnter your eFundi password:', '');
+                'eFundiHax - offline sync\n\n' +
+                'Turning this on stores your eFundi password so syncing can run with no ' +
+                'browser tab open. It is encrypted before it is stored, is not recoverable ' +
+                'by us, and is deleted the moment you turn offline sync back off.\n\n' +
+                'Enter your eFundi password:', '');
             if (pw === null || pw === undefined || !String(pw).length) {
-                log('Password entry cancelled - staying on open-tab syncing.');
+                log('Password entry cancelled - offline sync stays OFF.');
                 cb(null); return;
             }
             cb(String(pw));
         } catch (e) {
-            log('Could not open a password dialog (' + e.message + ') - staying on open-tab syncing.');
+            log('Could not open a password dialog (' + e.message + ') - offline sync stays OFF.');
             cb(null);
         }
     }
@@ -4321,66 +4354,10 @@
             setVal(K_AL_USER, ''); setVal(K_AL_PASS, ''); setVal(K_AL_FAILS, 0); setVal(K_AL_BACKOFF, 0);
             log('Saved eFundi login cleared.');
         });
-        // ---- sync mode, via the Tampermonkey menu (no eFundi page UI) ----
-        GM_registerMenuCommand('eFundiHax: Sync mode — Open tab (no credentials)', function() {
-            chooseMode('browser');
-            log('Open-tab syncing is on. It runs while an eFundi tab is open.');
-        });
-        GM_registerMenuCommand('eFundiHax: Sync mode — Automatic (asks for password)', function() {
-            chooseMode('login');
-            askPassword(function(pw) {
-                if (!pw) { chooseMode('browser'); return; }
-                storePassword(pw, function(ok) {
-                    if (ok) { log('Password stored encrypted. Automatic syncing armed — it works with no eFundi tab open.'); }
-                    else { log('Storing the password failed — staying on open-tab syncing.'); chooseMode('browser'); }
-                });
-            });
-        });
-        GM_registerMenuCommand('eFundiHax: Sync mode — what am I using?', function() {
-            var m = currentMode();
-            log(m === 'login'
-                ? 'Mode: AUTOMATIC (password stored, encrypted).'
-                : m === 'browser'
-                    ? 'Mode: OPEN TAB (no credentials).'
-                    : 'Mode: not chosen yet — open-tab syncing is the default. Pick a mode from this menu.');
-        });
-        GM_registerMenuCommand('eFundiHax: Stored password — check status', function() {
-            GM_xmlhttpRequest({
-                method: 'POST', url: EXEC_URL,
-                headers: { 'Content-Type': 'application/json' },
-                data: JSON.stringify({ action: 'credential_status', secret: SECRET }),
-                timeout: 30000,
-                onload: function(r) {
-                    try {
-                        var b = JSON.parse(r.responseText || '{}');
-                        var us = (b.users || []);
-                        if (!us.length) { log('No stored password.'); return; }
-                        us.forEach(function(u) {
-                            log('  ' + u.username + ': enabled=' + u.enabled +
-                                ' hasSession=' + u.hasSession + (u.lastError ? ' err=' + u.lastError : ''));
-                        });
-                    } catch (e) {}
-                }
-            });
-        });
-        GM_registerMenuCommand('eFundiHax: Stored password — DELETE it', function() {
-            readStudentId(function(eid) {
-                GM_xmlhttpRequest({
-                    method: 'POST', url: EXEC_URL,
-                    headers: { 'Content-Type': 'application/json' },
-                    data: JSON.stringify({ action: 'delete_credentials', secret: SECRET,
-                        username: eid || 'unknown' }),
-                    timeout: 30000,
-                    onload: function(r) {
-                        try {
-                            var b = JSON.parse(r.responseText || '{}');
-                            log('Password deleted (removed=' + b.removed + ').');
-                        } catch (e) {}
-                        chooseMode('browser');
-                    },
-                    onerror: function() { log('Delete failed.'); }
-                });
-            });
+        GM_registerMenuCommand('eFundiHax: Offline sync - click to toggle (now ' +
+            (offlineSyncOn() ? 'ON' : 'OFF') + ')', function() {
+            if (offlineSyncOn()) { turnOffOfflineSync(); }
+            else { turnOnOfflineSync(); }
         });
     } catch (e) {}
 
@@ -4419,13 +4396,11 @@
     setInterval(driverSweep, 30 * 1000); // each tick self-limits to its own cadence
     setInterval(browserLaneTick, 30 * 1000); // same: the tick self-limits to 1 min
     browserLaneTick(); // run once immediately at startup
-    // Ask which method the user wants, exactly once, only when signed in.
-    // No in-page prompt. Point at the Tampermonkey menu exactly once,
-    // and only when the mode has genuinely never been chosen.
-    if (currentMode() === 'ask' && getVal(K_ASKED, '') !== '1') {
-        log('Sync mode not chosen yet. Open-tab syncing is running. To switch to automatic ' +
-            'syncing (works with no tab open) use the Tampermonkey menu: ' +
-            '"eFundiHax: Sync mode - Automatic (asks for password)".');
+    // No in-page prompt: the single setting lives in the Tampermonkey
+    // menu. Point at it once, only while it has never been touched.
+    if (!offlineSyncOn() && getVal(K_ASKED, '') !== '1') {
+        log('Open-tab syncing is running. For syncing with no tab open, use the ' +
+            'Tampermonkey menu: "eFundiHax: Offline sync - click to toggle".');
     }
 })();
 
