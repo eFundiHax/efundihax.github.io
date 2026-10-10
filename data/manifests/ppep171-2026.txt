@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-10T10:52:15.672Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -22,9 +22,9 @@ color: #6b3d8f
 calendar_id: 7719caf2ed4ad294f9d9e74b2300db002f94e6675a0af59c291dff2d7182f133@group.calendar.google.com
 title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
-last_announcement: 2026-10-10T15:08:05.384Z
+last_announcement: 2026-10-10T15:08:28.800Z
 total_files: 1308
-generated: 2026-10-09T12:16:45.419Z
+generated: 2026-10-10T15:08:13.750Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
