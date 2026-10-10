@@ -22,9 +22,9 @@ color: #6b3d8f
 calendar_id: 90b43f19ac56e70f68afa24093cc5f81d699c7b090f91eae0de1d1fbd9ad62f2@group.calendar.google.com
 title: INGM122-2026
 last_sync: 2026-10-09T11:33:09.635Z
-last_announcement: 2026-10-10T19:05:25.730Z
+last_announcement: 2026-10-10T19:05:51.635Z
 total_files: 816
-generated: 2026-10-10T19:05:09.467Z
+generated: 2026-10-10T19:05:33.113Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
