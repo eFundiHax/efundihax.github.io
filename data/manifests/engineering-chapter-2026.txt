@@ -22,9 +22,9 @@ color: #6b3d8f
 calendar_id: 0edd80cff580a1120dcb286ec38e30d94277d02d15eaf4a96b119125d6668871@group.calendar.google.com
 title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
-last_announcement: 2026-10-10T23:37:38.118Z
+last_announcement: 2026-10-10T23:37:59.270Z
 total_files: 514
-generated: 2026-10-10T23:37:32.260Z
+generated: 2026-10-10T23:37:53.049Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
@@ -483,7 +483,7 @@ SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-10-10T21:23:55.208Z | a
 SYNCED | Portfolio descriptions for SAC.pdf | pdf | 2026-10-10T21:23:55.208Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/462ca729-32f3-4650-a4a8-49f4dee20853/Portfolio%20descriptions%20for%20SAC.pdf |  | fails=0 | failts=
 SYNCED | 2022.09.05_Rules SSLS_approved (2).pdf | pdf | 2026-10-10T21:23:55.208Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/aab9b827-80aa-4c83-acbe-0dc6c3976ac1/2022.09.05_Rules%20SSLS_approved%20_2_.pdf |  | fails=0 | failts=
 SYNCED | 2024.08.24_PC Election Schedule_HC SAC_.pdf | pdf | 2026-10-10T21:23:55.208Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/73956941-2b60-4c6e-82bd-df6a2e79a613/2024.08.24_PC%20Election%20Schedule_HC%20SAC_.pdf |  | fails=0 | failts=
-SYNCING | Industrial Automation Short Course_Siemens TIA-Micro.jpg | jpg | 2026-10-10T21:23:55.208Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0bd05699-4088-4e88-ba28-ef7880ea8103/Industrial%20Automation%20Short%20Course_Siemens%20TIA-Micro.jpg |  | fails=0 | failts=
+SYNCED | Industrial Automation Short Course_Siemens TIA-Micro.jpg | jpg | 2026-10-10T21:23:55.208Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/0bd05699-4088-4e88-ba28-ef7880ea8103/Industrial%20Automation%20Short%20Course_Siemens%20TIA-Micro.jpg |  | fails=0 | failts=
 NOT_SYNCED | Word Wise Week.jpg | jpg | 2026-10-10T21:23:55.208Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/5fa20c74-8a4f-4d86-bff0-edbe5673cbb8/Word%20Wise%20Week.jpg |  | fails=0 | failts=
 NOT_SYNCED | Industrial Automation Short Course.jpg | jpg | 2026-10-10T21:23:55.208Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/91e0c3d1-755a-4db2-870f-8beff31088cd/Industrial%20Automation%20Short%20Course.jpg |  | fails=0 | failts=
 NOT_SYNCED | SCD Thuso A4 dgt.pdf | pdf | 2026-10-10T21:23:55.208Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/f97b0782-a4f9-4d45-900a-9332b11b04f7/SCD%20Thuso%20A4%20dgt.pdf |  | fails=0 | failts=
