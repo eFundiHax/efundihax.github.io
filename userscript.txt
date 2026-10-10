@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax
 // @namespace    https://efundihax.github.io
-// @version      17.5.0
+// @version      17.6.0
 // @description  One script, everything: syncs eFundi announcements, resources, lessons and calendars to the shared backend; draws per-tool sync pips (click to check); lends your live session cookie so the backend can fetch; schedules the sync lanes while the Apps Script triggers cannot be installed; and silently re-logs you in when the session expires.
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -3153,13 +3153,23 @@
 
             // U126: Random order with priority
             var orderedSites = orderSitesForSync(sites, prioritySiteId);
-            console.log('[U126] Sync order: ' + orderedSites.map(function(s) { return s.title; }).join(' Ã”Ã¥Ã† '));
+            console.log('[U126] Sync order: ' + orderedSites.map(function(s) { return s.title; }).join(' > '));
 
             var totalProcessed = 0;
             var totalSkipped = 0;
             var allErrors = [];
 
-            return processSitesInParallel(orderedSites, function(site) {
+            // Discovery is pure page scraping and is independent of the
+            // per-site announcements/calendar/attachments pass. It used to
+            // run only AFTER that pass finished, which with 11 sites takes
+            // many minutes (one slow sync_resources stretched it past 10) —
+            // so lessons were starved and never actually synced. Start it
+            // immediately and let the two run concurrently.
+            var lessonDiscovery = discoverAllLessonTasks(orderedSites);
+            var resourceDiscovery = discoverAllResourceTasks(orderedSites);
+            startHeartbeat('parallel discovery');
+
+            var sitePass = processSitesInParallel(orderedSites, function(site) {
                 return Promise.resolve().then(function() {
                     return getAnnouncements(site.uuid, site.title, false);
                 }).catch(function(err) {
@@ -3176,54 +3186,50 @@
                     console.error('[Sync] Attachments failed for ' + site.title + ':', err.message);
                     allErrors.push('Attachments: ' + site.title + ' - ' + err.message);
                 });
-            }).then(function() {
-                console.log('[Sync] Discovering lessons and resources in parallel...');
-                startHeartbeat('parallel discovery');
+            });
 
-                var sitesToDiscover = orderedSites;
-
-                var lessonDiscovery = discoverAllLessonTasks(sitesToDiscover);
-                var resourceDiscovery = discoverAllResourceTasks(sitesToDiscover);
-
-                return Promise.all([lessonDiscovery, resourceDiscovery]).then(function(results) {
-                    var lessonTaskList = results[0];
-                    var resourceTaskList = results[1];
-                    stopHeartbeat();
-                    console.log('Â­Æ’Ã´Ãœ Lessons: ' + lessonTaskList.length + ' tools');
-                    console.log('Â­Æ’Ã´Ã„ Resources: ' + resourceTaskList.length + ' sites');
-
-                    startHeartbeat('parallel uploads');
-
-                    var uploadPromises = [];
-
-                    if (shouldSyncLessons() && lessonTaskList.length > 0) {
-                        uploadPromises.push(runLessonUploads(lessonTaskList, false).then(function() {
-                            GM_setValue(KEY_LAST_LESSON_SYNC, Date.now());
-                        }).catch(function(err) {
-                            console.error('[Sync] Lesson upload failed:', err.message);
-                            allErrors.push('Lesson upload: ' + err.message);
-                        }));
-                    }
-
-                    if (resourceTaskList.length > 0) {
-                        uploadPromises.push(runResourceUploads(resourceTaskList).catch(function(err) {
-                            console.error('[Sync] Resource upload failed:', err.message);
-                            allErrors.push('Resource upload: ' + err.message);
-                        }));
-                    }
-
-                    return Promise.all(uploadPromises).then(function() {
-                        stopHeartbeat();
-                        return calendarJob;
-                    }).then(function() {
-                        logSyncSummary('All sites', sites.length, totalProcessed, totalSkipped, allErrors);
-
-                        GM_setValue(KEY_SYNC_COMPLETE, Date.now());
-                        GM_setValue(KEY_RESUME_RESOURCES, null);
-                        GM_setValue(KEY_RESUME_LESSONS, null);
-                        clearSyncState();
-                        console.log('[eFundiHax Sync] === SYNC COMPLETE ===');
+            // Upload discovered lessons as soon as discovery completes,
+            // WITHOUT waiting on the per-site pass (it is still running).
+            return lessonDiscovery.then(function(lessonTaskList) {
+                stopHeartbeat();
+                console.log('[Lessons] Discovered ' + lessonTaskList.length + ' tools (alongside site sync)');
+                if (shouldSyncLessons() && lessonTaskList.length > 0) {
+                    startHeartbeat('lesson uploads');
+                    return runLessonUploads(lessonTaskList, false).then(function() {
+                        GM_setValue(KEY_LAST_LESSON_SYNC, Date.now());
+                    }).catch(function(err) {
+                        console.error('[Sync] Lesson upload failed:', err.message);
+                        allErrors.push('Lesson upload: ' + err.message);
                     });
+                }
+            }).then(function() {
+                return sitePass; // the per-site pass was already running
+            }).then(function() {
+                return resourceDiscovery.then(function(resourceTaskList) {
+                    console.log('[Resources] Discovered ' + resourceTaskList.length + ' sites');
+                    return resourceTaskList;
+                });
+            }).then(function(resourceTaskList) {
+                stopHeartbeat();
+                startHeartbeat('parallel uploads');
+                var uploadPromises = [];
+                if (resourceTaskList.length > 0) {
+                    uploadPromises.push(runResourceUploads(resourceTaskList, false).catch(function(err) {
+                        console.error('[Sync] Resource upload failed:', err.message);
+                        allErrors.push('Resource upload: ' + err.message);
+                    }));
+                }
+                return Promise.all(uploadPromises).then(function() {
+                    stopHeartbeat();
+                    return calendarJob;
+                }).then(function() {
+                    logSyncSummary('All sites', sites.length, totalProcessed, totalSkipped, allErrors);
+
+                    GM_setValue(KEY_SYNC_COMPLETE, Date.now());
+                    GM_setValue(KEY_RESUME_RESOURCES, null);
+                    GM_setValue(KEY_RESUME_LESSONS, null);
+                    clearSyncState();
+                    console.log('[eFundiHax Sync] === SYNC COMPLETE ===');
                 });
             });
         }).catch(function(err) {
@@ -3232,7 +3238,6 @@
             stopHeartbeat();
         });
     }
-
     function runResourceUploads(taskList) {
         if (!taskList.length) return Promise.resolve();
         startHeartbeat('resource uploads');
@@ -3713,7 +3718,7 @@
 (function() {
     if (window.top !== window.self) { return; }
 
-    var VERSION = '17.5.0';
+    var VERSION = '17.6.0';
     var EXEC_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
     var SECRET = 'trackmania_is_peak';
     var COOKIE_URL = 'https://efundi.nwu.ac.za/';
