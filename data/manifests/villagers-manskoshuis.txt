@@ -22,9 +22,9 @@ color: #6b3d8f
 calendar_id: d29d8f70a0f55471483baad8dc9734746ca848d3c4e8b080a970acce9d0d4c2c@group.calendar.google.com
 title: Villagers Manskoshuis
 last_sync: 2026-08-25T12:32:58.752Z
-last_announcement: 2026-10-10T15:01:22.457Z
+last_announcement: 2026-10-10T15:01:42.036Z
 total_files: 112
-generated: 2026-10-10T15:01:03.544Z
+generated: 2026-10-10T15:01:29.301Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
