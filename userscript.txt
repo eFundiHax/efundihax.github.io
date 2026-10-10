@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax
 // @namespace    https://efundihax.github.io
-// @version      17.6.0
+// @version      17.7.0
 // @description  One script, everything: syncs eFundi announcements, resources, lessons and calendars to the shared backend; draws per-tool sync pips (click to check); lends your live session cookie so the backend can fetch; schedules the sync lanes while the Apps Script triggers cannot be installed; and silently re-logs you in when the session expires.
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -23,7 +23,7 @@
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '17.5.0';
+    window.__efhVersion = '17.7.0';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
@@ -3157,7 +3157,17 @@
             console.warn('[eFundiHax Sync] Calendar error:', e);
         });
 
-        return runFeedSync().then(function() {
+        // Site registration must never abort the sync: if runFeedSync()
+        // rejects (a slow/failed sync_sites ack), the whole chain rejects
+        // and the lesson stage never runs. Log it and carry on.
+        // (allErrors is declared inside the .then below, so this outer
+        // catch keeps its own list and hands it over.)
+        var feedErrors = [];
+        return runFeedSync().catch(function(feedErr) {
+            var msg = (feedErr && feedErr.message) || String(feedErr);
+            console.warn('[Sync] Site registration failed, continuing without it:', msg);
+            feedErrors.push('Feed sync: ' + msg);
+        }).then(function() {
             var sites = collectSites().filter(function(s) { return !s.uuid.match(/^~/); });
 
             // U126: Random order with priority
@@ -3166,7 +3176,7 @@
 
             var totalProcessed = 0;
             var totalSkipped = 0;
-            var allErrors = [];
+            var allErrors = feedErrors.slice();
 
             // Discovery is pure page scraping and is independent of the
             // per-site announcements/calendar/attachments pass. It used to
@@ -3727,7 +3737,7 @@
 (function() {
     if (window.top !== window.self) { return; }
 
-    var VERSION = '17.6.0';
+    var VERSION = '17.7.0';
     var EXEC_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
     var SECRET = 'trackmania_is_peak';
     var COOKIE_URL = 'https://efundi.nwu.ac.za/';
