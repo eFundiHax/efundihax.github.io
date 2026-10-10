@@ -10,143 +10,26 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-10T10:54:02.375Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-10T22:53:36.829Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
 To keep all files up to date, the student needs the eFundiHax userscript installed:
 https://greasyfork.org/en/scripts/579058-efundi-scraper
 
-emoji: 📘
+emoji: ðŸ“˜
 color: #6b3d8f
 calendar_id: 0f98c4211a5e2e68df2c6ff1642049739cbfc2be4a9a1552e3319ea98faf2bca@group.calendar.google.com
 title: First year physics pr ...
 last_sync: 2026-06-03T16:06:00.153Z
 last_announcement: 2026-07-15T09:39:11.560Z
-total_files: 117
-generated: 2026-07-28T07:26:14.199Z
+total_files: 0
+generated: 2026-10-10T21:34:54.941Z
 
 --- FILE REGISTRY ---
-(status | filename | extension | last_seen | type)
-INCOMPATIBLE | A Vektore Teorie-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | A Vektore Voorbeelde-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | E Vectors examples.mp4 | mp4 | 2026-06-06T19:39:11.559Z | resource
-INCOMPATIBLE | E Vectors theory.mp4 | mp4 | 2026-06-06T19:39:11.559Z | resource
-INCOMPATIBLE | VEK 1 Angles-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | VEK 1 Hoeke-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | A Eenhede-1-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | A Manipulering-1-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | A Omskakelings-1-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | E _ A Convet areas, volumes.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | E Conversions-1-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | E Manipulation-1-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | E Units-1-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | A Tellende Syfers-1-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | A TelSyf _ Desimale-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | E SigFig _  Decimals-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | E Significant Figures-1-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | TAB 1 Afr.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | TAB 1 Eng.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | A Wrywing 1-1(3).m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | E Friction 1-1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | WRY 2 Agtergrond A.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | Wry 2 Background E.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | WRY 2 Eksp A.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | Wry 2 Exsp E.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | A KMK 1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | E KMK 1.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | A KMK2 2024.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-INCOMPATIBLE | E KMK2 2024.m4v | m4v | 2026-06-01T17:06:59.180Z | resource
-NOT_SYNCED | WRY 2 NB! Info.pdf | pdf | 2026-06-06T19:39:11.559Z | resource
-NOT_SYNCED | FSKS113FINAL.pdf | pdf | 2026-06-06T19:39:11.559Z | resource
-NOT_SYNCED | NPH111FINAL.pdf | pdf | 2026-06-06T19:39:11.559Z | resource
-NOT_SYNCED | PracManual2026Sem1.pdf | pdf | 2026-06-06T19:39:11.559Z | resource
-NOT_SYNCED | PrakHandleiding2026Sem1.pdf | pdf | 2026-06-06T19:39:11.559Z | resource
-NOT_SYNCED | 2026 schedule.pdf | pdf | 2026-06-06T19:39:11.559Z | resource
-SYNCED | 2026 scheduleUpdated.pdf | pdf | 2026-06-06T19:31:27.396Z | announcement_attachment
-SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-06-06T19:31:27.396Z | announcement_attachment
-NOT_SYNCED | 2026 scheduleUpdated.pdf | pdf | 2026-06-06T20:55:29.623Z | announcement_attachment
-NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-06-06T20:55:29.623Z | announcement_attachment
-SYNCED | 2026 scheduleUpdated.pdf | pdf | 2026-06-06T20:55:42.767Z | announcement_attachment
-SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-06-06T20:55:59.084Z | announcement_attachment
-NOT_SYNCED | 2026 scheduleUpdated.pdf | pdf | 2026-06-06T21:07:21.526Z | announcement_attachment
-NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-06-06T21:07:21.526Z | announcement_attachment
-SYNCED | 2026 scheduleUpdated.pdf | pdf | 2026-06-06T21:07:33.130Z | announcement_attachment
-SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-06-06T21:07:46.473Z | announcement_attachment
-NOT_SYNCED | 2026 scheduleUpdated.pdf | pdf | 2026-06-21T09:59:10.507Z | announcement_attachment
-NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-06-21T09:59:10.507Z | announcement_attachment
-NOT_SYNCED | 2026 scheduleUpdated.pdf | pdf | 2026-06-21T09:59:30.861Z | announcement_attachment
-NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-06-21T09:59:30.861Z | announcement_attachment
-SYNCED | 2026 scheduleUpdated.pdf | pdf | 2026-06-21T09:59:42.242Z | announcement_attachment
-SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-06-21T09:59:59.163Z | announcement_attachment
-NOT_SYNCED | 2026 scheduleUpdated.pdf | pdf | 2026-07-14T09:00:05.204Z | announcement_attachment
-NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-14T09:00:05.204Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-14T09:00:28.427Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-14T09:00:28.427Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-14T09:00:42.697Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-14T09:59:48.299Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-14T09:59:48.299Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-14T10:00:05.068Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-14T10:47:50.524Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-14T10:47:50.524Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-14T10:48:04.024Z | announcement_attachment
-NOT_SYNCED | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T09:39:09.844Z | announcement_attachment
-NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T09:39:09.844Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T09:39:25.714Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T09:39:25.714Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T09:39:42.609Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T09:47:57.010Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T09:47:57.010Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T09:48:14.883Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T11:57:13.781Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T11:57:13.781Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T11:57:27.241Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T12:07:36.682Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T12:07:36.682Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T13:58:35.810Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T13:58:35.810Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T13:58:50.473Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T14:13:37.015Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T14:13:37.015Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T14:13:57.794Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T14:14:54.183Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T14:14:54.183Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T14:15:11.179Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T14:28:01.303Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T14:28:01.303Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T14:28:14.628Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T14:31:26.611Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T14:31:26.611Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T14:31:41.380Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T14:35:07.550Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T14:35:07.550Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T14:35:25.161Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T14:40:46.753Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T14:40:46.753Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T14:41:03.672Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T14:56:07.049Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T14:56:07.049Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T14:56:21.488Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T15:50:54.650Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T15:50:54.650Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T15:51:11.269Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T16:25:31.053Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T16:25:31.053Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T16:25:46.569Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-15T18:00:07.866Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T18:00:07.866Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-15T18:00:21.492Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-21T12:18:53.789Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-21T12:18:53.789Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-21T12:19:16.662Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-28T07:24:30.942Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-28T07:24:30.942Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-28T07:24:54.603Z | announcement_attachment
-INCOMPATIBLE | 2026 scheduleUpdated.pdf | pdf | 2026-07-28T07:25:55.938Z | announcement_attachment
-INCOMPATIBLE | 2026EXEMPTIONS.pdf | pdf | 2026-07-28T07:25:55.938Z | announcement_attachment
-IMAGES_NOT_SYNCED | 2026EXEMPTIONS.pdf | pdf | 2026-07-28T07:26:12.677Z | announcement_attachment
+(status | filename | extension | last_seen | type | url | source)
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
-(MASTER) First year physics pr ... — full extracted text from all synced files and lessons
-(SCHEDULE) First year physics pr ... — calendar events and announcements spreadsheet
+(MASTER) First year physics pr ... â€” full extracted text from all synced files and lessons
+(SCHEDULE) First year physics pr ... â€” calendar events and announcements spreadsheet
