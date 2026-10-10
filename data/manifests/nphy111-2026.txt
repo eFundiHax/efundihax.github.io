@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-10T10:52:53.313Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-10T22:52:38.918Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -23,66 +23,13 @@ calendar_id: 48bf8ac94a50112d9522f2457996996aa99b8df73f878c85b5408bc62a5481b5@gr
 title: NPHY111-2026
 last_sync: 2026-06-06T23:42:13.701Z
 last_announcement: 2026-07-28T07:24:50.460Z
-total_files: 53
-generated: 2026-07-28T07:25:15.580Z
+total_files: 0
+generated: 2026-10-10T21:24:13.902Z
 
 --- FILE REGISTRY ---
-(status | filename | extension | last_seen | type)
-NOT_SYNCED | Exam Guideline 2026 NPHY 111.pdf | pdf | 2026-06-06T23:41:50.890Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-06-06T23:41:50.890Z | announcement_attachment
-NOT_SYNCED | Tutorial questions (4 May).pdf | pdf | 2026-06-06T23:41:50.890Z | announcement_attachment
-NOT_SYNCED | Screenshot 2026-03-30 at 08.53.19.png | png | 2026-06-06T23:41:50.890Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-06-06T23:41:50.890Z | announcement_attachment
-INCOMPATIBLE | Pearson - video examples.mp4 | mp4 | 2026-06-06T23:41:50.890Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-06-06T23:41:50.890Z | announcement_attachment
-NOT_SYNCED | Pearson -Physics- NWU.pdf | pdf | 2026-06-06T23:41:50.890Z | announcement_attachment
-NOT_SYNCED | Physics for Scientists & Engineers with Modern Physics, Global Edition Flyer.pdf | pdf | 2026-06-06T23:41:50.890Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026-formula1.pdf | pdf | 2026-06-06T23:41:50.890Z | announcement_attachment
-NOT_SYNCED | NPHY 111 Tutors 2026.jpg | jpg | 2026-06-06T23:41:50.890Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - Schedule.pdf | pdf | 2026-06-06T23:41:50.890Z | announcement_attachment
-NOT_SYNCED | Exam Guideline 2026 NPHY 111.pdf | pdf | 2026-06-06T23:42:28.197Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-06-06T23:42:28.197Z | announcement_attachment
-NOT_SYNCED | Tutorial questions (4 May).pdf | pdf | 2026-06-06T23:42:28.197Z | announcement_attachment
-NOT_SYNCED | Screenshot 2026-03-30 at 08.53.19.png | png | 2026-06-06T23:42:28.197Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-06-06T23:42:28.197Z | announcement_attachment
-INCOMPATIBLE | Pearson - video examples.mp4 | mp4 | 2026-06-06T23:42:28.197Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-06-06T23:42:28.197Z | announcement_attachment
-NOT_SYNCED | Pearson -Physics- NWU.pdf | pdf | 2026-06-06T23:42:28.197Z | announcement_attachment
-NOT_SYNCED | Physics for Scientists & Engineers with Modern Physics, Global Edition Flyer.pdf | pdf | 2026-06-06T23:42:28.197Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026-formula1.pdf | pdf | 2026-06-06T23:42:28.197Z | announcement_attachment
-SYNCED | Exam Guideline 2026 NPHY 111.pdf | pdf | 2026-06-06T23:42:40.869Z | announcement_attachment
-SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-06-06T23:42:55.397Z | announcement_attachment
-SYNCED | Tutorial questions (4 May).pdf | pdf | 2026-06-06T23:43:13.073Z | announcement_attachment
-NOT_SYNCED | Exam Guideline 2026 NPHY 111.pdf | pdf | 2026-07-21T13:55:01.875Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-07-21T13:55:01.875Z | announcement_attachment
-NOT_SYNCED | Tutorial questions (4 May).pdf | pdf | 2026-07-21T13:55:01.875Z | announcement_attachment
-NOT_SYNCED | Screenshot 2026-03-30 at 08.53.19.png | png | 2026-07-21T13:55:01.875Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-07-21T13:55:01.875Z | announcement_attachment
-INCOMPATIBLE | Pearson - video examples.mp4 | mp4 | 2026-07-21T13:55:01.875Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-07-21T13:55:01.875Z | announcement_attachment
-NOT_SYNCED | Pearson -Physics- NWU.pdf | pdf | 2026-07-21T13:55:01.875Z | announcement_attachment
-NOT_SYNCED | Physics for Scientists & Engineers with Modern Physics, Global Edition Flyer.pdf | pdf | 2026-07-21T13:55:01.875Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026-formula1.pdf | pdf | 2026-07-21T13:55:01.875Z | announcement_attachment
-NOT_SYNCED | NPHY 111 Tutors 2026.jpg | jpg | 2026-07-21T13:55:01.875Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - Schedule.pdf | pdf | 2026-07-21T13:55:01.875Z | announcement_attachment
-NOT_SYNCED | Exam Guideline 2026 NPHY 111.pdf | pdf | 2026-07-28T07:24:48.877Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-07-28T07:24:48.877Z | announcement_attachment
-NOT_SYNCED | Tutorial questions (4 May).pdf | pdf | 2026-07-28T07:24:48.877Z | announcement_attachment
-NOT_SYNCED | Screenshot 2026-03-30 at 08.53.19.png | png | 2026-07-28T07:24:48.877Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-07-28T07:24:48.877Z | announcement_attachment
-INCOMPATIBLE | Pearson - video examples.mp4 | mp4 | 2026-07-28T07:24:48.877Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - marks.pdf | pdf | 2026-07-28T07:24:48.877Z | announcement_attachment
-NOT_SYNCED | Pearson -Physics- NWU.pdf | pdf | 2026-07-28T07:24:48.877Z | announcement_attachment
-NOT_SYNCED | Physics for Scientists & Engineers with Modern Physics, Global Edition Flyer.pdf | pdf | 2026-07-28T07:24:48.877Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026-formula1.pdf | pdf | 2026-07-28T07:24:48.877Z | announcement_attachment
-NOT_SYNCED | NPHY 111 Tutors 2026.jpg | jpg | 2026-07-28T07:24:48.877Z | announcement_attachment
-NOT_SYNCED | NPHY111-2026 - Schedule.pdf | pdf | 2026-07-28T07:24:48.877Z | announcement_attachment
-INCOMPATIBLE | Exam Guideline 2026 NPHY 111.pdf | pdf | 2026-07-28T07:25:06.325Z | announcement_attachment
-INCOMPATIBLE | NPHY111-2026 - marks.pdf | pdf | 2026-07-28T07:25:06.325Z | announcement_attachment
-INCOMPATIBLE | Exam Guideline 2026 NPHY 111.pdf | pdf | 2026-07-28T07:25:14.777Z | announcement_attachment
-INCOMPATIBLE | NPHY111-2026 - marks.pdf | pdf | 2026-07-28T07:25:14.777Z | announcement_attachment
+(status | filename | extension | last_seen | type | url | source)
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
-(MASTER) NPHY111-2026 — full extracted text from all synced files and lessons
-(SCHEDULE) NPHY111-2026 — calendar events and announcements spreadsheet
+(MASTER) NPHY111-2026 â€” full extracted text from all synced files and lessons
+(SCHEDULE) NPHY111-2026 â€” calendar events and announcements spreadsheet
