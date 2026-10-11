@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax
 // @namespace    https://efundihax.github.io
-// @version      17.9.0
+// @version      17.10.0
 // @description  One script, everything: syncs eFundi announcements, resources, lessons and calendars to the shared backend; draws per-tool sync pips (click to check); lends your live session cookie so the backend can fetch; schedules the sync lanes while the Apps Script triggers cannot be installed; and silently re-logs you in when the session expires.
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -23,7 +23,7 @@
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '17.9.0';
+    window.__efhVersion = '17.10.0';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
@@ -2957,15 +2957,35 @@
 
         activePostRequests[requestKey] = true;
 
-        return new Promise(function(resolve, reject) {
-            var attempt = 1;
+        // Failure path shared by onerror and ontimeout. A job that ran for
+        // a long time almost certainly completed server-side even though
+        // the response was lost (a long Apps Script run can fail while
+        // SERIALISING its ack, after all work is done). Retrying duplicates
+        // minutes of fetch+convert work and starves the lesson stage, so on
+        // the last attempt treat it as "probably done" instead.
+        function handlePostFailure(reason) {
+            if (attempt >= POST_MAX_ATTEMPTS) {
+                console.warn('[post] ' + label + ' lost its ack after ' + attempt +
+                    ' attempts (' + reason + ') - assuming the work completed server-side (not retrying)');
+                resolve({ status: 'ok', ackLost: true, action: payload.action });
+                return;
+            }
+            attempt++;
+            var backoff = POST_RETRY_DELAYS_MS[attempt - 1] || 2000;
+            console.log('[Retry] ' + label + ' - Attempt ' + attempt + '/' + POST_MAX_ATTEMPTS +
+                ' (' + reason + ', wait ' + backoff + 'ms)');
+            setTimeout(tryPost, backoff);
+        }
 
-            function tryPost() {
-                console.log('[eFundiHax Sync] [post] ' + label + ' (attempt ' + attempt + ')');
-                var timeout = setTimeout(function() {
-                    delete activePostRequests[requestKey];
-                    reject(new Error('POST timeout: ' + payload.action));
-                }, resolvedTimeout);
+        var attempt = 1;
+
+        return new Promise(function(resolve, reject) {
+        function tryPost() {
+            console.log('[eFundiHax Sync] [post] ' + label + ' (attempt ' + attempt + ')');
+            var timeout = setTimeout(function() {
+                delete activePostRequests[requestKey];
+                reject(new Error('POST timeout: ' + payload.action));
+            }, resolvedTimeout);
 
                 GM_xmlhttpRequest({
                     method: 'POST',
@@ -2973,43 +2993,22 @@
                     headers: { 'Content-Type': 'application/json' },
                     data: JSON.stringify(payload),
                     redirect: 'follow',
-                    onload: function(r) {
+                    // Must be passed explicitly: GM_xmlhttpRequest defaults to
+                    // Tampermonkey's own ~10s timeout, so a slow Apps Script run
+                    // (site creation, folder audit, large convert) aborts the
+                    // xhr and fires onerror. Chrome reports an aborted request
+                    // as onerror, not ontimeout, so the http-local timeout
+                    // above never got a chance and the whole lane failed.
+                    timeout: resolvedTimeout,
+                    ontimeout: function() {
                         clearTimeout(timeout);
                         delete activePostRequests[requestKey];
-                        try {
-                                                    var resp = JSON.parse(r.responseText);
-                                                    if (resp.status !== 'ok') { console.warn(resp.message || resp.error); reject(new Error('POST failed: ' + (resp.message || resp.error || resp.status))); return; }
-                                                    if (resp.logs && resp.logs.length) {
-                                                        console.log('[Apps Script] ' + resp.logs.length + ' log lines:');
-                                                        for (var i = 0; i < resp.logs.length; i++) {
-                                                            console.log('  ' + resp.logs[i]);
-                                                        }
-                                                    }
-                                                    resolve(resp);
-                                                } catch(e) {
-                                                    resolve({ raw: r.responseText });
-                                                }
+                        handlePostFailure('timeout after ' + Math.round(resolvedTimeout / 1000) + 's');
                     },
                     onerror: function() {
                         clearTimeout(timeout);
                         delete activePostRequests[requestKey];
-                        // A job that ran for a long time almost certainly
-                        // completed server-side even though the response was
-                        // lost: a long Apps Script run can fail while
-                        // SERIALISING its ack, after all work is done.
-                        // Retrying duplicates minutes of fetch+convert work
-                        // and starves the lesson stage, so on the last
-                        // attempt treat it as "probably done" instead.
-                        if (attempt >= POST_MAX_ATTEMPTS) {
-                            console.warn('[post] ' + label + ' lost its ack after ' + attempt +
-                                ' attempts - assuming the work completed server-side (not retrying)');
-                            resolve({ status: 'ok', ackLost: true, action: payload.action });
-                            return;
-                        }
-                        attempt++;
-                        var backoff = POST_RETRY_DELAYS_MS[attempt - 1] || 2000;
-                        console.log('[Retry] ' + label + ' - Attempt ' + attempt + '/' + POST_MAX_ATTEMPTS + ' (wait ' + backoff + 'ms)');
-                        setTimeout(tryPost, backoff);
+                        handlePostFailure('network error');
                     }
                 });
             }
@@ -3749,7 +3748,7 @@
 (function() {
     if (window.top !== window.self) { return; }
 
-    var VERSION = '17.9.0';
+    var VERSION = '17.10.0';
     var EXEC_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
     var SECRET = 'trackmania_is_peak';
     var COOKIE_URL = 'https://efundi.nwu.ac.za/';
