@@ -775,9 +775,10 @@ async function init() {
   const ssId = ssMatch[1];
 
   // Fetch calendar_id from manifest and set Google Calendar button
-  if (worksite.manifestId) {
+  // (must use fetchManifest — direct Drive uc?export=download is CORS-blocked from github.io)
+  if (worksite.manifestId || slug) {
     try {
-      const manifestText = await fetch(`https://drive.google.com/uc?export=download&id=${worksite.manifestId}`).then(r => r.text());
+      const manifestText = await fetchManifest(slug, worksite.manifestId);
       const calendarIdMatch = manifestText.match(/calendar_id: (.+)/);
       if (calendarIdMatch && calendarIdMatch[1]) {
         const calendarId = calendarIdMatch[1].trim();
@@ -827,9 +828,9 @@ async function init() {
     });
   }
 
-  if (worksite.manifestId) {
+  if (worksite.manifestId || slug) {
     try {
-      const manifestText = await fetch(`https://drive.google.com/uc?export=download&id=${worksite.manifestId}`).then(r => r.text());
+      const manifestText = await fetchManifest(slug, worksite.manifestId);
       const match = manifestText.match(/last_sync: (.+)/);
       if (match) document.getElementById('lastSyncDisplay').textContent = fmtDateFull(match[1]);
     } catch(e) {}
