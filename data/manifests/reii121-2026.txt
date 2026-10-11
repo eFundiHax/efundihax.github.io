@@ -24,31 +24,31 @@ title: REII121-2026
 last_sync: 2026-10-11T06:41:48.943Z
 last_announcement: 2026-10-10T16:22:52.556Z
 total_files: 21
-generated: 2026-10-11T12:22:15.653Z
+generated: 2026-10-11T13:27:25.283Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
 INCOMPATIBLE | AT89LP51RD2.H | h | 2026-07-21T10:37:28.045Z | announcement_attachment |  |  | fails=0 | failts=
-SYNCED | Textbook.PNG | png | 2026-10-09T17:39:15.125Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Textbook.PNG |  | fails=0 | failts=
-SYNCED | BaseBoardComponents.PNG | png | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Hardware/BaseBoardComponents.PNG |  | fails=0 | failts=
-SYNCED | Micro89LP51RD2.PNG | png | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Hardware/Micro89LP51RD2.PNG |  | fails=0 | failts=
-SYNCED | Video Links.docx | docx | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Hardware/Video%20Links.docx |  | fails=0 | failts=
-SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111%20-%20Binary%20Values%202025.xlsx |  | fails=0 | failts=
-SYNCED | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111HF2%20Numbring%20Systems%20Binary%20P6-1-2020.pdf |  | fails=0 | failts=
-SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111%20-%20HF%203%20Binary.pdf |  | fails=0 | failts=
-SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111%20-%20HF%203%20Gates.pdf |  | fails=0 | failts=
-SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Software/REII%20121%20Development%20Board%20Documentation%202026.pdf |  | fails=0 | failts=
-SYNCED | SDCC.pdf | pdf | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Software/SDCC.pdf |  | fails=0 | failts=
-SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Layout/Module%20assessment%20plan%20%20REII121%202026%20-%20Ver%201.0.pdf |  | fails=0 | failts=
-SYNCED | REII121 Planner-2026.pdf | pdf | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Layout/REII121%20Planner-2026.pdf |  | fails=0 | failts=
-SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII121%2BLes%2BHex-files%2B2026.pdf |  | fails=0 | failts=
-SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII121%2BLes%2BRegisters%2B2026.pdf |  | fails=0 | failts=
-SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII%20121%2BLes%2BSignals%2B2026.pdf |  | fails=0 | failts=
-SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII%20121%20Flow%20Charts.pdf |  | fails=0 | failts=
-SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-10-08T14:03:09.696Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII121%20Les%20Micros%202026.pdf |  | fails=0 | failts=
+SYNCED | Textbook.PNG | png | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Textbook.PNG |  | fails=0 | failts=
+SYNCED | BaseBoardComponents.PNG | png | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Hardware/BaseBoardComponents.PNG |  | fails=0 | failts=
+SYNCED | Micro89LP51RD2.PNG | png | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Hardware/Micro89LP51RD2.PNG |  | fails=0 | failts=
+SYNCED | Video Links.docx | docx | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Hardware/Video%20Links.docx |  | fails=0 | failts=
+SYNCED | REII 111 - Binary Values 2025.xlsx | xlsx | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111%20-%20Binary%20Values%202025.xlsx |  | fails=0 | failts=
+SYNCED | REII 111HF2 Numbring Systems Binary P6-1-2020.pdf | pdf | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111HF2%20Numbring%20Systems%20Binary%20P6-1-2020.pdf |  | fails=0 | failts=
+SYNCED | REII 111 - HF 3 Binary.pdf | pdf | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111%20-%20HF%203%20Binary.pdf |  | fails=0 | failts=
+SYNCED | REII 111 - HF 3 Gates.pdf | pdf | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII111-Info/REII%20111%20-%20HF%203%20Gates.pdf |  | fails=0 | failts=
+SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Software/REII%20121%20Development%20Board%20Documentation%202026.pdf |  | fails=0 | failts=
+SYNCED | SDCC.pdf | pdf | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/Software/SDCC.pdf |  | fails=0 | failts=
+SYNCED | Module assessment plan  REII121 2026 - Ver 1.0.pdf | pdf | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Layout/Module%20assessment%20plan%20%20REII121%202026%20-%20Ver%201.0.pdf |  | fails=0 | failts=
+SYNCED | REII121 Planner-2026.pdf | pdf | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Layout/REII121%20Planner-2026.pdf |  | fails=0 | failts=
+SYNCED | REII121+Les+Hex-files+2026.pdf | pdf | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII121%2BLes%2BHex-files%2B2026.pdf |  | fails=0 | failts=
+SYNCED | REII121+Les+Registers+2026.pdf | pdf | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII121%2BLes%2BRegisters%2B2026.pdf |  | fails=0 | failts=
+SYNCED | REII 121+Les+Signals+2026.pdf | pdf | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII%20121%2BLes%2BSignals%2B2026.pdf |  | fails=0 | failts=
+SYNCED | REII 121 Flow Charts.pdf | pdf | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII%20121%20Flow%20Charts.pdf |  | fails=0 | failts=
+SYNCED | REII121 Les Micros 2026.pdf | pdf | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/REII121%20Lesse/REII121%20Les%20Micros%202026.pdf |  | fails=0 | failts=
 INCOMPATIBLE | AT89LP51RD2.H | h | 2026-10-11T07:15:51.223Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/4fd1db7d-0399-4017-8984-d4c1c71b751e/Announcements/f875517f-34b1-474a-8e48-181e72b4bd80/AT89LP51RD2.H |  | fails=0 | failts=
-SYNCED | MSA 1 Spetember 2026.PNG | png | 2026-10-09T17:39:15.125Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/MSA%201%20Spetember%202026.PNG |  | fails=0 | failts=
-SYNCED | PunteBoekREII121_MSA_1Sep2026.pdf | pdf | 2026-10-11T07:45:07.766Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/4fd1db7d-0399-4017-8984-d4c1c71b751e/Announcements/048f3465-7b78-4075-ab4a-0ff486d6b2f8/PunteBoekREII121_MSA_1Sep2026.pdf |  | fails=0 | failts=
+SYNCED | MSA 1 Spetember 2026.PNG | png | 2026-10-11T13:16:28.384Z | resource | https://efundi.nwu.ac.za/access/content/group/4fd1db7d-0399-4017-8984-d4c1c71b751e/MSA%201%20Spetember%202026.PNG |  | fails=0 | failts=
+SYNCED | PunteBoekREII121_MSA_1Sep2026.pdf | pdf | 2026-10-11T13:16:28.384Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/4fd1db7d-0399-4017-8984-d4c1c71b751e/Announcements/048f3465-7b78-4075-ab4a-0ff486d6b2f8/PunteBoekREII121_MSA_1Sep2026.pdf |  | fails=0 | failts=
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
@@ -61,6 +61,11 @@ SYNCED | Microcontroller Board | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0
 SYNCED | Test Lesson | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/52e7e268-bd1e-4a89-9fbc-39ecf3ef6190/ShowPage?test=1
 
 SYNCED | Full Sync Lesson | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/52e7e268-bd1e-4a89-9fbc-39ecf3ef6190/ShowPage?test=full
+
+
+
+
+SYNCED | Software | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/c0fba4f7-d458-4bea-820d-246fa6afc6c4/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2747444&postedComment=false&addBefore=&itemId=24603190&path=log&topicId=&addTool=-1&recheck=&id=&forumId=
 --- LESSON HASHES ---
 https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/c0fba4f7-d458-4bea-820d-246fa6afc6c4/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2746786&postedComment=false&addBefore=&itemId=24596746&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 
 SYNCED | Software | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/c0fba4f7-d458-4bea-820d-246fa6afc6c4/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2747444&postedComment=false&addBefore=&itemId=24603190&path=log&topicId=&addTool=-1&recheck=&id=&forumId=
@@ -71,3 +76,10 @@ SYNCED | Microcontroller Board | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0
 https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/687473b7-265b-4c0c-821f-0c45c826ca08/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2746786&postedComment=false&addBefore=&itemId=24596746&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 
 https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/52e7e268-bd1e-4a89-9fbc-39ecf3ef6190/ShowPage?test=1 | 
 https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/52e7e268-bd1e-4a89-9fbc-39ecf3ef6190/ShowPage?test=full | 
+https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/c0fba4f7-d458-4bea-820d-246fa6afc6c4/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2746786&postedComment=false&addBefore=&itemId=24596746&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 38eb7d58
+https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/52e7e268-bd1e-4a89-9fbc-39ecf3ef6190/ShowPage?test=1 | 947aef4d
+https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/52e7e268-bd1e-4a89-9fbc-39ecf3ef6190/ShowPage?test=full | 698c1157
+https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/c0fba4f7-d458-4bea-820d-246fa6afc6c4/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2747444&postedComment=false&addBefore=&itemId=24603190&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | b6d1ba49
+
+--- ERROR LOG (2026-10-11T20:25:10.757Z) ---
+Lesson sync failed: Microcontroller Board - force is not defined
