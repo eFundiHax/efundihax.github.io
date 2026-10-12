@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-11T22:52:26.153Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-12T10:52:48.789Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -23,8 +23,8 @@ calendar_id: 0edd80cff580a1120dcb286ec38e30d94277d02d15eaf4a96b119125d6668871@gr
 title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
 last_announcement: 2026-10-10T23:37:38.118Z
-total_files: 514
-generated: 2026-10-11T18:53:04.816Z
+total_files: 536
+generated: 2026-10-12T09:41:39.107Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
@@ -542,6 +542,28 @@ SYNCED | Schedule_Engineering.pdf | pdf | 2026-10-11T13:16:39.974Z | announcemen
 SYNCED | 2026.09.24_Final list elected_Engineering.pdf | pdf | 2026-10-11T13:16:39.974Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/131e7667-fdda-4919-87e5-24b5287a4c6e/2026.09.24_Final%20list%20elected_Engineering.pdf |  | fails=0 | failts=
 SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-10-11T13:16:39.974Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/21fc3db9-2c70-4314-8c19-50f01ea5e64b/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf |  | fails=0 | failts=
 SYNCED | RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf | pdf | 2026-10-11T13:16:39.974Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/Announcements/434547b1-6821-4296-b597-572e1322f2d4/RULES-OF-SUBORDINATE-STRUCTURES_app.27AUG2025.pdf |  | fails=0 | failts=
+SYNCED | AREFA MOKWA_SAC_CV.pdf | pdf | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/CV_s/AREFA%20MOKWA_SAC_CV.pdf |  | fails=0 | failts=
+SYNCED | Jacobs_R_50929372.pdf | pdf | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/CV_s/Jacobs_R_50929372.pdf |  | fails=0 | failts=
+SYNCED | Jansen van vuuren_M_55671098_CV.pdf | pdf | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/CV_s/Jansen%20van%20vuuren_M_55671098_CV.pdf |  | fails=0 | failts=
+SYNCED | Kotzee LG 56231954.pdf | pdf | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/CV_s/Kotzee%20LG%2056231954.pdf |  | fails=0 | failts=
+SYNCED | Mphuthi_KL_45042055.pdf | pdf | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/CV_s/Mphuthi_KL_45042055.pdf |  | fails=0 | failts=
+SYNCED | Muvhango _HM_ 45094500.pdf | pdf | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/CV_s/Muvhango%20_HM_%2045094500.pdf |  | fails=0 | failts=
+SYNCED | Seitshiro_OMT_55888704.pdf | pdf | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/CV_s/Seitshiro_OMT_55888704.pdf |  | fails=0 | failts=
+NOT_SYNCED | Sibusiso Buthelezi 50801902.pdf | pdf | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/CV_s/Sibusiso%20Buthelezi%2050801902.pdf |  | fails=0 | failts=
+NOT_SYNCED | Visagie_J_55792103_CV.pdf | pdf | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/CV_s/Visagie_J_55792103_CV.pdf |  | fails=0 | failts=
+NOT_SYNCED | abstain.jpeg | jpeg | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/Headshots/abstain.jpeg |  | fails=0 | failts=
+NOT_SYNCED | Buthelezi_S_50801902.jpg | jpg | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/Headshots/Buthelezi_S_50801902.jpg |  | fails=2 | failts=2026-10-12T08:30:26.052Z
+NOT_SYNCED | Jacobs_R_50929372.png | png | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/Headshots/Jacobs_R_50929372.png |  | fails=2 | failts=2026-10-12T08:30:46.187Z
+NOT_SYNCED | Jansen van Vuuren_M_55671098.jpg | jpg | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/Headshots/Jansen%20van%20Vuuren_M_55671098.jpg |  | fails=2 | failts=2026-10-12T08:31:27.715Z
+NOT_SYNCED | Kekana_T_50831690.jpeg | jpeg | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/Headshots/Kekana_T_50831690.jpeg |  | fails=2 | failts=2026-10-12T08:31:46.876Z
+NOT_SYNCED | Kotzee_LG_56231954.jpg | jpg | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/Headshots/Kotzee_LG_56231954.jpg |  | fails=2 | failts=2026-10-12T08:32:09.584Z
+NOT_SYNCED | Mapasa_PR_46011730.jpeg | jpeg | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/Headshots/Mapasa_PR_46011730.jpeg |  | fails=2 | failts=2026-10-12T08:32:32.451Z
+NOT_SYNCED | Mohlala_J_50747320.jpg | jpg | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/Headshots/Mohlala_J_50747320.jpg |  | fails=2 | failts=2026-10-12T08:32:52.616Z
+NOT_SYNCED | mokwa_AT_55857574.jpeg | jpeg | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/Headshots/mokwa_AT_55857574.jpeg |  | fails=2 | failts=2026-10-12T08:33:12.035Z
+NOT_SYNCED | Mphuthi_KL_45042055.jpg | jpg | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/Headshots/Mphuthi_KL_45042055.jpg |  | fails=0 | failts=
+NOT_SYNCED | Muvhango HM 45094500.jpeg | jpeg | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/Headshots/Muvhango%20HM%2045094500.jpeg |  | fails=2 | failts=2026-10-12T08:33:55.364Z
+NOT_SYNCED | Seitshiro_OMT_55888704.jpg | jpg | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/Headshots/Seitshiro_OMT_55888704.jpg |  | fails=2 | failts=2026-10-12T08:34:14.020Z
+NOT_SYNCED | Visagie_J_55792103.png | png | 2026-10-12T09:32:37.896Z | resource | https://efundi.nwu.ac.za/access/content/group/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/SAC%202026_2027%20Election%3A%20Headshots/Headshots/Visagie_J_55792103.png |  | fails=2 | failts=2026-10-12T08:34:36.115Z
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
