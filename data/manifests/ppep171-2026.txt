@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-11T22:52:13.624Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -24,150 +24,150 @@ title: PPEP171-2026
 last_sync: 2026-05-29T15:06:10.462Z
 last_announcement: 2026-10-10T17:01:22.668Z
 total_files: 1308
-generated: 2026-10-11T22:50:36.771Z
+generated: 2026-10-12T05:40:17.573Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
-NOT_SYNCED | 2023_PPEP171_W2_W7_Combined.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | PPEP171 Component Collection Registrar _Alpha_.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | W2_Wireing_Session2023.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | SANS10142-1_2017_Ed2-3.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
+NO_URL | 2023_PPEP171_W2_W7_Combined.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | PPEP171 Component Collection Registrar _Alpha_.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | W2_Wireing_Session2023.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | SANS10142-1_2017_Ed2-3.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
 INCOMPATIBLE | Search_SANS10142-1.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
 INCOMPATIBLE | Search_SANS10142.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018-1.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
+NO_URL | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | CBI_CPD_Circuit_Breaker_Basics_Training_HANDOUT_2018-1.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
 INCOMPATIBLE | PPEP_CBI_2023.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | SANS10142-1_2017_Ed2-3.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 1. Line Types_Lyntipes.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 2. Printing_Drukskryf.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 3. Additional Notes_FREEHAND DRAWING.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 3. Freehand Drawings_Vryhand Tekeninge.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 4. Additional Notes_GEOMETRIC CONSTRUCTIONS.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 4. Geometrical Construction_Meetkundige Kontruksies.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 5. and 6. Additional Notes_1ST ANGLE AND 3RD ANGLE.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 5. First Angle Orthographic Projection_Eerstehoekse Ortografiese Projeksie.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 5. and 6. Additional Notes_1ST ANGLE AND 3RD ANGLE.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 6. Third Angle Orthographic Projection_Derdehoekse Ortografiese Projeksie.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 7. Additional Notes_ISOMETRIC DRAWING.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 7. Isometric Drawings_Isometriese Tekeninge.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 8. Descriptive Geometry_Beskrywende Meetkunde.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 9. Additional Notes_GEOMETRICAL SOLIDS.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 9. Sections on Solid Geometry_Snitte op vaste liggame.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 10. Additional Notes 2_SECTIONAL DRAWING.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 10. Additional Notes_SECTIONAL DRAWING PRINCIPLES.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 10. Casting Drawings_Gietstuk Tekeninge.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 11. and 12. Additional Notes_ ISOMETRIC _ PERSPECTIVES.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 11. One Point Perspective Drawings_Eenpuntperspektief Tekeninge.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 11. and 12. Additional Notes_ ISOMETRIC _ PERSPECTIVES.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 12. Two Point Perspective Drawings_Tweepuntperspektief Tekeninge.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Direct Coupling.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
+NO_URL | SANS10142-1_2017_Ed2-3.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | 1. Line Types_Lyntipes.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | 2. Printing_Drukskryf.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | 3. Additional Notes_FREEHAND DRAWING.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | 3. Freehand Drawings_Vryhand Tekeninge.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | 4. Additional Notes_GEOMETRIC CONSTRUCTIONS.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | 4. Geometrical Construction_Meetkundige Kontruksies.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | 5. and 6. Additional Notes_1ST ANGLE AND 3RD ANGLE.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | 5. First Angle Orthographic Projection_Eerstehoekse Ortografiese Projeksie.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | 5. and 6. Additional Notes_1ST ANGLE AND 3RD ANGLE.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | 6. Third Angle Orthographic Projection_Derdehoekse Ortografiese Projeksie.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.051Z
+NO_URL | 7. Additional Notes_ISOMETRIC DRAWING.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | 7. Isometric Drawings_Isometriese Tekeninge.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | 8. Descriptive Geometry_Beskrywende Meetkunde.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | 9. Additional Notes_GEOMETRICAL SOLIDS.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | 9. Sections on Solid Geometry_Snitte op vaste liggame.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | 10. Additional Notes 2_SECTIONAL DRAWING.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | 10. Additional Notes_SECTIONAL DRAWING PRINCIPLES.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | 10. Casting Drawings_Gietstuk Tekeninge.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | 11. and 12. Additional Notes_ ISOMETRIC _ PERSPECTIVES.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | 11. One Point Perspective Drawings_Eenpuntperspektief Tekeninge.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | 11. and 12. Additional Notes_ ISOMETRIC _ PERSPECTIVES.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | 12. Two Point Perspective Drawings_Tweepuntperspektief Tekeninge.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Direct Coupling.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
 INCOMPATIBLE | Alignment video.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
 INCOMPATIBLE | Engine Assembly.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Ergonomics checklist.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Ergonomics IE python lab.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Slide1.PNG | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
+NO_URL | Ergonomics checklist.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Ergonomics IE python lab.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Slide1.PNG | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
 INCOMPATIBLE | BOOR EN TAP VIDEO.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Question 4.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Question 6.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Question 8.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
+NO_URL | Question 4.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Question 6.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Question 8.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
 INCOMPATIBLE | BOOR EN TAP VIDEO.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Assignment 3 Lathe.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
+NO_URL | Assignment 3 Lathe.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
 INCOMPATIBLE | NWU Workshop Practice - Turning.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
 INCOMPATIBLE | Basic welding and grinding.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_CBI_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_CBI_ENG-1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_CBI_ENG-2.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_CBI_ENG-3.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Eng Drawings_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Engines_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Engines_ENG-1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Engines_ENG-2.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Engines_ENG-3.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Eng Part 1_Alignment.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Eng Part 1_Assembly.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Ergonomics_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Ergonomics_ENG-1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Ergonomics_ENG-2.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Ergonomics_ENG-3.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Instrumentation_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Instrumentation_ENG-1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Instrumentation_ENG-2.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Instrumentation_ENG-3.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Instrumentation Lesson 1 Image 1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Instrumentation Lesson 1 Questions 1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Eng Part 1_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Eng Part 2_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Eng Part 3_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Manufacturing_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Manufacturing_ENG-1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Manufacturing_ENG-2.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Manufacturing_ENG-3.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | PPE_1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | PPE_2.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | PPE_3.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | PPE_4.PNG | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Pumps_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Pumps_ENG-1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Pumps_ENG-2.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Pumps_ENG-3.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Labs_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | BaseBoardComponents.PNG | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | DFG.PNG | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | DisplayOscilloscope.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | DMM.PNG | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Micro89LP51RD2.PNG | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | N-Assembly Points.JPG | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | NWU-Emergency-Procedure.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Oscilloscop Control.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Oscilloscop Display 1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Oscilloscope Probe.PNG | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | PSU.PNG | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | SEECELaboratoryRules.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | SMT-Through-Hole-Soldering.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Software Installation.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | TBS1000C.PNG | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | VeroboardAndResistors.PNG | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Soldering_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Soldering_ENG-1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Soldering_ENG-2.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Soldering_ENG-3.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_SVC_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_SVC_ENG-1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_SVC_ENG-2.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_SVC_ENG-3.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | proper-workplace-ergonomics-infographic-v3.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | proper-workplace-ergonomics-infographic-v3-1.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | proper-workplace-ergonomics-infographic-v3-2.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | proper-workplace-ergonomics-infographic-v3-3.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Swagelok_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Swagelok_ENG-1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Swagelok_ENG-2.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Swagelok_ENG-3.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Wiring_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Wiring_ENG-1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Wiring_ENG-2.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Wiring_ENG-3.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Welcome_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Welcome_ENG-1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Welcome_ENG-2.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Welcome_ENG-3.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | IMG_20210507_104327.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | IMG_20210507_104723.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | IMG_20210507_110202.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | IMG_20210507_110707.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | IMG_20210507_112446.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | IMG_20210507_112742.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | IMG_20210507_115512.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | IMG_20210507_115514.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | IMG_20210507_120045.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
+NO_URL | Banner_CBI_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_CBI_ENG-1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_CBI_ENG-2.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_CBI_ENG-3.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Eng Drawings_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Engines_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Engines_ENG-1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Engines_ENG-2.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Engines_ENG-3.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Eng Part 1_Alignment.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Eng Part 1_Assembly.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Ergonomics_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Ergonomics_ENG-1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Ergonomics_ENG-2.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Ergonomics_ENG-3.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Instrumentation_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Instrumentation_ENG-1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Instrumentation_ENG-2.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Instrumentation_ENG-3.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Instrumentation Lesson 1 Image 1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Instrumentation Lesson 1 Questions 1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Eng Part 1_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Eng Part 2_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Eng Part 3_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Manufacturing_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Manufacturing_ENG-1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Manufacturing_ENG-2.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Manufacturing_ENG-3.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | PPE_1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | PPE_2.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | PPE_3.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | PPE_4.PNG | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Pumps_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Pumps_ENG-1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Pumps_ENG-2.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Pumps_ENG-3.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Labs_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | BaseBoardComponents.PNG | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | DFG.PNG | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | DisplayOscilloscope.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | DMM.PNG | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Micro89LP51RD2.PNG | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | N-Assembly Points.JPG | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | NWU-Emergency-Procedure.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Oscilloscop Control.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Oscilloscop Display 1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Oscilloscope Probe.PNG | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | PSU.PNG | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | SEECELaboratoryRules.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | SMT-Through-Hole-Soldering.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Software Installation.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | TBS1000C.PNG | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | VeroboardAndResistors.PNG | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Soldering_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Soldering_ENG-1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Soldering_ENG-2.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Soldering_ENG-3.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_SVC_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_SVC_ENG-1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_SVC_ENG-2.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_SVC_ENG-3.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | proper-workplace-ergonomics-infographic-v3.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | proper-workplace-ergonomics-infographic-v3-1.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | proper-workplace-ergonomics-infographic-v3-2.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | proper-workplace-ergonomics-infographic-v3-3.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Swagelok_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Swagelok_ENG-1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Swagelok_ENG-2.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Swagelok_ENG-3.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Wiring_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Wiring_ENG-1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Wiring_ENG-2.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Wiring_ENG-3.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Welcome_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Welcome_ENG-1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Welcome_ENG-2.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | Banner_Welcome_ENG-3.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | IMG_20210507_104327.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | IMG_20210507_104723.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | IMG_20210507_110202.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | IMG_20210507_110707.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | IMG_20210507_112446.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | IMG_20210507_112742.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | IMG_20210507_115512.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | IMG_20210507_115514.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
+NO_URL | IMG_20210507_120045.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.052Z
 INCOMPATIBLE | AfrikaansSolderWorkshopVidLow.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
 INCOMPATIBLE | AfrPolarity.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
 INCOMPATIBLE | EngPolarized.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Marks_5MaySoldering.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | SolderingWorkshopV1.1Manual.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | SolderingWorkshopV1.1Manual-1.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | SolderingWorkshopV1.1Manual-2.pdf | pdf | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
+NO_URL | Marks_5MaySoldering.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | SolderingWorkshopV1.1Manual.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | SolderingWorkshopV1.1Manual-1.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | SolderingWorkshopV1.1Manual-2.pdf | pdf | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 INCOMPATIBLE | SolderWorkshopVidLow.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
 INCOMPATIBLE | Activity 2.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
 INCOMPATIBLE | Tutorial 2.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
@@ -179,44 +179,44 @@ INCOMPATIBLE | Activity 5.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  
 INCOMPATIBLE | Activity 6.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
 INCOMPATIBLE | Activity 7.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
 INCOMPATIBLE | Install Git.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | ICON_assignment.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | ICON_example.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | ICON_information.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | ICON_outcomes.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | ICON_PPE.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | ICON_reflection.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | ICON_studymaterial.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Banner_Instrumentation_ENG.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 1. data from terminal.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 2. Data paste in Excel.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 3. Text Import Wizzard.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 4. Average.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 5. std dev.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 6. range.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 7. complete.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 8. Graphing.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | FindAndReplace.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 1. terminal.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 2. terminal sensor.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 3. interface dupont.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 4.1 dupont Arduino.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 4.2 interface to arduino 1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 4.3 dat to arduino.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 4. dupont Arduino.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 5. dupont data.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 6 Strain relief - cable.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | 7 Strain relief total.jpg | jpg | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Driver issue.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Driver issue - resolved.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | hardware_kit.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Instrumentation Lesson 1 Image 1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Instrumentation Lesson 1 Questions 1.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Normal Distribution deviations.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | platformIO.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | rulers.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Screenshot 2021-04-29 121724.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | sensor labeled.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
-NOT_SYNCED | Vscode.install.png | png | 2026-10-11T22:50:36.123Z | resource |  |  | fails=0 | failts=
+NO_URL | ICON_assignment.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | ICON_example.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | ICON_information.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | ICON_outcomes.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | ICON_PPE.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | ICON_reflection.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | ICON_studymaterial.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | Banner_Instrumentation_ENG.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 1. data from terminal.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 2. Data paste in Excel.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 3. Text Import Wizzard.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 4. Average.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 5. std dev.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 6. range.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 7. complete.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 8. Graphing.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | FindAndReplace.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 1. terminal.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 2. terminal sensor.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 3. interface dupont.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 4.1 dupont Arduino.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 4.2 interface to arduino 1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 4.3 dat to arduino.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 4. dupont Arduino.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 5. dupont data.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 6 Strain relief - cable.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | 7 Strain relief total.jpg | jpg | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | Driver issue.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | Driver issue - resolved.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | hardware_kit.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | Instrumentation Lesson 1 Image 1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | Instrumentation Lesson 1 Questions 1.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | Normal Distribution deviations.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | platformIO.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | rulers.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | Screenshot 2021-04-29 121724.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | sensor labeled.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | Vscode.install.png | png | 2026-10-12T05:29:47.032Z | resource |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 INCOMPATIBLE | ADL - 1 - First Steps.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
 INCOMPATIBLE | ADL - 2 - Initial Flashing.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
 INCOMPATIBLE | ADL - 3 - Establishing the Timebase.mp4 | mp4 | 2026-06-06T19:39:46.525Z | resource |  |  | fails=0 | failts=
@@ -242,17 +242,17 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 SYNCED | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-06-06T19:32:36.138Z | announcement_attachment |  |  | fails=0 | failts=
 SYNCED | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-06-06T19:32:36.138Z | announcement_attachment |  |  | fails=0 | failts=
 SYNCED | Roll Mechanical Eng - First years.pdf | pdf | 2026-06-06T19:32:36.138Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 SYNCED | PPEP171_GroupList_2026.pdf | pdf | 2026-06-06T19:32:36.138Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Rekening Info 1.png | png | 2026-06-06T19:32:36.138Z | announcement_attachment |  |  | fails=0 | failts=
 SYNCED | Major Groups.pdf | pdf | 2026-06-06T19:32:36.138Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | Doc1.pdf | pdf | 2026-10-08T13:39:51.112Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | PPEP171_SEECE_GroupList_2026_Ver-4.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.348Z
 NO_URL | PPEP171_SEECE_GroupList_2026_Ver-3.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.348Z
@@ -289,29 +289,29 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 SYNCED | PPEP171_SEECE_GroupList_17March2026.pdf | pdf | 2026-06-06T22:42:15.740Z | announcement_attachment |  |  | fails=0 | failts=
 SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-06-06T22:47:27.629Z | announcement_attachment |  |  | fails=0 | failts=
 SYNCED | SDCC.pdf | pdf | 2026-06-06T22:50:11.933Z | announcement_attachment |  |  | fails=0 | failts=
 SYNCED | PPEP171_SEECE_GroupList_16March2026.pdf | pdf | 2026-06-06T22:58:58.881Z | announcement_attachment |  |  | fails=0 | failts=
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-06-07T00:30:23.974Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-06-07T00:30:23.974Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Roll Mechanical Eng - First years.pdf | pdf | 2026-06-07T00:30:23.974Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_GroupList_2026.pdf | pdf | 2026-06-07T00:30:23.974Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Rekening Info 1.png | png | 2026-06-07T00:30:23.974Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Major Groups.pdf | pdf | 2026-06-07T00:30:23.974Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 SYNCED | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-06-07T00:35:19.357Z | announcement_attachment |  |  | fails=0 | failts=
 SYNCED | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-06-07T00:37:44.658Z | announcement_attachment |  |  | fails=0 | failts=
 SYNCED | Roll Mechanical Eng - First years.pdf | pdf | 2026-06-07T00:46:19.690Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 SYNCED | PPEP171_GroupList_2026.pdf | pdf | 2026-06-07T01:04:27.431Z | announcement_attachment |  |  | fails=0 | failts=
 NO_URL | PPEP171_SEECE_GroupList_2026_Ver-4.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.348Z
@@ -338,7 +338,7 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 SYNCED | PPEP171_SEECE_GroupList_17March2026.pdf | pdf | 2026-06-21T11:34:37.332Z | announcement_attachment |  |  | fails=0 | failts=
 SYNCED | REII 121 Development Board Documentation 2026.pdf | pdf | 2026-06-21T11:39:53.781Z | announcement_attachment |  |  | fails=0 | failts=
 SYNCED | SDCC.pdf | pdf | 2026-06-21T11:44:51.052Z | announcement_attachment |  |  | fails=0 | failts=
@@ -362,17 +362,17 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-14T09:01:49.537Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-14T09:01:49.537Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-14T09:01:49.537Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_GroupList_2026.pdf | pdf | 2026-07-14T09:01:49.537Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Rekening Info 1.png | png | 2026-07-14T09:01:49.537Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Major Groups.pdf | pdf | 2026-07-14T09:01:49.537Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | Doc1.pdf | pdf | 2026-07-14T09:01:49.537Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.348Z
 NO_URL | PPEP171_SEECE_GroupList_2026_Ver-4.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.348Z
@@ -394,17 +394,17 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-14T10:01:18.580Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-14T10:01:18.580Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-14T10:01:18.580Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_GroupList_2026.pdf | pdf | 2026-07-14T10:01:18.580Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Rekening Info 1.png | png | 2026-07-14T10:01:18.580Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Major Groups.pdf | pdf | 2026-07-14T10:01:18.580Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | Doc1.pdf | pdf | 2026-07-14T10:01:18.580Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 INCOMPATIBLE | Doc1.pdf | pdf | 2026-07-14T10:01:31.323Z | announcement_attachment |  |  | fails=0 | failts=
 NO_URL | Doc1.pdf | pdf | 2026-07-14T10:01:41.248Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
@@ -428,21 +428,21 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-14T10:49:03.120Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-14T10:49:03.120Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-14T10:49:03.120Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_GroupList_2026.pdf | pdf | 2026-07-14T10:49:03.120Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Rekening Info 1.png | png | 2026-07-14T10:49:03.120Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Major Groups.pdf | pdf | 2026-07-14T10:49:03.120Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | Doc1.pdf | pdf | 2026-07-14T10:49:03.120Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.348Z
 NO_URL | PPEP171_SEECE_GroupList_2026_Ver-4.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.348Z
 NO_URL | PPEP171_SEECE_GroupList_2026_Ver-3.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.348Z
@@ -463,17 +463,17 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-15T09:40:12.313Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-15T09:40:12.313Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-15T09:40:12.313Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_GroupList_2026.pdf | pdf | 2026-07-15T09:40:12.313Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Rekening Info 1.png | png | 2026-07-15T09:40:12.313Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | Major Groups.pdf | pdf | 2026-07-15T09:40:12.313Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.053Z
 NO_URL | Doc1.pdf | pdf | 2026-07-15T09:40:12.313Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.886Z
 NO_URL | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
 NO_URL | PPEP171_SEECE_GroupList_2026_Ver-4.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
@@ -495,17 +495,17 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.968Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.054Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-15T11:58:35.627Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-15T11:58:35.627Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-15T11:58:35.627Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.054Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_GroupList_2026.pdf | pdf | 2026-07-15T11:58:35.627Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Rekening Info 1.png | png | 2026-07-15T11:58:35.627Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Major Groups.pdf | pdf | 2026-07-15T11:58:35.627Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.054Z
 NO_URL | Doc1.pdf | pdf | 2026-07-15T11:58:35.627Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 INCOMPATIBLE | Doc1.pdf | pdf | 2026-07-15T11:58:52.158Z | announcement_attachment |  |  | fails=0 | failts=
 NO_URL | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
@@ -528,17 +528,17 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.054Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:00:18.296Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:00:18.296Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:00:18.296Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.054Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_GroupList_2026.pdf | pdf | 2026-07-15T14:00:18.296Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Rekening Info 1.png | png | 2026-07-15T14:00:18.296Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Major Groups.pdf | pdf | 2026-07-15T14:00:18.296Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.054Z
 NO_URL | Doc1.pdf | pdf | 2026-07-15T14:00:18.296Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 INCOMPATIBLE | Doc1.pdf | pdf | 2026-07-15T14:00:40.329Z | announcement_attachment |  |  | fails=0 | failts=
 NO_URL | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
@@ -561,17 +561,17 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.054Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:16:13.840Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:16:13.840Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:16:13.840Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.054Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_GroupList_2026.pdf | pdf | 2026-07-15T14:16:13.840Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Rekening Info 1.png | png | 2026-07-15T14:16:13.840Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Major Groups.pdf | pdf | 2026-07-15T14:16:13.840Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.054Z
 NO_URL | Doc1.pdf | pdf | 2026-07-15T14:16:13.840Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 INCOMPATIBLE | Doc1.pdf | pdf | 2026-07-15T14:16:33.424Z | announcement_attachment |  |  | fails=0 | failts=
 NO_URL | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
@@ -594,17 +594,17 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.054Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:30:07.914Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:30:07.914Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:30:07.914Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.054Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_GroupList_2026.pdf | pdf | 2026-07-15T14:30:07.914Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Rekening Info 1.png | png | 2026-07-15T14:30:07.914Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Major Groups.pdf | pdf | 2026-07-15T14:30:07.914Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.054Z
 NO_URL | Doc1.pdf | pdf | 2026-07-15T14:30:07.914Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
 NO_URL | PPEP171_SEECE_GroupList_2026_Ver-4.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
@@ -626,17 +626,17 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.054Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:32:56.007Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:32:56.007Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:32:56.007Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.055Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_GroupList_2026.pdf | pdf | 2026-07-15T14:32:56.007Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Rekening Info 1.png | png | 2026-07-15T14:32:56.007Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Major Groups.pdf | pdf | 2026-07-15T14:32:56.007Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 NO_URL | Doc1.pdf | pdf | 2026-07-15T14:32:56.007Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 INCOMPATIBLE | Doc1.pdf | pdf | 2026-07-15T14:33:15.522Z | announcement_attachment |  |  | fails=0 | failts=
 NO_URL | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
@@ -659,17 +659,17 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:36:27.827Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:36:27.827Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:36:27.827Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_GroupList_2026.pdf | pdf | 2026-07-15T14:36:27.827Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Rekening Info 1.png | png | 2026-07-15T14:36:27.827Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Major Groups.pdf | pdf | 2026-07-15T14:36:27.827Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 NO_URL | Doc1.pdf | pdf | 2026-07-15T14:36:27.827Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 INCOMPATIBLE | Doc1.pdf | pdf | 2026-07-15T14:36:47.718Z | announcement_attachment |  |  | fails=0 | failts=
 NO_URL | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
@@ -692,13 +692,13 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:42:07.879Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:42:07.879Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-15T14:42:07.879Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
-NOT_SYNCED | Industrial Engineers - First years.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Industrial Engineers - First years.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Industrial Engineers - First years.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
+NO_URL | Industrial Engineers - First years.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 NO_URL | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
 NO_URL | PPEP171_SEECE_GroupList_2026_Ver-4.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
 NO_URL | PPEP171_SEECE_GroupList_2026_Ver-3.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
@@ -719,18 +719,18 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-15T18:39:13.207Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-15T18:39:13.207Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-15T18:41:04.840Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | PPEP171_GroupList_2026.pdf | pdf | 2026-07-15T18:42:58.118Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Rekening Info 1.png | png | 2026-07-15T18:42:58.118Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Rekening Info 1.png | png | 2026-07-15T18:43:14.441Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Major Groups.pdf | pdf | 2026-07-15T18:44:24.457Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 INCOMPATIBLE | Doc1.pdf | pdf | 2026-07-15T18:46:11.166Z | announcement_attachment |  |  | fails=0 | failts=
 NO_URL | Industrial Eng Group  - First years.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
 NO_URL | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
@@ -753,12 +753,12 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-21T13:06:40.730Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-21T13:06:40.730Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-21T13:09:15.695Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | PPEP171_GroupList_2026.pdf | pdf | 2026-07-21T13:11:10.861Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Rekening Info 1.png | png | 2026-07-21T13:11:10.861Z | announcement_attachment |  |  | fails=0 | failts=
@@ -791,18 +791,18 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-24T11:29:41.003Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-24T11:29:41.003Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-24T11:31:03.046Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | PPEP171_GroupList_2026.pdf | pdf | 2026-07-24T11:32:10.836Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Rekening Info 1.png | png | 2026-07-24T11:32:10.836Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Rekening Info 1.png | png | 2026-07-24T11:32:26.702Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Major Groups.pdf | pdf | 2026-07-24T11:36:08.949Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 INCOMPATIBLE | Doc1.pdf | pdf | 2026-07-24T11:38:22.604Z | announcement_attachment |  |  | fails=0 | failts=
 NO_URL | Industrial Eng Group  - First years.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
 NO_URL | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
@@ -825,17 +825,17 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-27T15:11:45.848Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-27T15:11:45.848Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-27T15:11:59.308Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | PPEP171_GroupList_2026.pdf | pdf | 2026-07-27T15:12:11.238Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Rekening Info 1.png | png | 2026-07-27T15:12:11.238Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Major Groups.pdf | pdf | 2026-07-27T15:12:23.631Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.059Z
 INCOMPATIBLE | Doc1.pdf | pdf | 2026-07-27T15:12:37.979Z | announcement_attachment |  |  | fails=0 | failts=
 NO_URL | Industrial Eng Group  - First years.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
 NO_URL | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
@@ -858,17 +858,17 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.073Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-27T17:46:36.231Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-27T17:46:36.231Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-27T17:46:54.573Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.073Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | PPEP171_GroupList_2026.pdf | pdf | 2026-07-27T17:47:11.857Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Rekening Info 1.png | png | 2026-07-27T17:47:11.857Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Major Groups.pdf | pdf | 2026-07-27T17:47:24.223Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.073Z
 INCOMPATIBLE | Doc1.pdf | pdf | 2026-07-27T17:47:35.804Z | announcement_attachment |  |  | fails=0 | failts=
 NO_URL | Industrial Eng Group  - First years.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
 NO_URL | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
@@ -938,18 +938,18 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.074Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-07-28T10:07:39.824Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-07-28T10:07:39.824Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Roll Mechanical Eng - First years.pdf | pdf | 2026-07-28T10:09:17.130Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.074Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | PPEP171_GroupList_2026.pdf | pdf | 2026-07-28T10:10:51.145Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Rekening Info 1.png | png | 2026-07-28T10:10:51.145Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Rekening Info 1.png | png | 2026-07-28T10:11:08.443Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Major Groups.pdf | pdf | 2026-07-28T10:13:19.037Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.074Z
 INCOMPATIBLE | Doc1.pdf | pdf | 2026-07-28T10:15:07.826Z | announcement_attachment |  |  | fails=0 | failts=
 NO_URL | PPEP171_SEECE_Wiring.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
 NO_URL | PPEP171_SEECE_Wiring.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.349Z
@@ -1135,7 +1135,7 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.074Z
 NO_URL | PPEP171_SEECE_Wiring.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.350Z
 NO_URL | Industrial Eng Group  - First years.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.350Z
 NO_URL | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.350Z
@@ -1186,18 +1186,18 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.074Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-08-08T11:22:00.990Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-08-08T11:23:22.917Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Roll Mechanical Eng - First years.pdf | pdf | 2026-08-08T11:23:22.917Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.074Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | PPEP171_GroupList_2026.pdf | pdf | 2026-08-08T11:25:25.385Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Rekening Info 1.png | png | 2026-08-08T11:25:25.385Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Major Groups.pdf | pdf | 2026-08-08T11:25:25.385Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Major Groups.pdf | pdf | 2026-08-08T11:25:40.557Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.074Z
 INCOMPATIBLE | Doc1.pdf | pdf | 2026-08-08T11:26:53.595Z | announcement_attachment |  |  | fails=0 | failts=
 NO_URL | PPEP171_SEECE_Wiring.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.350Z
 NO_URL | Industrial Eng Group  - First years.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.350Z
@@ -1251,17 +1251,17 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.074Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Roll Mechanical Eng - First years.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.074Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_GroupList_2026.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Rekening Info 1.png | png | 2026-09-06T13:12:37.201Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Major Groups.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.074Z
 NO_URL | Doc1.pdf | pdf | 2026-09-06T13:12:37.201Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T07:37:31.887Z
 NO_URL | Chemical Eng Class Groups.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.350Z
 NO_URL | PPEP171_SEECE_GroupList_Wiring_2026.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T18:53:56.350Z
@@ -1287,18 +1287,18 @@ NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 NO_URL | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.074Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-09-06T14:02:11.147Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-09-06T14:04:48.607Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Roll Mechanical Eng - First years.pdf | pdf | 2026-09-06T14:04:48.607Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.074Z
 NO_URL | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T19:06:04.969Z
 INCOMPATIBLE | PPEP171_GroupList_2026.pdf | pdf | 2026-09-06T14:09:23.669Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Rekening Info 1.png | png | 2026-09-06T14:09:23.669Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Major Groups.pdf | pdf | 2026-09-06T14:09:23.669Z | announcement_attachment |  |  | fails=0 | failts=
 INCOMPATIBLE | Major Groups.pdf | png | 2026-09-06T14:09:41.148Z | announcement_attachment |  |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment |  |  | fails=0 | failts=
+NO_URL | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment |  |  | fails=1 | failts=2026-10-12T05:38:54.074Z
 INCOMPATIBLE | Doc1.pdf | pdf | 2026-09-06T14:11:24.535Z | announcement_attachment |  |  | fails=0 | failts=
 SYNCED | Chemical Eng Class Groups.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/d932e908-45ba-4981-9739-8a9d8519a46f/Chemical%20Eng%20Class%20Groups.pdf |  | fails=0 | failts=
 SYNCED | PPEP171_SEECE_GroupList_Wiring_2026.pdf | pdf | 2026-10-11T18:50:48.076Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/7fd06937-b32b-4a8c-96fe-d2bb542d4f82/PPEP171_SEECE_GroupList_Wiring_2026.pdf |  | fails=0 | failts=
@@ -1324,17 +1324,17 @@ SYNCED | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.4
 SYNCED | SCME Onboarding Guide_Workshop 1_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/ea90a24a-9df8-4500-b129-6c02fe684185/SCME%20Onboarding%20Guide_Workshop%201_2026.pdf |  | fails=0 | failts=
 SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/1178aa8a-c176-4edb-8a9b-e5d84e2b92c7/PPEP171_SEECE_GroupList_2026.pdf |  | fails=0 | failts=
 SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/a4df93d1-a5e7-4b4f-bafd-0c471ab2a5e5/PPEP171_SEECE_GroupList_2026.pdf |  | fails=0 | failts=
-NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-11T22:50:36.123Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/ba393753-f6e0-45c4-91a8-49fd33a653e4/Professional%20Practice%20Engineering%20Practical%20_PPEP171_%20Slide%201.pptx |  | fails=0 | failts=
+NOT_SYNCED | Professional Practice Engineering Practical (PPEP171) Slide 1.pptx | pptx | 2026-10-12T05:29:47.032Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/ba393753-f6e0-45c4-91a8-49fd33a653e4/Professional%20Practice%20Engineering%20Practical%20_PPEP171_%20Slide%201.pptx |  | fails=1 | failts=2026-10-12T05:39:31.303Z
 SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/1458c161-06a7-4fbc-bc1a-cb07748aa4a9/PPEP171_SEECE_GroupList_2026.pdf |  | fails=0 | failts=
 SYNCED | Group Mech 2 Mechanical Eng - First years.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/befa2fb1-3332-4e1e-9e95-dc7e0a1e8645/Group%20Mech%202%20Mechanical%20Eng%20-%20First%20years.pdf |  | fails=0 | failts=
 SYNCED | Group 1 Mechanical Eng - First years.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/384f9ee8-054e-4cd1-ba1a-c84228d5b158/Group%201%20Mechanical%20Eng%20-%20First%20years.pdf |  | fails=0 | failts=
 SYNCED | Roll Mechanical Eng - First years.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/d969293d-b6d7-42be-9644-bb175940495f/Roll%20Mechanical%20Eng%20-%20First%20years.pdf |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/33337b95-aa29-404d-abbe-9a53d4c1b8a4/Plagiarism%20Form.pdf |  | fails=0 | failts=
+NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/33337b95-aa29-404d-abbe-9a53d4c1b8a4/Plagiarism%20Form.pdf |  | fails=1 | failts=2026-10-12T05:39:51.372Z
 SYNCED | PPEP171_SEECE_GroupList_2026.pdf | pdf | 2026-10-11T19:02:34.493Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/99d458dd-ea0b-4f9c-a742-cccc96a3638a/PPEP171_SEECE_GroupList_2026.pdf |  | fails=0 | failts=
 SYNCED | PPEP171_GroupList_2026.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/29f73993-e404-48c0-9fab-c2e78feca4be/PPEP171_GroupList_2026.pdf |  | fails=0 | failts=
 SYNCED | Rekening Info 1.png | png | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/7f6c34fe-ec93-4540-bb7a-b85f3bbc1168/Rekening%20Info%201.png |  | fails=0 | failts=
 SYNCED | Major Groups.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/eee43a7f-dcb3-44dd-a760-5253ad68fd48/Major%20Groups.pdf |  | fails=0 | failts=
-NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-11T22:50:36.123Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/a0fc5bf5-1f56-41fd-8899-ee6dd1759f9e/Plagiarism%20Form.pdf |  | fails=0 | failts=
+NOT_SYNCED | Plagiarism Form.pdf | pdf | 2026-10-12T05:29:47.032Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/a0fc5bf5-1f56-41fd-8899-ee6dd1759f9e/Plagiarism%20Form.pdf |  | fails=1 | failts=2026-10-12T05:40:12.201Z
 SYNCED | Doc1.pdf | pdf | 2026-10-09T10:31:13.185Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/437c3f19-5c5e-4973-8c21-b7967d83831f/Doc1.pdf |  | fails=0 | failts=
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
@@ -1543,6 +1543,47 @@ SYNCED | Level 2 Completed Oscilloscope | https://efundi.nwu.ac.za/portal/site/b
 
 
 SYNCED | W12-TEST-PROBE | https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/25ddfaf5-bc95-444c-9eb6-eda874fb64bd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2344,10 +2385,10 @@ SYNCED | W12-TEST-PROBE | https://efundi.nwu.ac.za/x
 https://efundi.nwu.ac.za/x | probe123
 SYNCED | W12-TEST-PROBE | https://efundi.nwu.ac.za/x
 https://efundi.nwu.ac.za/x | probe123
-https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4596bcb6-63cc-4a41-82e4-1c6162f9abb9/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646673&postedComment=false&addBefore=&itemId=23515683&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | fc993d52
-https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4596bcb6-63cc-4a41-82e4-1c6162f9abb9/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646666&postedComment=false&addBefore=&itemId=23515684&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 71ec6e56
-https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4596bcb6-63cc-4a41-82e4-1c6162f9abb9/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646613&postedComment=false&addBefore=&itemId=23515550&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 62158964
-https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4596bcb6-63cc-4a41-82e4-1c6162f9abb9/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646603&postedComment=false&addBefore=&itemId=23515154&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 964e5d57
+https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4596bcb6-63cc-4a41-82e4-1c6162f9abb9/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646673&postedComment=false&addBefore=&itemId=23515683&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 139e4a8
+https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4596bcb6-63cc-4a41-82e4-1c6162f9abb9/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646666&postedComment=false&addBefore=&itemId=23515684&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | cdd2e6b6
+https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4596bcb6-63cc-4a41-82e4-1c6162f9abb9/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646613&postedComment=false&addBefore=&itemId=23515550&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 2bf1d179
+https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4596bcb6-63cc-4a41-82e4-1c6162f9abb9/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646603&postedComment=false&addBefore=&itemId=23515154&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | a4672ebd
 https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4596bcb6-63cc-4a41-82e4-1c6162f9abb9/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646600&postedComment=false&addBefore=&itemId=23515685&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 57c499ee
 https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4596bcb6-63cc-4a41-82e4-1c6162f9abb9/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646602&postedComment=false&addBefore=&itemId=23515686&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | e84c5d74
 https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4596bcb6-63cc-4a41-82e4-1c6162f9abb9/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646605&postedComment=false&addBefore=&itemId=23515690&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | e56613f4
@@ -2357,3 +2398,6 @@ https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4
 https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4596bcb6-63cc-4a41-82e4-1c6162f9abb9/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646960&postedComment=false&addBefore=&itemId=23518338&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 5d8635d4
 https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/4596bcb6-63cc-4a41-82e4-1c6162f9abb9/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646961&postedComment=false&addBefore=&itemId=23518339&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 903c7c68
 https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/25ddfaf5-bc95-444c-9eb6-eda874fb64bd | b0ccd47b
+
+--- ERROR LOG (2026-10-12T06:18:10.124Z) ---
+Manifest update failed: Service error: Drive
