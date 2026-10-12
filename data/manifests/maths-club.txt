@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-11T22:53:59.907Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-12T10:55:05.258Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -24,13 +24,13 @@ title: Maths Club
 last_sync: 2026-05-29T15:05:50.875Z
 last_announcement: 2026-10-11T06:00:48.033Z
 total_files: 182
-generated: 2026-10-11T10:52:47.522Z
+generated: 2026-10-12T07:18:48.078Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
-NO_URL | Eureka newsletter January 2025.pdf | pdf | 2026-10-10T21:35:03.705Z | resource |  |  | fails=1 | failts=2026-10-11T10:50:47.582Z
-NO_URL | Eureka newsletter March 2025.pdf | pdf | 2026-10-10T21:35:03.705Z | resource |  |  | fails=1 | failts=2026-10-11T10:50:47.582Z
-NO_URL | Maths club pi 2026.xlsx | xlsx | 2026-10-10T21:35:03.705Z | resource |  |  | fails=1 | failts=2026-10-11T10:50:47.582Z
+NOT_SYNCED | Eureka newsletter January 2025.pdf | pdf | 2026-10-12T07:18:47.351Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Eureka%20Newsletter/Eureka%20newsletter%20January%202025.pdf |  | fails=0 | failts=
+NOT_SYNCED | Eureka newsletter March 2025.pdf | pdf | 2026-10-12T07:18:47.351Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Eureka%20Newsletter/Eureka%20newsletter%20March%202025.pdf |  | fails=0 | failts=
+NOT_SYNCED | Maths club pi 2026.xlsx | xlsx | 2026-10-12T07:18:47.351Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Values%20of%20pi%20from%20Buffon_s%20needle/Maths%20club%20pi%202026.xlsx |  | fails=0 | failts=
 NO_URL | Categories.pdf | pdf | 2026-10-10T21:35:03.705Z | resource |  |  | fails=1 | failts=2026-10-11T10:50:47.582Z
 NO_URL | Groups.pdf | pdf | 2026-10-10T21:35:03.705Z | resource |  |  | fails=1 | failts=2026-10-11T10:50:47.582Z
 NO_URL | Partially ordered sets.pdf | pdf | 2026-10-10T21:35:03.705Z | resource |  |  | fails=1 | failts=2026-10-11T10:50:47.582Z
@@ -205,11 +205,11 @@ NO_URL | Massuress_3.pdf | pdf | 2026-10-10T21:35:03.705Z | announcement_attachm
 NO_URL | Massuress_3.pdf | pdf | 2026-10-10T21:35:03.705Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T10:50:47.582Z
 NO_URL | Massuress_3.pdf | pdf | 2026-10-10T21:35:03.705Z | announcement_attachment |  |  | fails=1 | failts=2026-10-11T10:50:47.582Z
 SYNCED | Massuress_3.pdf | pdf | 2026-10-11T06:05:05.005Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/f483045c-098a-4650-820f-a2c8397e697b/Announcements/3ee97574-b8bc-4614-b002-5be6bb1311f1/Massuress_3.pdf |  | fails=0 | failts=
-SYNCED | Categories.pdf | pdf | 2026-10-10T21:35:03.705Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Categories.pdf |  | fails=0 | failts=
-SYNCED | Groups.pdf | pdf | 2026-10-10T21:35:03.705Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Groups.pdf |  | fails=0 | failts=
-SYNCED | Integration_and_Differentiation_Bee_Competition.pdf | pdf | 2026-10-10T21:35:03.705Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Integration_and_Differentiation_Bee_Competition.pdf |  | fails=0 | failts=
-SYNCED | Partially ordered sets.pdf | pdf | 2026-10-10T21:35:03.705Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Partially%20ordered%20sets.pdf |  | fails=0 | failts=
-SYNCED | Topological spaces.pdf | pdf | 2026-10-10T21:35:03.705Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Topological%20spaces.pdf |  | fails=0 | failts=
+NOT_SYNCED | Categories.pdf | pdf | 2026-10-12T07:18:47.351Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Categories.pdf |  | fails=0 | failts=
+NOT_SYNCED | Groups.pdf | pdf | 2026-10-12T07:18:47.351Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Groups.pdf |  | fails=0 | failts=
+NOT_SYNCED | Integration_and_Differentiation_Bee_Competition.pdf | pdf | 2026-10-12T07:18:47.351Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Integration_and_Differentiation_Bee_Competition.pdf |  | fails=0 | failts=
+NOT_SYNCED | Partially ordered sets.pdf | pdf | 2026-10-12T07:18:47.351Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Partially%20ordered%20sets.pdf |  | fails=0 | failts=
+NOT_SYNCED | Topological spaces.pdf | pdf | 2026-10-12T07:18:47.351Z | resource | https://efundi.nwu.ac.za/access/content/group/f483045c-098a-4650-820f-a2c8397e697b/Topological%20spaces.pdf |  | fails=0 | failts=
 
 --- AUTOGENERATED DRIVE DOCUMENTS ---
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
