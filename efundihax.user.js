@@ -1,0 +1,4437 @@
+// ==UserScript==
+// @name         eFundiHax
+// @namespace    https://efundihax.github.io
+// @version      17.11.0
+// @description  One script, everything: syncs eFundi announcements, resources, lessons and calendars to the shared backend; draws per-tool sync pips (click to check); lends your live session cookie so the backend can fetch; schedules the sync lanes while the Apps Script triggers cannot be installed; and silently re-logs you in when the session expires.
+// @author       eFundiHax
+// @match        https://efundi.nwu.ac.za/*
+// @match        https://casprd.nwu.ac.za/cas/login*
+// @grant        GM_xmlhttpRequest
+// @grant        GM_cookie
+// @grant        GM_setValue
+// @grant        GM_getValue
+// @grant        GM_registerMenuCommand
+// @grant        unsafeWindow
+// @connect      script.google.com
+// @connect      unpkg.com
+// @connect      cdn.jsdelivr.net
+// @connect      efundi.nwu.ac.za
+// @connect      casprd.nwu.ac.za
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    window.__efhErrors = window.__efhErrors || [];
+    window.__efhVersion = '17.11.0';
+    function __efhPushErr(msg, src) {
+        try {
+            window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
+            var el = document.getElementById('efh-errors');
+            if (!el) {
+                el = document.createElement('div');
+                el.id = 'efh-errors';
+                el.style.cssText = 'position:fixed;bottom:10px;right:10px;max-width:400px;max-height:150px;overflow:auto;background:#300;color:#fff;padding:8px;font-size:12px;z-index:99999;font-family:monospace;border:2px solid red;border-radius:6px;';
+                document.documentElement.appendChild(el);
+            }
+            el.textContent = 'EFH ERRORS (' + window.__efhErrors.length + '): ' + window.__efhErrors.slice(-3).map(function(e){return e.msg;}).join(' | ');
+            var v = document.getElementById('efh-version');
+            if (!v) {
+                v = document.createElement('div');
+                v.id = 'efh-version';
+                v.style.display = 'none';
+                v.textContent = window.__efhVersion;
+                document.documentElement.appendChild(v);
+            }
+        } catch(e) {}
+    }
+    window.addEventListener('error', function(ev){ __efhPushErr(ev.message + ' @ ' + (ev.filename||'').slice(-40) + ':' + ev.lineno, 'window.onerror'); });
+    window.addEventListener('unhandledrejection', function(ev){ __efhPushErr('unhandled: ' + (ev.reason && ev.reason.message || ev.reason), 'promise'); });
+
+    // CONSOLE MIRROR (readable from page as window.__efhConsole, max 300 lines)
+    window.__efhConsole = window.__efhConsole || [];
+    (function() {
+        var levels = ['log', 'warn', 'error'];
+        for (var li = 0; li < levels.length; li++) {
+            (function(lvl) {
+                try {
+                    var orig = console[lvl].bind(console);
+                    console[lvl] = function() {
+                        try {
+                            var s = '';
+                            for (var i = 0; i < arguments.length; i++) {
+                                var v = arguments[i];
+                                var part = '';
+                                try { part = (v && v.stack) ? String(v.stack).split('\n').slice(0, 3).join(' | ') : (typeof v === 'object' ? JSON.stringify(v).slice(0, 300) : String(v)); } catch (e) { part = '[unprintable]'; }
+                                s += (i ? ' ' : '') + part;
+                            }
+                            window.__efhConsole.push(new Date().toISOString().slice(11, 19) + ' ' + lvl.toUpperCase() + ' ' + s.slice(0, 500));
+                            if (window.__efhConsole.length > 300) { window.__efhConsole.splice(0, window.__efhConsole.length - 300); }
+                            try { unsafeWindow.__efhConsole = window.__efhConsole; } catch (e) {}
+                        } catch (e) {}
+                        return orig.apply(null, arguments);
+                    };
+                } catch (e) {}
+            })(levels[li]);
+        }
+        try { unsafeWindow.__efhConsole = window.__efhConsole; } catch (e) {}
+    })();
+
+    // ============================================================
+    // CONFIGURATION
+    // ============================================================
+
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
+    const SECRET = 'trackmania_is_peak';
+    var SERVER_OCR_ENABLED = true; // Prefer Apps Script Drive conversion; fallback to device-side Docstream/Tesseract
+    const DAYS_BACK = 60;
+    const FETCH_COUNT = 100;
+    const SYNC_INTERVAL_MS = 5 * 60 * 1000;
+    const CALENDAR_COOLDOWN_MS = 60 * 60 * 1000;
+    const LESSON_COOLDOWN_MS = 2 * 60 * 60 * 1000;
+    const RESOURCE_SYNC_DELAY_MS = 2000;
+    const LESSON_SYNC_DELAY_MS = 1000;
+    const HEARTBEAT_INTERVAL_MS = 5000;
+    const MAX_IMAGE_DIMENSION = 720;
+    const MAX_BATCH_BYTES = 20 * 1024 * 1024;
+    const MAX_BATCH_COUNT = 25;
+    const MIN_BATCH_BYTES = 100 * 1024;
+    const TARGET_BATCH_SECONDS = 300;
+    const TIMEOUT_HTML_MS = 30000;
+    const TIMEOUT_FILE_MS = 120000;
+    const TIMEOUT_POST_MS = 360000;
+    const TIMEOUT_POST_OTHER_MS = 360000;
+    const RESOURCE_PAGE_TIMEOUT_MS = 30000;
+    const SITE_CONCURRENCY = 1;
+    const MAX_CONCURRENT_LESSON_FETCHES = 8;
+    const POST_MAX_ATTEMPTS = 3;
+    const POST_RETRY_DELAYS_MS = [0, 1000, 2000];
+    const DOWNLOAD_CONCURRENCY = 3;
+    const MAX_IMAGE_COMPRESS_DIMENSION = 800;
+    const IMAGE_COMPRESS_QUALITY = 0.85;
+    const MAX_IMAGES_PER_BATCH = 2;
+    const MAX_DOCS_PER_BATCH = 2;
+
+    // U111: Configurable limits via GM_setValue/GM_getValue
+    var BATTERY_THRESHOLD = GM_getValue('efh_battery_threshold', 0.9);
+    var MEMORY_LIMIT_MB = GM_getValue('efh_memory_limit_mb', 0);
+
+    var IMAGE_CONFIG = {
+        MAX_FULL_SIZE: 800,
+        MAX_COMPRESSED: 128,
+        MIN_IMAGE_SIZE: 128,
+        QUALITY_TEXT: 0.9,
+        QUALITY_NO_TEXT: 0.5,
+        OCR_MIN_WORD_LENGTH: 3,
+        OCR_MIN_WORD_COUNT: 3,
+        OCR_MIN_LETTER_RATIO: 0.4,
+        OCR_TIMEOUT_MS: 5000,
+        DOCSTREAM_TIMEOUT_MS: 30000,
+        BATTERY_MIN_LEVEL: BATTERY_THRESHOLD,
+        FPS_MIN_FOR_OCR: 50,
+        FPS_MIN_FOR_IFRAME: 40
+    };
+
+    const TEXT_EXTRACTABLE = new Set([
+        'pdf','doc','docx','ppt','pptx','xls','xlsx','txt','md','html','htm'
+    ]);
+
+    const IMAGE_FORMATS = new Set([
+        'png', 'jpg', 'jpeg', 'gif', 'bmp', 'webp'
+    ]);
+
+    // Sniff real type from base64 magic bytes (eFundi serves files from extensionless URLs)
+    function sniffExtFromBase64(b64) {
+        try {
+            if (!b64 || b64.length < 8) { return ''; }
+            var bin = atob(b64.slice(0, 20));
+            function b(i) { return bin.charCodeAt(i) & 0xFF; }
+            if (bin.length < 4) { return ''; }
+            if (b(0) === 0xFF && b(1) === 0xD8 && b(2) === 0xFF) { return 'jpg'; }
+            if (b(0) === 0x89 && b(1) === 0x50 && b(2) === 0x4E && b(3) === 0x47) { return 'png'; }
+            if (b(0) === 0x47 && b(1) === 0x49 && b(2) === 0x46 && b(3) === 0x38) { return 'gif'; }
+            if (b(0) === 0x42 && b(1) === 0x4D) { return 'bmp'; }
+            if (b(0) === 0x25 && b(1) === 0x50 && b(2) === 0x44 && b(3) === 0x46) { return 'pdf'; }
+            if (bin.length >= 12 && b(0) === 0x52 && b(1) === 0x49 && b(2) === 0x46 && b(3) === 0x46 && b(8) === 0x57 && b(9) === 0x45 && b(10) === 0x42 && b(11) === 0x50) { return 'webp'; }
+            return '';
+        } catch (e) { return ''; }
+    }
+
+    function correctExt(urlExt, base64Data, fileName) {
+        var sniffed = sniffExtFromBase64(base64Data);
+        if (sniffed && sniffed !== urlExt) {
+            console.log('[ext-sniff] ' + fileName + ': url said "' + urlExt + '", content is "' + sniffed + '"');
+            return sniffed;
+        }
+        return urlExt;
+    }
+
+    const PAGE_PICKER_PARAMS = '/PagePicker?returnView=&studentItemId=0&backPath=&bltiAppStores=false' +
+        '&errorMessage=&clearAttr=&messageId=&source=summary&title=&newTopLevel=false' +
+        '&sendingPage=-1&postedComment=false&addBefore=&itemId=-1&path=&topicId=' +
+        '&addTool=-1&recheck=&id=&forumId=';
+
+    // ============================================================
+    // STORAGE KEYS
+    // ============================================================
+    const KEY_SEEN_SITES            = 'efh_seen_sites';
+    const KEY_REGISTERED_SITES      = 'efh_registered_sites';
+    const KEY_LAST_SYNC             = 'efh_last_sync';
+    const KEY_LAST_CALENDAR_SYNC    = 'efh_last_calendar_sync';
+    const KEY_LAST_LESSON_SYNC      = 'efh_last_lesson_sync';
+    const KEY_SITE_SYNCED           = 'efh_site_synced';
+    const KEY_ANNOUNCEMENT_CACHE    = 'efh_ann_cache_';
+    const KEY_CALENDAR_CACHE        = 'efh_cal_cache_';
+    const KEY_RESOURCE_TOOL_CACHE   = 'efh_resource_tool_cache_';
+    const KEY_SYNC_STATE            = 'efh_sync_state';
+    const KEY_SESSION_ID            = 'efh_session_id';
+    const KEY_LAST_APPS_SCRIPT_CHECK = 'efh_last_apps_script_check';
+    const KEY_RESUME_RESOURCES      = 'efh_resume_resources';
+    const KEY_RESUME_LESSONS        = 'efh_resume_lessons';
+    const KEY_RESUME_ASSESSMENTS    = 'efh_resume_assessments';
+    const KEY_SYNC_COMPLETE         = 'efh_sync_complete';
+    const KEY_PROCESSING_LOCKS      = 'efh_processing_locks';
+
+    // ============================================================
+    // INDICATORS
+    // ============================================================
+
+    const indicators = {
+        calendar:      createIndicator('efh-cal-pip'),
+        announcements: createIndicator('efh-ann-pip'),
+        resources:     createIndicator('efh-res-pip'),
+        lessons:       createIndicator('efh-les-pip'),
+        assessments:   createIndicator('efh-asg-pip'),
+    };
+
+    var activePostRequests = {};
+    var postSeq = 0; // makes duplicate-prevention keys unique per request
+    var activeDownloads = new Set();
+
+    let heartbeatInterval = null;
+    var cachedSites = null;
+    var totalBytesDownloaded = 0;
+    var totalFilesDownloaded = 0;
+
+    function startHeartbeat(op) {
+        stopHeartbeat();
+        let s = 0;
+        heartbeatInterval = setInterval(function() {
+            s += 5;
+            var memInfo = '';
+            if (window.performance && window.performance.memory) {
+                var mem = window.performance.memory;
+                var usedMB = (mem.usedJSHeapSize / 1024 / 1024).toFixed(1);
+                memInfo = ' | Memory: ' + usedMB + ' MB';
+            }
+            console.log('[eFundiHax Sync] [heartbeat] ' + op + ' (' + s + 's)' + memInfo);
+        }, HEARTBEAT_INTERVAL_MS);
+    }
+
+    function stopHeartbeat() {
+        if (heartbeatInterval) { clearInterval(heartbeatInterval); heartbeatInterval = null; }
+    }
+
+    function createIndicator(id) {
+        const el = document.createElement('span');
+        el.id = id;
+        el.className = 'efh-indicator idle';
+        el.innerHTML = '<span class="efh-dot"></span><span class="efh-label"></span>';
+        el.addEventListener('click', function() {
+            // Set to syncing immediately
+            const ind = indicators[id];
+            if (ind) {
+                ind.className = 'efh-indicator syncing';
+                ind.querySelector('.efh-label').textContent = 'Checking...';
+            }
+            // POST to the server: doGet returns only the liveness ping,
+            // so a GET would always look 'ok' regardless of real state.
+            GM_xmlhttpRequest({
+                method: 'POST',
+                url: APPS_SCRIPT_URL,
+                headers: { 'Content-Type': 'application/json' },
+                data: JSON.stringify({ action: 'check_status', secret: SECRET, panel: id, siteTitle: currentSiteTitle() }),
+                onload: function(r) {
+                    try {
+                        var data = JSON.parse(r.responseText);
+                        if (data.status === 'ok') {
+                            if (data.notFound) { setIndicator(id, 'waiting', 'Not synced'); return; }
+                            var p = (data.panels && data.panels[id]) || null;
+                            var synced = p ? p.filter(function(f) { return f.synced; }).length : 0;
+                            var total = p ? p.length : 0;
+                            if (!total) { setIndicator(id, 'waiting', 'No items'); return; }
+                            var label = synced === total ? 'Up to date' : (synced + '/' + total + ' synced');
+                            setIndicator(id, synced === total ? 'ok' : 'waiting', label);
+                        } else {
+                            setIndicator(id, 'error', data.message || 'Check failed');
+                        }
+                    } catch(e) {
+                        setIndicator(id, 'error', 'Parse error');
+                    }
+                },
+                onerror: function() {
+                    setIndicator(id, 'error', 'Network error');
+                }
+            });
+        });
+        return el;
+    }
+
+    function setIndicator(panel, state, label) {
+        const ind = indicators[panel];
+        if (!ind) return;
+        ind.className = 'efh-indicator ' + state;
+        ind.querySelector('.efh-label').textContent = label;
+        console.log('[eFundiHax Sync] [' + panel + '] ' + state + ': ' + label);
+        if (state === 'ok') setTimeout(function() { ind.classList.add('fade-out'); }, 4000);
+        else ind.classList.remove('fade-out');
+    }
+
+    function updateProgress(panel, completed, total, action) {
+        const ind = indicators[panel];
+        if (ind) {
+            ind.querySelector('.efh-label').textContent = action + ' [' + completed + '/' + total + ']';
+            console.log('[eFundiHax Sync] [' + panel + '] progress: ' + action + ' [' + completed + '/' + total + ']');
+        }
+    }
+
+    const style = document.createElement('style');
+    style.textContent = `
+        .efh-indicator { display:inline-flex; align-items:center; gap:6px; font-size:14px;
+            font-family:'Open Sans',sans-serif; font-weight:800; letter-spacing:.04em;
+            text-transform:uppercase; margin-left:10px; vertical-align:middle; opacity:1; padding:4px 8px; border-radius:6px; background:rgba(0,0,0,0.35); }
+        .efh-indicator .efh-dot { width:10px; height:10px; border-radius:50%; flex-shrink:0; }
+        .efh-indicator.idle .efh-dot    { border:2px solid #988d9e; background:transparent; }
+        .efh-indicator.syncing .efh-dot { border:2px solid #ffb77a; border-top-color:transparent;
+            background:transparent; animation:efh-spin .8s linear infinite; }
+        .efh-indicator.ok .efh-dot    { background:#6fcf6f; border:none; box-shadow:0 0 6px #6fcf6f; }
+        .efh-indicator.error .efh-dot { background:#f47c7c; border:none; box-shadow:0 0 6px #f47c7c; }
+        .efh-indicator.waiting .efh-dot { background:#ffb77a; border:none; animation:efh-pulse 1.5s ease-in-out infinite; }
+        .efh-indicator.idle    .efh-label { color:#988d9e; }
+        .efh-indicator.syncing .efh-label { color:#ffb77a; }
+        .efh-indicator.ok      .efh-label { color:#6fcf6f; }
+        .efh-indicator.error   .efh-label { color:#f47c7c; }
+        .efh-indicator.waiting .efh-label { color:#ffb77a; }
+        .efh-indicator.fade-out { opacity:0.3; transition:opacity 1.5s ease; }
+        @keyframes efh-spin { to { transform:rotate(360deg); } }
+        @keyframes efh-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+        /* Hermes debug banner */
+        #hermes-debug-banner { position:fixed; top:60px; right:10px; background:linear-gradient(135deg,#ff6b6b,#ffd93d); color:#000; padding:10px 14px; border-radius:10px; z-index:99999; font-weight:900; font-size:15px; box-shadow:0 4px 12px rgba(0,0,0,0.4); font-family:monospace; }
+    `;
+    document.head.appendChild(style);
+
+    // ============================================================
+    // U97: BATTERY & PERFORMANCE CHECKS
+    // ============================================================
+
+    let cachedFramerate = null;
+    let lastFramerateCheck = 0;
+
+    function getDeviceFramerate() {
+        return new Promise(function(resolve) {
+            let frames = 0;
+            const start = performance.now();
+
+            function countFrame() {
+                frames++;
+                const elapsed = performance.now() - start;
+                if (elapsed < 1000) {
+                    requestAnimationFrame(countFrame);
+                } else {
+                    cachedFramerate = frames;
+                    lastFramerateCheck = Date.now();
+                    resolve(frames);
+                }
+            }
+
+            requestAnimationFrame(countFrame);
+            setTimeout(function() {
+                if (cachedFramerate === null) {
+                    cachedFramerate = 60;
+                    resolve(60);
+                }
+            }, 1100);
+        });
+    }
+
+    function shouldProcessOCR() {
+        return new Promise(function(resolve) {
+            if (navigator.getBattery) {
+                try {
+                    navigator.getBattery().then(function(battery) {
+                        if (battery.level < IMAGE_CONFIG.BATTERY_MIN_LEVEL && !battery.charging) {
+                            console.log('[U97] Skipping OCR: Battery ' + Math.round(battery.level * 100) + '% < ' + (IMAGE_CONFIG.BATTERY_MIN_LEVEL * 100) + '%');
+                            resolve(false);
+                            return;
+                        }
+                        getDeviceFramerate().then(function(fps) {
+                            if (fps < 10) {
+                                console.log('[U97] Skipping OCR: Framerate ' + fps + ' < 10');
+                                resolve(false);
+                            } else {
+                                resolve(true);
+                            }
+                        });
+                    });
+                } catch(e) {
+                    getDeviceFramerate().then(function(fps) {
+                        if (fps < 10) {
+                            console.log('[U97] Skipping OCR: Framerate ' + fps + ' < 10');
+                            resolve(false);
+                        } else {
+                            resolve(true);
+                        }
+                    });
+                }
+            } else {
+                getDeviceFramerate().then(function(fps) {
+                    if (fps < 10) {
+                        console.log('[U97] Skipping OCR: Framerate ' + fps + ' < 10');
+                        resolve(false);
+                    } else {
+                        resolve(true);
+                    }
+                });
+            }
+        });
+    }
+
+    function shouldExpandIframe() {
+        return new Promise(function(resolve) {
+            getDeviceFramerate().then(function(fps) {
+                if (fps < 5) {
+                    console.log('[U97] Skipping iframe expansion: Framerate ' + fps + ' < 5');
+                    resolve(false);
+                } else {
+                    resolve(true);
+                }
+            });
+        });
+    }
+
+    // ============================================================
+    // U96: TESSERACT LOADING
+    // ============================================================
+
+    var tesseractLoaded = false;
+    var tesseractLoadAttempted = false;
+
+    function loadTesseract() {
+        if (tesseractLoaded) return Promise.resolve(true);
+        if (tesseractLoadAttempted) return Promise.resolve(false);
+
+        tesseractLoadAttempted = true;
+        console.log('[U96] Loading Tesseract.js...');
+
+        return new Promise(function(resolve) {
+            GM_xmlhttpRequest({
+                method: 'GET',
+                url: 'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js',
+                onload: function(r) {
+                    if (r.status !== 200) {
+                        console.warn('[U96] Failed to load Tesseract: HTTP ' + r.status);
+                        resolve(false);
+                        return;
+                    }
+                    try {
+                        eval(r.responseText);
+                        var start = Date.now();
+                        var interval = setInterval(function() {
+                            var t = window.Tesseract || unsafeWindow.Tesseract;
+                            if (t && typeof t.createWorker === 'function') {
+                                clearInterval(interval);
+                                tesseractLoaded = true;
+                                console.log('[U96] Tesseract loaded successfully');
+                                resolve(true);
+                            } else if (Date.now() - start > 10000) {
+                                clearInterval(interval);
+                                console.warn('[U96] Tesseract timeout');
+                                resolve(false);
+                            }
+                        }, 200);
+                    } catch(e) {
+                        console.warn('[U96] Tesseract eval error:', e.message);
+                        resolve(false);
+                    }
+                },
+                onerror: function() {
+                    console.warn('[U96] Tesseract network error');
+                    resolve(false);
+                }
+            });
+        });
+    }
+
+    function getTesseract() {
+        var T = window.Tesseract || unsafeWindow.Tesseract;
+        if (T && typeof T.createWorker === 'function') {
+            return T;
+        }
+        return null;
+    }
+
+    // ============================================================
+    // DOCSTREAM LOADING
+    // ============================================================
+
+    var docstreamLoaded = false;
+    var docstreamLoadAttempted = false;
+
+    function loadDocstream() {
+        if (docstreamLoaded) return Promise.resolve(true);
+        if (docstreamLoadAttempted) return Promise.resolve(false);
+
+        docstreamLoadAttempted = true;
+        console.log('[U95] Loading Docstream...');
+
+        return new Promise(function(resolve) {
+            var script = document.createElement('script');
+            script.src = 'https://unpkg.com/@jose.espana/docstream@0.1.3/dist/officeparser.browser.js';
+            script.onload = function() {
+                var start = Date.now();
+                var interval = setInterval(function() {
+                    if (unsafeWindow.officeParser && typeof unsafeWindow.officeParser.parseOffice === 'function') {
+                        clearInterval(interval);
+                        docstreamLoaded = true;
+                        console.log('[U95] Docstream loaded successfully');
+                        resolve(true);
+                    } else if (Date.now() - start > 5000) {
+                        clearInterval(interval);
+                        console.warn('[U95] Docstream timeout');
+                        resolve(false);
+                    }
+                }, 200);
+            };
+            script.onerror = function() {
+                console.warn('[U95] Docstream load failed');
+                resolve(false);
+            };
+            document.head.appendChild(script);
+        });
+    }
+
+    // ============================================================
+    // U96: FETCH WITH GM_xmlhttpRequest
+    // ============================================================
+
+    function fetchEfundiFile(url, responseType) {
+        return new Promise(function(resolve, reject) {
+            GM_xmlhttpRequest({
+                method: 'GET',
+                url: url,
+                responseType: responseType || 'arraybuffer',
+                headers: {
+                    'Referer': window.location.href,
+                    'Accept': '*/*'
+                },
+                onload: function(r) {
+                    if (r.status !== 200) {
+                        reject(new Error('HTTP ' + r.status));
+                        return;
+                    }
+                    resolve(r.response);
+                },
+                onerror: function() {
+                    reject(new Error('Network error'));
+                }
+            });
+        });
+    }
+
+    function fetchHtmlPage(url) {
+        return new Promise(function(resolve, reject) {
+            GM_xmlhttpRequest({
+                method: 'GET',
+                url: url,
+                headers: { 'Accept': 'text/html,application/xhtml+xml' },
+                onload: function(r) {
+                    if (r.status !== 200) {
+                        reject(new Error('HTTP ' + r.status));
+                        return;
+                    }
+                    resolve(r.responseText);
+                },
+                onerror: function() {
+                    reject(new Error('Network error'));
+                }
+            });
+        });
+    }
+
+    function fetchJSON(path) {
+        var url = path.indexOf('http') === 0 ? path : 'https://efundi.nwu.ac.za' + path;
+        return new Promise(function(resolve, reject) {
+            GM_xmlhttpRequest({
+                method: 'GET',
+                url: url,
+                headers: { 'Accept': 'application/json' },
+                onload: function(r) {
+                    if (r.status !== 200) {
+                        reject(new Error('HTTP ' + r.status));
+                        return;
+                    }
+                    try {
+                        resolve(JSON.parse(r.responseText));
+                    } catch(e) {
+                        reject(new Error('JSON parse failed'));
+                    }
+                },
+                onerror: function() {
+                    reject(new Error('Network error'));
+                }
+            });
+        });
+    }
+
+    // ============================================================
+    // U99/U123: FETCH FILE AS BASE64 (NO RETRY)
+    // ============================================================
+
+    function fetchFileAsBase64(url) {
+        return new Promise(function(resolve, reject) {
+            var timeout = setTimeout(function() {
+                reject(new Error('Timeout'));
+            }, TIMEOUT_FILE_MS);
+            GM_xmlhttpRequest({
+                method: 'GET',
+                url: url,
+                responseType: 'arraybuffer',
+                onload: function(r) {
+                    clearTimeout(timeout);
+                    if (r.status !== 200) {
+                        reject(new Error('HTTP ' + r.status));
+                        return;
+                    }
+                    try {
+                        var bytes = new Uint8Array(r.response);
+                        var bin = '';
+                        for (var i = 0; i < bytes.byteLength; i += 8192) {
+                            var chunk = bytes.subarray(i, Math.min(i + 8192, bytes.byteLength));
+                            bin += String.fromCharCode.apply(null, chunk);
+                        }
+                        var mimeType = r.responseHeaders && r.responseHeaders.match(/content-type:\s*([^\r\n;]+)/i);
+                        mimeType = mimeType ? mimeType[1].trim() : 'application/octet-stream';
+                        resolve({ base64: btoa(bin), mimeType: mimeType, byteLength: bytes.byteLength });
+                    } catch(e) {
+                        reject(e);
+                    }
+                },
+                onerror: function() {
+                    clearTimeout(timeout);
+                    reject(new Error('Network error'));
+                }
+            });
+        });
+    }
+
+    function fetchFileAsBlob(url) {
+        return new Promise(function(resolve, reject) {
+            GM_xmlhttpRequest({
+                method: 'GET',
+                url: url,
+                responseType: 'blob',
+                headers: {
+                    'Referer': window.location.href,
+                    'Accept': '*/*'
+                },
+                onload: function(r) {
+                    if (r.status !== 200) {
+                        reject(new Error('HTTP ' + r.status));
+                        return;
+                    }
+                    resolve(r.response);
+                },
+                onerror: function() {
+                    reject(new Error('Network error'));
+                }
+            });
+        });
+    }
+
+    // ============================================================
+    // U101/U112: GET MEMORY LIMIT (RESPECTS USER SETTING)
+    // ============================================================
+
+    function getMemoryLimit() {
+        var userMB = Number(MEMORY_LIMIT_MB) || 0;
+        if (userMB > 0) {
+            console.log('[U112] Using user-defined memory limit: ' + userMB + ' MB (GM value: ' + MEMORY_LIMIT_MB + ')');
+            return userMB * 1024 * 1024;
+        }
+
+        if (window.performance && window.performance.memory) {
+            var mem = window.performance.memory;
+            var availableMemory = mem.jsHeapSizeLimit - mem.usedJSHeapSize;
+            var recommendedMB = Math.round((availableMemory * 0.25) / (1024 * 1024));
+            if (recommendedMB > 100) {
+                console.log('[U101] Auto-detected memory limit: ' + recommendedMB + ' MB');
+                return recommendedMB * 1024 * 1024;
+            }
+        }
+        console.log('[U101] Using fallback memory limit: 256 MB (no user limit, auto-detect failed)');
+        return 256 * 1024 * 1024;
+    }
+
+    // ============================================================
+    // U101/U124: DOWNLOAD FILES IN PARALLEL (STREAMING RESULTS)
+    // ============================================================
+
+    function downloadInParallel(files, concurrency, onResult) {
+        concurrency = concurrency || DOWNLOAD_CONCURRENCY;
+        var queue = files.slice();
+        var memoryLimit = getMemoryLimit();
+        var currentMemoryUsage = 0;
+        var paused = false;
+        var completed = 0;
+        var total = files.length;
+        var active = 0;
+
+        console.log('[U101] Memory limit: ' + (memoryLimit / 1024 / 1024).toFixed(0) + ' MB');
+
+        return new Promise(function(resolve) {
+            function processNext() {
+                if (window.performance && window.performance.memory) {
+                    var mem = window.performance.memory;
+                    var usedPercent = (mem.usedJSHeapSize / mem.jsHeapSizeLimit) * 100;
+                    if (usedPercent > 80) {
+                        console.log('[U101] Memory usage high (' + usedPercent.toFixed(1) + '%) - pausing');
+                        paused = true;
+                        setTimeout(function() {
+                            paused = false;
+                            processNext();
+                        }, 5000);
+                        return;
+                    }
+                }
+
+                while (active < concurrency && queue.length > 0 && !paused) {
+                    var file = queue.shift();
+                    var fileSize = file.size || 0;
+
+                    if (currentMemoryUsage + fileSize > memoryLimit * 0.25) {
+                        if (currentMemoryUsage === 0 && fileSize > memoryLimit * 0.25) {
+                            console.log('[U101] Single file exceeds 25% limit, processing anyway: ' + (fileSize / 1024 / 1024).toFixed(1) + ' MB');
+                        } else {
+                            console.log('[U101] Memory limit reached (' + (currentMemoryUsage / 1024 / 1024).toFixed(1) + ' MB), waiting...');
+                            queue.unshift(file);
+                            setTimeout(function() {
+                                processNext();
+                            }, 2000);
+                            return;
+                        }
+                    }
+
+                    active++;
+                    currentMemoryUsage += fileSize;
+
+                    var fileKey = file.url;
+                    if (activeDownloads.has(fileKey)) {
+                        console.log('[U106] Skipping duplicate download: ' + file.name);
+                        currentMemoryUsage -= fileSize;
+                        active--;
+                        completed++;
+                        if (onResult) {
+                            onResult({ file: file, error: 'Duplicate download skipped', success: false });
+                        }
+                        if (completed === total) {
+                            resolve();
+                        } else {
+                            processNext();
+                        }
+                        continue;
+                    }
+                    activeDownloads.add(fileKey);
+
+                    fetchFileAsBase64(file.url).then(function(result) {
+                        totalBytesDownloaded += result.byteLength;
+                        totalFilesDownloaded++;
+                        if (onResult) {
+                            onResult({ file: file, base64: result.base64, mimeType: result.mimeType, byteLength: result.byteLength, success: true });
+                        }
+                    }).catch(function(err) {
+                        console.warn('[U108] Failed to download ' + file.name + ':', err.message);
+                        if (onResult) {
+                            onResult({ file: file, error: err.message, success: false });
+                        }
+                    }).finally(function() {
+                        activeDownloads.delete(fileKey);
+                        currentMemoryUsage -= fileSize;
+                        active--;
+                        completed++;
+                        if (completed === total) {
+                            resolve();
+                        } else {
+                            processNext();
+                        }
+                    });
+                }
+
+                if (queue.length === 0 && active === 0 && completed === total) {
+                    resolve();
+                }
+            }
+
+            if (total === 0) {
+                resolve();
+                return;
+            }
+
+            processNext();
+        });
+    }
+
+    // ============================================================
+    // U104/U114/U115: BATCH FILES BY BYTES WITH COUNT LIMITS
+    // ============================================================
+
+    function batchFilesBySize(files) {
+        var batches = [];
+        var currentBatch = [];
+        var currentSize = 0;
+        var imageCount = 0;
+        var docCount = 0;
+
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+            var fileSize = file.size || 0;
+            var ext = file.ext || '';
+            var isImage = IMAGE_FORMATS.has(ext.toLowerCase());
+            var isDoc = TEXT_EXTRACTABLE.has(ext.toLowerCase());
+
+            var wouldExceedSize = currentSize + fileSize > MAX_BATCH_BYTES;
+            var wouldExceedCount = currentBatch.length >= MAX_BATCH_COUNT;
+            var wouldExceedImages = isImage && imageCount >= MAX_IMAGES_PER_BATCH;
+            var wouldExceedDocs = isDoc && docCount >= MAX_DOCS_PER_BATCH;
+
+            if ((wouldExceedSize || wouldExceedCount || wouldExceedImages || wouldExceedDocs) && currentBatch.length > 0) {
+                batches.push(currentBatch);
+                currentBatch = [];
+                currentSize = 0;
+                imageCount = 0;
+                docCount = 0;
+            }
+
+            currentBatch.push(file);
+            currentSize += fileSize;
+            if (isImage) imageCount++;
+            if (isDoc) docCount++;
+        }
+
+        if (currentBatch.length > 0) {
+            batches.push(currentBatch);
+        }
+
+        return batches;
+    }
+
+    // ============================================================
+    // TEXT DETECTION
+    // ============================================================
+
+    function containsRealText(text) {
+        if (!text || text.length < 10) return false;
+        var cleanText = text.replace(/[\n\r\t\-=_+[\]{}|;:'",<>/?\\]/g, ' ');
+        var words = cleanText.match(/[a-zA-Z]{3,}/g) || [];
+        if (words.length < IMAGE_CONFIG.OCR_MIN_WORD_COUNT) return false;
+        var letterCount = (text.match(/[a-zA-Z]/g) || []).length;
+        var totalChars = text.replace(/[\s\n\r]/g, '').length;
+        var letterRatio = totalChars > 0 ? letterCount / totalChars : 0;
+        return letterRatio >= IMAGE_CONFIG.OCR_MIN_LETTER_RATIO;
+    }
+
+    // ============================================================
+    // IMAGE PROCESSING (U113: Minimum size check)
+    // ============================================================
+
+    function compressImage(dataUrl, maxDimension, quality) {
+        return new Promise(function(resolve) {
+            var img = new Image();
+            img.onload = function() {
+                var width = img.naturalWidth;
+                var height = img.naturalHeight;
+                var targetWidth = width;
+                var targetHeight = height;
+
+                if (width > maxDimension || height > maxDimension) {
+                    if (width >= height) {
+                        targetWidth = maxDimension;
+                        targetHeight = Math.round(height * (maxDimension / width));
+                    } else {
+                        targetHeight = maxDimension;
+                        targetWidth = Math.round(width * (maxDimension / height));
+                    }
+                }
+
+                var canvas = document.createElement('canvas');
+                canvas.width = targetWidth;
+                canvas.height = targetHeight;
+                var ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0, targetWidth, targetHeight);
+
+                var compressedDataUrl = canvas.toDataURL('image/jpeg', quality || IMAGE_COMPRESS_QUALITY);
+                resolve({
+                    dataUrl: compressedDataUrl,
+                    width: targetWidth,
+                    height: targetHeight,
+                    originalWidth: width,
+                    originalHeight: height
+                });
+            };
+            img.onerror = function() {
+                resolve(null);
+            };
+            img.src = dataUrl;
+        });
+    }
+
+    async function processSingleImage(fileBlob, fileName, fileUrl, fileExt) {
+        var result = {
+            images: [],
+            success: false,
+            error: null
+        };
+
+        try {
+            try {
+                if (SERVER_OCR_ENABLED) {
+                    var base64 = await new Promise(function(resolve) {
+                        var reader = new FileReader();
+                        reader.onload = function() { resolve(String(reader.result).split(',')[1]); };
+                        reader.readAsDataURL(fileBlob);
+                    });
+                    var serverResult = await post({
+                        action: 'convert_file', secret: SECRET,
+                        name: fileName, mime: fileBlob.type || 'application/octet-stream',
+                        base64: base64
+                    }, 60000);
+                    if (serverResult && serverResult.status === 'ok' && serverResult.text) {
+                        result.success = true;
+                        result.images = [{ id: 0, filename: fileName, source: fileName, type: fileBlob.type, text: serverResult.text }];
+                        console.log('[ServerOCR] image ' + fileName + ' -> ' + serverResult.text.length + ' chars');
+                        return result;
+                    }
+                }
+            } catch (serverErr) {
+                console.warn('[ServerOCR] convert_file failed for ' + fileName + ', falling back to local OCR:', serverErr.message || serverErr);
+            }
+            var dataUrl = await new Promise(function(resolve) {
+                var reader = new FileReader();
+                reader.onload = function() { resolve(reader.result); };
+                reader.readAsDataURL(fileBlob);
+            });
+
+            var canProcess = await shouldProcessOCR();
+            var T = getTesseract();
+
+            var width = 0, height = 0;
+            var img = new Image();
+            img.src = dataUrl;
+            await new Promise(function(resolve) { img.onload = resolve; img.onerror = resolve; });
+            width = img.naturalWidth || 0;
+            height = img.naturalHeight || 0;
+
+            if (width < IMAGE_CONFIG.MIN_IMAGE_SIZE || height < IMAGE_CONFIG.MIN_IMAGE_SIZE) {
+                console.log('[U113] Image too small (' + width + 'x' + height + ') - skipping OCR');
+                result.images.push({
+                    id: 0,
+                    filename: fileName,
+                    source: fileName,
+                    type: 'image/' + fileExt,
+                    originalWidth: width,
+                    originalHeight: height,
+                    state: 'no_text_detected',
+                    data: dataUrl.split(',')[1],
+                    skip: false
+                });
+                result.success = true;
+                return result;
+            }
+
+            var finalState = 'extraction_failed';
+            var imageData = null;
+
+            if (canProcess && T && IMAGE_FORMATS.has(fileExt.toLowerCase())) {
+                try {
+                    var worker = await T.createWorker('eng', 1, {
+                        tessedit_pageseg_mode: 6,
+                        tessedit_enable_dict_correction: 0,
+                        load_system_dawg: 0,
+                        load_freq_dawg: 0
+                    });
+                    var recognition = await worker.recognize(img);
+                    await worker.terminate();
+
+                    var hasText = containsRealText(recognition.data.text.trim());
+                    finalState = hasText ? 'text_detected' : 'no_text_detected';
+
+                    var maxDim = hasText ? IMAGE_CONFIG.MAX_FULL_SIZE : IMAGE_CONFIG.MAX_COMPRESSED;
+                    var quality = hasText ? IMAGE_CONFIG.QUALITY_TEXT : IMAGE_CONFIG.QUALITY_NO_TEXT;
+                    var compressed = await compressImage(dataUrl, maxDim, quality);
+                    if (compressed) {
+                        imageData = compressed.dataUrl.split(',')[1];
+                        width = compressed.originalWidth;
+                        height = compressed.originalHeight;
+                    } else {
+                        imageData = dataUrl.split(',')[1];
+                    }
+                } catch(e) {
+                    console.warn('[Image] OCR failed:', e.message);
+                    finalState = 'extraction_failed';
+                    imageData = dataUrl.split(',')[1];
+                }
+            } else if (!canProcess || !T) {
+                finalState = 'extraction_failed';
+                imageData = null;
+            } else if (!IMAGE_FORMATS.has(fileExt.toLowerCase())) {
+                finalState = 'unsupported_format';
+                imageData = null;
+            }
+
+            result.images.push({
+                id: 0,
+                filename: fileName,
+                source: fileName,
+                type: 'image/' + fileExt,
+                originalWidth: width,
+                originalHeight: height,
+                state: finalState,
+                data: imageData,
+                skip: false
+            });
+
+            result.success = true;
+        } catch(e) {
+            result.error = e.message;
+        }
+
+        return result;
+    }
+
+    // ============================================================
+    // U105/U107: DOCUMENT PROCESSING WITH DOCSTREAM + AST TRAVERSAL + COMPRESSION
+    // ============================================================
+
+    function buildTextWithImages(ast) {
+        var result = {
+            text: '',
+            images: [],
+            imageMap: {}
+        };
+
+        if (ast.attachments && Array.isArray(ast.attachments)) {
+            for (var i = 0; i < ast.attachments.length; i++) {
+                var att = ast.attachments[i];
+                var name = att.name || att.filename || 'image_' + i;
+                result.imageMap[name] = att;
+            }
+        }
+
+        function traverse(node) {
+            if (node.type === 'image') {
+                var attName = node.metadata && node.metadata.attachmentName;
+                if (attName && result.imageMap[attName]) {
+                    var att = result.imageMap[attName];
+                    var id = result.images.length;
+                    var ext = '';
+                    var filename = attName;
+                    if (filename.indexOf('.') > -1) {
+                        ext = filename.split('.').pop().toLowerCase();
+                    }
+
+                    result.images.push({
+                        id: id,
+                        filename: filename,
+                        source: 'document',
+                        type: att.type || 'image/' + ext,
+                        originalWidth: 0,
+                        originalHeight: 0,
+                        state: 'pending',
+                        data: att.data || null,
+                        _rawData: att.data || null,
+                        skip: false
+                    });
+
+                    result.text += '[IMAGE_PLACEHOLDER_' + id + ']';
+                }
+                return;
+            }
+
+            if (node.type === 'text' && node.text) {
+                result.text += node.text;
+                return;
+            }
+
+            if ((node.type === 'paragraph' || node.type === 'heading') && node.text) {
+                result.text += node.text;
+                if (node.type === 'paragraph' || node.type === 'heading') {
+                    result.text += '\n';
+                }
+                return;
+            }
+
+            if ((node.type === 'table' || node.type === 'list') && node.text) {
+                result.text += node.text + '\n';
+                return;
+            }
+
+            if (node.children && Array.isArray(node.children)) {
+                for (var i = 0; i < node.children.length; i++) {
+                    traverse(node.children[i]);
+                }
+            }
+        }
+
+        if (ast.content && Array.isArray(ast.content)) {
+            for (var i = 0; i < ast.content.length; i++) {
+                traverse(ast.content[i]);
+            }
+        }
+
+        return result;
+    }
+
+    async function compressDocstreamImages(images) {
+        var compressed = [];
+        var MAX_DIM = MAX_IMAGE_COMPRESS_DIMENSION;
+
+        for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+            if (!img._rawData) {
+                compressed.push({
+                    id: img.id,
+                    filename: img.filename,
+                    source: img.source,
+                    type: img.type,
+                    originalWidth: 0,
+                    originalHeight: 0,
+                    state: 'extraction_failed',
+                    data: null,
+                    skip: true
+                });
+                continue;
+            }
+
+            try {
+                var dataUrl = 'data:' + (img.type || 'image/jpeg') + ';base64,' + img._rawData;
+                var compressedResult = await compressImage(dataUrl, MAX_DIM, IMAGE_COMPRESS_QUALITY);
+                if (compressedResult) {
+                    var base64Data = compressedResult.dataUrl.split(',')[1];
+                    compressed.push({
+                        id: img.id,
+                        filename: img.filename,
+                        source: img.source,
+                        type: 'image/jpeg',
+                        originalWidth: compressedResult.width,
+                        originalHeight: compressedResult.height,
+                        state: 'text_detected',
+                        data: base64Data,
+                        skip: false
+                    });
+                } else {
+                    compressed.push({
+                        id: img.id,
+                        filename: img.filename,
+                        source: img.source,
+                        type: img.type,
+                        originalWidth: 0,
+                        originalHeight: 0,
+                        state: 'extraction_failed',
+                        data: null,
+                        skip: true
+                    });
+                }
+            } catch(e) {
+                console.warn('[Compress] Failed to compress ' + img.filename + ':', e.message);
+                compressed.push({
+                    id: img.id,
+                    filename: img.filename,
+                    source: img.source,
+                    type: img.type,
+                    originalWidth: 0,
+                    originalHeight: 0,
+                    state: 'extraction_failed',
+                    data: null,
+                    skip: true
+                });
+            }
+        }
+
+        return compressed;
+    }
+
+    async function processDocumentWithDocstream(fileBlob, fileName, fileUrl, fileExt) {
+        var result = {
+            text: '',
+            images: [],
+            success: false,
+            error: null,
+            imagesPending: false,
+            hasImagesWithData: false
+        };
+
+        if (!docstreamLoaded) {
+            result.error = 'Docstream not loaded';
+            return result;
+        }
+
+        try {
+            if (SERVER_OCR_ENABLED) {
+                var base64 = await new Promise(function(resolve) {
+                    var reader = new FileReader();
+                    reader.onload = function() { resolve(String(reader.result).split(',')[1]); };
+                    reader.readAsDataURL(fileBlob);
+                });
+                var serverResult = await post({
+                    action: 'convert_file', secret: SECRET,
+                    name: fileName, mime: fileBlob.type || 'application/octet-stream',
+                    base64: base64
+                }, 60000);
+                if (serverResult && serverResult.status === 'ok' && serverResult.text) {
+                    result.text = serverResult.text;
+                    result.images = [];
+                    result.success = true;
+                    result.imagesPending = false;
+                    result.hasImagesWithData = false;
+                    console.log('[ServerOCR] ' + fileName + ' -> text ' + serverResult.text.length + ' chars, ' + serverResult.imageCount + ' images');
+                    return result;
+                }
+            }
+        } catch (serverErr) {
+            console.warn('[ServerOCR] convert_file failed for ' + fileName + ', falling back to device OCR:', serverErr.message || serverErr);
+        }
+
+        try {
+            var arrayBuffer = await fileBlob.arrayBuffer();
+            var parseResult = await unsafeWindow.officeParser.parseOffice(arrayBuffer, {
+                extractAttachments: true
+            });
+
+            var astResult = buildTextWithImages(parseResult);
+
+            var compressedImages = await compressDocstreamImages(astResult.images);
+
+            result.text = astResult.text;
+            result.images = compressedImages;
+
+            for (var i = 0; i < result.images.length; i++) {
+                if (result.images[i].data) {
+                    result.hasImagesWithData = true;
+                    break;
+                }
+            }
+
+            for (var j = 0; j < result.images.length; j++) {
+                if (result.images[j].state === 'pending' || result.images[j].state === 'extraction_failed') {
+                    result.imagesPending = true;
+                    break;
+                }
+            }
+
+            result.success = true;
+        } catch(err) {
+            result.error = err.message;
+            console.error('[Docstream] Processing error:', err);
+        }
+
+        return result;
+    }
+
+    // ============================================================
+    // U93/U94/U97/U98: IFRAME RESOURCE CRAWLER
+    // ============================================================
+
+    function extractFilesFromDoc(doc) {
+        var fileLinks = doc.querySelectorAll('a[href*="/access/content/group/"]');
+        var files = [];
+        for (var i = 0; i < fileLinks.length; i++) {
+            var link = fileLinks[i];
+            if (link.href.match(/\.(pdf|docx?|pptx?|xlsx?|txt|html?|jpg|png|gif|mp4)$/i)) {
+                files.push(link.href);
+            }
+        }
+        var seen = new Set();
+        var unique = [];
+        for (var j = 0; j < files.length; j++) {
+            if (!seen.has(files[j])) {
+                seen.add(files[j]);
+                unique.push(files[j]);
+            }
+        }
+        return unique;
+    }
+
+    function iframeResourceCrawler(siteId, siteTitle, toolId) {
+        return new Promise(function(resolve) {
+            shouldExpandIframe().then(function(canExpand) {
+                if (!canExpand) {
+                    console.log('[U97] Skipping iframe expansion due to low framerate');
+                    resolve([]);
+                    return;
+                }
+
+                console.log('[U93] Creating hidden iframe for ' + siteTitle);
+                var iframe = document.createElement('iframe');
+                iframe.style.display = 'none';
+                iframe.src = 'https://efundi.nwu.ac.za/portal/site/' + siteId + '/tool/' + toolId;
+                document.body.appendChild(iframe);
+
+                var resolved = false;
+                var loadFired = false;
+
+                var timeout = setTimeout(function() {
+                    if (!resolved) {
+                        console.log('[U93] Timeout for ' + siteTitle);
+                        iframe.remove();
+                        resolve([]);
+                        resolved = true;
+                    }
+                }, 60000);
+
+                iframe.onload = function() {
+                    loadFired = true;
+                    console.log('[U93] Iframe onload fired');
+                };
+
+                iframe.onerror = function() {
+                    console.log('[U93] Iframe onerror');
+                    iframe.remove();
+                    clearTimeout(timeout);
+                    resolve([]);
+                    resolved = true;
+                };
+
+                var attempts = 0;
+                var maxAttempts = 30;
+
+                var checkInterval = setInterval(function() {
+                    attempts++;
+
+                    if (!loadFired && attempts < 10) {
+                        return;
+                    }
+
+                    var iframeDoc = null;
+                    try {
+                        iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                    } catch(e) {}
+
+                    if (iframeDoc && iframeDoc.readyState === 'complete') {
+                        clearInterval(checkInterval);
+
+                        var expandBtn = iframeDoc.querySelector('a.fa-expand[onclick*="doExpandall"]');
+                        var collapseBtn = iframeDoc.querySelector('a.fa-compress[onclick*="doUnexpandall"]');
+                        var isExpanded = collapseBtn && collapseBtn.style.display !== 'none';
+
+                        if (isExpanded) {
+                            console.log('[U93] Already expanded - extracting');
+                            var urls = extractFilesFromDoc(iframeDoc);
+                            iframe.remove();
+                            clearTimeout(timeout);
+                            resolve(urls);
+                            resolved = true;
+                            return;
+                        }
+
+                        if (expandBtn && expandBtn.style.display !== 'none') {
+                            console.log('[U93] Clicking Expand All Ã”Ã‡Ã¶ observing DOM + network');
+                            var startUrls = extractFilesFromDoc(iframeDoc).length;
+                            var moDone = false;
+                            var netIdleTimer = null;
+                            var fallbackTimer = null;
+                            var mo = new MutationObserver(function(){ 
+                                if (moDone) return;
+                                var cur = extractFilesFromDoc(iframeDoc).length;
+                                if (cur > startUrls) {
+                                    if (netIdleTimer) clearTimeout(netIdleTimer);
+                                    netIdleTimer = setTimeout(finish, 800);
+                                }
+                            });
+                            try { mo.observe(iframeDoc.body, {childList:true, subtree:true}); } catch(eObs){}
+                            // Also clear timer if Sakai fires resources:expanded
+                            try {
+                                var uw = (typeof unsafeWindow!=='undefined'?unsafeWindow:null) || iframe.contentWindow;
+                                if (uw && uw.jQuery) uw.jQuery(iframeDoc).on('resources:expanded', function(){ if(!moDone) { setTimeout(finish, 400); }});
+                            } catch(eJ){}
+                            function finish(){
+                                if (moDone) return;
+                                moDone = true;
+                                try{ mo.disconnect(); }catch(e){}
+                                if (netIdleTimer) clearTimeout(netIdleTimer);
+                                if (fallbackTimer) clearTimeout(fallbackTimer);
+                                var urls = extractFilesFromDoc(iframeDoc);
+                                console.log('[U93] Extracted ' + urls.length + ' files (was '+startUrls+' before expand)');
+                                var collapseAfter = iframeDoc.querySelector('a.fa-compress[onclick*="doUnexpandall"]');
+                                if (collapseAfter) { try{ collapseAfter.click(); }catch(e){} }
+                                iframe.remove();
+                                clearTimeout(timeout);
+                                resolve(urls);
+                                resolved = true;
+                            }
+                            expandBtn.click();
+                            netIdleTimer = setTimeout(finish, 1200);
+                            fallbackTimer = setTimeout(function(){ console.log('[U93] expand fallback 15s'); finish(); }, 15000);
+                            return;
+                        }
+
+                        console.log('[U93] No expand button - extracting visible files');
+                        var urls = extractFilesFromDoc(iframeDoc);
+                        iframe.remove();
+                        clearTimeout(timeout);
+                        resolve(urls);
+                        resolved = true;
+
+                    } else if (attempts >= maxAttempts) {
+                        clearInterval(checkInterval);
+                        console.log('[U93] Iframe not ready');
+                        iframe.remove();
+                        clearTimeout(timeout);
+                        resolve([]);
+                        resolved = true;
+                    }
+                }, 1000);
+            });
+        });
+    }
+
+    // ============================================================
+    // U121: CACHE COLLECTSITES RESULTS
+    // ============================================================
+
+    function collectSites() {
+        if (cachedSites !== null && cachedSites.length > 0) {
+            console.log('[U121] Using cached sites list (' + cachedSites.length + ' sites)');
+            return cachedSites;
+        }
+
+        console.log('[U121] Collecting sites from DOM...');
+        var sites = [];
+        var seen = new Set();
+        var links = document.querySelectorAll('#linkNav a[href*="/portal/site/"], .Mrphs-sitesNav a[href*="/portal/site/"]');
+        for (var i = 0; i < links.length; i++) {
+            var a = links[i];
+            var m = (a.href || '').match(/\/portal\/site\/([a-f0-9\-]{36})/i);
+            if (!m) continue;
+            var uuid = m[1];
+            var title = a.textContent.trim();
+            if (!uuid || !title || seen.has(uuid)) continue;
+            seen.add(uuid);
+            sites.push({ uuid: uuid, title: title });
+        }
+        // Don't cache empty result - it means DOM not ready yet (portal renders async)
+        if (sites.length > 0) {
+            cachedSites = sites;
+            console.log('[U121] Cached ' + sites.length + ' sites');
+        } else {
+            console.log('[U121] Found 0 sites - DOM not ready, will retry (not caching)');
+        }
+        return sites;
+    }
+
+    function collectSitesAsync(maxWaitMs) {
+        maxWaitMs = maxWaitMs || 5000;
+        return new Promise(function(resolve) {
+            var start = Date.now();
+            function tryCollect() {
+                var sites = collectSites();
+                if (sites.length > 0 || Date.now() - start >= maxWaitMs) {
+                    resolve(sites);
+                } else {
+                    setTimeout(tryCollect, 500);
+                }
+            }
+            tryCollect();
+        });
+    }
+
+    // ============================================================
+    // RESOURCE DISCOVERY
+    // ============================================================
+
+    function discoverResourcesToolId(siteId, siteTitle) {
+        var cacheKey = getToolCache(siteTitle);
+        var cached = GM_getValue(cacheKey, '');
+        if (cached) return Promise.resolve(cached);
+
+        console.log('[Resources] Discovering Resources tool for ' + siteTitle);
+
+        return fetchHtmlPage('https://efundi.nwu.ac.za/portal/site/' + siteId).then(function(siteHtml) {
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(siteHtml, 'text/html');
+
+            var toolMenu = doc.querySelector('#toolMenu, .Mrphs-toolsNav__menu');
+            if (!toolMenu) return null;
+
+            var toolLinks = toolMenu.querySelectorAll('a[href*="/tool/"]');
+            var resourceLink = null;
+
+            resourceLink = toolMenu.querySelector('a .icon-sakai--sakai-resources');
+            if (resourceLink) resourceLink = resourceLink.closest('a');
+
+            if (!resourceLink) {
+                for (var i = 0; i < toolLinks.length; i++) {
+                    var a = toolLinks[i];
+                    var text = a.textContent.trim();
+                    if (text === 'Resources' || text.toLowerCase().indexOf('resource') !== -1 || text.toLowerCase().indexOf('all site files') !== -1) {
+                        resourceLink = a;
+                        break;
+                    }
+                }
+            }
+
+            if (!resourceLink) return null;
+
+            var toolMatch = resourceLink.href.match(/\/tool(?:-reset)?\/([a-f0-9\-]{36})/);
+            if (!toolMatch) return null;
+
+            var toolId = toolMatch[1];
+            GM_setValue(cacheKey, toolId);
+            console.log('[Resources] Discovered tool ID: ' + toolId);
+            return toolId;
+
+        }).catch(function(err) {
+            console.error('[Resources] Discovery failed:', err);
+            return null;
+        });
+    }
+
+    function discoverResourcesForSite(siteId, siteTitle) {
+        console.log('[Resources] Discovering files for: ' + siteTitle + ' (using iframe only)');
+
+        return discoverResourcesToolId(siteId, siteTitle).then(function(toolId) {
+            if (!toolId) {
+                console.log('[Resources] No Resources tool found for ' + siteTitle);
+                return null;
+            }
+            return iframeResourceCrawler(siteId, siteTitle, toolId).then(function(fileUrls) {
+                if (!fileUrls || fileUrls.length === 0) {
+                    console.log('[Resources] No files found for ' + siteTitle);
+                    return null;
+                }
+
+                var allFiles = [];
+                for (var i = 0; i < fileUrls.length; i++) {
+                    var url = fileUrls[i];
+                    var filename = url.split('/').pop().split('?')[0];
+                    var ext = filename.split('.').pop().toLowerCase();
+                    allFiles.push({
+                        name: decodeURIComponent(filename),
+                        url: url,
+                        ext: ext,
+                        extractable: TEXT_EXTRACTABLE.has(ext) || IMAGE_FORMATS.has(ext),
+                        size: 0
+                    });
+                }
+
+                console.log('[Resources] ' + siteTitle + ': ' + allFiles.length + ' files discovered');
+                return { siteId: siteId, siteTitle: siteTitle, allFiles: allFiles };
+            });
+        });
+    }
+
+    function discoverAllResourceTasks(sites) {
+        console.log('[Resources] Discovering ' + sites.length + ' sites...');
+        startHeartbeat('resource discovery');
+        var results = [];
+        var queue = sites.slice();
+
+        function processNext() {
+            if (queue.length === 0) return Promise.resolve();
+            var site = queue.shift();
+            return discoverResourcesForSite(site.uuid, site.title).then(function(task) {
+                if (task) results.push(task);
+                return delay(500);
+            }).then(processNext);
+        }
+
+        return processNext().then(function() {
+            stopHeartbeat();
+            console.log('[Resources] Found ' + results.length + ' sites with files');
+            return results;
+        });
+    }
+
+    // ============================================================
+    // U105/U107/U114/U115/U122/U127: RESOURCE UPLOAD (FIXES)
+    // ============================================================
+
+    function ensureMasterDoc(siteTitle, siteId) {
+        return post({ action: 'check_master_doc', secret: SECRET, siteTitle: siteTitle, siteId: siteId }).then(function(resp) {
+            if (resp.status === 'ok') {
+                console.log('[Resources] Master doc verified for ' + siteTitle);
+                return true;
+            }
+            return false;
+        }).catch(function() {
+            return false;
+        });
+    }
+
+    function uploadResourceTask(task, isPriority) {
+        var siteId = task.siteId;
+        var siteTitle = task.siteTitle;
+        var allFiles = task.allFiles;
+
+        console.log('[Resources] Uploading ' + siteTitle + ' (' + allFiles.length + ' files)');
+        if (isPriority) setIndicator('resources', 'syncing', 'Starting...');
+
+        return ensureMasterDoc(siteTitle, siteId).then(function() {
+            var extractableFiles = allFiles.filter(function(f) { return f.extractable; });
+            var neededUrls = [];
+
+            var metaPayload = allFiles.map(function(f) {
+                return { url: f.url, name: f.name, ext: f.ext, extractable: f.extractable, type: 'resource', size: f.size || 0 };
+            });
+
+            return post({
+                action: 'sync_resources',
+                secret: SECRET,
+                siteTitle: siteTitle,
+                siteId: siteId,
+                files: metaPayload
+            }).then(function(resp) {
+                if (resp && Array.isArray(resp.needed)) {
+                    neededUrls = resp.needed;
+                    console.log('[Resources] Apps Script needs ' + neededUrls.length + '/' + extractableFiles.length + ' files');
+                } else {
+                    console.log('[Resources] No needed[] response - everything is up to date');
+                    setIndicator('resources', 'ok', 'Up to date');
+                    return;
+                }
+
+                var filesToDownload = extractableFiles.filter(function(f) {
+                    return neededUrls.indexOf(f.url) !== -1;
+                });
+
+                if (filesToDownload.length === 0) {
+                    console.log('[Resources] No files needed for ' + siteTitle);
+                    setIndicator('resources', 'ok', 'Up to date');
+                    return;
+                }
+
+                var batches = batchFilesBySize(filesToDownload);
+                console.log('[Resources] Split into ' + batches.length + ' batches (max ' + MAX_IMAGES_PER_BATCH + ' images, ' + MAX_DOCS_PER_BATCH + ' docs per batch)');
+
+                setIndicator('resources', 'syncing', 'Processing ' + filesToDownload.length + ' files in ' + batches.length + ' batches...');
+
+                return Promise.all([loadDocstream(), loadTesseract()]).then(function() {
+                    return processResourceBatches(siteTitle, siteId, batches);
+                });
+            });
+        }).then(function() {
+            setIndicator('resources', 'ok', 'Synced');
+            console.log('[Resources] Complete: ' + siteTitle);
+        }).catch(function(err) {
+            console.error('[Resources] Upload failed:', err);
+            if (isPriority) setIndicator('resources', 'error', 'Failed');
+        });
+    }
+
+    function processResourceBatches(siteTitle, siteId, batches) {
+        var batchIndex = 0;
+
+        function processNextBatch() {
+            if (batchIndex >= batches.length) return Promise.resolve();
+
+            var batch = batches[batchIndex];
+            var batchNum = batchIndex + 1;
+            console.log('[Resources] Processing batch ' + batchNum + '/' + batches.length + ' (' + batch.length + ' files)');
+            updateProgress('resources', batchNum, batches.length, 'Batch ' + batchNum);
+
+            // U125: Reset byte counter for this batch
+            totalBytesDownloaded = 0;
+            totalFilesDownloaded = 0;
+
+            var results = [];
+            return downloadInParallel(batch, DOWNLOAD_CONCURRENCY, function(result) {
+                results.push(result);
+                // U125: Update heartbeat with MB progress
+                var mbProgress = (totalBytesDownloaded / 1024 / 1024).toFixed(1);
+                if (totalFilesDownloaded % 5 === 0 || totalBytesDownloaded > 0) {
+                    console.log('[U125] Downloaded ' + mbProgress + ' MB (' + totalFilesDownloaded + ' files)');
+                }
+            }).then(function() {
+                console.log('[U125] Batch ' + batchNum + ' completed: ' + (totalBytesDownloaded / 1024 / 1024).toFixed(1) + ' MB, ' + totalFilesDownloaded + ' files');
+                return processResourceResults(siteTitle, siteId, results);
+            }).then(function() {
+                batchIndex++;
+                return processNextBatch();
+            }, function(batchErr) {
+                console.warn('[Batch] Continuing after batch error: ' + (batchErr && batchErr.message));
+                batchIndex++;
+                return processNextBatch();
+            });
+        }
+
+        return processNextBatch();
+    }
+
+    function processResourceResults(siteTitle, siteId, results) {
+        var promises = [];
+
+        for (var i = 0; i < results.length; i++) {
+            (function(result) {
+            if (!result.success) {
+                console.warn('[Resources] Failed to download:', result.file.name, result.error);
+                return;
+            }
+
+            var file = result.file;
+            var ext = (file.ext || '').toLowerCase();
+            var base64Data = result.base64;
+            ext = correctExt(ext, base64Data, file.name);
+
+            // U127: PNG fix - check IMAGE_FORMATS with lowercase (e.g. Textbook.PNG -> png)
+            if (IMAGE_FORMATS.has(ext)) {
+                // Standalone image file - process with compression
+                var p1 = processSingleImageFromBase64(base64Data, file.name, file.url, ext).then(function(imageResult) {
+                    if (imageResult && imageResult.images.length > 0) {
+                        var img = imageResult.images[0];
+                        return post({
+                            action: 'sync_resources',
+                            secret: SECRET,
+                            siteTitle: siteTitle,
+                            siteId: siteId,
+                            files: [{
+                                url: file.url,
+                                name: file.name,
+                                ext: ext,
+                                extractable: true,
+                                type: file.type,
+                                text: null,
+                                images: [img],
+                                imagesPending: img.state === 'pending' || img.state === 'extraction_failed'
+                            }]
+                        });
+                    }
+                    return Promise.resolve();
+                });
+                promises.push(p1);
+            } else if (docstreamLoaded && TEXT_EXTRACTABLE.has(ext)) {
+                // Document - MUST use Docstream with AST traversal. NO BASE64 FALLBACK.
+                // U105 FIX: Use already-downloaded base64 to build blob instead of re-fetching
+                var base64ForDoc = base64Data;
+                var mimeForDoc = result.mimeType || 'application/octet-stream';
+                var docBytes = null;
+                try {
+                    var binStr = atob(base64ForDoc);
+                    var len = binStr.length;
+                    var bytes = new Uint8Array(len);
+                    for (var b = 0; b < len; b++) bytes[b] = binStr.charCodeAt(b);
+                    docBytes = new Blob([bytes], { type: mimeForDoc });
+                } catch(e) {
+                    console.warn('[U105] base64->blob failed for ' + file.name + ', falling back to fetch:', e.message);
+                }
+                var blobPromise = docBytes ? Promise.resolve(docBytes) : fetchFileAsBlob(file.url);
+                var p2 = blobPromise.then(function(fileBlob) {
+                    return processDocumentWithDocstream(fileBlob, file.name, file.url, ext);
+                }).then(function(docResult) {
+                    if (docResult.success && docResult.text && docResult.text.length > 0) {
+                        return post({
+                            action: 'sync_resources',
+                            secret: SECRET,
+                            siteTitle: siteTitle,
+                            siteId: siteId,
+                            files: [{
+                                url: file.url,
+                                name: file.name,
+                                ext: ext,
+                                extractable: true,
+                                type: file.type,
+                                text: docResult.text,
+                                images: docResult.images,
+                                imagesPending: docResult.imagesPending
+                            }]
+                        });
+                    } else {
+                        console.warn('[U122] Docstream failed for ' + file.name + ' - no fallback. Marking as not_synced. Error:', docResult.error);
+                        return post({
+                            action: 'sync_resources',
+                            secret: SECRET,
+                            siteTitle: siteTitle,
+                            siteId: siteId,
+                            files: [{
+                                url: file.url,
+                                name: file.name,
+                                ext: ext,
+                                extractable: true,
+                                type: file.type,
+                                text: null,
+                                images: [],
+                                imagesPending: true,
+                                error: docResult.error || 'No text extracted'
+                            }]
+                        });
+                    }
+                });
+                promises.push(p2);
+            } else {
+                // U122: No fallback - mark as not_synced
+                console.warn('[U122] Cannot process ' + file.name + ' - no Docstream or unsupported. Marking as not_synced.');
+                var p3 = post({
+                    action: 'sync_resources',
+                    secret: SECRET,
+                    siteTitle: siteTitle,
+                    siteId: siteId,
+                    files: [{
+                        url: file.url,
+                        name: file.name,
+                        ext: ext,
+                        extractable: true,
+                        type: file.type,
+                        text: null,
+                        images: [],
+                        imagesPending: true,
+                        error: 'No processing method available'
+                    }]
+                });
+                promises.push(p3);
+            }
+            })(results[i]);
+        }
+
+        // v4.0.14: one hung file must never wedge the batch Ã”Ã‡Ã¶ 240s cap each, failures resolve null
+        var guarded = promises.map(function(pr, idx) {
+            var timeout = new Promise(function(_, reject) {
+                setTimeout(function() { reject(new Error('file-promise-timeout idx=' + idx)); }, 240000);
+            });
+            return Promise.race([pr, timeout]).then(null, function(e) {
+                console.warn('[TIMEOUT] File promise failed, continuing batch: ' + (e && e.message));
+                return null;
+            });
+        });
+        return Promise.all(guarded);
+    }
+
+    function processSingleImageFromBase64(base64Data, fileName, fileUrl, fileExt) {
+        var dataUrl = 'data:image/' + fileExt + ';base64,' + base64Data;
+        var result = { images: [], success: false, error: null };
+
+        return shouldProcessOCR().then(function(canProcess) {
+            var T = getTesseract();
+
+            var img = new Image();
+            img.src = dataUrl;
+            // v4.0.14: hard 150s timeout Ã”Ã‡Ã¶ CSP-blocked blob workers never settle, and .catch can't catch a hang
+            var _imgDone = false;
+            var _resolveInner = null;
+            var _imgTimer = setTimeout(function() {
+                if (!_imgDone && _resolveInner) { console.warn('[Image] 150s hard timeout, continuing without OCR: ' + fileName); try { result.images.push({id: 0, filename: fileName, source: fileName, type: 'image/' + fileExt, originalWidth: 0, originalHeight: 0, state: 'extraction_failed', data: null, skip: false}); result.success = true; } catch(eT){} _imgDone = true; _resolveInner(result); }
+            }, 150000);
+            return new Promise(function(_resolve) {
+                _resolveInner = _resolve;
+                var resolve = function(v) { if (!_imgDone) { _imgDone = true; clearTimeout(_imgTimer); _resolve(v); } };
+                img.onload = function() {
+                    var width = img.naturalWidth || 0;
+                    var height = img.naturalHeight || 0;
+
+                    if (width < IMAGE_CONFIG.MIN_IMAGE_SIZE || height < IMAGE_CONFIG.MIN_IMAGE_SIZE) {
+                        console.log('[U113] Image too small (' + width + 'x' + height + ') - skipping OCR');
+                        result.images.push({
+                            id: 0,
+                            filename: fileName,
+                            source: fileName,
+                            type: 'image/' + fileExt,
+                            originalWidth: width,
+                            originalHeight: height,
+                            state: 'no_text_detected',
+                            data: dataUrl.split(',')[1],
+                            skip: false
+                        });
+                        result.success = true;
+                        resolve(result);
+                        return;
+                    }
+
+                    var finalState = 'extraction_failed';
+                    var imageData = null;
+
+                    if (canProcess && T && IMAGE_FORMATS.has(fileExt.toLowerCase())) {
+                        T.createWorker('eng', 1, {
+                            tessedit_pageseg_mode: 6,
+                            tessedit_enable_dict_correction: 0,
+                            load_system_dawg: 0,
+                            load_freq_dawg: 0
+                        }).then(function(worker) {
+                            return worker.recognize(img).then(function(recognition) {
+                                return worker.terminate().then(function() {
+                                    var hasText = containsRealText(recognition.data.text.trim());
+                                    finalState = hasText ? 'text_detected' : 'no_text_detected';
+
+                                    var maxDim = hasText ? IMAGE_CONFIG.MAX_FULL_SIZE : IMAGE_CONFIG.MAX_COMPRESSED;
+                                    var quality = hasText ? IMAGE_CONFIG.QUALITY_TEXT : IMAGE_CONFIG.QUALITY_NO_TEXT;
+                                    return compressImage(dataUrl, maxDim, quality);
+                                });
+                            });
+                        }).then(function(compressed) {
+                            if (compressed) {
+                                imageData = compressed.dataUrl.split(',')[1];
+                                width = compressed.originalWidth;
+                                height = compressed.originalHeight;
+                            } else {
+                                imageData = dataUrl.split(',')[1];
+                            }
+                            result.images.push({
+                                id: 0,
+                                filename: fileName,
+                                source: fileName,
+                                type: 'image/' + fileExt,
+                                originalWidth: width,
+                                originalHeight: height,
+                                state: finalState,
+                                data: imageData,
+                                skip: false
+                            });
+                            result.success = true;
+                            resolve(result);
+                        }).catch(function(e) {
+                            console.warn('[Image] OCR failed:', e.message);
+                            finalState = 'extraction_failed';
+                            imageData = dataUrl.split(',')[1];
+                            result.images.push({
+                                id: 0,
+                                filename: fileName,
+                                source: fileName,
+                                type: 'image/' + fileExt,
+                                originalWidth: width,
+                                originalHeight: height,
+                                state: finalState,
+                                data: imageData,
+                                skip: false
+                            });
+                            result.success = true;
+                            resolve(result);
+                        });
+                    } else {
+                        finalState = 'extraction_failed';
+                        imageData = null;
+                        result.images.push({
+                            id: 0,
+                            filename: fileName,
+                            source: fileName,
+                            type: 'image/' + fileExt,
+                            originalWidth: width,
+                            originalHeight: height,
+                            state: finalState,
+                            data: imageData,
+                            skip: false
+                        });
+                        result.success = true;
+                        resolve(result);
+                    }
+                };
+                img.onerror = function() {
+                    result.error = 'Failed to decode image';
+                    resolve(result);
+                };
+            });
+        });
+    }
+
+    // ============================================================
+    // U102: N+1 PROOF LOGIC (Announcements - use newest)
+    // ============================================================
+
+    function getAnnouncements(siteId, siteTitle, isPriority, depth) {
+        depth = depth || 0;
+        if (depth >= 2) {
+            console.warn('[Announcements] Resync loop cap hit for ' + siteTitle + ' - moving on');
+            return Promise.resolve();
+        }
+        console.log('[Announcements] Syncing ' + siteTitle);
+        if (isPriority) setIndicator('announcements', 'syncing', 'Checking...');
+
+        return fetchJSON('/direct/announcement/site/' + siteId + '.json?n=200').then(function(data) {
+            var items = data.announcement_collection || [];
+
+            if (items.length === 0) {
+                setIndicator('announcements', 'ok', 'No announcements');
+                return;
+            }
+
+            var cacheKey = getAnnCache(siteTitle);
+            var cachedIds = JSON.parse(GM_getValue(cacheKey, '[]'));
+
+            var newItems = [];
+            for (var i = 0; i < items.length; i++) {
+                var a = items[i];
+                if (!a.announcementId) continue;
+                if (cachedIds.indexOf(a.announcementId) === -1) {
+                    newItems.push(a);
+                }
+            }
+
+            var newCount = newItems.length;
+            console.log('[Announcements] ' + newCount + ' new, ' + cachedIds.length + ' cached');
+
+            if (newCount === 0 && cachedIds.length === 0) {
+                GM_setValue(cacheKey, JSON.stringify(items.map(function(a) { return a.announcementId; })));
+                setIndicator('announcements', 'ok', items.length + ' stored');
+                return;
+            }
+
+            if (newCount === 0) {
+                var proofId = cachedIds.length > 0 ? cachedIds[0] : null;
+                if (proofId) {
+                    return post({
+                        action: 'check_announcements',
+                        secret: SECRET,
+                        siteId: siteId,
+                        siteTitle: siteTitle,
+                        announcementIds: [],
+                        proofId: proofId
+                    }).then(function(checkResult) {
+                        if (checkResult.resync === true) {
+                            console.log('[Announcements] Proof mismatch - resetting cache');
+                            GM_setValue(cacheKey, JSON.stringify([]));
+                            return getAnnouncements(siteId, siteTitle, isPriority, depth + 1);
+                        }
+                        setIndicator('announcements', 'ok', 'Up to date');
+                        return;
+                    });
+                }
+                setIndicator('announcements', 'ok', 'Up to date');
+                return;
+            }
+
+            var proofId = cachedIds.length > 0 ? cachedIds[0] : null;
+            var announcementData = newItems.map(function(a) {
+                return {
+                    id: a.announcementId,
+                    title: a.title || '',
+                    bodySnippet: (a.body || '').replace(/<[^>]+>/g, ' ').substring(0, 300),
+                    createdOn: a.createdOn ? new Date(Number(a.createdOn)).toISOString() : '',
+                    attachments: a.attachments || []
+                };
+            });
+
+            return post({
+                action: 'check_announcements',
+                secret: SECRET,
+                siteId: siteId,
+                siteTitle: siteTitle,
+                announcementIds: announcementData,
+                proofId: proofId
+            }).then(function(checkResult) {
+                if (checkResult.resync === true) {
+                    console.log('[Announcements] Proof mismatch - resetting cache');
+                    GM_setValue(cacheKey, JSON.stringify([]));
+                    return getAnnouncements(siteId, siteTitle, isPriority, depth + 1);
+                }
+
+                var newIds = newItems.map(function(a) { return a.announcementId; });
+                var updatedCache = newIds.concat(cachedIds).slice(0, 200);
+                GM_setValue(cacheKey, JSON.stringify(updatedCache));
+
+                setIndicator('announcements', 'ok', newCount + ' new');
+                console.log('[Announcements] Sent ' + newCount + ' new announcements for ' + siteTitle);
+                return;
+            });
+        }).catch(function(err) {
+            console.error('[Announcements] Failed for ' + siteTitle + ':', err);
+            if (isPriority) setIndicator('announcements', 'error', 'Failed');
+        });
+    }
+
+    // ============================================================
+    // CALENDAR SYNC
+    // ============================================================
+
+    function getEventKey(ev) {
+        return (ev.title || '') + '|' + (ev.firstTime && ev.firstTime.time ? ev.firstTime.time : '');
+    }
+
+    function syncCalendar(siteId, siteTitle, isPriority, depth) {
+        depth = depth || 0;
+        if (depth >= 2) {
+            console.warn('[Calendar] Resync loop cap hit for ' + siteTitle + ' - moving on');
+            return Promise.resolve();
+        }
+        console.log('[Calendar] Syncing ' + siteTitle);
+        if (isPriority) setIndicator('calendar', 'syncing', 'Checking...');
+
+        return fetchJSON('/direct/calendar/site/' + siteId + '.json').then(function(data) {
+            var events = (data.calendar_collection || []).filter(function(e) { return e.siteId === siteId; });
+
+            if (events.length === 0) {
+                setIndicator('calendar', 'ok', 'No events');
+                return;
+            }
+
+            var now = Date.now();
+            var relevantEvents = events.filter(function(ev) {
+                var t = ev.firstTime && ev.firstTime.time ? Number(ev.firstTime.time) : 0;
+                return t > 0 && t >= now - 30*24*3600*1000 && t <= now + 90*24*3600*1000;
+            }).filter(function(ev) {
+                // SPAM FILTER: drop events that look like meeting/attendee spam
+                // (e.g. "0 attendees" meetings), per user 2026-09-14.
+                var hay = String(ev.title || '') + ' ' + String(ev.description || '');
+                return !/(\b0\s+attendees?\b|0\s*attendees?|\bno\s+attendees?\b)/i.test(hay);
+            }).sort(function(a, b) {
+                return (a.firstTime && a.firstTime.time || 0) - (b.firstTime && b.firstTime.time || 0);
+            });
+
+            var cacheKey = getCalCache(siteTitle);
+            var cachedKeys = JSON.parse(GM_getValue(cacheKey, '[]'));
+
+            var newEvents = [];
+            for (var i = 0; i < relevantEvents.length; i++) {
+                var ev = relevantEvents[i];
+                var key = getEventKey(ev);
+                if (cachedKeys.indexOf(key) === -1) {
+                    newEvents.push(ev);
+                }
+            }
+
+            var newCount = newEvents.length;
+            console.log('[Calendar] ' + newCount + ' new, ' + cachedKeys.length + ' cached');
+
+            if (newCount === 0 && cachedKeys.length === 0) {
+                var allKeys = relevantEvents.map(getEventKey);
+                GM_setValue(cacheKey, JSON.stringify(allKeys));
+                setIndicator('calendar', 'ok', relevantEvents.length + ' stored');
+                return;
+            }
+
+            if (newCount === 0) {
+                var proofKey = cachedKeys.length > 0 ? cachedKeys[0] : null;
+                if (proofKey) {
+                    return post({
+                        action: 'check_calendar',
+                        secret: SECRET,
+                        siteId: siteId,
+                        siteTitle: siteTitle,
+                        events: [],
+                        proofKey: proofKey
+                    }).then(function(checkResult) {
+                        if (checkResult.resync === true) {
+                            console.log('[Calendar] Proof mismatch - resetting cache');
+                            GM_setValue(cacheKey, JSON.stringify([]));
+                            return syncCalendar(siteId, siteTitle, isPriority, depth + 1);
+                        }
+                        setIndicator('calendar', 'ok', 'Up to date');
+                        return;
+                    });
+                }
+                setIndicator('calendar', 'ok', 'Up to date');
+                return;
+            }
+
+            var proofKey = cachedKeys.length > 0 ? cachedKeys[0] : null;
+            var eventData = newEvents.map(function(ev) {
+                return {
+                    key: getEventKey(ev),
+                    title: ev.title || '',
+                    startIso: ev.firstTime && ev.firstTime.time ? new Date(Number(ev.firstTime.time)).toISOString() : '',
+                    endIso: ev.lastTime && ev.lastTime.time ? new Date(Number(ev.lastTime.time)).toISOString() :
+                            (ev.firstTime && ev.firstTime.time ? new Date(Number(ev.firstTime.time) + 3600000).toISOString() : ''),
+                    description: (ev.description || '').substring(0, 500)
+                };
+            });
+
+            return post({
+                action: 'check_calendar',
+                secret: SECRET,
+                siteId: siteId,
+                siteTitle: siteTitle,
+                events: eventData,
+                proofKey: proofKey
+            }).then(function(checkResult) {
+                if (checkResult.resync === true) {
+                    console.log('[Calendar] Proof mismatch - resetting cache');
+                    GM_setValue(cacheKey, JSON.stringify([]));
+                    return syncCalendar(siteId, siteTitle, isPriority, depth + 1);
+                }
+
+                var newKeys = newEvents.map(getEventKey);
+                var updatedCache = newKeys.concat(cachedKeys);
+                GM_setValue(cacheKey, JSON.stringify(updatedCache));
+
+                setIndicator('calendar', 'ok', newCount + ' added');
+                console.log('[Calendar] Sent ' + newCount + ' new events for ' + siteTitle);
+                return;
+            });
+        }).catch(function(err) {
+            console.error('[Calendar] Failed for ' + siteTitle + ':', err);
+            if (isPriority) setIndicator('calendar', 'error', 'Failed');
+        });
+    }
+
+    // ============================================================
+    // ANNOUNCEMENT ATTACHMENTS
+    // ============================================================
+
+    function scrapeAnnouncementAttachments(siteId, siteTitle) {
+        console.log('[Attachments] Scraping ' + siteTitle + '...');
+        return fetchJSON('/direct/announcement/site/' + siteId + '.json?n=200').then(function(data) {
+            var items = data.announcement_collection || [];
+            var attachments = [];
+            var seen = new Set();
+
+            for (var i = 0; i < items.length; i++) {
+                var ann = items[i];
+                var annAttachments = ann.attachments || [];
+
+                for (var j = 0; j < annAttachments.length; j++) {
+                    var att = annAttachments[j];
+                    var url = att.url;
+                    if (seen.has(url)) continue;
+                    seen.add(url);
+
+                    var filename = att.name || url.split('/').pop().split('?')[0];
+                    var ext = filename.split('.').pop().toLowerCase();
+
+                    attachments.push({
+                        url: url,
+                        name: decodeURIComponent(filename),
+                        ext: ext,
+                        extractable: TEXT_EXTRACTABLE.has(ext) || IMAGE_FORMATS.has(ext),
+                        type: 'announcement_attachment',
+                        announcementTitle: ann.title || 'Untitled',
+                        size: att.size || 0
+                    });
+                }
+            }
+
+            console.log('[Attachments] ' + siteTitle + ': found ' + attachments.length + ' attachments');
+            return attachments;
+        }).catch(function(err) {
+            console.warn('[Attachments] Failed for ' + siteTitle + ':', err.message);
+            return [];
+        });
+    }
+
+    function syncAnnouncementAttachments(siteId, siteTitle, isPriority) {
+        return ensureMasterDoc(siteTitle, siteId).then(function() {
+            console.log('[Attachments] Syncing ' + siteTitle);
+            return scrapeAnnouncementAttachments(siteId, siteTitle);
+        }).then(function(attachments) {
+            if (attachments.length === 0) return;
+
+            var batches = batchFilesBySize(attachments);
+            console.log('[Attachments] Split into ' + batches.length + ' batches (max ' + MAX_IMAGES_PER_BATCH + ' images, ' + MAX_DOCS_PER_BATCH + ' docs per batch)');
+
+            var batchIndex = 0;
+
+            function processNextBatch() {
+                if (batchIndex >= batches.length) return Promise.resolve();
+
+                var batch = batches[batchIndex];
+                var batchNum = batchIndex + 1;
+                console.log('[Attachments] Processing batch ' + batchNum + '/' + batches.length + ' (' + batch.length + ' attachments)');
+
+                var neededUrls = new Set();
+                var metaPayload = batch.map(function(a) {
+                    return { url: a.url, name: a.name, ext: a.ext, extractable: a.extractable, type: a.type, size: a.size };
+                });
+
+                return post({
+                    action: 'sync_resources',
+                    secret: SECRET,
+                    siteTitle: siteTitle,
+                    siteId: siteId,
+                    files: metaPayload
+                }).then(function(resp) {
+                    if (resp && Array.isArray(resp.needed)) {
+                        for (var i = 0; i < resp.needed.length; i++) {
+                            neededUrls.add(resp.needed[i]);
+                        }
+                    } else {
+                        for (var j = 0; j < batch.length; j++) {
+                            neededUrls.add(batch[j].url);
+                        }
+                    }
+
+                    var toDownload = batch.filter(function(a) {
+                        return a.extractable && neededUrls.has(a.url);
+                    });
+
+                    if (toDownload.length === 0) return;
+
+                    return Promise.all([loadDocstream(), loadTesseract()]).then(function() {
+                        var results = [];
+                        return downloadInParallel(toDownload, DOWNLOAD_CONCURRENCY, function(result) {
+                            results.push(result);
+                        }).then(function() {
+                            return processAttachmentResults(siteTitle, siteId, results);
+                        });
+                    });
+                }).then(function() {
+                    batchIndex++;
+                    return processNextBatch();
+                });
+            }
+
+            return processNextBatch();
+        });
+    }
+
+    function processAttachmentResults(siteTitle, siteId, results) {
+        var promises = [];
+
+        for (var i = 0; i < results.length; i++) {
+            (function(result) {
+            if (!result.success) {
+                console.warn('[Attachments] Failed to download:', result.file.name, result.error);
+                return;
+            }
+
+            var file = result.file;
+            var ext = (file.ext || '').toLowerCase();
+            var base64Data = result.base64;
+            ext = correctExt(ext, base64Data, file.name);
+
+            if (IMAGE_FORMATS.has(ext)) {
+                var p1 = processSingleImageFromBase64(base64Data, file.name, file.url, ext).then(function(imageResult) {
+                    if (imageResult && imageResult.images.length > 0) {
+                        var img = imageResult.images[0];
+                        return post({
+                            action: 'sync_resources',
+                            secret: SECRET,
+                            siteTitle: siteTitle,
+                            siteId: siteId,
+                            files: [{
+                                url: file.url,
+                                name: file.name,
+                                ext: ext,
+                                extractable: true,
+                                type: file.type,
+                                text: null,
+                                images: [img],
+                                imagesPending: img.state === 'pending' || img.state === 'extraction_failed'
+                            }]
+                        });
+                    }
+                    return Promise.resolve();
+                });
+                promises.push(p1);
+            } else if (docstreamLoaded && TEXT_EXTRACTABLE.has(ext)) {
+                var base64ForDoc = base64Data;
+                var mimeForDoc = result.mimeType || 'application/octet-stream';
+                var docBytes = null;
+                try {
+                    var binStr = atob(base64ForDoc);
+                    var len = binStr.length;
+                    var bytes = new Uint8Array(len);
+                    for (var b = 0; b < len; b++) bytes[b] = binStr.charCodeAt(b);
+                    docBytes = new Blob([bytes], { type: mimeForDoc });
+                } catch(e) {}
+                var blobPromise = docBytes ? Promise.resolve(docBytes) : fetchFileAsBlob(file.url);
+                var p2 = blobPromise.then(function(fileBlob) {
+                    return processDocumentWithDocstream(fileBlob, file.name, file.url, ext);
+                }).then(function(docResult) {
+                    if (docResult.success && docResult.text && docResult.text.length > 0) {
+                        return post({
+                            action: 'sync_resources',
+                            secret: SECRET,
+                            siteTitle: siteTitle,
+                            siteId: siteId,
+                            files: [{
+                                url: file.url,
+                                name: file.name,
+                                ext: ext,
+                                extractable: true,
+                                type: file.type,
+                                text: docResult.text,
+                                images: docResult.images,
+                                imagesPending: docResult.imagesPending
+                            }]
+                        });
+                    } else {
+                        console.warn('[U122] Docstream failed for ' + file.name + ' - no fallback. Marking as not_synced. Error:', docResult.error);
+                        return post({
+                            action: 'sync_resources',
+                            secret: SECRET,
+                            siteTitle: siteTitle,
+                            siteId: siteId,
+                            files: [{
+                                url: file.url,
+                                name: file.name,
+                                ext: ext,
+                                extractable: true,
+                                type: file.type,
+                                text: null,
+                                images: [],
+                                imagesPending: true,
+                                error: docResult.error || 'No text extracted'
+                            }]
+                        });
+                    }
+                });
+                promises.push(p2);
+            } else {
+                console.warn('[U122] Cannot process ' + file.name + ' - no Docstream or unsupported. Marking as not_synced.');
+                var p3 = post({
+                    action: 'sync_resources',
+                    secret: SECRET,
+                    siteTitle: siteTitle,
+                    siteId: siteId,
+                    files: [{
+                        url: file.url,
+                        name: file.name,
+                        ext: ext,
+                        extractable: true,
+                        type: file.type,
+                        text: null,
+                        images: [],
+                        imagesPending: true,
+                        error: 'No processing method available'
+                    }]
+                });
+                promises.push(p3);
+            }
+            })(results[i]);
+        }
+
+        return Promise.all(promises);
+    }
+
+    // ============================================================
+    // LESSONS
+    // ============================================================
+
+    var GARBAGE_SELECTORS = [
+        '.breadcrumb','.Mrphs-breadcrumb','.portletTitle','.page-header','.footer',
+        '.action-toolbar','.print-view','.index-pages','.navIntraTool','.bottomButtons',
+        '.commentsDiv','.commentArea','.checklistDiv','.assessmentType','.statusCol',
+        '.itemcopylink','.topaction','.nextprev','.bottomRight','#toolMenuWrap',
+        '#linkNav','.Mrphs-toolsNav','.Mrphs-siteHierarchy','.skipNav',
+        '.Mrphs-headerLogo','.Mrphs-loginNav','.Mrphs-sitesNav','.Mrphs-userNav',
+        '.Mrphs-footer','#footer','#selectSiteModal','.modal','.popup',
+        '.insight-section','.right-insight','.left-insight','style','script',
+        'nav','header','.Mrphs-toolTitleNav','.Mrphs-toolsNav__menu'
+    ].join(',');
+
+    function processImage(url, referrerUrl) {
+        return new Promise(function(resolve, reject) {
+            var timeout = setTimeout(function() {
+                reject(new Error('Timeout'));
+            }, 20000);
+            GM_xmlhttpRequest({
+                method: 'GET',
+                url: url,
+                responseType: 'arraybuffer',
+                headers: {
+                    'Referer': referrerUrl,
+                    'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8'
+                },
+                onload: function(r) {
+                    clearTimeout(timeout);
+                    if (r.status !== 200) {
+                        reject(new Error('HTTP ' + r.status));
+                        return;
+                    }
+                    try {
+                        var bytes = new Uint8Array(r.response);
+                        var blob = new Blob([bytes]);
+                        var blobUrl = URL.createObjectURL(blob);
+                        var img = new Image();
+                        img.onload = function() {
+                            URL.revokeObjectURL(blobUrl);
+                            var ow = img.naturalWidth, oh = img.naturalHeight;
+                            if (ow < 128 || oh < 128) {
+                                reject(new Error('Too small'));
+                                return;
+                            }
+                            var tw = ow, th = oh;
+                            if (ow > MAX_IMAGE_DIMENSION || oh > MAX_IMAGE_DIMENSION) {
+                                if (ow >= oh) {
+                                    tw = MAX_IMAGE_DIMENSION;
+                                    th = Math.round(oh / ow * MAX_IMAGE_DIMENSION);
+                                } else {
+                                    th = MAX_IMAGE_DIMENSION;
+                                    tw = Math.round(ow / oh * MAX_IMAGE_DIMENSION);
+                                }
+                            }
+                            var canvas = document.createElement('canvas');
+                            canvas.width = tw;
+                            canvas.height = th;
+                            canvas.getContext('2d').drawImage(img, 0, 0, tw, th);
+                            var bpp = bytes.byteLength / (ow * oh);
+                            var quality = bpp > 2.0 ? 0.90 : bpp < 0.5 ? 0.60 : 0.80;
+                            resolve({ base64: canvas.toDataURL('image/webp', quality).split(',')[1], width: tw, height: th });
+                        };
+                        img.onerror = function() {
+                            URL.revokeObjectURL(blobUrl);
+                            reject(new Error('Decode failed'));
+                        };
+                        img.src = blobUrl;
+                    } catch(e) {
+                        reject(e);
+                    }
+                },
+                onerror: function() {
+                    clearTimeout(timeout);
+                    reject(new Error('Network error'));
+                }
+            });
+        });
+    }
+
+    function getLessonPages(siteId, toolId) {
+        return fetchHtmlPage('https://efundi.nwu.ac.za/portal/site/' + siteId + '/tool/' + toolId + PAGE_PICKER_PARAMS).then(function(html) {
+            return parseLessonPages(html, siteId, toolId);
+        }).catch(function() {
+            return [];
+        });
+    }
+
+    function parseLessonPages(html, siteId, toolId) {
+        var dom = new DOMParser().parseFromString(html, 'text/html');
+        var links = dom.querySelectorAll('a[href*="ShowPage"][href*="itemId="]');
+        var filtered = [];
+        for (var i = 0; i < links.length; i++) {
+            var a = links[i];
+            var t = a.textContent.trim().toLowerCase();
+            if (t.indexOf('return') === -1 && t.indexOf('back') === -1 && t.indexOf('next') === -1 && t.indexOf('index') === -1 && t.indexOf('print') === -1) {
+                filtered.push(a);
+            }
+        }
+
+        var seen = new Set();
+        var pages = [];
+        for (var j = 0; j < filtered.length; j++) {
+            var a = filtered[j];
+            var href = a.href || a.getAttribute('href') || '';
+            var itemMatch = href.match(/itemId=(-?\d+)/);
+            if (!itemMatch || itemMatch[1] === '-1') continue;
+            var itemId = itemMatch[1];
+            if (seen.has(itemId)) continue;
+            seen.add(itemId);
+            var fullUrl = href.indexOf('http') === 0 ? href : 'https://efundi.nwu.ac.za' + href;
+            var visibleSpan = a.querySelector('span:not(.offscreen)');
+            var title = visibleSpan ? visibleSpan.textContent.trim() : a.textContent.trim() || 'Page ' + itemId;
+            pages.push({ itemId: itemId, title: title, url: fullUrl });
+        }
+
+        if (pages.length === 0) {
+            var m = html.match(/sakai\.lessons_subnav\s*=\s*new\s+LessonsSubPageNavigation\((\{[\s\S]+?\})\s*\)\s*;/);
+            if (m) {
+                try {
+                    var data = JSON.parse(m[1]);
+                    var pageKeys = Object.keys(data.pages || {});
+                    for (var k = 0; k < pageKeys.length; k++) {
+                        var key = pageKeys[k];
+                        var pageList = data.pages[key] || [];
+                        for (var p = 0; p < pageList.length; p++) {
+                            var item = pageList[p];
+                            if (seen.has(item.itemId)) continue;
+                            seen.add(item.itemId);
+                            pages.push({
+                                itemId: item.itemId,
+                                title: item.name || 'Page ' + item.itemId,
+                                url: 'https://efundi.nwu.ac.za/portal/site/' + siteId + '/tool/' + toolId + '/ShowPage?returnView=&sendingPage=' + (item.sendingPage || '') + '&itemId=' + item.itemId
+                            });
+                        }
+                    }
+                } catch(e) {}
+            }
+        }
+
+        console.log('[Lessons] Found ' + pages.length + ' lesson pages');
+        return pages;
+    }
+
+    function checkLessons(siteId, siteTitle, lessonUrls) {
+        return post({
+            action: 'check_lessons',
+            secret: SECRET,
+            siteId: siteId,
+            siteTitle: siteTitle,
+            lessonUrls: lessonUrls
+        });
+    }
+
+    function fetchLessonBatch(pages, siteTitle, siteId, toolId, checkResult) {
+        var results = [];
+        var queue = pages.slice();
+
+        function worker() {
+            return new Promise(function(resolve) {
+                function processNext() {
+                    if (queue.length === 0) {
+                        resolve();
+                        return;
+                    }
+                    var page = queue.shift();
+                    // No browser-computed hashes (deleted
+                    // 2026-10-07): every lesson is fetched
+                    // and sent; the SERVER computes the
+                    // canonical hash and skips lessons
+                    // whose title AND url AND hash all
+                    // match (newest-wins replace on
+                    // hash change).
+                    console.log('[Lessons] Fetching: ' + page.title);
+                    extractLessonContent(page.url, page.title).then(function(lessonData) {
+                                                results.push({
+                                                    page: page,
+                                                    html: lessonData.html,
+                                                    images: lessonData.images,
+                                                    resources: lessonData.resources || [],
+                                                    lessonTitle: lessonData.lessonTitle,
+                                                    success: true,
+                                                    changed: true
+                                                });
+                                                processNext();
+                                            }).catch(function(err) {
+                        console.error('[Lessons] Failed "' + page.title + '":', err.message);
+                        results.push({ page: page, success: false, error: err.message });
+                        processNext();
+                    });
+                }
+                processNext();
+            });
+        }
+
+        var workers = [];
+        var numWorkers = Math.min(MAX_CONCURRENT_LESSON_FETCHES, pages.length);
+        for (var i = 0; i < numWorkers; i++) {
+            workers.push(worker());
+        }
+        return Promise.all(workers).then(function() {
+            return results;
+        });
+    }
+
+    function syncLessonsForTool(siteId, siteTitle, toolId, isPriority) {
+        console.log('[Lessons] Syncing tool for ' + siteTitle);
+        if (isPriority) setIndicator('lessons', 'syncing', 'Loading...');
+
+        return getLessonPages(siteId, toolId).then(function(pages) {
+            if (pages.length === 0) {
+                if (isPriority) setIndicator('lessons', 'ok', 'No lessons');
+                return;
+            }
+
+            var lessonUrls = pages.map(function(p) { return p.url; });
+
+            return checkLessons(siteId, siteTitle, lessonUrls).then(function(checkResult) {
+                if (!checkResult || !checkResult.lessons) {
+                    console.error('[Lessons] Failed to get status');
+                    if (isPriority) setIndicator('lessons', 'error', 'Check failed');
+                    return;
+                }
+
+                return fetchLessonBatch(pages, siteTitle, siteId, toolId, checkResult).then(function(results) {
+                    var changedLessons = results.filter(function(r) { return r.success && r.changed; });
+                    console.log('[Lessons] ' + changedLessons.length + ' changed out of ' + pages.length);
+
+                    if (changedLessons.length === 0) {
+                        if (isPriority) setIndicator('lessons', 'ok', 'Up to date');
+                        return;
+                    }
+
+                    if (isPriority) setIndicator('lessons', 'syncing', 'Sending ' + changedLessons.length + ' lessons...');
+
+                    var chain = Promise.resolve();
+                                                            for (var i = 0; i < changedLessons.length; i++) {
+                                                                (function(lesson, idx) {
+                                                                    chain = chain.then(function() {
+                                                                        return post({
+                                                                            action: 'sync_lesson',
+                                                                            secret: SECRET,
+                                                                            siteId: siteId,
+                                                                            siteTitle: siteTitle,
+                                                                            lessonTitle: lesson.lessonTitle,
+                                                                            lessonUrl: lesson.page.url,
+                                                                            lessonHtml: lesson.html,
+                                                                            images: lesson.images,
+                                                                            resources: lesson.resources
+                                                                        }).then(function() {
+                                                                            updateProgress('lessons', idx + 1, changedLessons.length, 'Sending');
+                                                                        }).catch(function(err) {
+                                                                            console.warn('[Lessons] Failed lesson: ' + lesson.lessonTitle + ' Ã”Ã‡Ã¶ ' + (err && err.message || err) + ' (continuing)');
+                                                                            updateProgress('lessons', idx + 1, changedLessons.length, 'Failed (skipped)');
+                                                                        });
+                                                                    });
+                                                                })(changedLessons[i], i);
+                                                            }
+
+                                        return chain.then(function() {
+                        if (isPriority) setIndicator('lessons', 'ok', changedLessons.length + ' synced');
+                        console.log('[Lessons] Complete: ' + changedLessons.length + ' lessons synced');
+                    });
+                });
+            });
+        }).catch(function(err) {
+            console.error('[Lessons] Failed for ' + siteTitle + ':', err);
+            if (isPriority) setIndicator('lessons', 'error', 'Failed');
+        });
+    }
+
+    function getLessonTitleFromDoc(doc, pagePickerTitle) {
+        if (pagePickerTitle && pagePickerTitle.trim() && pagePickerTitle.trim() !== 'Untitled Lesson') {
+            return pagePickerTitle.trim();
+        }
+        var h1 = doc.querySelector('#content h1, .Mrphs-mainContent h1');
+        if (h1) {
+            var txt = h1.textContent.trim();
+            if (txt && txt.match(/^hey\s/i) === null && txt.length > 2) return txt;
+        }
+        var toolTitle = doc.querySelector('.Mrphs-toolTitleNav__text');
+        if (toolTitle) {
+            var tt = toolTitle.textContent.trim();
+            return tt.replace(/^(Completed |In Progress |Level \d+ (Completed|In Progress) )/i, '');
+        }
+        return 'Untitled Lesson';
+    }
+
+    function extractLessonContent(lessonUrl, pagePickerTitle) {
+            return fetchHtmlPage(lessonUrl).then(function(html) {
+                var dom = new DOMParser().parseFromString(html, 'text/html');
+                var content = dom.querySelector('#content, .Mrphs-mainContent, main[role="main"], #pagecontents, .lessonbuilder-div') || dom.body;
+                var clone = content.cloneNode(true);
+                clone.querySelectorAll(GARBAGE_SELECTORS).forEach(function(el) { el.remove(); });
+                clone.querySelectorAll('[style*="display:none"],[style*="display: none"],[aria-hidden="true"]').forEach(function(el) { el.remove(); });
+
+                var images = [];
+                var imgElements = clone.querySelectorAll('img');
+                var imgPromises = [];
+
+                for (var i = 0; i < imgElements.length; i++) {
+                    var img = imgElements[i];
+                    var src = img.getAttribute('src') || '';
+                    if (!src || src.indexOf('data:') === 0) continue;
+                    var absoluteSrc = src.indexOf('http') === 0 ? src : 'https://efundi.nwu.ac.za' + src;
+                    var filename = absoluteSrc.split('/').pop().split('?')[0] || 'image.png';
+                    var knownW = img.naturalWidth || parseInt(img.getAttribute('width')) || 0;
+                    var knownH = img.naturalHeight || parseInt(img.getAttribute('height')) || 0;
+
+                    if (knownW > 0 && knownH > 0 && (knownW < 128 || knownH < 128)) {
+                        img.replaceWith(dom.createTextNode('[Small image removed: ' + filename + ']'));
+                        continue;
+                    }
+
+                    var promise = processImage(absoluteSrc, lessonUrl).then(function(processed) {
+                        images.push({
+                            filename: filename,
+                            base64: processed.base64,
+                            mimeType: 'image/webp',
+                            width: processed.width,
+                            height: processed.height
+                        });
+                        img.replaceWith(dom.createTextNode('[Image: ' + filename + ']'));
+                    }).catch(function(e) {
+                        console.warn('[Lessons] Image failed: ' + filename, e.message);
+                        img.replaceWith(dom.createTextNode('[Image: ' + filename + ']'));
+                    });
+                    imgPromises.push(promise);
+                }
+
+                // ---- Embedded link + PDF resource harvesting (2026-09-12) ----
+                // Treat links to files (pdf/doc/docx/ppt/pptx/xls/xlsx/txt/md/csv/images/archives)
+                // inside lesson pages as first-class resources: download in background,
+                // keep small text docs inline (base64) so the Apps Script can extract text.
+                var resources = [];
+                var resourcePromises = [];
+                var linkEls = clone.querySelectorAll('a[href]');
+                var RES_EXT_RE = /\.(pdf|doc|docx|ppt|pptx|xls|xlsx|txt|md|csv|rtf|odt|ods|zip|rar|7z|tar|gz|c|h|java|py|js|sql|html?|ipynb|tex)$/i;
+
+                for (var li = 0; li < linkEls.length; li++) {
+                    (function(anchor) {
+                    var href = anchor.getAttribute('href') || '';
+                    if (!href || href.indexOf('#') === 0 || href.indexOf('javascript:') === 0) return;
+                    var finalUrl = href.indexOf('http') === 0 ? href : 'https://efundi.nwu.ac.za' + href;
+                    var linkText = (anchor.textContent || '').trim();
+                    var hrefName = decodeURIComponent(finalUrl.split('/').pop().split('?')[0] || '');
+                    var dispName = linkText || hrefName || 'file';
+
+                    if (!RES_EXT_RE.test(finalUrl) && !RES_EXT_RE.test(dispName.toLowerCase())) return;
+
+                    // Skip obvious nav/portal links (ShowPage, return, etc.)
+                    if (/ShowPage|return|back|portal\/site|logout|login|javascript/i.test(finalUrl)) return;
+
+                    // Skip images already handled above
+                    if (/\.(png|jpe?g|gif|webp|svg|bmp)$/i.test(finalUrl)) return;
+
+                    var fname = dispName.indexOf('.') === -1 && hrefName ? hrefName : dispName;
+
+                    var rp = fetchFileAsBase64(finalUrl).then(function(bin) {
+                                            // Only store inline if reasonably small (docs/PDFs < ~1.5 MB base64)
+                                            var inline = null;
+                                            if (bin.byteLength < 1500000) inline = bin.base64;
+                                            resources.push({
+                                                filename: fname,
+                                                url: finalUrl,
+                                                ext: (finalUrl.split('.').pop().split('?')[0] || '').toLowerCase(),
+                                                byteLength: bin.byteLength,
+                                                mimeType: bin.mimeType,
+                                                inlineBase64: inline
+                                            });
+                                            anchor.replaceWith(dom.createTextNode('[Resource: ' + fname + ']'));
+                                        }).catch(function(e) {
+                                            console.warn('[Lessons] Resource failed: ' + fname, e.message);
+                                            anchor.replaceWith(dom.createTextNode('[Resource: ' + fname + ']'));
+                                        });
+                    resourcePromises.push(rp);
+                    })(linkEls[li]);
+                }
+
+                return Promise.all(imgPromises.concat(resourcePromises)).then(function() {
+                    var cleanHtml = clone.innerHTML.replace(/\s{3,}/g, ' ').replace(/(<br\s*\/?>\s*){3,}/gi, '<br><br>').trim();
+                    var lessonTitle = getLessonTitleFromDoc(dom, pagePickerTitle);
+                    return { html: cleanHtml, images: images, resources: resources, lessonTitle: lessonTitle };
+                });
+            });
+        }
+
+    function isLessonTool(siteId, toolId) {
+        return fetchHtmlPage('https://efundi.nwu.ac.za/portal/site/' + siteId + '/tool/' + toolId + PAGE_PICKER_PARAMS).then(function(html) {
+            return html.indexOf('ShowPage') !== -1;
+        }).catch(function() {
+            return false;
+        });
+    }
+
+    function discoverLessonTools(siteId, siteTitle) {
+        return fetchHtmlPage('https://efundi.nwu.ac.za/portal/site/' + siteId).then(function(siteHtml) {
+            var dom = new DOMParser().parseFromString(siteHtml, 'text/html');
+            var seen = new Set();
+            var candidates = [];
+            var links = dom.querySelectorAll('a[href*="/portal/site/' + siteId + '/tool/"]');
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i];
+                var href = link.href || link.getAttribute('href') || '';
+                var m = href.match(/\/tool\/([a-f0-9\-]{36})/);
+                if (!m || seen.has(m[1])) continue;
+                seen.add(m[1]);
+                candidates.push({ toolId: m[1], toolTitle: link.textContent.trim() });
+            }
+
+            var lessonTools = [];
+            var promises = candidates.map(function(candidate) {
+                return isLessonTool(siteId, candidate.toolId).then(function(isLesson) {
+                    if (isLesson) {
+                        lessonTools.push(candidate);
+                        console.log('[Lessons] Found tool: ' + candidate.toolTitle);
+                    }
+                });
+            });
+
+            return Promise.all(promises).then(function() {
+                return lessonTools;
+            });
+        }).catch(function(err) {
+            console.warn('[Lessons] Discovery failed for ' + siteTitle + ':', err.message);
+            return [];
+        });
+    }
+
+    function discoverAllLessonTasks(sites) {
+        console.log('[Lessons] Discovering ' + sites.length + ' sites...');
+        startHeartbeat('lesson discovery');
+        var taskList = [];
+
+        function processNext(index) {
+            if (index >= sites.length) return Promise.resolve();
+            var site = sites[index];
+            console.log('[Lessons] [' + (index+1) + '/' + sites.length + ']: ' + site.title);
+            updateProgress('lessons', index + 1, sites.length, 'Discovering');
+            return discoverLessonTools(site.uuid, site.title).then(function(tools) {
+                for (var i = 0; i < tools.length; i++) {
+                    taskList.push({
+                        siteId: site.uuid,
+                        siteTitle: site.title,
+                        toolId: tools[i].toolId,
+                        toolTitle: tools[i].toolTitle
+                    });
+                }
+                return delay(500);
+            }).then(function() {
+                return processNext(index + 1);
+            }).catch(function(e) {
+                console.warn('[Lessons] Discovery error for ' + site.title + ':', e.message);
+                return processNext(index + 1);
+            });
+        }
+
+        return processNext(0).then(function() {
+            stopHeartbeat();
+            console.log('[Lessons] Found ' + taskList.length + ' lesson tools');
+            return taskList;
+        });
+    }
+
+    function runLessonUploads(taskList, isPriority) {
+        if (!taskList.length) {
+            if (isPriority) setIndicator('lessons', 'ok', 'No lessons');
+            return Promise.resolve();
+        }
+        console.log('[Lessons] Uploading ' + taskList.length + ' tools...');
+        startHeartbeat('lesson uploads');
+
+        function processNext(index) {
+            if (index >= taskList.length) return Promise.resolve();
+            var task = taskList[index];
+            console.log('[Lessons] Tool [' + (index+1) + '/' + taskList.length + ']: ' + task.toolTitle);
+            updateProgress('lessons', index + 1, taskList.length, 'Processing');
+            return syncLessonsForTool(task.siteId, task.siteTitle, task.toolId, isPriority && index === taskList.length - 1).then(function() {
+                return delay(LESSON_SYNC_DELAY_MS);
+            }).then(function() {
+                return processNext(index + 1);
+            });
+        }
+
+        return processNext(0).then(function() {
+            stopHeartbeat();
+            if (isPriority) setIndicator('lessons', 'ok', 'Complete');
+        });
+    }
+
+    // ============================================================
+    // U95: ENCODEURICOMPONENT FOR SLUGS
+    // ============================================================
+
+    function encodeSlug(title) {
+        return encodeURIComponent(title.trim());
+    }
+
+    var getAnnCache = function(t) { return KEY_ANNOUNCEMENT_CACHE + encodeSlug(t); };
+    var getCalCache = function(t) { return KEY_CALENDAR_CACHE + encodeSlug(t); };
+
+    var getToolCache = function(t) { return KEY_RESOURCE_TOOL_CACHE + encodeSlug(t); };
+
+    // ============================================================
+    // HELPERS
+    // ============================================================
+
+    function getPageInfo() {
+        var url = window.location.href;
+        var siteMatch = url.match(/\/portal\/site\/([a-f0-9\-]{36})/);
+        var toolMatch = url.match(/\/tool\/([a-f0-9\-]{36})/);
+        var isResourcesPage = false;
+        if (toolMatch) {
+            var toolHeader = document.querySelector('.Mrphs-toolTitleNav__text');
+            if (toolHeader && toolHeader.textContent && toolHeader.textContent.indexOf('Resources') !== -1) {
+                isResourcesPage = true;
+            }
+        }
+        return {
+            siteId: siteMatch ? siteMatch[1] : null,
+            toolId: toolMatch ? toolMatch[1] : null,
+            isHomepage: !siteMatch || url.indexOf('/portal/home') !== -1,
+            isLessonPage: url.indexOf('ShowPage') !== -1 || url.indexOf('PagePicker') !== -1,
+            isResourcesPage: isResourcesPage
+        };
+    }
+
+    function getCachedSites() {
+        return cachedSites || [];
+    }
+
+    function getSiteTitle(siteId) {
+        var el = document.querySelector('#linkNav a[href*="/portal/site/' + siteId + '"], .Mrphs-sitesNav a[href*="/portal/site/' + siteId + '"]');
+        if (el && el.textContent && el.textContent.trim()) return el.textContent.trim();
+        try {
+            var t = window.portal && window.portal.siteTitle;
+            if (t && ['Overview', 'Home', 'Resources', 'Announcements', 'Calendar', 'Gradebook'].indexOf(t) === -1) return t;
+        } catch(e) {}
+        return siteId;
+    }
+
+    // Site title for the page we are on (used by the sync pips).
+    function currentSiteTitle() {
+        var info = getPageInfo();
+        return info.siteId ? getSiteTitle(info.siteId) : '';
+    }
+
+    function delay(ms) { return new Promise(function(r) { setTimeout(r, ms); }); }
+
+    // ============================================================
+    // U106: POST WITH RETRY (WITH DUPLICATE PREVENTION)
+    // ============================================================
+
+    function post(payload, timeoutMs) {
+        var resolvedTimeout = timeoutMs || (payload.action === 'sync_resources' ? TIMEOUT_POST_MS : TIMEOUT_POST_OTHER_MS);
+        var label = payload.action + (payload.siteTitle ? ' / ' + payload.siteTitle : '');
+
+        var requestKey = label + '_' + JSON.stringify(payload.files || payload.sites || payload.lessonUrl || payload.siteId || []);
+        // The key must distinguish CONCURRENT requests, not just equal
+        // payloads: N lessons are posted in parallel for the same site, so
+        // they all produce an identical label+siteId key. Without the
+        // unique suffix, worker A's onerror deletes the key, worker B sets
+        // it, and A's scheduled retry then hits the duplicate guard and
+        // returns a resolved promise that nobody awaits -- stalling the
+        // lesson pipeline forever with no error and no progress.
+        requestKey += '_' + (postSeq++);
+
+        if (window.self !== window.top) {
+            console.warn('[U106] Skipping POST from iframe context:', label);
+            return Promise.resolve({ status: 'ok', message: 'Skipped - iframe context' });
+        }
+
+        if (activePostRequests[requestKey]) {
+            console.warn('[U106] Duplicate POST prevented:', label);
+            return Promise.resolve({ status: 'ok', message: 'Duplicate prevented' });
+        }
+
+        activePostRequests[requestKey] = true;
+
+        // Failure path shared by onerror and ontimeout. A job that ran for
+        // a long time almost certainly completed server-side even though
+        // the response was lost (a long Apps Script run can fail while
+        // SERIALISING its ack, after all work is done). Retrying duplicates
+        // minutes of fetch+convert work and starves the lesson stage, so on
+        // the last attempt treat it as "probably done" instead.
+        function handlePostFailure(reason) {
+            if (attempt >= POST_MAX_ATTEMPTS) {
+                console.warn('[post] ' + label + ' lost its ack after ' + attempt +
+                    ' attempts (' + reason + ') - assuming the work completed server-side (not retrying)');
+                resolve({ status: 'ok', ackLost: true, action: payload.action });
+                return;
+            }
+            attempt++;
+            var backoff = POST_RETRY_DELAYS_MS[attempt - 1] || 2000;
+            console.log('[Retry] ' + label + ' - Attempt ' + attempt + '/' + POST_MAX_ATTEMPTS +
+                ' (' + reason + ', wait ' + backoff + 'ms)');
+            setTimeout(tryPost, backoff);
+        }
+
+        var attempt = 1;
+
+        return new Promise(function(resolve, reject) {
+        function tryPost() {
+            console.log('[eFundiHax Sync] [post] ' + label + ' (attempt ' + attempt + ')');
+            var timeout = setTimeout(function() {
+                delete activePostRequests[requestKey];
+                reject(new Error('POST timeout: ' + payload.action));
+            }, resolvedTimeout);
+
+                GM_xmlhttpRequest({
+                    method: 'POST',
+                    url: APPS_SCRIPT_URL,
+                    headers: { 'Content-Type': 'application/json' },
+                    data: JSON.stringify(payload),
+                    redirect: 'follow',
+                    // Must be passed explicitly: GM_xmlhttpRequest defaults to
+                    // Tampermonkey's own ~10s timeout, so a slow Apps Script run
+                    // (site creation, folder audit, large convert) aborts the
+                    // xhr and fires onerror. Chrome reports an aborted request
+                    // as onerror, not ontimeout, so the http-local timeout
+                    // above never got a chance and the whole lane failed.
+                    timeout: resolvedTimeout,
+                    ontimeout: function() {
+                        clearTimeout(timeout);
+                        delete activePostRequests[requestKey];
+                        handlePostFailure('timeout after ' + Math.round(resolvedTimeout / 1000) + 's');
+                    },
+                    onerror: function() {
+                        clearTimeout(timeout);
+                        delete activePostRequests[requestKey];
+                        handlePostFailure('network error');
+                    }
+                });
+            }
+
+            tryPost();
+        });
+    }
+
+    // ============================================================
+    // U120: LOGGING FOR SKIPPED VS PROCESSED
+    // ============================================================
+
+    function logSyncSummary(siteTitle, totalFiles, processedCount, skippedCount, errors) {
+        console.log('[U120] Sync summary for ' + siteTitle + ':');
+        console.log('   Total files: ' + totalFiles);
+        console.log('   Processed: ' + processedCount);
+        console.log('   Skipped: ' + skippedCount);
+        if (errors && errors.length > 0) {
+            console.log('   Errors: ' + errors.length);
+            for (var i = 0; i < Math.min(errors.length, 5); i++) {
+                console.log('      - ' + errors[i]);
+            }
+        }
+    }
+
+    // ============================================================
+    // U126: RANDOM SITE ORDERING (with priority rules)
+    // ============================================================
+
+    function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+        return array;
+    }
+
+    function orderSitesForSync(sites, prioritySiteId) {
+        var prioritySites = [];
+        var normalSites = [];
+
+        for (var i = 0; i < sites.length; i++) {
+            var site = sites[i];
+            if (prioritySiteId && site.uuid === prioritySiteId) {
+                prioritySites.push(site);
+            } else {
+                normalSites.push(site);
+            }
+        }
+
+        var shuffledNormal = shuffleArray(normalSites);
+        return prioritySites.concat(shuffledNormal);
+    }
+
+    // ============================================================
+    // MAIN ORCHESTRATOR
+    // ============================================================
+
+    function shouldSyncLessons() {
+        if (getPageInfo().isLessonPage) return true;
+        var lastLesson = Number(GM_getValue(KEY_LAST_LESSON_SYNC, 0)) || 0;
+        var elapsed = Date.now() - lastLesson;
+        // U129 FIX: If never synced (0) or elapsed >= cooldown, sync. Also log reason.
+        if (lastLesson === 0) {
+            console.log('[U129] Lessons never synced before - will sync');
+            return true;
+        }
+        if (elapsed >= LESSON_COOLDOWN_MS) return true;
+        console.log('[U129] Lessons cooldown active: ' + Math.round((LESSON_COOLDOWN_MS - elapsed)/60000) + 'min remaining (last=' + new Date(lastLesson).toLocaleString() + ') - skipping');
+        return false;
+    }
+
+    function saveSyncState(state) {
+        GM_setValue(KEY_SYNC_STATE, JSON.stringify({ timestamp: Date.now(), state: state }));
+    }
+
+    function clearSyncState() {
+        GM_setValue(KEY_SYNC_STATE, '');
+    }
+
+    function processSitesInParallel(sites, processor) {
+        var queue = sites.slice();
+
+        function worker() {
+            return new Promise(function(resolve) {
+                function processNext() {
+                    if (queue.length === 0) {
+                        resolve();
+                        return;
+                    }
+                    var site = queue.shift();
+                    processor(site).then(processNext, processNext);
+                }
+                processNext();
+            });
+        }
+
+        var workers = [];
+        var numWorkers = Math.min(SITE_CONCURRENCY, sites.length);
+        for (var i = 0; i < numWorkers; i++) {
+            workers.push(worker());
+        }
+        return Promise.all(workers);
+    }
+
+    // ============================================================
+    // RUN SYNC
+    // ============================================================
+
+    function runSync() {
+        console.log('[eFundiHax Sync] === SYNC START ===');
+        startHeartbeat('full sync');
+
+        var lastFeed = GM_getValue(KEY_LAST_SYNC, 0);
+        var feedPromise = Promise.resolve();
+        if (Date.now() - lastFeed >= SYNC_INTERVAL_MS) {
+            feedPromise = runFeedSync().then(function() {
+                GM_setValue(KEY_LAST_SYNC, Date.now());
+            });
+        }
+
+        var pageInfo = getPageInfo();
+        var prioritySiteId = pageInfo.siteId && !pageInfo.siteId.match(/^~/) ? pageInfo.siteId : null;
+
+        var pageInfo = getPageInfo();
+        var prioritySiteId = pageInfo.siteId && !pageInfo.siteId.match(/^~/) ? pageInfo.siteId : null;
+
+        // Site registration is slow (creating folders/spreadsheets/calendars
+        // for every site takes minutes). It used to be AWAITED before the
+        // full sync started, so lesson discovery - and therefore lessons
+        // ever reaching the master docs - waited minutes behind it. Run the
+        // registration ALONGSIDE the sync body and never let it abort it.
+        var feedSafe = feedPromise.catch(function(feedErr) {
+            console.error('[eFundiHax Sync] Registration failed, continuing with schedule anyway:', feedErr && feedErr.message);
+        });
+
+        var fullSync = Promise.resolve().then(function() {
+            if (prioritySiteId) {
+                console.log('[U103] Module-first priority: syncing current site first');
+                return syncModuleSite(prioritySiteId, true).then(function() {
+                    console.log('[eFundiHax Sync] Module sync complete, continuing full sync...');
+                    return performFullSync(prioritySiteId);
+                });
+            }
+            console.log('[eFundiHax Sync] full sync');
+            return performFullSync(null);
+        }).catch(function(err) {
+            console.error('[eFundiHax Sync] Sync failed:', err.message);
+            saveSyncState({ phase: 'sync', error: err.message, timestamp: Date.now() });
+            stopHeartbeat();
+        });
+
+        return Promise.all([feedSafe, fullSync]).then(function() { return fullSync; });
+    }
+
+    function performFullSync(prioritySiteId) {
+        var calendarJob = maybeRunCalendarSync().catch(function(e) {
+            console.warn('[eFundiHax Sync] Calendar error:', e);
+        });
+
+        var sites = collectSites().filter(function(s) { return !s.uuid.match(/^~/); });
+        var orderedSites = orderSitesForSync(sites, prioritySiteId);
+        console.log('[U126] Sync order: ' + orderedSites.map(function(s) { return s.title; }).join(' > '));
+
+        var totalProcessed = 0;
+        var totalSkipped = 0;
+        var allErrors = [];
+
+        // Lesson/resource discovery starts HERE, before everything else.
+        // It is pure page scraping and needs nothing from the feed sync or
+        // the per-site pass, both of which are slow (sync_sites alone can
+        // take minutes creating folders/spreadsheets). Waiting behind them
+        // is why lessons never actually synced.
+        var lessonDiscovery = discoverAllLessonTasks(orderedSites);
+        var resourceDiscovery = discoverAllResourceTasks(orderedSites);
+        startHeartbeat('parallel discovery');
+
+        // Site registration must never abort the sync: a rejected
+        // runFeedSync() used to reject the whole chain, so the lesson
+        // stage never ran at all.
+        var feedErrors = [];
+        return runFeedSync().catch(function(feedErr) {
+            var msg = (feedErr && feedErr.message) || String(feedErr);
+            console.warn('[Sync] Site registration failed, continuing without it:', msg);
+            feedErrors.push('Feed sync: ' + msg);
+        }).then(function() {
+            feedErrors.forEach(function(e) { allErrors.push(e); });
+
+            var sitePass = processSitesInParallel(orderedSites, function(site) {
+                return Promise.resolve().then(function() {
+                    return getAnnouncements(site.uuid, site.title, false);
+                }).catch(function(err) {
+                    console.error('[Sync] Announcements failed for ' + site.title + ':', err.message);
+                    allErrors.push('Announcements: ' + site.title + ' - ' + err.message);
+                }).then(function() {
+                    return syncCalendar(site.uuid, site.title, false);
+                }).catch(function(err) {
+                    console.error('[Sync] Calendar failed for ' + site.title + ':', err.message);
+                    allErrors.push('Calendar: ' + site.title + ' - ' + err.message);
+                }).then(function() {
+                    return syncAnnouncementAttachments(site.uuid, site.title, false);
+                }).catch(function(err) {
+                    console.error('[Sync] Attachments failed for ' + site.title + ':', err.message);
+                    allErrors.push('Attachments: ' + site.title + ' - ' + err.message);
+                });
+            });
+
+            // Upload discovered lessons as soon as discovery finishes,
+            // WITHOUT waiting on the per-site pass (still running).
+            return lessonDiscovery.then(function(lessonTaskList) {
+                stopHeartbeat();
+                console.log('[Lessons] Discovered ' + lessonTaskList.length + ' tools (alongside site sync)');
+                if (shouldSyncLessons() && lessonTaskList.length > 0) {
+                    startHeartbeat('lesson uploads');
+                    return runLessonUploads(lessonTaskList, false).then(function() {
+                        GM_setValue(KEY_LAST_LESSON_SYNC, Date.now());
+                    }).catch(function(err) {
+                        console.error('[Sync] Lesson upload failed:', err.message);
+                        allErrors.push('Lesson upload: ' + err.message);
+                    });
+                }
+            }).then(function() {
+                return sitePass; // the per-site pass was already running
+            }).then(function() {
+                return resourceDiscovery.then(function(resourceTaskList) {
+                    console.log('[Resources] Discovered ' + resourceTaskList.length + ' sites');
+                    return resourceTaskList;
+                });
+            }).then(function(resourceTaskList) {
+                stopHeartbeat();
+                startHeartbeat('parallel uploads');
+                var uploadPromises = [];
+                if (resourceTaskList.length > 0) {
+                    uploadPromises.push(runResourceUploads(resourceTaskList, false).catch(function(err) {
+                        console.error('[Sync] Resource upload failed:', err.message);
+                        allErrors.push('Resource upload: ' + err.message);
+                    }));
+                }
+                return Promise.all(uploadPromises).then(function() {
+                    stopHeartbeat();
+                    return calendarJob;
+                }).then(function() {
+                    logSyncSummary('All sites', sites.length, totalProcessed, totalSkipped, allErrors);
+
+                    GM_setValue(KEY_SYNC_COMPLETE, Date.now());
+                    GM_setValue(KEY_RESUME_RESOURCES, null);
+                    GM_setValue(KEY_RESUME_LESSONS, null);
+                    clearSyncState();
+                    console.log('[eFundiHax Sync] === SYNC COMPLETE ===');
+                });
+            });
+        }).catch(function(err) {
+            console.error('[eFundiHax Sync] Sync failed:', err.message);
+            saveSyncState({ phase: 'sync', error: err.message, timestamp: Date.now() });
+            stopHeartbeat();
+        });
+    }
+    function runResourceUploads(taskList) {
+        if (!taskList.length) return Promise.resolve();
+        startHeartbeat('resource uploads');
+
+        function processNext(index) {
+            if (index >= taskList.length) return Promise.resolve();
+            updateProgress('resources', index + 1, taskList.length, 'Uploading');
+            return uploadResourceTask(taskList[index], false).then(function() {
+                return delay(RESOURCE_SYNC_DELAY_MS);
+            }).then(function() {
+                return processNext(index + 1);
+            });
+        }
+
+        return processNext(0).then(function() {
+            stopHeartbeat();
+        });
+    }
+
+    function runFeedSync() {
+        console.log('[eFundiHax Sync] [feed] Starting...');
+        setIndicator('announcements', 'syncing', 'Registering sites...');
+
+        var sites = collectSites();
+        var seenIds = JSON.parse(GM_getValue(KEY_SEEN_SITES, '[]'));
+
+        var registeredIds = JSON.parse(GM_getValue(KEY_REGISTERED_SITES, '[]'));
+        var sitesToRegister = [];
+
+        for (var i = 0; i < sites.length; i++) {
+            var uuid = sites[i].uuid;
+            if (seenIds.indexOf(uuid) === -1) {
+                sitesToRegister.push(sites[i]);
+            } else if (registeredIds.indexOf(uuid) === -1) {
+                sitesToRegister.push(sites[i]);
+            }
+        }
+
+        if (sitesToRegister.length > 0) {
+            console.log('[eFundiHax Sync] Registering ' + sitesToRegister.length + ' new sites (batched 8)');
+            var BATCH_SIZE = 8;
+
+            function registerNext(batchIndex) {
+                if (batchIndex >= sitesToRegister.length) return Promise.resolve();
+                var batch = sitesToRegister.slice(batchIndex, batchIndex + BATCH_SIZE);
+                return post({
+                    action: 'sync_sites',
+                    secret: SECRET,
+                    sites: batch
+                }).then(function() {
+                    var ids = batch.map(function(s) { return s.uuid; });
+                    var updatedSeen = seenIds.concat(ids);
+                    GM_setValue(KEY_SEEN_SITES, JSON.stringify(updatedSeen));
+
+                    var updatedRegistered = registeredIds.concat(ids);
+                    GM_setValue(KEY_REGISTERED_SITES, JSON.stringify(updatedRegistered));
+                    return delay(2000);
+                }).then(function() {
+                    return registerNext(batchIndex + BATCH_SIZE);
+                }).catch(function(err) {
+                    console.error('[eFundiHax Sync] Batch registration failed:', err.message);
+                    return registerNext(batchIndex + BATCH_SIZE);
+                });
+            }
+
+            return registerNext(0).then(function() {
+                setIndicator('announcements', 'ok', 'Sites registered');
+            });
+        } else {
+            console.log('[eFundiHax Sync] All sites already registered');
+            setIndicator('announcements', 'ok', 'No new sites');
+            return Promise.resolve();
+        }
+    }
+
+    function syncModuleSite(siteId, isPriority) {
+        var siteTitle = getSiteTitle(siteId);
+        console.log('[eFundiHax Sync] [module] "' + siteTitle + '" priority=' + isPriority);
+
+        return getAnnouncements(siteId, siteTitle, isPriority).catch(function(err) {
+            console.error('[Module] Announcements failed:', err.message);
+        }).then(function() {
+            return syncCalendar(siteId, siteTitle, isPriority).catch(function(err) {
+                console.error('[Module] Calendar failed:', err.message);
+            });
+        }).then(function() {
+            return syncAnnouncementAttachments(siteId, siteTitle, isPriority).catch(function(err) {
+                console.error('[Module] Attachments failed:', err.message);
+            });
+        }).then(function() {
+            var pageInfo = getPageInfo();
+            if (pageInfo.isLessonPage && pageInfo.toolId) {
+                return syncLessonsForTool(siteId, siteTitle, pageInfo.toolId, isPriority).catch(function(err) {
+                    console.error('[Module] Lessons failed:', err.message);
+                });
+            }
+        }).then(function() {
+            return discoverResourcesForSite(siteId, siteTitle);
+        }).then(function(task) {
+            if (task) {
+                return uploadResourceTask(task, isPriority).catch(function(err) {
+                    console.error('[Module] Resources failed:', err.message);
+                });
+            } else {
+                if (isPriority) setIndicator('resources', 'ok', 'No files');
+            }
+        }).then(function() {
+            var sitesSynced = JSON.parse(GM_getValue(KEY_SITE_SYNCED, '{}'));
+            sitesSynced[siteId] = Date.now();
+            GM_setValue(KEY_SITE_SYNCED, JSON.stringify(sitesSynced));
+        }).then(function() {
+            return syncAssessmentsForSite(siteId, siteTitle, isPriority).catch(function(err) {
+                console.error('[Module] Assessments failed:', err.message);
+            });
+        }).catch(function(err) {
+            console.error('[Module] Unhandled error for ' + siteTitle + ':', err.message);
+        });
+    }
+
+    // ============================================================
+    // TESTS & QUIZZES (Samigo) DOM SCRAPE (v16.0, Task 5)
+    // Scrapes the Samigo tool for assessment rows and posts
+    // sync_assessments-compatible payload. Same-origin iframe
+    // (efundi.nwu.ac.za) â€” attempts iframe.contentDocument first;
+    // if access denied, falls back to navigating the top tab to
+    // the tool URL (saving/restoring sync state via KEY_RESUME_*).
+    // Follows pagination links until no next page.
+    // ============================================================
+    function syncAssessmentsForSite(siteId, siteTitle, isPriority) {
+        if (isPriority) setIndicator('assessments', 'syncing', 'Loading...');
+        
+        // Samigo tool URL (standard Sakai Samigo tool ID)
+        var samigoUrl = 'https://efundi.nwu.ac.za/portal/site/' + siteId + '/tool/sakai.samigo';
+        
+        // Strategy 1: Try iframe contentDocument (same-origin)
+        return tryIframeScrape(samigoUrl).then(function(result) {
+            if (result && result.assessments && result.assessments.length > 0) {
+                console.log('[Assessments] iframe scrape succeeded: ' + result.assessments.length + ' assessments');
+                return postAssessments(siteId, siteTitle, result.assessments).then(function() {
+                    if (isPriority) setIndicator('assessments', 'ok', result.assessments.length + ' synced');
+                });
+            }
+            // Strategy 2: Fallback - navigate top tab (save/restore sync state)
+            console.log('[Assessments] iframe scrape failed/empty, falling back to tab navigation');
+            return navigateAndScrape(siteId, siteTitle, samigoUrl, isPriority);
+        }).catch(function(err) {
+            console.warn('[Assessments] iframe scrape error:', err.message);
+            return navigateAndScrape(siteId, siteTitle, samigoUrl, isPriority);
+        });
+    }
+
+    function tryIframeScrape(url) {
+        return new Promise(function(resolve) {
+            // Create hidden iframe to access same-origin content
+            var iframe = document.createElement('iframe');
+            iframe.style.display = 'none';
+            iframe.src = url;
+            document.body.appendChild(iframe);
+            
+            var timeout = setTimeout(function() {
+                document.body.removeChild(iframe);
+                resolve({ assessments: [] });
+            }, 15000);
+            
+            iframe.onload = function() {
+                clearTimeout(timeout);
+                try {
+                    var doc = iframe.contentDocument || iframe.contentWindow.document;
+                    if (!doc) throw new Error('No contentDocument');
+                    var assessments = parseAssessmentsHtml(doc.documentElement.outerHTML);
+                    document.body.removeChild(iframe);
+                    resolve({ assessments: assessments });
+                } catch (e) {
+                    document.body.removeChild(iframe);
+                    resolve({ assessments: [], error: e.message });
+                }
+            };
+            iframe.onerror = function() {
+                clearTimeout(timeout);
+                document.body.removeChild(iframe);
+                resolve({ assessments: [], error: 'iframe load error' });
+            };
+        });
+    }
+
+    function navigateAndScrape(siteId, siteTitle, url, isPriority) {
+        // Save sync state before navigation
+        var state = {
+            siteId: siteId,
+            siteTitle: siteTitle,
+            isPriority: isPriority,
+            resumeAssessments: true
+        };
+        GM_setValue(KEY_RESUME_ASSESSMENTS, JSON.stringify(state));
+        
+        // Navigate top tab to Samigo tool
+        window.top.location.href = url;
+        
+        // This code won't run after navigation, but we return a pending promise
+        return new Promise(function() {}); // Never resolves - page unloads
+    }
+
+    function checkResumeAssessments() {
+        try {
+            var state = JSON.parse(GM_getValue(KEY_RESUME_ASSESSMENTS, '{}'));
+            if (state && state.resumeAssessments) {
+                GM_setValue(KEY_RESUME_ASSESSMENTS, JSON.stringify({ resumeAssessments: false }));
+                var siteId = state.siteId;
+                var siteTitle = state.siteTitle;
+                var isPriority = state.isPriority;
+                console.log('[Assessments] Resuming after navigation for ' + siteTitle);
+                
+                // Scrape the current page (now on Samigo tool)
+                var assessments = parseAssessmentsHtml(document.documentElement.outerHTML);
+                if (assessments.length > 0) {
+                    console.log('[Assessments] Resumed scrape found ' + assessments.length + ' assessments');
+                    return postAssessments(siteId, siteTitle, assessments).then(function() {
+                        if (isPriority) setIndicator('assessments', 'ok', assessments.length + ' synced');
+                    });
+                } else {
+                    // Try pagination
+                    return scrapeAllPages(siteId, siteTitle, isPriority);
+                }
+            }
+        } catch (e) {
+            console.warn('[Assessments] Resume check failed:', e.message);
+        }
+        return Promise.resolve();
+    }
+
+    function scrapeAllPages(siteId, siteTitle, isPriority) {
+        var allAssessments = [];
+        var currentUrl = window.location.href;
+        
+        return scrapePage(currentUrl).then(function processPage(result) {
+            allAssessments = allAssessments.concat(result.assessments);
+            if (result.nextPageUrl) {
+                // Navigate to next page
+                window.location.href = result.nextPageUrl;
+                // Save state for continuation
+                GM_setValue(KEY_RESUME_ASSESSMENTS, JSON.stringify({
+                    siteId: siteId,
+                    siteTitle: siteTitle,
+                    isPriority: isPriority,
+                    resumeAssessments: true,
+                    collectedAssessments: allAssessments,
+                    nextPageUrl: result.nextPageUrl
+                }));
+                return new Promise(function() {}); // Wait for navigation
+            } else {
+                // All pages scraped
+                console.log('[Assessments] All pages scraped: ' + allAssessments.length + ' total');
+                return postAssessments(siteId, siteTitle, allAssessments).then(function() {
+                    if (isPriority) setIndicator('assessments', 'ok', allAssessments.length + ' synced');
+                });
+            }
+        });
+    }
+
+    function scrapePage(url) {
+        // This runs on the Samigo page - parse current page + find next page link
+        var assessments = parseAssessmentsHtml(document.documentElement.outerHTML);
+        var nextLink = document.querySelector('a[rel="next"], .pagination .next a, .pager .next a, a:contains("Next"), a:contains("next")');
+        var nextPageUrl = nextLink ? nextLink.href : null;
+        return Promise.resolve({ assessments: assessments, nextPageUrl: nextPageUrl });
+    }
+
+    function tryAlternativeSamigoTools(siteId, candidates) {
+        var chain = Promise.resolve({ html: '', toolId: null });
+        candidates.forEach(function(cid) {
+            chain = chain.then(function(result) {
+                if (result.html) return result;
+                var url = 'https://efundi.nwu.ac.za/portal/site/' + siteId + '/tool/' + cid;
+                return fetchHtmlPage(url).then(function(html) {
+                    if (html.indexOf('assessmentList') !== -1 || html.indexOf('assessmentTable') !== -1 || html.indexOf('Take Assessment') !== -1) {
+                        return { html: html, toolId: cid };
+                    }
+                    return { html: '', toolId: null };
+                });
+            });
+        });
+        return chain;
+    }
+
+    function parseAssessmentsHtml(html) {
+        var assessments = [];
+        var doc = document.implementation.createHTMLDocument('');
+        doc.documentElement.innerHTML = html;
+
+        // Samigo assessment list table rows
+        var rows = doc.querySelectorAll('table#assessmentList tbody tr, table.assessmentTable tbody tr, .assessment-list tbody tr');
+        if (rows.length === 0) {
+            // Try generic table rows that look like assessments
+            rows = doc.querySelectorAll('table tbody tr');
+        }
+
+        for (var i = 0; i < rows.length; i++) {
+            var row = rows[i];
+            var cells = row.querySelectorAll('td, th');
+            if (cells.length < 3) continue;
+
+            var title = cells[0] ? cells[0].textContent.trim() : '';
+            var status = cells[1] ? cells[1].textContent.trim() : '';
+            var openDate = cells[2] ? cells[2].textContent.trim() : '';
+            var dueDate = cells[3] ? cells[3].textContent.trim() : '';
+
+            if (!title) continue;
+
+            var type = 'quiz';
+            if (/test|exam/i.test(title)) type = 'test';
+            if (/practical|lab|assignment/i.test(title)) type = 'practical';
+
+            assessments.push({
+                title: title,
+                status: status || 'Published',
+                openDate: parseDateFlexible(openDate),
+                dueDate: parseDateFlexible(dueDate),
+                type: type
+            });
+        }
+        return assessments;
+    }
+
+    function parseDateFlexible(str) {
+        if (!str) return '';
+        var d = new Date(str);
+        if (!isNaN(d.getTime())) return d.toISOString();
+        // Try common formats: MM/DD/YYYY, DD/MM/YYYY, etc.
+        var parts = str.split(/[\/\-\.]/);
+        if (parts.length === 3) {
+            var day = parseInt(parts[0], 10), month = parseInt(parts[1], 10), year = parseInt(parts[2], 10);
+            if (year < 100) year += 2000;
+            d = new Date(year, month - 1, day);
+            if (!isNaN(d.getTime())) return d.toISOString();
+        }
+        return '';
+    }
+
+    function postAssessments(siteId, siteTitle, assessments) {
+        return post({
+            action: 'sync_assessments',
+            secret: SECRET,
+            siteId: siteId,
+            siteTitle: siteTitle,
+            assessments: assessments
+        }).then(function() {
+            console.log('[Assessments] Posted ' + assessments.length + ' assessments');
+        }).catch(function(err) {
+            console.error('[Assessments] Post failed:', err.message);
+            throw err;
+        });
+    }
+
+    function maybeRunCalendarSync() {
+        var lastCal = GM_getValue(KEY_LAST_CALENDAR_SYNC, 0);
+        if (Date.now() - lastCal < CALENDAR_COOLDOWN_MS) {
+            var mins = Math.round((CALENDAR_COOLDOWN_MS - (Date.now() - lastCal)) / 60000);
+            setIndicator('calendar', 'idle', 'Cooldown ' + mins + 'm');
+            return Promise.resolve();
+        }
+        setIndicator('calendar', 'idle', 'Ready');
+        return Promise.resolve();
+    }
+
+    // ============================================================
+    // BOOT
+    // ============================================================
+
+    console.log('[eFundiHax Sync] v' + (window.__efhVersion || '?') + ' loaded. URL:', window.location.href);
+
+    if (window.self !== window.top) {
+        console.log('[eFundiHax Sync] Inside iframe Ã”Ã‡Ã¶ skipping');
+        return;
+    }
+
+    if (!APPS_SCRIPT_URL || APPS_SCRIPT_URL.indexOf('PASTE_NEW_URL_HERE') !== -1) {
+        console.warn('[eFundiHax Sync] URL not configured');
+        return;
+    }
+
+    // Check for assessment scrape resume after navigation
+    checkResumeAssessments();
+
+    var PAGE = getPageInfo();
+    console.log('[eFundiHax Sync] Page:', PAGE);
+
+    console.log('[eFundiHax Sync] Config: Battery threshold = ' + (BATTERY_THRESHOLD * 100) + '%, Memory limit = ' + (MEMORY_LIMIT_MB || 'auto') + ' MB');
+
+    setIndicator('calendar', 'idle', 'Ready');
+    setIndicator('announcements', 'idle', 'Ready');
+    setIndicator('resources', 'idle', 'Ready');
+    setIndicator('lessons', 'idle', 'Ready');
+    setIndicator('assessments', 'idle', 'Ready');
+
+    var injected = { calendar: false, announcements: false, resources: false, lessons: false, assessments: false };
+    var interval = setInterval(function() {
+        if (!injected.calendar) {
+            var calEl = findHeaderContaining(document, 'Calendar');
+            if (calEl) { calEl.appendChild(indicators.calendar); injected.calendar = true; setIndicator('calendar', 'idle', 'Ready'); }
+        }
+        if (!injected.announcements) {
+            var annSpan = findAnnouncementsTitle(document);
+            if (annSpan && annSpan.parentElement && !annSpan.parentElement.querySelector('#efh-ann-pip')) {
+                annSpan.parentElement.appendChild(indicators.announcements);
+                injected.announcements = true;
+                setIndicator('announcements', 'idle', 'Ready');
+            }
+        }
+        if (!injected.resources && !PAGE.isHomepage) {
+            var resEl = findResourceHeader(document);
+            if (resEl) { resEl.appendChild(indicators.resources); injected.resources = true; setIndicator('resources', 'idle', 'Ready'); }
+        }
+        if (!injected.lessons && PAGE.isLessonPage) {
+            var lesEl = document.querySelector('.Mrphs-toolTitleNav__button_container') || findHeaderContaining(document, 'Lesson') || document.querySelector('.portletTitle, .Mrphs-toolTitleNav__title');
+            if (lesEl) { lesEl.appendChild(indicators.lessons); injected.lessons = true; setIndicator('lessons', 'idle', 'Ready'); }
+        }
+        if (injected.calendar && injected.announcements && injected.resources && injected.lessons) {
+            clearInterval(interval);
+        }
+    }, 500);
+
+    function findAnnouncementsTitle(doc) {
+        var els = doc.querySelectorAll('.Mrphs-toolTitleNav__text');
+        for (var i = 0; i < els.length; i++) {
+            if (els[i].textContent.trim() === 'Recent Announcements') return els[i];
+        }
+        var portletEls = doc.querySelectorAll('.portletTitle, h1, h2');
+        for (var j = 0; j < portletEls.length; j++) {
+            if (portletEls[j].textContent && portletEls[j].textContent.indexOf('Announcements') !== -1) return portletEls[j];
+        }
+        return null;
+    }
+
+    function findHeaderContaining(doc, text) {
+        var els = doc.querySelectorAll('h1,h2,.portletTitle,.Mrphs-toolsNav__menuitem-link,.Mrphs-toolTitleNav__title');
+        for (var i = 0; i < els.length; i++) {
+            var el = els[i];
+            if (el.textContent && el.textContent.indexOf(text) !== -1 && !el.querySelector('.efh-indicator')) return el;
+        }
+        return null;
+    }
+
+    function findResourceHeader(doc) {
+        var selectors = ['.breadcrumb li.active', '.Mrphs-toolTitleNav__title .Mrphs-toolTitleNav__text', 'h1, h2'];
+        for (var i = 0; i < selectors.length; i++) {
+            var els = doc.querySelectorAll(selectors[i]);
+            for (var j = 0; j < els.length; j++) {
+                var el = els[j];
+                if (el.textContent && (el.textContent.indexOf('Resources') !== -1 || el.textContent.indexOf('All site files') !== -1)) {
+                    return el.closest('.Mrphs-toolTitleNav__title') || el;
+                }
+            }
+        }
+        return null;
+    }
+
+    runSync().catch(function(err) {
+        console.error('[eFundiHax Sync] Unhandled error:', err);
+        setIndicator('announcements', 'error', 'Sync failed');
+        setIndicator('calendar', 'error', 'Sync failed');
+        setIndicator('resources', 'error', 'Sync failed');
+        setIndicator('lessons', 'error', 'Sync failed');
+    });
+// ============================================================
+// SESSION + DRIVER + AUTO-LOGIN  (merged from lender.user.js and
+// efh-keepalive.user.js so there is only ONE script to install).
+//
+// This IIFE is the browser half of the architecture. The backend
+// cannot read JSESSIONID itself (HttpOnly: only GM_cookie can), so
+// the backend's fast lane, drain, hard lane and harvest all idle
+// with "no valid jar" until this block lends a live cookie.
+//
+// NOTE ON TOP-WINDOW ONLY: the sync scraper above deliberately works
+// inside the hidden iframes it creates, but cookie lending, the sync
+// driver and auto-login must only ever run in the top frame. Hence
+// the guard rather than @noframes.
+// ============================================================
+(function() {
+    if (window.top !== window.self) { return; }
+
+    var VERSION = '17.11.0';
+    var EXEC_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
+    var SECRET = 'trackmania_is_peak';
+    var COOKIE_URL = 'https://efundi.nwu.ac.za/';
+    var LEND_MS = 30 * 60 * 1000;      // re-lend every 30 min (jar TTL is 2h)
+    var HB_MS = 5 * 60 * 1000;         // session heartbeat
+    var MAX_AL_FAILS = 3;              // auto-login failure cap
+    var AL_BACKOFF_MS = 24 * 60 * 60 * 1000;
+    var CAS_LOGIN = 'https://casprd.nwu.ac.za/cas/login?service=https://efundi.nwu.ac.za/sakai-login-tool/container';
+
+    // Storage keys. Lender/driver keys keep the efh_lender_/efh_drv_
+    // names they always had so existing consent and cadence state
+    // survives the merge; autologin keys keep efh_al_*.
+    var K_CONSENT = 'efh_lender_consent';
+    var K_LAST_LEND = 'efh_lender_last';
+    var K_LAST_RELOGIN = 'efh_lender_last_relogin';
+    var K_DRIVER = 'efh_sync_driver';
+    var K_LAST_FAST = 'efh_drv_fast';
+    var K_LAST_DRAIN = 'efh_drv_drain';
+    var K_LAST_HARD = 'efh_drv_hard';
+    var K_LAST_QUAR = 'efh_drv_quar';
+    var K_LAST_AUDIT = 'efh_drv_audit';
+    var K_DRIVER_STATS = 'efh_drv_stats';
+    var K_AL_USER = 'efh_al_user';
+    var K_AL_PASS = 'efh_al_pass';
+    var K_AL_FAILS = 'efh_al_fails';
+    var K_AL_BACKOFF = 'efh_al_backoff_until';
+
+    // Sync-driver cadences. Apps Script triggers CANNOT be installed
+    // for this project (the script.scriptapp scope is not granted, and
+    // granting it needs an interactive consent screen — SPEC §9). The
+    // browser is therefore the scheduler: while the operator is on
+    // eFundi with lending enabled, these intervals drive the server
+    // lanes over HTTP. Every action is idempotent server-side, so a
+    // browser-driven cadence keeps the same guarantees a trigger
+    // would.
+    var DRIVER_FAST_MS  = 60 * 1000;       // 1 min  -> fast_lane
+    var DRIVER_DRAIN_MS = 5 * 60 * 1000;   // 5 min  -> drain
+    var DRIVER_HARD_MS  = 5 * 60 * 1000;   // 5 min  -> drainHard
+    var DRIVER_QUAR_MS  = 7 * 24 * 3600e3; // weekly -> quarantine_sweep
+    var DRIVER_AUDIT_MS = 7 * 24 * 3600e3; // weekly -> storage_audit
+
+    function log(m) { try { console.log('[eFundiHax ' + VERSION + '] ' + m); } catch (e) {} }
+    function getVal(k, d) { try { var v = GM_getValue(k, d); return (v === undefined || v === null) ? d : v; } catch (e) { return d; } }
+    function setVal(k, v) { try { GM_setValue(k, v); } catch (e) {} }
+    // Lending arms automatically on install: the product is a shared
+    // communal backend, so a fresh install must work with no extra
+    // click. PLEDGE consent is a separate, much more dangerous
+    // permission and stays default-deny (see lend_cookies' pledgeAllowed).
+    function consented() { return getVal(K_CONSENT, true) === true; }
+    function driverOn() { return getVal(K_DRIVER, true) === true; }
+
+    // Consent without the menu: visit any eFundi page with
+    // #efh-lender-enable / #efh-lender-disable in the URL.
+    function checkHashBootstrap() {
+        try {
+            var h = location.hash || '';
+            if (h.indexOf('#efh-lender-enable') !== -1) {
+                setVal(K_CONSENT, true);
+                log('Consent ENABLED via #efh-lender-enable.');
+                try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+                return;
+            }
+            if (h.indexOf('#efh-lender-disable') !== -1) {
+                setVal(K_CONSENT, false);
+                log('Consent DISABLED via #efh-lender-disable.');
+                try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+            }
+        } catch (e) {}
+    }
+
+    // Student id for the manifest row (same-origin fetch: the browser
+    // sends the session cookie automatically).
+    function readStudentId(cb) {
+        try {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '/direct/user/current.json', true);
+            xhr.setRequestHeader('Accept', 'application/json');
+            xhr.timeout = 15000;
+            xhr.onload = function() {
+                try { var b = JSON.parse(xhr.responseText || '{}'); cb(b.eid || b.displayId || null); }
+                catch (e) { cb(null); }
+            };
+            xhr.onerror = function() { cb(null); };
+            xhr.ontimeout = function() { cb(null); };
+            xhr.send();
+        } catch (e) { cb(null); }
+    }
+
+    // GM_cookie.list(details, cb) is CALLBACK-based in current
+    // Tampermonkey; some builds also return a Promise. Supporting only
+    // the Promise form made lend() report "GM_cookie unavailable" on
+    // stable 5.5.0 even though the grant was declared correctly.
+    // Both forms are handled here, whichever the build provides.
+    function listCookies(cb) {
+        try {
+            if (typeof GM_cookie === 'undefined' || typeof GM_cookie.list !== 'function') { cb(null); return; }
+            var settled = false;
+            function finish(list, err) {
+                if (settled) return;
+                settled = true;
+                if (err || !list) { cb(null); return; }
+                cb(list || []);
+            }
+            var maybe = GM_cookie.list({ url: COOKIE_URL }, function(list, err) { finish(list, err); });
+            if (maybe && typeof maybe.then === 'function') {
+                maybe.then(function(list) { finish(list || [], null); })
+                     .catch(function(e) { finish(null, e); });
+            }
+        } catch (e) { cb(null); }
+    }
+
+    // Keep only the eFundi session cookies. Sending the browser's whole
+    // jar (Google account, YouTube, GitHub...) pushes the Cookie header
+    // past UrlFetch's size limit and the backend rejects the lend with
+    // "Limit Exceeded: URLFetch header size".
+    function eFundiCookiesOnly(list) {
+        var seen = {};
+        var out = [];
+        for (var i = 0; i < list.length; i++) {
+            var c = list[i];
+            if (!c || !c.name || c.value === undefined) continue;
+            if (String(c.domain || '').indexOf('nwu.ac.za') === -1) continue;
+            if (seen[c.name]) continue; // one per name (host + domain variants)
+            seen[c.name] = true;
+            out.push(c);
+        }
+        return out;
+    }
+
+    function lend() {
+        if (!consented()) { return; }
+        listCookies(function(list) {
+            if (!list) { log('GM_cookie unavailable — cannot lend. Tampermonkey needs the cookies permission for this script.'); return; }
+            var ef = eFundiCookiesOnly(list);
+            if (!ef.length) { log('No eFundi cookies in the jar — not signed in? Not lending.'); return; }
+            var parts = [];
+            for (var i = 0; i < ef.length; i++) parts.push(ef[i].name + '=' + ef[i].value);
+            var cookieStr = parts.join('; ');
+            if (cookieStr.indexOf('JSESSIONID') === -1) {
+                log('No JSESSIONID in the eFundi cookie jar — not signed in? Not lending.');
+                return;
+            }
+            readStudentId(function(eid) {
+                GM_xmlhttpRequest({
+                    method: 'POST',
+                    url: EXEC_URL,
+                    headers: { 'Content-Type': 'application/json' },
+                    data: JSON.stringify({
+                        action: 'lend_cookies',
+                        secret: SECRET,
+                        cookies: [{
+                            user: eid || 'unknown',
+                            cookie: cookieStr,
+                            lentAt: new Date().toISOString(),
+                            pledgeAllowed: false // true only with explicit pledge opt-in
+                        }]
+                    }),
+                    timeout: 30000,
+                    onload: function(r) {
+                        try {
+                            var b = JSON.parse(r.responseText || '{}');
+                            setVal(K_LAST_LEND, Date.now());
+                            log('Lent cookie (accepted: ' + (b.lenders || 0) + ', rejected: ' + (b.rejected || 0) + ').');
+                        } catch (e) { log('Lend response unparseable.'); }
+                    },
+                    onerror: function() { log('Lend POST failed (network).'); },
+                    ontimeout: function() { log('Lend POST timed out.'); }
+                });
+            });
+        });
+    }
+
+    // ============================================================
+    // SYNC DRIVER — the browser IS the scheduler while triggers
+    // cannot be installed.
+    // ============================================================
+    var driverBusy = {};
+
+    function postAction(action, onDone) {
+        GM_xmlhttpRequest({
+            method: 'POST',
+            url: EXEC_URL,
+            headers: { 'Content-Type': 'application/json' },
+            data: JSON.stringify({ action: action, secret: SECRET }),
+            timeout: 300000, // a drain can legitimately run long
+            onload: function(r) {
+                var processed = 0, note = '';
+                try {
+                    var b = JSON.parse(r.responseText || '{}');
+                    processed = Number(b.processed || 0);
+                    // Some lanes return no status field (quarantine_sweep
+                    // returns {scanned,deleted}); treat a 200 as success.
+                    note = String(b.status || (b.error ? 'error' : 'ok'));
+                } catch (e) { note = 'unparseable'; }
+                if (onDone) onDone(note, processed);
+            },
+            onerror: function() { if (onDone) onDone('network', 0); },
+            ontimeout: function() { if (onDone) onDone('timeout', 0); }
+        });
+    }
+
+    function driverTick(key, action, everyMs, label) {
+        if (!driverOn() || !consented()) return;
+        if (driverBusy[action]) return;              // previous run still going
+        var now = Date.now();
+        if (now - (Number(getVal(key, 0)) || 0) < everyMs) return;
+        setVal(key, now);
+        driverBusy[action] = true;
+        var t0 = Date.now();
+        postAction(action, function(note, processed) {
+            driverBusy[action] = false;
+            bumpStats(action, note, processed, Date.now() - t0);
+            if (processed > 0) {
+                log('[driver] ' + label + ': ' + note + ' processed=' + processed +
+                    ' (' + ((Date.now() - t0) / 1000).toFixed(1) + 's)');
+            }
+        });
+    }
+
+    function bumpStats(action, note, processed, ms) {
+        try {
+            var s = JSON.parse(getVal(K_DRIVER_STATS, '{}') || '{}');
+            if (!s[action]) s[action] = { runs: 0, ok: 0, files: 0, ms: 0, last: '', lastNote: '' };
+            s[action].runs++;
+            if (note === 'ok' || note === 'degraded') s[action].ok++;
+            s[action].files += (processed || 0);
+            s[action].ms += (ms || 0);
+            s[action].last = new Date().toISOString();
+            s[action].lastNote = note;
+            setVal(K_DRIVER_STATS, JSON.stringify(s));
+        } catch (e) {}
+    }
+
+    function driverSweep() {
+        driverTick(K_LAST_FAST,  'fast_lane',        DRIVER_FAST_MS,  'fast lane');
+        driverTick(K_LAST_DRAIN, 'drain',            DRIVER_DRAIN_MS, 'slow lane');
+        driverTick(K_LAST_HARD,  'drainHard',        DRIVER_HARD_MS,  'hard lane');
+        driverTick(K_LAST_QUAR,  'quarantine_sweep', DRIVER_QUAR_MS,  'quarantine');
+        driverTick(K_LAST_AUDIT, 'storage_audit',    DRIVER_AUDIT_MS, 'audit');
+    }
+
+    // ============================================================
+    // BROWSER LANE — works with NO cookie access.
+    // Fetching eFundi's /direct/...json endpoints SAME-ORIGIN means the
+    // browser attaches the HttpOnly JSESSIONID automatically. Nothing is
+    // read out of the cookie jar, so this needs no GM_cookie permission,
+    // no Tampermonkey cookie setting and no consent — which is what makes
+    // a fresh install just work. This is the primary lane; cookie
+    // lending stays as the fallback for the server-side drain, which
+    // needs raw bytes the page cannot hand over.
+    // ============================================================
+    var K_BROWSER_LANE = 'efh_browser_lane';
+    var K_LAST_BROWSER_LANE = 'efh_drv_browser';
+    var K_BROWSER_IDX = 'efh_drv_browser_idx';
+    var BROWSER_LANE_MS = 60 * 1000; // 1 min, same cadence as fast_lane
+
+    // Site ids straight from the page's own nav — no extra request.
+    function siteIdsFromNav() {
+        var out = [];
+        var seen = {};
+        var as = document.querySelectorAll('#linkNav a[href*="/portal/site/"], .Mrphs-sitesNav a[href*="/portal/site/"]');
+        for (var i = 0; i < as.length; i++) {
+            var m = (as[i].getAttribute('href') || '').match(/\/portal\/site\/([a-f0-9\-]{36})/);
+            if (m && !seen[m[1]]) { seen[m[1]] = true; out.push({ siteId: m[1], title: siteTitleForId(m[1]) }); }
+        }
+        return out;
+    }
+
+    function siteTitleForId(siteId) {
+        var el = document.querySelector('#linkNav a[href*="/portal/site/' + siteId + '"], .Mrphs-sitesNav a[href*="/portal/site/' + siteId + '"]');
+        if (el && el.textContent && el.textContent.trim()) return el.textContent.trim();
+        try { if (window.portal && window.portal.siteTitle) return window.portal.siteTitle; } catch (e) {}
+        return siteId;
+    }
+
+    function fetchJsonSameOrigin(path) {
+        return new Promise(function(resolve) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', path, true); // same-origin: session cookie is sent automatically
+            xhr.setRequestHeader('Accept', 'application/json');
+            xhr.timeout = 20000;
+            xhr.onload = function() {
+                if (xhr.status !== 200) { resolve(null); return; }
+                try { resolve(JSON.parse(xhr.responseText || 'null')); } catch (e) { resolve(null); }
+            };
+            xhr.onerror = function() { resolve(null); };
+            xhr.ontimeout = function() { resolve(null); };
+            xhr.send();
+        });
+    }
+
+    function postBrowserLane(site, rs) {
+        var payload = { action: 'ingest_site_json', secret: SECRET,
+            siteTitle: site.title, siteId: site.siteId };
+        if (rs[0]) payload.announcements = rs[0];
+        if (rs[1]) payload.calendar = rs[1];
+        if (rs[2]) payload.assignments = rs[2];
+        GM_xmlhttpRequest({
+            method: 'POST', url: EXEC_URL,
+            headers: { 'Content-Type': 'application/json' },
+            data: JSON.stringify(payload),
+            timeout: 60000,
+            onload: function(r) {
+                try {
+                    var b = JSON.parse(r.responseText || '{}');
+                    var got = (b.announcements || 0) + (b.events || 0) + (b.assignments || 0);
+                    bumpStats('browserLane', b.status, got, 0);
+                    if (got > 0) {
+                        log('[browser lane] ' + site.title + ': +' + (b.announcements || 0) + ' ann, +' +
+                            (b.events || 0) + ' ev, +' + (b.assignments || 0) + ' asg');
+                    }
+                } catch (e) {}
+            },
+            onerror: function() {}, ontimeout: function() {}
+        });
+    }
+
+    function browserLaneTick() {
+        if (getVal(K_BROWSER_LANE, true) !== true) return;
+        var now = Date.now();
+        if (now - (Number(getVal(K_LAST_BROWSER_LANE, 0)) || 0) < BROWSER_LANE_MS) return;
+        setVal(K_LAST_BROWSER_LANE, now);
+        var sites = siteIdsFromNav();
+        if (!sites.length) return;
+        // One site per tick keeps runs short and rotates through them all.
+        var idx = (Number(getVal(K_BROWSER_IDX, 0)) || 0) % sites.length;
+        setVal(K_BROWSER_IDX, idx + 1);
+        var site = sites[idx];
+        var enc = encodeURIComponent(site.siteId);
+        Promise.all([
+            fetchJsonSameOrigin('/direct/announcement/site/' + enc + '.json'),
+            fetchJsonSameOrigin('/direct/calendar/site/' + enc + '.json'),
+            fetchJsonSameOrigin('/direct/assignment/site/' + enc + '.json')
+        ]).then(function(rs) {
+            if (!rs[0] && !rs[1] && !rs[2]) return; // nothing readable this tick
+            postBrowserLane(site, rs);
+        }).catch(function() {});
+    }
+
+    // ============================================================
+    // OFFLINE SYNC - the one and only setting.
+    //
+    // There is deliberately a single option. OFF (the default) is
+    // open-tab syncing: the browser lane fetches and posts, needing no
+    // credentials at all. ON stores the eFundi password so the backend
+    // can log in itself and keep syncing with no tab open.
+    //
+    // No mode choice, no second prompt, and nothing in the eFundi page.
+    //
+    // Tampermonkey has no @setting metadata for custom per-script
+    // settings (its settings page only exposes run-at, noframes and the
+    // compat_* flags), so GM_registerMenuCommand - what appears under
+    // the Tampermonkey icon - is the supported surface.
+    // ============================================================
+    var K_OFFLINE_SYNC = 'efh_offline_sync';
+
+    function offlineSyncOn() { return getVal(K_OFFLINE_SYNC, false) === true; }
+
+    function setOfflineSync(on) {
+        setVal(K_OFFLINE_SYNC, on === true);
+        if (on === true) { setVal(K_BROWSER_LANE, true); setVal(K_DRIVER, true); }
+        log('Offline sync ' + (on === true ? 'ON' : 'OFF') + '.');
+    }
+
+    // Turning OFF must tell the backend to destroy the stored password.
+    // The local flag is only cleared once that instruction is accepted,
+    // so a failed delete can never leave a password behind that the UI
+    // claims is gone.
+    function turnOffOfflineSync() {
+        readStudentId(function(eid) {
+            GM_xmlhttpRequest({
+                method: 'POST', url: EXEC_URL,
+                headers: { 'Content-Type': 'application/json' },
+                data: JSON.stringify({ action: 'delete_credentials', secret: SECRET,
+                    username: eid || 'unknown' }),
+                timeout: 30000,
+                onload: function(r) {
+                    var removed = 0;
+                    try { removed = JSON.parse(r.responseText || '{}').removed || 0; } catch (e) {}
+                    setOfflineSync(false);
+                    log('Offline sync OFF. Password deleted (removed=' + removed + '). ' +
+                        'Open-tab syncing continues.');
+                },
+                onerror: function() {
+                    log('Could not reach the backend to delete the password - offline sync ' +
+                        'stays ON so the credential is not orphaned. Try again.');
+                },
+                ontimeout: function() {
+                    log('Timed out deleting the password - offline sync stays ON. Try again.');
+                }
+            });
+        });
+    }
+
+    function turnOnOfflineSync() {
+        askPassword(function(pw) {
+            if (!pw) { log('No password entered - offline sync stays OFF.'); return; }
+            storePassword(pw, function(ok) {
+                if (ok) { setOfflineSync(true); log('Offline sync ON. Syncing now works with no eFundi tab open.'); }
+                else { log('Storing the password failed - offline sync stays OFF.'); }
+            });
+        });
+    }
+
+    // Native browser dialog - deliberately NOT an element in the eFundi
+    // page. unsafeWindow is required: the sandboxed prompt is blocked
+    // when GM_* grants are in use.
+    function askPassword(cb) {
+        try {
+            var pw = unsafeWindow.prompt(
+                'eFundiHax - offline sync\n\n' +
+                'Turning this on stores your eFundi password so syncing can run with no ' +
+                'browser tab open. It is encrypted before it is stored, is not recoverable ' +
+                'by us, and is deleted the moment you turn offline sync back off.\n\n' +
+                'Enter your eFundi password:', '');
+            if (pw === null || pw === undefined || !String(pw).length) {
+                log('Password entry cancelled - offline sync stays OFF.');
+                cb(null); return;
+            }
+            cb(String(pw));
+        } catch (e) {
+            log('Could not open a password dialog (' + e.message + ') - offline sync stays OFF.');
+            cb(null);
+        }
+    }
+
+    function storePassword(pw, cb) {
+        readStudentId(function(eid) {
+            GM_xmlhttpRequest({
+                method: 'POST', url: EXEC_URL,
+                headers: { 'Content-Type': 'application/json' },
+                data: JSON.stringify({ action: 'store_credentials', secret: SECRET,
+                    username: eid || 'unknown', password: pw }),
+                timeout: 30000,
+                onload: function(r) {
+                    var ok = false;
+                    try { ok = JSON.parse(r.responseText || '{}').status === 'ok'; } catch (e) {}
+                    if (cb) cb(ok);
+                },
+                onerror: function() { if (cb) cb(false); },
+                ontimeout: function() { if (cb) cb(false); }
+            });
+        });
+    }
+    // ============================================================
+    // AUTO-LOGIN (merged from the keepalive)
+    // On re-login the lender used to be told via a DOM attribute
+    // contract, because separate Tampermonkey sandboxes cannot share
+    // window events. Merged into one script, that becomes a direct
+    // call — the attribute is still stamped for any future consumer.
+    // ============================================================
+    function alBackedOff() { return Date.now() < (Number(getVal(K_AL_BACKOFF, 0)) || 0); }
+
+    function alBackoff(why) {
+        setVal(K_AL_BACKOFF, Date.now() + AL_BACKOFF_MS);
+        log('Auto-login backing off 24h (' + why + ') — sign in normally.');
+    }
+
+    function isCasPage() { return location.hostname.indexOf('casprd') !== -1; }
+
+    function htmlLoggedOut(html) {
+        if (!html) return true;
+        if (/name="password"|id="password"/i.test(html)) return true;
+        if (/You have been signed out|session (has )?expired/i.test(html)) return true;
+        return false;
+    }
+
+    function efundiLoggedOut() {
+        var sites = document.querySelectorAll('#linkNav a, .Mrphs-sitesNav a');
+        if (sites.length > 0) return false;
+        var lo = document.querySelector('a[href*="/portal/logout"]');
+        if (lo) return true;
+        if (document.getElementById('loginLink1')) return true;
+        if (location.pathname.indexOf('/portal/logout') !== -1) return true;
+        return true;
+    }
+
+    function alFail(f, why) {
+        setVal(K_AL_FAILS, (Number(f) || 0) + 1);
+        log('auto-login failed (' + why + '), fails=' + getVal(K_AL_FAILS, 0));
+    }
+
+    function alRelogin(u, p, fails) {
+        log('Signed out — signing you back in.');
+        GM_xmlhttpRequest({
+            method: 'GET',
+            url: CAS_LOGIN + '&t=' + Date.now(),
+            onload: function(r) {
+                var html = r.responseText || '';
+                var lt = (html.match(/name="lt"\s+value="([^"]+)"/) || [])[1] || '';
+                var ex = (html.match(/name="execution"\s+value="([^"]+)"/) || [])[1] || 'e1s1';
+                var m = html.match(/<form[^>]*id="fm1"[^>]*action="([^"]+)"/) ||
+                        html.match(/<form[^>]*action="([^"]+)"[^>]*id="fm1"/);
+                var act = (m || [])[1] || '/cas/login';
+                if (!lt) { return alFail(fails, 'no lt'); }
+                if (act.charAt(0) === '/') { act = 'https://casprd.nwu.ac.za' + act; }
+                GM_xmlhttpRequest({
+                    method: 'POST',
+                    url: act,
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    data: 'username=' + encodeURIComponent(u) + '&password=' + encodeURIComponent(p) +
+                          '&lt=' + encodeURIComponent(lt) + '&execution=' + encodeURIComponent(ex) +
+                          '&_eventId=submit&submit=LOGIN',
+                    onload: function(r2) {
+                        var h2 = r2.responseText || '';
+                        if (/Invalid credentials|did not recognize|Username or password/i.test(h2)) {
+                            setVal(K_AL_FAILS, (Number(fails) || 0) + 1);
+                            if ((Number(getVal(K_AL_FAILS, 0)) || 0) >= 2) { alBackoff('bad creds — password changed?'); return; }
+                            return;
+                        }
+                        var xhr = new XMLHttpRequest();
+                        try {
+                            xhr.open('GET', '/portal?t=' + Date.now(), true);
+                            xhr.onload = function() {
+                                if (!htmlLoggedOut(xhr.responseText || '')) {
+                                    setVal(K_AL_FAILS, 0);
+                                    log('Signed back in.');
+                                    onReloginDone();
+                                    if (isCasPage()) { try { location.href = 'https://efundi.nwu.ac.za/portal'; } catch (e) {} }
+                                } else { alFail(fails, 'did not stick'); }
+                            };
+                            xhr.onerror = function() { alFail(fails, 'verify net err'); };
+                            xhr.send();
+                        } catch (e) { alFail(fails, 'verify fail'); }
+                    },
+                    onerror: function() { alFail(fails, 'post err'); }
+                });
+            },
+            onerror: function() { alFail(fails, 'get err'); }
+        });
+    }
+
+    function onLoggedOut(src) {
+        var fails = Number(getVal(K_AL_FAILS, 0)) || 0;
+        if (alBackedOff()) { log('Auto-login paused after repeated failures — sign in normally.'); return; }
+        if (fails >= MAX_AL_FAILS) { log('Auto-login did not work — sign in normally.'); return; }
+        var u = getVal(K_AL_USER, ''), p = getVal(K_AL_PASS, '');
+        if (!u || !p) { log('Signed out and nothing saved yet — sign in once (' + src + ').'); return; }
+        alRelogin(u, p, fails);
+    }
+
+    function onReloginDone() {
+        // Re-lend immediately: the session just changed, so the old
+        // jar entry is stale. Also stamp the attribute for any other
+        // script that might want it.
+        try { document.documentElement.setAttribute('data-efh-relogin', String(Date.now())); } catch (e) {}
+        setVal(K_LAST_RELOGIN, Date.now());
+        lend();
+    }
+
+    function armCapture() {
+        var f = document.getElementById('fm1');
+        if (!f) { return; }
+        log('Sign in once so I can keep you signed in from now on.');
+        f.addEventListener('submit', function() {
+            try {
+                var u = document.getElementById('username'), p = document.getElementById('password');
+                if (u && u.value) { setVal(K_AL_USER, u.value); }
+                if (p && p.value) { setVal(K_AL_PASS, p.value); }
+                setVal(K_AL_FAILS, 0);
+                setVal(K_AL_BACKOFF, 0);
+                log('Saved — I will sign you in automatically from now on.');
+            } catch (e) {}
+        });
+    }
+
+    function heartbeat() {
+        if (alBackedOff()) return;
+        var xhr = new XMLHttpRequest();
+        try {
+            xhr.open('GET', '/portal?t=' + Date.now(), true);
+            xhr.setRequestHeader('Accept', 'text/html');
+            xhr.timeout = 25000;
+            xhr.onload = function() {
+                if (htmlLoggedOut(xhr.responseText || '')) { onLoggedOut('heartbeat'); }
+            };
+            xhr.onerror = function() {};
+            xhr.ontimeout = function() {};
+            xhr.send();
+        } catch (e) {}
+    }
+
+    function isVis(el) {
+        try {
+            if (!el) return false;
+            if (el.getClientRects().length === 0) return false;
+            var cs = null;
+            try { cs = getComputedStyle(el); } catch (e) {}
+            if (cs && (cs.display === 'none' || cs.visibility === 'hidden' || parseFloat(cs.opacity || '1') === 0)) return false;
+            return true;
+        } catch (e) { return false; }
+    }
+
+    // eFundi shows a "your session is about to expire" dialog; answer it.
+    function checkTimeoutDialog() {
+        try {
+            var dlg = document.getElementById('timeout_alert_body');
+            if (!isVis(dlg)) return;
+            var btns = dlg.querySelectorAll('button, input[type=button], input[type=submit], a');
+            for (var i = 0; i < btns.length; i++) {
+                var t = ((btns[i].textContent || btns[i].value || '') + '').toLowerCase();
+                if (/stay|extend|continue|keep|yes|remain/i.test(t)) { btns[i].click(); return; }
+            }
+            if (btns.length > 0) btns[0].click();
+        } catch (e) {}
+    }
+
+    // ============================================================
+    // THE ONE SETTING: offline sync.
+    //
+    // The operator asked for a single option, so this is the only
+    // command in the menu. Everything else (lending, the sync driver,
+    // the browser lane) runs automatically with sane defaults and is
+    // not something a user should have to configure.
+    //
+    // Tampermonkey has no @setting metadata for custom per-script
+    // settings (its settings page only exposes run-at, noframes and the
+    // compat_* flags), so GM_registerMenuCommand - what appears under
+    // the Tampermonkey icon - is the supported surface.
+    //
+    // OFF (default): open-tab syncing, no credentials.
+    // ON           : stores the eFundi password so the backend can log
+    //                in and sync with no tab open.
+    // OFF again    : tells the backend to delete the password.
+    // ============================================================
+    try {
+        GM_registerMenuCommand('eFundiHax: Offline sync - click to toggle (now ' +
+            (offlineSyncOn() ? 'ON' : 'OFF') + ')', function() {
+            if (offlineSyncOn()) { turnOffOfflineSync(); }
+            else { turnOnOfflineSync(); }
+        });
+    } catch (e) {}
+
+    // ---- startup ----
+    checkHashBootstrap();
+
+    if (isCasPage()) {
+        armCapture();
+        onLoggedOut('cas-load');
+        return; // no JSESSIONID worth lending on the CAS page
+    }
+
+    // Lending is armed by default on install (see consented()). The
+    // only way it is off is an explicit opt-out, so this branch is a
+    // safety net, not the normal path.
+    if (consented()) {
+        log('Lender armed — sharing your eFundi session with the communal backend so it can sync. Disable any time from the Tampermonkey menu or by visiting a page with #efh-lender-disable.');
+        lend();
+    } else {
+        log('Lending is OFF (you disabled it). Re-enable from the Tampermonkey menu or a page with #efh-lender-enable.');
+    }
+
+    if (consented() && driverOn()) {
+        log('Sync driver armed — fast lane 1m, slow lane 5m, hard lane 5m, quarantine+audit weekly.');
+    }
+
+    if (!efundiLoggedOut()) {
+        log('Session alive — keeping it alive and lending.');
+        setInterval(heartbeat, HB_MS);
+        setInterval(checkTimeoutDialog, 20000);
+    } else {
+        onLoggedOut('load');
+    }
+
+    setInterval(lend, LEND_MS);
+    setInterval(driverSweep, 30 * 1000); // each tick self-limits to its own cadence
+    setInterval(browserLaneTick, 30 * 1000); // same: the tick self-limits to 1 min
+    browserLaneTick(); // run once immediately at startup
+    // No in-page prompt: the single setting lives in the Tampermonkey
+    // menu. Point at it once, only while it has never been touched.
+    if (!offlineSyncOn() && getVal(K_ASKED, '') !== '1') {
+        log('Open-tab syncing is running. For syncing with no tab open, use the ' +
+            'Tampermonkey menu: "eFundiHax: Offline sync - click to toggle".');
+    }
+})();
+
+})();
