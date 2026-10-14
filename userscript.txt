@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax
 // @namespace    https://efundihax.github.io
-// @version      17.11.0
+// @version      17.11.1
 // @description  One script, everything: syncs eFundi announcements, resources, lessons and calendars to the shared backend; draws per-tool sync pips (click to check); lends your live session cookie so the backend can fetch; schedules the sync lanes while the Apps Script triggers cannot be installed; and silently re-logs you in when the session expires.
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -23,7 +23,7 @@
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '17.11.0';
+    window.__efhVersion = '17.11.1';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
@@ -1333,7 +1333,7 @@
                         }
 
                         if (expandBtn && expandBtn.style.display !== 'none') {
-                            console.log('[U93] Clicking Expand All Ã”Ã‡Ã¶ observing DOM + network');
+                            console.log('[U93] Clicking Expand All Ãƒâ€Ãƒâ€¡ÃƒÂ¶ observing DOM + network');
                             var startUrls = extractFilesFromDoc(iframeDoc).length;
                             var moDone = false;
                             var netIdleTimer = null;
@@ -1789,7 +1789,7 @@
             })(results[i]);
         }
 
-        // v4.0.14: one hung file must never wedge the batch Ã”Ã‡Ã¶ 240s cap each, failures resolve null
+        // v4.0.14: one hung file must never wedge the batch Ãƒâ€Ãƒâ€¡ÃƒÂ¶ 240s cap each, failures resolve null
         var guarded = promises.map(function(pr, idx) {
             var timeout = new Promise(function(_, reject) {
                 setTimeout(function() { reject(new Error('file-promise-timeout idx=' + idx)); }, 240000);
@@ -1811,7 +1811,7 @@
 
             var img = new Image();
             img.src = dataUrl;
-            // v4.0.14: hard 150s timeout Ã”Ã‡Ã¶ CSP-blocked blob workers never settle, and .catch can't catch a hang
+            // v4.0.14: hard 150s timeout Ãƒâ€Ãƒâ€¡ÃƒÂ¶ CSP-blocked blob workers never settle, and .catch can't catch a hang
             var _imgDone = false;
             var _resolveInner = null;
             var _imgTimer = setTimeout(function() {
@@ -2639,7 +2639,7 @@
                                                                         }).then(function() {
                                                                             updateProgress('lessons', idx + 1, changedLessons.length, 'Sending');
                                                                         }).catch(function(err) {
-                                                                            console.warn('[Lessons] Failed lesson: ' + lesson.lessonTitle + ' Ã”Ã‡Ã¶ ' + (err && err.message || err) + ' (continuing)');
+                                                                            console.warn('[Lessons] Failed lesson: ' + lesson.lessonTitle + ' Ãƒâ€Ãƒâ€¡ÃƒÂ¶ ' + (err && err.message || err) + ' (continuing)');
                                                                             updateProgress('lessons', idx + 1, changedLessons.length, 'Failed (skipped)');
                                                                         });
                                                                     });
@@ -3400,7 +3400,7 @@
     // TESTS & QUIZZES (Samigo) DOM SCRAPE (v16.0, Task 5)
     // Scrapes the Samigo tool for assessment rows and posts
     // sync_assessments-compatible payload. Same-origin iframe
-    // (efundi.nwu.ac.za) â€” attempts iframe.contentDocument first;
+    // (efundi.nwu.ac.za) Ã¢â‚¬â€ attempts iframe.contentDocument first;
     // if access denied, falls back to navigating the top tab to
     // the tool URL (saving/restoring sync state via KEY_RESUME_*).
     // Follows pagination links until no next page.
@@ -3648,7 +3648,7 @@
     console.log('[eFundiHax Sync] v' + (window.__efhVersion || '?') + ' loaded. URL:', window.location.href);
 
     if (window.self !== window.top) {
-        console.log('[eFundiHax Sync] Inside iframe Ã”Ã‡Ã¶ skipping');
+        console.log('[eFundiHax Sync] Inside iframe Ãƒâ€Ãƒâ€¡ÃƒÂ¶ skipping');
         return;
     }
 
@@ -3757,7 +3757,7 @@
 (function() {
     if (window.top !== window.self) { return; }
 
-    var VERSION = '17.11.0';
+    var VERSION = '17.11.1';
     var EXEC_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
     var SECRET = 'trackmania_is_peak';
     var COOKIE_URL = 'https://efundi.nwu.ac.za/';
@@ -3787,7 +3787,7 @@
 
     // Sync-driver cadences. Apps Script triggers CANNOT be installed
     // for this project (the script.scriptapp scope is not granted, and
-    // granting it needs an interactive consent screen — SPEC §9). The
+    // granting it needs an interactive consent screen â€” SPEC Â§9). The
     // browser is therefore the scheduler: while the operator is on
     // eFundi with lending enabled, these intervals drive the server
     // lanes over HTTP. Every action is idempotent server-side, so a
@@ -3890,14 +3890,14 @@
     function lend() {
         if (!consented()) { return; }
         listCookies(function(list) {
-            if (!list) { log('GM_cookie unavailable — cannot lend. Tampermonkey needs the cookies permission for this script.'); return; }
+            if (!list) { log('GM_cookie unavailable â€” cannot lend. Tampermonkey needs the cookies permission for this script.'); return; }
             var ef = eFundiCookiesOnly(list);
-            if (!ef.length) { log('No eFundi cookies in the jar — not signed in? Not lending.'); return; }
+            if (!ef.length) { log('No eFundi cookies in the jar â€” not signed in? Not lending.'); return; }
             var parts = [];
             for (var i = 0; i < ef.length; i++) parts.push(ef[i].name + '=' + ef[i].value);
             var cookieStr = parts.join('; ');
             if (cookieStr.indexOf('JSESSIONID') === -1) {
-                log('No JSESSIONID in the eFundi cookie jar — not signed in? Not lending.');
+                log('No JSESSIONID in the eFundi cookie jar â€” not signed in? Not lending.');
                 return;
             }
             readStudentId(function(eid) {
@@ -3931,7 +3931,7 @@
     }
 
     // ============================================================
-    // SYNC DRIVER — the browser IS the scheduler while triggers
+    // SYNC DRIVER â€” the browser IS the scheduler while triggers
     // cannot be installed.
     // ============================================================
     var driverBusy = {};
@@ -4000,11 +4000,11 @@
     }
 
     // ============================================================
-    // BROWSER LANE — works with NO cookie access.
+    // BROWSER LANE â€” works with NO cookie access.
     // Fetching eFundi's /direct/...json endpoints SAME-ORIGIN means the
     // browser attaches the HttpOnly JSESSIONID automatically. Nothing is
     // read out of the cookie jar, so this needs no GM_cookie permission,
-    // no Tampermonkey cookie setting and no consent — which is what makes
+    // no Tampermonkey cookie setting and no consent â€” which is what makes
     // a fresh install just work. This is the primary lane; cookie
     // lending stays as the fallback for the server-side drain, which
     // needs raw bytes the page cannot hand over.
@@ -4014,7 +4014,7 @@
     var K_BROWSER_IDX = 'efh_drv_browser_idx';
     var BROWSER_LANE_MS = 60 * 1000; // 1 min, same cadence as fast_lane
 
-    // Site ids straight from the page's own nav — no extra request.
+    // Site ids straight from the page's own nav â€” no extra request.
     function siteIdsFromNav() {
         var out = [];
         var seen = {};
@@ -4207,13 +4207,13 @@
     // On re-login the lender used to be told via a DOM attribute
     // contract, because separate Tampermonkey sandboxes cannot share
     // window events. Merged into one script, that becomes a direct
-    // call — the attribute is still stamped for any future consumer.
+    // call â€” the attribute is still stamped for any future consumer.
     // ============================================================
     function alBackedOff() { return Date.now() < (Number(getVal(K_AL_BACKOFF, 0)) || 0); }
 
     function alBackoff(why) {
         setVal(K_AL_BACKOFF, Date.now() + AL_BACKOFF_MS);
-        log('Auto-login backing off 24h (' + why + ') — sign in normally.');
+        log('Auto-login backing off 24h (' + why + ') â€” sign in normally.');
     }
 
     function isCasPage() { return location.hostname.indexOf('casprd') !== -1; }
@@ -4241,7 +4241,7 @@
     }
 
     function alRelogin(u, p, fails) {
-        log('Signed out — signing you back in.');
+        log('Signed out â€” signing you back in.');
         GM_xmlhttpRequest({
             method: 'GET',
             url: CAS_LOGIN + '&t=' + Date.now(),
@@ -4265,7 +4265,7 @@
                         var h2 = r2.responseText || '';
                         if (/Invalid credentials|did not recognize|Username or password/i.test(h2)) {
                             setVal(K_AL_FAILS, (Number(fails) || 0) + 1);
-                            if ((Number(getVal(K_AL_FAILS, 0)) || 0) >= 2) { alBackoff('bad creds — password changed?'); return; }
+                            if ((Number(getVal(K_AL_FAILS, 0)) || 0) >= 2) { alBackoff('bad creds â€” password changed?'); return; }
                             return;
                         }
                         var xhr = new XMLHttpRequest();
@@ -4292,10 +4292,10 @@
 
     function onLoggedOut(src) {
         var fails = Number(getVal(K_AL_FAILS, 0)) || 0;
-        if (alBackedOff()) { log('Auto-login paused after repeated failures — sign in normally.'); return; }
-        if (fails >= MAX_AL_FAILS) { log('Auto-login did not work — sign in normally.'); return; }
+        if (alBackedOff()) { log('Auto-login paused after repeated failures â€” sign in normally.'); return; }
+        if (fails >= MAX_AL_FAILS) { log('Auto-login did not work â€” sign in normally.'); return; }
         var u = getVal(K_AL_USER, ''), p = getVal(K_AL_PASS, '');
-        if (!u || !p) { log('Signed out and nothing saved yet — sign in once (' + src + ').'); return; }
+        if (!u || !p) { log('Signed out and nothing saved yet â€” sign in once (' + src + ').'); return; }
         alRelogin(u, p, fails);
     }
 
@@ -4319,7 +4319,7 @@
                 if (p && p.value) { setVal(K_AL_PASS, p.value); }
                 setVal(K_AL_FAILS, 0);
                 setVal(K_AL_BACKOFF, 0);
-                log('Saved — I will sign you in automatically from now on.');
+                log('Saved â€” I will sign you in automatically from now on.');
             } catch (e) {}
         });
     }
@@ -4404,18 +4404,18 @@
     // only way it is off is an explicit opt-out, so this branch is a
     // safety net, not the normal path.
     if (consented()) {
-        log('Lender armed — sharing your eFundi session with the communal backend so it can sync. Disable any time from the Tampermonkey menu or by visiting a page with #efh-lender-disable.');
+        log('Lender armed â€” sharing your eFundi session with the communal backend so it can sync. Disable any time from the Tampermonkey menu or by visiting a page with #efh-lender-disable.');
         lend();
     } else {
         log('Lending is OFF (you disabled it). Re-enable from the Tampermonkey menu or a page with #efh-lender-enable.');
     }
 
     if (consented() && driverOn()) {
-        log('Sync driver armed — fast lane 1m, slow lane 5m, hard lane 5m, quarantine+audit weekly.');
+        log('Sync driver armed â€” fast lane 1m, slow lane 5m, hard lane 5m, quarantine+audit weekly.');
     }
 
     if (!efundiLoggedOut()) {
-        log('Session alive — keeping it alive and lending.');
+        log('Session alive â€” keeping it alive and lending.');
         setInterval(heartbeat, HB_MS);
         setInterval(checkTimeoutDialog, 20000);
     } else {
@@ -4426,6 +4426,17 @@
     setInterval(driverSweep, 30 * 1000); // each tick self-limits to its own cadence
     setInterval(browserLaneTick, 30 * 1000); // same: the tick self-limits to 1 min
     browserLaneTick(); // run once immediately at startup
+    // Hidden tabs get their timers frozen by Chrome, which is exactly how a
+    // sync stalls for hours with no error. Intervals resume on their own,
+    // but only on the next 30s tick â€” kick both lanes the moment the tab is
+    // visible again so recovery is immediate, and say so in the log.
+    document.addEventListener('visibilitychange', function() {
+        if (!document.hidden) {
+            log('[eFundiHax Sync] tab visible again â€” resuming sync cycle');
+            try { browserLaneTick(); } catch (e) {}
+            try { driverSweep(); } catch (e) {}
+        }
+    });
     // No in-page prompt: the single setting lives in the Tampermonkey
     // menu. Point at it once, only while it has never been touched.
     if (!offlineSyncOn() && getVal(K_ASKED, '') !== '1') {
