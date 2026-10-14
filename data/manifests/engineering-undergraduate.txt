@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-14T22:54:43.574Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -1973,3 +1973,11 @@ https://efundi.nwu.ac.za/portal/site/a0ce8bca-1c66-4986-8967-aeec00208a16/tool/0
 https://efundi.nwu.ac.za/portal/site/a0ce8bca-1c66-4986-8967-aeec00208a16/tool/0c5836af-7a47-4e79-8f7a-ceab805bd207/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2653811&postedComment=false&addBefore=&itemId=23596138&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 79d555a1
 https://efundi.nwu.ac.za/portal/site/a0ce8bca-1c66-4986-8967-aeec00208a16/tool/0c5836af-7a47-4e79-8f7a-ceab805bd207/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2658086&postedComment=false&addBefore=&itemId=23637016&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 14d8e040
 https://efundi.nwu.ac.za/portal/site/a0ce8bca-1c66-4986-8967-aeec00208a16/tool/a7b65691-9dde-4380-92af-5c1148ded3fe/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2658086&postedComment=false&addBefore=&itemId=23637016&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 1ca07d58
+--- TOOL PAGES ---
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/a0ce8bca-1c66-4986-8967-aeec00208a16/tool/363e75af-615d-45a3-bd5c-69750d8f172e | fc2c3c8a
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/a0ce8bca-1c66-4986-8967-aeec00208a16/tool/36673b2a-0e5b-45d2-9240-78e2d022f105 | 28fb065d
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/a0ce8bca-1c66-4986-8967-aeec00208a16/tool/5bc42d07-3e2d-4dd3-9d73-275abb1626b9 | 97d9c297
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/a0ce8bca-1c66-4986-8967-aeec00208a16/tool/d0462452-8547-46cf-a88a-ac2e604596e5 | 31d417ce
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/a0ce8bca-1c66-4986-8967-aeec00208a16/tool/f1562c3a-6a1b-4465-907e-5fda2c606662 | 209fdc2a
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/a0ce8bca-1c66-4986-8967-aeec00208a16/tool/ec4eb1b9-eaaf-4276-bac6-f50cc1d34104 | 780e1f74
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/a0ce8bca-1c66-4986-8967-aeec00208a16/tool/0d052f4a-1fad-44e7-9108-2c6164b82e60 | fd0e519
