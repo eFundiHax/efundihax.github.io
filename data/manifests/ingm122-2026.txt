@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 90b43f19ac56e70f68afa24093cc5f81d699c7b090f91eae0de1d1fbd9ad62f2@group.calendar.google.com
 title: INGM122-2026
 last_sync: 2026-10-11T07:47:02.239Z
-last_announcement: 2026-10-10T19:05:51.635Z
+last_announcement: 2026-10-14T17:39:46.708Z
 total_files: 816
 generated: 2026-10-13T17:45:49.441Z
 
@@ -1457,3 +1457,9 @@ https://efundi.nwu.ac.za/portal/site/b58fe6cb-36f0-431b-846a-a188df91278f/tool/5
 https://efundi.nwu.ac.za/portal/site/b58fe6cb-36f0-431b-846a-a188df91278f/tool/52e7e268-bd1e-4a89-9fbc-39ecf3ef6190/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2675575&postedComment=false&addBefore=&itemId=23818513&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | f669902d
 https://efundi.nwu.ac.za/portal/site/b58fe6cb-36f0-431b-846a-a188df91278f/tool/acf2c374-b2e6-45bd-96c7-9f75bab3f858/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2675575&postedComment=false&addBefore=&itemId=23818513&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | f669902d
 https://efundi.nwu.ac.za/portal/site/b58fe6cb-36f0-431b-846a-a188df91278f/tool/acf2c374-b2e6-45bd-96c7-9f75bab3f858/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2675578&postedComment=false&addBefore=&itemId=23818436&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 807a6cc2
+--- TOOL PAGES ---
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/b58fe6cb-36f0-431b-846a-a188df91278f/tool/03daa694-c92a-4b13-bf57-b589bb290887 | 16921df2
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/b58fe6cb-36f0-431b-846a-a188df91278f/tool/a5304bed-824c-45fe-a13c-cf663e13b0b0 | da6ec819
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/b58fe6cb-36f0-431b-846a-a188df91278f/tool/f35ea4c2-3e3d-45a8-8128-7deb7b93b8f7 | 4a22d42d
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/b58fe6cb-36f0-431b-846a-a188df91278f/tool/06138218-d4fd-4c11-b036-94937f279a11 | d6d13f99
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/b58fe6cb-36f0-431b-846a-a188df91278f/tool/f17f9ce2-1a2d-45d6-8f54-dd324adefe29 | 33628815
