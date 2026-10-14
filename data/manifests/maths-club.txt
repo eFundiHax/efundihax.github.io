@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-14T22:54:34.853Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -215,3 +215,8 @@ NOT_SYNCED | Topological spaces.pdf | pdf | 2026-10-12T07:18:47.351Z | resource 
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) Maths Club â€” full extracted text from all synced files and lessons
 (SCHEDULE) Maths Club â€” calendar events and announcements spreadsheet
+--- TOOL PAGES ---
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/f483045c-098a-4650-820f-a2c8397e697b/tool/9163758f-0711-4711-8a92-98381d25cf03 | 60da9595
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/f483045c-098a-4650-820f-a2c8397e697b/tool/905d4cca-05eb-43f7-a3ee-40702c703051 | b1f3443b
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/f483045c-098a-4650-820f-a2c8397e697b/tool/0f947df9-910a-4c47-beed-10f6fd2ab33a | 51eac79b
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/f483045c-098a-4650-820f-a2c8397e697b/tool/3d21b2d1-f7fd-4e7b-9568-b0dfdb41a07d | 25116f89
