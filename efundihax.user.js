@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax
 // @namespace    https://efundihax.github.io
-// @version      17.11.3
+// @version      17.11.4
 // @description  One script, everything: syncs eFundi announcements, resources, lessons and calendars to the shared backend; draws per-tool sync pips (click to check); lends your live session cookie so the backend can fetch; schedules the sync lanes while the Apps Script triggers cannot be installed; and silently re-logs you in when the session expires.
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -13,6 +13,7 @@
 // @grant        GM_registerMenuCommand
 // @grant        unsafeWindow
 // @connect      script.google.com
+// @connect      script.googleusercontent.com
 // @connect      unpkg.com
 // @connect      cdn.jsdelivr.net
 // @connect      efundi.nwu.ac.za
@@ -25,7 +26,7 @@
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '17.11.3';
+    window.__efhVersion = '17.11.4';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
@@ -3759,7 +3760,7 @@
 (function() {
     if (window.top !== window.self) { return; }
 
-    var VERSION = '17.11.3';
+    var VERSION = '17.11.4';
     var EXEC_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
     var SECRET = 'trackmania_is_peak';
     var COOKIE_URL = 'https://efundi.nwu.ac.za/';
@@ -3956,8 +3957,8 @@
                 } catch (e) { note = 'unparseable'; }
                 if (onDone) onDone(note, processed);
             },
-            onerror: function() { if (onDone) onDone('network', 0); },
-            ontimeout: function() { if (onDone) onDone('timeout', 0); }
+            onerror: function() { log('[driver] ' + action + ' POST network error'); if (onDone) onDone('network', 0); },
+            ontimeout: function() { log('[driver] ' + action + ' POST timeout'); if (onDone) onDone('timeout', 0); }
         });
     }
 
@@ -4071,9 +4072,10 @@
                         log('[browser lane] ' + site.title + ': +' + (b.announcements || 0) + ' ann, +' +
                             (b.events || 0) + ' ev, +' + (b.assignments || 0) + ' asg');
                     }
-                } catch (e) {}
+                } catch (e) { log('[browser lane] POST parse error: ' + String((e && e.message) || e)); }
             },
-            onerror: function() {}, ontimeout: function() {}
+            onerror: function() { log('[browser lane] POST network error'); },
+            ontimeout: function() { log('[browser lane] POST timeout'); }
         });
     }
 
@@ -4122,9 +4124,15 @@
                 method: 'POST', url: EXEC_URL,
                 headers: { 'Content-Type': 'application/json' },
                 data: JSON.stringify(payload), timeout: 90000,
-                onload: function(r) { resolve(r); },
-                onerror: function() { resolve(null); },
-                ontimeout: function() { resolve(null); }
+                onload: function(r) {
+                    try {
+                        var b = JSON.parse(r.responseText || '{}');
+                        if (b.status !== 'ok') log('[job lane] POST failed: ' + (b.message || 'unknown'));
+                    } catch (e) { log('[job lane] POST parse error: ' + String((e && e.message) || e)); }
+                    resolve(r);
+                },
+                onerror: function() { log('[job lane] POST network error'); resolve(null); },
+                ontimeout: function() { log('[job lane] POST timeout'); resolve(null); }
             });
         });
     }
@@ -4155,7 +4163,8 @@
             timeout: 30000,
             onload: function(r) {
                 var b = null;
-                try { b = JSON.parse(r.responseText || '{}'); } catch (e) { return; }
+                try { b = JSON.parse(r.responseText || '{}'); }
+                catch (e) { log('[job lane] claim parse error: ' + String((e && e.message) || e)); return; }
                 var jobs = (b && b.jobs) || [];
                 if (!jobs.length) return;
                 log('[job lane] claimed ' + jobs.length);
@@ -4165,7 +4174,8 @@
                     chain = chain.then(runJob.bind(null, jobs[i]));
                 }
             },
-            onerror: function() {}, ontimeout: function() {}
+            onerror: function() { log('[job lane] claim network error'); },
+            ontimeout: function() { log('[job lane] claim timeout'); }
         });
     }
 
