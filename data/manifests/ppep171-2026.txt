@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 7719caf2ed4ad294f9d9e74b2300db002f94e6675a0af59c291dff2d7182f133@group.calendar.google.com
 title: PPEP171-2026
 last_sync: 2026-10-13T19:09:36.367Z
-last_announcement: â€”
+last_announcement: 2026-10-14T19:04:18.515Z
 total_files: 1313
 generated: 2026-10-13T19:36:46.169Z
 
@@ -1716,3 +1716,9 @@ https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/2
 https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/25ddfaf5-bc95-444c-9eb6-eda874fb64bd/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=2646961&postedComment=false&addBefore=&itemId=23518339&path=log&topicId=&addTool=-1&recheck=&id=&forumId= | 
 https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/25ddfaf5-bc95-444c-9eb6-eda874fb64bd | 46520ef2
 https://efundi.nwu.ac.za/x | 
+
+--- TOOL PAGES ---
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/d4381b51-0872-496b-acdf-98b65d38d602 | 5ca1be4a
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/164150a4-21f5-421f-bd7b-0e8c5c3afe7b | aeb23652
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/21385eaf-214b-4d39-9607-a93fe3d1da37 | b09c12f6
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/b79e9445-2d62-4a54-a9c1-a1299196e0f0/tool/47515d2a-56db-445f-a57f-6230220771bf | 7f54d18
