@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 1204d7c176900ddee6cfd2ee98a3fa2eec0769902062c5877ea3fa0e77416b13@group.calendar.google.com
 title: SEECE Work & Safety - ...
 last_sync: 2026-05-29T15:05:41.991Z
-last_announcement: 2026-10-10T15:04:05.390Z
+last_announcement: 2026-10-14T18:22:01.929Z
 total_files: 60
 generated: 2026-10-13T19:22:02.422Z
 
@@ -93,3 +93,9 @@ NOT_SYNCED | Payment Image.png | png | 2026-10-13T19:22:01.628Z | resource | htt
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) SEECE Work & Safety - ... â€” full extracted text from all synced files and lessons
 (SCHEDULE) SEECE Work & Safety - ... â€” calendar events and announcements spreadsheet
+--- TOOL PAGES ---
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/d95f45b4-b37b-4ca5-bd71-4d2c4f1ec0d5/tool/335a780a-8850-4ed2-9395-e80a152583a6 | e51548bf
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/d95f45b4-b37b-4ca5-bd71-4d2c4f1ec0d5/tool/c93407d3-7a5c-4666-9e5c-846e3fc3142a | 56dbc46d
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/d95f45b4-b37b-4ca5-bd71-4d2c4f1ec0d5/tool/ffefa808-d3ee-494e-b165-9c176eeffba3 | 6fe5c89e
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/d95f45b4-b37b-4ca5-bd71-4d2c4f1ec0d5/tool/c8bb3f2a-809a-4758-a65d-be3a486bbba9 | 4e31c85a
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/d95f45b4-b37b-4ca5-bd71-4d2c4f1ec0d5/tool/f12401ac-eeda-4b5c-ab15-76432ca3f804 | 4a91f1d5
