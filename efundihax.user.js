@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax
 // @namespace    https://efundihax.github.io
-// @version      17.11.1
+// @version      17.11.2
 // @description  One script, everything: syncs eFundi announcements, resources, lessons and calendars to the shared backend; draws per-tool sync pips (click to check); lends your live session cookie so the backend can fetch; schedules the sync lanes while the Apps Script triggers cannot be installed; and silently re-logs you in when the session expires.
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -17,13 +17,15 @@
 // @connect      cdn.jsdelivr.net
 // @connect      efundi.nwu.ac.za
 // @connect      casprd.nwu.ac.za
+// @updateURL    https://efundihax.github.io/efundihax.user.js
+// @downloadURL  https://efundihax.github.io/efundihax.user.js
 // ==/UserScript==
 
 (function() {
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '17.11.1';
+    window.__efhVersion = '17.11.2';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
@@ -3757,7 +3759,7 @@
 (function() {
     if (window.top !== window.self) { return; }
 
-    var VERSION = '17.11.1';
+    var VERSION = '17.11.2';
     var EXEC_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
     var SECRET = 'trackmania_is_peak';
     var COOKIE_URL = 'https://efundi.nwu.ac.za/';
