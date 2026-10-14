@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: a95639a22f1c9b28982e1ab849fac8f2eac8f3a385ae3a57411315fe70c085de@group.calendar.google.com
 title: REII121-2026
 last_sync: 2026-10-11T06:41:48.943Z
-last_announcement: 2026-10-10T16:22:52.556Z
+last_announcement: 2026-10-14T19:28:39.821Z
 total_files: 21
 generated: 2026-10-11T13:27:25.283Z
 
@@ -176,3 +176,5 @@ TOOLPAGE | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b
 TOOLPAGE | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/d754191e-7561-488f-bf6a-a498615dd853 | 63f856e5
 TOOLPAGE | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/ec76fc0a-8d34-4de8-86e1-04de4a027ddb | b51104b4
 TOOLPAGE | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/451794d2-3907-4a8e-ad48-a45fb430a59a | f0d3f271
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/30b19741-98f0-43c9-be88-1fc10d910bd8 | 434c3d1b
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/4fd1db7d-0399-4017-8984-d4c1c71b751e/tool/f9ef2987-a20f-432d-9766-5d9938ca9e56 | 2fbe6384
