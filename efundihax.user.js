@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eFundiHax
 // @namespace    https://efundihax.github.io
-// @version      17.11.2
+// @version      17.11.3
 // @description  One script, everything: syncs eFundi announcements, resources, lessons and calendars to the shared backend; draws per-tool sync pips (click to check); lends your live session cookie so the backend can fetch; schedules the sync lanes while the Apps Script triggers cannot be installed; and silently re-logs you in when the session expires.
 // @author       eFundiHax
 // @match        https://efundi.nwu.ac.za/*
@@ -25,7 +25,7 @@
     'use strict';
 
     window.__efhErrors = window.__efhErrors || [];
-    window.__efhVersion = '17.11.2';
+    window.__efhVersion = '17.11.3';
     function __efhPushErr(msg, src) {
         try {
             window.__efhErrors.push({ time: new Date().toISOString(), src: src || '', msg: String(msg).slice(0,500) });
@@ -3759,7 +3759,7 @@
 (function() {
     if (window.top !== window.self) { return; }
 
-    var VERSION = '17.11.2';
+    var VERSION = '17.11.3';
     var EXEC_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
     var SECRET = 'trackmania_is_peak';
     var COOKIE_URL = 'https://efundi.nwu.ac.za/';
@@ -4072,6 +4072,98 @@
                             (b.events || 0) + ' ev, +' + (b.assignments || 0) + ' asg');
                     }
                 } catch (e) {}
+            },
+            onerror: function() {}, ontimeout: function() {}
+        });
+    }
+
+    // ============================================================
+    // BROWSER JOB LANE
+    // ============================================================
+    // The backend used to need a lent cookie to fetch anything. It can
+    // never get one: Tampermonkey's own builds force GM_cookie to hide
+    // HttpOnly cookies, so the session is unreadable to any userscript.
+    //
+    // So the work is pulled, not pushed. The backend queues "fetch this
+    // URL"; this tab claims it and does the fetch SAME-ORIGIN, where the
+    // browser attaches its own session without anything being read, and
+    // posts the body back. Nothing is stored, nothing is lent, and no
+    // password is involved anywhere.
+    var JOB_LANE_MS = 45 * 1000;
+    var K_LAST_JOB_LANE = 'efh_last_job_lane';
+
+    function fetchTextSameOrigin(url) {
+        return new Promise(function(resolve) {
+            try {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', url, true); // same-origin: the session rides along
+                xhr.setRequestHeader('Accept', 'text/html,application/json,*/*');
+                xhr.timeout = 30000;
+                xhr.onload = function() {
+                    if (xhr.status < 200 || xhr.status >= 400) { resolve({ ok: false, error: 'HTTP ' + xhr.status }); return; }
+                    resolve({ ok: true, text: xhr.responseText || '' });
+                };
+                xhr.onerror = function() { resolve({ ok: false, error: 'network' }); };
+                xhr.ontimeout = function() { resolve({ ok: false, error: 'timeout' }); };
+                xhr.send();
+            } catch (e) { resolve({ ok: false, error: String((e && e.message) || e) }); }
+        });
+    }
+
+    function postJobResult(job, result) {
+        return new Promise(function(resolve) {
+            var payload = { action: 'job_result', secret: SECRET, job: job,
+                ok: result.ok === true, error: result.error || '' };
+            if (result.ok) {
+                if (job.kind === 'site_pages') payload.text = result.text || '';
+                else payload.html = result.text || '';
+            }
+            GM_xmlhttpRequest({
+                method: 'POST', url: EXEC_URL,
+                headers: { 'Content-Type': 'application/json' },
+                data: JSON.stringify(payload), timeout: 90000,
+                onload: function(r) { resolve(r); },
+                onerror: function() { resolve(null); },
+                ontimeout: function() { resolve(null); }
+            });
+        });
+    }
+
+    function runJob(job) {
+        // Only ever fetch from eFundi itself. The job queue is server data;
+        // a poisoned entry must not turn this tab into a fetcher.
+        if (!job || typeof job.url !== 'string' || job.url.indexOf('https://efundi.nwu.ac.za/') !== 0) {
+            return Promise.resolve();
+        }
+        return fetchTextSameOrigin(job.url).then(function(res) {
+            if (res.ok && res.text && res.text.length > 4000000) res = { ok: false, error: 'too big' };
+            return postJobResult(job, res);
+        }).then(function() {
+            log('[job lane] ' + job.kind + ' ' + (job.title || job.url).slice(0, 48) + ' done');
+        }).catch(function() {});
+    }
+
+    function jobLaneTick() {
+        if (getVal(K_BROWSER_LANE, true) !== true) return;
+        var now = Date.now();
+        if (now - (Number(getVal(K_LAST_JOB_LANE, 0)) || 0) < JOB_LANE_MS) return;
+        setVal(K_LAST_JOB_LANE, now);
+        GM_xmlhttpRequest({
+            method: 'POST', url: EXEC_URL,
+            headers: { 'Content-Type': 'application/json' },
+            data: JSON.stringify({ action: 'claim_jobs', secret: SECRET, max: 4 }),
+            timeout: 30000,
+            onload: function(r) {
+                var b = null;
+                try { b = JSON.parse(r.responseText || '{}'); } catch (e) { return; }
+                var jobs = (b && b.jobs) || [];
+                if (!jobs.length) return;
+                log('[job lane] claimed ' + jobs.length);
+                // Sequential: parallel bursts starve the page's own sync.
+                var chain = Promise.resolve();
+                for (var i = 0; i < jobs.length; i++) {
+                    chain = chain.then(runJob.bind(null, jobs[i]));
+                }
             },
             onerror: function() {}, ontimeout: function() {}
         });
@@ -4428,6 +4520,8 @@
     setInterval(driverSweep, 30 * 1000); // each tick self-limits to its own cadence
     setInterval(browserLaneTick, 30 * 1000); // same: the tick self-limits to 1 min
     browserLaneTick(); // run once immediately at startup
+    setInterval(jobLaneTick, 45 * 1000); // drains the server's fetch queue
+    jobLaneTick();
     // Hidden tabs get their timers frozen by Chrome, which is exactly how a
     // sync stalls for hours with no error. Intervals resume on their own,
     // but only on the next 30s tick â€” kick both lanes the moment the tab is
