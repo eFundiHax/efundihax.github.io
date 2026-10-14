@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-14T22:52:54.120Z
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -145,3 +145,9 @@ NOT_SYNCED | WhatsApp Image 2024-09-05 at 10.46.05_d3fd7645.jpg | jpg | 2026-10-
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) Villagers Manskoshuis â€” full extracted text from all synced files and lessons
 (SCHEDULE) Villagers Manskoshuis â€” calendar events and announcements spreadsheet
+--- TOOL PAGES ---
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/f83e1476-32a9-4021-8559-035939f8a164/tool/17e17b34-262e-4b53-9b9f-52106d56c74d | 232c0e53
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/f83e1476-32a9-4021-8559-035939f8a164/tool/7cb3680d-9b8b-4101-bac1-e804337e5b88 | 2cd710bd
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/f83e1476-32a9-4021-8559-035939f8a164/tool/f49d3eef-6733-40da-8b20-95a72daf8a86 | e07ba113
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/f83e1476-32a9-4021-8559-035939f8a164/tool/be93521d-1bc0-4815-a553-f453f8173f09 | d15db9f
+TOOLPAGE | https://efundi.nwu.ac.za/portal/site/f83e1476-32a9-4021-8559-035939f8a164/tool/61930c7c-9542-447c-b3fa-34fd7f4b6663 | 5d8bde46
