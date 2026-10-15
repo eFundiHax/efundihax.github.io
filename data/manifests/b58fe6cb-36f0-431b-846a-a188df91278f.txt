@@ -22,7 +22,7 @@ color: #6b3d8f
 calendar_id: 
 title: b58fe6cb-36f0-431b-846a-a188df91278f
 last_sync: 2026-10-15T09:01:34.606Z
-last_announcement: 2026-10-15T08:55:07.097Z
+last_announcement: 2026-10-15T09:05:56.740Z
 total_files: 14
 generated: 2026-10-15T08:55:12.713Z
 
