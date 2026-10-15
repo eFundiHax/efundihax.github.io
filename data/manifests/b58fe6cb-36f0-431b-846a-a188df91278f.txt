@@ -19,17 +19,17 @@ https://greasyfork.org/en/scripts/579058-efundi-scraper
 
 emoji: ðŸ“˜
 color: #6b3d8f
-calendar_id: 
+calendar_id: 141cf390ccbcba459bbb94e349aad6935eeed809f4174c89c4f6a6be74b9a5bf@group.calendar.google.com
 title: b58fe6cb-36f0-431b-846a-a188df91278f
 last_sync: 2026-10-15T09:01:34.606Z
 last_announcement: 2026-10-15T09:05:56.740Z
 total_files: 14
-generated: 2026-10-15T08:55:12.713Z
+generated: 2026-10-15T09:13:15.867Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
-NOT_SYNCED | Assignment 3_amended.pdf | pdf | 2026-10-15T08:44:48.308Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/871f3241-bcf2-41c0-99ed-36cea2f0b880/Assignment%203_amended.pdf |  | fails=0 | failts=
-NOT_SYNCED | Prelab test marks.pdf | pdf | 2026-10-15T08:44:48.308Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/d8113230-361c-4b68-85e1-2af8fc74a2c0/Prelab%20test%20marks.pdf |  | fails=0 | failts=
+NOT_SYNCED | Assignment 3_amended.pdf | pdf | 2026-10-15T09:13:14.531Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/871f3241-bcf2-41c0-99ed-36cea2f0b880/Assignment%203_amended.pdf |  | fails=0 | failts=
+NOT_SYNCED | Prelab test marks.pdf | pdf | 2026-10-15T09:13:14.531Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/d8113230-361c-4b68-85e1-2af8fc74a2c0/Prelab%20test%20marks.pdf |  | fails=0 | failts=
 NOT_SYNCED | Online tests_27092026.pdf | pdf | 2026-10-15T08:44:48.308Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/790b3b86-27de-4e45-9862-56c52dbaf086/Online%20tests_27092026.pdf |  | fails=0 | failts=
 NOT_SYNCED | Class tests 1 & 2_marks.pdf | pdf | 2026-10-15T08:44:48.308Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/278a7e4f-07aa-44f4-91be-b365d99441e3/Class%20tests%201%20_%202_marks.pdf |  | fails=0 | failts=
 NOT_SYNCED | 2025.09.18.Framework_2026 calendar.pdf | pdf | 2026-10-15T08:44:48.308Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/f0e63899-4c05-4212-81ab-7e71ffed190f/2025.09.18.Framework_2026%20calendar.pdf |  | fails=0 | failts=
