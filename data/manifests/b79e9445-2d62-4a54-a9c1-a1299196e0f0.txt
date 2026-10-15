@@ -22,9 +22,9 @@ color: #6b3d8f
 calendar_id: 
 title: b79e9445-2d62-4a54-a9c1-a1299196e0f0
 last_sync: 2026-10-15T08:44:25.680Z
-last_announcement: 2026-10-15T09:03:30.566Z
+last_announcement: 2026-10-15T09:04:41.473Z
 total_files: 36
-generated: 2026-10-15T08:59:27.140Z
+generated: 2026-10-15T09:03:40.474Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
