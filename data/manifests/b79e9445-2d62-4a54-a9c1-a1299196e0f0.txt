@@ -24,12 +24,12 @@ title: b79e9445-2d62-4a54-a9c1-a1299196e0f0
 last_sync: 2026-10-15T08:44:25.680Z
 last_announcement: 2026-10-15T09:04:41.473Z
 total_files: 36
-generated: 2026-10-15T09:03:40.474Z
+generated: 2026-10-15T09:05:06.500Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
-NOT_SYNCED | Chemical Eng Class Groups.pdf | pdf | 2026-10-15T08:44:25.074Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/d932e908-45ba-4981-9739-8a9d8519a46f/Chemical%20Eng%20Class%20Groups.pdf |  | fails=0 | failts=
-NOT_SYNCED | PPEP171_SEECE_GroupList_Wiring_2026.pdf | pdf | 2026-10-15T08:44:25.074Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/7fd06937-b32b-4a8c-96fe-d2bb542d4f82/PPEP171_SEECE_GroupList_Wiring_2026.pdf |  | fails=0 | failts=
+NOT_SYNCED | Chemical Eng Class Groups.pdf | pdf | 2026-10-15T09:05:05.201Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/d932e908-45ba-4981-9739-8a9d8519a46f/Chemical%20Eng%20Class%20Groups.pdf |  | fails=0 | failts=
+NOT_SYNCED | PPEP171_SEECE_GroupList_Wiring_2026.pdf | pdf | 2026-10-15T09:05:05.201Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/7fd06937-b32b-4a8c-96fe-d2bb542d4f82/PPEP171_SEECE_GroupList_Wiring_2026.pdf |  | fails=0 | failts=
 NOT_SYNCED | PPEP171_SEECE_Wiring.pdf | pdf | 2026-10-15T08:44:25.074Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/37e69338-f770-4a00-a207-a479571c9a9f/PPEP171_SEECE_Wiring.pdf |  | fails=0 | failts=
 NOT_SYNCED | Industrial Eng Group  - First years.pdf | pdf | 2026-10-15T08:44:25.074Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/9b43e6f9-51ce-435c-9c84-39661e661758/Industrial%20Eng%20Group%20%20-%20First%20years.pdf |  | fails=0 | failts=
 NOT_SYNCED | PPEP171_W4_Marks_Students.xlsx | xlsx | 2026-10-15T08:44:25.074Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b79e9445-2d62-4a54-a9c1-a1299196e0f0/Announcements/2d00e6fd-1b24-45ba-9b20-8bfaa7642ba2/PPEP171_W4_Marks_Students.xlsx |  | fails=0 | failts=
