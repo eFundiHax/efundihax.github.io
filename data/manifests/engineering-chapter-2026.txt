@@ -10,7 +10,7 @@ HOW TO REFRESH OUTDATED SOURCES:
 If any source in your Sources panel has a Last updated date OLDER than the last_seen date listed below, tell the student:
 "[Filename] may be out of date. To refresh it: open the Sources panel, click the source, then click the small Google Drive icon below its title to pull the latest version from Google Drive."
 
-If this !Update Me Daily! file itself is more than 24 hours old (check generated: 2026-10-14T22:52:36.528Z
+If this !Update Me Daily! file itself is more than 24 hours old (check generated: timestamp below), tell the student:
 "This file is stale. Open NotebookLM, click this file in the Sources panel, then click the Google Drive icon below its title to refresh it."
 
 REQUIRED USERSCRIPT:
@@ -22,9 +22,9 @@ color: #6b3d8f
 calendar_id: 0edd80cff580a1120dcb286ec38e30d94277d02d15eaf4a96b119125d6668871@group.calendar.google.com
 title: Engineering Chapter 2026
 last_sync: 2026-08-26T20:51:13.478Z
-last_announcement: 2026-10-15T09:56:28.287Z
+last_announcement: 2026-10-15T10:51:19.935Z
 total_files: 536
-generated: 2026-10-14T17:08:56.483Z
+generated: 2026-10-15T09:56:35.487Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
@@ -569,6 +569,3 @@ NOT_SYNCED | Visagie_J_55792103.png | png | 2026-10-12T09:32:37.896Z | resource 
 (These are updated by eFundiHax Sync. If stale, click the Drive icon in the Sources panel.)
 (MASTER) Engineering Chapter 2026 â€” full extracted text from all synced files and lessons
 (SCHEDULE) Engineering Chapter 2026 â€” calendar events and announcements spreadsheet
---- TOOL PAGES ---
-TOOLPAGE | https://efundi.nwu.ac.za/portal/site/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/tool/45750436-b545-4ade-b8d3-b53fe9edb22e | 24a945a4
-TOOLPAGE | https://efundi.nwu.ac.za/portal/site/23c0b0cd-541a-4a71-bd52-fc0808c9d4cb/tool/8e5e876b-ee28-4362-b1cd-7f0644b6d5be | 9b1840a8
