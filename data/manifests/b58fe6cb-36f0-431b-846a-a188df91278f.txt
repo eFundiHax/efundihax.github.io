@@ -1,6 +1,6 @@
 emoji: ðŸ“˜
 color: #6b3d8f
-calendar_id: 
+calendar_id: 141cf390ccbcba459bbb94e349aad6935eeed809f4174c89c4f6a6be74b9a5bf@group.calendar.google.com
 ---
 
 These sources come from North-West University's eFundi website.
@@ -24,7 +24,7 @@ title: b58fe6cb-36f0-431b-846a-a188df91278f
 last_sync: 2026-10-15T08:44:48.746Z
 last_announcement: 2026-10-15T08:55:07.097Z
 total_files: 14
-generated: 2026-10-15T08:50:38.704Z
+generated: 2026-10-15T08:55:12.713Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
