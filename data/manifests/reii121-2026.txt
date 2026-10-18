@@ -21,7 +21,7 @@ emoji: 📘
 color: #6b3d8f
 calendar_id: a95639a22f1c9b28982e1ab849fac8f2eac8f3a385ae3a57411315fe70c085de@group.calendar.google.com
 title: REII121-2026
-last_sync: 2026-10-18T10:17:26.600Z
+last_sync: 2026-10-18T10:55:02.660Z
 last_announcement: 2026-10-18T10:49:08.722Z
 total_files: 21
 generated: 2026-10-18T10:49:13.827Z
