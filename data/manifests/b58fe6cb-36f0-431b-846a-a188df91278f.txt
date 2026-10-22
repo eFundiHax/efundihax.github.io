@@ -21,7 +21,7 @@ emoji: ðŸ“˜
 color: #6b3d8f
 calendar_id: 141cf390ccbcba459bbb94e349aad6935eeed809f4174c89c4f6a6be74b9a5bf@group.calendar.google.com
 title: b58fe6cb-36f0-431b-846a-a188df91278f
-last_sync: 2026-10-20T13:18:07.217Z
+last_sync: 2026-10-22T11:37:34.677Z
 last_announcement: 2026-10-15T10:50:37.509Z
 total_files: 16
 generated: 2026-10-18T15:56:54.653Z
