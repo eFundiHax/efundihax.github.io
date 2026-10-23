@@ -24,7 +24,7 @@ title: INGM122-2026
 last_sync: 2026-10-23T20:13:46.091Z
 last_announcement: 2026-10-23T20:07:42.568Z
 total_files: 20
-generated: 2026-10-23T20:07:49.504Z
+generated: 2026-10-23T20:26:10.855Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
@@ -44,8 +44,8 @@ NOT_SYNCED | 2026 ACADEMIC ADVISING Infographic invitation to contact and distan
 NOT_SYNCED | PPE.pdf | pdf | 2026-10-15T11:59:42.503Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/7f8c371d-4a6d-4b0a-a95b-e2cfd39afd4b/PPE.pdf |  | fails=0 | failts=
 NOT_SYNCED | Practical marks_15102026.pdf | pdf | 2026-10-20T14:13:13.621Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/47b74fc3-cafc-46f6-902d-da7f267c15df/Practical%20marks_15102026.pdf |  | fails=0 | failts=
 NOT_SYNCED | Practical_Report marks.pdf | pdf | 2026-10-20T14:13:13.621Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/640e83e1-b91c-4ff7-84af-7bf88ca43fda/Practical_Report%20marks.pdf |  | fails=0 | failts=
-NOT_SYNCED | Practical marks_FINALISED.pdf | pdf | 2026-10-23T20:00:23.077Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/e5302514-ca2e-448c-aa2b-f8c6f5be108d/Practical%20marks_FINALISED.pdf |  | fails=0 | failts=
-NOT_SYNCED | Online tests marks_FINALISED.pdf | pdf | 2026-10-23T20:00:23.077Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/986a526d-f173-40a0-98b3-3ec21e95b4b6/Online%20tests%20marks_FINALISED.pdf |  | fails=0 | failts=
+NOT_SYNCED | Practical marks_FINALISED.pdf | pdf | 2026-10-23T20:25:46.756Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/e5302514-ca2e-448c-aa2b-f8c6f5be108d/Practical%20marks_FINALISED.pdf |  | fails=0 | failts=
+NOT_SYNCED | Online tests marks_FINALISED.pdf | pdf | 2026-10-23T20:25:46.756Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/986a526d-f173-40a0-98b3-3ec21e95b4b6/Online%20tests%20marks_FINALISED.pdf |  | fails=0 | failts=
 NOT_SYNCED | Class tests_2026.pdf | pdf | 2026-10-23T19:10:59.734Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/944a1b7d-5208-4058-8b55-225fdf0e6c57/Class%20tests_2026.pdf |  | fails=0 | failts=
 NOT_SYNCED | Class tests marks_FINALISED.pdf | pdf | 2026-10-23T19:10:59.734Z | announcement_attachment | https://efundi.nwu.ac.za/access/content/attachment/b58fe6cb-36f0-431b-846a-a188df91278f/Announcements/974ac108-98d2-4c7a-9ab3-8d51aa990cdf/Class%20tests%20marks_FINALISED.pdf |  | fails=0 | failts=
 
