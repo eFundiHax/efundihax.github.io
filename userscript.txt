@@ -84,7 +84,7 @@
     // CONFIGURATION
     // ============================================================
 
-    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwYf2Z2DfnJ7WBwG7w7nlwn_b1XsZqpO9NyFiDuXDUBAHg8WU54JOQE3tJbFUvaCC0/exec';
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzAEtESp3APUqynf92grtDiVBVprOq8gtzr7KsD597TJD28hcmMJjVWaUU9Ij48PCR2/exec';
     const SECRET = 'trackmania_is_peak';
     var SERVER_OCR_ENABLED = true; // Prefer Apps Script Drive conversion; fallback to device-side Docstream/Tesseract
     const DAYS_BACK = 60;
@@ -3265,6 +3265,42 @@
                     stopHeartbeat();
                     return calendarJob;
                 }).then(function() {
+                    // ============================================================
+                    // MISSING LANES: gradebook, assignment files, signup, remaining tools
+                    // ============================================================
+                    var missingLanes = Promise.resolve();
+                    orderedSites.forEach(function(site) {
+                        missingLanes = missingLanes.then(function() {
+                            return syncGradebookForSite(site.uuid, site.title, false)
+                                .catch(function(e) {
+                                    console.error('[Sync] Gradebook failed for ' + site.title + ':', e.message);
+                                    allErrors.push('Gradebook: ' + site.title + ' - ' + e.message);
+                                });
+                        }).then(function() {
+                            return syncAssignmentFilesForSite(site.uuid, site.title, false)
+                                .catch(function(e) {
+                                    console.error('[Sync] Assignment Files failed for ' + site.title + ':', e.message);
+                                    allErrors.push('Assignment Files: ' + site.title + ' - ' + e.message);
+                                });
+                        }).then(function() {
+                            return syncSignupForSite(site.uuid, site.title, false)
+                                .catch(function(e) {
+                                    console.error('[Sync] Sign-up failed for ' + site.title + ':', e.message);
+                                    allErrors.push('Sign-up: ' + site.title + ' - ' + e.message);
+                                });
+                        }).then(function() {
+                            return syncRemainingToolsForSite(site.uuid, site.title, false)
+                                .catch(function(e) {
+                                    console.error('[Sync] Remaining Tools failed for ' + site.title + ':', e.message);
+                                    allErrors.push('Remaining Tools: ' + site.title + ' - ' + e.message);
+                                });
+                        });
+                    });
+
+                    return missingLanes.then(function() {
+                        return calendarJob;
+                    });
+                }).then(function() {
                     logSyncSummary('All sites', sites.length, totalProcessed, totalSkipped, allErrors);
 
                     GM_setValue(KEY_SYNC_COMPLETE, Date.now());
@@ -3642,6 +3678,83 @@
         }
         setIndicator('calendar', 'idle', 'Ready');
         return Promise.resolve();
+    }
+
+    // ============================================================
+    // GRADEBOOK LANE (SYNC-PLAN.md special: item titles + scores only)
+    // ============================================================
+    function syncGradebookForSite(siteId, siteTitle, isPriority) {
+        if (isPriority) setIndicator('gradebook', 'syncing', 'Loading...');
+        return post({
+            action: 'sync_gradebook',
+            secret: SECRET,
+            siteId: siteId,
+            siteTitle: siteTitle
+        }).then(function(resp) {
+            if (isPriority) setIndicator('gradebook', 'ok', 'Done');
+            console.log('[Gradebook] ' + siteTitle + ': ' + (resp && resp.totals ? resp.totals.items : 0) + ' items');
+        }).catch(function(err) {
+            if (isPriority) setIndicator('gradebook', 'error', 'Failed');
+            console.error('[Gradebook] ' + siteTitle + ' failed:', err.message);
+        });
+    }
+
+    // ============================================================
+    // ASSIGNMENT FILES LANE (SYNC-PLAN.md special: attachment URLs)
+    // ============================================================
+    function syncAssignmentFilesForSite(siteId, siteTitle, isPriority) {
+        if (isPriority) setIndicator('assignments', 'syncing', 'Files...');
+        return post({
+            action: 'sync_assignment_files',
+            secret: SECRET,
+            siteId: siteId,
+            siteTitle: siteTitle
+        }).then(function(resp) {
+            if (isPriority) setIndicator('assignments', 'ok', 'Done');
+            console.log('[Assignment Files] ' + siteTitle + ': ' + (resp && resp.totals ? resp.totals.files : 0) + ' files');
+        }).catch(function(err) {
+            if (isPriority) setIndicator('assignments', 'error', 'Failed');
+            console.error('[Assignment Files] ' + siteTitle + ' failed:', err.message);
+        });
+    }
+
+    // ============================================================
+    // SIGN-UP LANE (SYNC-PLAN.md special: group names only)
+    // ============================================================
+    function syncSignupForSite(siteId, siteTitle, isPriority) {
+        if (isPriority) setIndicator('signup', 'syncing', 'Groups...');
+        return post({
+            action: 'sync_signup',
+            secret: SECRET,
+            siteId: siteId,
+            siteTitle: siteTitle
+        }).then(function(resp) {
+            if (isPriority) setIndicator('signup', 'ok', 'Done');
+            console.log('[Sign-up] ' + siteTitle + ': ' + (resp && resp.totals ? resp.totals.groups : 0) + ' groups');
+        }).catch(function(err) {
+            if (isPriority) setIndicator('signup', 'error', 'Failed');
+            console.error('[Sign-up] ' + siteTitle + ' failed:', err.message);
+        });
+    }
+
+    // ============================================================
+    // REMAINING TOOLS LANE (Messages, Dropbox, Polls, SCORM, Web/Iframe,
+    // Feedback, Site Info, Overview, Glossary — raw page content)
+    // ============================================================
+    function syncRemainingToolsForSite(siteId, siteTitle, isPriority) {
+        if (isPriority) setIndicator('resources', 'syncing', 'Tools...');
+        return post({
+            action: 'sync_tool_pages',
+            secret: SECRET,
+            siteId: siteId,
+            siteTitle: siteTitle
+        }).then(function(resp) {
+            if (isPriority) setIndicator('resources', 'ok', 'Done');
+            console.log('[Remaining Tools] ' + siteTitle + ': ' + (resp && resp.totals ? resp.totals.synced : 0) + ' synced');
+        }).catch(function(err) {
+            if (isPriority) setIndicator('resources', 'error', 'Failed');
+            console.error('[Remaining Tools] ' + siteTitle + ' failed:', err.message);
+        });
     }
 
     // ============================================================
