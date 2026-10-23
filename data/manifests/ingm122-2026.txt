@@ -21,10 +21,10 @@ emoji: 📘
 color: #6b3d8f
 calendar_id: 90b43f19ac56e70f68afa24093cc5f81d699c7b090f91eae0de1d1fbd9ad62f2@group.calendar.google.com
 title: INGM122-2026
-last_sync: 2026-10-23T19:23:06.622Z
+last_sync: 2026-10-23T19:48:22.634Z
 last_announcement: 2026-10-23T19:42:23.373Z
 total_files: 20
-generated: 2026-10-23T19:35:20.481Z
+generated: 2026-10-23T19:42:29.749Z
 
 --- FILE REGISTRY ---
 (status | filename | extension | last_seen | type | url | source)
